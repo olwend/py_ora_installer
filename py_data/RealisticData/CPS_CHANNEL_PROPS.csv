@@ -1,0 +1,6 @@
+CHANNEL,PROP_KEY,PROP_VALUE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <endrec>
+"RCOMM","delimiter","*"<endrec>
+"RCOMM","terminator","#"<endrec>
+"SMS","delimiter","Space"<endrec>
+"USSD","delimiter","*"<endrec>
+"USSD","terminator","#"<endrec>

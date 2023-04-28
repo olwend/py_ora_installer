@@ -1,0 +1,20 @@
+DESCRIPTION,DISPLAY_ORDER,FULL_NAME,IS_SELECTABLE,LOAD_DATA_TS,PARENT_REGION_ID,REGION_CODE,REGION_ID,REGION_LEVEL,REGION_NAME,STATUS,TYPE_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           <endrec>
+"","","Akata","1","","ROOT","01","2000000000014035","","Akata","30","1"<endrec>
+"","","Akata->Amita","1","","2000000000014035","001","2000000000014036","","Amita","30","1001"<endrec>
+"","","Akata->Amita->Ashita","1","","2000000000014036","0001","2000000000014037","","Ashita","30","2001"<endrec>
+"","","Akata->Amita->Ashita->Awaja","1","","2000000000014037","00001","2000000000014039","","Awaja","30","3001"<endrec>
+"","","Baju","1","","ROOT","02","2000000000014040","","Baju","30","1"<endrec>
+"","","Baju->Bari","1","","2000000000014040","002","2000000000014041","","Bari","30","1001"<endrec>
+"","","Baju->Bari->Balo","1","","2000000000014041","0002","2000000000014042","","Balo","30","2001"<endrec>
+"","","Baju->Bari->Balo->Balala","1","","2000000000014042","00002","2000000000014043","","Balala","30","3001"<endrec>
+"Test01","","Test01","1","","ROOT","04","2000000000015033","","Test01","30","3001"<endrec>
+"TestState01","","TestState01","1","","ROOT","100","2000000000015034","","TestState01","30","1"<endrec>
+"TestProvince01","","TestProvince01","1","","ROOT","101","2000000000015035","","TestProvince01","30","1001"<endrec>
+"TestProvince001","","TestState01->TestProvince001","1","","2000000000015034","102","2000000000015036","","TestProvince001","30","1001"<endrec>
+"TestCity01","","TestProvince01->TestCity01","1","","2000000000015035","200000000015037","2000000000016033","","TestCity01","30","2001"<endrec>
+"TestCity01","","TestCity01","1","","ROOT","n001","2000000000016034","","TestCity01","30","2001"<endrec>
+"test1","","Test1","1","","ROOT","1000","3000000000016036","","Test1","30","3001"<endrec>
+"TestCountry","","TestCountry","1","","ROOT","1001","3000000000016037","","TestCountry","30","3001"<endrec>
+"TestCity02","","TestCity02","1","","ROOT","1002","3000000000016038","","TestCity02","30","2001"<endrec>
+"TestCountry","","TestCity02->TestCountry","1","","3000000000016038","1004","3000000000016039","","TestCountry","30","3001"<endrec>
+"TestKalindu","","TestKalindu","1","","ROOT","1005","4000000000036041","","TestKalindu","30","2001"<endrec>

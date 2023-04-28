@@ -1,0 +1,42 @@
+CATALOG_ID,CHANNEL,NAME,PARENT_CATALOG_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <endrec>
+"1","API","FSI","-1"<endrec>
+"10","IMTAPI","Outbound","-1"<endrec>
+"101","API","USSDPush","-1"<endrec>
+"102","API","Inbound","101"<endrec>
+"103","API","Outbound","101"<endrec>
+"104","API","GeneralOutbound","-1"<endrec>
+"105","API","EVC","-1"<endrec>
+"106","API","Outbound","105"<endrec>
+"107","USSD","EVC","-1"<endrec>
+"108","API","Inbound","105"<endrec>
+"109","STK","EVC","-1"<endrec>
+"110","API","GOAOutboundResponse","-1"<endrec>
+"111","SMS","EVC","-1"<endrec>
+"113","SchemaAPI","APP","-1"<endrec>
+"114","API","Diameter","106"<endrec>
+"115","API","GOAInbound","-1"<endrec>
+"116","API","SSP","-1"<endrec>
+"117","API","Outbound","116"<endrec>
+"118","API","Inbound","116"<endrec>
+"126","API","LinkedBankAccount","-1"<endrec>
+"127","API","Inbound","126"<endrec>
+"128","API","Outbound","126"<endrec>
+"130","USSD","CashInOut","-1"<endrec>
+"131","SMS","CashInOut","-1"<endrec>
+"132","ISO8583","Inbound","-1"<endrec>
+"133","ISO8583","Outbound","-1"<endrec>
+"141","OpenAPI","P2P","-1"<endrec>
+"142","OpenAPI","Transaction","-1"<endrec>
+"143","OpenAPI","QRCode","-1"<endrec>
+"146","IMTAPI","GenericIMTSend","-1"<endrec>
+"147","OpenAPI","Buy Goods","-1"<endrec>
+"148","OpenAPI","USSD PUSH","-1"<endrec>
+"152","HTTP","Promotion","135"<endrec>
+"155","API","TZ_USSDPush","-1"<endrec>
+"156","API","Inbound","155"<endrec>
+"157","API","Outbound","155"<endrec>
+"2","API","FSI Inbound","1"<endrec>
+"3","API","FSI Outbound","1"<endrec>
+"4","STK","FSI","-1"<endrec>
+"5","STK","M-Shwari","4"<endrec>
+"6","STK","M-Kesho","4"<endrec>

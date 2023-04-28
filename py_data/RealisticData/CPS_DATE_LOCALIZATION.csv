@@ -1,0 +1,11 @@
+AM_SYMBOL,CHANNEL,DATE_TIME_FORMAT,FIRST_DAY_WEEK,LANGUAGE_CODE,LONG_DATE_FORMAT,LONG_TIME_FORMAT,PM_SYMBOL,SHORT_DATE_FORMAT,SHORT_TIME_FORMAT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <endrec>
+"AM","1001","1","2","en_KE","dd-MM-yyyy","HH:mm:ss","PM","dd-MM-yyyy","HH:mm"<endrec>
+"AM","1001","1","2","sw_KE","","HH:mm:ss","PM","dd-MM-yyyy","HH:mm"<endrec>
+"am","1005","1","6","en","","HH:mm:ss","PM","dd-MM-yyyy","H:mm"<endrec>
+"AM","1005","1","2","en_KE","dd-MM-yyyy","HH:mm:ss","PM","dd-MM-yyyy","HH:mm"<endrec>
+"AM","1005","1","2","sw_KE","","HH:mm:ss","PM","dd-MM-yyyy","HH:mm"<endrec>
+"AM","1010","1","2","en_KE","dd-MM-yyyy","HH:mm:ss","PM","dd-MM-yyyy","HH:mm"<endrec>
+"AM","1011","1","2","en_KE","dd-MM-yyyy","HH:mm:ss","PM","dd-MM-yyyy","HH:mm"<endrec>
+"AM","1011","1","2","sw_KE","","HH:mm:ss","PM","dd-MM-yyyy","HH:mm"<endrec>
+"AM","9999","1","2","en_KE","dd-MM-yyyy","HH:mm:ss","PM","dd-MM-yyyy","HH:mm"<endrec>
+"AM","9999","1","2","sw_KE","","HH:mm:ss","PM","dd-MM-yyyy","HH:mm"<endrec>

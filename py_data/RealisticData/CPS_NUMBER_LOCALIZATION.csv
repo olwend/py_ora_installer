@@ -1,0 +1,11 @@
+CHANNEL,DECIMAL_DIGITS,DECIMAL_GROUPING_LENGTH,DECIMAL_GROUPING_SYMBOL,DECIMAL_POINT,LANGUAGE_CODE,NEGATIVE_FORMAT,NEGATIVE_SYMBOL,PERCENT_FORMAT,PERCENT_SYMBOL,POSITIVE_FORMAT,POSITIVE_SYMBOL,ZERO_START_FORMAT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <endrec>
+"1001","2","3",",",".","en_KE","1","-","1","%","1","+","2"<endrec>
+"1001","2","3",",",".","sw_KE","1","-","1","%","1","+","2"<endrec>
+"1005","2","3",",",".","en_KE","1","-","1","%","1","+","2"<endrec>
+"1005","2","3",",",".","sw_KE","1","-","1","%","1","+","2"<endrec>
+"1010","2","3",",",".","en_KE","1","-","1","%","1","+","2"<endrec>
+"1010","2","3",",",".","sw_KE","1","-","1","%","1","+","2"<endrec>
+"1011","2","3",",",".","en_KE","1","-","1","%","1","+","2"<endrec>
+"1011","2","3",",",".","sw_KE","1","-","1","%","1","+","2"<endrec>
+"9999","2","3",",",".","en_KE","1","-","1","%","1","+","2"<endrec>
+"9999","2","3",",",".","sw_KE","1","-","1","%","1","+","2"<endrec>

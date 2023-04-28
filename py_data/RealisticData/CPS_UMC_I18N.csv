@@ -1,0 +1,2042 @@
+CONTENT,ID,LANG,NAME                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <endrec>
+"ATM Deposit Voucher 1","0","en","CUSTOMER:ATM Deposit Voucher 1"<endrec>
+"ATM Deposit Voucher 2","0","en","CUSTOMER:ATM Deposit Voucher 2"<endrec>
+"Bank Account","0","en","CUSTOMER:Bank Account"<endrec>
+"Create Bank Account","0","en","CUSTOMER:Bank Account/Create Bank Account"<endrec>
+"Create Group Bank Account","0","en","CUSTOMER:Bank Account/Create Group Bank Account"<endrec>
+"Delete Bank Account","0","en","CUSTOMER:Bank Account/Delete Bank Account"<endrec>
+"Delete Group Bank Account","0","en","CUSTOMER:Bank Account/Delete Group Bank Account"<endrec>
+"Online Cash In","0","en","CUSTOMER:Bank Account/Online Cash In"<endrec>
+"Query Bank Account","0","en","CUSTOMER:Bank Account/Query Bank Account"<endrec>
+"Query Group Bank Account","0","en","CUSTOMER:Bank Account/Query Group Bank Account"<endrec>
+"Set Default Bank Account","0","en","CUSTOMER:Bank Account/Set Default Bank Account"<endrec>
+"Set Default Group Bank Account","0","en","CUSTOMER:Bank Account/Set Default Group Bank Account"<endrec>
+"Bank Card Lookup","0","en","CUSTOMER:Bank Card Lookup"<endrec>
+"Create Bank Card Lookup","0","en","CUSTOMER:Bank Card Lookup/Create Bank Card Lookup"<endrec>
+"Create Group Bank Card Lookup","0","en","CUSTOMER:Bank Card Lookup/Create Group Bank Card Lookup"<endrec>
+"Delete Bank Card Lookup","0","en","CUSTOMER:Bank Card Lookup/Delete Bank Card Lookup"<endrec>
+"Delete Group Bank Card Lookup","0","en","CUSTOMER:Bank Card Lookup/Delete Group Bank Card Lookup"<endrec>
+"Query Bank Card Lookup","0","en","CUSTOMER:Bank Card Lookup/Query Bank Card Lookup"<endrec>
+"Query Group Bank Card Lookup","0","en","CUSTOMER:Bank Card Lookup/Query Group Bank Card Lookup"<endrec>
+"Bundle","0","en","CUSTOMER:Bundle"<endrec>
+"Query My Bundle Details","0","en","CUSTOMER:Bundle/Query My Bundle Details"<endrec>
+"Query My Bundle Details","0","en","CUSTOMER:Bundle/Query My Bundle Details/Query My Bundle Details"<endrec>
+"Query My Group Bundle Details","0","en","CUSTOMER:Bundle/Query My Bundle Details/Query My Group Bundle Details"<endrec>
+"Query My Bundles","0","en","CUSTOMER:Bundle/Query My Bundles"<endrec>
+"Query My Group Bundles","0","en","CUSTOMER:Bundle/Query My Bundles/Query My Group Bundles"<endrec>
+"Query My Own Bundles","0","en","CUSTOMER:Bundle/Query My Bundles/Query My Own Bundles"<endrec>
+"Subscribe Bundle","0","en","CUSTOMER:Bundle/Subscribe Bundle"<endrec>
+"Return Main Menu","0","en","CUSTOMER:Bundle/Subscribe Bundle/Return Main Menu"<endrec>
+"Subscribe Customer Bundle","0","en","CUSTOMER:Bundle/Subscribe Bundle/Subscribe Customer Bundle"<endrec>
+"Subscribe Group Bundle","0","en","CUSTOMER:Bundle/Subscribe Bundle/Subscribe Group Bundle"<endrec>
+"View Bundle Details","0","en","CUSTOMER:Bundle/View Bundle Details"<endrec>
+"View Bundle Details","0","en","CUSTOMER:Bundle/View Bundle Details/View Bundle Details"<endrec>
+"View Customer Bundle Details","0","en","CUSTOMER:Bundle/View Bundle Details/View Customer Bundle Details"<endrec>
+"View Group Bundle Details","0","en","CUSTOMER:Bundle/View Bundle Details/View Group Bundle Details"<endrec>
+"View Bundles","0","en","CUSTOMER:Bundle/View Bundles"<endrec>
+"View Customer Bundles","0","en","CUSTOMER:Bundle/View Bundles/View Customer Bundles"<endrec>
+"View Group Bundles","0","en","CUSTOMER:Bundle/View Bundles/View Group Bundles"<endrec>
+"Buy Airtime","0","en","CUSTOMER:Buy Airtime"<endrec>
+"My phone","0","en","CUSTOMER:Buy Airtime/My phone"<endrec>
+"Other phone","0","en","CUSTOMER:Buy Airtime/Other phone"<endrec>
+"Buy Goods With Prevalidation","0","en","CUSTOMER:Buy Goods/Buy Goods With Prevalidation"<endrec>
+"CEB Pay bill via m-pesa","0","en","CUSTOMER:CEB Pay bill via m-pesa"<endrec>
+"CNS","0","en","CUSTOMER:CNS"<endrec>
+"Allow My name be searched","0","en","CUSTOMER:CNS/Allow My name be searched"<endrec>
+"Disable CNS","0","en","CUSTOMER:CNS/Disable CNS"<endrec>
+"Enable CNS","0","en","CUSTOMER:CNS/Enable CNS"<endrec>
+"Not allow My name be searched","0","en","CUSTOMER:CNS/Not allow My name be searched"<endrec>
+"Card Actions","0","en","CUSTOMER:Card Actions"<endrec>
+"Activate Card","0","en","CUSTOMER:Card Actions/Activate Card"<endrec>
+"Customer Activate Card","0","en","CUSTOMER:Card Actions/Activate Card/Customer Activate Card"<endrec>
+"Group Activate Card","0","en","CUSTOMER:Card Actions/Activate Card/Group Activate Card"<endrec>
+"Cancel Card","0","en","CUSTOMER:Card Actions/Cancel Card"<endrec>
+"Customer Cancel Card","0","en","CUSTOMER:Card Actions/Cancel Card/Customer Cancel Card"<endrec>
+"Group Cancel Card","0","en","CUSTOMER:Card Actions/Cancel Card/Group Cancel Card"<endrec>
+"Register Card","0","en","CUSTOMER:Card Actions/Register Card"<endrec>
+"Customer Register Card","0","en","CUSTOMER:Card Actions/Register Card/Customer Register Card"<endrec>
+"Group Register Card","0","en","CUSTOMER:Card Actions/Register Card/Group Register Card"<endrec>
+"Request Buy Goods Card Voucher","0","en","CUSTOMER:Card Actions/Request Buy Goods Card Voucher"<endrec>
+"Change Customer QA","0","en","CUSTOMER:Change Customer QA"<endrec>
+"Add Group Beneficiary","0","en","CUSTOMER:Contact Lookup/Add Group Beneficiary"<endrec>
+"Customer Activate","0","en","CUSTOMER:Customer Activate"<endrec>
+"Customer Close Account","0","en","CUSTOMER:Customer Close Account"<endrec>
+"Customer Create Account","0","en","CUSTOMER:Customer Create Account"<endrec>
+"Customer Forget Pin","0","en","CUSTOMER:Customer Forget Pin"<endrec>
+"Customer Get Start PIN","0","en","CUSTOMER:Customer Get Start PIN"<endrec>
+"Customer Intra_Account Transfer","0","en","CUSTOMER:Customer Intra_Account Transfer"<endrec>
+"Transfer from Saving to Saving","0","en","CUSTOMER:Customer Intra_Account Transfer/Transfer from Saving to Saving"<endrec>
+"Transfer from Saving to m-pesa","0","en","CUSTOMER:Customer Intra_Account Transfer/Transfer from Saving to m-pesa"<endrec>
+"Transfer from m-pesa to Saving","0","en","CUSTOMER:Customer Intra_Account Transfer/Transfer from m-pesa to Saving"<endrec>
+"Transfer from m-pesa to m-pesa","0","en","CUSTOMER:Customer Intra_Account Transfer/Transfer from m-pesa to m-pesa"<endrec>
+"Customer Self Update KYC","0","en","CUSTOMER:Customer Self Update KYC"<endrec>
+"CustomerFF","0","en","CUSTOMER:CustomerFF"<endrec>
+"Manage CustomerFF","0","en","CUSTOMER:CustomerFF/Manage CustomerFF"<endrec>
+"Manager_CustomerFF","0","en","CUSTOMER:CustomerFF/Manager_CustomerFF"<endrec>
+"Query CustomerFF","0","en","CUSTOMER:CustomerFF/Query CustomerFF"<endrec>
+"Query_CustomerFF","0","en","CUSTOMER:CustomerFF/Query_CustomerFF"<endrec>
+"Deposit","0","en","CUSTOMER:Deposit"<endrec>
+"Deposit Money","0","en","CUSTOMER:Deposit Money"<endrec>
+"Deposit Money With Prevalidation","0","en","CUSTOMER:Deposit Money With Prevalidation"<endrec>
+"Deposit With Prevalidation","0","en","CUSTOMER:Deposit With Prevalidation"<endrec>
+"Deposit e-Money","0","en","CUSTOMER:Deposit e-Money"<endrec>
+"Transfer from Bank to M-Pesa","0","en","CUSTOMER:Deposit e-Money/Transfer from Bank to M-Pesa"<endrec>
+"Request Deposit Voucher","0","en","CUSTOMER:Deposit/Request Deposit Voucher"<endrec>
+"Direct Debit","0","en","CUSTOMER:Direct Debit"<endrec>
+"Activate Direct Debit","0","en","CUSTOMER:Direct Debit/Activate Direct Debit"<endrec>
+"Customer Activate Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/Activate Direct Debit/Customer Activate Direct Debit Mandate"<endrec>
+"Group Activate Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/Activate Direct Debit/Group Activate Direct Debit Mandate"<endrec>
+"Cancel Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/Cancel Direct Debit Mandate"<endrec>
+"Customer Cancel Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/Cancel Direct Debit Mandate/Customer Cancel Direct Debit Mandate"<endrec>
+"Group Cancel Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/Cancel Direct Debit Mandate/Group Cancel Direct Debit Mandate"<endrec>
+"Create Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/Create Direct Debit Mandate"<endrec>
+"Create Direct Debit Mandate By Group","0","en","CUSTOMER:Direct Debit/Create Direct Debit Mandate/Create Direct Debit Mandate By Group"<endrec>
+"Create Direct Debit Mandate by Customer","0","en","CUSTOMER:Direct Debit/Create Direct Debit Mandate/Create Direct Debit Mandate by Customer"<endrec>
+"Edit Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/Edit Direct Debit Mandate"<endrec>
+"Customer Edit Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/Edit Direct Debit Mandate/Customer Edit Direct Debit Mandate"<endrec>
+"Group Edit Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/Edit Direct Debit Mandate/Group Edit Direct Debit Mandate"<endrec>
+"Reactivate Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/Reactivate Direct Debit Mandate"<endrec>
+"Customer Reactivate Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/Reactivate Direct Debit Mandate/Customer Reactivate Direct Debit Mandate"<endrec>
+"Group Reactivate Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/Reactivate Direct Debit Mandate/Group Reactivate Direct Debit Mandate"<endrec>
+"View Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/View Direct Debit Mandate"<endrec>
+"Customer View Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/View Direct Debit Mandate/Customer View Direct Debit Mandate"<endrec>
+"Group View Direct Debit Mandate","0","en","CUSTOMER:Direct Debit/View Direct Debit Mandate/Group View Direct Debit Mandate"<endrec>
+"ForeignExchange","0","en","CUSTOMER:Foreign Exchange"<endrec>
+"Customer Buy Goods With Foreign Exchange","0","en","CUSTOMER:Foreign Exchange/Customer Buy Goods With Foreign Exchange"<endrec>
+"Customer Payment With Foreign Exchange","0","en","CUSTOMER:Foreign Exchange/Customer Payment With Foreign Exchange"<endrec>
+"Customer Payment With Foreign Exchange","0","en","CUSTOMER:Foreign Exchange/Customer Payment With Foreign Exchange/Customer Payment With Foreign Exchange"<endrec>
+"Group Payment With Foreign Exchange","0","en","CUSTOMER:Foreign Exchange/Customer Payment With Foreign Exchange/Group Payment With Foreign Exchange"<endrec>
+"Foreign Exchange","0","en","CUSTOMER:Foreign Exchange/Foreign Exchange"<endrec>
+"Customer Buy Foreign Currency","0","en","CUSTOMER:Foreign Exchange/Foreign Exchange/Customer Buy Foreign Currency"<endrec>
+"Customer Buy Foreign Currency Indirect","0","en","CUSTOMER:Foreign Exchange/Foreign Exchange/Customer Buy Foreign Currency Indirect"<endrec>
+"Customer Sell Foreign Currency","0","en","CUSTOMER:Foreign Exchange/Foreign Exchange/Customer Sell Foreign Currency"<endrec>
+"Customer Sell Foreign Currency Indirect","0","en","CUSTOMER:Foreign Exchange/Foreign Exchange/Customer Sell Foreign Currency Indirect"<endrec>
+"Group Buy Foreign Currency","0","en","CUSTOMER:Foreign Exchange/Foreign Exchange/Group Buy Foreign Currency"<endrec>
+"Group Buy Foreign Currency Indirect","0","en","CUSTOMER:Foreign Exchange/Foreign Exchange/Group Buy Foreign Currency Indirect"<endrec>
+"Group Sell Foreign Currency","0","en","CUSTOMER:Foreign Exchange/Foreign Exchange/Group Sell Foreign Currency"<endrec>
+"Group Sell Foreign Currency Indirect","0","en","CUSTOMER:Foreign Exchange/Foreign Exchange/Group Sell Foreign Currency Indirect"<endrec>
+"Group FSI","0","en","CUSTOMER:Group FSI"<endrec>
+"Group Loans","0","en","CUSTOMER:Group FSI/Group Loans"<endrec>
+"Group FSI Pay Loan","0","en","CUSTOMER:Group FSI/Group Loans/Group FSI Pay Loan"<endrec>
+"Group Loan Credit Limit","0","en","CUSTOMER:Group FSI/Group Loans/Group Loan Credit Limit"<endrec>
+"Group Loan Request","0","en","CUSTOMER:Group FSI/Group Loans/Group Loan Request"<endrec>
+"Group Loan Statement","0","en","CUSTOMER:Group FSI/Group Loans/Group Loan Statement"<endrec>
+"Group Pay Loan from Savings","0","en","CUSTOMER:Group FSI/Group Loans/Group Pay Loan from Savings"<endrec>
+"Group Savings","0","en","CUSTOMER:Group FSI/Group Savings"<endrec>
+"Activate Group Account","0","en","CUSTOMER:Group FSI/Group Savings/Activate Group Account"<endrec>
+"Group FSI Balance","0","en","CUSTOMER:Group FSI/Group Savings/Group FSI Balance"<endrec>
+"Group FSI Deposit","0","en","CUSTOMER:Group FSI/Group Savings/Group FSI Deposit"<endrec>
+"Group FSI Mini Statement","0","en","CUSTOMER:Group FSI/Group Savings/Group FSI Mini Statement"<endrec>
+"FSI Withdraw For Group","0","en","CUSTOMER:Group FSI/Group Savings/Group FSI Withdraw"<endrec>
+"Terms and Conditions","0","en","CUSTOMER:Group FSI/Group Savings/Terms and Conditions"<endrec>
+"Group Member","0","en","CUSTOMER:Group Member"<endrec>
+"Confirm Group Member ship","0","en","CUSTOMER:Group Member/Confirm Group Member ship"<endrec>
+"Apply Group ATM Deposit Voucher","0","en","CUSTOMER:Group/Apply Voucher/Apply Group ATM Deposit Voucher"<endrec>
+"Apply Group ATM Withdraw Voucher","0","en","CUSTOMER:Group/Apply Voucher/Apply Group ATM Withdraw Voucher"<endrec>
+"Standing Order","0","en","CUSTOMER:Group/Standing Order"<endrec>
+"Cancel Standing Order Schedule","0","en","CUSTOMER:Group/Standing Order/Cancel Standing Order Schedule"<endrec>
+"Create Standing Order Schedule","0","en","CUSTOMER:Group/Standing Order/Create Standing Order Schedule"<endrec>
+"Pay Bill","0","en","CUSTOMER:Group/Standing Order/Create Standing Order Schedule/Pay Bill"<endrec>
+"Query Standing Order Schedule List","0","en","CUSTOMER:Group/Standing Order/Query Standing Order Schedule List"<endrec>
+"View Standing Order Schedule","0","en","CUSTOMER:Group/Standing Order/View Standing Order Schedule"<endrec>
+"Group G2G Transfer With Prevalidation","0","en","CUSTOMER:Group/Transactions/Group G2G Transfer With Prevalidation"<endrec>
+"Group Transfer from Bank to M-Pesa","0","en","CUSTOMER:Group/Transactions/Group Transfer from Bank to M-Pesa"<endrec>
+"Group Transfer from M-Pesa to Bank","0","en","CUSTOMER:Group/Transactions/Group Transfer from M-Pesa to Bank"<endrec>
+"Initiate Reversal Request","0","en","CUSTOMER:Initiate Reversal Request"<endrec>
+"Initiate Reversal Transaction","0","en","CUSTOMER:Initiate Reversal Transaction"<endrec>
+"International Money Transfer","0","en","CUSTOMER:International Money Transfer"<endrec>
+"Request Quote","0","en","CUSTOMER:International Money Transfer/Request Quote"<endrec>
+"Transfer Abroad","0","en","CUSTOMER:International Money Transfer/Transfer Abroad"<endrec>
+"KCB","0","en","CUSTOMER:KCB"<endrec>
+"Activate Account","0","en","CUSTOMER:KCB/Activate Account"<endrec>
+"Deposit and Withdraw","0","en","CUSTOMER:KCB/Deposit and Withdraw"<endrec>
+"Send to Bank","0","en","CUSTOMER:KCB/Deposit and Withdraw/Send to Bank"<endrec>
+"Withdraw from Bank","0","en","CUSTOMER:KCB/Deposit and Withdraw/Withdraw from Bank"<endrec>
+"Loan","0","en","CUSTOMER:KCB/Loan"<endrec>
+"KCB Loan Request","0","en","CUSTOMER:KCB/Loan/KCB Loan Request"<endrec>
+"Pay Loan","0","en","CUSTOMER:KCB/Loan/Pay Loan"<endrec>
+"Query","0","en","CUSTOMER:KCB/Query"<endrec>
+"Bank Balance","0","en","CUSTOMER:KCB/Query/Bank Balance"<endrec>
+"Eligible Credit Limit","0","en","CUSTOMER:KCB/Query/Eligible Credit Limit"<endrec>
+"FSI Mini Statement","0","en","CUSTOMER:KCB/Query/FSI Mini Statement"<endrec>
+"Savings","0","en","CUSTOMER:KCB/Savings"<endrec>
+"Fixed Deposit","0","en","CUSTOMER:KCB/Savings/Fixed Deposit"<endrec>
+"Save","0","en","CUSTOMER:KCB/Savings/Fixed Deposit/Save"<endrec>
+"Termination","0","en","CUSTOMER:KCB/Savings/Fixed Deposit/Termination"<endrec>
+"Target Savings Account","0","en","CUSTOMER:KCB/Savings/Target Savings Account"<endrec>
+"Open Account","0","en","CUSTOMER:KCB/Savings/Target Savings Account/Open Account"<endrec>
+"Save","0","en","CUSTOMER:KCB/Savings/Target Savings Account/Save"<endrec>
+"Termination","0","en","CUSTOMER:KCB/Savings/Target Savings Account/Termination"<endrec>
+"Lipa na M-PESA","0","en","CUSTOMER:Lipa na M-PESA"<endrec>
+"Buy Goods and Services","0","en","CUSTOMER:Lipa na M-PESA/Buy Goods and Services"<endrec>
+"Customer Query 3rd Bill And Payment","0","en","CUSTOMER:Lipa na M-PESA/Customer Query 3rd Bill And Payment"<endrec>
+"Customer Query 3rd Buy Goods and payment","0","en","CUSTOMER:Lipa na M-PESA/Customer Query 3rd Buy Goods and payment"<endrec>
+"Pay Bill","0","en","CUSTOMER:Lipa na M-PESA/Pay Bill"<endrec>
+"Loyalty","0","en","CUSTOMER:Loyalty"<endrec>
+"Buy Goods earn Loyalty","0","en","CUSTOMER:Loyalty/Buy Goods earn Loyalty"<endrec>
+"Query Customer Points","0","en","CUSTOMER:Loyalty/Query Customer Points"<endrec>
+"Query Group Loyalty Account","0","en","CUSTOMER:Loyalty/Query Group Loyalty Account"<endrec>
+"Query Group Loyalty Statement","0","en","CUSTOMER:Loyalty/Query Group Loyalty Statement"<endrec>
+"Query Loyalty Account","0","en","CUSTOMER:Loyalty/Query Loyalty Account"<endrec>
+"Query Loyalty Statement","0","en","CUSTOMER:Loyalty/Query Loyalty Statement"<endrec>
+"Redeem Loyalty","0","en","CUSTOMER:Loyalty/Redeem Loyalty"<endrec>
+"Transfer Loyalty Points","0","en","CUSTOMER:Loyalty/Transfer Loyalty Points"<endrec>
+"M-Kesho","0","en","CUSTOMER:M-Kesho"<endrec>
+"Bank Balance","0","en","CUSTOMER:M-Kesho/Bank Balance"<endrec>
+"Buy Insurance","0","en","CUSTOMER:M-Kesho/Buy Insurance"<endrec>
+"Buy Insurance","0","en","CUSTOMER:M-Kesho/Buy Insurance/Buy Insurance"<endrec>
+"Terms and Conditions","0","en","CUSTOMER:M-Kesho/Buy Insurance/Terms and Conditions"<endrec>
+"Deposit and Withdraw","0","en","CUSTOMER:M-Kesho/Deposit and Withdraw"<endrec>
+"Send to Bank","0","en","CUSTOMER:M-Kesho/Deposit and Withdraw/Send to Bank"<endrec>
+"Withdraw from Bank","0","en","CUSTOMER:M-Kesho/Deposit and Withdraw/Withdraw from Bank"<endrec>
+"Insurance","0","en","CUSTOMER:M-Kesho/Insurance"<endrec>
+"Request Insurance","0","en","CUSTOMER:M-Kesho/Insurance/Request Insurance"<endrec>
+"Terms and Conditions","0","en","CUSTOMER:M-Kesho/Insurance/Terms and Conditions"<endrec>
+"Loan","0","en","CUSTOMER:M-Kesho/Loan"<endrec>
+"Request Loan","0","en","CUSTOMER:M-Kesho/Loan/Request Loan"<endrec>
+"Request Loan","0","en","CUSTOMER:M-Kesho/Loan/Request Loan/Request Loan"<endrec>
+"Terms and Conditions","0","en","CUSTOMER:M-Kesho/Loan/Request Loan/Terms and Conditions"<endrec>
+"Mini Statement","0","en","CUSTOMER:M-Kesho/Mini Statement"<endrec>
+"Query","0","en","CUSTOMER:M-Kesho/Query"<endrec>
+"Bank Balance","0","en","CUSTOMER:M-Kesho/Query/Bank Balance"<endrec>
+"Mini Statement","0","en","CUSTOMER:M-Kesho/Query/Mini Statement"<endrec>
+"Send to Bank","0","en","CUSTOMER:M-Kesho/Send to Bank"<endrec>
+"Withdraw from Bank","0","en","CUSTOMER:M-Kesho/Withdraw from Bank"<endrec>
+"M-Shwari","0","en","CUSTOMER:M-Shwari"<endrec>
+"Terms and Conditions","0","en","CUSTOMER:M-Shwari for Group/Terms and Conditions"<endrec>
+"Activate Account","0","en","CUSTOMER:M-Shwari/Activate"<endrec>
+"Activate Account","0","en","CUSTOMER:M-Shwari/Activate Account"<endrec>
+"Loan","0","en","CUSTOMER:M-Shwari/Loan"<endrec>
+"Check Loan Limit","0","en","CUSTOMER:M-Shwari/Loan/Check Loan Limit"<endrec>
+"Pay Loan From M-PESA","0","en","CUSTOMER:M-Shwari/Loan/Pay Loan"<endrec>
+"Pay Loan from M-Shwari","0","en","CUSTOMER:M-Shwari/Loan/Pay Loan from Savings"<endrec>
+"Request Loan","0","en","CUSTOMER:M-Shwari/Loan/Request Loan"<endrec>
+"Request Loan","0","en","CUSTOMER:M-Shwari/Loan/Request Loan/Request Loan"<endrec>
+"Terms and Conditions","0","en","CUSTOMER:M-Shwari/Loan/Request Loan/Terms and Conditions"<endrec>
+"Request Loan","0","en","CUSTOMER:M-Shwari/Loan/Request Loan11/Request Loan"<endrec>
+"M-Shwari Balance","0","en","CUSTOMER:M-Shwari/M-Shwari Balance"<endrec>
+"Mini Statement","0","en","CUSTOMER:M-Shwari/Mini Statement"<endrec>
+"Deposit Account","0","en","CUSTOMER:M-Shwari/Mini Statement/Deposit Account"<endrec>
+"Loan","0","en","CUSTOMER:M-Shwari/Mini Statement/Loan"<endrec>
+"Loan Limit","0","en","CUSTOMER:M-Shwari/Mini Statement/Loan Limit"<endrec>
+"Query","0","en","CUSTOMER:M-Shwari/Query"<endrec>
+"M-Shwari Balance","0","en","CUSTOMER:M-Shwari/Query/Bank Balance"<endrec>
+"FSI Mini Statement","0","en","CUSTOMER:M-Shwari/Query/FSI Mini Statement"<endrec>
+"Check Loan Limit","0","en","CUSTOMER:M-Shwari/Query/Loan Limit"<endrec>
+"Loan Mini Statement","0","en","CUSTOMER:M-Shwari/Query/Loan Mini Statement"<endrec>
+"Send to M-Shwari","0","en","CUSTOMER:M-Shwari/Send to M-Shwari"<endrec>
+"Terms and Conditions","0","en","CUSTOMER:M-Shwari/Terms and Condition"<endrec>
+"Terms and Conditions","0","en","CUSTOMER:M-Shwari/Terms and Conditions"<endrec>
+"Terms and Conditions CONTENTs","0","en","CUSTOMER:M-Shwari/Terms and Conditions/Terms and Conditions CONTENTs"<endrec>
+"Terms and Conditions Contents","0","en","CUSTOMER:M-Shwari/Terms and Conditions/Terms and Conditions Contents"<endrec>
+"Withdraw from M-Shwari","0","en","CUSTOMER:M-Shwari/Withdraw from M-Shwari"<endrec>
+"My Account","0","en","CUSTOMER:My Account"<endrec>
+"Call Support","0","en","CUSTOMER:My Account/Call Support"<endrec>
+"Change PIN","0","en","CUSTOMER:My Account/Change PIN"<endrec>
+"Change PIN With Prevalidation","0","en","CUSTOMER:My Account/Change PIN With Prevalidation"<endrec>
+"Change PIN","0","en","CUSTOMER:My Account/Change Pin"<endrec>
+"Contact Lookup","0","en","CUSTOMER:My Account/Contact Lookup"<endrec>
+"Add Beneficiary","0","en","CUSTOMER:My Account/Contact Lookup/Add Beneficiary"<endrec>
+"Add Customer Beneficiary","0","en","CUSTOMER:My Account/Contact Lookup/Add Beneficiary/Add Customer Beneficiary"<endrec>
+"Add Group Beneficiary","0","en","CUSTOMER:My Account/Contact Lookup/Add Beneficiary/Add Group Beneficiary"<endrec>
+"Add Organization Beneficiary","0","en","CUSTOMER:My Account/Contact Lookup/Add Beneficiary/Add Organization Beneficiary"<endrec>
+"Delete Beneficiary","0","en","CUSTOMER:My Account/Contact Lookup/Delete Beneficiary"<endrec>
+"Customer Query 3rd Bill","0","en","CUSTOMER:My Account/Customer Query 3rd Bill"<endrec>
+"Customer Query 3rd Buy Goods","0","en","CUSTOMER:My Account/Customer Query 3rd Buy Goods"<endrec>
+"Language","0","en","CUSTOMER:My Account/Language"<endrec>
+"MiniStatement","0","en","CUSTOMER:My Account/MiniStatement"<endrec>
+"Secret Word","0","en","CUSTOMER:My Account/Secret Word"<endrec>
+"Show Balance","0","en","CUSTOMER:My Account/Show Balance"<endrec>
+"Update Customer Menu","0","en","CUSTOMER:My Account/Update Customer Menu"<endrec>
+"Organization Loan","0","en","CUSTOMER:Organization Loan"<endrec>
+"Overdraft","0","en","CUSTOMER:Overdraft"<endrec>
+"Activate OD","0","en","CUSTOMER:Overdraft/Activate OD"<endrec>
+"ODRepayment","0","en","CUSTOMER:Overdraft/ODRepayment"<endrec>
+"Query OD","0","en","CUSTOMER:Overdraft/Query OD"<endrec>
+"Pay bill With Prevalidation","0","en","CUSTOMER:Pay bill With Prevalidation"<endrec>
+"Pre-Validation","0","en","CUSTOMER:Pre-Validation"<endrec>
+"Send Money Prevalidation","0","en","CUSTOMER:Pre-Validation/Send Money Prevalidation"<endrec>
+"Buy Airtime With Prevalidation","0","en","CUSTOMER:Purchase Airtime/Buy Airtime With Prevalidation"<endrec>
+"Buy Airtime from Bank Account","0","en","CUSTOMER:Purchase Airtime/Buy Airtime from Bank Account"<endrec>
+"Query an Account Balance","0","en","CUSTOMER:Query an Account Balance"<endrec>
+"Reminder","0","en","CUSTOMER:Reminder"<endrec>
+"Cancel Reminder Schedule","0","en","CUSTOMER:Reminder/Cancel Reminder Schedule"<endrec>
+"Create Reminder Schedule","0","en","CUSTOMER:Reminder/Create Reminder Schedule"<endrec>
+"Create Customer Buy Airtime Reminder Schedule","0","en","CUSTOMER:Reminder/Create Reminder Schedule/Buy Airtime"<endrec>
+"Create Customer IMT Transfer Abroad Reminder Schedule","0","en","CUSTOMER:Reminder/Create Reminder Schedule/IMT Transfer Abroad"<endrec>
+"Create Customer M-Kesho Withdraw Reminder Schedule","0","en","CUSTOMER:Reminder/Create Reminder Schedule/M-Kesho Withdraw"<endrec>
+"Create Customer M-Shwari Withdraw Reminder Schedule","0","en","CUSTOMER:Reminder/Create Reminder Schedule/M-Shwari Withdraw"<endrec>
+"Create Customer Pay Bill Reminder Schedule","0","en","CUSTOMER:Reminder/Create Reminder Schedule/Pay Bill"<endrec>
+"Create Customer Send Money Reminder Schedule","0","en","CUSTOMER:Reminder/Create Reminder Schedule/Send Money"<endrec>
+"Transfer From M-PESA To Bank","0","en","CUSTOMER:Reminder/Create Reminder Schedule/Transfer From M-PESA To Bank"<endrec>
+"Transfer from Bank To M-M-PESA2","0","en","CUSTOMER:Reminder/Create Reminder Schedule/Transfer from Bank To M-M-PESA2"<endrec>
+"Transfer from Bank To M-PESA","0","en","CUSTOMER:Reminder/Create Reminder Schedule/Transfer from Bank To M-PESA"<endrec>
+"Initiate Customer Transaction by Reminder","0","en","CUSTOMER:Reminder/Initiate Customer Transaction by Reminder"<endrec>
+"View Reminder Schedule Details","0","en","CUSTOMER:Reminder/View Reminder Schedule Details"<endrec>
+"View Reminder Schedules","0","en","CUSTOMER:Reminder/View Reminder Schedules"<endrec>
+"Saving Plan","0","en","CUSTOMER:Saving Plan"<endrec>
+"Subscribe Saving Plan For Customer","0","en","CUSTOMER:Saving Plan/Subscribe Saving Plan For Customer"<endrec>
+"Subscribe Saving Plan For Group","0","en","CUSTOMER:Saving Plan/Subscribe Saving Plan For Group"<endrec>
+"UnSubscribe Saving Plan For Customer","0","en","CUSTOMER:Saving Plan/UnSubscribe Saving Plan For Customer"<endrec>
+"UnSubscribe Saving Plan For Group","0","en","CUSTOMER:Saving Plan/UnSubscribe Saving Plan For Group"<endrec>
+"Send Money off-Net","0","en","CUSTOMER:Send Money off-Net"<endrec>
+"Send Money via m-pesa With Prevalidation","0","en","CUSTOMER:Send Money/Send Money via m-pesa With Prevalidation"<endrec>
+"Service Purchase","0","en","CUSTOMER:Service Purchase"<endrec>
+"Standing Order","0","en","CUSTOMER:Standing Order"<endrec>
+"Cancel Standing Order Schedule","0","en","CUSTOMER:Standing Order/Cancel Standing Order Schedule"<endrec>
+"Create Standing Order Schedule","0","en","CUSTOMER:Standing Order/Create Standing Order Schedule"<endrec>
+"Query Standing Order Schedule List","0","en","CUSTOMER:Standing Order/Query Standing Order Schedule List"<endrec>
+"View Standing Order Schedule","0","en","CUSTOMER:Standing Order/View Standing Order Schedule"<endrec>
+"Third Party Bill Info","0","en","CUSTOMER:Third Party Bill Info"<endrec>
+"Customer Query 3rd Bill","0","en","CUSTOMER:Third Party Bill Info/Customer Query 3rd Bill"<endrec>
+"Customer Query 3rd Bill And Payment","0","en","CUSTOMER:Third Party Bill Info/Customer Query 3rd Bill And Payment"<endrec>
+"Group Query 3rd Bill And Payment","0","en","CUSTOMER:Third Party Bill Info/Group Query 3rd Bill And Payment"<endrec>
+"Two Part Payment","0","en","CUSTOMER:Two Part Payment"<endrec>
+"Group Two Part Buy Goods","0","en","CUSTOMER:Two Part Payment/Group Two Part Buy Goods"<endrec>
+"Group Two Part Payment Confirm","0","en","CUSTOMER:Two Part Payment/Group Two Part Payment Confirm"<endrec>
+"Two Part Buy Goods","0","en","CUSTOMER:Two Part Payment/Two Part Buy Goods"<endrec>
+"Two Part Payment Confirm","0","en","CUSTOMER:Two Part Payment/Two Part Payment Confirm"<endrec>
+"Two factor about","0","en","CUSTOMER:Two factor about"<endrec>
+"Customer Withdrawal at Agent Till with 2 factor first name","0","en","CUSTOMER:Two factor about/Customer Withdrawal at Agent Till with 2 factor first name"<endrec>
+"Pay Bill 2 factor cert Type AML","0","en","CUSTOMER:Two factor about/Pay Bill 2 factor cert Type AML"<endrec>
+"Send Money 2 factor DOB","0","en","CUSTOMER:Two factor about/Send Money 2 factor DOB"<endrec>
+"Send Money 2 factor ID Type","0","en","CUSTOMER:Two factor about/Send Money 2 factor ID Type"<endrec>
+"Send Money 2 factor Last Name","0","en","CUSTOMER:Two factor about/Send Money 2 factor Last Name"<endrec>
+"Send Money 2 factor Last Name1","0","en","CUSTOMER:Two factor about/Send Money 2 factor Last Name1"<endrec>
+"Send Money 2 factor cert Type","0","en","CUSTOMER:Two factor about/Send Money 2 factor cert Type"<endrec>
+"Send Money with auto reference","0","en","CUSTOMER:Two factor about/Send Money with auto reference"<endrec>
+"Send Money with user input reference","0","en","CUSTOMER:Two factor about/Send Money with user input reference"<endrec>
+"Update Customer Menu","0","en","CUSTOMER:Update Customer Menu"<endrec>
+"Voucher","0","en","CUSTOMER:Voucher"<endrec>
+"Apply ATM Voucher to Group","0","en","CUSTOMER:Voucher/Apply ATM Voucher to Group"<endrec>
+"Apply OTC Voucher","0","en","CUSTOMER:Voucher/Apply OTC Voucher"<endrec>
+"Apply Ticket Voucher","0","en","CUSTOMER:Voucher/Apply Ticket Voucher"<endrec>
+"Apply/Issue Voucher","0","en","CUSTOMER:Voucher/Apply/Issue Voucher"<endrec>
+"Customer request Buy Goods Voucher","0","en","CUSTOMER:Voucher/Customer request Buy Goods Voucher"<endrec>
+"Issue School Dinner Voucher","0","en","CUSTOMER:Voucher/Issue School Dinner Voucher"<endrec>
+"Issue School Dinner Voucher (1)","0","en","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (1)"<endrec>
+"Issue School Dinner Voucher (2)","0","en","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (2)"<endrec>
+"Issue School Dinner Voucher (3)","0","en","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (3)"<endrec>
+"Issue School Dinner Voucher (4)","0","en","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (4)"<endrec>
+"Issue School Dinner Voucher (5)","0","en","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (5)"<endrec>
+"Issue School Dinner Voucher (6)","0","en","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (6)"<endrec>
+"Redeem Token","0","en","CUSTOMER:Voucher/Redeem Token"<endrec>
+"Redeem Voucher","0","en","CUSTOMER:Voucher/Redeem Voucher"<endrec>
+"Send Token","0","en","CUSTOMER:Voucher/Send Token"<endrec>
+"Withdraw Cash","0","en","CUSTOMER:Withdraw Cash"<endrec>
+"From ATM","0","en","CUSTOMER:Withdraw Cash/From ATM"<endrec>
+"From Agent","0","en","CUSTOMER:Withdraw Cash/From Agent"<endrec>
+"Request Withdrawal Voucher","0","en","CUSTOMER:Withdraw Cash/Request Withdrawal Voucher"<endrec>
+"Apply for a Withdrawal Voucher","0","en","CUSTOMER:Withdraw Money/Apply for a Withdrawal Voucher"<endrec>
+"Withdraw Money","0","en","CUSTOMER:Withdraw Money/Withdraw Money"<endrec>
+"Withdraw e-Money","0","en","CUSTOMER:Withdraw e-Money"<endrec>
+"Online Withdraw e-Money","0","en","CUSTOMER:Withdraw e-Money/Online Withdraw e-Money"<endrec>
+"Transfer from M-Pesa to Bank","0","en","CUSTOMER:Withdraw e-Money/Transfer from M-Pesa to Bank"<endrec>
+"Withdraw e-Money","0","en","CUSTOMER:Withdraw e-Money/Withdraw e-Money"<endrec>
+"group","0","en","CUSTOMER:group"<endrec>
+"Apply Group Voucher","0","en","CUSTOMER:group/Apply Group Voucher"<endrec>
+"Apply Group ATM Deposit Voucher(Value)","0","en","CUSTOMER:group/Apply Group Voucher/Apply Group ATM Deposit Voucher(Value)"<endrec>
+"Group ATM Deposit Voucher(Valueless)","0","en","CUSTOMER:group/Apply Group Voucher/Apply Group ATM Deposit Voucher(Valueless)"<endrec>
+"Group ATM Withdraw Voucher(value)","0","en","CUSTOMER:group/Apply Group Voucher/Apply Group ATM Withdraw Voucher(value)"<endrec>
+"Apply Group ATM Withdraw Voucher(valueless)","0","en","CUSTOMER:group/Apply Group Voucher/Apply Group ATM Withdraw Voucher(valueless)"<endrec>
+"Apply Group Buy Goods Voucher","0","en","CUSTOMER:group/Apply Group Voucher/Apply Group Buy Goods Voucher"<endrec>
+"Customer Apply Group Deposit Voucher","0","en","CUSTOMER:group/Apply Group Voucher/Apply Group Deposit Voucher"<endrec>
+"Apply Group Withdraw Voucher","0","en","CUSTOMER:group/Apply Group Voucher/Apply Group Withdraw Voucher"<endrec>
+"Cancel Standing Order Schedule by group","0","en","CUSTOMER:group/Cancel Standing Order Schedule by group"<endrec>
+"Create Standing Order Schedule For Pay Bill  By Group","0","en","CUSTOMER:group/Create Standing Order Schedule For Pay Bill  By Group"<endrec>
+"Group operation","0","en","CUSTOMER:group/Group operation"<endrec>
+"Add member for Group","0","en","CUSTOMER:group/Group operation/Add member for Group"<endrec>
+"Change member Role","0","en","CUSTOMER:group/Group operation/Change member Role"<endrec>
+"Create Group","0","en","CUSTOMER:group/Group operation/Create Group"<endrec>
+"Group Query 3rd Buy Goods","0","en","CUSTOMER:group/Group operation/Group Query 3rd Buy Goods"<endrec>
+"GroupQuery 3rd Bill","0","en","CUSTOMER:group/Group operation/GroupQuery 3rd Bill"<endrec>
+"Query Group Account Balance","0","en","CUSTOMER:group/Group operation/Query Group Account Balance"<endrec>
+"Query Group List","0","en","CUSTOMER:group/Group operation/Query Group List"<endrec>
+"Query Group Mini Statement","0","en","CUSTOMER:group/Group operation/Query Group Mini Statement"<endrec>
+"Remove member for Group","0","en","CUSTOMER:group/Group operation/Remove member for Group"<endrec>
+"Transactions","0","en","CUSTOMER:group/Transactions"<endrec>
+"Approve Transaction","0","en","CUSTOMER:group/Transactions/Approve Transaction"<endrec>
+"Group P2G Transfer","0","en","CUSTOMER:group/Transactions/Customer transfer to Group"<endrec>
+"Group Pay Bill","0","en","CUSTOMER:group/Transactions/Group Pay Bill"<endrec>
+"Group Qeury 3rd Bill and Payment","0","en","CUSTOMER:group/Transactions/Group Qeury 3rd Bill and Payment"<endrec>
+"Group Query 3rd Buy Goods and Payment","0","en","CUSTOMER:group/Transactions/Group Query 3rd Buy Goods and Payment"<endrec>
+"Group Transfer from Bank to M-Pesa","0","en","CUSTOMER:group/Transactions/Group Transfer from Bank to M-Pesa"<endrec>
+"Group Transfer from M-Pesa to Bank","0","en","CUSTOMER:group/Transactions/Group Transfer from M-Pesa to Bank"<endrec>
+"Group Transfer to Group","0","en","CUSTOMER:group/Transactions/Group Transfer to Group"<endrec>
+"Group transfer to group member","0","en","CUSTOMER:group/Transactions/Group transfer to group member"<endrec>
+"SZ_Approval Test","0","en","CUSTOMER:group/Transactions/SZ_Approval Test"<endrec>
+"View Standing Order Schedule By Group","0","en","CUSTOMER:group/View Standing Order Schedule By Group"<endrec>
+"send money","0","en","CUSTOMER:send money"<endrec>
+"send money","0","en","CUSTOMER:send money/send money"<endrec>
+"sm100","0","en","CUSTOMER:send money/sm100"<endrec>
+"Org Apply ATM Deposit Voucher","0","en","TILL:ATM Deposit Voucher"<endrec>
+"Org Apply ATM Withdrawal Voucher","0","en","TILL:ATM Withdraw Voucher"<endrec>
+"Activate Till","0","en","TILL:Activate Till"<endrec>
+"Active Till","0","en","TILL:Active Till"<endrec>
+"Add Group Member","0","en","TILL:Add Group Member"<endrec>
+"Administration","0","en","TILL:Administration"<endrec>
+"Change Frontliner Status","0","en","TILL:Administration/Change Frontliner Status"<endrec>
+"Change PIN for Dompetku","0","en","TILL:Administration/Change PIN for Dompetku"<endrec>
+"Create Frontliner","0","en","TILL:Administration/Create Frontliner"<endrec>
+"Register Customer for Dompetku","0","en","TILL:Administration/Register Customer for Dompetku"<endrec>
+"Reset Dompetku PIN","0","en","TILL:Administration/Reset Dompetku PIN"<endrec>
+"Reset Operator PIN","0","en","TILL:Administration/Reset Operator PIN"<endrec>
+"Agent Upgrade Customer","0","en","TILL:Agent Upgrade Customer"<endrec>
+"Apply Redeem Goods Voucher","0","en","TILL:Apply Redeem Goods Voucher"<endrec>
+"B2B","0","en","TILL:B2B"<endrec>
+"B2B Pay bill via org float","0","en","TILL:B2B/B2B Pay bill via org float"<endrec>
+"Bank Account","0","en","TILL:Bank Account"<endrec>
+"Create Bank Account","0","en","TILL:Bank Account/Create Bank Account"<endrec>
+"Delete Bank Account","0","en","TILL:Bank Account/Delete Bank Account"<endrec>
+"Online Cash In","0","en","TILL:Bank Account/Online Cash In"<endrec>
+"Query Bank Account","0","en","TILL:Bank Account/Query Bank Account"<endrec>
+"Set Default Bank Account","0","en","TILL:Bank Account/Set Default Bank Account"<endrec>
+"Bank Card Lookup","0","en","TILL:Bank Card Lookup"<endrec>
+"Create Bank Card Lookup","0","en","TILL:Bank Card Lookup/Create Bank Card Lookup"<endrec>
+"Delete Bank Card Lookup","0","en","TILL:Bank Card Lookup/Delete Bank Card Lookup"<endrec>
+"Query Bank Card Lookup","0","en","TILL:Bank Card Lookup/Query Bank Card Lookup"<endrec>
+"Bill Payment","0","en","TILL:Bill Payment"<endrec>
+"Dompetku Bill Payment","0","en","TILL:Bill Payment/Dompetku Bill Payment"<endrec>
+"Bundle","0","en","TILL:Bundle"<endrec>
+"Query My Bundle Details","0","en","TILL:Bundle/Query My Bundle Details"<endrec>
+"Query My Bundles","0","en","TILL:Bundle/Query My Bundles"<endrec>
+"Return Main Menu","0","en","TILL:Bundle/Return Main Menu"<endrec>
+"Subscribe Bundle","0","en","TILL:Bundle/Subscribe Bundle"<endrec>
+"Subscribe Bundle for Customer","0","en","TILL:Bundle/Subscribe Bundle for Customer"<endrec>
+"View Bundle Details","0","en","TILL:Bundle/View Bundle Details"<endrec>
+"View Bundles","0","en","TILL:Bundle/View Bundles"<endrec>
+"Business Deposit","0","en","TILL:Business Deposit"<endrec>
+"Applies a voucher for business deposit","0","en","TILL:Business Deposit/Applies a voucher for business deposit"<endrec>
+"Initiates business deposit","0","en","TILL:Business Deposit/Initiates business deposit"<endrec>
+"Redeems a business deposit voucher","0","en","TILL:Business Deposit/Redeems a business deposit voucher"<endrec>
+"Business Pay Bill","0","en","TILL:Business Pay Bill"<endrec>
+"Business Withdraw","0","en","TILL:Business Withdraw"<endrec>
+"Applies a voucher for business withdraw","0","en","TILL:Business Withdraw/Applies a voucher for business withdraw"<endrec>
+"Business Withdrawal","0","en","TILL:Business Withdraw/Business Withdrawal"<endrec>
+"Initiates Business Withdrawal","0","en","TILL:Business Withdraw/Initiates business withdraw"<endrec>
+"Redeems a business withdraw voucher","0","en","TILL:Business Withdraw/Redeems a business withdraw voucher"<endrec>
+"CCH Request Transaction Reversal","0","en","TILL:CCH Request Transaction Reversal"<endrec>
+"CCH for Customer","0","en","TILL:CCH for Customer"<endrec>
+"CCH Add Group Member","0","en","TILL:CCH for Customer/CCH Add Group Member"<endrec>
+"CCH Change Customer KYC","0","en","TILL:CCH for Customer/CCH Change Customer KYC"<endrec>
+"CCH Change Group Member Role","0","en","TILL:CCH for Customer/CCH Change Group Member Role"<endrec>
+"CCH Create Group","0","en","TILL:CCH for Customer/CCH Create Group"<endrec>
+"CCH Identify Customer","0","en","TILL:CCH for Customer/CCH Identify Customer"<endrec>
+"CCH Remove Group Member","0","en","TILL:CCH for Customer/CCH Remove Group Member"<endrec>
+"CCH Change OrgOperator KYC","0","en","TILL:CCH for Operator/CCH Change OrgOperator KYC"<endrec>
+"Card Actions","0","en","TILL:Card Actions"<endrec>
+"Activate Card","0","en","TILL:Card Actions/Activate Card"<endrec>
+"Org Activate Card","0","en","TILL:Card Actions/Activate Card/Org Activate Card"<endrec>
+"Cancel Card","0","en","TILL:Card Actions/Cancel Card"<endrec>
+"Org Cancel Card","0","en","TILL:Card Actions/Cancel Card/Org Cancel Card"<endrec>
+"Register Card","0","en","TILL:Card Actions/Register Card"<endrec>
+"Org Register Card","0","en","TILL:Card Actions/Register Card/Org Register Card"<endrec>
+"Change Organization Advertisement","0","en","TILL:Change Organization Advertisement"<endrec>
+"Create Lite Customer","0","en","TILL:Create Lite Customer"<endrec>
+"Create Lite Customer","0","en","TILL:Create Lite Customer/Create Lite Customer"<endrec>
+"Create Loyalty Consumer Account","0","en","TILL:Create Loyalty Consumer Account"<endrec>
+"Create Org Loyalty Account","0","en","TILL:Create Org Loyalty Account"<endrec>
+"Customer Services","0","en","TILL:Customer Services"<endrec>
+"Collect DoB","0","en","TILL:Customer Services/Collect DoB"<endrec>
+"Identify Customer","0","en","TILL:Customer Services/Identify Customer"<endrec>
+"Issue Refund","0","en","TILL:Customer Services/Issue Refund"<endrec>
+"Reverse Transaction","0","en","TILL:Customer Services/Request Reversal"<endrec>
+"Send New PIN","0","en","TILL:Customer Services/Send Start Key"<endrec>
+"Unlock PIN","0","en","TILL:Customer Services/Unlock PIN"<endrec>
+"Update Customer KYC","0","en","TILL:Customer Services/Update Customer KYC"<endrec>
+"Deposit","0","en","TILL:Deposit"<endrec>
+"Deposit Money 2 Factor First Name","0","en","TILL:Deposit Money 2 Factor First Name"<endrec>
+"Deposit Money 2 facor second name","0","en","TILL:Deposit Money 2 Factor First Name/Deposit Money 2 facor second name"<endrec>
+"Deposit Money With Prevalidation","0","en","TILL:Deposit Money/Deposit Money With Prevalidation"<endrec>
+"Deposit e-Money","0","en","TILL:Deposit e-Money"<endrec>
+"Transfer from Bank to M-Pesa","0","en","TILL:Deposit e-Money/Transfer from Bank to M-Pesa"<endrec>
+"Direct Debit","0","en","TILL:Direct Debit"<endrec>
+"Activate Direct Debit","0","en","TILL:Direct Debit/Activate Direct Debit"<endrec>
+"Organization Activate Direct Debit Mandate","0","en","TILL:Direct Debit/Activate Direct Debit/Organization Activate Direct Debit Mandate"<endrec>
+"Cancel Direct Debit Mandate","0","en","TILL:Direct Debit/Cancel Direct Debit Mandate"<endrec>
+"Cancel Direct Debit Mandate By Payee","0","en","TILL:Direct Debit/Cancel Direct Debit Mandate/Cancel Direct Debit Mandate By Payee"<endrec>
+"Cancel Direct Debit Mandate By Payer","0","en","TILL:Direct Debit/Cancel Direct Debit Mandate/Cancel Direct Debit Mandate By Payer"<endrec>
+"Create Direct Debit Mandate","0","en","TILL:Direct Debit/Create Direct Debit Mandate"<endrec>
+"Create Direct Debit Mandate by Organization","0","en","TILL:Direct Debit/Create Direct Debit Mandate/Create Direct Debit Mandate by Organization"<endrec>
+"Create Direct Debit Mandate by Payee","0","en","TILL:Direct Debit/Create Direct Debit Mandate/Create Direct Debit Mandate by Payee"<endrec>
+"Edit Direct Debit Mandate","0","en","TILL:Direct Debit/Edit Direct Debit Mandate"<endrec>
+"Edit Direct Debit Mandate By Payee","0","en","TILL:Direct Debit/Edit Direct Debit Mandate/Edit Direct Debit Mandate By Payee"<endrec>
+"Edit Direct Debit Mandate By Payer","0","en","TILL:Direct Debit/Edit Direct Debit Mandate/Edit Direct Debit Mandate By Payer"<endrec>
+"Initiate Direct Debit Transaction","0","en","TILL:Direct Debit/Initiate Direct Debit Transaction"<endrec>
+"Reactivate Direct Debit Mandate","0","en","TILL:Direct Debit/Reactivate Direct Debit Mandate"<endrec>
+"Reactivate Direct Debit Mandate By Payee","0","en","TILL:Direct Debit/Reactivate Direct Debit Mandate/Reactivate Direct Debit Mandate By Payee"<endrec>
+"Reactivate Direct Debit Mandate By Payer","0","en","TILL:Direct Debit/Reactivate Direct Debit Mandate/Reactivate Direct Debit Mandate By Payer"<endrec>
+"View Direct Debit Mandate","0","en","TILL:Direct Debit/View Direct Debit Mandate"<endrec>
+"View Direct Debit Mandate By Payee","0","en","TILL:Direct Debit/View Direct Debit Mandate/View Direct Debit Mandate By Payee"<endrec>
+"View Direct Debit Mandate By Payer","0","en","TILL:Direct Debit/View Direct Debit Mandate/View Direct Debit Mandate By Payer"<endrec>
+"Dompetku Allocation","0","en","TILL:Dompetku Allocation"<endrec>
+"Dompetku Allocation Request By Canvasser","0","en","TILL:Dompetku Allocation/Dompetku Allocation Request By Canvasser"<endrec>
+"Dompetku Allocation Request By Sub Org","0","en","TILL:Dompetku Allocation/Dompetku Allocation Request By Sub Org"<endrec>
+"Dompetku Allocation To Sub Org","0","en","TILL:Dompetku Allocation/Dompetku Allocation To Sub Org"<endrec>
+"Dompetku Cash In","0","en","TILL:Dompetku Transaction/Dompetku Cash In"<endrec>
+"Dompetku Cash Out","0","en","TILL:Dompetku Transaction/Dompetku Cash Out"<endrec>
+"FX","0","en","TILL:FX"<endrec>
+"Foreign Exchange","0","en","TILL:FX/Foreign Exchange"<endrec>
+"Organization Buy Foreign Currency","0","en","TILL:FX/Foreign Exchange/Organization Buy Foreign Currency"<endrec>
+"Organization Buy Foreign Currency Indirect","0","en","TILL:FX/Foreign Exchange/Organization Buy Foreign Currency Indirect"<endrec>
+"Organization Sell Foreign Currency","0","en","TILL:FX/Foreign Exchange/Organization Sell Foreign Currency"<endrec>
+"Organization Sell Foreign Currency Indirect","0","en","TILL:FX/Foreign Exchange/Organization Sell Foreign Currency Indirect"<endrec>
+"Payment With Foreign Exchange","0","en","TILL:FX/Payment With Foreign Exchange"<endrec>
+"Organization Payment With Foreign Exchange","0","en","TILL:FX/Payment With Foreign Exchange/Organization Payment With Foreign Exchange"<endrec>
+"Receiving With Foreign Exchange","0","en","TILL:FX/Receiving With Foreign Exchange"<endrec>
+"Buy Goods With Foreign Exchange","0","en","TILL:FX/Receiving With Foreign Exchange/Buy Goods With Foreign Exchange"<endrec>
+"Float Administration","0","en","TILL:Float Administration"<endrec>
+"Move money","0","en","TILL:Float Administration/Move Float"<endrec>
+"Float Balance","0","en","TILL:Float Balance"<endrec>
+"all floats","0","en","TILL:Float Balance/All Stores"<endrec>
+"one float","0","en","TILL:Float Balance/One Store"<endrec>
+"Give Cash","0","en","TILL:Give Cash"<endrec>
+"Group","0","en","TILL:Group"<endrec>
+"Buy Goods from Group","0","en","TILL:Group/Buy Goods from Group"<endrec>
+"Group Approval","0","en","TILL:Group/Group Approval"<endrec>
+"Group Buy Goods with Voucher","0","en","TILL:Group/Group Buy Goods with Voucher"<endrec>
+"Group Deposit with Voucher","0","en","TILL:Group/Group Deposit with Voucher"<endrec>
+"Group Manage","0","en","TILL:Group/Group Manage"<endrec>
+"CCH Add Group Member","0","en","TILL:Group/Group Manage/CCH Add Group Member"<endrec>
+"Change Group Member Role","0","en","TILL:Group/Group Manage/Change Group Member Role"<endrec>
+"Create Group","0","en","TILL:Group/Group Manage/Create Group"<endrec>
+"Remove Group Member","0","en","TILL:Group/Group Manage/Remove Group Member"<endrec>
+"Organization Withdrawal from Group","0","en","TILL:Group/Organization Withdrawal from Group"<endrec>
+"Transfer funds to Group Account","0","en","TILL:Group/Transfer funds to Group Account"<endrec>
+"Indosat Pre-Paid","0","en","TILL:Indosat Pre-Paid"<endrec>
+"Apply OTP","0","en","TILL:Indosat Pre-Paid/Apply OTP"<endrec>
+"Query Count of SIM Cards Registered to a Citizen ID","0","en","TILL:Indosat Pre-Paid/Query Count of SIM Cards Registered to a Citizen ID"<endrec>
+"Query SIM Card Status","0","en","TILL:Indosat Pre-Paid/Query SIM Card Status"<endrec>
+"Register SIM Card","0","en","TILL:Indosat Pre-Paid/Register SIM Card"<endrec>
+"Indosat Reload","0","en","TILL:Indosat Reload"<endrec>
+"Indosat Reload","0","en","TILL:Indosat Reload/Indosat Reload"<endrec>
+"Initiate Inter-Org Account Transfer","0","en","TILL:Initiate Inter-Org Account Transfer"<endrec>
+"Operator Commission payable accounts Transfer","0","en","TILL:Initiate Inter-Org Account Transfer/Operator Commission payable accounts Transfer"<endrec>
+"Initiate Intra-Org Account Transfer","0","en","TILL:Initiate Intra-Org Account Transfer"<endrec>
+"Operator from float to working account transfer","0","en","TILL:Initiate Intra-Org Account Transfer/Operator from float to working account transfer"<endrec>
+"Operator from working to float account transfer","0","en","TILL:Initiate Intra-Org Account Transfer/Operator from working to float account transfer"<endrec>
+"Organization Float Intra transfer","0","en","TILL:Initiate Intra-Org Account Transfer/Organization Float Intra transfer"<endrec>
+"Initiate Reversal Request","0","en","TILL:Initiate Reversal Request"<endrec>
+"Initiate Reversal Transaction","0","en","TILL:Initiate Reversal Transaction"<endrec>
+"Link Static QR-Code","0","en","TILL:Link Static QR-Code"<endrec>
+"Loyalty","0","en","TILL:Loyalty"<endrec>
+"Create Customer Loyalty Account","0","en","TILL:Loyalty/Create Customer Loyalty Account"<endrec>
+"Issue Loyalty Point to Consumer","0","en","TILL:Loyalty/Issue Loyalty Point to Consumer"<endrec>
+"Operator Query Consumer Loyalty Account","0","en","TILL:Loyalty/Operator Query Consumer Loyalty Account"<endrec>
+"Operator Query Consumer Loyalty Statement","0","en","TILL:Loyalty/Operator Query Consumer Loyalty Statement"<endrec>
+"Operator Query Loyalty Account","0","en","TILL:Loyalty/Operator Query Loyalty Account"<endrec>
+"Loyalty Point Consumer Account","0","en","TILL:Loyalty/Operator Query Loyalty Account/Loyalty Point Consumer Account"<endrec>
+"Loyalty Point Provider Account","0","en","TILL:Loyalty/Operator Query Loyalty Account/Loyalty Point Provider Account"<endrec>
+"Operator Query Loyalty Statement","0","en","TILL:Loyalty/Operator Query Loyalty Statement"<endrec>
+"Query Consumer Loyalty Account","0","en","TILL:Loyalty/Query Consumer Loyalty Account"<endrec>
+"Query Consumer Loyalty Statement","0","en","TILL:Loyalty/Query Consumer Loyalty Statement"<endrec>
+"Query Loyalty Account","0","en","TILL:Loyalty/Query Loyalty Account"<endrec>
+"Query Loyalty Statement","0","en","TILL:Loyalty/Query Loyalty Statement"<endrec>
+"Query Organization Points","0","en","TILL:Loyalty/Query Organization Points"<endrec>
+"Rdeem Loyalty Points","0","en","TILL:Loyalty/Rdeem Loyalty Points"<endrec>
+"Redeem Points To Balance","0","en","TILL:Loyalty/Redeem Points To Balance"<endrec>
+"Redeem Points To Goods","0","en","TILL:Loyalty/Redeem Points To Goods"<endrec>
+"Transfer Loyalty Points","0","en","TILL:Loyalty/Transfer Loyalty Points"<endrec>
+"M-Shwari","0","en","TILL:M-Shwari"<endrec>
+"Activate Account","0","en","TILL:M-Shwari/Activate Account"<endrec>
+"Deposit and Withdraw","0","en","TILL:M-Shwari/Deposit and Withdraw"<endrec>
+"Send to Bank","0","en","TILL:M-Shwari/Deposit and Withdraw/Send to Bank"<endrec>
+"Withdraw from Bank","0","en","TILL:M-Shwari/Deposit and Withdraw/Withdraw from Bank"<endrec>
+"Loan","0","en","TILL:M-Shwari/Loan"<endrec>
+"Pay Loan","0","en","TILL:M-Shwari/Loan/Pay Loan"<endrec>
+"Pay Loan from Savings","0","en","TILL:M-Shwari/Loan/Pay Loan from Savings"<endrec>
+"Request Loan","0","en","TILL:M-Shwari/Loan/Request Loan"<endrec>
+"Query","0","en","TILL:M-Shwari/Query"<endrec>
+"Bank Balance","0","en","TILL:M-Shwari/Query/Bank Balance"<endrec>
+"FSI Mini Statement","0","en","TILL:M-Shwari/Query/FSI Mini Statement"<endrec>
+"Loan Limit","0","en","TILL:M-Shwari/Query/Loan Limit"<endrec>
+"Loan Mini Statement","0","en","TILL:M-Shwari/Query/Loan Mini Statement"<endrec>
+"Terms and Conditions","0","en","TILL:M-Shwari/Terms and Conditions"<endrec>
+"M-shwari","0","en","TILL:M-shwari"<endrec>
+"Activate Account","0","en","TILL:M-shwari/Activate Account"<endrec>
+"Deposit and Withdraw","0","en","TILL:M-shwari/Deposit and Withdraw"<endrec>
+"Send to Bank","0","en","TILL:M-shwari/Deposit and Withdraw/Send to Bank"<endrec>
+"Withdraw from bank","0","en","TILL:M-shwari/Deposit and Withdraw/Withdraw from bank"<endrec>
+"Loan","0","en","TILL:M-shwari/Loan"<endrec>
+"Pay Loan","0","en","TILL:M-shwari/Loan/Pay Loan"<endrec>
+"Pay Loan from Savings","0","en","TILL:M-shwari/Loan/Pay Loan from Savings"<endrec>
+"Request Loan","0","en","TILL:M-shwari/Loan/Request Loan"<endrec>
+"Query","0","en","TILL:M-shwari/Query"<endrec>
+"Bank Balance","0","en","TILL:M-shwari/Query/Bank Balance"<endrec>
+"FSI Mini Statement","0","en","TILL:M-shwari/Query/FSI Mini Statement"<endrec>
+"Loan Limit","0","en","TILL:M-shwari/Query/Loan Limit"<endrec>
+"Loan Mini Statement","0","en","TILL:M-shwari/Query/Loan Mini Statement"<endrec>
+"Terms and Conditions","0","en","TILL:M-shwari/Terms and Conditions"<endrec>
+"Move Money","0","en","TILL:Move Money"<endrec>
+"From Float","0","en","TILL:Move Money/From Float"<endrec>
+"From Merchant","0","en","TILL:Move Money/From Merchant"<endrec>
+"From Working","0","en","TILL:Move Money/From Working"<endrec>
+"Agent account","0","en","TILL:My Account"<endrec>
+"Call Support","0","en","TILL:My Account/Call Support"<endrec>
+"Change PIN","0","en","TILL:My Account/Change PIN"<endrec>
+"Language","0","en","TILL:My Account/Language"<endrec>
+"MiniStatement","0","en","TILL:My Account/MiniStatement"<endrec>
+"New Assistant","0","en","TILL:My Account/New Assistant"<endrec>
+"Remove Assistant","0","en","TILL:My Account/Remove Assistant"<endrec>
+"Secret Word","0","en","TILL:My Account/Secret Word"<endrec>
+"Show Balance","0","en","TILL:My Account/Show Balance"<endrec>
+"Update Menu","0","en","TILL:My Account/Update Till Menu"<endrec>
+"My Static QR-Code","0","en","TILL:My Static QR-Code"<endrec>
+"New Customer","0","en","TILL:New Customer"<endrec>
+"OTC Service","0","en","TILL:OTC Service"<endrec>
+"Capture/Register OTC Customer","0","en","TILL:OTC Service/Capture/Register OTC Customer"<endrec>
+"IMT Send","0","en","TILL:OTC Service/IMT Send"<endrec>
+"Pay Bill","0","en","TILL:OTC Service/Pay Bill"<endrec>
+"Perform OTC Service","0","en","TILL:OTC Service/Perform OTC Service"<endrec>
+"Airtime Purchase by OTC voucher","0","en","TILL:OTC Service/Perform OTC Service/Airtime Purchase by OTC voucher"<endrec>
+"IMT Send Query Quote","0","en","TILL:OTC Service/Perform OTC Service/IMT Send Query Quote"<endrec>
+"IMT Send by OTC voucher","0","en","TILL:OTC Service/Perform OTC Service/IMT Send by OTC voucher"<endrec>
+"Pay Bill By OTC Voucher","0","en","TILL:OTC Service/Perform OTC Service/Pay Bill By OTC Voucher"<endrec>
+"Perform OTC without Voucher","0","en","TILL:OTC Service/Perform OTC without Voucher"<endrec>
+"Airtime Purchase","0","en","TILL:OTC Service/Perform OTC without Voucher/Airtime Purchase"<endrec>
+"OTC Pay Bill","0","en","TILL:OTC Service/Perform OTC without Voucher/OTC Pay Bill"<endrec>
+"Airtime Purchase By OTC Voucher","0","en","TILL:OTC/Airtime Purchase By OTC Voucher"<endrec>
+"IMT Send By OTC Voucher","0","en","TILL:OTC/IMT Send By OTC Voucher"<endrec>
+"IMT Send Query Quote By OTC Voucher","0","en","TILL:OTC/IMT Send Query Quote By OTC Voucher"<endrec>
+"Pay Bill By OTC Voucher","0","en","TILL:OTC/Pay Bill By OTC Voucher"<endrec>
+"Pay Bill With Prevalidation","0","en","TILL:OTC/Pay Bill With Prevalidation"<endrec>
+"Operator Close Account","0","en","TILL:Operator Close Account"<endrec>
+"Operator Create Account","0","en","TILL:Operator Create Account"<endrec>
+"Operator care","0","en","TILL:Operator Services"<endrec>
+"Identify Assistant","0","en","TILL:Operator Services/Identify Assistant"<endrec>
+"Send Start PIN","0","en","TILL:Operator Services/Send Start Key"<endrec>
+"Unlock PIN","0","en","TILL:Operator Services/Unlock PIN"<endrec>
+"Update Operator KYC","0","en","TILL:Operator Services/Update Operator KYC"<endrec>
+"Org Intra_Account Transfer","0","en","TILL:Org Intra_Account Transfer"<endrec>
+"Transfer from org float to Working account","0","en","TILL:Org Intra_Account Transfer/Transfer from org float to Working account"<endrec>
+"Transfer from org float to org float","0","en","TILL:Org Intra_Account Transfer/Transfer from org float to org float"<endrec>
+"org float to org float","0","en","TILL:Org Intra_Account Transfer/org float to org float"<endrec>
+"Org Query 3rd Buy Goods","0","en","TILL:Org Query 3rd Buy Goods"<endrec>
+"Org Query 3rd Buy Goods and Payment","0","en","TILL:Org Query 3rd Buy Goods and Payment"<endrec>
+"OrgOperator Self Update KYC","0","en","TILL:OrgOperator Self Update KYC"<endrec>
+"OrgQuery3rdBill","0","en","TILL:OrgQuery3rdBill"<endrec>
+"Orgazination Query 3rd Bill","0","en","TILL:Orgazination Query 3rd Bill"<endrec>
+"Others","0","en","TILL:Others"<endrec>
+"Query Airtime Balance","0","en","TILL:Others/Query Airtime Balance"<endrec>
+"Query Dompetku e-money Balance","0","en","TILL:Others/Query Dompetku e-money Balance"<endrec>
+"Query Organization Information","0","en","TILL:Others/Query Organization Information"<endrec>
+"Preferred Contact manage","0","en","TILL:Preferred Contact manage"<endrec>
+"Manage Preferred Contact","0","en","TILL:Preferred Contact manage/Manage Preferred Contact"<endrec>
+"Query Preferred Contact","0","en","TILL:Preferred Contact manage/Query Preferred Contact"<endrec>
+"Purchase Airtime","0","en","TILL:Purchase Airtime"<endrec>
+"Buy Airtime from Org Bank Account","0","en","TILL:Purchase Airtime/Buy Airtime from Org Bank Account"<endrec>
+"Organization Etopup","0","en","TILL:Purchase Airtime/Organization Etopup"<endrec>
+"Purchase Package","0","en","TILL:Purchase Package"<endrec>
+"Purchase Data Package","0","en","TILL:Purchase Package/Purchase Data Package"<endrec>
+"Purchase VAS Package","0","en","TILL:Purchase Package/Purchase VAS Package"<endrec>
+"Query 3rd Bill And Payment","0","en","TILL:Query 3rd Bill And Payment"<endrec>
+"Register a Customer","0","en","TILL:Register a Customer"<endrec>
+"Reminder","0","en","TILL:Reminder"<endrec>
+"Cancel Schedule","0","en","TILL:Reminder/Cancel Schedule"<endrec>
+"Create Schedul","0","en","TILL:Reminder/Create Schedule"<endrec>
+"Transfer From Bank To M-PESA","0","en","TILL:Reminder/Create Schedule/Transfer From Bank To M-PESA"<endrec>
+"Transfer From M-PESA To Bank","0","en","TILL:Reminder/Create Schedule/Transfer From M-PESA To Bank"<endrec>
+"pay bill","0","en","TILL:Reminder/Create Schedule/pay bill"<endrec>
+"Initiate Organization Transaction by Reminder","0","en","TILL:Reminder/Initiate Organization Transaction by Reminder"<endrec>
+"View Schedule","0","en","TILL:Reminder/View Schedule"<endrec>
+"Saving Plan","0","en","TILL:Saving Plan"<endrec>
+"Subscribe Saving Plan For Customer","0","en","TILL:Saving Plan/Subscribe Saving Plan For Customer"<endrec>
+"Subscribe Saving Plan For Group","0","en","TILL:Saving Plan/Subscribe Saving Plan For Group"<endrec>
+"Subscribe Saving Plan For Org","0","en","TILL:Saving Plan/Subscribe Saving Plan For Org"<endrec>
+"UnSubscribe Saving Plan For Customer","0","en","TILL:Saving Plan/UnSubscribe Saving Plan For Customer"<endrec>
+"UnSubscribe Saving Plan For Group","0","en","TILL:Saving Plan/UnSubscribe Saving Plan For Group"<endrec>
+"UnSubscribe Saving Plan For Org","0","en","TILL:Saving Plan/UnSubscribe Saving Plan For Org"<endrec>
+"Self Service","0","en","TILL:Self Service"<endrec>
+"Query Transaction Via Receipt No","0","en","TILL:Self Service/Query Transaction Via Receipt No"<endrec>
+"Sell Airtime","0","en","TILL:Sell Airtime"<endrec>
+"Sell Airtime via org float","0","en","TILL:Sell Airtime/Sell Airtime via org float"<endrec>
+"Standing Order","0","en","TILL:Standing Order"<endrec>
+"Cancel Standing Order Schedule","0","en","TILL:Standing Order/Cancel Standing Order Schedule"<endrec>
+"Create Org Standing Order Schedule","0","en","TILL:Standing Order/Create Org Standing Order Schedule"<endrec>
+"pay bill","0","en","TILL:Standing Order/Create Org Standing Order Schedule/pay bill"<endrec>
+"Query Standing Order Schedule List","0","en","TILL:Standing Order/Query Standing Order Schedule List"<endrec>
+"View Standing Order Schedule","0","en","TILL:Standing Order/View Standing Order Schedule"<endrec>
+"Third Party Bill Info","0","en","TILL:Third Party Bill Info"<endrec>
+"Organization Query 3rd Bill And Payment","0","en","TILL:Third Party Bill Info/Organization Query 3rd Bill And Payment"<endrec>
+"Transfer to owner","0","en","TILL:Transfer to owner"<endrec>
+"Two Part Payment","0","en","TILL:Two Part Payment"<endrec>
+"Group Two Part Voucher Redeeming","0","en","TILL:Two Part Payment/Group Two Part Voucher Redeeming"<endrec>
+"Two Part Payment Org Confirm","0","en","TILL:Two Part Payment/Two Part Payment Org Confirm"<endrec>
+"Two Part Voucher Redeeming","0","en","TILL:Two Part Payment/Two Part Voucher Redeeming"<endrec>
+"Update Till Menu","0","en","TILL:Update Till Menu"<endrec>
+"Voucher","0","en","TILL:Voucher"<endrec>
+"Cancel","0","en","TILL:Voucher/Cancel"<endrec>
+"Cancel Coupon","0","en","TILL:Voucher/Cancel/Cancel Coupon"<endrec>
+"Cancel Issued Voucher","0","en","TILL:Voucher/Cancel/Cancel Issued Voucher"<endrec>
+"Cancel Ticket","0","en","TILL:Voucher/Cancel/Cancel Ticket"<endrec>
+"Create","0","en","TILL:Voucher/Create"<endrec>
+"Indosat Apply Goods Purchase Voucher","0","en","TILL:Voucher/Indosat Apply Goods Purchase Voucher"<endrec>
+"Apply Voucher for Redeem Saldo Mobo Goods","0","en","TILL:Voucher/Indosat Apply Goods Purchase Voucher/Apply Voucher for Redeem Saldo Mobo Goods"<endrec>
+"Issue","0","en","TILL:Voucher/Issue"<endrec>
+"Apply/Issue Voucher","0","en","TILL:Voucher/Issue/Apply/Issue Voucher"<endrec>
+"Buy Ticket Using Voucher","0","en","TILL:Voucher/Issue/Buy Ticket Using Voucher"<endrec>
+"Create/Issue Coupon","0","en","TILL:Voucher/Issue/Create/Issue Coupon"<endrec>
+"Org Apply ATM Withdrawal Voucher for Group","0","en","TILL:Voucher/Issue/Org Apply ATM Withdrawal Voucher for Group"<endrec>
+"Redeem","0","en","TILL:Voucher/Redeem"<endrec>
+"Redeem Coupon","0","en","TILL:Voucher/Redeem/Redeem Coupon"<endrec>
+"Redeem Deposit Voucher","0","en","TILL:Voucher/Redeem/Redeem Deposit Voucher"<endrec>
+"Redeem Issued Voucher","0","en","TILL:Voucher/Redeem/Redeem Issued Voucher"<endrec>
+"Redeem Ticket Voucher","0","en","TILL:Voucher/Redeem/Redeem Ticket Voucher"<endrec>
+"Withdraw Money","0","en","TILL:Withdraw Money"<endrec>
+"Redeem Withdraw Voucher","0","en","TILL:Withdraw Money/Customer Withdrawal"<endrec>
+"Withdraw e-Money","0","en","TILL:Withdraw e-Money"<endrec>
+"Online Withdraw e-Money","0","en","TILL:Withdraw e-Money/Online Withdraw e-Money"<endrec>
+"Organization Withdrawal From M-PESA","0","en","TILL:Withdraw e-Money/Organization Withdrawal From M-PESA"<endrec>
+"Transfer from M-Pesa to Bank","0","en","TILL:Withdraw e-Money/Transfer from M-Pesa to Bank"<endrec>
+"Change Language","0","en","UNREGCUSTOMER:Change Language"<endrec>
+"Unregister Customer Registration","0","en","UNREGCUSTOMER:Help"<endrec>
+"Register","0","en","UNREGCUSTOMER:Register"<endrec>
+"ATM Deposit Voucher 1","0","en_KE","CUSTOMER:ATM Deposit Voucher 1"<endrec>
+"ATM Deposit Voucher 2","0","en_KE","CUSTOMER:ATM Deposit Voucher 2"<endrec>
+"Bank Account","0","en_KE","CUSTOMER:Bank Account"<endrec>
+"Create Bank Account","0","en_KE","CUSTOMER:Bank Account/Create Bank Account"<endrec>
+"Create Group Bank Account","0","en_KE","CUSTOMER:Bank Account/Create Group Bank Account"<endrec>
+"Delete Bank Account","0","en_KE","CUSTOMER:Bank Account/Delete Bank Account"<endrec>
+"Delete Group Bank Account","0","en_KE","CUSTOMER:Bank Account/Delete Group Bank Account"<endrec>
+"Query Bank Account","0","en_KE","CUSTOMER:Bank Account/Query Bank Account"<endrec>
+"Query Group Bank Account","0","en_KE","CUSTOMER:Bank Account/Query Group Bank Account"<endrec>
+"Set Default Bank Account","0","en_KE","CUSTOMER:Bank Account/Set Default Bank Account"<endrec>
+"Bank Card Lookup","0","en_KE","CUSTOMER:Bank Card Lookup"<endrec>
+"Bundle","0","en_KE","CUSTOMER:Bundle"<endrec>
+"Query My Bundle Details","0","en_KE","CUSTOMER:Bundle/Query My Bundle Details/Query My Bundle Details"<endrec>
+"Query My Bundles","0","en_KE","CUSTOMER:Bundle/Query My Bundles"<endrec>
+"Query My Own Bundles","0","en_KE","CUSTOMER:Bundle/Query My Bundles/Query My Own Bundles"<endrec>
+"Subscribe Bundle","0","en_KE","CUSTOMER:Bundle/Subscribe Bundle"<endrec>
+"Subscribe Customer Bundle","0","en_KE","CUSTOMER:Bundle/Subscribe Bundle/Subscribe Customer Bundle"<endrec>
+"View Bundle Details","0","en_KE","CUSTOMER:Bundle/View Bundle Details"<endrec>
+"View Bundles","0","en_KE","CUSTOMER:Bundle/View Bundles"<endrec>
+"View Customer Bundles","0","en_KE","CUSTOMER:Bundle/View Bundles/View Customer Bundles"<endrec>
+"View Group Bundles","0","en_KE","CUSTOMER:Bundle/View Bundles/View Group Bundles"<endrec>
+"Buy Airtime","0","en_KE","CUSTOMER:Buy Airtime"<endrec>
+"My phone","0","en_KE","CUSTOMER:Buy Airtime/My phone"<endrec>
+"Other phone","0","en_KE","CUSTOMER:Buy Airtime/Other phone"<endrec>
+"Activate Card","0","en_KE","CUSTOMER:Card Actions/Activate Card"<endrec>
+"Customer Activate Card","0","en_KE","CUSTOMER:Card Actions/Activate Card/Customer Activate Card"<endrec>
+"Group Activate Card","0","en_KE","CUSTOMER:Card Actions/Activate Card/Group Activate Card"<endrec>
+"Cancel Card","0","en_KE","CUSTOMER:Card Actions/Cancel Card"<endrec>
+"Customer Cancel Card","0","en_KE","CUSTOMER:Card Actions/Cancel Card/Customer Cancel Card"<endrec>
+"Group Cancel Card","0","en_KE","CUSTOMER:Card Actions/Cancel Card/Group Cancel Card"<endrec>
+"Register Card","0","en_KE","CUSTOMER:Card Actions/Register Card"<endrec>
+"Customer Register Card","0","en_KE","CUSTOMER:Card Actions/Register Card/Customer Register Card"<endrec>
+"Group Register Card","0","en_KE","CUSTOMER:Card Actions/Register Card/Group Register Card"<endrec>
+"Request Buy Goods Card Voucher","0","en_KE","CUSTOMER:Card Actions/Request Buy Goods Card Voucher"<endrec>
+"Customer Activate","0","en_KE","CUSTOMER:Customer Activate"<endrec>
+"Customer Close Account","0","en_KE","CUSTOMER:Customer Close Account"<endrec>
+"Customer Create Account","0","en_KE","CUSTOMER:Customer Create Account"<endrec>
+"Customer Get Start PIN","0","en_KE","CUSTOMER:Customer Get Start PIN"<endrec>
+"Customer Intra_Account Transfer","0","en_KE","CUSTOMER:Customer Intra_Account Transfer"<endrec>
+"Transfer from Saving to Saving","0","en_KE","CUSTOMER:Customer Intra_Account Transfer/Transfer from Saving to Saving"<endrec>
+"Transfer from Saving to m-pesa","0","en_KE","CUSTOMER:Customer Intra_Account Transfer/Transfer from Saving to m-pesa"<endrec>
+"Transfer from m-pesa to Saving","0","en_KE","CUSTOMER:Customer Intra_Account Transfer/Transfer from m-pesa to Saving"<endrec>
+"Transfer from m-pesa to m-pesa","0","en_KE","CUSTOMER:Customer Intra_Account Transfer/Transfer from m-pesa to m-pesa"<endrec>
+"Customer Self Update KYC","0","en_KE","CUSTOMER:Customer Self Update KYC"<endrec>
+"CustomerFF","0","en_KE","CUSTOMER:CustomerFF"<endrec>
+"Manager_CustomerFF","0","en_KE","CUSTOMER:CustomerFF/Manager_CustomerFF"<endrec>
+"Query_CustomerFF","0","en_KE","CUSTOMER:CustomerFF/Query_CustomerFF"<endrec>
+"Deposit","0","en_KE","CUSTOMER:Deposit"<endrec>
+"Deposit e-Money","0","en_KE","CUSTOMER:Deposit e-Money"<endrec>
+"Transfer from Bank to M-Pesa","0","en_KE","CUSTOMER:Deposit e-Money/Transfer from Bank to M-Pesa"<endrec>
+"Request Deposit Voucher","0","en_KE","CUSTOMER:Deposit/Request Deposit Voucher"<endrec>
+"Direct Debit","0","en_KE","CUSTOMER:Direct Debit"<endrec>
+"Activate Direct Debit","0","en_KE","CUSTOMER:Direct Debit/Activate Direct Debit"<endrec>
+"Customer Activate Direct Debit Mandate","0","en_KE","CUSTOMER:Direct Debit/Activate Direct Debit/Customer Activate Direct Debit Mandate"<endrec>
+"Group Activate Direct Debit Mandate","0","en_KE","CUSTOMER:Direct Debit/Activate Direct Debit/Group Activate Direct Debit Mandate"<endrec>
+"Cancel Direct Debit Mandate","0","en_KE","CUSTOMER:Direct Debit/Cancel Direct Debit Mandate"<endrec>
+"Customer Cancel Direct Debit Mandate","0","en_KE","CUSTOMER:Direct Debit/Cancel Direct Debit Mandate/Customer Cancel Direct Debit Mandate"<endrec>
+"Group Cancel Direct Debit Mandate","0","en_KE","CUSTOMER:Direct Debit/Cancel Direct Debit Mandate/Group Cancel Direct Debit Mandate"<endrec>
+"Create Direct Debit Mandate","0","en_KE","CUSTOMER:Direct Debit/Create Direct Debit Mandate"<endrec>
+"Create Direct Debit Mandate By Group","0","en_KE","CUSTOMER:Direct Debit/Create Direct Debit Mandate/Create Direct Debit Mandate By Group"<endrec>
+"Create Direct Debit Mandate by Customer","0","en_KE","CUSTOMER:Direct Debit/Create Direct Debit Mandate/Create Direct Debit Mandate by Customer"<endrec>
+"Edit Direct Debit Mandate","0","en_KE","CUSTOMER:Direct Debit/Edit Direct Debit Mandate"<endrec>
+"Customer Edit Direct Debit Mandate","0","en_KE","CUSTOMER:Direct Debit/Edit Direct Debit Mandate/Customer Edit Direct Debit Mandate"<endrec>
+"Group Edit Direct Debit Mandate","0","en_KE","CUSTOMER:Direct Debit/Edit Direct Debit Mandate/Group Edit Direct Debit Mandate"<endrec>
+"Customer Reactivate Direct Debit Mandate","0","en_KE","CUSTOMER:Direct Debit/Reactivate Direct Debit Mandate/Customer Reactivate Direct Debit Mandate"<endrec>
+"Group Reactivate Direct Debit Mandate","0","en_KE","CUSTOMER:Direct Debit/Reactivate Direct Debit Mandate/Group Reactivate Direct Debit Mandate"<endrec>
+"Customer View Direct Debit Mandate","0","en_KE","CUSTOMER:Direct Debit/View Direct Debit Mandate/Customer View Direct Debit Mandate"<endrec>
+"Group View Direct Debit Mandate","0","en_KE","CUSTOMER:Direct Debit/View Direct Debit Mandate/Group View Direct Debit Mandate"<endrec>
+"ForeignExchange","0","en_KE","CUSTOMER:Foreign Exchange"<endrec>
+"Customer Buy Goods With Foreign Exchange","0","en_KE","CUSTOMER:Foreign Exchange/Customer Buy Goods With Foreign Exchange"<endrec>
+"Customer Payment With Foreign Exchange","0","en_KE","CUSTOMER:Foreign Exchange/Customer Payment With Foreign Exchange"<endrec>
+"Customer Payment With Foreign Exchange","0","en_KE","CUSTOMER:Foreign Exchange/Customer Payment With Foreign Exchange/Customer Payment With Foreign Exchange"<endrec>
+"Group Payment With Foreign Exchange","0","en_KE","CUSTOMER:Foreign Exchange/Customer Payment With Foreign Exchange/Group Payment With Foreign Exchange"<endrec>
+"Foreign Exchange","0","en_KE","CUSTOMER:Foreign Exchange/Foreign Exchange"<endrec>
+"Customer Buy Foreign Currency","0","en_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Customer Buy Foreign Currency"<endrec>
+"Customer Buy Foreign Currency Indirect","0","en_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Customer Buy Foreign Currency Indirect"<endrec>
+"Customer Sell Foreign Currency","0","en_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Customer Sell Foreign Currency"<endrec>
+"Customer Sell Foreign Currency Indirect","0","en_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Customer Sell Foreign Currency Indirect"<endrec>
+"Group Buy Foreign Currency","0","en_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Group Buy Foreign Currency"<endrec>
+"Group Buy Foreign Currency Indirect","0","en_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Group Buy Foreign Currency Indirect"<endrec>
+"Group Sell Foreign Currency","0","en_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Group Sell Foreign Currency"<endrec>
+"Group Sell Foreign Currency Indirect","0","en_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Group Sell Foreign Currency Indirect"<endrec>
+"Group FSI","0","en_KE","CUSTOMER:Group FSI"<endrec>
+"Group Loans","0","en_KE","CUSTOMER:Group FSI/Group Loans"<endrec>
+"Group FSI Pay Loan","0","en_KE","CUSTOMER:Group FSI/Group Loans/Group FSI Pay Loan"<endrec>
+"Group Loan Credit Limit","0","en_KE","CUSTOMER:Group FSI/Group Loans/Group Loan Credit Limit"<endrec>
+"Group Loan Request","0","en_KE","CUSTOMER:Group FSI/Group Loans/Group Loan Request"<endrec>
+"Group Loan Statement","0","en_KE","CUSTOMER:Group FSI/Group Loans/Group Loan Statement"<endrec>
+"Group Pay Loan from Savings","0","en_KE","CUSTOMER:Group FSI/Group Loans/Group Pay Loan from Savings"<endrec>
+"Group Savings","0","en_KE","CUSTOMER:Group FSI/Group Savings"<endrec>
+"Activate Group Account","0","en_KE","CUSTOMER:Group FSI/Group Savings/Activate Group Account"<endrec>
+"Group FSI Balance","0","en_KE","CUSTOMER:Group FSI/Group Savings/Group FSI Balance"<endrec>
+"Group FSI Deposit","0","en_KE","CUSTOMER:Group FSI/Group Savings/Group FSI Deposit"<endrec>
+"Group FSI Mini Statement","0","en_KE","CUSTOMER:Group FSI/Group Savings/Group FSI Mini Statement"<endrec>
+"FSI Withdraw For Group","0","en_KE","CUSTOMER:Group FSI/Group Savings/Group FSI Withdraw"<endrec>
+"Terms and Conditions","0","en_KE","CUSTOMER:Group FSI/Group Savings/Terms and Conditions"<endrec>
+"Group Member","0","en_KE","CUSTOMER:Group Member"<endrec>
+"Confirm Group Member ship","0","en_KE","CUSTOMER:Group Member/Confirm Group Member ship"<endrec>
+"Initiate Reversal Request","0","en_KE","CUSTOMER:Initiate Reversal Request"<endrec>
+"Initiate Reversal Transaction","0","en_KE","CUSTOMER:Initiate Reversal Transaction"<endrec>
+"International Money Transfer","0","en_KE","CUSTOMER:International Money Transfer"<endrec>
+"Request Quote","0","en_KE","CUSTOMER:International Money Transfer/Request Quote"<endrec>
+"Transfer Abroad","0","en_KE","CUSTOMER:International Money Transfer/Transfer Abroad"<endrec>
+"Lipa na M-PESA","0","en_KE","CUSTOMER:Lipa na M-PESA"<endrec>
+"Buy Goods and Services","0","en_KE","CUSTOMER:Lipa na M-PESA/Buy Goods and Services"<endrec>
+"Customer Query 3rd Bill And Payment","0","en_KE","CUSTOMER:Lipa na M-PESA/Customer Query 3rd Bill And Payment"<endrec>
+"Customer Query 3rd Buy Goods and payment","0","en_KE","CUSTOMER:Lipa na M-PESA/Customer Query 3rd Buy Goods and payment"<endrec>
+"Pay Bill","0","en_KE","CUSTOMER:Lipa na M-PESA/Pay Bill"<endrec>
+"Loyalty","0","en_KE","CUSTOMER:Loyalty"<endrec>
+"Buy Goods earn Loyalty","0","en_KE","CUSTOMER:Loyalty/Buy Goods earn Loyalty"<endrec>
+"Query Group Loyalty Account","0","en_KE","CUSTOMER:Loyalty/Query Group Loyalty Account"<endrec>
+"Query Group Loyalty Statement","0","en_KE","CUSTOMER:Loyalty/Query Group Loyalty Statement"<endrec>
+"Query Loyalty Account Kenya","0","en_KE","CUSTOMER:Loyalty/Query Loyalty Account"<endrec>
+"Query Loyalty Statement","0","en_KE","CUSTOMER:Loyalty/Query Loyalty Statement"<endrec>
+"Redeem Loyalty","0","en_KE","CUSTOMER:Loyalty/Redeem Loyalty"<endrec>
+"M-Kesho","0","en_KE","CUSTOMER:M-Kesho"<endrec>
+"Bank Balance","0","en_KE","CUSTOMER:M-Kesho/Bank Balance"<endrec>
+"Buy Insurance","0","en_KE","CUSTOMER:M-Kesho/Buy Insurance"<endrec>
+"Buy Insurance","0","en_KE","CUSTOMER:M-Kesho/Buy Insurance/Buy Insurance"<endrec>
+"Terms and Conditions","0","en_KE","CUSTOMER:M-Kesho/Buy Insurance/Terms and Conditions"<endrec>
+"Deposit and Withdraw","0","en_KE","CUSTOMER:M-Kesho/Deposit and Withdraw"<endrec>
+"Send to Bank","0","en_KE","CUSTOMER:M-Kesho/Deposit and Withdraw/Send to Bank"<endrec>
+"Withdraw from Bank","0","en_KE","CUSTOMER:M-Kesho/Deposit and Withdraw/Withdraw from Bank"<endrec>
+"Insurance","0","en_KE","CUSTOMER:M-Kesho/Insurance"<endrec>
+"Request Insurance","0","en_KE","CUSTOMER:M-Kesho/Insurance/Request Insurance"<endrec>
+"Terms and Conditions","0","en_KE","CUSTOMER:M-Kesho/Insurance/Terms and Conditions"<endrec>
+"Loan","0","en_KE","CUSTOMER:M-Kesho/Loan"<endrec>
+"Request Loan","0","en_KE","CUSTOMER:M-Kesho/Loan/Request Loan"<endrec>
+"Request Loan","0","en_KE","CUSTOMER:M-Kesho/Loan/Request Loan/Request Loan"<endrec>
+"Terms and Conditions","0","en_KE","CUSTOMER:M-Kesho/Loan/Request Loan/Terms and Conditions"<endrec>
+"Terms and Conditions","0","en_KE","CUSTOMER:M-Kesho/Loan/Terms and Conditions"<endrec>
+"Mini Statement","0","en_KE","CUSTOMER:M-Kesho/Mini Statement"<endrec>
+"Query","0","en_KE","CUSTOMER:M-Kesho/Query"<endrec>
+"Bank Balance","0","en_KE","CUSTOMER:M-Kesho/Query/Bank Balance"<endrec>
+"Mini Statement","0","en_KE","CUSTOMER:M-Kesho/Query/Mini Statement"<endrec>
+"Send to Bank","0","en_KE","CUSTOMER:M-Kesho/Send to Bank"<endrec>
+"Withdraw from Bank","0","en_KE","CUSTOMER:M-Kesho/Withdraw from Bank"<endrec>
+"M-Shwari","0","en_KE","CUSTOMER:M-Shwari"<endrec>
+"Activate Account","0","en_KE","CUSTOMER:M-Shwari/Activate"<endrec>
+"Activate Account","0","en_KE","CUSTOMER:M-Shwari/Activate Account"<endrec>
+"Loan","0","en_KE","CUSTOMER:M-Shwari/Loan"<endrec>
+"Check Loan Limit","0","en_KE","CUSTOMER:M-Shwari/Loan/Check Loan Limit"<endrec>
+"Pay Loan From M-PESA","0","en_KE","CUSTOMER:M-Shwari/Loan/Pay Loan"<endrec>
+"Pay Loan from M-Shwari","0","en_KE","CUSTOMER:M-Shwari/Loan/Pay Loan from Savings"<endrec>
+"From M-PESA","0","en_KE","CUSTOMER:M-Shwari/Loan/Pay Loan/From M-PESA"<endrec>
+"From M-Shwari","0","en_KE","CUSTOMER:M-Shwari/Loan/Pay Loan/From M-Shwari"<endrec>
+"Request Loan","0","en_KE","CUSTOMER:M-Shwari/Loan/Request Loan"<endrec>
+"Request Loan","0","en_KE","CUSTOMER:M-Shwari/Loan/Request Loan/Request Loan"<endrec>
+"Terms and Conditions","0","en_KE","CUSTOMER:M-Shwari/Loan/Request Loan/Terms and Conditions"<endrec>
+"Request Loan","0","en_KE","CUSTOMER:M-Shwari/Loan/Request Loan11/Request Loan"<endrec>
+"M-Shwari Balance","0","en_KE","CUSTOMER:M-Shwari/M-Shwari Balance"<endrec>
+"Mini Statement","0","en_KE","CUSTOMER:M-Shwari/Mini Statement"<endrec>
+"Deposit Account","0","en_KE","CUSTOMER:M-Shwari/Mini Statement/Deposit Account"<endrec>
+"Loan","0","en_KE","CUSTOMER:M-Shwari/Mini Statement/Loan"<endrec>
+"Loan Limit","0","en_KE","CUSTOMER:M-Shwari/Mini Statement/Loan Limit"<endrec>
+"Query","0","en_KE","CUSTOMER:M-Shwari/Query"<endrec>
+"M-Shwari Balance","0","en_KE","CUSTOMER:M-Shwari/Query/Bank Balance"<endrec>
+"FSI Mini Statement","0","en_KE","CUSTOMER:M-Shwari/Query/FSI Mini Statement"<endrec>
+"Check Loan Limit","0","en_KE","CUSTOMER:M-Shwari/Query/Loan Limit"<endrec>
+"Loan Mini Statement","0","en_KE","CUSTOMER:M-Shwari/Query/Loan Mini Statement"<endrec>
+"Send to M-Shwari","0","en_KE","CUSTOMER:M-Shwari/Send to M-Shwari"<endrec>
+"Terms and Conditions","0","en_KE","CUSTOMER:M-Shwari/Terms and Condition"<endrec>
+"Terms and Conditions","0","en_KE","CUSTOMER:M-Shwari/Terms and Conditions"<endrec>
+"Withdraw from M-Shwari","0","en_KE","CUSTOMER:M-Shwari/Withdraw from M-Shwari"<endrec>
+"My Account","0","en_KE","CUSTOMER:My Account"<endrec>
+"Call Support","0","en_KE","CUSTOMER:My Account/Call  support"<endrec>
+"Call Support","0","en_KE","CUSTOMER:My Account/Call Support"<endrec>
+"Change PIN","0","en_KE","CUSTOMER:My Account/Change PIN"<endrec>
+"Change PIN With Prevalidation","0","en_KE","CUSTOMER:My Account/Change PIN With Prevalidation"<endrec>
+"Change PIN","0","en_KE","CUSTOMER:My Account/Change Pin"<endrec>
+"Contact Lookup","0","en_KE","CUSTOMER:My Account/Contact Lookup"<endrec>
+"Add Beneficiary","0","en_KE","CUSTOMER:My Account/Contact Lookup/Add Beneficiary"<endrec>
+"Add Customer Beneficiary","0","en_KE","CUSTOMER:My Account/Contact Lookup/Add Beneficiary/Add Customer Beneficiary"<endrec>
+"Add Group Beneficiary","0","en_KE","CUSTOMER:My Account/Contact Lookup/Add Beneficiary/Add Group Beneficiary"<endrec>
+"Add Organization Beneficiary","0","en_KE","CUSTOMER:My Account/Contact Lookup/Add Beneficiary/Add Organization Beneficiary"<endrec>
+"Delete Beneficiary","0","en_KE","CUSTOMER:My Account/Contact Lookup/Delete Beneficiary"<endrec>
+"Customer Query 3rd Bill","0","en_KE","CUSTOMER:My Account/Customer Query 3rd Bill"<endrec>
+"Customer Query 3rd Buy Goods","0","en_KE","CUSTOMER:My Account/Customer Query 3rd Buy Goods"<endrec>
+"Language","0","en_KE","CUSTOMER:My Account/Language"<endrec>
+"MiniStatement","0","en_KE","CUSTOMER:My Account/MiniStatement"<endrec>
+"Secret Word","0","en_KE","CUSTOMER:My Account/Secret Word"<endrec>
+"Show Balance","0","en_KE","CUSTOMER:My Account/Show Balance"<endrec>
+"Update Customer Menu","0","en_KE","CUSTOMER:My Account/Update Customer Menu"<endrec>
+"Pre-Validation","0","en_KE","CUSTOMER:Pre-Validation"<endrec>
+"Send Money Prevalidation","0","en_KE","CUSTOMER:Pre-Validation/Send Money Prevalidation"<endrec>
+"Query an Account Balance","0","en_KE","CUSTOMER:Query an Account Balance"<endrec>
+"Reminder","0","en_KE","CUSTOMER:Reminder"<endrec>
+"Cancel Reminder Schedule","0","en_KE","CUSTOMER:Reminder/Cancel Reminder Schedule"<endrec>
+"Create Reminder Schedule","0","en_KE","CUSTOMER:Reminder/Create Reminder Schedule"<endrec>
+"Create Customer Buy Airtime Reminder Schedule","0","en_KE","CUSTOMER:Reminder/Create Reminder Schedule/Buy Airtime"<endrec>
+"Create Customer IMT Transfer Abroad Reminder Schedule","0","en_KE","CUSTOMER:Reminder/Create Reminder Schedule/IMT Transfer Abroad"<endrec>
+"Create Customer M-Kesho Withdraw Reminder Schedule","0","en_KE","CUSTOMER:Reminder/Create Reminder Schedule/M-Kesho Withdraw"<endrec>
+"Create Customer M-Shwari Withdraw Reminder Schedule","0","en_KE","CUSTOMER:Reminder/Create Reminder Schedule/M-Shwari Withdraw"<endrec>
+"Create Customer Pay Bill Reminder Schedule","0","en_KE","CUSTOMER:Reminder/Create Reminder Schedule/Pay Bill"<endrec>
+"Create Customer Send Money Reminder Schedule","0","en_KE","CUSTOMER:Reminder/Create Reminder Schedule/Send Money"<endrec>
+"Transfer From M-PESA To Bank","0","en_KE","CUSTOMER:Reminder/Create Reminder Schedule/Transfer From M-PESA To Bank"<endrec>
+"Transfer from Bank To M-M-PESA2","0","en_KE","CUSTOMER:Reminder/Create Reminder Schedule/Transfer from Bank To M-M-PESA2"<endrec>
+"Transfer from Bank To M-PESA","0","en_KE","CUSTOMER:Reminder/Create Reminder Schedule/Transfer from Bank To M-PESA"<endrec>
+"Initiate Customer Transaction by Reminder","0","en_KE","CUSTOMER:Reminder/Initiate Customer Transaction by Reminder"<endrec>
+"View Reminder Schedule Details","0","en_KE","CUSTOMER:Reminder/View Reminder Schedule Details"<endrec>
+"View Reminder Schedules","0","en_KE","CUSTOMER:Reminder/View Reminder Schedules"<endrec>
+"Saving Plan","0","en_KE","CUSTOMER:Saving Plan"<endrec>
+"Subscribe Saving Plan For Customer","0","en_KE","CUSTOMER:Saving Plan/Subscribe Saving Plan For Customer"<endrec>
+"Subscribe Saving Plan For Group","0","en_KE","CUSTOMER:Saving Plan/Subscribe Saving Plan For Group"<endrec>
+"UnSubscribe Saving Plan For Customer","0","en_KE","CUSTOMER:Saving Plan/UnSubscribe Saving Plan For Customer"<endrec>
+"UnSubscribe Saving Plan For Group","0","en_KE","CUSTOMER:Saving Plan/UnSubscribe Saving Plan For Group"<endrec>
+"Send Money off-Net","0","en_KE","CUSTOMER:Send Money off-Net"<endrec>
+"Service Purchase","0","en_KE","CUSTOMER:Service Purchase"<endrec>
+"Standing Order","0","en_KE","CUSTOMER:Standing Order"<endrec>
+"Cancel Standing Order Schedule","0","en_KE","CUSTOMER:Standing Order/Cancel Standing Order Schedule"<endrec>
+"Create Standing Order Schedule","0","en_KE","CUSTOMER:Standing Order/Create Standing Order Schedule"<endrec>
+"View Standing Order Schedule","0","en_KE","CUSTOMER:Standing Order/View Standing Order Schedule"<endrec>
+"Two Part Payment","0","en_KE","CUSTOMER:Two Part Payment"<endrec>
+"Group Two Part Buy Goods","0","en_KE","CUSTOMER:Two Part Payment/Group Two Part Buy Goods"<endrec>
+"Two Part Buy Goods","0","en_KE","CUSTOMER:Two Part Payment/Two Part Buy Goods"<endrec>
+"Two Part Payment Confirm","0","en_KE","CUSTOMER:Two Part Payment/Two Part Payment Confirm"<endrec>
+"Two factor about","0","en_KE","CUSTOMER:Two factor about"<endrec>
+"Customer Withdrawal at Agent Till with 2 factor first name","0","en_KE","CUSTOMER:Two factor about/Customer Withdrawal at Agent Till with 2 factor first name"<endrec>
+"Pay Bill 2 factor cert Type AML","0","en_KE","CUSTOMER:Two factor about/Pay Bill 2 factor cert Type AML"<endrec>
+"Send Money 2 factor DOB","0","en_KE","CUSTOMER:Two factor about/Send Money 2 factor DOB"<endrec>
+"Send Money 2 factor ID Type","0","en_KE","CUSTOMER:Two factor about/Send Money 2 factor ID Type"<endrec>
+"Send Money 2 factor Last Name","0","en_KE","CUSTOMER:Two factor about/Send Money 2 factor Last Name"<endrec>
+"Send Money 2 factor Last Name1","0","en_KE","CUSTOMER:Two factor about/Send Money 2 factor Last Name1"<endrec>
+"Send Money 2 factor cert Type","0","en_KE","CUSTOMER:Two factor about/Send Money 2 factor cert Type"<endrec>
+"Send Money with auto reference","0","en_KE","CUSTOMER:Two factor about/Send Money with auto reference"<endrec>
+"Send Money with user input reference","0","en_KE","CUSTOMER:Two factor about/Send Money with user input reference"<endrec>
+"Voucher","0","en_KE","CUSTOMER:Voucher"<endrec>
+"Apply ATM Voucher to Group","0","en_KE","CUSTOMER:Voucher/Apply ATM Voucher to Group"<endrec>
+"Apply OTC Voucher","0","en_KE","CUSTOMER:Voucher/Apply OTC Voucher"<endrec>
+"Apply Ticket Voucher","0","en_KE","CUSTOMER:Voucher/Apply Ticket Voucher"<endrec>
+"Apply/Issue Voucher","0","en_KE","CUSTOMER:Voucher/Apply/Issue Voucher"<endrec>
+"Customer request Buy Goods Voucher","0","en_KE","CUSTOMER:Voucher/Customer request Buy Goods Voucher"<endrec>
+"Issue School Dinner Voucher","0","en_KE","CUSTOMER:Voucher/Issue School Dinner Voucher"<endrec>
+"Issue School Dinner Voucher (1)","0","en_KE","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (1)"<endrec>
+"Issue School Dinner Voucher (2)","0","en_KE","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (2)"<endrec>
+"Issue School Dinner Voucher (3)","0","en_KE","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (3)"<endrec>
+"Issue School Dinner Voucher (4)","0","en_KE","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (4)"<endrec>
+"Issue School Dinner Voucher (5)","0","en_KE","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (5)"<endrec>
+"Issue School Dinner Voucher (6)","0","en_KE","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (6)"<endrec>
+"Redeem Token","0","en_KE","CUSTOMER:Voucher/Redeem Token"<endrec>
+"Redeem Voucher","0","en_KE","CUSTOMER:Voucher/Redeem Voucher"<endrec>
+"Send Token","0","en_KE","CUSTOMER:Voucher/Send Token"<endrec>
+"Withdraw Cash","0","en_KE","CUSTOMER:Withdraw Cash"<endrec>
+"From ATM","0","en_KE","CUSTOMER:Withdraw Cash/From ATM"<endrec>
+"From Agent","0","en_KE","CUSTOMER:Withdraw Cash/From Agent"<endrec>
+"Request Withdrawal Voucher","0","en_KE","CUSTOMER:Withdraw Cash/Request Withdrawal Voucher"<endrec>
+"Transfer from M-Pesa to Bank","0","en_KE","CUSTOMER:Withdraw e-Money/Transfer from M-Pesa to Bank"<endrec>
+"group","0","en_KE","CUSTOMER:group"<endrec>
+"Apply Group Voucher","0","en_KE","CUSTOMER:group/Apply Group Voucher"<endrec>
+"Apply Group ATM Deposit Voucher(Value)","0","en_KE","CUSTOMER:group/Apply Group Voucher/Apply Group ATM Deposit Voucher(Value)"<endrec>
+"Group ATM Deposit Voucher(Valueless)","0","en_KE","CUSTOMER:group/Apply Group Voucher/Apply Group ATM Deposit Voucher(Valueless)"<endrec>
+"Group ATM Withdraw Voucher(value)","0","en_KE","CUSTOMER:group/Apply Group Voucher/Apply Group ATM Withdraw Voucher(value)"<endrec>
+"Apply Group ATM Withdraw Voucher(valueless)","0","en_KE","CUSTOMER:group/Apply Group Voucher/Apply Group ATM Withdraw Voucher(valueless)"<endrec>
+"Apply Group Buy Goods Voucher","0","en_KE","CUSTOMER:group/Apply Group Voucher/Apply Group Buy Goods Voucher"<endrec>
+"Customer Apply Group Deposit Voucher","0","en_KE","CUSTOMER:group/Apply Group Voucher/Apply Group Deposit Voucher"<endrec>
+"Apply Group Withdraw Voucher","0","en_KE","CUSTOMER:group/Apply Group Voucher/Apply Group Withdraw Voucher"<endrec>
+"Cancel Standing Order Schedule by group","0","en_KE","CUSTOMER:group/Cancel Standing Order Schedule by group"<endrec>
+"Create Standing Order Schedule For Pay Bill  By Group","0","en_KE","CUSTOMER:group/Create Standing Order Schedule For Pay Bill  By Group"<endrec>
+"Group operation","0","en_KE","CUSTOMER:group/Group operation"<endrec>
+"Add member for Group","0","en_KE","CUSTOMER:group/Group operation/Add member for Group"<endrec>
+"Change member Role","0","en_KE","CUSTOMER:group/Group operation/Change member Role"<endrec>
+"Create Group","0","en_KE","CUSTOMER:group/Group operation/Create Group"<endrec>
+"Group Query 3rd Buy Goods","0","en_KE","CUSTOMER:group/Group operation/Group Query 3rd Buy Goods"<endrec>
+"GroupQuery 3rd Bill","0","en_KE","CUSTOMER:group/Group operation/GroupQuery 3rd Bill"<endrec>
+"Query Group Account Balance","0","en_KE","CUSTOMER:group/Group operation/Query Group Account Balance"<endrec>
+"Query Group List","0","en_KE","CUSTOMER:group/Group operation/Query Group List"<endrec>
+"Query Group Mini Statement","0","en_KE","CUSTOMER:group/Group operation/Query Group Mini Statement"<endrec>
+"Remove member for Group","0","en_KE","CUSTOMER:group/Group operation/Remove member for Group"<endrec>
+"Transactions","0","en_KE","CUSTOMER:group/Transactions"<endrec>
+"Approve Transaction","0","en_KE","CUSTOMER:group/Transactions/Approve Transaction"<endrec>
+"Group P2G Transfer","0","en_KE","CUSTOMER:group/Transactions/Customer transfer to Group"<endrec>
+"Group Pay Bill","0","en_KE","CUSTOMER:group/Transactions/Group Pay Bill"<endrec>
+"Group Qeury 3rd Bill and Payment","0","en_KE","CUSTOMER:group/Transactions/Group Qeury 3rd Bill and Payment"<endrec>
+"Group Query 3rd Buy Goods and Payment","0","en_KE","CUSTOMER:group/Transactions/Group Query 3rd Buy Goods and Payment"<endrec>
+"Group Transfer from Bank to M-Pesa","0","en_KE","CUSTOMER:group/Transactions/Group Transfer from Bank to M-Pesa"<endrec>
+"Group Transfer from M-Pesa to Bank","0","en_KE","CUSTOMER:group/Transactions/Group Transfer from M-Pesa to Bank"<endrec>
+"Group Transfer to Group","0","en_KE","CUSTOMER:group/Transactions/Group Transfer to Group"<endrec>
+"Group transfer to group member","0","en_KE","CUSTOMER:group/Transactions/Group transfer to group member"<endrec>
+"SZ_Approval Test","0","en_KE","CUSTOMER:group/Transactions/SZ_Approval Test"<endrec>
+"View Standing Order Schedule By Group","0","en_KE","CUSTOMER:group/View Standing Order Schedule By Group"<endrec>
+"send money","0","en_KE","CUSTOMER:send money"<endrec>
+"send money","0","en_KE","CUSTOMER:send money/send money"<endrec>
+"sm100","0","en_KE","CUSTOMER:send money/sm100"<endrec>
+"Org Apply ATM Deposit Voucher","0","en_KE","TILL:ATM Deposit Voucher"<endrec>
+"Org Apply ATM Withdrawal Voucher","0","en_KE","TILL:ATM Withdraw Voucher"<endrec>
+"Activate Till","0","en_KE","TILL:Activate Till"<endrec>
+"Active Till","0","en_KE","TILL:Active Till"<endrec>
+"Add Group Member","0","en_KE","TILL:Add Group Member"<endrec>
+"Agent Upgrade Customer","0","en_KE","TILL:Agent Upgrade Customer"<endrec>
+"B2B","0","en_KE","TILL:B2B"<endrec>
+"B2B Pay bill via org float","0","en_KE","TILL:B2B/B2B Pay bill via org float"<endrec>
+"Create Bank Account","0","en_KE","TILL:Bank Account/Create Bank Account"<endrec>
+"Delete Bank Account","0","en_KE","TILL:Bank Account/Delete Bank Account"<endrec>
+"Query Bank Account","0","en_KE","TILL:Bank Account/Query Bank Account"<endrec>
+"Bundle","0","en_KE","TILL:Bundle"<endrec>
+"Subscribe Bundle","0","en_KE","TILL:Bundle/Subscribe Bundle"<endrec>
+"View Bundles","0","en_KE","TILL:Bundle/View Bundles"<endrec>
+"Business Deposit","0","en_KE","TILL:Business Deposit"<endrec>
+"Applies a voucher for business deposit","0","en_KE","TILL:Business Deposit/Applies a voucher for business deposit"<endrec>
+"Initiates business deposit","0","en_KE","TILL:Business Deposit/Initiates business deposit"<endrec>
+"Redeems a business deposit voucher","0","en_KE","TILL:Business Deposit/Redeems a business deposit voucher"<endrec>
+"Business Pay Bill","0","en_KE","TILL:Business Pay Bill"<endrec>
+"Business Withdraw","0","en_KE","TILL:Business Withdraw"<endrec>
+"Applies a voucher for business withdraw","0","en_KE","TILL:Business Withdraw/Applies a voucher for business withdraw"<endrec>
+"Business Withdrawal","0","en_KE","TILL:Business Withdraw/Business Withdrawal"<endrec>
+"Initiates Business Withdrawal","0","en_KE","TILL:Business Withdraw/Initiates business withdraw"<endrec>
+"Redeems a business withdraw voucher","0","en_KE","TILL:Business Withdraw/Redeems a business withdraw voucher"<endrec>
+"CCH Request Transaction Reversal","0","en_KE","TILL:CCH Request Transaction Reversal"<endrec>
+"CCH for Customer","0","en_KE","TILL:CCH for Customer"<endrec>
+"CCH Add Group Member","0","en_KE","TILL:CCH for Customer/CCH Add Group Member"<endrec>
+"CCH Change Customer KYC","0","en_KE","TILL:CCH for Customer/CCH Change Customer KYC"<endrec>
+"CCH Change Group Member Role","0","en_KE","TILL:CCH for Customer/CCH Change Group Member Role"<endrec>
+"CCH Create Group","0","en_KE","TILL:CCH for Customer/CCH Create Group"<endrec>
+"CCH Identify Customer","0","en_KE","TILL:CCH for Customer/CCH Identify Customer"<endrec>
+"CCH Remove Group Member","0","en_KE","TILL:CCH for Customer/CCH Remove Group Member"<endrec>
+"Card Actions","0","en_KE","TILL:Card Actions"<endrec>
+"Org Activate Card","0","en_KE","TILL:Card Actions/Activate Card/Org Activate Card"<endrec>
+"Org Cancel Card","0","en_KE","TILL:Card Actions/Cancel Card/Org Cancel Card"<endrec>
+"Register Card","0","en_KE","TILL:Card Actions/Register Card"<endrec>
+"Org Register Card","0","en_KE","TILL:Card Actions/Register Card/Org Register Card"<endrec>
+"Change Organization Advertisement","0","en_KE","TILL:Change Organization Advertisement"<endrec>
+"Create Lite Customer","0","en_KE","TILL:Create Lite Customer"<endrec>
+"Create Loyalty Consumer Account","0","en_KE","TILL:Create Loyalty Consumer Account"<endrec>
+"Create Org Loyalty Account","0","en_KE","TILL:Create Org Loyalty Account"<endrec>
+"Customer Services","0","en_KE","TILL:Customer Services"<endrec>
+"Collect DoB","0","en_KE","TILL:Customer Services/Collect DoB"<endrec>
+"Identify Customer","0","en_KE","TILL:Customer Services/Identify Customer"<endrec>
+"Issue Refund","0","en_KE","TILL:Customer Services/Issue Refund"<endrec>
+"Reverse Transaction","0","en_KE","TILL:Customer Services/Request Reversal"<endrec>
+"Send New PIN","0","en_KE","TILL:Customer Services/Send Start Key"<endrec>
+"Unlock PIN","0","en_KE","TILL:Customer Services/Unlock PIN"<endrec>
+"Update Customer KYC","0","en_KE","TILL:Customer Services/Update Customer KYC"<endrec>
+"Deposit","0","en_KE","TILL:Deposit"<endrec>
+"Deposit Money 2 Factor First Name","0","en_KE","TILL:Deposit Money 2 Factor First Name"<endrec>
+"Deposit Money 2 facor second name","0","en_KE","TILL:Deposit Money 2 Factor First Name/Deposit Money 2 facor second name"<endrec>
+"Deposit e-Money","0","en_KE","TILL:Deposit e-Money"<endrec>
+"Transfer from Bank to M-Pesa","0","en_KE","TILL:Deposit e-Money/Transfer from Bank to M-Pesa"<endrec>
+"Direct Debit","0","en_KE","TILL:Direct Debit"<endrec>
+"Activate Direct Debit","0","en_KE","TILL:Direct Debit/Activate Direct Debit"<endrec>
+"Organization Activate Direct Debit Mandate","0","en_KE","TILL:Direct Debit/Activate Direct Debit/Organization Activate Direct Debit Mandate"<endrec>
+"Cancel Direct Debit Mandate","0","en_KE","TILL:Direct Debit/Cancel Direct Debit Mandate"<endrec>
+"Cancel Direct Debit Mandate By Payee","0","en_KE","TILL:Direct Debit/Cancel Direct Debit Mandate/Cancel Direct Debit Mandate By Payee"<endrec>
+"Cancel Direct Debit Mandate By Payer","0","en_KE","TILL:Direct Debit/Cancel Direct Debit Mandate/Cancel Direct Debit Mandate By Payer"<endrec>
+"Create Direct Debit Mandate","0","en_KE","TILL:Direct Debit/Create Direct Debit Mandate"<endrec>
+"Create Direct Debit Mandate by Organization","0","en_KE","TILL:Direct Debit/Create Direct Debit Mandate/Create Direct Debit Mandate by Organization"<endrec>
+"Create Direct Debit Mandate by Payee","0","en_KE","TILL:Direct Debit/Create Direct Debit Mandate/Create Direct Debit Mandate by Payee"<endrec>
+"Edit Direct Debit Mandate","0","en_KE","TILL:Direct Debit/Edit Direct Debit Mandate"<endrec>
+"Edit Direct Debit Mandate By Payee","0","en_KE","TILL:Direct Debit/Edit Direct Debit Mandate/Edit Direct Debit Mandate By Payee"<endrec>
+"Edit Direct Debit Mandate By Payer","0","en_KE","TILL:Direct Debit/Edit Direct Debit Mandate/Edit Direct Debit Mandate By Payer"<endrec>
+"Initiate Direct Debit Transaction","0","en_KE","TILL:Direct Debit/Initiate Direct Debit Transaction"<endrec>
+"Reactivate Direct Debit Mandate","0","en_KE","TILL:Direct Debit/Reactivate Direct Debit Mandate"<endrec>
+"Reactivate Direct Debit Mandate By Payee","0","en_KE","TILL:Direct Debit/Reactivate Direct Debit Mandate/Reactivate Direct Debit Mandate By Payee"<endrec>
+"Reactivate Direct Debit Mandate By Payer","0","en_KE","TILL:Direct Debit/Reactivate Direct Debit Mandate/Reactivate Direct Debit Mandate By Payer"<endrec>
+"View Direct Debit Mandate","0","en_KE","TILL:Direct Debit/View Direct Debit Mandate"<endrec>
+"View Direct Debit Mandate By Payee","0","en_KE","TILL:Direct Debit/View Direct Debit Mandate/View Direct Debit Mandate By Payee"<endrec>
+"View Direct Debit Mandate By Payer","0","en_KE","TILL:Direct Debit/View Direct Debit Mandate/View Direct Debit Mandate By Payer"<endrec>
+"FX","0","en_KE","TILL:FX"<endrec>
+"Foreign Exchange","0","en_KE","TILL:FX/Foreign Exchange"<endrec>
+"Organization Buy Foreign Currency","0","en_KE","TILL:FX/Foreign Exchange/Organization Buy Foreign Currency"<endrec>
+"Organization Buy Foreign Currency Indirect","0","en_KE","TILL:FX/Foreign Exchange/Organization Buy Foreign Currency Indirect"<endrec>
+"Organization Sell Foreign Currency","0","en_KE","TILL:FX/Foreign Exchange/Organization Sell Foreign Currency"<endrec>
+"Organization Sell Foreign Currency Indirect","0","en_KE","TILL:FX/Foreign Exchange/Organization Sell Foreign Currency Indirect"<endrec>
+"Payment With Foreign Exchange","0","en_KE","TILL:FX/Payment With Foreign Exchange"<endrec>
+"Receiving With Foreign Exchange","0","en_KE","TILL:FX/Receiving With Foreign Exchange"<endrec>
+"Float Administration","0","en_KE","TILL:Float Administration"<endrec>
+"Move money","0","en_KE","TILL:Float Administration/Move Float"<endrec>
+"Float Balance","0","en_KE","TILL:Float Balance"<endrec>
+"all floats","0","en_KE","TILL:Float Balance/All Stores"<endrec>
+"one float","0","en_KE","TILL:Float Balance/One Store"<endrec>
+"Give Cash","0","en_KE","TILL:Give Cash"<endrec>
+"Group","0","en_KE","TILL:Group"<endrec>
+"Buy Goods from Group","0","en_KE","TILL:Group/Buy Goods from Group"<endrec>
+"Group Approval","0","en_KE","TILL:Group/Group Approval"<endrec>
+"Group Buy Goods with Voucher","0","en_KE","TILL:Group/Group Buy Goods with Voucher"<endrec>
+"Group Deposit with Voucher","0","en_KE","TILL:Group/Group Deposit with Voucher"<endrec>
+"Group Manage","0","en_KE","TILL:Group/Group Manage"<endrec>
+"CCH Add Group Member","0","en_KE","TILL:Group/Group Manage/CCH Add Group Member"<endrec>
+"Change Group Member Role","0","en_KE","TILL:Group/Group Manage/Change Group Member Role"<endrec>
+"Create Group","0","en_KE","TILL:Group/Group Manage/Create Group"<endrec>
+"Remove Group Member","0","en_KE","TILL:Group/Group Manage/Remove Group Member"<endrec>
+"Organization Withdrawal from Group","0","en_KE","TILL:Group/Organization Withdrawal from Group"<endrec>
+"Transfer funds to Group Account","0","en_KE","TILL:Group/Transfer funds to Group Account"<endrec>
+"Initiate Inter-Org Account Transfer","0","en_KE","TILL:Initiate Inter-Org Account Transfer"<endrec>
+"Organization Intra-Account Transfer For Org float to Working Account","0","en_KE","TILL:Initiate Inter-Org Account Transfer/Operator Commission payable accounts Transfer"<endrec>
+"Initiate Intra-Org Account Transfer","0","en_KE","TILL:Initiate Intra-Org Account Transfer"<endrec>
+"Operator from float to working account transfer","0","en_KE","TILL:Initiate Intra-Org Account Transfer/Operator from float to working account transfer"<endrec>
+"Operator from working to float account transfer","0","en_KE","TILL:Initiate Intra-Org Account Transfer/Operator from working to float account transfer"<endrec>
+"Organization Float Intra transfer","0","en_KE","TILL:Initiate Intra-Org Account Transfer/Organization Float Intra transfer"<endrec>
+"Initiate Reversal Request","0","en_KE","TILL:Initiate Reversal Request"<endrec>
+"Initiate Reversal Transaction","0","en_KE","TILL:Initiate Reversal Transaction"<endrec>
+"Loyalty","0","en_KE","TILL:Loyalty"<endrec>
+"Create Customer Loyalty Account","0","en_KE","TILL:Loyalty/Create Customer Loyalty Account"<endrec>
+"Issue Loyalty Point to Consumer","0","en_KE","TILL:Loyalty/Issue Loyalty Point to Consumer"<endrec>
+"Operator Query Consumer Loyalty Account","0","en_KE","TILL:Loyalty/Operator Query Consumer Loyalty Account"<endrec>
+"Operator Query Consumer Loyalty Statement","0","en_KE","TILL:Loyalty/Operator Query Consumer Loyalty Statement"<endrec>
+"Operator Query Loyalty Account","0","en_KE","TILL:Loyalty/Operator Query Loyalty Account"<endrec>
+"Loyalty Point Consumer Account","0","en_KE","TILL:Loyalty/Operator Query Loyalty Account/Loyalty Point Consumer Account"<endrec>
+"Loyalty Point Provider Account","0","en_KE","TILL:Loyalty/Operator Query Loyalty Account/Loyalty Point Provider Account"<endrec>
+"Operator Query Loyalty Statement","0","en_KE","TILL:Loyalty/Operator Query Loyalty Statement"<endrec>
+"Rdeem Loyalty Points","0","en_KE","TILL:Loyalty/Rdeem Loyalty Points"<endrec>
+"M-shwari","0","en_KE","TILL:M-shwari"<endrec>
+"Activate Account","0","en_KE","TILL:M-shwari/Activate Account"<endrec>
+"Deposit and Withdraw","0","en_KE","TILL:M-shwari/Deposit and Withdraw"<endrec>
+"Send to Bank","0","en_KE","TILL:M-shwari/Deposit and Withdraw/Send to Bank"<endrec>
+"Withdraw from bank","0","en_KE","TILL:M-shwari/Deposit and Withdraw/Withdraw from bank"<endrec>
+"Loan","0","en_KE","TILL:M-shwari/Loan"<endrec>
+"Pay Loan","0","en_KE","TILL:M-shwari/Loan/Pay Loan"<endrec>
+"Pay Loan from Savings","0","en_KE","TILL:M-shwari/Loan/Pay Loan from Savings"<endrec>
+"Request Loan","0","en_KE","TILL:M-shwari/Loan/Request Loan"<endrec>
+"Query","0","en_KE","TILL:M-shwari/Query"<endrec>
+"Bank Balance","0","en_KE","TILL:M-shwari/Query/Bank Balance"<endrec>
+"FSI Mini Statement","0","en_KE","TILL:M-shwari/Query/FSI Mini Statement"<endrec>
+"Loan Limit","0","en_KE","TILL:M-shwari/Query/Loan Limit"<endrec>
+"Loan Mini Statement","0","en_KE","TILL:M-shwari/Query/Loan Mini Statement"<endrec>
+"Terms and Conditions","0","en_KE","TILL:M-shwari/Terms and Conditions"<endrec>
+"Move Money","0","en_KE","TILL:Move Money"<endrec>
+"From Float","0","en_KE","TILL:Move Money/From Float"<endrec>
+"From Merchant","0","en_KE","TILL:Move Money/From Merchant"<endrec>
+"From Working","0","en_KE","TILL:Move Money/From Working"<endrec>
+"Agent account","0","en_KE","TILL:My Account"<endrec>
+"Call Support","0","en_KE","TILL:My Account/Call Support"<endrec>
+"Change PIN","0","en_KE","TILL:My Account/Change PIN"<endrec>
+"Language","0","en_KE","TILL:My Account/Language"<endrec>
+"MiniStatement","0","en_KE","TILL:My Account/MiniStatement"<endrec>
+"New Assistant","0","en_KE","TILL:My Account/New Assistant"<endrec>
+"Remove Assistant","0","en_KE","TILL:My Account/Remove Assistant"<endrec>
+"Secret Word","0","en_KE","TILL:My Account/Secret Word"<endrec>
+"Show Balance","0","en_KE","TILL:My Account/Show Balance"<endrec>
+"Update Menu","0","en_KE","TILL:My Account/Update Till Menu"<endrec>
+"New Customer","0","en_KE","TILL:New Customer"<endrec>
+"OTC Service","0","en_KE","TILL:OTC Service"<endrec>
+"Capture/Register OTC Customer","0","en_KE","TILL:OTC Service/Capture/Register OTC Customer"<endrec>
+"IMT Send","0","en_KE","TILL:OTC Service/IMT Send"<endrec>
+"Pay Bill","0","en_KE","TILL:OTC Service/Pay Bill"<endrec>
+"Perform OTC Service","0","en_KE","TILL:OTC Service/Perform OTC Service"<endrec>
+"Airtime Purchase by OTC voucher","0","en_KE","TILL:OTC Service/Perform OTC Service/Airtime Purchase by OTC voucher"<endrec>
+"IMT Send Query Quote","0","en_KE","TILL:OTC Service/Perform OTC Service/IMT Send Query Quote"<endrec>
+"IMT Send by OTC voucher","0","en_KE","TILL:OTC Service/Perform OTC Service/IMT Send by OTC voucher"<endrec>
+"Pay Bill By OTC Voucher","0","en_KE","TILL:OTC Service/Perform OTC Service/Pay Bill By OTC Voucher"<endrec>
+"Perform OTC without Voucher","0","en_KE","TILL:OTC Service/Perform OTC without Voucher"<endrec>
+"Airtime Purchase","0","en_KE","TILL:OTC Service/Perform OTC without Voucher/Airtime Purchase"<endrec>
+"OTC Pay Bill","0","en_KE","TILL:OTC Service/Perform OTC without Voucher/OTC Pay Bill"<endrec>
+"Operator Close Account","0","en_KE","TILL:Operator Close Account"<endrec>
+"Operator Create Account","0","en_KE","TILL:Operator Create Account"<endrec>
+"Operator care","0","en_KE","TILL:Operator Services"<endrec>
+"Identify Assistant","0","en_KE","TILL:Operator Services/Identify Assistant"<endrec>
+"Send Start PIN","0","en_KE","TILL:Operator Services/Send Start Key"<endrec>
+"Unlock PIN","0","en_KE","TILL:Operator Services/Unlock PIN"<endrec>
+"Update Operator KYC","0","en_KE","TILL:Operator Services/Update Operator KYC"<endrec>
+"Org Intra_Account Transfer","0","en_KE","TILL:Org Intra_Account Transfer"<endrec>
+"Transfer from org float to Working account","0","en_KE","TILL:Org Intra_Account Transfer/Transfer from org float to Working account"<endrec>
+"Transfer from org float to org float","0","en_KE","TILL:Org Intra_Account Transfer/Transfer from org float to org float"<endrec>
+"Org Query 3rd Buy Goods","0","en_KE","TILL:Org Query 3rd Buy Goods"<endrec>
+"Org Query 3rd Buy Goods and Payment","0","en_KE","TILL:Org Query 3rd Buy Goods and Payment"<endrec>
+"OrgOperator Self Update KYC","0","en_KE","TILL:OrgOperator Self Update KYC"<endrec>
+"OrgQuery3rdBill","0","en_KE","TILL:OrgQuery3rdBill"<endrec>
+"Orgazination Query 3rd Bill","0","en_KE","TILL:Orgazination Query 3rd Bill"<endrec>
+"Purchase Airtime","0","en_KE","TILL:Purchase Airtime"<endrec>
+"Organization Etopup","0","en_KE","TILL:Purchase Airtime/Organization Etopup"<endrec>
+"Query 3rd Bill And Payment","0","en_KE","TILL:Query 3rd Bill And Payment"<endrec>
+"Register a Customer","0","en_KE","TILL:Register a Customer"<endrec>
+"Reminder","0","en_KE","TILL:Reminder"<endrec>
+"Cancel Schedule","0","en_KE","TILL:Reminder/Cancel Schedule"<endrec>
+"Create Schedul","0","en_KE","TILL:Reminder/Create Schedule"<endrec>
+"Transfer From Bank To M-PESA","0","en_KE","TILL:Reminder/Create Schedule/Transfer From Bank To M-PESA"<endrec>
+"Transfer From M-PESA To Bank","0","en_KE","TILL:Reminder/Create Schedule/Transfer From M-PESA To Bank"<endrec>
+"pay bill","0","en_KE","TILL:Reminder/Create Schedule/pay bill"<endrec>
+"Initiate Organization Transaction by Reminder","0","en_KE","TILL:Reminder/Initiate Organization Transaction by Reminder"<endrec>
+"View Schedule","0","en_KE","TILL:Reminder/View Schedule"<endrec>
+"Saving Plan","0","en_KE","TILL:Saving Plan"<endrec>
+"Subscribe Saving Plan For Customer","0","en_KE","TILL:Saving Plan/Subscribe Saving Plan For Customer"<endrec>
+"Subscribe Saving Plan For Group","0","en_KE","TILL:Saving Plan/Subscribe Saving Plan For Group"<endrec>
+"Subscribe Saving Plan For Org","0","en_KE","TILL:Saving Plan/Subscribe Saving Plan For Org"<endrec>
+"UnSubscribe Saving Plan For Customer","0","en_KE","TILL:Saving Plan/UnSubscribe Saving Plan For Customer"<endrec>
+"UnSubscribe Saving Plan For Group","0","en_KE","TILL:Saving Plan/UnSubscribe Saving Plan For Group"<endrec>
+"UnSubscribe Saving Plan For Org","0","en_KE","TILL:Saving Plan/UnSubscribe Saving Plan For Org"<endrec>
+"Self Service","0","en_KE","TILL:Self Service"<endrec>
+"Query Transaction Via Receipt No","0","en_KE","TILL:Self Service/Query Transaction Via Receipt No"<endrec>
+"Sell Airtime","0","en_KE","TILL:Sell Airtime"<endrec>
+"Sell Airtime via org float","0","en_KE","TILL:Sell Airtime/Sell Airtime via org float"<endrec>
+"Standing Order","0","en_KE","TILL:Standing Order"<endrec>
+"Create Org Standing Order Schedule","0","en_KE","TILL:Standing Order/Create Org Standing Order Schedule"<endrec>
+"pay bill","0","en_KE","TILL:Standing Order/Create Org Standing Order Schedule/pay bill"<endrec>
+"View Standing Order Schedule","0","en_KE","TILL:Standing Order/View Standing Order Schedule"<endrec>
+"Transfer to owner","0","en_KE","TILL:Transfer to owner"<endrec>
+"Two Part Payment","0","en_KE","TILL:Two Part Payment"<endrec>
+"Two Part Payment Org Confirm","0","en_KE","TILL:Two Part Payment/Two Part Payment Org Confirm"<endrec>
+"Two Part Voucher Redeeming","0","en_KE","TILL:Two Part Payment/Two Part Voucher Redeeming"<endrec>
+"Voucher","0","en_KE","TILL:Voucher"<endrec>
+"Cancel","0","en_KE","TILL:Voucher/Cancel"<endrec>
+"Create","0","en_KE","TILL:Voucher/Create"<endrec>
+"Issue","0","en_KE","TILL:Voucher/Issue"<endrec>
+"Apply/Issue Voucher","0","en_KE","TILL:Voucher/Issue/Apply/Issue Voucher"<endrec>
+"Buy Ticket Using Voucher","0","en_KE","TILL:Voucher/Issue/Buy Ticket Using Voucher"<endrec>
+"Create/Issue Coupon","0","en_KE","TILL:Voucher/Issue/Create/Issue Coupon"<endrec>
+"Org Apply ATM Withdrawal Voucher for Group","0","en_KE","TILL:Voucher/Issue/Org Apply ATM Withdrawal Voucher for Group"<endrec>
+"Redeem","0","en_KE","TILL:Voucher/Redeem"<endrec>
+"Redeem Coupon","0","en_KE","TILL:Voucher/Redeem/Redeem Coupon"<endrec>
+"Redeem Deposit Voucher","0","en_KE","TILL:Voucher/Redeem/Redeem Deposit Voucher"<endrec>
+"Redeem Issued Voucher","0","en_KE","TILL:Voucher/Redeem/Redeem Issued Voucher"<endrec>
+"Redeem Ticket Voucher","0","en_KE","TILL:Voucher/Redeem/Redeem Ticket Voucher"<endrec>
+"Withdraw Money","0","en_KE","TILL:Withdraw Money"<endrec>
+"Redeem Withdraw Voucher","0","en_KE","TILL:Withdraw Money/Customer Withdrawal"<endrec>
+"Withdraw e-Money","0","en_KE","TILL:Withdraw e-Money"<endrec>
+"Organization Withdrawal From M-PESA","0","en_KE","TILL:Withdraw e-Money/Organization Withdrawal From M-PESA"<endrec>
+"Transfer from M-Pesa to Bank","0","en_KE","TILL:Withdraw e-Money/Transfer from M-Pesa to Bank"<endrec>
+"Change Language","0","en_KE","UNREGCUSTOMER:Change Language"<endrec>
+"Unregister Customer Registration Kenya","0","en_KE","UNREGCUSTOMER:Help"<endrec>
+"Register(Kenya)","0","en_KE","UNREGCUSTOMER:Register"<endrec>
+"Create Lite Customer","0","ro","TILL:Create Lite Customer/Create Lite Customer"<endrec>
+"ATM Deposit Voucher 1","0","sw_KE","CUSTOMER:ATM Deposit Voucher 1"<endrec>
+"ATM Deposit Voucher 2","0","sw_KE","CUSTOMER:ATM Deposit Voucher 2"<endrec>
+"Bank Account","0","sw_KE","CUSTOMER:Bank Account"<endrec>
+"Create Bank Account","0","sw_KE","CUSTOMER:Bank Account/Create Bank Account"<endrec>
+"Create Group Bank Account","0","sw_KE","CUSTOMER:Bank Account/Create Group Bank Account"<endrec>
+"Delete Bank Account","0","sw_KE","CUSTOMER:Bank Account/Delete Bank Account"<endrec>
+"Delete Group Bank Account","0","sw_KE","CUSTOMER:Bank Account/Delete Group Bank Account"<endrec>
+"Query Bank Account","0","sw_KE","CUSTOMER:Bank Account/Query Bank Account"<endrec>
+"Query Group Bank Account","0","sw_KE","CUSTOMER:Bank Account/Query Group Bank Account"<endrec>
+"Set Default Bank Account","0","sw_KE","CUSTOMER:Bank Account/Set Default Bank Account"<endrec>
+"Bank Card Lookup","0","sw_KE","CUSTOMER:Bank Card Lookup"<endrec>
+"Bundle","0","sw_KE","CUSTOMER:Bundle"<endrec>
+"Query My Bundle Details","0","sw_KE","CUSTOMER:Bundle/Query My Bundle Details/Query My Bundle Details"<endrec>
+"Query My Bundles","0","sw_KE","CUSTOMER:Bundle/Query My Bundles"<endrec>
+"Query My Own Bundles","0","sw_KE","CUSTOMER:Bundle/Query My Bundles/Query My Own Bundles"<endrec>
+"Subscribe Bundle","0","sw_KE","CUSTOMER:Bundle/Subscribe Bundle"<endrec>
+"Subscribe Customer Bundle","0","sw_KE","CUSTOMER:Bundle/Subscribe Bundle/Subscribe Customer Bundle"<endrec>
+"View Bundle Details","0","sw_KE","CUSTOMER:Bundle/View Bundle Details"<endrec>
+"View Bundles","0","sw_KE","CUSTOMER:Bundle/View Bundles"<endrec>
+"View Customer Bundles","0","sw_KE","CUSTOMER:Bundle/View Bundles/View Customer Bundles"<endrec>
+"View Group Bundles","0","sw_KE","CUSTOMER:Bundle/View Bundles/View Group Bundles"<endrec>
+"Nunua mjazo wa simu","0","sw_KE","CUSTOMER:Buy Airtime"<endrec>
+"Simu yangu","0","sw_KE","CUSTOMER:Buy Airtime/My phone"<endrec>
+"Simu yangu ingine","0","sw_KE","CUSTOMER:Buy Airtime/Other phone"<endrec>
+"Activate Card","0","sw_KE","CUSTOMER:Card Actions/Activate Card"<endrec>
+"Customer Activate Card","0","sw_KE","CUSTOMER:Card Actions/Activate Card/Customer Activate Card"<endrec>
+"Group Activate Card","0","sw_KE","CUSTOMER:Card Actions/Activate Card/Group Activate Card"<endrec>
+"Cancel Card","0","sw_KE","CUSTOMER:Card Actions/Cancel Card"<endrec>
+"Customer Cancel Card","0","sw_KE","CUSTOMER:Card Actions/Cancel Card/Customer Cancel Card"<endrec>
+"Group Cancel Card","0","sw_KE","CUSTOMER:Card Actions/Cancel Card/Group Cancel Card"<endrec>
+"Register Card","0","sw_KE","CUSTOMER:Card Actions/Register Card"<endrec>
+"Customer Register Card","0","sw_KE","CUSTOMER:Card Actions/Register Card/Customer Register Card"<endrec>
+"Group Register Card","0","sw_KE","CUSTOMER:Card Actions/Register Card/Group Register Card"<endrec>
+"Request Buy Goods Card Voucher","0","sw_KE","CUSTOMER:Card Actions/Request Buy Goods Card Voucher"<endrec>
+"Customer Activate","0","sw_KE","CUSTOMER:Customer Activate"<endrec>
+"Customer Close Account","0","sw_KE","CUSTOMER:Customer Close Account"<endrec>
+"Customer Create Account","0","sw_KE","CUSTOMER:Customer Create Account"<endrec>
+"Customer Get Start PIN","0","sw_KE","CUSTOMER:Customer Get Start PIN"<endrec>
+"Customer Intra_Account Transfer","0","sw_KE","CUSTOMER:Customer Intra_Account Transfer"<endrec>
+"Transfer from Saving to Saving","0","sw_KE","CUSTOMER:Customer Intra_Account Transfer/Transfer from Saving to Saving"<endrec>
+"Transfer from Saving to m-pesa","0","sw_KE","CUSTOMER:Customer Intra_Account Transfer/Transfer from Saving to m-pesa"<endrec>
+"Transfer from m-pesa to Saving","0","sw_KE","CUSTOMER:Customer Intra_Account Transfer/Transfer from m-pesa to Saving"<endrec>
+"Transfer from m-pesa to m-pesa","0","sw_KE","CUSTOMER:Customer Intra_Account Transfer/Transfer from m-pesa to m-pesa"<endrec>
+"Customer Self Update KYC","0","sw_KE","CUSTOMER:Customer Self Update KYC"<endrec>
+"CustomerFF","0","sw_KE","CUSTOMER:CustomerFF"<endrec>
+"Manager_CustomerFF","0","sw_KE","CUSTOMER:CustomerFF/Manager_CustomerFF"<endrec>
+"Query_CustomerFF","0","sw_KE","CUSTOMER:CustomerFF/Query_CustomerFF"<endrec>
+"Deposit","0","sw_KE","CUSTOMER:Deposit"<endrec>
+"Deposit e-Money","0","sw_KE","CUSTOMER:Deposit e-Money"<endrec>
+"Transfer from Bank to M-Pesa","0","sw_KE","CUSTOMER:Deposit e-Money/Transfer from Bank to M-Pesa"<endrec>
+"Request Deposit Voucher","0","sw_KE","CUSTOMER:Deposit/Request Deposit Voucher"<endrec>
+"Direct Debit","0","sw_KE","CUSTOMER:Direct Debit"<endrec>
+"Activate Direct Debit","0","sw_KE","CUSTOMER:Direct Debit/Activate Direct Debit"<endrec>
+"Customer Activate Direct Debit Mandate","0","sw_KE","CUSTOMER:Direct Debit/Activate Direct Debit/Customer Activate Direct Debit Mandate"<endrec>
+"Group Activate Direct Debit Mandate","0","sw_KE","CUSTOMER:Direct Debit/Activate Direct Debit/Group Activate Direct Debit Mandate"<endrec>
+"Cancel Direct Debit Mandate","0","sw_KE","CUSTOMER:Direct Debit/Cancel Direct Debit Mandate"<endrec>
+"Customer Cancel Direct Debit Mandate","0","sw_KE","CUSTOMER:Direct Debit/Cancel Direct Debit Mandate/Customer Cancel Direct Debit Mandate"<endrec>
+"Group Cancel Direct Debit Mandate","0","sw_KE","CUSTOMER:Direct Debit/Cancel Direct Debit Mandate/Group Cancel Direct Debit Mandate"<endrec>
+"Create Direct Debit Mandate","0","sw_KE","CUSTOMER:Direct Debit/Create Direct Debit Mandate"<endrec>
+"Create Direct Debit Mandate By Group","0","sw_KE","CUSTOMER:Direct Debit/Create Direct Debit Mandate/Create Direct Debit Mandate By Group"<endrec>
+"Create Direct Debit Mandate by Customer","0","sw_KE","CUSTOMER:Direct Debit/Create Direct Debit Mandate/Create Direct Debit Mandate by Customer"<endrec>
+"Edit Direct Debit Mandate","0","sw_KE","CUSTOMER:Direct Debit/Edit Direct Debit Mandate"<endrec>
+"Customer Edit Direct Debit Mandate","0","sw_KE","CUSTOMER:Direct Debit/Edit Direct Debit Mandate/Customer Edit Direct Debit Mandate"<endrec>
+"Group Edit Direct Debit Mandate","0","sw_KE","CUSTOMER:Direct Debit/Edit Direct Debit Mandate/Group Edit Direct Debit Mandate"<endrec>
+"Customer Reactivate Direct Debit Mandate","0","sw_KE","CUSTOMER:Direct Debit/Reactivate Direct Debit Mandate/Customer Reactivate Direct Debit Mandate"<endrec>
+"Group Reactivate Direct Debit Mandate","0","sw_KE","CUSTOMER:Direct Debit/Reactivate Direct Debit Mandate/Group Reactivate Direct Debit Mandate"<endrec>
+"Customer View Direct Debit Mandate","0","sw_KE","CUSTOMER:Direct Debit/View Direct Debit Mandate/Customer View Direct Debit Mandate"<endrec>
+"Group View Direct Debit Mandate","0","sw_KE","CUSTOMER:Direct Debit/View Direct Debit Mandate/Group View Direct Debit Mandate"<endrec>
+"ForeignExchange","0","sw_KE","CUSTOMER:Foreign Exchange"<endrec>
+"Customer Buy Goods With Foreign Exchange","0","sw_KE","CUSTOMER:Foreign Exchange/Customer Buy Goods With Foreign Exchange"<endrec>
+"Customer Payment With Foreign Exchange","0","sw_KE","CUSTOMER:Foreign Exchange/Customer Payment With Foreign Exchange"<endrec>
+"Customer Payment With Foreign Exchange","0","sw_KE","CUSTOMER:Foreign Exchange/Customer Payment With Foreign Exchange/Customer Payment With Foreign Exchange"<endrec>
+"Group Payment With Foreign Exchange","0","sw_KE","CUSTOMER:Foreign Exchange/Customer Payment With Foreign Exchange/Group Payment With Foreign Exchange"<endrec>
+"Foreign Exchange","0","sw_KE","CUSTOMER:Foreign Exchange/Foreign Exchange"<endrec>
+"Customer Buy Foreign Currency","0","sw_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Customer Buy Foreign Currency"<endrec>
+"Customer Buy Foreign Currency Indirect","0","sw_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Customer Buy Foreign Currency Indirect"<endrec>
+"Customer Sell Foreign Currency","0","sw_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Customer Sell Foreign Currency"<endrec>
+"Customer Sell Foreign Currency Indirect","0","sw_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Customer Sell Foreign Currency Indirect"<endrec>
+"Group Buy Foreign Currency","0","sw_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Group Buy Foreign Currency"<endrec>
+"Group Buy Foreign Currency Indirect","0","sw_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Group Buy Foreign Currency Indirect"<endrec>
+"Group Sell Foreign Currency","0","sw_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Group Sell Foreign Currency"<endrec>
+"Group Sell Foreign Currency Indirect","0","sw_KE","CUSTOMER:Foreign Exchange/Foreign Exchange/Group Sell Foreign Currency Indirect"<endrec>
+"Group FSI","0","sw_KE","CUSTOMER:Group FSI"<endrec>
+"Group Loans","0","sw_KE","CUSTOMER:Group FSI/Group Loans"<endrec>
+"Group FSI Pay Loan","0","sw_KE","CUSTOMER:Group FSI/Group Loans/Group FSI Pay Loan"<endrec>
+"Group Loan Credit Limit","0","sw_KE","CUSTOMER:Group FSI/Group Loans/Group Loan Credit Limit"<endrec>
+"Group Loan Request","0","sw_KE","CUSTOMER:Group FSI/Group Loans/Group Loan Request"<endrec>
+"Group Loan Statement","0","sw_KE","CUSTOMER:Group FSI/Group Loans/Group Loan Statement"<endrec>
+"Group Pay Loan from Savings","0","sw_KE","CUSTOMER:Group FSI/Group Loans/Group Pay Loan from Savings"<endrec>
+"Group Savings","0","sw_KE","CUSTOMER:Group FSI/Group Savings"<endrec>
+"Activate Group Account","0","sw_KE","CUSTOMER:Group FSI/Group Savings/Activate Group Account"<endrec>
+"Group FSI Balance","0","sw_KE","CUSTOMER:Group FSI/Group Savings/Group FSI Balance"<endrec>
+"Group FSI Deposit","0","sw_KE","CUSTOMER:Group FSI/Group Savings/Group FSI Deposit"<endrec>
+"Group FSI Mini Statement","0","sw_KE","CUSTOMER:Group FSI/Group Savings/Group FSI Mini Statement"<endrec>
+"FSI Withdraw For Group","0","sw_KE","CUSTOMER:Group FSI/Group Savings/Group FSI Withdraw"<endrec>
+"Terms and Conditions","0","sw_KE","CUSTOMER:Group FSI/Group Savings/Terms and Conditions"<endrec>
+"Group Member","0","sw_KE","CUSTOMER:Group Member"<endrec>
+"Confirm Group Member ship","0","sw_KE","CUSTOMER:Group Member/Confirm Group Member ship"<endrec>
+"Initiate Reversal Request","0","sw_KE","CUSTOMER:Initiate Reversal Request"<endrec>
+"Initiate Reversal Transaction","0","sw_KE","CUSTOMER:Initiate Reversal Transaction"<endrec>
+"International Money Transfer","0","sw_KE","CUSTOMER:International Money Transfer"<endrec>
+"Request Quote","0","sw_KE","CUSTOMER:International Money Transfer/Request Quote"<endrec>
+"Transfer Abroad","0","sw_KE","CUSTOMER:International Money Transfer/Transfer Abroad"<endrec>
+"Lipa na M-PESA","0","sw_KE","CUSTOMER:Lipa na M-PESA"<endrec>
+"Nunua bidhaa Na Huduma","0","sw_KE","CUSTOMER:Lipa na M-PESA/Buy Goods and Services"<endrec>
+"Customer Query 3rd Bill And Payment","0","sw_KE","CUSTOMER:Lipa na M-PESA/Customer Query 3rd Bill And Payment"<endrec>
+"Customer Query 3rd Buy Goods and payment","0","sw_KE","CUSTOMER:Lipa na M-PESA/Customer Query 3rd Buy Goods and payment"<endrec>
+"lipa biliyako","0","sw_KE","CUSTOMER:Lipa na M-PESA/Pay Bill"<endrec>
+"Loyalty","0","sw_KE","CUSTOMER:Loyalty"<endrec>
+"Buy Goods earn Loyalty","0","sw_KE","CUSTOMER:Loyalty/Buy Goods earn Loyalty"<endrec>
+"Query Group Loyalty Account","0","sw_KE","CUSTOMER:Loyalty/Query Group Loyalty Account"<endrec>
+"Query Group Loyalty Statement","0","sw_KE","CUSTOMER:Loyalty/Query Group Loyalty Statement"<endrec>
+"Query Loyalty Account Swahili","0","sw_KE","CUSTOMER:Loyalty/Query Loyalty Account"<endrec>
+"Query Loyalty Statement","0","sw_KE","CUSTOMER:Loyalty/Query Loyalty Statement"<endrec>
+"Redeem Loyalty","0","sw_KE","CUSTOMER:Loyalty/Redeem Loyalty"<endrec>
+"M-Kesho","0","sw_KE","CUSTOMER:M-Kesho"<endrec>
+"Baki la benki","0","sw_KE","CUSTOMER:M-Kesho/Bank Balance"<endrec>
+"Nunua bima","0","sw_KE","CUSTOMER:M-Kesho/Buy Insurance"<endrec>
+"Nunua bima","0","sw_KE","CUSTOMER:M-Kesho/Buy Insurance/Buy Insurance"<endrec>
+"Sheria na Masharti","0","sw_KE","CUSTOMER:M-Kesho/Buy Insurance/Terms and Conditions"<endrec>
+"Deposit and Withdraw","0","sw_KE","CUSTOMER:M-Kesho/Deposit and Withdraw"<endrec>
+"Tuma kwa benki","0","sw_KE","CUSTOMER:M-Kesho/Deposit and Withdraw/Send to Bank"<endrec>
+"Toa kwa benki","0","sw_KE","CUSTOMER:M-Kesho/Deposit and Withdraw/Withdraw from Bank"<endrec>
+"Insurance","0","sw_KE","CUSTOMER:M-Kesho/Insurance"<endrec>
+"Nunua bima","0","sw_KE","CUSTOMER:M-Kesho/Insurance/Request Insurance"<endrec>
+"Terms and Conditions","0","sw_KE","CUSTOMER:M-Kesho/Insurance/Terms and Conditions"<endrec>
+"Mkopo","0","sw_KE","CUSTOMER:M-Kesho/Loan"<endrec>
+"Omba Mkopo","0","sw_KE","CUSTOMER:M-Kesho/Loan/Request Loan"<endrec>
+"Omba Mkopo","0","sw_KE","CUSTOMER:M-Kesho/Loan/Request Loan/Request Loan"<endrec>
+"Sheria na Masharti","0","sw_KE","CUSTOMER:M-Kesho/Loan/Request Loan/Terms and Conditions"<endrec>
+"Sheria na Masharti","0","sw_KE","CUSTOMER:M-Kesho/Loan/Terms and Conditions"<endrec>
+"Taarifa fupi ya akaunti yako","0","sw_KE","CUSTOMER:M-Kesho/Mini Statement"<endrec>
+"Query","0","sw_KE","CUSTOMER:M-Kesho/Query"<endrec>
+"Baki la benki","0","sw_KE","CUSTOMER:M-Kesho/Query/Bank Balance"<endrec>
+"Taarifa fupi ya akaunti yako","0","sw_KE","CUSTOMER:M-Kesho/Query/Mini Statement"<endrec>
+"Tuma kwa benki","0","sw_KE","CUSTOMER:M-Kesho/Send to Bank"<endrec>
+"Toa kwa benki","0","sw_KE","CUSTOMER:M-Kesho/Withdraw from Bank"<endrec>
+"M-Shwari","0","sw_KE","CUSTOMER:M-Shwari"<endrec>
+"Wezesha","0","sw_KE","CUSTOMER:M-Shwari/Activate"<endrec>
+"Activate Account","0","sw_KE","CUSTOMER:M-Shwari/Activate Account"<endrec>
+"Mkopo","0","sw_KE","CUSTOMER:M-Shwari/Loan"<endrec>
+"Tazama kiwango cha mkopo","0","sw_KE","CUSTOMER:M-Shwari/Loan/Check Loan Limit"<endrec>
+"Kutoka M-PESA","0","sw_KE","CUSTOMER:M-Shwari/Loan/Pay Loan"<endrec>
+"Pay Loan Kutoka M-Shwari","0","sw_KE","CUSTOMER:M-Shwari/Loan/Pay Loan from Savings"<endrec>
+"Kutoka M-PESA","0","sw_KE","CUSTOMER:M-Shwari/Loan/Pay Loan/From M-PESA"<endrec>
+"Kutoka M-Shwari","0","sw_KE","CUSTOMER:M-Shwari/Loan/Pay Loan/From M-Shwari"<endrec>
+"Omba mkopo","0","sw_KE","CUSTOMER:M-Shwari/Loan/Request Loan"<endrec>
+"Omba mkopo","0","sw_KE","CUSTOMER:M-Shwari/Loan/Request Loan/Request Loan"<endrec>
+"Sheria na masharti","0","sw_KE","CUSTOMER:M-Shwari/Loan/Request Loan/Terms and Conditions"<endrec>
+"Request Loan","0","sw_KE","CUSTOMER:M-Shwari/Loan/Request Loan11/Request Loan"<endrec>
+"Baki la M-Shwari","0","sw_KE","CUSTOMER:M-Shwari/M-Shwari Balance"<endrec>
+"Taarifa fupi ya akaunti yako","0","sw_KE","CUSTOMER:M-Shwari/Mini Statement"<endrec>
+"Akaunti ya Kuhifadhi","0","sw_KE","CUSTOMER:M-Shwari/Mini Statement/Deposit Account"<endrec>
+"Mkopo","0","sw_KE","CUSTOMER:M-Shwari/Mini Statement/Loan"<endrec>
+"Loan Limit","0","sw_KE","CUSTOMER:M-Shwari/Mini Statement/Loan Limit"<endrec>
+"Query","0","sw_KE","CUSTOMER:M-Shwari/Query"<endrec>
+"Baki la M-Shwari","0","sw_KE","CUSTOMER:M-Shwari/Query/Bank Balance"<endrec>
+"kaunti ya Kuhifadhi","0","sw_KE","CUSTOMER:M-Shwari/Query/FSI Mini Statement"<endrec>
+"Tazama kiwango cha mkopo","0","sw_KE","CUSTOMER:M-Shwari/Query/Loan Limit"<endrec>
+"Mkopo","0","sw_KE","CUSTOMER:M-Shwari/Query/Loan Mini Statement"<endrec>
+"Tuma kwa M-Shwari","0","sw_KE","CUSTOMER:M-Shwari/Send to M-Shwari"<endrec>
+"Sheria na masharti","0","sw_KE","CUSTOMER:M-Shwari/Terms and Condition"<endrec>
+"Sheria na masharti","0","sw_KE","CUSTOMER:M-Shwari/Terms and Conditions"<endrec>
+"Toa kwa M-Shwari","0","sw_KE","CUSTOMER:M-Shwari/Withdraw from M-Shwari"<endrec>
+"Akaunti yangu","0","sw_KE","CUSTOMER:My Account"<endrec>
+"Mwito wa Usaidizi","0","sw_KE","CUSTOMER:My Account/Call  support"<endrec>
+"Call Support","0","sw_KE","CUSTOMER:My Account/Call Support"<endrec>
+"Change PIN","0","sw_KE","CUSTOMER:My Account/Change PIN"<endrec>
+"Change PIN With Prevalidation","0","sw_KE","CUSTOMER:My Account/Change PIN With Prevalidation"<endrec>
+"Badilisha PIN","0","sw_KE","CUSTOMER:My Account/Change Pin"<endrec>
+"Contact Lookup","0","sw_KE","CUSTOMER:My Account/Contact Lookup"<endrec>
+"Add Beneficiary","0","sw_KE","CUSTOMER:My Account/Contact Lookup/Add Beneficiary"<endrec>
+"Add Customer Beneficiary","0","sw_KE","CUSTOMER:My Account/Contact Lookup/Add Beneficiary/Add Customer Beneficiary"<endrec>
+"Add Group Beneficiary","0","sw_KE","CUSTOMER:My Account/Contact Lookup/Add Beneficiary/Add Group Beneficiary"<endrec>
+"Add Organization Beneficiary","0","sw_KE","CUSTOMER:My Account/Contact Lookup/Add Beneficiary/Add Organization Beneficiary"<endrec>
+"Delete Beneficiary","0","sw_KE","CUSTOMER:My Account/Contact Lookup/Delete Beneficiary"<endrec>
+"Customer Query 3rd Bill","0","sw_KE","CUSTOMER:My Account/Customer Query 3rd Bill"<endrec>
+"Customer Query 3rd Buy Goods","0","sw_KE","CUSTOMER:My Account/Customer Query 3rd Buy Goods"<endrec>
+"Lugha","0","sw_KE","CUSTOMER:My Account/Language"<endrec>
+"MiniStatement","0","sw_KE","CUSTOMER:My Account/MiniStatement"<endrec>
+"Neno la siri","0","sw_KE","CUSTOMER:My Account/Secret Word"<endrec>
+"Onyesha baki","0","sw_KE","CUSTOMER:My Account/Show Balance"<endrec>
+"Fanya menyu mpya","0","sw_KE","CUSTOMER:My Account/Update Customer Menu"<endrec>
+"Pre-Validation","0","sw_KE","CUSTOMER:Pre-Validation"<endrec>
+"Send Money Prevalidation","0","sw_KE","CUSTOMER:Pre-Validation/Send Money Prevalidation"<endrec>
+"Query an Account Balance","0","sw_KE","CUSTOMER:Query an Account Balance"<endrec>
+"Reminder","0","sw_KE","CUSTOMER:Reminder"<endrec>
+"Cancel Reminder Schedule","0","sw_KE","CUSTOMER:Reminder/Cancel Reminder Schedule"<endrec>
+"Create Reminder Schedule","0","sw_KE","CUSTOMER:Reminder/Create Reminder Schedule"<endrec>
+"Create Customer Buy Airtime Reminder Schedule","0","sw_KE","CUSTOMER:Reminder/Create Reminder Schedule/Buy Airtime"<endrec>
+"Create Customer IMT Transfer Abroad Reminder Schedule","0","sw_KE","CUSTOMER:Reminder/Create Reminder Schedule/IMT Transfer Abroad"<endrec>
+"Create Customer M-Kesho Withdraw Reminder Schedule","0","sw_KE","CUSTOMER:Reminder/Create Reminder Schedule/M-Kesho Withdraw"<endrec>
+"Create Customer M-Shwari Withdraw Reminder Schedule","0","sw_KE","CUSTOMER:Reminder/Create Reminder Schedule/M-Shwari Withdraw"<endrec>
+"Create Customer Pay Bill Reminder Schedule","0","sw_KE","CUSTOMER:Reminder/Create Reminder Schedule/Pay Bill"<endrec>
+"Create Customer Send Money Reminder Schedule","0","sw_KE","CUSTOMER:Reminder/Create Reminder Schedule/Send Money"<endrec>
+"Transfer From M-PESA To Bank","0","sw_KE","CUSTOMER:Reminder/Create Reminder Schedule/Transfer From M-PESA To Bank"<endrec>
+"Transfer from Bank To M-M-PESA2","0","sw_KE","CUSTOMER:Reminder/Create Reminder Schedule/Transfer from Bank To M-M-PESA2"<endrec>
+"Transfer from Bank To M-PESA","0","sw_KE","CUSTOMER:Reminder/Create Reminder Schedule/Transfer from Bank To M-PESA"<endrec>
+"Initiate Customer Transaction by Reminder","0","sw_KE","CUSTOMER:Reminder/Initiate Customer Transaction by Reminder"<endrec>
+"View Reminder Schedule Details","0","sw_KE","CUSTOMER:Reminder/View Reminder Schedule Details"<endrec>
+"View Reminder Schedules","0","sw_KE","CUSTOMER:Reminder/View Reminder Schedules"<endrec>
+"Saving Plan","0","sw_KE","CUSTOMER:Saving Plan"<endrec>
+"Subscribe Saving Plan For Customer","0","sw_KE","CUSTOMER:Saving Plan/Subscribe Saving Plan For Customer"<endrec>
+"Subscribe Saving Plan For Group","0","sw_KE","CUSTOMER:Saving Plan/Subscribe Saving Plan For Group"<endrec>
+"UnSubscribe Saving Plan For Customer","0","sw_KE","CUSTOMER:Saving Plan/UnSubscribe Saving Plan For Customer"<endrec>
+"UnSubscribe Saving Plan For Group","0","sw_KE","CUSTOMER:Saving Plan/UnSubscribe Saving Plan For Group"<endrec>
+"Send Money off-Net","0","sw_KE","CUSTOMER:Send Money off-Net"<endrec>
+"Service Purchase","0","sw_KE","CUSTOMER:Service Purchase"<endrec>
+"Standing Order","0","sw_KE","CUSTOMER:Standing Order"<endrec>
+"Cancel Standing Order Schedule","0","sw_KE","CUSTOMER:Standing Order/Cancel Standing Order Schedule"<endrec>
+"Create Standing Order Schedule","0","sw_KE","CUSTOMER:Standing Order/Create Standing Order Schedule"<endrec>
+"View Standing Order Schedule","0","sw_KE","CUSTOMER:Standing Order/View Standing Order Schedule"<endrec>
+"Two Part Payment","0","sw_KE","CUSTOMER:Two Part Payment"<endrec>
+"Group Two Part Buy Goods","0","sw_KE","CUSTOMER:Two Part Payment/Group Two Part Buy Goods"<endrec>
+"Two Part Buy Goods","0","sw_KE","CUSTOMER:Two Part Payment/Two Part Buy Goods"<endrec>
+"Two Part Payment Confirm","0","sw_KE","CUSTOMER:Two Part Payment/Two Part Payment Confirm"<endrec>
+"Two factor about","0","sw_KE","CUSTOMER:Two factor about"<endrec>
+"Customer Withdrawal at Agent Till with 2 factor first name","0","sw_KE","CUSTOMER:Two factor about/Customer Withdrawal at Agent Till with 2 factor first name"<endrec>
+"Pay Bill 2 factor cert Type AML","0","sw_KE","CUSTOMER:Two factor about/Pay Bill 2 factor cert Type AML"<endrec>
+"Send Money 2 factor DOB","0","sw_KE","CUSTOMER:Two factor about/Send Money 2 factor DOB"<endrec>
+"Send Money 2 factor ID Type","0","sw_KE","CUSTOMER:Two factor about/Send Money 2 factor ID Type"<endrec>
+"Send Money 2 factor Last Name","0","sw_KE","CUSTOMER:Two factor about/Send Money 2 factor Last Name"<endrec>
+"Send Money 2 factor Last Name1","0","sw_KE","CUSTOMER:Two factor about/Send Money 2 factor Last Name1"<endrec>
+"Send Money 2 factor cert Type","0","sw_KE","CUSTOMER:Two factor about/Send Money 2 factor cert Type"<endrec>
+"Send Money with auto reference","0","sw_KE","CUSTOMER:Two factor about/Send Money with auto reference"<endrec>
+"Send Money with user input reference","0","sw_KE","CUSTOMER:Two factor about/Send Money with user input reference"<endrec>
+"Voucher","0","sw_KE","CUSTOMER:Voucher"<endrec>
+"Apply ATM Voucher to Group","0","sw_KE","CUSTOMER:Voucher/Apply ATM Voucher to Group"<endrec>
+"Apply OTC Voucher","0","sw_KE","CUSTOMER:Voucher/Apply OTC Voucher"<endrec>
+"Apply Ticket Voucher","0","sw_KE","CUSTOMER:Voucher/Apply Ticket Voucher"<endrec>
+"Apply/Issue Voucher","0","sw_KE","CUSTOMER:Voucher/Apply/Issue Voucher"<endrec>
+"Customer request Buy Goods Voucher","0","sw_KE","CUSTOMER:Voucher/Customer request Buy Goods Voucher"<endrec>
+"Issue School Dinner Voucher","0","sw_KE","CUSTOMER:Voucher/Issue School Dinner Voucher"<endrec>
+"Issue School Dinner Voucher (1)","0","sw_KE","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (1)"<endrec>
+"Issue School Dinner Voucher (2)","0","sw_KE","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (2)"<endrec>
+"Issue School Dinner Voucher (3)","0","sw_KE","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (3)"<endrec>
+"Issue School Dinner Voucher (4)","0","sw_KE","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (4)"<endrec>
+"Issue School Dinner Voucher (5)","0","sw_KE","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (5)"<endrec>
+"Issue School Dinner Voucher (6)","0","sw_KE","CUSTOMER:Voucher/Issue School Dinner Voucher/Issue School Dinner Voucher (6)"<endrec>
+"Redeem Token","0","sw_KE","CUSTOMER:Voucher/Redeem Token"<endrec>
+"Redeem Voucher","0","sw_KE","CUSTOMER:Voucher/Redeem Voucher"<endrec>
+"Send Token","0","sw_KE","CUSTOMER:Voucher/Send Token"<endrec>
+"kuondoa Fedha","0","sw_KE","CUSTOMER:Withdraw Cash"<endrec>
+"Kutoa kwa ATM","0","sw_KE","CUSTOMER:Withdraw Cash/From ATM"<endrec>
+"Toa pesa","0","sw_KE","CUSTOMER:Withdraw Cash/From Agent"<endrec>
+"Request Withdrawal Voucher","0","sw_KE","CUSTOMER:Withdraw Cash/Request Withdrawal Voucher"<endrec>
+"Transfer from M-Pesa to Bank","0","sw_KE","CUSTOMER:Withdraw e-Money/Transfer from M-Pesa to Bank"<endrec>
+"group","0","sw_KE","CUSTOMER:group"<endrec>
+"Apply Group Voucher","0","sw_KE","CUSTOMER:group/Apply Group Voucher"<endrec>
+"Apply Group ATM Deposit Voucher(Value)","0","sw_KE","CUSTOMER:group/Apply Group Voucher/Apply Group ATM Deposit Voucher(Value)"<endrec>
+"Group ATM Deposit Voucher(Valueless)","0","sw_KE","CUSTOMER:group/Apply Group Voucher/Apply Group ATM Deposit Voucher(Valueless)"<endrec>
+"Group ATM Withdraw Voucher(value)","0","sw_KE","CUSTOMER:group/Apply Group Voucher/Apply Group ATM Withdraw Voucher(value)"<endrec>
+"Apply Group ATM Withdraw Voucher(valueless)","0","sw_KE","CUSTOMER:group/Apply Group Voucher/Apply Group ATM Withdraw Voucher(valueless)"<endrec>
+"Apply Group Buy Goods Voucher","0","sw_KE","CUSTOMER:group/Apply Group Voucher/Apply Group Buy Goods Voucher"<endrec>
+"Customer Apply Group Deposit Voucher","0","sw_KE","CUSTOMER:group/Apply Group Voucher/Apply Group Deposit Voucher"<endrec>
+"Apply Group Withdraw Voucher","0","sw_KE","CUSTOMER:group/Apply Group Voucher/Apply Group Withdraw Voucher"<endrec>
+"Cancel Standing Order Schedule by group","0","sw_KE","CUSTOMER:group/Cancel Standing Order Schedule by group"<endrec>
+"Create Standing Order Schedule For Pay Bill  By Group","0","sw_KE","CUSTOMER:group/Create Standing Order Schedule For Pay Bill  By Group"<endrec>
+"Group operation","0","sw_KE","CUSTOMER:group/Group operation"<endrec>
+"Add member for Group","0","sw_KE","CUSTOMER:group/Group operation/Add member for Group"<endrec>
+"Change member Role","0","sw_KE","CUSTOMER:group/Group operation/Change member Role"<endrec>
+"Create Group","0","sw_KE","CUSTOMER:group/Group operation/Create Group"<endrec>
+"Group Query 3rd Buy Goods","0","sw_KE","CUSTOMER:group/Group operation/Group Query 3rd Buy Goods"<endrec>
+"GroupQuery 3rd Bill","0","sw_KE","CUSTOMER:group/Group operation/GroupQuery 3rd Bill"<endrec>
+"Query Group Account Balance","0","sw_KE","CUSTOMER:group/Group operation/Query Group Account Balance"<endrec>
+"Query Group List","0","sw_KE","CUSTOMER:group/Group operation/Query Group List"<endrec>
+"Query Group Mini Statement","0","sw_KE","CUSTOMER:group/Group operation/Query Group Mini Statement"<endrec>
+"Remove member for Group","0","sw_KE","CUSTOMER:group/Group operation/Remove member for Group"<endrec>
+"Transactions","0","sw_KE","CUSTOMER:group/Transactions"<endrec>
+"Approve Transaction","0","sw_KE","CUSTOMER:group/Transactions/Approve Transaction"<endrec>
+"Group P2G Transfer","0","sw_KE","CUSTOMER:group/Transactions/Customer transfer to Group"<endrec>
+"Group Pay Bill","0","sw_KE","CUSTOMER:group/Transactions/Group Pay Bill"<endrec>
+"Group Qeury 3rd Bill and Payment","0","sw_KE","CUSTOMER:group/Transactions/Group Qeury 3rd Bill and Payment"<endrec>
+"Group Query 3rd Buy Goods and Payment","0","sw_KE","CUSTOMER:group/Transactions/Group Query 3rd Buy Goods and Payment"<endrec>
+"Group Transfer from Bank to M-Pesa","0","sw_KE","CUSTOMER:group/Transactions/Group Transfer from Bank to M-Pesa"<endrec>
+"Group Transfer from M-Pesa to Bank","0","sw_KE","CUSTOMER:group/Transactions/Group Transfer from M-Pesa to Bank"<endrec>
+"Group Transfer to Group","0","sw_KE","CUSTOMER:group/Transactions/Group Transfer to Group"<endrec>
+"Group transfer to group member","0","sw_KE","CUSTOMER:group/Transactions/Group transfer to group member"<endrec>
+"SZ_Approval Test","0","sw_KE","CUSTOMER:group/Transactions/SZ_Approval Test"<endrec>
+"View Standing Order Schedule By Group","0","sw_KE","CUSTOMER:group/View Standing Order Schedule By Group"<endrec>
+"send money","0","sw_KE","CUSTOMER:send money"<endrec>
+"send money","0","sw_KE","CUSTOMER:send money/send money"<endrec>
+"sm100","0","sw_KE","CUSTOMER:send money/sm100"<endrec>
+"Org Apply ATM Deposit Voucher","0","sw_KE","TILL:ATM Deposit Voucher"<endrec>
+"Org Apply ATM Withdrawal Voucher","0","sw_KE","TILL:ATM Withdraw Voucher"<endrec>
+"Amilisha sehemu ya kulipia","0","sw_KE","TILL:Activate Till"<endrec>
+"Amilisha sehemu ya kulipia","0","sw_KE","TILL:Active Till"<endrec>
+"Add Group Member","0","sw_KE","TILL:Add Group Member"<endrec>
+"Agent Upgrade Customer","0","sw_KE","TILL:Agent Upgrade Customer"<endrec>
+"B2B","0","sw_KE","TILL:B2B"<endrec>
+"B2B Pay bill via org float","0","sw_KE","TILL:B2B/B2B Pay bill via org float"<endrec>
+"Create Bank Account","0","sw_KE","TILL:Bank Account/Create Bank Account"<endrec>
+"Delete Bank Account","0","sw_KE","TILL:Bank Account/Delete Bank Account"<endrec>
+"Query Bank Account","0","sw_KE","TILL:Bank Account/Query Bank Account"<endrec>
+"Bundle","0","sw_KE","TILL:Bundle"<endrec>
+"Subscribe Bundle","0","sw_KE","TILL:Bundle/Subscribe Bundle"<endrec>
+"View Bundles","0","sw_KE","TILL:Bundle/View Bundles"<endrec>
+"Uwekaji pesa za biashara","0","sw_KE","TILL:Business Deposit"<endrec>
+"Applies a voucher for business deposit","0","sw_KE","TILL:Business Deposit/Applies a voucher for business deposit"<endrec>
+"Initiates business deposit","0","sw_KE","TILL:Business Deposit/Initiates business deposit"<endrec>
+"Redeems a business deposit voucher","0","sw_KE","TILL:Business Deposit/Redeems a business deposit voucher"<endrec>
+"Business Pay Bill","0","sw_KE","TILL:Business Pay Bill"<endrec>
+"Huduma za biashara","0","sw_KE","TILL:Business Withdraw"<endrec>
+"Applies a voucher for business withdraw","0","sw_KE","TILL:Business Withdraw/Applies a voucher for business withdraw"<endrec>
+"Uondoaji wa pesa za biashara","0","sw_KE","TILL:Business Withdraw/Business Withdrawal"<endrec>
+"Uondoaji wa pesa za biashara","0","sw_KE","TILL:Business Withdraw/Initiates business withdraw"<endrec>
+"Redeems a business withdraw voucher","0","sw_KE","TILL:Business Withdraw/Redeems a business withdraw voucher"<endrec>
+"CCH Request Transaction Reversal","0","sw_KE","TILL:CCH Request Transaction Reversal"<endrec>
+"CCH for Customer","0","sw_KE","TILL:CCH for Customer"<endrec>
+"CCH Add Group Member","0","sw_KE","TILL:CCH for Customer/CCH Add Group Member"<endrec>
+"CCH Change Customer KYC","0","sw_KE","TILL:CCH for Customer/CCH Change Customer KYC"<endrec>
+"CCH Change Group Member Role","0","sw_KE","TILL:CCH for Customer/CCH Change Group Member Role"<endrec>
+"CCH Create Group","0","sw_KE","TILL:CCH for Customer/CCH Create Group"<endrec>
+"CCH Identify Customer","0","sw_KE","TILL:CCH for Customer/CCH Identify Customer"<endrec>
+"CCH Remove Group Member","0","sw_KE","TILL:CCH for Customer/CCH Remove Group Member"<endrec>
+"Card Actions","0","sw_KE","TILL:Card Actions"<endrec>
+"Org Activate Card","0","sw_KE","TILL:Card Actions/Activate Card/Org Activate Card"<endrec>
+"Org Cancel Card","0","sw_KE","TILL:Card Actions/Cancel Card/Org Cancel Card"<endrec>
+"Register Card","0","sw_KE","TILL:Card Actions/Register Card"<endrec>
+"Org Register Card","0","sw_KE","TILL:Card Actions/Register Card/Org Register Card"<endrec>
+"Change Organization Advertisement","0","sw_KE","TILL:Change Organization Advertisement"<endrec>
+"Create Lite Customer","0","sw_KE","TILL:Create Lite Customer"<endrec>
+"Create Loyalty Consumer Account","0","sw_KE","TILL:Create Loyalty Consumer Account"<endrec>
+"Create Org Loyalty Account","0","sw_KE","TILL:Create Org Loyalty Account"<endrec>
+"Huduma za wateja","0","sw_KE","TILL:Customer Services"<endrec>
+"Kusanya DOB","0","sw_KE","TILL:Customer Services/Collect DoB"<endrec>
+"Tambua mteja","0","sw_KE","TILL:Customer Services/Identify Customer"<endrec>
+"Issue Refund","0","sw_KE","TILL:Customer Services/Issue Refund"<endrec>
+"Ombi la kurudisha pesa","0","sw_KE","TILL:Customer Services/Request Reversal"<endrec>
+"Tuma PIN ya kuanzisha","0","sw_KE","TILL:Customer Services/Send Start Key"<endrec>
+"Fungua PIN","0","sw_KE","TILL:Customer Services/Unlock PIN"<endrec>
+"Update Customer KYC","0","sw_KE","TILL:Customer Services/Update Customer KYC"<endrec>
+"Weka pesa","0","sw_KE","TILL:Deposit"<endrec>
+"Deposit Money 2 Factor First Name","0","sw_KE","TILL:Deposit Money 2 Factor First Name"<endrec>
+"Deposit Money 2 facor second name","0","sw_KE","TILL:Deposit Money 2 Factor First Name/Deposit Money 2 facor second name"<endrec>
+"Deposit e-Money","0","sw_KE","TILL:Deposit e-Money"<endrec>
+"Transfer from Bank to M-Pesa","0","sw_KE","TILL:Deposit e-Money/Transfer from Bank to M-Pesa"<endrec>
+"Direct Debit","0","sw_KE","TILL:Direct Debit"<endrec>
+"Activate Direct Debit","0","sw_KE","TILL:Direct Debit/Activate Direct Debit"<endrec>
+"Organization Activate Direct Debit Mandate","0","sw_KE","TILL:Direct Debit/Activate Direct Debit/Organization Activate Direct Debit Mandate"<endrec>
+"Cancel Direct Debit Mandate","0","sw_KE","TILL:Direct Debit/Cancel Direct Debit Mandate"<endrec>
+"Cancel Direct Debit Mandate By Payee","0","sw_KE","TILL:Direct Debit/Cancel Direct Debit Mandate/Cancel Direct Debit Mandate By Payee"<endrec>
+"Cancel Direct Debit Mandate By Payer","0","sw_KE","TILL:Direct Debit/Cancel Direct Debit Mandate/Cancel Direct Debit Mandate By Payer"<endrec>
+"Create Direct Debit Mandate","0","sw_KE","TILL:Direct Debit/Create Direct Debit Mandate"<endrec>
+"Create Direct Debit Mandate by Organization","0","sw_KE","TILL:Direct Debit/Create Direct Debit Mandate/Create Direct Debit Mandate by Organization"<endrec>
+"Create Direct Debit Mandate by Payee","0","sw_KE","TILL:Direct Debit/Create Direct Debit Mandate/Create Direct Debit Mandate by Payee"<endrec>
+"Edit Direct Debit Mandate","0","sw_KE","TILL:Direct Debit/Edit Direct Debit Mandate"<endrec>
+"Edit Direct Debit Mandate By Payee","0","sw_KE","TILL:Direct Debit/Edit Direct Debit Mandate/Edit Direct Debit Mandate By Payee"<endrec>
+"Edit Direct Debit Mandate By Payer","0","sw_KE","TILL:Direct Debit/Edit Direct Debit Mandate/Edit Direct Debit Mandate By Payer"<endrec>
+"Initiate Direct Debit Transaction","0","sw_KE","TILL:Direct Debit/Initiate Direct Debit Transaction"<endrec>
+"Reactivate Direct Debit Mandate","0","sw_KE","TILL:Direct Debit/Reactivate Direct Debit Mandate"<endrec>
+"Reactivate Direct Debit Mandate By Payee","0","sw_KE","TILL:Direct Debit/Reactivate Direct Debit Mandate/Reactivate Direct Debit Mandate By Payee"<endrec>
+"Reactivate Direct Debit Mandate By Payer","0","sw_KE","TILL:Direct Debit/Reactivate Direct Debit Mandate/Reactivate Direct Debit Mandate By Payer"<endrec>
+"View Direct Debit Mandate","0","sw_KE","TILL:Direct Debit/View Direct Debit Mandate"<endrec>
+"View Direct Debit Mandate By Payee","0","sw_KE","TILL:Direct Debit/View Direct Debit Mandate/View Direct Debit Mandate By Payee"<endrec>
+"View Direct Debit Mandate By Payer","0","sw_KE","TILL:Direct Debit/View Direct Debit Mandate/View Direct Debit Mandate By Payer"<endrec>
+"FX","0","sw_KE","TILL:FX"<endrec>
+"Foreign Exchange","0","sw_KE","TILL:FX/Foreign Exchange"<endrec>
+"Organization Buy Foreign Currency","0","sw_KE","TILL:FX/Foreign Exchange/Organization Buy Foreign Currency"<endrec>
+"Organization Buy Foreign Currency Indirect","0","sw_KE","TILL:FX/Foreign Exchange/Organization Buy Foreign Currency Indirect"<endrec>
+"Organization Sell Foreign Currency","0","sw_KE","TILL:FX/Foreign Exchange/Organization Sell Foreign Currency"<endrec>
+"Organization Sell Foreign Currency Indirect","0","sw_KE","TILL:FX/Foreign Exchange/Organization Sell Foreign Currency Indirect"<endrec>
+"Payment With Foreign Exchange","0","sw_KE","TILL:FX/Payment With Foreign Exchange"<endrec>
+"Receiving With Foreign Exchange","0","sw_KE","TILL:FX/Receiving With Foreign Exchange"<endrec>
+"Usimamizi wa pesa za shughuli","0","sw_KE","TILL:Float Administration"<endrec>
+"Tuma pesa","0","sw_KE","TILL:Float Administration/Move Float"<endrec>
+"Baki ya pesa za shughuli","0","sw_KE","TILL:Float Balance"<endrec>
+"Kiasi chote","0","sw_KE","TILL:Float Balance/All Stores"<endrec>
+"Kiasi kimoja","0","sw_KE","TILL:Float Balance/One Store"<endrec>
+"Peana pesa","0","sw_KE","TILL:Give Cash"<endrec>
+"Group","0","sw_KE","TILL:Group"<endrec>
+"Buy Goods from Group","0","sw_KE","TILL:Group/Buy Goods from Group"<endrec>
+"Group Approval","0","sw_KE","TILL:Group/Group Approval"<endrec>
+"Group Buy Goods with Voucher","0","sw_KE","TILL:Group/Group Buy Goods with Voucher"<endrec>
+"Group Deposit with Voucher","0","sw_KE","TILL:Group/Group Deposit with Voucher"<endrec>
+"Group Manage","0","sw_KE","TILL:Group/Group Manage"<endrec>
+"CCH Add Group Member","0","sw_KE","TILL:Group/Group Manage/CCH Add Group Member"<endrec>
+"Change Group Member Role","0","sw_KE","TILL:Group/Group Manage/Change Group Member Role"<endrec>
+"Create Group","0","sw_KE","TILL:Group/Group Manage/Create Group"<endrec>
+"Remove Group Member","0","sw_KE","TILL:Group/Group Manage/Remove Group Member"<endrec>
+"Organization Withdrawal from Group","0","sw_KE","TILL:Group/Organization Withdrawal from Group"<endrec>
+"Transfer funds to Group Account","0","sw_KE","TILL:Group/Transfer funds to Group Account"<endrec>
+"Initiate Inter-Org Account Transfer","0","sw_KE","TILL:Initiate Inter-Org Account Transfer"<endrec>
+"Organization Intra-Account Transfer For Org float to Working Account","0","sw_KE","TILL:Initiate Inter-Org Account Transfer/Operator Commission payable accounts Transfer"<endrec>
+"Initiate Intra-Org Account Transfer","0","sw_KE","TILL:Initiate Intra-Org Account Transfer"<endrec>
+"Operator from float to working account transfer","0","sw_KE","TILL:Initiate Intra-Org Account Transfer/Operator from float to working account transfer"<endrec>
+"Operator from working to float account transfer","0","sw_KE","TILL:Initiate Intra-Org Account Transfer/Operator from working to float account transfer"<endrec>
+"Organization Float Intra transfer","0","sw_KE","TILL:Initiate Intra-Org Account Transfer/Organization Float Intra transfer"<endrec>
+"Initiate Reversal Request","0","sw_KE","TILL:Initiate Reversal Request"<endrec>
+"Initiate Reversal Transaction","0","sw_KE","TILL:Initiate Reversal Transaction"<endrec>
+"Loyalty","0","sw_KE","TILL:Loyalty"<endrec>
+"Create Customer Loyalty Account","0","sw_KE","TILL:Loyalty/Create Customer Loyalty Account"<endrec>
+"Issue Loyalty Point to Consumer","0","sw_KE","TILL:Loyalty/Issue Loyalty Point to Consumer"<endrec>
+"Operator Query Consumer Loyalty Account","0","sw_KE","TILL:Loyalty/Operator Query Consumer Loyalty Account"<endrec>
+"Operator Query Consumer Loyalty Statement","0","sw_KE","TILL:Loyalty/Operator Query Consumer Loyalty Statement"<endrec>
+"Operator Query Loyalty Account","0","sw_KE","TILL:Loyalty/Operator Query Loyalty Account"<endrec>
+"Loyalty Point Consumer Account","0","sw_KE","TILL:Loyalty/Operator Query Loyalty Account/Loyalty Point Consumer Account"<endrec>
+"Loyalty Point Provider Account","0","sw_KE","TILL:Loyalty/Operator Query Loyalty Account/Loyalty Point Provider Account"<endrec>
+"Operator Query Loyalty Statement","0","sw_KE","TILL:Loyalty/Operator Query Loyalty Statement"<endrec>
+"Rdeem Loyalty Points","0","sw_KE","TILL:Loyalty/Rdeem Loyalty Points"<endrec>
+"M-shwari","0","sw_KE","TILL:M-shwari"<endrec>
+"Activate Account","0","sw_KE","TILL:M-shwari/Activate Account"<endrec>
+"Deposit and Withdraw","0","sw_KE","TILL:M-shwari/Deposit and Withdraw"<endrec>
+"Send to Bank","0","sw_KE","TILL:M-shwari/Deposit and Withdraw/Send to Bank"<endrec>
+"Withdraw from bank","0","sw_KE","TILL:M-shwari/Deposit and Withdraw/Withdraw from bank"<endrec>
+"Loan","0","sw_KE","TILL:M-shwari/Loan"<endrec>
+"Pay Loan","0","sw_KE","TILL:M-shwari/Loan/Pay Loan"<endrec>
+"Pay Loan from Savings","0","sw_KE","TILL:M-shwari/Loan/Pay Loan from Savings"<endrec>
+"Request Loan","0","sw_KE","TILL:M-shwari/Loan/Request Loan"<endrec>
+"Query","0","sw_KE","TILL:M-shwari/Query"<endrec>
+"Bank Balance","0","sw_KE","TILL:M-shwari/Query/Bank Balance"<endrec>
+"FSI Mini Statement","0","sw_KE","TILL:M-shwari/Query/FSI Mini Statement"<endrec>
+"Loan Limit","0","sw_KE","TILL:M-shwari/Query/Loan Limit"<endrec>
+"Loan Mini Statement","0","sw_KE","TILL:M-shwari/Query/Loan Mini Statement"<endrec>
+"Terms and Conditions","0","sw_KE","TILL:M-shwari/Terms and Conditions"<endrec>
+"Hawilisha pesa","0","sw_KE","TILL:Move Money"<endrec>
+"Kutoka pesa za shughuli","0","sw_KE","TILL:Move Money/From Float"<endrec>
+"From Merchant","0","sw_KE","TILL:Move Money/From Merchant"<endrec>
+"Kutoka kazi","0","sw_KE","TILL:Move Money/From Working"<endrec>
+"Akaunti yangu","0","sw_KE","TILL:My Account"<endrec>
+"Mwito wa Usaidizi","0","sw_KE","TILL:My Account/Call Support"<endrec>
+"Badilisha PIN","0","sw_KE","TILL:My Account/Change PIN"<endrec>
+"Lugha","0","sw_KE","TILL:My Account/Language"<endrec>
+"MiniStatement","0","sw_KE","TILL:My Account/MiniStatement"<endrec>
+"Msaidizi mpya","0","sw_KE","TILL:My Account/New Assistant"<endrec>
+"Ondoa msaidizi","0","sw_KE","TILL:My Account/Remove Assistant"<endrec>
+"Neno la Siri","0","sw_KE","TILL:My Account/Secret Word"<endrec>
+"Onyesha baki","0","sw_KE","TILL:My Account/Show Balance"<endrec>
+"Fanya upya Menyu ya mahala pa kulipa","0","sw_KE","TILL:My Account/Update Till Menu"<endrec>
+"Mteja Mpya","0","sw_KE","TILL:New Customer"<endrec>
+"OTC Service","0","sw_KE","TILL:OTC Service"<endrec>
+"Capture/Register OTC Customer","0","sw_KE","TILL:OTC Service/Capture/Register OTC Customer"<endrec>
+"IMT Send","0","sw_KE","TILL:OTC Service/IMT Send"<endrec>
+"Pay Bill","0","sw_KE","TILL:OTC Service/Pay Bill"<endrec>
+"Perform OTC Service","0","sw_KE","TILL:OTC Service/Perform OTC Service"<endrec>
+"Airtime Purchase by OTC voucher","0","sw_KE","TILL:OTC Service/Perform OTC Service/Airtime Purchase by OTC voucher"<endrec>
+"IMT Send Query Quote","0","sw_KE","TILL:OTC Service/Perform OTC Service/IMT Send Query Quote"<endrec>
+"IMT Send by OTC voucher","0","sw_KE","TILL:OTC Service/Perform OTC Service/IMT Send by OTC voucher"<endrec>
+"Pay Bill By OTC Voucher","0","sw_KE","TILL:OTC Service/Perform OTC Service/Pay Bill By OTC Voucher"<endrec>
+"Perform OTC without Voucher","0","sw_KE","TILL:OTC Service/Perform OTC without Voucher"<endrec>
+"Airtime Purchase","0","sw_KE","TILL:OTC Service/Perform OTC without Voucher/Airtime Purchase"<endrec>
+"OTC Pay Bill","0","sw_KE","TILL:OTC Service/Perform OTC without Voucher/OTC Pay Bill"<endrec>
+"Operator Close Account","0","sw_KE","TILL:Operator Close Account"<endrec>
+"Operator Create Account","0","sw_KE","TILL:Operator Create Account"<endrec>
+"Huduma za Opareta","0","sw_KE","TILL:Operator Services"<endrec>
+"Tambua msaidizi","0","sw_KE","TILL:Operator Services/Identify Assistant"<endrec>
+"Tuma PIN ya kuanzisha","0","sw_KE","TILL:Operator Services/Send Start Key"<endrec>
+"Fungua PIN","0","sw_KE","TILL:Operator Services/Unlock PIN"<endrec>
+"Update Operator KYC","0","sw_KE","TILL:Operator Services/Update Operator KYC"<endrec>
+"Org Intra_Account Transfer","0","sw_KE","TILL:Org Intra_Account Transfer"<endrec>
+"Transfer from org float to Working account","0","sw_KE","TILL:Org Intra_Account Transfer/Transfer from org float to Working account"<endrec>
+"Transfer from org float to org float","0","sw_KE","TILL:Org Intra_Account Transfer/Transfer from org float to org float"<endrec>
+"Org Query 3rd Buy Goods","0","sw_KE","TILL:Org Query 3rd Buy Goods"<endrec>
+"Org Query 3rd Buy Goods and Payment","0","sw_KE","TILL:Org Query 3rd Buy Goods and Payment"<endrec>
+"OrgOperator Self Update KYC","0","sw_KE","TILL:OrgOperator Self Update KYC"<endrec>
+"OrgQuery3rdBill","0","sw_KE","TILL:OrgQuery3rdBill"<endrec>
+"Orgazination Query 3rd Bill","0","sw_KE","TILL:Orgazination Query 3rd Bill"<endrec>
+"Purchase Airtime","0","sw_KE","TILL:Purchase Airtime"<endrec>
+"Organization Etopup","0","sw_KE","TILL:Purchase Airtime/Organization Etopup"<endrec>
+"Query 3rd Bill And Payment","0","sw_KE","TILL:Query 3rd Bill And Payment"<endrec>
+"Mteja Mpya","0","sw_KE","TILL:Register a Customer"<endrec>
+"Reminder","0","sw_KE","TILL:Reminder"<endrec>
+"Cancel Schedule","0","sw_KE","TILL:Reminder/Cancel Schedule"<endrec>
+"Create Schedul","0","sw_KE","TILL:Reminder/Create Schedule"<endrec>
+"Transfer From Bank To M-PESA","0","sw_KE","TILL:Reminder/Create Schedule/Transfer From Bank To M-PESA"<endrec>
+"Transfer From M-PESA To Bank","0","sw_KE","TILL:Reminder/Create Schedule/Transfer From M-PESA To Bank"<endrec>
+"pay bill","0","sw_KE","TILL:Reminder/Create Schedule/pay bill"<endrec>
+"Initiate Organization Transaction by Reminder","0","sw_KE","TILL:Reminder/Initiate Organization Transaction by Reminder"<endrec>
+"View Schedule","0","sw_KE","TILL:Reminder/View Schedule"<endrec>
+"Saving Plan","0","sw_KE","TILL:Saving Plan"<endrec>
+"Subscribe Saving Plan For Customer","0","sw_KE","TILL:Saving Plan/Subscribe Saving Plan For Customer"<endrec>
+"Subscribe Saving Plan For Group","0","sw_KE","TILL:Saving Plan/Subscribe Saving Plan For Group"<endrec>
+"Subscribe Saving Plan For Org","0","sw_KE","TILL:Saving Plan/Subscribe Saving Plan For Org"<endrec>
+"UnSubscribe Saving Plan For Customer","0","sw_KE","TILL:Saving Plan/UnSubscribe Saving Plan For Customer"<endrec>
+"UnSubscribe Saving Plan For Group","0","sw_KE","TILL:Saving Plan/UnSubscribe Saving Plan For Group"<endrec>
+"UnSubscribe Saving Plan For Org","0","sw_KE","TILL:Saving Plan/UnSubscribe Saving Plan For Org"<endrec>
+"Self Service","0","sw_KE","TILL:Self Service"<endrec>
+"Query Transaction Via Receipt No","0","sw_KE","TILL:Self Service/Query Transaction Via Receipt No"<endrec>
+"Sell Airtime","0","sw_KE","TILL:Sell Airtime"<endrec>
+"Sell Airtime via org float","0","sw_KE","TILL:Sell Airtime/Sell Airtime via org float"<endrec>
+"Standing Order","0","sw_KE","TILL:Standing Order"<endrec>
+"Create Org Standing Order Schedule","0","sw_KE","TILL:Standing Order/Create Org Standing Order Schedule"<endrec>
+"pay bill","0","sw_KE","TILL:Standing Order/Create Org Standing Order Schedule/pay bill"<endrec>
+"View Standing Order Schedule","0","sw_KE","TILL:Standing Order/View Standing Order Schedule"<endrec>
+"Transfer to owner","0","sw_KE","TILL:Transfer to owner"<endrec>
+"Two Part Payment","0","sw_KE","TILL:Two Part Payment"<endrec>
+"Two Part Payment Org Confirm","0","sw_KE","TILL:Two Part Payment/Two Part Payment Org Confirm"<endrec>
+"Two Part Voucher Redeeming","0","sw_KE","TILL:Two Part Payment/Two Part Voucher Redeeming"<endrec>
+"Voucher","0","sw_KE","TILL:Voucher"<endrec>
+"Cancel","0","sw_KE","TILL:Voucher/Cancel"<endrec>
+"Create","0","sw_KE","TILL:Voucher/Create"<endrec>
+"Issue","0","sw_KE","TILL:Voucher/Issue"<endrec>
+"Apply/Issue Voucher","0","sw_KE","TILL:Voucher/Issue/Apply/Issue Voucher"<endrec>
+"Buy Ticket Using Voucher","0","sw_KE","TILL:Voucher/Issue/Buy Ticket Using Voucher"<endrec>
+"Create/Issue Coupon","0","sw_KE","TILL:Voucher/Issue/Create/Issue Coupon"<endrec>
+"Org Apply ATM Withdrawal Voucher for Group","0","sw_KE","TILL:Voucher/Issue/Org Apply ATM Withdrawal Voucher for Group"<endrec>
+"Redeem","0","sw_KE","TILL:Voucher/Redeem"<endrec>
+"Redeem Coupon","0","sw_KE","TILL:Voucher/Redeem/Redeem Coupon"<endrec>
+"Redeem Deposit Voucher","0","sw_KE","TILL:Voucher/Redeem/Redeem Deposit Voucher"<endrec>
+"Redeem Issued Voucher","0","sw_KE","TILL:Voucher/Redeem/Redeem Issued Voucher"<endrec>
+"Redeem Ticket Voucher","0","sw_KE","TILL:Voucher/Redeem/Redeem Ticket Voucher"<endrec>
+"Withdraw Money","0","sw_KE","TILL:Withdraw Money"<endrec>
+"Redeem Withdraw Voucher","0","sw_KE","TILL:Withdraw Money/Customer Withdrawal"<endrec>
+"Withdraw e-Money","0","sw_KE","TILL:Withdraw e-Money"<endrec>
+"Organization Withdrawal From M-PESA","0","sw_KE","TILL:Withdraw e-Money/Organization Withdrawal From M-PESA"<endrec>
+"Transfer from M-Pesa to Bank","0","sw_KE","TILL:Withdraw e-Money/Transfer from M-Pesa to Bank"<endrec>
+"Change Language","0","sw_KE","UNREGCUSTOMER:Change Language"<endrec>
+"Unregister Customer Registration swahili","0","sw_KE","UNREGCUSTOMER:Help"<endrec>
+"Register(Shahil)","0","sw_KE","UNREGCUSTOMER:Register"<endrec>
+"UMCVariableSecure1","1","en","UMCVariableSecure1"<endrec>
+"UMCVariableSecure1","1","en_KE","UMCVariableSecure1"<endrec>
+"UMCVariableSecure1","1","sw_KE","UMCVariableSecure1"<endrec>
+"Reminder","1000","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Reminder","1000","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Reminder","1000","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Customer Intra_Account Transfer","10002","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Customer Intra_Account Transfer","10002","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Customer Intra_Account Transfer","10002","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Reminder Schedule","1001","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Reminder Schedule","1001","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Reminder Schedule","1001","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Org Intra_Account Transfer","10201","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Org Intra_Account Transfer","10201","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Org Intra_Account Transfer","10201","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Purchase Airtime","1651","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Purchase Airtime","1651","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Purchase Airtime","1651","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Issue","177","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Issue","177","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Issue","177","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Redeem","178","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Redeem","178","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Redeem","178","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Cancel","179","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Cancel","179","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Cancel","179","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Reminder","2000","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Reminder","2000","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Reminder","2000","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Initiate Intra-Org Account Transfer","20003","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Initiate Intra-Org Account Transfer","20003","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Initiate Intra-Org Account Transfer","20003","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Initiate Inter-Org Account Transfer","20007","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Initiate Inter-Org Account Transfer","20007","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Initiate Inter-Org Account Transfer","20007","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Agent account","20101","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Agent account","20101","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Akaunti ya ajenti","20101","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Customer Services","20113","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Customer Services","20113","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Huduma Wateja","20113","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Operator care","20188","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Operator care","20188","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Huduma Ajenti","20188","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"OTC Service","20301","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"OTC Service","20301","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"OTC Service","20301","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"International Money Transfer","20325","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"International Money Transfer","20325","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"International Money Transfer","20325","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Buy Airtime","20512","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Buy Airtime","20512","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Nunua mjazo wa simu","20512","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Float Balance","20518","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Float Balance","20518","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Baki ya pesa za shughuli","20518","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Float Administration","20521","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Float Administration","20521","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Usimamizi wa pesa za shughuli","20521","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Move Money","20523","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Move Money","20523","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Hawilisha pesa","20523","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Perform OTC Service","21413","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Perform OTC Service","21413","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Perform OTC Service","21413","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit","21501","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit","21501","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit","21501","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Voucher","2215","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Voucher","2215","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Voucher","2215","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Voucher","2216","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Voucher","2216","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Voucher","2216","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Two factor about","22340","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Two factor about","22340","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Two factor about","22340","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit Money 2 Factor First Name","22370","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit Money 2 Factor First Name","22370","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit Money 2 Factor First Name","22370","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group","22512","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group","22512","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group","22512","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"group","22550","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"group","22550","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"group","22550","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Transactions","22551","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Transactions","22551","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Transactions","22551","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Apply Group Voucher","22580","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Apply Group Voucher","22580","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Apply Group Voucher","22580","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group Member","22801","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group Member","22801","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group Member","22801","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Issue School Dinner Voucher","23012","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Issue School Dinner Voucher","23012","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Issue School Dinner Voucher","23012","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group operation","23072","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group operation","23072","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group operation","23072","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group Manage","23130","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group Manage","23130","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group Manage","23130","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create","23212","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create","23212","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create","23212","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit e-Money","2330","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit e-Money","2330","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit e-Money","2330","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit e-Money","2340","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit e-Money","2340","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit e-Money","2340","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group FSI","23405","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group FSI","23405","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group FSI","23405","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group Savings","23406","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group Savings","23406","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group Savings","23406","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group Loans","23407","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group Loans","23407","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Group Loans","23407","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Direct Debit","2342","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Direct Debit","2342","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Direct Debit","2342","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Direct Debit","2344","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Direct Debit","2344","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Direct Debit","2344","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Standing Order","2356","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Standing Order","2356","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Standing Order","2356","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Standing Order","2358","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Standing Order","2358","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Standing Order","2358","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"FX","2400","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"FX","2400","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"FX","2400","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Foreign Exchange","2401","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Foreign Exchange","2401","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Foreign Exchange","2401","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Payment With Foreign Exchange","2402","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Payment With Foreign Exchange","2402","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Payment With Foreign Exchange","2402","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Receiving With Foreign Exchange","2403","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Receiving With Foreign Exchange","2403","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Receiving With Foreign Exchange","2403","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"M-shwari","24403","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"M-shwari","24403","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"M-shwari","24403","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit and Withdraw","24406","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit and Withdraw","24406","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit and Withdraw","24406","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Loan","24602","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Loan","24602","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Loan","24602","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Query","24606","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Query","24606","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Query","24606","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Loyalty","25502","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Loyalty","25502","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Loyalty","25502","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Loyalty","25507","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Loyalty","25507","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Loyalty","25507","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Pre-Validation","25901","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Pre-Validation","25901","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Pre-Validation","25901","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Schedul","26502","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Schedul","26502","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Schedul","26502","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"CCH for Customer","26601","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"CCH for Customer","26601","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"CCH for Customer","26601","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Saving Plan","26902","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Saving Plan","26902","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Saving Plan","26902","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Saving Plan","27006","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Saving Plan","27006","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Saving Plan","27006","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Self Service","27501","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Self Service","27501","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Self Service","27501","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Operator Query Loyalty Account","27601","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Operator Query Loyalty Account","27601","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Operator Query Loyalty Account","27601","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Org Standing Order Schedule","28302","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Org Standing Order Schedule","28302","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Org Standing Order Schedule","28302","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"send money","28901","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"send money","28901","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"send money","28901","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"CustomerFF","29903","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"CustomerFF","29903","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"CustomerFF","29903","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Bank Account","300","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Bank Account","300","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Bank Account","300","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Perform OTC without Voucher","30701","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Perform OTC without Voucher","30701","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Perform OTC without Voucher","30701","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Direct Debit Mandate","3082","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Direct Debit Mandate","3082","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Direct Debit Mandate","3082","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Activate Direct Debit","3083","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Activate Direct Debit","3083","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Activate Direct Debit","3083","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Direct Debit Mandate","3084","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Direct Debit Mandate","3084","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Create Direct Debit Mandate","3084","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Activate Direct Debit","3085","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Activate Direct Debit","3085","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Activate Direct Debit","3085","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Customer Buy Goods With Foreign Exchange","32905","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Customer Buy Goods With Foreign Exchange","32905","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Customer Buy Goods With Foreign Exchange","32905","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Bank Card Lookup","380","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Bank Card Lookup","380","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Bank Card Lookup","380","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Edit Direct Debit Mandate","4000","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Edit Direct Debit Mandate","4000","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Edit Direct Debit Mandate","4000","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Cancel Direct Debit Mandate","4001","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Cancel Direct Debit Mandate","4001","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Cancel Direct Debit Mandate","4001","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Edit Direct Debit Mandate","4003","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Edit Direct Debit Mandate","4003","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Edit Direct Debit Mandate","4003","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Cancel Direct Debit Mandate","4004","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Cancel Direct Debit Mandate","4004","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Cancel Direct Debit Mandate","4004","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Reactivate Direct Debit Mandate","4005","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Reactivate Direct Debit Mandate","4005","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Reactivate Direct Debit Mandate","4005","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"View Direct Debit Mandate","4007","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"View Direct Debit Mandate","4007","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"View Direct Debit Mandate","4007","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Cancel Card","4062","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Cancel Card","4062","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Cancel Card","4062","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Two Part Payment","4086","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Two Part Payment","4086","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Two Part Payment","4086","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Two Part Payment","4092","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Two Part Payment","4092","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Two Part Payment","4092","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Register Card","442","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Register Card","442","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Register Card","442","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Activate Card","443","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Activate Card","443","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Activate Card","443","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Card Actions","450","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Card Actions","450","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Card Actions","450","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Register Card","452","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Register Card","452","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Register Card","452","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Bundle","500","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Bundle","500","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Bundle","500","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"View Bundles","501","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"View Bundles","501","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"View Bundles","501","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"View Bundle Details","502","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"View Bundle Details","502","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"View Bundle Details","502","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Query My Bundles","503","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Query My Bundles","503","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Query My Bundles","503","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Subscribe Bundle","507","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Subscribe Bundle","507","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Subscribe Bundle","507","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Bundle","550","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Bundle","550","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Bundle","550","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Withdraw Cash","608","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Withdraw Cash","608","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Withdraw Cash","608","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Withdraw Money","611","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Withdraw Money","611","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Withdraw Money","611","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Sell Airtime","622","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Sell Airtime","622","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Sell Airtime","622","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Business Deposit","623","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Business Deposit","623","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Business Deposit","623","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Business Withdraw","627","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Business Withdraw","627","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Business Withdraw","627","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Please select","646","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"B2B","648","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"B2B","648","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"B2B","648","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Please select","650","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Withdraw e-Money","655","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Withdraw e-Money","655","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Withdraw e-Money","655","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"M-Shwari","673","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"M-Shwari","673","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Loan","679","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Mkopo","679","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Mini Statement","688","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Mini Statement","688","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Taarifa fupi ya akaunti yako","688","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"M-Kesho","700","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"M-Kesho","700","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"M-Kesho","700","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit and Withdraw","701","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit and Withdraw","701","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Deposit and Withdraw","701","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Loan","704","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Loan","704","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Mkopo","704","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Buy Insurance","708","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Buy Insurance","708","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Nunua bima","708","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Query","711","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Query","711","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Query","711","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Foreign Exchange","730","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Foreign Exchange","730","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Foreign Exchange","730","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Foreign Exchange","731","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Foreign Exchange","731","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Foreign Exchange","731","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Customer Payment With Foreign Exchange","732","en","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Payment With Foreign Exchange","732","en_KE","DISPLAY_SUBMENU_PROMPT"<endrec>
+"Payment With Foreign Exchange","732","sw_KE","DISPLAY_SUBMENU_PROMPT"<endrec>

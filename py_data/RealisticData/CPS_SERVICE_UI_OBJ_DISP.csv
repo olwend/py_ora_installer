@@ -1,0 +1,15 @@
+DATA_DICT_KEY,DESCRIPTION,DISPLAY_FLAG,DISPLAY_NAME,DISP_ID,HIDE_FLAG,MENDATORY_FLAG,OBJECT_CODE,PARA_ID,SERVICE_INDEX,UI_OBJ_TYPE,VALUE_DISPLAY_CONTROL                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <endrec>
+"","","Y","buygoodQty","937330888","","Y","","102","10664","2","1"<endrec>
+"","","Y","Payment Type","937331886","","N","","301","10022","2","1"<endrec>
+"CPS.ACCESS.CHANNEL","","Y","value","937359045","","Y","","601","10010","2","2"<endrec>
+"","","Y","Bill_Ref_No","937451337","","Y","","701","10136","2","1"<endrec>
+"","","Y","Two Part Buy Good Type","937459339","","Y","","801","10664","2","1"<endrec>
+"","","Y","buyGoodType","937515939","","N","","1101","10664","2","1"<endrec>
+"","","Y","buyGoodQty","937515944","","N","","1102","10664","2","1"<endrec>
+"","","N","buyGoodQty","937543728","","N","","4","10664","2","1"<endrec>
+"","","N","buyGoodType","937543732","","N","","3","10664","2","1"<endrec>
+"","","Y","Payment Type","937568731","","N","","201","11627","2","1"<endrec>
+"","","Y","BuyGoodQty","937583898","","Y","","1103","10664","2","1"<endrec>
+"","","Y","BuyGoodType","937583902","","Y","","1104","10664","2","1"<endrec>
+"","","Y","PaymentType","937664827","","N","","6305","10055","2","1"<endrec>
+"","","Y","PaymentType","937664876","","Y","","6306","11627","2","1"<endrec>

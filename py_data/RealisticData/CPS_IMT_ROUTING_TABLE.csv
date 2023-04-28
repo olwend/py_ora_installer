@@ -1,0 +1,10 @@
+DEST_COUNTRY,DEST_SERVICE_PROVIDER,DEST_URI_FORMAT,DEST_URI_TYPE,HUB_PROVIDER,MSISDN_PREFIX,SEND_CORRIDOR_SERVICE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <endrec>
+"UK","MPesa","","01","02","2547","Golden"<endrec>
+"UK","MPesa","","01","02","255","Golden"<endrec>
+"UK","MPesa","","01","52","407","Golden"<endrec>
+"UK","MPesa","","01","02","86135","Golden"<endrec>
+"UK","MPesa","MSISDN","01","02","86158","Golden"<endrec>
+"UK","MPesa","","01","2054","8616","Golden"<endrec>
+"UK","MPesa","","01","2054","86178","Golden"<endrec>
+"UK","DestSPItem","","01","02","86188","Golden"<endrec>
+"UK","MPesa","","01","4054","86812","Golden"<endrec>

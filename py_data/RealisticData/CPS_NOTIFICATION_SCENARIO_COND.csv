@@ -1,0 +1,10 @@
+CONDITION_KEY,CONDITION_VALUE,RESULT_CODE,SCENARIO_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   <endrec>
+"TRANSACTION_STATUS","Authorized","*","13"<endrec>
+"TRANSACTION_STATUS","Expired","*","16"<endrec>
+"TRANSACTION_STATUS","Cancelled","*","17"<endrec>
+"TRANSACTION_STATUS","Declined","*","18"<endrec>
+"TRANSACTION_STATUS","Expired","*","22"<endrec>
+"TRANSACTION_STATUS","Cancelled","*","23"<endrec>
+"TRANSACTION_STATUS","Declined","*","24"<endrec>
+"TRANSACTION_STATUS","Complete","SYS00000","13"<endrec>
+"TRANSACTION_STATUS","Complete","SYS00000","19"<endrec>

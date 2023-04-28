@@ -1,0 +1,120 @@
+CATEGORY_CODE,CHANNEL,CREATE_OPER_ID,CREATE_OPER_TIME,ENGINE_TYPE,ID,LAST_OPER_ID,LAST_OPER_TIME,PROCESS_NAME,SERVICE_CODE,TIME_LIMIT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   <endrec>
+"","1010","","","","1758","","","Send Money via m-pesa With Prevalidation for API","P2PReg2Reg_PreValidation","120"<endrec>
+"","1002","","","","1768","203000000000027802","2017-09-25 10:57:44.802000","Send Money via m-pesa With Prevalidation for STK","P2PReg2Reg_PreValidation","120"<endrec>
+"","1002","","","","1769","203000000000027802","2017-09-25 10:32:25.246000","Group G2G Transfer With Prevalidation for STK","Group G2G Transfer by Customer_PreValidation","120"<endrec>
+"","1010","","","","1770","203000000000027802","2017-09-25 10:19:03.038000","Group G2G Transfer With Prevalidation for API","Group G2G Transfer by Customer_PreValidation","120"<endrec>
+"","1010","","","","1771","203000000000027802","2017-09-25 10:18:21.518000","Deposit Money With Prevalidation for API","BusinessDeposit_PreValidation","120"<endrec>
+"","1010","","","","1781","","","Two Step Authentication Transaction","Two Step Authentication Transaction Service","120"<endrec>
+"","1005","","","","1782","","","Web Default Template","*","120"<endrec>
+"","1010","","","","1798","203000000000028306","2017-11-07 02:11:33.245000","API Default Template","*","120"<endrec>
+"Internal","1010","","","","1800","","","API Transaction Template","#Transaction#","120"<endrec>
+"","1010","","","","1817","","","CreateOrg","#AT#CreateOrg","120"<endrec>
+"","1010","","","","1818","","","GEO Locking","GEO Locking","120"<endrec>
+"","1010","","","","1819","","","Indosat Reload With Location Validation for API","Indosat Reload","120"<endrec>
+"","1003","","","","1826","","","Indosat Reload With Location Validation for USSD","Indosat Reload","120"<endrec>
+"","1005","","","","1827","","","Indosat Reload With Msisdn Status Validation via Web","Indosat Reload","120"<endrec>
+"","1003","","","","1828","","","Purchase Data Package With Location Validation for USSD","Purchase Data Package","120"<endrec>
+"","1010","","","","1829","","","Purchase Data Package for API","Purchase Data Package","120"<endrec>
+"","1003","","","","1830","","","Purchase VAS Package With Location Validation for USSD","Purchase VAS Package","120"<endrec>
+"","1010","","","","1831","","","Purchase VAS Package for API","Purchase VAS Package","120"<endrec>
+"","1014","","","","1854","","","Indosat Reload With Location Validation for APP","Indosat Reload","120"<endrec>
+"","1005","","","","1855","","","Purchase Data Package for Web","Purchase Data Package","120"<endrec>
+"","1005","","","","1857","","","Dompetku Bill Payment for Web","Dompetku Bill Payment","120"<endrec>
+"","1003","","","","1858","","","Dompetku Bill Payment for USSD","Dompetku Bill Payment","120"<endrec>
+"","1014","","","","1859","","","Dompetku Bill Payment for APP","Dompetku Bill Payment","120"<endrec>
+"","1010","","","","1862","","","Dompetku Bill Payment for API","Dompetku Bill Payment","120"<endrec>
+"","1005","","","","1865","","","Purchase VAS Package for Web","Purchase VAS Package","120"<endrec>
+"","1014","","","","1866","","","Purchase Data Package With Location Validation for APP","Purchase Data Package","120"<endrec>
+"","1014","","","","1867","","","Purchase VAS Package With Location Validation for APP","Purchase VAS Package","120"<endrec>
+"","1005","","","","1903","203000000000027802","2017-09-25 10:35:21.541000","OTC Pay Bill With Prevalidation for WEB","3411","120"<endrec>
+"","1002","","","","1905","203000000000027802","2017-09-25 10:34:36.363000","OTC Pay Bill With Prevalidation for STK","3411","120"<endrec>
+"","1002","","","","1906","203000000000027802","2017-09-25 10:02:14.012000","Customer Deposit Money With Prevalidation for STK","2001","120"<endrec>
+"","1010","","","","1907","203000000000027802","2017-09-25 10:33:27.955000","OTC Pay Bill With Prevalidation for API","3411","120"<endrec>
+"","1010","","","","1908","203000000000010811","2018-03-28 09:54:25.188000","Customer Deposit Money With Prevalidation for API","2001","120"<endrec>
+"","1003","","","","1915","","","Cash Out To Bank Account for USSD","Customer Cash Out to Bank Account","120"<endrec>
+"","1001","","","","1916","","","Cash Out To Bank Account for SMS","Customer Cash Out to Bank Account","120"<endrec>
+"","1010","","","","1917","","","Cash Out To Bank Account for API","Customer Cash Out to Bank Account","120"<endrec>
+"","1001","","","","1920","","","Customer Remittance For USSD Push","Remittance Cus2Cus","120"<endrec>
+"","1010","","","","1921","","","Customer Remittance For USSD Push By APP","Credit Remittance Cus2Cus","120"<endrec>
+"","1010","","","","1922","","","Cash Out ussd push","CashOutbyMSISDNandPIN","120"<endrec>
+"","1001","","","","1923","","","Organization Loan","Organization Loan","120"<endrec>
+"","1001","","","","1925","","","Customer Change Language","1005","120"<endrec>
+"","1001","","","","1926","","","Cash In By SMS","2001","120"<endrec>
+"","1003","","","","1927","","","Cash In By USSD","2001","120"<endrec>
+"","1001","","","","1928","","","Indosat Reload With Location Validation for SMS","Indosat Reload","120"<endrec>
+"","1001","","","","1929","","","Purchase Data Package With Location Validation for SMS","Purchase Data Package","120"<endrec>
+"","1001","","","","1930","","","Purchase VAS Package With Location Validation for SMS","Purchase VAS Package","120"<endrec>
+"","1010","","","","1931","","","Indosat Reload via Cipika With Location Validation for API","Indosat Reload via Cipika","120"<endrec>
+"","1014","","","","1932","","","Indosat Reload via Cipika With Location Validation for APP","Indosat Reload via Cipika","120"<endrec>
+"","1001","","","","1933","","","Indosat Reload via Cipika With Location Validation for SMS","Indosat Reload via Cipika","120"<endrec>
+"","1003","","","","1934","","","Indosat Reload via Cipika With Location Validation for USSD","Indosat Reload via Cipika","120"<endrec>
+"","1005","","","","1935","","","Indosat Reload via Cipika With Msisdn Status Validation via Web","Indosat Reload via Cipika","120"<endrec>
+"","1001","","","","1937","","","Unlink NFC Tag For SMS","#BOAT#UninkNFCTag","120"<endrec>
+"","1005","","","","1938","","","Unlink NFC Tag For Web","#BOAT#UninkNFCTag","120"<endrec>
+"","1010","","","","1939","","","Link Identity Bank Account for HTTP","#BOAT#CreateIdentityBankAccount","120"<endrec>
+"","1005","","","","1940","","","Link NFC Tag For Web","#BOAT#LinkNFCTag","120"<endrec>
+"","1001","","","","1941","","","BuyGoods4Customer for SMS","Pay for Buy Goods Push PIN","120"<endrec>
+"","1003","","","","1948","","","Airtime By USSD","Buy Airtime Push PIN","120"<endrec>
+"","1003","","","","1949","","","Buy Data Package By USSD","Purchase Data Package for Telcomsel","120"<endrec>
+"","1003","","","","1950","","","BuyGoods4Customer for USSD","Pay for Buy Goods Push PIN","120"<endrec>
+"","1003","","","","1951","","","PayBill4OrgOperator for USSD","CustomerPayBill Primary Credit","120"<endrec>
+"","1005","","","","1952","","","Link Identity Bank Account for WEB","#BOAT#CreateIdentityBankAccount","120"<endrec>
+"","1001","","","","1953","","","PayBillWithInquiry for SMS","PayBillWithInquiry","120"<endrec>
+"","1003","","","","1956","","","BuyGoods4Operator USSD without voucher","BuyGoods for Org Operator without voucher","120"<endrec>
+"","1001","","","","1957","","","BuyGoods4Operator SMS without voucher","BuyGoods for Org Operator without voucher","120"<endrec>
+"","1005","","","","1971","","","Merchant Owner Deposit By WEB","Merchant Owner Deposit","120"<endrec>
+"","1010","","","","1978","","","Buy Goods Using Special Price for HTTP","BuyGoodsUsingSpecialPrice","120"<endrec>
+"","1010","","","","1982","","","Buy Goods Using Special Price Next Time for HTTP","BuyGoodsUsingSpecialPriceNextTime","120"<endrec>
+"","1010","","","","1992","203000000000027802","2017-09-25 10:42:29.621000","Withdraw At Agent With Prevalidation for API","2002","120"<endrec>
+"","1005","","","","1994","203000000000027802","2017-09-25 10:44:37.879000","Withdraw At Agent With Prevalidation for WEB","2002","120"<endrec>
+"","1010","","","","1995","203000000000027802","2017-09-25 09:35:06.507000","Cusotmer Buy Goods With Prevalidation for API","2301","120"<endrec>
+"","1002","","","","1996","203000000000027802","2017-09-25 09:36:03.216000","Cusotmer Buy Goods With Prevalidation for STK","2301","120"<endrec>
+"","1005","","","","1997","203000000000027802","2017-09-25 09:36:55.874000","Cusotmer Buy Goods With Prevalidation for WEB","2301","120"<endrec>
+"","1010","","","","1999","203000000000024612","2018-05-23 05:01:02.002000","Send Money With Prevalidation for API","2003","120"<endrec>
+"","1002","","","","2000","203000000000027802","2017-09-25 10:40:26.579000","Send Money With Prevalidation for STK","2003","120"<endrec>
+"","1005","","","","2001","203000000000027802","2017-09-25 10:41:27.157000","Send Money With Prevalidation for WEB","2003","120"<endrec>
+"","1010","","","","2002","203000000000027802","2017-09-25 10:04:57.798000","Customer Pay Bill With Prevalidation for API","3111","120"<endrec>
+"","1002","","","","2003","203000000000027802","2017-09-25 10:15:11.960000","Customer Pay Bill With Prevalidation for STK","3111","120"<endrec>
+"","1005","","","","2004","203000000000027802","2017-09-25 10:16:00.183000","Customer Pay Bill With Prevalidation for WEB","3111","120"<endrec>
+"","1010","","","","2005","203000000000027802","2017-09-25 09:47:53.829000","Customer Buy Airtime  With Prevalidation for API","2106","120"<endrec>
+"","1002","","","","2006","203000000000027802","2017-09-25 09:49:06.358000","Customer Buy Airtime  With Prevalidation for STK","2106","120"<endrec>
+"","1005","","","","2008","203000000000027802","2017-09-25 09:49:59.544000","Customer Buy Airtime  With Prevalidation for WEB","2106","120"<endrec>
+"","1002","","","","2016","203000000000027802","2017-09-25 10:43:34.411000","Withdraw At Agent With Prevalidation for STK","2002","120"<endrec>
+"","1010","","","","2017","","","Send Outgoing from MFS to TSEL Point for API","1006","120"<endrec>
+"","1010","","","","2021","","","QueryIndosatBill for API","#BOAT#QueryIndosatBill","120"<endrec>
+"","1014","","","","2022","","","QueryIndosatBill for APP","#BOAT#QueryIndosatBill","120"<endrec>
+"","1010","","","","2111","","","Dompetku Cash In for API","Dompetku Cash In","120"<endrec>
+"","1014","","","","2113","","","Dompetku Cash In for APP","Dompetku Cash In","120"<endrec>
+"","1003","","","","2114","","","Dompetku Cash In for USSD","Dompetku Cash In","120"<endrec>
+"","1005","","","","2115","","","Dompetku Cash In for Web","Dompetku Cash In","120"<endrec>
+"","1010","","","","2116","","","Dompetku Cash Out for API","Dompetku Cash Out","120"<endrec>
+"","1014","","","","2117","","","Dompetku Cash Out for APP","Dompetku Cash Out","120"<endrec>
+"","1003","","","","2118","","","Dompetku Cash Out for USSD","Dompetku Cash Out","120"<endrec>
+"","1005","","","","2119","","","Dompetku Cash Out for Web","Dompetku Cash Out","120"<endrec>
+"","1005","","","","2137","","","Organization Withdraw to Bank for Web","Organization Withdraw to bank","120"<endrec>
+"","1002","","","","2195","","","Add Group Member With Prevalidation for STK","#BOAT#AddGroupMember","120"<endrec>
+"","1003","","","","2204","","","Transfer from M-Pesa to Bank By USSD","Transfer from M-Pesa to Bank","120"<endrec>
+"","1002","","","","2215","","","Query OD by STK","Query OD Information","120"<endrec>
+"","1002","","","","2219","","","Customer Query 3rd Bill And Payment for STK","CustomerPay3rdBill_VDF_Demo","120"<endrec>
+"","1002","","","","2220","","","Group Query 3rd Bill And Payment for STK","GroupPay3rdBill_VDF_Demo","120"<endrec>
+"","1002","","","","2221","","","Organization Query 3rd Bill And Payment for STK","OrganizationPay3rdBill_VDF_Demo","120"<endrec>
+"","1002","","","","2224","","","Group Pay Bill with prevalidation for STK","Group Pay Bill Service","120"<endrec>
+"","1002","","","","2228","","","Customer Query 3rd Bill for STK","CustomerQuery3rdBill_VDF_Demo","120"<endrec>
+"","1002","","","","2257","","","OD Repayment with STK","ODRepayment","120"<endrec>
+"","1002","","","","2258","","","Customer Buy Goods With OD STK","CustomerPayMerchant","120"<endrec>
+"","1010","203000000000010806","2017-03-01 08:46:06.616000","","25611","203000000000034103","2018-07-26 11:11:31.094000","","Send Money1","120"<endrec>
+"","1003","203000000000010806","2017-03-10 07:05:56.607000","","25801","203000000000027802","2017-09-25 10:17:30.031000","","#RT#Send Money","120"<endrec>
+"","1003","203000000000010806","2017-03-10 10:44:11.868000","","25806","203000000000027802","2017-09-25 10:16:36.152000","","#RT#Customer Transfer","120"<endrec>
+"","1003","203000000000013818","2017-03-14 12:48:34.265000","","25905","203000000000027802","2017-09-25 10:36:10.369000","","Send Money","120"<endrec>
+"","1010","","","","2613","","","Query OD by API","Query OD Information","120"<endrec>
+"","1010","","","","2615","","","Customer Buy Goods With OD API","CustomerPayMerchant","120"<endrec>
+"","1002","","","","2639","","","Send Money With Prevalidation STK","Send Money","120"<endrec>
+"","1005","203000000000020211","2017-04-07 17:00:59.295000","","26401","203000000000027802","2017-09-25 10:38:12.411000","","Send Money","120"<endrec>
+"","1003","203000000000018317","2017-04-27 11:04:55.515000","","26701","203000000000027802","2017-09-25 11:00:27.429000","","send money_ussd","120"<endrec>
+"","1010","","","","30301","203000000000034103","2018-07-27 08:59:57.042000","Customer Send Money With OD API","Send Money","120"<endrec>
+"","1010","203000000000032902","2018-04-23 09:41:19.039000","","30901","203000000000032902","2018-04-23 09:41:19.039000","","Organization Intra-Account Transfer For Org float to Working Account","120"<endrec>
+"","1005","203000000000025034","2018-09-06 12:15:58.962000","1.0","32710","203000000000025034","2018-09-06 12:15:58.962000","","Send Money Off-Net","120"<endrec>
+"","1005","203000000000025034","2018-09-06 12:18:16.094000","1.0","32713","203000000000025034","2018-09-06 12:18:16.094000","","#RT#Send Money Off-Net","120"<endrec>
+"","1005","203000000000036803","2018-11-19 09:47:24.601000","1.0","33101","203000000000036803","2018-11-19 09:53:58.164000","","2001","120"<endrec>
+"","1010","203000000000039902","2019-02-15 07:11:20.761000","1.0","33401","203000000000039902","2019-03-05 15:55:15.770000","","Merchant POS Payment","120"<endrec>
+"","1010","203000000000025005","2019-04-02 08:31:09.809000","1.0","33516","203000000000025005","2019-04-02 10:28:36.238000","","SalaryPayment","120"<endrec>

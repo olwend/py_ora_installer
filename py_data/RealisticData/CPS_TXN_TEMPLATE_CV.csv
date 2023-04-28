@@ -1,0 +1,1067 @@
+CONTENT,IS_REF,LAST_OPER_ID,LAST_OPER_TIME,PARAMETER_ACTIVITIES,TEMPLATE_ID,VERSION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <endrec>
+"<templates xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+   <template id=""Advanced Txn Model Auth tab"">
+      <name>Advanced Txn Model Auth tab</name>
+      <description>Advanced Txn Model Auth tab</description>
+      <version>1</version>
+      <entry-point>Initiated</entry-point>
+      <state name=""Initiated"">
+         <activity id=""Business Initialization"" name=""Business Initialization"" logic=""BusinessInitialization"" logictype=""chain"">
+            <transition method=""out"" type=""state"" next=""Validated"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Validated"">
+         <activity id=""Transaction Reserve"" name=""Transaction Reserve"" logic=""TransactionReserve"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""activity"" next=""3rd Party Reference Number Validation"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+         <activity id=""3rd Party Reference Number Validation"" name=""3rd Party Reference Number Validation"" logic=""3rdPartyReferenceNumberValidation"">
+            <transition method=""suspended"" type=""activity"" next=""3rd Party Reference Number Validation"">
+               <criteria operator=""eq"" value=""suspend""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Pending Authorized"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Pending Authorized"">
+         <activity id=""Check Authorization"" name=""Check Authorization"" logic=""CheckerAuthorizationActivity"" logictype=""bridge"">
+            <transition method=""out"" type=""activity"" next=""Raise Task"">
+               <criteria operator=""eq"" value=""true""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""false""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </activity>
+         <activity id=""Raise Task"" name=""Raise Task"" logic=""ProcessRaiseUserTask"">
+            <transition method=""suspended"" type=""activity"" next=""Raise Task"">
+               <criteria operator=""eq"" value=""raise success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Authorized"">
+         <listener id=""Intervention Handler"" name=""Intervention Handler"" logic=""InterventionHandleActivity"" logictype=""bean"">
+            <transition name=""complete"" method=""out"" type=""activity"" next=""Transaction Complete"">
+               <criteria operator=""eq"" value=""1""/>
+            </transition>
+            <transition name=""cancel"" method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""2""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </listener>
+         <activity id=""3rd Payment"" name=""3rd Payment"" logic=""3rdPayment"">
+            <transition method=""out"" type=""activity"" next=""Transaction Complete"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+			<criteria operator=""eq"" value=""exception"" />
+	     </transition>
+            <transition method=""out"" type=""activity"" next=""Transaction Suspend"">
+               <criteria operator=""eq"" value=""suspend""/>
+            </transition>
+            <transition method=""out"" type=""activity"" next=""3rd Payment"">
+               <criteria operator=""eq"" value=""resend payment request""/>
+            </transition>
+         </activity>
+<activity id=""Transaction Suspend"" name=""Transaction Suspend""
+				logic=""TransactionSuspend"">
+				<transition method=""suspended"" type=""activity"" next=""3rd Payment"">
+					<criteria operator=""eq"" value=""success"" />
+				</transition>
+			</activity>
+         <activity id=""Transaction Complete"" name=""Transaction Complete"" logic=""TransactionComplete"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Completed"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Completed"">
+         <activity id=""Business Completion"" name=""Business Ending"" logic=""BusinessEnding"" logictype=""chain"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Declined"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Declined"" name=""BusinessFailedProcessing"" logic=""BusinessFailedProcessing""/>
+      </state>
+      <state name=""Cancelled"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Cancelled"" name=""BusinessFailedProcessing"" logic=""BusinessFailedProcessing""/>
+      </state>
+      <state name=""Expired"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Expired"" name=""BusinessExpiredProcessing"" logic=""BusinessExpiredProcessing""/>
+      </state>
+   </template>
+</templates>","N","0","","Business Initialization.CommonAuthorization|Business Completion.TransactionSuccessNotifyBuilder|Business Cancelled.TransactionFailureNotifyBuilder|Business Declined.TransactionFailureNotifyBuilder|Business Expired.TransactionSuccessNotifyBuilder|3rd Payment.BillRefNumberExternalValidationActivity|Business Cancelled.BSD.PayBill.ReversePayBillfor3rdPartyTimeoutActivity|Transaction Suspend.TransactionSuspendNotifyBuilder|","Advanced Txn Model Auth tab","1"<endrec>
+"<templates xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+   <template id=""Advanced Txn Model Auth tab ref"">
+      <name>Advanced Txn Model Auth tab ref</name>
+      <description>Advanced Txn Model Auth tab ref</description>
+      <version>1</version>
+      <entry-point>Initiated</entry-point>
+      <ref-template>Advanced Txn Model Auth tab</ref-template>
+   </template>
+</templates>","N","0","","","Advanced Txn Model Auth tab ref","1"<endrec>
+"<templates xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+   <template id=""DirectTransferWithAuthorized"">
+      <name>DirectTransferWithAuthorized</name>
+      <description>DirectTransferWithAuthorized</description>
+      <version>3</version>
+      <entry-point>Initiated</entry-point>
+      <state name=""Initiated"">
+         <activity id=""Business Initialization"" name=""Business Initialization"" logic=""BusinessInitialization"" logictype=""chain"">
+            <transition method=""out"" type=""state"" next=""Validated"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Validated"">
+         <activity id=""Transaction Reserve"" name=""Transaction Reserve"" logic=""TransactionReserve"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""activity"" next=""3rd Party Reference Number Validation"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+         <activity id=""3rd Party Reference Number Validation"" name=""3rd Party Reference Number Validation"" logic=""3rdPartyReferenceNumberValidation"">
+            <transition method=""suspended"" type=""activity"" next=""3rd Party Reference Number Validation"">
+               <criteria operator=""eq"" value=""suspend""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Pending Authorized"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Pending Authorized"">
+         <activity id=""Check Authorization"" name=""Check Authorization"" logic=""CheckerAuthorizationActivity"" logictype=""bridge"">
+            <transition method=""out"" type=""activity"" next=""Raise Task"">
+               <criteria operator=""eq"" value=""true""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""false""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </activity>
+         <activity id=""Raise Task"" name=""Raise Task"" logic=""ProcessRaiseUserTask"">
+            <transition method=""suspended"" type=""activity"" next=""Raise Task"">
+               <criteria operator=""eq"" value=""raise success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Authorized"">
+         <listener id=""Intervention Handler"" name=""Intervention Handler"" logic=""InterventionHandleActivity"" logictype=""bean"">
+            <transition name=""complete"" method=""out"" type=""activity"" next=""Transaction Complete"">
+               <criteria operator=""eq"" value=""1""/>
+            </transition>
+            <transition name=""cancel"" method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""2""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </listener>
+         <activity id=""3rd Payment"" name=""3rd Payment"" logic=""3rdPayment"">
+            <transition method=""out"" type=""activity"" next=""Transaction Complete"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+			<criteria operator=""eq"" value=""exception"" />
+	     </transition>
+            <transition method=""out"" type=""activity"" next=""Transaction Suspend"">
+               <criteria operator=""eq"" value=""suspend""/>
+            </transition>
+            <transition method=""out"" type=""activity"" next=""3rd Payment"">
+               <criteria operator=""eq"" value=""resend payment request""/>
+            </transition>
+         </activity>
+<activity id=""Transaction Suspend"" name=""Transaction Suspend""
+				logic=""TransactionSuspend"">
+				<transition method=""suspended"" type=""activity"" next=""3rd Payment"">
+					<criteria operator=""eq"" value=""success"" />
+				</transition>
+			</activity>
+         <activity id=""Transaction Complete"" name=""Transaction Complete"" logic=""TransactionComplete"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Completed"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Completed"">
+         <activity id=""Business Completion"" name=""Business Ending"" logic=""BusinessEnding"" logictype=""chain"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Declined"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Declined"" name=""BusinessFailedProcessing"" logic=""BusinessFailedProcessing""/>
+      </state>
+      <state name=""Cancelled"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Cancelled"" name=""BusinessFailedProcessing"" logic=""BusinessFailedProcessing""/>
+      </state>
+      <state name=""Expired"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Expired"" name=""BusinessExpiredProcessing"" logic=""BusinessExpiredProcessing""/>
+      </state>
+   </template>
+</templates>","N","0","","Business Initialization.CommonAuthorization|Business Completion.TransactionSuccessNotifyBuilder|Business Cancelled.TransactionFailureNotifyBuilder|Business Declined.TransactionFailureNotifyBuilder|Business Expired.TransactionSuccessNotifyBuilder|","DirectTransferWithAuthorized","1"<endrec>
+"<templates xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+   <template id=""DirectTransferWithAuthorized2"">
+      <name>DirectTransferWithAuthorized2</name>
+      <description>DirectTransferWithAuthorized2</description>
+      <version>3</version>
+      <entry-point>Initiated</entry-point>
+      <state name=""Initiated"">
+         <activity id=""Business Initialization"" name=""Business Initialization"" logic=""BusinessInitialization"" logictype=""chain"">
+            <transition method=""out"" type=""state"" next=""Validated"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Validated"">
+         <activity id=""Transaction Reserve"" name=""Transaction Reserve"" logic=""TransactionReserve"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""activity"" next=""3rd Party Reference Number Validation"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+         <activity id=""3rd Party Reference Number Validation"" name=""3rd Party Reference Number Validation"" logic=""3rdPartyReferenceNumberValidation"">
+            <transition method=""suspended"" type=""activity"" next=""3rd Party Reference Number Validation"">
+               <criteria operator=""eq"" value=""suspend""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Pending Authorized"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Pending Authorized"">
+         <activity id=""Check Authorization"" name=""Check Authorization"" logic=""CheckerAuthorizationActivity"" logictype=""bridge"">
+            <transition method=""out"" type=""activity"" next=""Raise Task"">
+               <criteria operator=""eq"" value=""true""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""false""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </activity>
+         <activity id=""Raise Task"" name=""Raise Task"" logic=""ProcessRaiseUserTask"">
+            <transition method=""suspended"" type=""activity"" next=""Raise Task"">
+               <criteria operator=""eq"" value=""raise success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Authorized"">
+         <listener id=""Intervention Handler"" name=""Intervention Handler"" logic=""InterventionHandleActivity"" logictype=""bean"">
+            <transition name=""complete"" method=""out"" type=""activity"" next=""Transaction Complete"">
+               <criteria operator=""eq"" value=""1""/>
+            </transition>
+            <transition name=""cancel"" method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""2""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </listener>
+         <activity id=""3rd Payment"" name=""3rd Payment"" logic=""3rdPayment"">
+            <transition method=""out"" type=""activity"" next=""Transaction Complete"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+			<criteria operator=""eq"" value=""exception"" />
+	     </transition>
+            <transition method=""out"" type=""activity"" next=""Transaction Suspend"">
+               <criteria operator=""eq"" value=""suspend""/>
+            </transition>
+            <transition method=""out"" type=""activity"" next=""3rd Payment"">
+               <criteria operator=""eq"" value=""resend payment request""/>
+            </transition>
+         </activity>
+<activity id=""Transaction Suspend"" name=""Transaction Suspend""
+				logic=""TransactionSuspend"">
+				<transition method=""suspended"" type=""activity"" next=""3rd Payment"">
+					<criteria operator=""eq"" value=""success"" />
+				</transition>
+			</activity>
+         <activity id=""Transaction Complete"" name=""Transaction Complete"" logic=""TransactionComplete"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Completed"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Completed"">
+         <activity id=""Business Completion"" name=""Business Ending"" logic=""BusinessEnding"" logictype=""chain"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Declined"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Declined"" name=""BusinessFailedProcessing"" logic=""BusinessFailedProcessing""/>
+      </state>
+      <state name=""Cancelled"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Cancelled"" name=""BusinessFailedProcessing"" logic=""BusinessFailedProcessing""/>
+      </state>
+      <state name=""Expired"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Expired"" name=""BusinessExpiredProcessing"" logic=""BusinessExpiredProcessing""/>
+      </state>
+   </template>
+</templates>","N","0","","","DirectTransferWithAuthorized2","3"<endrec>
+"<templates xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+   <template id=""DirectTransferWithAuthorized6316"">
+      <name>DirectTransferWithAuthorized6316</name>
+      <description>DirectTransferWithAuthorized6316</description>
+      <version>1</version>
+      <entry-point>Initiated</entry-point>
+      <state name=""Initiated"">
+         <activity id=""Business Initialization"" name=""Business Initialization"" logic=""BusinessInitialization"" logictype=""chain"">
+            <transition method=""out"" type=""state"" next=""Validated"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Validated"">
+         <activity id=""Transaction Reserve"" name=""Transaction Reserve"" logic=""TransactionReserve"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""activity"" next=""3rd Party Reference Number Validation"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+         <activity id=""3rd Party Reference Number Validation"" name=""3rd Party Reference Number Validation"" logic=""3rdPartyReferenceNumberValidation"">
+            <transition method=""suspended"" type=""activity"" next=""3rd Party Reference Number Validation"">
+               <criteria operator=""eq"" value=""suspend""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Pending Authorized"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Pending Authorized"">
+         <activity id=""Check Authorization"" name=""Check Authorization"" logic=""CheckerAuthorizationActivity"" logictype=""bridge"">
+            <transition method=""out"" type=""activity"" next=""Raise Task"">
+               <criteria operator=""eq"" value=""true""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""false""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </activity>
+         <activity id=""Raise Task"" name=""Raise Task"" logic=""ProcessRaiseUserTask"">
+            <transition method=""suspended"" type=""activity"" next=""Raise Task"">
+               <criteria operator=""eq"" value=""raise success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Authorized"">
+         <listener id=""Intervention Handler"" name=""Intervention Handler"" logic=""InterventionHandleActivity"" logictype=""bean"">
+            <transition name=""complete"" method=""out"" type=""activity"" next=""Transaction Complete"">
+               <criteria operator=""eq"" value=""1""/>
+            </transition>
+            <transition name=""cancel"" method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""2""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </listener>
+         <activity id=""3rd Payment"" name=""3rd Payment"" logic=""3rdPayment"">
+            <transition method=""out"" type=""activity"" next=""Transaction Complete"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+			<criteria operator=""eq"" value=""exception"" />
+	     </transition>
+            <transition method=""out"" type=""activity"" next=""Transaction Suspend"">
+               <criteria operator=""eq"" value=""suspend""/>
+            </transition>
+            <transition method=""out"" type=""activity"" next=""3rd Payment"">
+               <criteria operator=""eq"" value=""resend payment request""/>
+            </transition>
+         </activity>
+<activity id=""Transaction Suspend"" name=""Transaction Suspend""
+				logic=""TransactionSuspend"">
+				<transition method=""suspended"" type=""activity"" next=""3rd Payment"">
+					<criteria operator=""eq"" value=""success"" />
+				</transition>
+			</activity>
+         <activity id=""Transaction Complete"" name=""Transaction Complete"" logic=""TransactionComplete"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Completed"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Completed"">
+         <activity id=""Business Completion"" name=""Business Ending"" logic=""BusinessEnding"" logictype=""chain"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Declined"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Declined"" name=""BusinessFailedProcessing"" logic=""BusinessFailedProcessing""/>
+      </state>
+      <state name=""Cancelled"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Cancelled"" name=""BusinessFailedProcessing"" logic=""BusinessFailedProcessing""/>
+      </state>
+      <state name=""Expired"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Expired"" name=""BusinessExpiredProcessing"" logic=""BusinessExpiredProcessing""/>
+      </state>
+   </template>
+</templates>","N","0","","Business Initialization.CommonAuthorization|Business Completion.TransactionSuccessNotifyBuilder|Business Cancelled.TransactionFailureNotifyBuilder|Business Declined.TransactionFailureNotifyBuilder|Business Expired.TransactionSuccessNotifyBuilder|3rd Payment.BillRefNumberExternalValidationActivity|Business Cancelled.BSD.PayBill.ReversePayBillfor3rdPartyTimeoutActivity|Transaction Suspend.TransactionSuspendNotifyBuilder|","DirectTransferWithAuthorized6316","1"<endrec>
+"<templates xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+   <template id=""DirectTransferWithAuthorizedRobin"">
+      <name>DirectTransferWithAuthorizedRobin</name>
+      <description>DirectTransferWithAuthorizedRobin</description>
+      <version>1</version>
+      <entry-point>Initiated</entry-point>
+      <state name=""Initiated"">
+         <activity id=""Business Initialization"" name=""Business Initialization"" logic=""BusinessInitialization"" logictype=""chain"">
+            <transition method=""out"" type=""state"" next=""Validated"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Validated"">
+         <activity id=""Transaction Reserve"" name=""Transaction Reserve"" logic=""TransactionReserve"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""activity"" next=""3rd Party Reference Number Validation"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+         <activity id=""3rd Party Reference Number Validation"" name=""3rd Party Reference Number Validation"" logic=""3rdPartyReferenceNumberValidation"">
+            <transition method=""suspended"" type=""activity"" next=""3rd Party Reference Number Validation"">
+               <criteria operator=""eq"" value=""suspend""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Pending Authorized"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Pending Authorized"">
+         <activity id=""Check Authorization"" name=""Check Authorization"" logic=""CheckerAuthorizationActivity"" logictype=""bridge"">
+            <transition method=""out"" type=""activity"" next=""Raise Task"">
+               <criteria operator=""eq"" value=""true""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""false""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </activity>
+         <activity id=""Raise Task"" name=""Raise Task"" logic=""ProcessRaiseUserTask"">
+            <transition method=""suspended"" type=""activity"" next=""Raise Task"">
+               <criteria operator=""eq"" value=""raise success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Authorized"">
+         <listener id=""Intervention Handler"" name=""Intervention Handler"" logic=""InterventionHandleActivity"" logictype=""bean"">
+            <transition name=""complete"" method=""out"" type=""activity"" next=""Transaction Complete"">
+               <criteria operator=""eq"" value=""1""/>
+            </transition>
+            <transition name=""cancel"" method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""2""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </listener>
+         <activity id=""3rd Payment"" name=""3rd Payment"" logic=""3rdPayment"">
+            <transition method=""out"" type=""activity"" next=""Transaction Complete"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+			<criteria operator=""eq"" value=""exception"" />
+	     </transition>
+            <transition method=""out"" type=""activity"" next=""Transaction Suspend"">
+               <criteria operator=""eq"" value=""suspend""/>
+            </transition>
+            <transition method=""out"" type=""activity"" next=""3rd Payment"">
+               <criteria operator=""eq"" value=""resend payment request""/>
+            </transition>
+         </activity>
+<activity id=""Transaction Suspend"" name=""Transaction Suspend""
+				logic=""TransactionSuspend"">
+				<transition method=""suspended"" type=""activity"" next=""3rd Payment"">
+					<criteria operator=""eq"" value=""success"" />
+				</transition>
+			</activity>
+         <activity id=""Transaction Complete"" name=""Transaction Complete"" logic=""TransactionComplete"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Completed"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Completed"">
+         <activity id=""Business Completion"" name=""Business Ending"" logic=""BusinessEnding"" logictype=""chain"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Declined"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Declined"" name=""BusinessFailedProcessing"" logic=""BusinessFailedProcessing""/>
+      </state>
+      <state name=""Cancelled"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Cancelled"" name=""BusinessFailedProcessing"" logic=""BusinessFailedProcessing""/>
+      </state>
+      <state name=""Expired"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Expired"" name=""BusinessExpiredProcessing"" logic=""BusinessExpiredProcessing""/>
+      </state>
+   </template>
+</templates>","N","0","","Business Initialization.CommonAuthorization|Business Completion.TransactionSuccessNotifyBuilder|Business Cancelled.TransactionFailureNotifyBuilder|Business Declined.TransactionFailureNotifyBuilder|Business Expired.TransactionSuccessNotifyBuilder|3rd Payment.BillRefNumberExternalValidationActivity|Business Cancelled.BSD.PayBill.ReversePayBillfor3rdPartyTimeoutActivity|Transaction Suspend.TransactionSuspendNotifyBuilder|","DirectTransferWithAuthorizedRobin","1"<endrec>
+"<templates xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+    <template id=""QueryBalanceFromBank"">
+        <name>Query Balance From Bank</name>
+        <description>Query Balance From Bank.</description>
+        <version>1</version>
+        <entry-point>Initiated</entry-point>
+        <ref-template>ActionProcess</ref-template>
+    </template>
+</templates>","Y","","","Business Initialization.CommonAuthorization|Business Completion.TransactionSuccessNotifyBuilder|Business Cancelled.TransactionFailureNotifyBuilder|Business Declined.TransactionFailureNotifyBuilder|Business Expired.TransactionSuccessNotifyBuilder|","QueryBalanceFromBank","1"<endrec>
+"<templates xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+   <template id=""SendMoneyWithapi"">
+      <name>sEND mONEY with api</name>
+      <description>sEND mONEY with api</description>
+      <version>1</version>
+      <entry-point>Initiated</entry-point>
+      <ref-template>3rdPartyPayment</ref-template>
+   </template>
+</templates>","N","0","","","SendMoneyWithapi","1"<endrec>
+"
+<templates xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+    <template id=""Two Part buy goods Direct Transfer"">
+       <name>Two Part buy goods Direct Transfer.</name>
+       <description>Two Part buy goods Direct Transfer.</description>
+       <version>1</version>
+       <entry-point>Initiated</entry-point>
+       <ref-template>VoucherIssuingWithConfirmation</ref-template>
+    </template>
+ </templates>","N","0","","goa","Two Part buy goods Direct Transfer","1"<endrec>
+"<templates xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+   <template id=""VoucherRedeemingFor"">
+      <name>Voucher Redeeming For  Business Process</name>
+      <description>Voucher Redeeming For  Business Processs</description>
+      <version>2</version>
+      <entry-point>Initiated</entry-point>
+      <state name=""Initiated"">
+         <activity id=""Business Initialization"" name=""Business Initialization"" logic=""VoucherRedeemBusinessInitialization"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            			<transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Validated"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Validated"">
+         <activity id=""Voucher Reservation"" name=""Voucher Reservation"" logic=""VoucherRedeemingReservation"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+         <activity id=""Transaction Reserve"" name=""Transaction Reserve"" logic=""TransactionReserve"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+         <activity id=""Check Authorization"" name=""Check Authorization"" logic=""CheckerAuthorizationActivity"" logictype=""bridge"">
+            <transition method=""out"" type=""state"" next=""Pending Authorized"">
+               <criteria operator=""eq"" value=""true""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""false""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Pending Authorized"">
+         <activity id=""Raise Task"" name=""Raise Task"" logic=""ProcessRaiseUserTask"">
+            <transition method=""suspended"" type=""activity"" next=""Raise Task"">
+               <criteria operator=""eq"" value=""raise success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Authorized"">
+         <listener id=""Intervention Handler"" name=""Intervention Handler"" logic=""InterventionHandleActivity"" logictype=""bean"">
+            <transition name=""complete"" method=""out"" type=""activity"" next=""Voucher Redeeming Complete"">
+               <criteria operator=""eq"" value=""1""/>
+            </transition>
+            <transition name=""cancel"" method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""2""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </listener>
+         <activity id=""3rd Payment"" name=""3rd Payment"" logic=""3rdPayment"" logictype=""chain"">
+            <transition method=""suspended"" type=""activity"" next=""3rd Payment"">
+               <criteria operator=""eq"" value=""suspend""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Expired"">
+               <criteria operator=""eq"" value=""expire""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""cancelled""/>
+            </transition>
+            <transition method=""out"" type=""activity"" next=""Voucher Redeeming Complete"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+         <activity id=""Voucher Redeeming Complete"" name=""Voucher Redeeming Completion"" logic=""VoucherRedeemingCompletion"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+         <activity id=""Transaction Complete"" name=""Complete Funds"" logic=""TransactionComplete"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Completed"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Completed"">
+         <activity id=""Business Completion"" name=""Business Ending"" logic=""BusinessEnding"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Declined"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Declined"" name=""BusinessFailedProcessing"" logic=""VoucherRedeemingFailedProcessing""/>
+      </state>
+      <state name=""Cancelled"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Cancelled"" name=""BusinessFailedProcessing"" logic=""VoucherRedeemingFailedProcessing""/>
+      </state>
+      <state name=""Expired"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Expired"" name=""BusinessExpiredProcessing"" logic=""VoucherRedeemingExpiredProcessing""/>
+      </state>
+   </template>
+</templates>","N","0","","","VoucherRedeemingFor","2"<endrec>
+"<templates xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+   <template id=""VoucherRedeemingForOTC"">
+      <name>Voucher Redeeming For  Business Process</name>
+      <description>Voucher Redeeming For  Business Processs</description>
+      <version>2</version>
+      <entry-point>Initiated</entry-point>
+      <state name=""Initiated"">
+         <activity id=""Business Initialization"" name=""Business Initialization"" logic=""VoucherRedeemBusinessInitialization"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            			<transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Validated"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Validated"">
+         <activity id=""Voucher Reservation"" name=""Voucher Reservation"" logic=""VoucherRedeemingReservation"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+         <activity id=""Transaction Reserve"" name=""Transaction Reserve"" logic=""TransactionReserve"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+         <activity id=""Check Authorization"" name=""Check Authorization"" logic=""CheckerAuthorizationActivity"" logictype=""bridge"">
+            <transition method=""out"" type=""state"" next=""Pending Authorized"">
+               <criteria operator=""eq"" value=""true""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""false""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Pending Authorized"">
+         <activity id=""Raise Task"" name=""Raise Task"" logic=""ProcessRaiseUserTask"">
+            <transition method=""suspended"" type=""activity"" next=""Raise Task"">
+               <criteria operator=""eq"" value=""raise success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Authorized"">
+         <listener id=""Intervention Handler"" name=""Intervention Handler"" logic=""InterventionHandleActivity"" logictype=""bean"">
+            <transition name=""complete"" method=""out"" type=""activity"" next=""Voucher Redeeming Complete"">
+               <criteria operator=""eq"" value=""1""/>
+            </transition>
+            <transition name=""cancel"" method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""2""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </listener>
+         <activity id=""3rd Payment"" name=""3rd Payment"" logic=""3rdPayment"" logictype=""chain"">
+            <transition method=""suspended"" type=""activity"" next=""3rd Payment"">
+               <criteria operator=""eq"" value=""suspend""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Expired"">
+               <criteria operator=""eq"" value=""expire""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""cancelled""/>
+            </transition>
+            <transition method=""out"" type=""activity"" next=""Voucher Redeeming Complete"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+         <activity id=""Voucher Redeeming Complete"" name=""Voucher Redeeming Completion"" logic=""VoucherRedeemingCompletion"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+         <activity id=""Transaction Complete"" name=""Complete Funds"" logic=""TransactionComplete"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Completed"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Completed"">
+         <activity id=""Business Completion"" name=""Business Ending"" logic=""BusinessEnding"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Declined"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Declined"" name=""BusinessFailedProcessing"" logic=""VoucherRedeemingFailedProcessing""/>
+      </state>
+      <state name=""Cancelled"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Cancelled"" name=""BusinessFailedProcessing"" logic=""VoucherRedeemingFailedProcessing""/>
+      </state>
+      <state name=""Expired"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Expired"" name=""BusinessExpiredProcessing"" logic=""VoucherRedeemingExpiredProcessing""/>
+      </state>
+   </template>
+</templates>","N","0","","","VoucherRedeemingForOTC","2"<endrec>
+"<templates xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+   <template id=""VoucherRedeemingForOTC"">
+      <name>Voucher Redeeming For OTC Business Process</name>
+      <description>Voucher Redeeming For OTC Business Processs</description>
+      <version>3</version>
+      <entry-point>Initiated</entry-point>
+      <state name=""Initiated"">
+         <activity id=""Business Initialization"" name=""Business Initialization"" logic=""OTCVoucherRedeemBusinessInitialization"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            			<transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Validated"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Validated"">
+         <activity id=""Voucher Reservation"" name=""Voucher Reservation"" logic=""OTCVoucherRedeemingReservation"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+         <activity id=""Transaction Reserve"" name=""Transaction Reserve"" logic=""TransactionReserve"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+         <activity id=""Check Authorization"" name=""Check Authorization"" logic=""CheckerAuthorizationActivity"" logictype=""bridge"">
+            <transition method=""out"" type=""state"" next=""Pending Authorized"">
+               <criteria operator=""eq"" value=""true""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""false""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Pending Authorized"">
+         <activity id=""Raise Task"" name=""Raise Task"" logic=""ProcessRaiseUserTask"">
+            <transition method=""suspended"" type=""activity"" next=""Raise Task"">
+               <criteria operator=""eq"" value=""raise success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Authorized"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""failure""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Authorized"">
+         <listener id=""Intervention Handler"" name=""Intervention Handler"" logic=""InterventionHandleActivity"" logictype=""bean"">
+            <transition name=""complete"" method=""out"" type=""activity"" next=""Voucher Redeeming Complete"">
+               <criteria operator=""eq"" value=""1""/>
+            </transition>
+            <transition name=""cancel"" method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""2""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+         </listener>
+         <activity id=""3rd Payment"" name=""3rd Payment"" logic=""3rdPayment"" logictype=""chain"">
+            <transition method=""suspended"" type=""activity"" next=""3rd Payment"">
+               <criteria operator=""eq"" value=""suspend""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Expired"">
+               <criteria operator=""eq"" value=""expire""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""cancelled""/>
+            </transition>
+            <transition method=""out"" type=""activity"" next=""Voucher Redeeming Complete"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+         <activity id=""Voucher Redeeming Complete"" name=""Voucher Redeeming Completion"" logic=""OTCVoucherRedeemingCompletion"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+         <activity id=""Transaction Complete"" name=""Complete Funds"" logic=""TransactionComplete"">
+            <transition method=""out"" type=""state"" next=""Cancelled"">
+               <criteria operator=""eq"" value=""exception""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+            <transition method=""out"" type=""state"" next=""Completed"">
+               <criteria operator=""eq"" value=""success""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Completed"">
+         <activity id=""Business Completion"" name=""Business Ending"" logic=""BusinessEnding"">
+            <transition method=""out"" type=""state"" next=""Declined"">
+               <criteria operator=""eq"" value=""declined""/>
+            </transition>
+         </activity>
+      </state>
+      <state name=""Declined"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Declined"" name=""BusinessFailedProcessing"" logic=""OTCVoucherRedeemingFailedProcessing""/>
+      </state>
+      <state name=""Cancelled"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Cancelled"" name=""BusinessFailedProcessing"" logic=""OTCVoucherRedeemingFailedProcessing""/>
+      </state>
+      <state name=""Expired"">
+         <!--It will move on to the next activity in case of exceptions-->
+         <activity id=""Business Expired"" name=""BusinessExpiredProcessing"" logic=""OTCVoucherRedeemingExpiredProcessing""/>
+      </state>
+   </template>
+</templates>","N","0","","","VoucherRedeemingForOTC","3"<endrec>

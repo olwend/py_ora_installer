@@ -1,0 +1,37 @@
+DISPLAY_ORDER,KYC_GROUP_DESCRIPTION,KYC_GROUP_ID,KYC_GROUP_NAME,LOAD_DATA_TS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <endrec>
+"60","ID Details","100","ID Details","2015-09-17 05:41:39.000000"<endrec>
+"10","Personal Details","1001","Personal Details","2016-11-28 08:42:34.000000"<endrec>
+"20","Risk Details","1002","Risk Details","2015-09-17 05:41:39.000000"<endrec>
+"30","Address Details","1003","Address Details","2017-09-21 09:20:31.000000"<endrec>
+"40","Organization Details","1004","Organization Details","2015-09-17 05:41:39.000000"<endrec>
+"50","Contact Details","1007","Contact Details","2015-09-17 05:41:39.000000"<endrec>
+"85","Interoperability","1008","Interoperability",""<endrec>
+"12","","1009","PGW KYC",""<endrec>
+"11","","1010","CNS","2018-06-26 10:12:35.000000"<endrec>
+"13","Group Details","1011","Group Details",""<endrec>
+"14","Auto Sweep Mode","1012","Auto Sweep Mode",""<endrec>
+"15","Nominated Group Contact Details","1013","Nominated Group Contact Details",""<endrec>
+"16","OPT IN","1014","OPT IN",""<endrec>
+"17","Partner Bank","1015","Partner Bank","2017-09-12 17:30:14.000000"<endrec>
+"20","Has Bank Account","1017","Has Bank Account",""<endrec>
+"19","Unique Linking ID","1018","Unique Linking ID",""<endrec>
+"21","Classification","1019","Classification",""<endrec>
+"22","Bill Issuer Info","1020","Bill Issuer Info",""<endrec>
+"23","Dompetku Msisdn","1021","Dompetku Msisdn","2018-07-03 14:04:01.000000"<endrec>
+"24","Picture Kyc","1022","Picture Kyc","2017-05-31 11:08:33.000000"<endrec>
+"70","Certificate Details","200","Certificate Details","2015-09-17 05:41:39.000000"<endrec>
+"101","FI Organisation","2010","FI Organisation",""<endrec>
+"80","Organization Contact Details","300","Organization Contact Details","2015-09-17 05:41:39.000000"<endrec>
+"11","","310010","Security Details","2015-09-17 05:41:39.000000"<endrec>
+"25","","310020","Organization trust level Group","2015-09-17 05:41:39.000000"<endrec>
+"26","","310030","MNO Group","2015-09-17 05:41:39.000000"<endrec>
+"99","","310040","Special Details","2015-09-17 05:41:39.000000"<endrec>
+"98","","310061","Auxiliary Information","2015-09-17 05:41:39.000000"<endrec>
+"55","","310072","Contact Address Details","2015-09-17 05:41:39.000000"<endrec>
+"89","Tier 3","310083","Tier 3","2016-05-13 11:37:41.000000"<endrec>
+"90","","310093","Business Customer","2015-09-22 19:23:00.000000"<endrec>
+"18","Bundle Provider","310183","Bundle Provider","2016-05-17 05:39:38.000000"<endrec>
+"100","","310283","TESTGrp65","2019-08-16 13:53:26.000000"<endrec>
+"2","","310383","test","2017-03-30 13:47:04.000000"<endrec>
+"77","","310483","test122","2018-03-19 11:37:40.000000"<endrec>
+"91","","310583","OTP Details","2018-05-21 04:49:14.000000"<endrec>

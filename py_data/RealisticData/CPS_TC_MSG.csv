@@ -1,0 +1,98 @@
+DESCRIPTION,DIRECT,FEATURE_CODE_LIST,INTERFACE_CODE,MSG_CODE,MSG_SUB_TYPE,MSG_TYPE,RELATION_MSG_CODE,RELATION_TYPE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <endrec>
+"","O","1","48","BankAccounttoCPS","G","3","",""<endrec>
+"","O","1","2","Bill_Payment_Reversal","N","3","",""<endrec>
+"","O","1","3","C2BPaymentConfirmationRequest","O","3","",""<endrec>
+"","O","1","2","C2BPaymentValidationRequest","O","3","",""<endrec>
+"","O","1","49","CPStoBankAccount","G","3","",""<endrec>
+"CPStoBankReverse","O","1","110","CPStoBankReverse","O","3","",""<endrec>
+"","O","1","136","CashInFromLinkedBankAccount","O","3","",""<endrec>
+"","O","1","136","CashInFromLinkedBankCard","O","3","",""<endrec>
+"","O","","1","Charge","O","3","",""<endrec>
+"","O","1","89","CipikaReload","N","3","",""<endrec>
+"","O","1","108","DirectPaymentFromBankPurchaseX","O","3","",""<endrec>
+"","O","1","108","DirectPaymentFromBankRedeemX","O","3","",""<endrec>
+"","O","1","61","Dompetku_Allocation","G","3","",""<endrec>
+"","O","1","89","Dompetku_BillPayment","G","3","",""<endrec>
+"","O","1","89","Dompetku_CashIn","G","3","",""<endrec>
+"","O","1","89","Dompetku_CashOut","G","3","",""<endrec>
+"","I","1","","Error Reply","","2","",""<endrec>
+"yes","O","","89","GOABuyGoods","G","3","",""<endrec>
+"test","O","","89","GOATestCritical","G","3","",""<endrec>
+"","O","1","3","GOA_BillConfirmation","G","3","",""<endrec>
+"t","O","1","2","GOA_BillValidation","G","3","",""<endrec>
+"","O","","1","GOA_Charge","G","3","",""<endrec>
+"","I","1","1","GOA_CurrencyCode","G","1","",""<endrec>
+"","O","","89","GOA_Deposit","G","3","",""<endrec>
+"test","O","","89","GOA_FSIActivate","G","3","",""<endrec>
+"","O","","89","GOA_FSIDeposit","G","3","",""<endrec>
+"","O","1","1","GOA_OnePhaseAirtimeTransaction","G","1","",""<endrec>
+"","O","1","46","GOA_OnlineCtrlAccountTransfer","G","3","",""<endrec>
+"Send GOA message to AG when create bank.","O","1","170","GOA_QueryBankKYCValidation","G","3","",""<endrec>
+"Send GOA message to AG when update bank KYC.","O","1","171","GOA_QueryBankUpdateKYCValidation","G","3","",""<endrec>
+"Send GOA message to AG when update customer KYC.","O","1","173","GOA_QueryCustUpdateKYCValidation","G","3","",""<endrec>
+"Send GOA message to AG when create group.","O","1","148","GOA_QueryGroupKYCValidation","G","3","",""<endrec>
+"Send GOA message to AG when update group KYC.","O","1","149","GOA_QueryGroupUpdateKYCValidation","G","3","",""<endrec>
+"test","O","1","51","GOA_QueryKYCValidation","G","3","",""<endrec>
+"Send GOA message to AG when Create Org.","O","1","142","GOA_QueryOrgKYCValidation","G","3","",""<endrec>
+"Send GOA message to AG when create org operator.","O","1","144","GOA_QueryOrgOperatorKYCValidation","G","3","",""<endrec>
+"Send GOA message to AG when update org operator KYC.","O","1","145","GOA_QueryOrgOperatorUpdateKYCValidation","G","3","",""<endrec>
+"Send GOA message to AG when update org KYC.","O","1","143","GOA_QueryOrgUpdateKYCValidation","G","3","",""<endrec>
+"Send GOA message to AG when create SP operator.","O","1","146","GOA_QuerySPOperatorKYCValidation","G","3","",""<endrec>
+"Send GOA message to AG when update SP operator KYC.","O","1","147","GOA_QuerySPOperatorUpdateKYCValidation","G","3","",""<endrec>
+"Send GOA message to AG when update SP KYC.","O","1","174","GOA_QuerySPUpdateKYCValidation","G","3","",""<endrec>
+"","O","","89","GOA_Withdraw","G","3","",""<endrec>
+"","O","","89","GOAtest","G","3","",""<endrec>
+"","O","1","","Generic_IMTInquiry_Request","","1","",""<endrec>
+"","I","1","","Generic_IMTInquiry_Response","","2","",""<endrec>
+"","I","1","","Generic_IMTMoneyTransfer_Request","","1","",""<endrec>
+"","O","1","","Generic_IMTMoneyTransfer_Response","","2","",""<endrec>
+"","I","1","","Generic_IMTReceiveValidation_Request","","1","",""<endrec>
+"","O","1","","Generic_IMTReceiveValidation_Response","","2","",""<endrec>
+"","O","1","","Generic_IMTReceivemoney_Request","","1","",""<endrec>
+"","I","1","","Generic_IMTReceivemoney_Response","","2","",""<endrec>
+"","I","1","","Generic_IMTTransferCancel_Request","","1","",""<endrec>
+"","I","1","","Generic_IMTValidation_Request","","1","",""<endrec>
+"","O","1","","Generic_IMTValidation_Response","","2","",""<endrec>
+"","O","","3","GetShortBillpayProduct","O","3","",""<endrec>
+"","O","1","","HWS_AdviceOfCharge_Request","","1","",""<endrec>
+"","I","1","","HWS_AdviceOfCharge_Response","","2","",""<endrec>
+"","O","1","","HWS_Remittance_Request","","1","",""<endrec>
+"","I","1","","HWS_Remittance_Response","","2","",""<endrec>
+"","O","1","","HWS_Status_Request","","1","",""<endrec>
+"","I","1","","HWS_Status_Response","","2","",""<endrec>
+"","I","1","","IMT_Request_Quote","","1","",""<endrec>
+"","I","1","","IMT_Transfer_Abroad","","1","",""<endrec>
+"","O","1","","Mobile Money Available Notification Reply","","2","",""<endrec>
+"","I","1","","Mobile Money Available Notification Request","","1","",""<endrec>
+"","I","1","","Mobile Receive Money Reply","","2","",""<endrec>
+"","O","1","","Mobile Receive Money Request","","1","",""<endrec>
+"","O","1","","Mobile Server Heartbeat Reply","","2","",""<endrec>
+"","I","1","","Mobile Server Heartbeat Request","","1","",""<endrec>
+"","I","1","","Mobile Transaction Inquiry Reply","","2","",""<endrec>
+"","O","1","","Mobile Transaction Inquiry Request","","1","",""<endrec>
+"NotifyCPStoBank","O","1","109","NotifyCPStoBank","O","3","",""<endrec>
+"","O","","","OffnetTransaction","","3","",""<endrec>
+"","O","","","OffnetTransactionReversal","","3","",""<endrec>
+"","O","1","1","OnePhaseAirtimeTransaction","N","3","",""<endrec>
+"","O","1","89","PostPaidBillPayment","N","3","",""<endrec>
+"","O","1","141","Query AML Watchlist","N","3","",""<endrec>
+"","O","1","","RTEWS_StatusReport_Request","","1","",""<endrec>
+"RedeemTSELPoint","O","1","120","RedeemTSELPoint","O","1","",""<endrec>
+"","O","1","89","Refill","N","3","",""<endrec>
+"RefundTSELPoint","O","1","121","RefundTSELPoint","O","1","",""<endrec>
+"","O","","","RegistrationStatusLookUp","","3","",""<endrec>
+"RequestDisableOfflineWallet","O","1","119","RequestDisableOfflineWallet","O","1","",""<endrec>
+"","O","","","SPLookUp","","3","",""<endrec>
+"","O","1","89","SSPConfirmationReplacePackage","N","3","",""<endrec>
+"","O","","14","Send Money","O","3","",""<endrec>
+"","O","1","137","T24Reversal","O","3","",""<endrec>
+"","I","1","","TEWS_AccountInformation_Request","","1","",""<endrec>
+"","O","1","","TEWS_AccountInformation_Response","","2","",""<endrec>
+"","I","1","","TEWS_Cancellation_Request","","1","",""<endrec>
+"","I","1","","TEWS_Credit_Request","","1","",""<endrec>
+"","O","1","","TEWS_Credit_Response","","2","",""<endrec>
+"TopupOfflineWallet","O","1","118","TopupOfflineWallet","O","1","",""<endrec>
+"","O","1","108","TransferFromLinkedBankCard","O","3","",""<endrec>
+"","O","","2","ValidateBillRefNum","O","3","",""<endrec>
+"","O","","16","test","O","3","",""<endrec>
+"tests","O","","29","test4","O","3","",""<endrec>

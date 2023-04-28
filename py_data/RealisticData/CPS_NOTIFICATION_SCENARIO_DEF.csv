@@ -1,0 +1,9 @@
+SCENARIO_CATEGORY,SCENARIO_DESCRIPTION,SCENARIO_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <endrec>
+"1","Transaction Success","13"<endrec>
+"1","Transaction Expired","16"<endrec>
+"1","Transaction Cancel","17"<endrec>
+"1","Transaction Declined","18"<endrec>
+"2","Service of Action Success","19"<endrec>
+"2","Service of Action Expired","22"<endrec>
+"2","Service of Action Canceled","23"<endrec>
+"2","Service of Action Declined","24"<endrec>

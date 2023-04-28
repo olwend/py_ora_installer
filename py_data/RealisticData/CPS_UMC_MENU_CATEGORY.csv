@@ -1,0 +1,7 @@
+CATEGORY_CODE,FACTOR_NAME,FACTOR_VALUE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <endrec>
+"CUSTOMER","Channel","1003"<endrec>
+"CUSTOMER","IdentityType","1000"<endrec>
+"TILL","Channel","1003"<endrec>
+"TILL","IdentityType","6000"<endrec>
+"UNREGCUSTOMER","Channel","1003"<endrec>
+"UNREGCUSTOMER","IdentityType","1002"<endrec>

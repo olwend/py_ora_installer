@@ -1,0 +1,468 @@
+DEFAULT_VALUE,LANGUAGE,VARIABLE_NAME                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <endrec>
+"5.00","en","AGContext.Response.ErrorParameterKey"<endrec>
+"5.00","en","AGContext.Response.ErrorParameterValue"<endrec>
+"60000122","en","AGContext.Response.ResultCode"<endrec>
+"PIN error","en","AGContext.Response.ResultMessage"<endrec>
+"Extract Transaction","en","BOAction.AML.AMLTaskName"<endrec>
+"40 hours 30 minutes","en","BOAction.AML.AMLTaskSoftAbortTimes"<endrec>
+"12 hours 20 minutes","en","BOAction.AML.AMLTaskTimeOutTimes"<endrec>
+"Handset","en","BOAction.AccessChannelName"<endrec>
+"Floating account rule profile","en","BOAction.AccountRuleProfile"<endrec>
+"Active","en","BOAction.AccountStatus"<endrec>
+"13-06-11","en","BOAction.ActionDate"<endrec>
+"14","en","BOAction.ActionTime"<endrec>
+"David Johnson","en","BOAction.AffectedIdentityName"<endrec>
+"","en","BOAction.AllowDate"<endrec>
+"6","en","BOAction.AllowMonth"<endrec>
+"0","en","BOAction.AutoTopup"<endrec>
+"HSBC","en","BOAction.BankName"<endrec>
+"","en","BOAction.Bundle.Element.Unit"<endrec>
+"9/8/2014","en","BOAction.ChangeProducts.ChangedOrAddedProductAssignmentEffectDate"<endrec>
+"9/8/2014","en","BOAction.ChangeProducts.ChangedOrAddedProductAssignmentExpiryDate"<endrec>
+"Changed Or Added Product Assignment List","en","BOAction.ChangeProducts.ChangedOrAddedProductAssignmentList"<endrec>
+"Air time selling","en","BOAction.ChangeProducts.ChangedOrAddedProductAssignmentName"<endrec>
+"Airtime seller product-period from 01/01/13-31/12/14.","en","BOAction.ChangeProducts.ChangedOrAppendProducts"<endrec>
+"Removed Product Assignment List","en","BOAction.ChangeProducts.RemovedProductAssignmentList"<endrec>
+"Agent store","en","BOAction.ChangeProducts.RemovedProductAssignmentName"<endrec>
+"Airtime seller product-period from 01/01/13-31/12/14.","en","BOAction.ChangeProducts.RemovedProducts"<endrec>
+"9/8/2014","en","BOAction.ChangeRole.ChangedOrAddedRoleAssignmentEffectDate"<endrec>
+"9/8/2014","en","BOAction.ChangeRole.ChangedOrAddedRoleAssignmentExpiryDate"<endrec>
+"Changed Or Added Role Assignment List","en","BOAction.ChangeRole.ChangedOrAddedRoleAssignmentList"<endrec>
+"Agent manager","en","BOAction.ChangeRole.ChangedOrAddedRoleAssignmentName"<endrec>
+"Removed Role Assignment List","en","BOAction.ChangeRole.RemovedRoleAssignmentList"<endrec>
+"Agent financial manager","en","BOAction.ChangeRole.RemovedRoleAssignmentName"<endrec>
+"Floating account","en","BOAction.ChangedAccount"<endrec>
+"andy","en","BOAction.ChargeProfileName"<endrec>
+"123456","en","BOAction.ChildOrgShortCode"<endrec>
+"13522269874","en","BOAction.ClosedDeviceMsisdn"<endrec>
+"Customer_msisdn","en","BOAction.CustomerMsisdn"<endrec>
+"David Johnson","en","BOAction.CustomerName"<endrec>
+"Dromant","en","BOAction.CustomerStatus"<endrec>
+"Registered customer","en","BOAction.CustomerTypeName"<endrec>
+"Active","en","BOAction.DeviceStatus"<endrec>
+"","en","BOAction.DirectDebit.TransationDate"<endrec>
+"Failed to create the operator because the operator ID already exists.","en","BOAction.ErrorMessage"<endrec>
+"16/06/2013","en","BOAction.ExcuteDate"<endrec>
+"2013-06-05 12","en","BOAction.ExecuteTime"<endrec>
+"{{BOAction.ExternalErrorCode}}","en","BOAction.ExternalErrorCode"<endrec>
+"5.00","en","BOAction.FSIInfo"<endrec>
+"200","en","BOAction.FeeInfo.Initiator.Commission"<endrec>
+"200","en","BOAction.FeeInfo.Initiator.Fee"<endrec>
+"200","en","BOAction.FeeInfo.Receiver.Commission"<endrec>
+"200","en","BOAction.FeeInfo.Receiver.Fee"<endrec>
+"{{BOAction.Group.GroupMemberRole}}","en","BOAction.Group.GroupMemberRole"<endrec>
+"{{BOAction.Group.InitiatorMsisdn}}","en","BOAction.Group.InitiatorMsisdn"<endrec>
+"{{BOAction.Group.MaxNumAllowed}}","en","BOAction.Group.MaxNumAllowed"<endrec>
+"{{BOAction.Group.RequiredApproverNumber}}","en","BOAction.Group.RequiredApproverNumber"<endrec>
+"Aggregated","en","BOAction.HierarchyRelationshipType"<endrec>
+"Registered customer limits","en","BOAction.IdentityRuleProfile"<endrec>
+"frozen","en","BOAction.IdentityStatus"<endrec>
+"8613512345678","en","BOAction.InitialPassword"<endrec>
+"01011970","en","BOAction.InputDOB"<endrec>
+"Error KYC List","en","BOAction.KYC.ErrorKYCList"<endrec>
+"Date of Birth","en","BOAction.KYC.ErrorKYCName"<endrec>
+"6/3/1985","en","BOAction.KYC.ErrorKYCValue"<endrec>
+"The date of birth is in the wrong format","en","BOAction.KYC.KYCError"<endrec>
+"KYC List","en","BOAction.KYC.KYCList"<endrec>
+"First name","en","BOAction.KYC.KYCName"<endrec>
+"Marc","en","BOAction.KYC.KYCValue"<endrec>
+"English (United States)","en","BOAction.Language"<endrec>
+"100000","en","BOAction.Limit"<endrec>
+"David_11","en","BOAction.LoginName"<endrec>
+"00013612345678","en","BOAction.MaskedMsisdn"<endrec>
+"","en","BOAction.NewParentOrgName"<endrec>
+"CLOSED","en","BOAction.NewStatus"<endrec>
+"SMS","en","BOAction.NotificationChannel"<endrec>
+"","en","BOAction.OldParentOrgName"<endrec>
+"ACTIVE","en","BOAction.OldStatus"<endrec>
+"5","en","BOAction.OperatorDormantNotifyPeriod"<endrec>
+"123456","en","BOAction.OperatorId"<endrec>
+"operator B","en","BOAction.OperatorName"<endrec>
+"Active","en","BOAction.OperatorStatus"<endrec>
+"VDF Ltd.","en","BOAction.OrgName"<endrec>
+"Huawei ltd.","en","BOAction.OrgNameNew"<endrec>
+"VDF Ltd.","en","BOAction.OrgNameOld"<endrec>
+"600111","en","BOAction.OrgShortCode"<endrec>
+"Frozen","en","BOAction.OrgStatus"<endrec>
+"Organization A","en","BOAction.OriginalOrgName"<endrec>
+"11/28/2014","en","BOAction.PIN.ExpireDate"<endrec>
+"VDF Ltd.","en","BOAction.ParentOrgName"<endrec>
+"600111","en","BOAction.ParentOrgShortCode"<endrec>
+"11/28/2014","en","BOAction.Password.ExpireDate"<endrec>
+"55555","en","BOAction.PlanId"<endrec>
+"7","en","BOAction.ProductExpireAlarmMDays"<endrec>
+"11/29/2014","en","BOAction.ProductExpireDate"<endrec>
+"MNO product","en","BOAction.ProductName"<endrec>
+"19990101","en","BOAction.Receiver.DOB"<endrec>
+"VDF","en","BOAction.Receiver.FirstName"<endrec>
+"1000.00 USD","en","BOAction.Receiver.IdentityAccountBalance"<endrec>
+"8613512345678","en","BOAction.Receiver.IdentityAccountHolderName"<endrec>
+"M-pesa account","en","BOAction.Receiver.IdentityAccountTypeName"<endrec>
+"13612345678","en","BOAction.Receiver.IdentityMSISDN"<endrec>
+"ltd","en","BOAction.Receiver.LastName"<endrec>
+"andy","en","BOAction.Receiver.MiddleName"<endrec>
+"1234","en","BOAction.Receiver.NewPIN"<endrec>
+"123456","en","BOAction.Receiver.OperatorId"<endrec>
+"","en","BOAction.Receiver.StaticQR.Code"<endrec>
+"","en","BOAction.Receiver.StaticQR.LinkTime"<endrec>
+"","en","BOAction.Receiver.StaticQR.Status"<endrec>
+"1000000000007910","en","BOAction.Receiver.TillNumber"<endrec>
+"13644905457","en","BOAction.Requester.IdentityMSISDN"<endrec>
+"perfect","en","BOAction.SecretWord"<endrec>
+"VIP group","en","BOAction.SegmentName"<endrec>
+"2197","en","BOAction.StartPIN"<endrec>
+"Agent HO product","en","BOAction.TillAssignedProduct"<endrec>
+"Agent HO product","en","BOAction.TillAssignedProductList"<endrec>
+"123456","en","BOAction.TillNumber"<endrec>
+"123456","en","BOAction.TillNumberNew"<endrec>
+"666666","en","BOAction.TillNumberOld"<endrec>
+"Active","en","BOAction.TillStatus"<endrec>
+"12","en","BOAction.Transaction.Charge.ChargeDebitParty.AccountBalance"<endrec>
+"M-pesa account","en","BOAction.Transaction.Charge.ChargeDebitParty.AccountTypeName"<endrec>
+"12","en","BOAction.Transaction.Charge.ChargeDebitParty.ChargeAmount"<endrec>
+"Charge Type Name","en","BOAction.Transaction.Charge.ChargeDebitParty.ChargeTypeName"<endrec>
+"5.00","en","BOAction.Transaction.Charge.ChargeDebitParty.IdentityID"<endrec>
+"1000","en","BOAction.Transaction.Charge.ChargeDebitParty.IdentityType"<endrec>
+"12","en","BOAction.Transaction.Tax.TaxDebitParty.AccountBalance"<endrec>
+"Account Type Name","en","BOAction.Transaction.Tax.TaxDebitParty.AccountTypeName"<endrec>
+"BOAction.Transaction.Tax.TaxDebitParty.IdentityID","en","BOAction.Transaction.Tax.TaxDebitParty.IdentityID"<endrec>
+"1000","en","BOAction.Transaction.Tax.TaxDebitParty.IdentityType"<endrec>
+"12","en","BOAction.Transaction.Tax.TaxDebitParty.TaxAmount"<endrec>
+"Tax Charge Type Name","en","BOAction.Transaction.Tax.TaxDebitParty.TaxChargeTypeName"<endrec>
+"TransactionId","en","BOAction.Transaction.TransactionId"<endrec>
+"123","en","BOAction.TrustLevel"<endrec>
+"123","en","BOAction.TrustLevelName"<endrec>
+"11/06/2013","en","BOAction.UnclaimedExpiredDate"<endrec>
+"235748523","en","BOAction.Voucher.VoucherCode"<endrec>
+"secret word","en","BulkTaskContext.Credential"<endrec>
+"David Johnson","en","BulkTaskContext.CusomterMsisdn"<endrec>
+"The input PIN do not comply PIN policy.","en","BulkTaskContext.ErrorItem"<endrec>
+"DailyPreprocess","en","BulkTaskContext.ExtractType"<endrec>
+"10","en","BulkTaskContext.FailedItem"<endrec>
+"90090","en","BulkTaskContext.FinishedItem"<endrec>
+"VDF Ltd.","en","BulkTaskContext.OrgName"<endrec>
+"31/03/2013","en","BulkTaskContext.Plan.TaskType"<endrec>
+"15/06/2013","en","BulkTaskContext.StartTransactionDate"<endrec>
+"99990","en","BulkTaskContext.SuccessItem"<endrec>
+"2012-02-14 15","en","BulkTaskContext.Task.EndTime"<endrec>
+"TS28009","en","BulkTaskContext.Task.ErrorCode"<endrec>
+"PIN error","en","BulkTaskContext.Task.ErrorMessage"<endrec>
+"2013-06-05 12","en","BulkTaskContext.Task.StartTime"<endrec>
+"100000","en","BulkTaskContext.TotalItem"<endrec>
+"99990","en","BulkTaskContext.ValidItem"<endrec>
+"M-pesa","en","Common.Brand"<endrec>
+"Customer care","en","Common.CustomerCare"<endrec>
+"90","en","Common.DormantUnclaimDays"<endrec>
+"Mmf name","en","Common.MMFName"<endrec>
+"111111","en","Common.Notification.VerificationCode"<endrec>
+"1000000000007910","en","Common.OrderId"<endrec>
+"TS28009","en","Common.Result.ErrorCode"<endrec>
+"The PIN is incorrect.","en","Common.Result.ErrorMessage"<endrec>
+"First name","en","Common.Result.ErrorParameter.Key"<endrec>
+"Jerry","en","Common.Result.ErrorParameter.Value"<endrec>
+"Completed","en","Common.Result.OrderStatus"<endrec>
+"0000000000004006","en","Common.Result.OriginalReceiptNumber"<endrec>
+"7","en","Common.SDormantAlertDays"<endrec>
+"AccountList","en","ManualNotification.AccountList"<endrec>
+"KYCList","en","ManualNotification.KYCList"<endrec>
+"8613512345678","en","ManualNotification.MSISDN"<endrec>
+"55555","en","ManualNotification.OperatorID"<endrec>
+"15320145","en","ManualNotification.ShortCode"<endrec>
+"David","en","ManualNotification.UserName"<endrec>
+"5.00","en","ProductAllocation.EstimatedTime"<endrec>
+"5.00","en","ProductAllocation.OperatorName"<endrec>
+"5.00","en","ProductAllocation.PlanName"<endrec>
+"5.00","en","ProductAllocation.TotalIdentities"<endrec>
+"5.00","en","ProductAllocation.URL"<endrec>
+"$9,999.99","en","ServiceAction.AccountActualBalance"<endrec>
+"$5,500.00","en","ServiceAction.AccountCurrentBalance"<endrec>
+"AccountList","en","ServiceAction.AccountList"<endrec>
+"$2,500.00","en","ServiceAction.AccountReservedBalance"<endrec>
+"Floting account","en","ServiceAction.AccountTypeAlias"<endrec>
+"$1,000.00","en","ServiceAction.AccountUnclearedBalance"<endrec>
+"2015/08/08","en","ServiceAction.ActionDate"<endrec>
+"perfect","en","ServiceAction.ActiveCustomer.SecretWord"<endrec>
+"perfect","en","ServiceAction.ActiveOperator.SecretWord"<endrec>
+"666666","en","ServiceAction.ActivedTillNumber"<endrec>
+"20130324135011000012","en","ServiceAction.BasicInfo.ActionLogId"<endrec>
+"24/03/2013","en","ServiceAction.BasicInfo.RequestDate"<endrec>
+"13","en","ServiceAction.BasicInfo.RequestTime"<endrec>
+"8613512345678","en","ServiceAction.BasicInfo.StartTime"<endrec>
+"2","en","ServiceAction.BrokenLimit.CurrentValue"<endrec>
+"5.0","en","ServiceAction.BrokenLimit.LimitPattern"<endrec>
+"1","en","ServiceAction.BrokenLimit.LimitRuleId"<endrec>
+"R4Q6 test","en","ServiceAction.BrokenLimit.LimitRuleName"<endrec>
+"5.00","en","ServiceAction.BrokenLimit.PeriodLength"<endrec>
+"1","en","ServiceAction.BrokenLimit.PeriodType"<endrec>
+"5.00","en","ServiceAction.BrokenLimit.PeriodUnit"<endrec>
+"2","en","ServiceAction.BrokenLimit.ThresholdType"<endrec>
+"3","en","ServiceAction.BrokenLimit.ThresholdValue"<endrec>
+"ServiceAction.CashUpStatement","en","ServiceAction.CashUpStatement"<endrec>
+"555555","en","ServiceAction.CashUpStatement.CashUpTillNumber"<endrec>
+"5000.00","en","ServiceAction.CashUpStatement.DepositAmount"<endrec>
+"200000.00","en","ServiceAction.CashUpStatement.FinalAmount"<endrec>
+"01/04/2013 10","en","ServiceAction.CashUpStatement.InputBeginTime"<endrec>
+"01/04/2013 10","en","ServiceAction.CashUpStatement.InputEndTime"<endrec>
+"01/04/2013 10","en","ServiceAction.CashUpStatement.QueryBeginTime"<endrec>
+"01/04/2013 10","en","ServiceAction.CashUpStatement.QueryEndTime"<endrec>
+"1000.00","en","ServiceAction.CashUpStatement.WithdrawAmount"<endrec>
+"55555","en","ServiceAction.ClosedOperatorId"<endrec>
+"200.00","en","ServiceAction.Commission"<endrec>
+"2197","en","ServiceAction.CreateOrganization.StartPIN"<endrec>
+"secret word","en","ServiceAction.Credential"<endrec>
+"Password","en","ServiceAction.CredentialType"<endrec>
+"AirtimeCommission","en","ServiceAction.Credit.IdentityAccountAlias"<endrec>
+"AirtimeCommission","en","ServiceAction.Credit.IdentityAccountTypeName"<endrec>
+"7","en","ServiceAction.DaysBeforeExpired"<endrec>
+"AirtimeCommission","en","ServiceAction.Debit.IdentityAccountAlias"<endrec>
+"50000.00","en","ServiceAction.Debit.IdentityAccountBalance"<endrec>
+"AirtimeCommission","en","ServiceAction.Debit.IdentityAccountTypeName"<endrec>
+"200","en","ServiceAction.FeeInfo.CreditParty.Fee"<endrec>
+"200","en","ServiceAction.FeeInfo.DebitParty.Fee"<endrec>
+"","en","ServiceAction.FeeInfo.Fee"<endrec>
+"200","en","ServiceAction.FeeInfo.Tax"<endrec>
+"VDF","en","ServiceAction.FirstName"<endrec>
+"{{ServiceAction.Group.AddRolesName}}","en","ServiceAction.Group.AddRolesName"<endrec>
+"{{ServiceAction.Group.OperationMsisdn}}","en","ServiceAction.Group.OperationMsisdn"<endrec>
+"{{ServiceAction.Group.OperationRole}}","en","ServiceAction.Group.OperationRole"<endrec>
+"{{ServiceAction.Group.OperationpublicName}}","en","ServiceAction.Group.OperationpublicName"<endrec>
+"{{ServiceAction.Group.OriInitiatorMsisdn}}","en","ServiceAction.Group.OriInitiatorMsisdn"<endrec>
+"{{ServiceAction.Group.OriInitiatorName}}","en","ServiceAction.Group.OriInitiatorName"<endrec>
+"{{ServiceAction.Group.OriInitiatorRole}}","en","ServiceAction.Group.OriInitiatorRole"<endrec>
+"{{ServiceAction.Group.RemoveRolesName}}","en","ServiceAction.Group.RemoveRolesName"<endrec>
+"{{ServiceAction.Group.TransactionCreditName}}","en","ServiceAction.Group.TransactionCreditName"<endrec>
+"{{ServiceAction.Group.TransactionOriCreditId}}","en","ServiceAction.Group.TransactionOriCreditId"<endrec>
+"{{ServiceAction.Group.VocherTypeName}}","en","ServiceAction.Group.VocherTypeName"<endrec>
+"86812530001","en","ServiceAction.Initiator.Identifier"<endrec>
+"50000.00","en","ServiceAction.Initiator.IdentityAccountBalance"<endrec>
+"11/06/2013","en","ServiceAction.InputBeginDate"<endrec>
+"12/06/2013","en","ServiceAction.InputEndDate"<endrec>
+"ltd","en","ServiceAction.LastName"<endrec>
+"15320145","en","ServiceAction.OperatorCode"<endrec>
+"Operator A","en","ServiceAction.OperatorName"<endrec>
+"13/06/2013","en","ServiceAction.QueryBeginDate"<endrec>
+"14/06/2013","en","ServiceAction.QueryEndDate"<endrec>
+"5.00","en","ServiceAction.QueryFSIInfo.FSILoanBalance"<endrec>
+"2014-01-01 withdraw 100.00 dollars.","en","ServiceAction.QueryFSIInfo.FSIMiniStatementString"<endrec>
+"5.00","en","ServiceAction.QueryFSIInfo.FSISavingsBalance"<endrec>
+"2013-01-01 loan 100.00 dollors.","en","ServiceAction.QueryFSIInfo.LoanMiniStatementString"<endrec>
+"5.00","en","ServiceAction.QueryFSIInfo.ResidualLoanLimit"<endrec>
+"86812530001","en","ServiceAction.Receiver.Identifier"<endrec>
+"{{ServiceAction.Receiver.IdentityName}}","en","ServiceAction.Receiver.IdentityName"<endrec>
+"1234","en","ServiceAction.Receiver.MsisdnLast4Digits"<endrec>
+"Recipients","en","ServiceAction.Recipients"<endrec>
+"2197","en","ServiceAction.RegisterCustomer.StartPIN"<endrec>
+"R999999999","en","ServiceAction.ReversalRequest.ID"<endrec>
+"M-Pesa","en","ServiceAction.SPName"<endrec>
+"Cash in","en","ServiceAction.ServiceName"<endrec>
+"AccountStatementList","en","ServiceAction.Statement.AccountStatmentList"<endrec>
+"CR","en","ServiceAction.Statement.CreditOrDebit"<endrec>
+"9/8/2014","en","ServiceAction.Statement.Date"<endrec>
+"$1,000.00","en","ServiceAction.Statement.PrincipleAmount"<endrec>
+"Cash in at agent","en","ServiceAction.Statement.ReasonAlias"<endrec>
+"13612345678","en","ServiceAction.Statement.TargetNumber"<endrec>
+"15","en","ServiceAction.Statement.Time"<endrec>
+"14","en","ServiceAction.UnclaimedExpiredTime"<endrec>
+"Paybill","en","ServiceAction.Voucher.AccountName"<endrec>
+"10001","en","ServiceAction.Voucher.AccountNo"<endrec>
+"0","en","ServiceAction.Voucher.Amount"<endrec>
+"31/03/2013","en","ServiceAction.Voucher.ExpireDate"<endrec>
+"14","en","ServiceAction.Voucher.ExpireTime"<endrec>
+"00000000","en","ServiceAction.Voucher.ExternalOrderNo"<endrec>
+"11/06/2013","en","ServiceAction.Voucher.RedeemDate"<endrec>
+"2015","en","ServiceAction.Voucher.SecretCode"<endrec>
+"235748523","en","ServiceAction.Voucher.VoucherCode"<endrec>
+"CH","en","ServiceAction.statement.ChargeAlias"<endrec>
+"$10.00","en","ServiceAction.statement.ChargeAmount"<endrec>
+"CM","en","ServiceAction.statement.CommissionAlias"<endrec>
+"$5.00","en","ServiceAction.statement.CommissionAmount"<endrec>
+"TX","en","ServiceAction.statement.TaxAlias"<endrec>
+"$1.00","en","ServiceAction.statement.TaxAmount"<endrec>
+"Finished","en","ServiceAction.statement.status"<endrec>
+"0","en","Transaction.AdditionalData.HomeSend_Charge_Amount"<endrec>
+"0","en","Transaction.AdditionalData.Principle_Amount"<endrec>
+"24/03/2013","en","Transaction.BasicInfo.ExpiryDate"<endrec>
+"0000","en","Transaction.BasicInfo.ExternalOrderNo"<endrec>
+"20130324135011000012","en","Transaction.BasicInfo.OriTransLogId"<endrec>
+"24/03/2013","en","Transaction.BasicInfo.TransInitiateDate"<endrec>
+"13","en","Transaction.BasicInfo.TransInitiateTime"<endrec>
+"20130324135011000012","en","Transaction.BasicInfo.TransLogId"<endrec>
+"80","en","Transaction.BrokenLimit.CurrentValue"<endrec>
+"","en","Transaction.BrokenLimit.LimitPattern"<endrec>
+"5.00","en","Transaction.BrokenLimit.LimitRuleId"<endrec>
+"daily transaction amount","en","Transaction.BrokenLimit.LimitRuleName"<endrec>
+"5.00","en","Transaction.BrokenLimit.PeriodLength"<endrec>
+"1","en","Transaction.BrokenLimit.PeriodType"<endrec>
+"day","en","Transaction.BrokenLimit.PeriodUnit"<endrec>
+"max","en","Transaction.BrokenLimit.ThresholdType"<endrec>
+"100","en","Transaction.BrokenLimit.ThresholdValue"<endrec>
+"55555","en","Transaction.ClosedOperatorId"<endrec>
+"","en","Transaction.Comment2Customer"<endrec>
+"secret word","en","Transaction.Credential"<endrec>
+"default account","en","Transaction.Credit.AccountName"<endrec>
+"","en","Transaction.Credit.GroupCode"<endrec>
+"AirtimeCommission","en","Transaction.Credit.IdentityAccountAlias"<endrec>
+"50000.00","en","Transaction.Credit.IdentityAccountBalance"<endrec>
+"Active","en","Transaction.Credit.IdentityAccountStatus"<endrec>
+"AirtimeCommission","en","Transaction.Credit.IdentityAccountTypeName"<endrec>
+"8613512345678","en","Transaction.Credit.IdentityMSISDN"<endrec>
+"Huawei","en","Transaction.Credit.IdentityName"<endrec>
+"frozen","en","Transaction.Credit.IdentityStatus"<endrec>
+"1234","en","Transaction.Credit.MSISDNLast4Digits"<endrec>
+"andy","en","Transaction.Credit.OrgName"<endrec>
+"200001","en","Transaction.Credit.OrgShortCode"<endrec>
+"default account","en","Transaction.Debit.AccountName"<endrec>
+"AirtimeCommission","en","Transaction.Debit.IdentityAccountAlias"<endrec>
+"50000.00","en","Transaction.Debit.IdentityAccountBalance"<endrec>
+"Active","en","Transaction.Debit.IdentityAccountStatus"<endrec>
+"AirtimeCommission","en","Transaction.Debit.IdentityAccountTypeName"<endrec>
+"8613512345678","en","Transaction.Debit.IdentityMSISDN"<endrec>
+"VDF Ltd.","en","Transaction.Debit.IdentityName"<endrec>
+"frozen","en","Transaction.Debit.IdentityStatus"<endrec>
+"1234","en","Transaction.Debit.MSISDNLast4Digits"<endrec>
+"andy","en","Transaction.Debit.OrgName"<endrec>
+"100001","en","Transaction.Debit.OrgShortCode"<endrec>
+"5.00","en","Transaction.DormantCustomerName"<endrec>
+"EnteredMSISDN","en","Transaction.EnteredRechargedMSISDN"<endrec>
+"5.00","en","Transaction.FSIInfo.FSILoanBalance"<endrec>
+"0","en","Transaction.FSIInfo.FSINewBalance"<endrec>
+"5.00","en","Transaction.FSIInfo.FSISavingsBalance"<endrec>
+"0","en","Transaction.FSIInfo.OverpayAmount"<endrec>
+"145","en","Transaction.FSIInfo.RepaymentAmountFromSavings"<endrec>
+"100000.00","en","Transaction.FeeInfo.ActualAmount"<endrec>
+"10000","en","Transaction.FeeInfo.AmountNumber"<endrec>
+"200.00","en","Transaction.FeeInfo.Commission"<endrec>
+"200","en","Transaction.FeeInfo.CreditParty.Commission"<endrec>
+"200","en","Transaction.FeeInfo.CreditParty.Fee"<endrec>
+"USD","en","Transaction.FeeInfo.Currency"<endrec>
+"200","en","Transaction.FeeInfo.DebitParty.Commission"<endrec>
+"200","en","Transaction.FeeInfo.DebitParty.Fee"<endrec>
+"1234567.89","en","Transaction.FeeInfo.Fee"<endrec>
+"100000.00","en","Transaction.FeeInfo.OrgAmount"<endrec>
+"1234567.89","en","Transaction.FeeInfo.Tax"<endrec>
+"MaxCompletionDate","en","Transaction.IMTInfo.MaxCompletionDate"<endrec>
+"ReceivedAmount","en","Transaction.IMTInfo.ReceivedAmount"<endrec>
+"ReceiverCurrency","en","Transaction.IMTInfo.ReceiverCurrency"<endrec>
+"RecipientMSISDN","en","Transaction.IMTInfo.RecipientMSISDN"<endrec>
+"RecipientName","en","Transaction.IMTInfo.RecipientName"<endrec>
+"ScreeningEndDate","en","Transaction.IMTInfo.ScreeningEndDate"<endrec>
+"TransactionCode","en","Transaction.IMTInfo.TransactionCode"<endrec>
+"VOCExpirationDate","en","Transaction.IMTInfo.VOCExpirationDate"<endrec>
+"ValidationMessage","en","Transaction.IMTInfo.ValidationMessage"<endrec>
+"50000.00","en","Transaction.Initiator.IdentityAccountBalance"<endrec>
+"13612345678","en","Transaction.Initiator.IdentityMSISDN"<endrec>
+"frozen","en","Transaction.Initiator.IdentityStatus"<endrec>
+"1234","en","Transaction.Initiator.MSISDNLast4Digits"<endrec>
+"andy","en","Transaction.Initiator.OrgName"<endrec>
+"11/06/2013","en","Transaction.InputBeginDate"<endrec>
+"12/06/2013","en","Transaction.InputEndDate"<endrec>
+"100001","en","Transaction.MerchantTransationNumber"<endrec>
+"0","en","Transaction.NewVoucher.Amount"<endrec>
+"{{Transaction.NewVoucher.Currency}}","en","Transaction.NewVoucher.Currency"<endrec>
+"{{Transaction.NewVoucher.ExpireDate}}","en","Transaction.NewVoucher.ExpireDate"<endrec>
+"{{Transaction.NewVoucher.IsOtherVoucher}}","en","Transaction.NewVoucher.IsOtherVoucher"<endrec>
+"{{Transaction.NewVoucher.VoucherCode}}","en","Transaction.NewVoucher.VoucherCode"<endrec>
+"100000","en","Transaction.ODInfo.Balance"<endrec>
+"100000","en","Transaction.ODInfo.Debt"<endrec>
+"01/01/2018","en","Transaction.ODInfo.DueDate"<endrec>
+"100000","en","Transaction.ODInfo.Interest"<endrec>
+"100000","en","Transaction.ODInfo.Limit"<endrec>
+"100000","en","Transaction.ODInfo.ODAmount"<endrec>
+"100000","en","Transaction.ODInfo.Penalty"<endrec>
+"0.1","en","Transaction.ODInfo.PenaltyRate"<endrec>
+"100000","en","Transaction.ODInfo.Principal"<endrec>
+"0","en","Transaction.ODInfo.ResultCode"<endrec>
+"100000","en","Transaction.ODInfo.TransactionAmount"<endrec>
+"15320145","en","Transaction.OperatorCode"<endrec>
+"200","en","Transaction.OriginalTxn.Amount"<endrec>
+"200","en","Transaction.OriginalTxn.OrderId"<endrec>
+"200","en","Transaction.OriginalTxn.ReasonType"<endrec>
+"00012491","en","Transaction.PayBillInfo.BillReferenceNumber"<endrec>
+"8613512345678","en","Transaction.Primary.IdentityAccountHolderName"<endrec>
+"M-pesa account","en","Transaction.Primary.IdentityAccountTypeName"<endrec>
+"cash in at agent","en","Transaction.Reasontype.Alias"<endrec>
+"VDF","en","Transaction.Receiver.FirstName"<endrec>
+"50000.00","en","Transaction.Receiver.IdentityAccountBalance"<endrec>
+"13612345678","en","Transaction.Receiver.IdentityMSISDN"<endrec>
+"VDF Ltd.","en","Transaction.Receiver.IdentityName"<endrec>
+"frozen","en","Transaction.Receiver.IdentityStatus"<endrec>
+"ltd","en","Transaction.Receiver.LastName"<endrec>
+"1234","en","Transaction.Receiver.MSISDNLast4Digits"<endrec>
+"13025110323","en","Transaction.RechargedMSISDN"<endrec>
+"5.00","en","Transaction.Remark"<endrec>
+"OTC Customer","en","Transaction.Requester.FirstName"<endrec>
+"13644905457","en","Transaction.Requester.IdentityMSISDN"<endrec>
+"VDF Ltd.","en","Transaction.Requester.IdentityName"<endrec>
+"VDF","en","Transaction.Requester.LastName"<endrec>
+"1000.00 USD","en","Transaction.ReverseAmount"<endrec>
+"Cash in","en","Transaction.ServiceName"<endrec>
+"8613512345678","en","Transaction.TargetMsisdn"<endrec>
+"Bill Number Error","en","Transaction.ThirdPartyFailureDescription"<endrec>
+"100000.00","en","Transaction.ThirdPointRedeemedBalance"<endrec>
+"100","en","Transaction.TransactionAmount"<endrec>
+"14","en","Transaction.UnclaimedExpiredTime"<endrec>
+"6789","en","Transaction.VerificationCode"<endrec>
+"0","en","Transaction.Voucher.Amount"<endrec>
+"31/03/2013","en","Transaction.Voucher.ExpireDate"<endrec>
+"14","en","Transaction.Voucher.ExpireTime"<endrec>
+"0000000","en","Transaction.Voucher.ExternalOrderNo"<endrec>
+"{{Transaction.Voucher.Extra1}}","en","Transaction.Voucher.Extra1"<endrec>
+"{{Transaction.Voucher.Extra10}}","en","Transaction.Voucher.Extra10"<endrec>
+"{{Transaction.Voucher.Extra2}}","en","Transaction.Voucher.Extra2"<endrec>
+"{{Transaction.Voucher.Extra3}}","en","Transaction.Voucher.Extra3"<endrec>
+"{{Transaction.Voucher.Extra4}}","en","Transaction.Voucher.Extra4"<endrec>
+"{{Transaction.Voucher.Extra5}}","en","Transaction.Voucher.Extra5"<endrec>
+"{{Transaction.Voucher.Extra6}}","en","Transaction.Voucher.Extra6"<endrec>
+"{{Transaction.Voucher.Extra7}}","en","Transaction.Voucher.Extra7"<endrec>
+"{{Transaction.Voucher.Extra8}}","en","Transaction.Voucher.Extra8"<endrec>
+"{{Transaction.Voucher.Extra9}}","en","Transaction.Voucher.Extra9"<endrec>
+"{{Transaction.Voucher.IsOtherVoucher}}","en","Transaction.Voucher.IsOtherVoucher"<endrec>
+"11/06/2013","en","Transaction.Voucher.RedeemDate"<endrec>
+"25/03/2013 11","en","Transaction.Voucher.RedeemTime"<endrec>
+"{{Transaction.Voucher.RedeemingHierType}}","en","Transaction.Voucher.RedeemingHierType"<endrec>
+"{{Transaction.Voucher.RedeemingOrgName}}","en","Transaction.Voucher.RedeemingOrgName"<endrec>
+"{{Transaction.Voucher.RedeemingOrgShortCode}}","en","Transaction.Voucher.RedeemingOrgShortCode"<endrec>
+"2015","en","Transaction.Voucher.SecretCode"<endrec>
+"235748523","en","Transaction.Voucher.VoucherCode"<endrec>
+"15/06/2013","en","WorkFlow.Flow.ExpireDate"<endrec>
+"31/03/2013","en","WorkFlow.Flow.ExpireTime"<endrec>
+"Organization creation","en","WorkFlow.Flow.FlowName"<endrec>
+"VDF Ltd.","en","WorkFlow.Flow.PublicName"<endrec>
+"Contact task","en","WorkFlow.Task.ContactName"<endrec>
+"31/03/2013","en","WorkFlow.Task.ExpireTime"<endrec>
+"VDF Ltd.","en","WorkFlow.Task.PublicName"<endrec>
+"Status","en","WorkFlow.Task.Status"<endrec>
+"Organziation approving task","en","WorkFlow.Task.TaskName"<endrec>
+"http","en","WorkFlow.Task.URL"<endrec>
+"David","en","WorkFlow.TaskAssgin.AssigneeName"<endrec>
+"Jenny","en","WorkFlow.TaskAssgin.AssignerName"<endrec>
+"ok","en","WorkFlow.TaskAssgin.Comments"<endrec>
+"5.00","en","WorkFlow.TaskAssgin.TaskName"<endrec>
+"","en","crbStatus"<endrec>
+"Outcome","en","workflow.OutCome"<endrec>
+"scfs","en_KE","BOAction.AML.AMLTaskName"<endrec>
+"Test","en_KE","BOAction.AML.AMLTaskTimeOutTimes"<endrec>
+"Active","en_KE","BOAction.AccountStatus"<endrec>
+"1","en_KE","BOAction.Bundle.Element.Unit"<endrec>
+"test","en_KE","BOAction.DirectDebit.TransationDate"<endrec>
+"1.00","en_KE","BOAction.FeeInfo.Initiator.Fee"<endrec>
+"R4Q6 test","en_KE","ServiceAction.BrokenLimit.LimitRuleName"<endrec>
+"12","en_KE","ServiceAction.FeeInfo.Fee"<endrec>
+"Tesc","en_KE","Transaction.Comment2Customer"<endrec>
+"Test","en_KE","Transaction.Credit.GroupCode"<endrec>
+"200","en_KE","Transaction.FeeInfo.CreditParty.Commission"<endrec>
+"12","en_KE","Transaction.FeeInfo.DebitParty.Commission"<endrec>
+"200","en_KE","Transaction.FeeInfo.DebitParty.Fee"<endrec>
+"","sw_KE","BOAction.AML.AMLTaskName"<endrec>
+"","sw_KE","BOAction.AML.AMLTaskTimeOutTimes"<endrec>
+"","sw_KE","BOAction.AccountStatus"<endrec>
+"","sw_KE","BOAction.Bundle.Element.Unit"<endrec>
+"","sw_KE","BOAction.DirectDebit.TransationDate"<endrec>
+"","sw_KE","BOAction.FeeInfo.Initiator.Fee"<endrec>
+"","sw_KE","ServiceAction.BrokenLimit.LimitRuleName"<endrec>
+"","sw_KE","ServiceAction.FeeInfo.Fee"<endrec>
+"","sw_KE","Transaction.Comment2Customer"<endrec>
+"","sw_KE","Transaction.Credit.GroupCode"<endrec>
+"","sw_KE","Transaction.FeeInfo.CreditParty.Commission"<endrec>
+"","sw_KE","Transaction.FeeInfo.DebitParty.Commission"<endrec>
+"","sw_KE","Transaction.FeeInfo.DebitParty.Fee"<endrec>

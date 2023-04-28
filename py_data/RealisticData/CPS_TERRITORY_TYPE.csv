@@ -1,0 +1,5 @@
+DESCRIPTION,NAME,PARENT,TYPE_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <endrec>
+"States","States","0","1"<endrec>
+"Province","Province","1","1001"<endrec>
+"City","City","1001","2001"<endrec>
+"County","County","2001","3001"<endrec>

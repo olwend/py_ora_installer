@@ -1,0 +1,899 @@
+APPLY_SCENARIOS,CONFIDENTIAL_FLAG,DATA_TYPE,DESCRIPTION,FEATURE_CODE,IGNORE,MAX_LENGTH,MULTI_LANGUAGE_FLAG,VARIABLE_NAME                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <endrec>
+"01010101000000011100011100000000","0","1","Field name that fails to be verified in the message accessed through the STK, which is used in the notification sent after verification failure.","0","0","100","0","AGContext.Response.ErrorParameterKey"<endrec>
+"01010101000000011100011100000000","0","1","Content that fails to be verified in the message accessed through the STK, which is used in the notification sent after verification failure.","0","0","100","0","AGContext.Response.ErrorParameterValue"<endrec>
+"01010101000010011110011100000000","0","1","Reserved.","","1","8","0","AGContext.Response.ResultCode"<endrec>
+"01010101000010011110011100000000","0","1","Reserved.","","1","256","0","AGContext.Response.ResultMessage"<endrec>
+"01010000000000000000000000000000","0","1","Message source queue alias.","","1","64","0","AGContext.ServiceQueueAlias"<endrec>
+"00000000000010000000000000000000","1","1","Actual anonymous available  quota of the bundle element after the transaction is completed in the transaction process.","","1","18","0","AvailableValue"<endrec>
+"00000010000000000000000000000000","0","1","Reserved.","","1","256","0","BOAction.AML.AMLTaskName"<endrec>
+"00000010000000000000000000000000","0","1","Reserved.","","1","20","0","BOAction.AML.AMLTaskSoftAbortTimes"<endrec>
+"00000010000000000000000000000000","0","1","Reserved.","","1","20","0","BOAction.AML.AMLTaskTimeOutTimes"<endrec>
+"00100000000000000000000000000000","0","1","Access channel. The notification is sent when changing the access channel.","","1","16","0","BOAction.AccessChannelAdd"<endrec>
+"00100000000000000000000000000000","0","1","Access channel name, which is used in the notification sent when the BO service operation is successful.","","1","16","0","BOAction.AccessChannelName"<endrec>
+"00110000000000000000000000000000","0","6","Account list. This parameter is used when the account status of an identity is changed.","","0","","0","BOAction.AccountList"<endrec>
+"00100000000000000000000000000000","0","1","Modified account rule profile name, which is used in the notification sent after the rule profile of the account level is modified.","","1","32","0","BOAction.AccountRuleProfile"<endrec>
+"00100000000010011100000000000000","0","1","Account status, which is used in the notification sent after the status of the account is modified.","","1","16","0","BOAction.AccountStatus"<endrec>
+"00110000000000000000000000000000","0","1","Action request initiation dat in BO action.","","1","10","0","BOAction.ActionDate"<endrec>
+"00110000000000000000000000000000","0","5","Action request initiation time in BO action.","","1","8","0","BOAction.ActionTime"<endrec>
+"00100000000000000000000000000000","0","1","Name of the BO or action that generates the loyalty point issuing.","","0","32","0","BOAction.ActionTypeName"<endrec>
+"00110010000000000000000000000000","0","1","Name of the identity participating in the BO service. The receiver name is used in priority. If the receiver name is empty, the initiator name is used.","","1","64","0","BOAction.AffectedIdentityName"<endrec>
+"00110000000000000000000000000000","0","1","OD opt in date can not less this date","","1","10","0","BOAction.AllowDate"<endrec>
+"00110000000000000000000000000000","0","1","If the number of months the user activates MM is greater than the value of this parameter, then the customer can open OD","","1","10","0","BOAction.AllowMonth"<endrec>
+"00110000000000000000000000000000","0","2","disable or enable offline wallet auto recharge value","","0","3","0","BOAction.AutoTopup"<endrec>
+"00110000000000000000000000000000","0","1","","","1","32","0","BOAction.Bank.BranchName"<endrec>
+"00110000000000000000000000000000","0","1","","","1","32","0","BOAction.Bank.BranchShortCode"<endrec>
+"00110000000000000000000000000000","0","1","","","1","32","0","BOAction.Bank.ReceivingAccount"<endrec>
+"00100000000000000000000000000000","0","1","Bound bank number of an identity in BO action.","","1","16","0","BOAction.BankAccount"<endrec>
+"00100000000000000000000000000000","0","6","List of bound bank cards, which is in the notification sent when a customer queries the bound bank cards.","","1","16","0","BOAction.BankAccountList"<endrec>
+"00100000000000000000000000000000","0","6","List of bank card contacts, which is in the notification sent when a customer queries the added bank card contacts.","","1","16","0","BOAction.BankAccountLookupList"<endrec>
+"00110000000000000000000000000000","0","1","Link or unlink account type.","","0","1","0","BOAction.BankAccountType"<endrec>
+"00100000000000000000000000000000","0","1","Bound bank branch of an identity in BO action.","","1","32","0","BOAction.BankBranch"<endrec>
+"01000000000000000000000000000000","0","1","Reserved.","","1","32","0","BOAction.BankName"<endrec>
+"00100000000000000000000000000000","0","1","Bank switch information, including the bank name and bank code.","","1","128","0","BOAction.BankSwitchInfo.Element"<endrec>
+"00110000000000000000000000000000","0","1","Beneficiary ID, which is used in the notification sent when a beneficiary is added or deleted. If the beneficiary is a customer, the ID is the MSISDN. If the beneficiary is an organization, the ID is the short code of the organization.","","0","32","0","BOAction.BeneficiaryIdentifier"<endrec>
+"00110000000000000000000000000000","0","1","Beneficiary name, which is used in the notification sent after a beneficiary is added or deleted.","","1","1024","0","BOAction.BeneficiaryName"<endrec>
+"00110000000000000000000000000000","0","1","Beneficiary remarks, which is used in the notification sent after a beneficiary is added or deleted.","","1","128","0","BOAction.BeneficiaryReference"<endrec>
+"00110000000000000000000000000000","0","1","Bill remarks, which is used in the notification sent after a beneficiary is added or deleted. The beneficiary must be an organization.","","0","128","0","BOAction.BillReference"<endrec>
+"00110000000010011100000000000000","0","1","Bundle assigning mode, which is used in the notification sent after the identity used for bundle service.","","0","20","0","BOAction.Bundle.AssigningMode"<endrec>
+"00110000000010011100000000000000","0","1","","","0","256","0","BOAction.Bundle.Description"<endrec>
+"00110000000000000000000000000000","0","1","Bundle configuration table. Used to record bundle details for notification display. It is used in the notification sent after the identity used for bundle service.","","0","18","0","BOAction.Bundle.Element"<endrec>
+"00110000000010011100000000000000","0","1","","","0","18","0","BOAction.Bundle.Element.AvailableValue"<endrec>
+"00110000000010011100000000000000","0","1","Unique identifier of a bundle element. (Currently supports Service and Reason Type. Allowed to use aliases.). It is used in the notification sent after the identity used for bundle service.","","0","128","0","BOAction.Bundle.Element.Identifier"<endrec>
+"00110000000010011100000000000000","0","1","The maximum value of a bundle element, which is used in the notification sent after the identity used for bundle service.","","0","18","0","BOAction.Bundle.Element.MaxValue"<endrec>
+"00100000000000000000000000000000","0","1","Indicates whether the notification sending success notification is in Splitting On mode in the bundle service in BO action.","","1","1","0","BOAction.Bundle.Element.SendOkInSplittingOn"<endrec>
+"00110000000010011100000000000000","0","1","Bundle element type. For example, External BundelElement, Service and Reason Type. It is used in the notification sent after the identity used for bundle service.","","1","20","0","BOAction.Bundle.Element.Type"<endrec>
+"00110000000010011100000000000000","0","1","Bundle element unit. Used for bundle services, which is used in the notification sent after the identity used for bundle service.","","0","2","0","BOAction.Bundle.Element.Unit"<endrec>
+"00110000000010011100000000000000","0","1","The value that can be consumed in a bundle service, which is used in the notification sent after the identity used for bundle service.","","1","18","0","BOAction.Bundle.Element.Value"<endrec>
+"00110000000010011100000000000000","0","1","Bundle element type. For example, External BundelElement, Service and Reason Type. It is used in the notification sent after the identity used for bundle service.","","0","20","0","BOAction.Bundle.ElementType"<endrec>
+"00110000000010011100000000000000","0","1","The value that can be consumed in a bundle service, which is used in the notification sent after the identity used for bundle service.","","0","18","0","BOAction.Bundle.ElementValue"<endrec>
+"00110000000010011100000000000000","0","1","","","0","3","0","BOAction.Bundle.Expiration.Days"<endrec>
+"00110000000010011100000000000000","0","1","Indicates the expiration date of the configured bundle, which is used in the notification sent after the identity used for bundle service.","","0","14","0","BOAction.Bundle.ExpirationDate"<endrec>
+"00111100000010011100000000000000","0","1","Bundle subscription information table for notification display, which is used in the notification sent after the identity used for bundle service.","","0","","0","BOAction.Bundle.IdentityBundleInfoList"<endrec>
+"00110000000010011100000000000000","0","1","Unique identifier of a subscribed bundle in the subscription information table, which is used in the notification sent after the identity used for bundle service.","","1","22","0","BOAction.Bundle.IdentityBundleInfoList.BundleId"<endrec>
+"00110000000010011100000000000000","0","1","Notification mode for bundle renewal, which is used in the notification sent after the identity used for bundle service.","","1","20","0","BOAction.Bundle.IdentityBundleInfoList.RenewalMode"<endrec>
+"00110000000010011100000000000000","0","1","Indicates the bundle name, which is used in the notification sent after the identity used for bundle service.","","0","128","0","BOAction.Bundle.Name"<endrec>
+"00110000000010011100000000000000","0","1","Indicates the fee of a bundle, which is used in the notification sent after the identity used for bundle service.","","0","18","0","BOAction.Bundle.Price"<endrec>
+"00110000000010011100000000000000","0","1","Indicates the provider providing the bundle subscription services or products, which is used in the notification sent after the identity used for bundle service.","","0","128","0","BOAction.Bundle.Provider"<endrec>
+"00110000000010011100000000000000","0","1","","","0","20","0","BOAction.Bundle.RenewalMode"<endrec>
+"00110000000010011100000000000000","0","1","Indicates the effective date of the configured bundle, which is used in the notification sent after the identity used for bundle service.","","0","14","0","BOAction.Bundle.StartDate"<endrec>
+"00100000000000000000000000000000","0","1","Bundle status in BO action.","","1","16","0","BOAction.Bundle.Status"<endrec>
+"00110000000010011100000000000000","0","1","Indicates the bundle type, which is used in the notification sent after the identity used for bundle service.","","0","20","0","BOAction.Bundle.Type"<endrec>
+"00110000000000000000000000000000","0","1","Indicates the card number in the Linked Financial Cards service in BO action.","","1","32","0","BOAction.Card.CardNumber"<endrec>
+"00100000000000000000000000000000","0","1","Changed account status list in BO action.","","1","12","0","BOAction.ChangeAcctStatusList"<endrec>
+"00111111000000000000000000000000","0","1","Account name, which is used in the notification sent after the account status list of an identity is modified.","","1","32","0","BOAction.ChangeAcctStatusList.Account.AccountName"<endrec>
+"00111111000000000000000000000000","0","1","Account status, which is used in the notification sent after the account status list of an identity is modified.","","1","16","0","BOAction.ChangeAcctStatusList.Account.AccountStatus"<endrec>
+"00111111000000000000000000000000","0","1","Changed account, which is used in the notification sent after the account status list of an identity is modified.","","1","16","0","BOAction.ChangeAcctStatusList.Account.ChangedAccount"<endrec>
+"00100000000000000000000000000000","0","1","Currency, which is used in the notification sent after the account status list of an identity is modified.","","1","3","0","BOAction.ChangeAcctStatusList.Account.Currency"<endrec>
+"00111111000000000000000000000000","0","1","Name of a changed or added product. Used in the notifications when a customer changes a product.","","1","32","0","BOAction.ChangeProduct.ChangedOrAddedProductList.Product.Name"<endrec>
+"00100000000000000000000000000000","0","1","Product list to be removed. The notification is sent when removing a product.","","1","64","0","BOAction.ChangeProduct.RemovedProductList"<endrec>
+"00111111000000000000000000000000","0","1","Name of a deleted product. Used in the notifications when a customer changes a product.","","1","32","0","BOAction.ChangeProduct.RemovedProductList.Product.Name"<endrec>
+"00100000000000000000000000000000","0","4","Reserved.","","1","10","0","BOAction.ChangeProducts.ChangedOrAddedProductAssignmentEffectDate"<endrec>
+"00100000000000000000000000000000","0","4","Reserved.","","1","10","0","BOAction.ChangeProducts.ChangedOrAddedProductAssignmentExpiryDate"<endrec>
+"00100000000000000000000000000000","0","6","Reserved.","","1","64","0","BOAction.ChangeProducts.ChangedOrAddedProductAssignmentList"<endrec>
+"00100000000000000000000000000000","0","1","Reserved.","","1","64","1","BOAction.ChangeProducts.ChangedOrAddedProductAssignmentName"<endrec>
+"00100000000000000000000000000000","0","1","Reserved.","","1","512","0","BOAction.ChangeProducts.ChangedOrAppendProducts"<endrec>
+"00100000000000000000000000000000","0","6","Reserved.","","1","10","0","BOAction.ChangeProducts.RemovedProductAssignmentList"<endrec>
+"00100000000000000000000000000000","0","1","Reserved.","","1","64","1","BOAction.ChangeProducts.RemovedProductAssignmentName"<endrec>
+"00100000000000000000000000000000","0","1","Reserved.","","1","512","0","BOAction.ChangeProducts.RemovedProducts"<endrec>
+"00100000000000000000000000000000","0","4","Reserved.","","1","10","0","BOAction.ChangeRole.ChangedOrAddedRoleAssignmentEffectDate"<endrec>
+"00100000000000000000000000000000","0","4","Reserved.","","1","10","0","BOAction.ChangeRole.ChangedOrAddedRoleAssignmentExpiryDate"<endrec>
+"00100000000000000000000000000000","0","6","Reserved.","","1","64","0","BOAction.ChangeRole.ChangedOrAddedRoleAssignmentList"<endrec>
+"00100000000000000000000000000000","0","1","Reserved.","","1","64","1","BOAction.ChangeRole.ChangedOrAddedRoleAssignmentName"<endrec>
+"00100000000000000000000000000000","0","1","Role list to be changed or added.  The notification is sent when changing a role.","","1","64","0","BOAction.ChangeRole.ChangedOrAddedRoleList"<endrec>
+"00111111000000000000000000000000","0","1","Name of a changed or added role. Used in the notifications when a customer changes a role.","","1","32","0","BOAction.ChangeRole.ChangedOrAddedRoleList.Role.Name"<endrec>
+"00100000000000000000000000000000","0","6","Reserved.","","1","10","0","BOAction.ChangeRole.RemovedRoleAssignmentList"<endrec>
+"00100000000000000000000000000000","0","1","Reserved.","","1","64","1","BOAction.ChangeRole.RemovedRoleAssignmentName"<endrec>
+"00100000000000000000000000000000","0","1","Role list to be removed.  The notification is sent when removing a role.","","1","64","0","BOAction.ChangeRole.RemovedRoleList"<endrec>
+"00111111000000000000000000000000","0","1","Name of a deleted role. Used in the notifications when a customer changes a role.","","1","32","0","BOAction.ChangeRole.RemovedRoleList.Role.Name"<endrec>
+"00100000000000000000000000000000","0","1","Reserved.","","1","16","0","BOAction.ChangedAccount"<endrec>
+"00100000000000000000000000000000","0","1","Modified charge profile name, which is used in the notification sent after the charge profile of an identity is modified.","","0","256","1","BOAction.ChargeProfileName"<endrec>
+"01110000000000000000000000000000","0","1","Child organization short code, which is used in the notification sent after a child organization is created.","","1","6","0","BOAction.ChildOrgShortCode"<endrec>
+"00100000000000000000000000000000","0","1","Reserved.","","1","32","0","BOAction.ClosedDeviceMsisdn"<endrec>
+"00100000000000000000000000000000","0","4","End time of the invoice settlement in BO action.","","1","10","0","BOAction.CommiInvEndDate"<endrec>
+"00100000000000000000000000000000","0","4","Start time of the invoice settlement in BO action.","","1","10","0","BOAction.CommiInvStartDate"<endrec>
+"00110000000000000000000000000000","0","1","List of all coupons, which is used in the notification sent by the Promotion system upon successful coupon reward.","","1","100","0","BOAction.CouponList"<endrec>
+"00100000000000000000000000000000","0","1","Number of coupons in the coupon list in BO action.","","1","64","0","BOAction.CouponList.CouponInfo.CouponAmount"<endrec>
+"00100000000000000000000000000000","0","1","Coupon ID in the coupon list in BO action.","","1","64","0","BOAction.CouponList.CouponInfo.CouponId"<endrec>
+"00100000000000000000000000000000","0","1","Coupon type in the coupon list in BO action.","","1","64","0","BOAction.CouponList.CouponInfo.CouponType"<endrec>
+"00100000000000000000000000000000","0","1","Effective time of a coupon in the coupon list in BO action.","","1","64","0","BOAction.CouponList.CouponInfo.EffectiveDate"<endrec>
+"00100000000000000000000000000000","0","1","Expiration time of a coupon in the coupon list in BO action.","","1","64","0","BOAction.CouponList.CouponInfo.ExpiredDate"<endrec>
+"00110000000000000000000000000000","0","1","List of non-drawing coupons, which is used in the notification sent by the Promotion system upon successful coupon reward.","","1","100","0","BOAction.CouponListWithoutDrawing"<endrec>
+"00000010000000000000000000000000","0","1","Customer's credential type in BO action.","","1","8","0","BOAction.CredentialType"<endrec>
+"00100000000000000000000000000000","1","3","Available credit limit after the credit limit is adjusted, which equals the available balance plus the credit limit.","","1","12","0","BOAction.CreditManagement.AvailableCreditBalance"<endrec>
+"00100000000000000000000000000000","1","3","Credit limit after the credit limit is adjusted.","","1","12","0","BOAction.CreditManagement.CreditLimit"<endrec>
+"00100000000000000000000000000000","0","1","Currency in BO action.","","1","3","0","BOAction.Currency"<endrec>
+"00110010000000000000000010000000","0","1","MSISDN of a customer, which is used, for example, in the notification sent after a customer is created.","","1","18","0","BOAction.CustomerMsisdn"<endrec>
+"00111110000000000000000010000000","0","1","Customer name, which is used, for example, in the notification sent after a customer is created.","","1","32","0","BOAction.CustomerName"<endrec>
+"00100000000000000000000000000000","0","1","Customer status, which is used, for example, in the notification sent after a customer is created.","","1","16","0","BOAction.CustomerStatus"<endrec>
+"00100000000000000000000000000000","0","1","Customer type, which is used, for example, in the notification sent after a customer is created.","","1","20","0","BOAction.CustomerTypeName"<endrec>
+"00000010000000000000000000000000","0","1","Number of days before expiration in BO action.","","1","3","0","BOAction.DaysBeforeExpired"<endrec>
+"00110000000000000000000000000000","1","3","the amount of OD debt. this parameter is used in the opt out","","1","12","0","BOAction.Debt"<endrec>
+"00100000000000000000000000000000","0","1","Customer or till device status in BO action.","","1","9","0","BOAction.DeviceStatus"<endrec>
+"00110000000000000000000000000000","0","2","End range of days in BO action in the Direct Debit Mandate operation.","","1","3","0","BOAction.DirectDebit.EndRangeOfDays"<endrec>
+"00110000000000000000000000000000","0","4","First payment date in BO action in the Direct Debit Mandate operation.","","1","10","0","BOAction.DirectDebit.FirstPaymentDate"<endrec>
+"00110000000000000000000000000000","0","1","Frequency in BO action in the Direct Debit Mandate operation.","","1","32","0","BOAction.DirectDebit.Frequency"<endrec>
+"00110000000000000000000000000000","0","1","Mandate ID in BO action in the Direct Debit Mandate operation.","","1","32","0","BOAction.DirectDebit.MandateID"<endrec>
+"00110000000000000000000000000000","0","1","Payee in BO action in the Direct Debit Mandate operation.","","1","32","0","BOAction.DirectDebit.Payee"<endrec>
+"00110000000000000000000000000000","0","1","Payee account name in BO action in the Direct Debit Mandate operation.","","1","64","0","BOAction.DirectDebit.PayeeAccountName"<endrec>
+"11110000000000000000000000000000","0","1","Payee Short Code in BO action in the Direct Debit transaction.","","1","6","0","BOAction.DirectDebit.PayeeShortCode"<endrec>
+"00110000000000000000000000000000","0","1","Payer in BO action in the Direct Debit Mandate operation.","","1","32","0","BOAction.DirectDebit.Payer"<endrec>
+"00110000000000000000000000000000","0","1","Payer account name in BO action in the Direct Debit Mandate operation.","","1","64","0","BOAction.DirectDebit.PayerAccountName"<endrec>
+"00110000000000000000000000000000","0","1","Payer unique reference number in BO action in the Direct Debit Mandate operation.","","1","256","0","BOAction.DirectDebit.PayerUniqueReferencenumber"<endrec>
+"00110000000000000000000000000000","0","4","End date in BO action in the Direct Debit Mandate operation.","","1","10","0","BOAction.DirectDebit.RangeDaysEnd"<endrec>
+"00110000000000000000000000000000","0","4","Start date in BO action in the Direct Debit Mandate operation.","","1","10","0","BOAction.DirectDebit.RangeDaysStart"<endrec>
+"00110000000000000000000000000000","0","2","Start range of days in BO action in the Direct Debit Mandate operation.","","1","3","0","BOAction.DirectDebit.StartRangeOfDays"<endrec>
+"00110000000000000000000000000000","0","1","Mandate's status in BO action in the Direct Debit Mandate operation.","","1","64","0","BOAction.DirectDebit.Status"<endrec>
+"01000000000010000000000000000000","0","4","Transaction date in BO action in the Direct Debit Mandate operation.","","1","10","0","BOAction.DirectDebit.TransationDate"<endrec>
+"00110000000000000000000000000000","0","1","Number of drawing-type coupons, which is used in the notification sent by the Promotion system upon successful coupon reward.","","1","100","0","BOAction.DrawingCouponAmount"<endrec>
+"00100000000000000000000000000000","0","1","Temporary freezing duration.","","1","10","0","BOAction.Duration"<endrec>
+"00100000000000000000000000000000","0","1","Unit of the temporary freezing duration, for example, minute, hour, and day.","","1","10","0","BOAction.DurationUnit"<endrec>
+"00111111000000000000000000000000","0","1","KYC name, which is used in the notification sent after the KYC list is error.","","1","64","0","BOAction.ErrorKYCList.KYC.ErrorKYCName"<endrec>
+"00111111000000000000000000000000","0","1","KYC value, which is used in the notification sent after the KYC list is error.","","1","64","0","BOAction.ErrorKYCList.KYC.ErrorKYCValue"<endrec>
+"00110000000000000000000000000000","0","1","BO Action error message. It is a converted error message sent to the user after a service operation fails.","","1","512","0","BOAction.ErrorMessage"<endrec>
+"01000111000000000000000000000000","0","4","Notification sending date, which is used in the notification sent when the organization revenue settlement fails to be executed.","","1","10","0","BOAction.ExcuteDate"<endrec>
+"01000111000000000000000000000000","0","5","Notification sending time, which is used in the notification sent when the organization revenue settlement fails to be executed.","","1","32","0","BOAction.ExecuteTime"<endrec>
+"11110000000000000000000000000000","0","1","the error code which three-party return when create identity or change identity KYC.","","1","256","0","BOAction.ExternalErrorCode"<endrec>
+"00110000000000000000000000000000","0","6","FF number of customer, it's a list parameter","","0","100","0","BOAction.FFNumber"<endrec>
+"00110000000000000000000000000000","0","6","Reserved.","","0","100","0","BOAction.FSIInfo"<endrec>
+"00100000000000000000000000000000","0","6","Foreign Currency Exchange Rate List","","1","16","0","BOAction.FXRateList"<endrec>
+"00100000000000000000000000000000","1","1","Commission of a initiator during the BO action.","","1","12","0","BOAction.FeeInfo.Initiator.Commission"<endrec>
+"00100000000000000000000000000000","1","1","Fee of a initiator during the BO action.","","1","12","0","BOAction.FeeInfo.Initiator.Fee"<endrec>
+"00100000000000000000000000000000","1","1","Commission of a receiver during the BO action.","","1","12","0","BOAction.FeeInfo.Receiver.Commission"<endrec>
+"00100000000000000000000000000000","1","1","Fee of a receiver during the BO action.","","1","12","0","BOAction.FeeInfo.Receiver.Fee"<endrec>
+"00110000000000000000000000000000","0","1","Funding source type of organization auto sweep in BO action.","","0","256","0","BOAction.FundingSource"<endrec>
+"00100000000000000000000000000000","0","1","New group member role. The notification is sent when a group member role is added.","","0","256","0","BOAction.Group.AddGroupMemberRole"<endrec>
+"00110000000000000000000000000000","0","1","Members has added to a group in BO action.","","0","256","0","BOAction.Group.AddedGroupMemberRole"<endrec>
+"00100000000000000000000000000000","0","1","Group description. The notification is sent when group description is changed.","","1","256","0","BOAction.Group.Description"<endrec>
+"00110000000000000000000000000000","0","1","Short code of group in BO action.","","0","32","0","BOAction.Group.GroupCode"<endrec>
+"00110000000000000000000000000000","0","1","Description of group in the BO action.","","0","256","0","BOAction.Group.GroupDescription"<endrec>
+"00110000000000000000000000000000","0","1","Unique ID of group in BO action.","","0","256","0","BOAction.Group.GroupID"<endrec>
+"00110000000000000000000000000000","0","6","List of group that a customer has joined in BO action.","","0","100","0","BOAction.Group.GroupList"<endrec>
+"00110000000000000010011100000000","0","1","","","0","32","0","BOAction.Group.GroupMemberRole"<endrec>
+"00110000000000000000000000000000","0","1","Name of group in BO action.","","0","256","0","BOAction.Group.GroupName"<endrec>
+"00110000000000000000000000000000","0","1","Product name of group in BO action.","","0","256","0","BOAction.Group.GroupProductName"<endrec>
+"00110000000000000000000000000000","0","1","Public name of group in BO action.","","0","256","0","BOAction.Group.GroupPublicName"<endrec>
+"00110000000000000000000000000000","0","1","Role of member that acted in BO action.","","0","256","0","BOAction.Group.GroupRole"<endrec>
+"00110000000000000000000000000000","0","6","Attribution of group role in BO action, include","","0","100","0","BOAction.Group.GroupRoleInfo"<endrec>
+"00110000000000000000000000000000","0","1","Sponsor of group in BO action.","","0","32","0","BOAction.Group.GroupSponsor"<endrec>
+"00110000000000000010011100000000","0","1","","","0","32","0","BOAction.Group.InitiatorMsisdn"<endrec>
+"00100000000000000000000000000000","0","1","MSISDN of invited customer for group in BO action.","","0","32","0","BOAction.Group.InvitedCustomerMSISDN"<endrec>
+"00110000000000000000000000000000","0","1","MSISDN of members that are managered in BO action.","","0","32","0","BOAction.Group.ManagedMemberMSISDN"<endrec>
+"00110000000000000010011100000000","0","1","","","0","32","0","BOAction.Group.MaxNumAllowed"<endrec>
+"00110000000000000000000000000000","0","1","Max number of a group that customer can joined in BO action.","","0","32","0","BOAction.Group.MaxNumberOfJoinedGroups"<endrec>
+"00110000000000000000000000000000","0","1","Number of approved for a group in BO action.","","0","32","0","BOAction.Group.NumberOfApprovers"<endrec>
+"00110000000000000000000000000000","0","1","Operation type in BO action involved group.","","0","3","0","BOAction.Group.OperationType"<endrec>
+"00100000000000000000000000000000","0","1","Original group member role. The notification is sent when changing a group member role.","","0","256","0","BOAction.Group.OriginalGroupMemberRole"<endrec>
+"00110000000000000000000000000000","0","1","Group memeber role removed in BO action.","","0","256","0","BOAction.Group.RemovedGroupMemberRole"<endrec>
+"00010100001000011100011100000000","0","1","number of required approver people","","0","32","0","BOAction.Group.RequiredApproverNumber"<endrec>
+"00110000000000000000000000000000","0","1","The task ID of group approval task in BO action.","","0","32","0","BOAction.Group.TASK.TASKID"<endrec>
+"00110000000000000000000000000000","0","1","Task name in BO action involved group.","","0","256","0","BOAction.Group.TaskName"<endrec>
+"00100000000000000000000000000000","0","1","Modified identity model name, which is used in the notification sent after the organization identity model is modified.","","1","16","0","BOAction.HierarchyRelationshipType"<endrec>
+"00110000000010011100000000000000","0","1","","","0","22","0","BOAction.Identity.IdentityBundleId"<endrec>
+"00111100000010011100000000000000","0","1","Customer's bundle info list. The notification is sent when sending the bundle renewal reminder.","","1","","0","BOAction.IdentityBundleInfoList"<endrec>
+"00100000000000000000000000000000","0","1","Modified identity rule profile, which is used in the notification sent after the rule profile of the identity level is modified.","","1","32","0","BOAction.IdentityRuleProfile"<endrec>
+"00100000000000000000000000000000","0","1","Identity status.","","1","16","0","BOAction.IdentityStatus"<endrec>
+"00100000000000000000000000000000","0","1","Identity type. The notification is sent when activating an operator.","","1","4","0","BOAction.IdentityType"<endrec>
+"00100000000000000000000000000000","0","1","Original API password. The notification is sent when unlocking a password.","","1","10","0","BOAction.InitialAPIPassword"<endrec>
+"00100000000000000000000000000000","1","1","Initial password, for example, the initial password sent to a created operator during operator creation.","","1","10","0","BOAction.InitialPassword"<endrec>
+"00110000000000000000000000000000","0","1","First name of the initiator (customer).","","1","64","0","BOAction.Initiator.FirstName"<endrec>
+"00110000000000000000000000000000","0","1","Identifier type of the initiator.","","1","32","0","BOAction.Initiator.IdentifierId"<endrec>
+"00110000000000000000000000000000","0","1","Identifier type of the initiator.","","1","16","0","BOAction.Initiator.IdentifierType"<endrec>
+"00110000000000000000000000000000","0","3","Account balance of the initiator. This variable is valid for BO action.","","1","12","0","BOAction.Initiator.IdentityAccountBalance"<endrec>
+"00110000000000000000000000000000","0","1","Identity ID of the initiator.","","1","32","0","BOAction.Initiator.IdentityId"<endrec>
+"00110000000000000000000000000000","0","1","Identity type of the initiator.","","1","16","0","BOAction.Initiator.IdentityType"<endrec>
+"00110000000000000000000000000000","0","1","Last name of the initiator (customer).","","1","64","0","BOAction.Initiator.LastName"<endrec>
+"00110000000000000000000000000000","0","1","Middle name of the initiator (customer).","","1","64","0","BOAction.Initiator.MiddleName"<endrec>
+"00110000000000000000000000000000","0","1","The operation type of the QR code,such as","","0","4","0","BOAction.Initiator.OperationType"<endrec>
+"00110000000000000000000000000000","0","1","Operator ID of the initiator (operator).","","1","32","0","BOAction.Initiator.OperatorId"<endrec>
+"00110000000000000000000000000000","0","1","Organization short code of the initiator (organization operator).","","1","32","0","BOAction.Initiator.OrgShortCode"<endrec>
+"00110000000000000000000000000000","0","1","Position of initiator.","","1","128","0","BOAction.Initiator.Position"<endrec>
+"00110000000000000000000000000000","0","1","Position type of initiator's positon.","","1","10","0","BOAction.Initiator.PositionType"<endrec>
+"00100000000000000000000000000000","0","1","Ad customized for the organization in BO action.","","1","280","0","BOAction.Initiator.ProductServiceAdv"<endrec>
+"00110000000000000000000000000000","0","1","Sub type of the initiator.","","1","32","0","BOAction.Initiator.SubType"<endrec>
+"00110000000000000000000000000000","0","1","Till number of the initiator (till).","","1","32","0","BOAction.Initiator.TillNumber"<endrec>
+"00010000000000000000000000000000","0","1","The birthday entered when activate customer.","","1","20","0","BOAction.InputDOB"<endrec>
+"00100000000000000000000000000000","0","4","Expired time of InvitationCode in InviteFriend Service","","1","64","0","BOAction.InviteFriend.ExpiredTime"<endrec>
+"00100000000000000000000000000000","0","1","Msisdn of Invitee in InviteFriend service","","1","32","0","BOAction.InviteFriend.HolderIdentifier"<endrec>
+"00100000000000000000000000000000","0","1","InvitationCode for Friend in InviteFriend Service","","1","16","0","BOAction.InviteFriend.InvitationCode"<endrec>
+"00100000000000000000000000000000","0","5","Invoice creation time in BO action.","","0","8","0","BOAction.InvoiceCreateTime"<endrec>
+"00100000000000000000000000000000","0","1","Invoice ID in BO action.","","1","18","0","BOAction.InvoiceId"<endrec>
+"00100000000000000000000000000000","0","1","Invoice recipient public name in BO action.","","1","128","0","BOAction.InvoiceReceiver"<endrec>
+"00100000000000000000000000000000","0","1","Invoice sender public name in BO action.","","1","64","0","BOAction.InvoiceSender"<endrec>
+"00100000000000000000000000000000","0","1","Indicates whether to reset a PIN. The notification is sent when unlocking a password.","","1","6","0","BOAction.IsResetPIN"<endrec>
+"00010000000000000000011100000000","0","6","Reserved.","","1","64","0","BOAction.KYC.ErrorKYCList"<endrec>
+"00010000000000000000011100000000","0","1","Reserved.","","1","64","1","BOAction.KYC.ErrorKYCName"<endrec>
+"00010000000000000000011100000000","0","1","Reserved.","","1","64","0","BOAction.KYC.ErrorKYCValue"<endrec>
+"00010000000000000000000000000000","0","1","Reserved.","","1","512","0","BOAction.KYC.KYCError"<endrec>
+"00100000000000000010000000000000","0","6","Modified KYC, which is used in the notification sent after the identity KYC is modified.","","1","12","0","BOAction.KYC.KYCList"<endrec>
+"00100000000000000010000000000000","0","1","KYC name, which is used in the notification sent after the identity KYC is modified.","","1","64","1","BOAction.KYC.KYCName"<endrec>
+"00100000000000000010000000000000","0","1","KYC value, which is used in the notification sent after the identity KYC is modified.","","1","64","0","BOAction.KYC.KYCValue"<endrec>
+"00100000000000000000000000000000","0","6","Customer's KYC list. The notification is sent when updating the list.","","1","12","0","BOAction.KYCList"<endrec>
+"00111100000000000000000000000000","0","1","Modified KYC name, which is used in the notification sent after the identity KYC is modified.","","1","64","0","BOAction.KYCList.KYC.KYCName"<endrec>
+"00111100000000000000000000000000","0","1","Modified KYC value, which is used in the notification sent after the identity KYC is modified.","","1","64","0","BOAction.KYCList.KYC.KYCValue"<endrec>
+"00110000000000000000000000000000","0","1","Changed language, which is used in the notification sent after the language of a customer, till, SP, or organization operator is changed.","","1","16","0","BOAction.Language"<endrec>
+"00100000000000000000000000000000","1","3","OD contract limit amount","","1","12","0","BOAction.Limit"<endrec>
+"00110000000000000000000010000000","0","1","User name of an operator, for example, the user name of the new operator during operator creation.","","1","16","0","BOAction.LoginName"<endrec>
+"00100000000000000000000000000000","0","1","Point item, which is valid for loyalty point issuing, adjustment, or redeeming or loyalty point record query.","","1","64","0","BOAction.LoyaltyPoint.PointItem"<endrec>
+"00100000000000000000000000000000","0","3","Loyalty point amount after loyalty point change, which is valid for loyalty point issuing, adjustment, or redeeming or loyalty point record query.","","1","12","0","BOAction.LoyaltyPoint.PointItem.AfterBalance"<endrec>
+"00100000000000000000000000000000","0","3","Number of loyalty point change records entered during loyalty point issuing, adjustment, or redeeming or during loyalty point record query. Or, loyalty point balance displayed during loyalty point query.","","1","12","0","BOAction.LoyaltyPoint.PointItem.Amount"<endrec>
+"00100000000000000000000000000000","0","3","Loyalty point amount before loyalty point change, which is valid for loyalty point issuing, adjustment, or redeeming or loyalty point record query.","","0","12","0","BOAction.LoyaltyPoint.PointItem.BeforeBalance"<endrec>
+"00100000000000000000000000000000","0","1","Loyalty point change description, which is valid for loyalty point adjustment or redeeming or loyalty point record query.","","1","64","0","BOAction.LoyaltyPoint.PointItem.ChangeReason"<endrec>
+"00100000000000000000000000000000","0","1","Loyalty point change reason type, which is valid for loyalty point issuing, adjustment, or redeeming or loyalty point record query.","","1","12","0","BOAction.LoyaltyPoint.PointItem.ChangeType"<endrec>
+"00100000000000000000000000000000","0","1","Service record ID associated with the loyalty point change.","","1","30","0","BOAction.LoyaltyPoint.PointItem.ClientBusiNo"<endrec>
+"00100000000000000000000000000000","0","4","Expiration date of the loyalty point account changed in the loyalty point issuing, adjustment, and redeeming services.","","1","30","0","BOAction.LoyaltyPoint.PointItem.ExpiredDate"<endrec>
+"00100000000000000000000000000000","0","4","Expiration date of the loyalty point account changed in the loyalty point issuing, adjustment, and redeeming services.","","1","30","0","BOAction.LoyaltyPoint.PointItem.ExpiredTime"<endrec>
+"00100000000000000000000000000000","0","1","Order ID of the source event corresponding to loyalty point change, which is valid for loyalty point issuing, adjustment, or redeeming or loyalty point record query.","","1","32","0","BOAction.LoyaltyPoint.PointItem.OrderID"<endrec>
+"00100000000000000000000000000000","0","1","Loyalty point account ID in the BO action.","","1","32","0","BOAction.LoyaltyPoint.PointItem.PointID"<endrec>
+"00100000000000000000000000000000","0","1","Loyalty point change record ID entered during loyalty point issuing, adjustment, or redeeming.","","1","12","0","BOAction.LoyaltyPoint.PointItem.PointLogID"<endrec>
+"00100000000000000000000000000000","0","1","Loyalty point type name in the loyalty point account in the BO action.","","1","20","0","BOAction.LoyaltyPoint.PointItem.PointTypeName"<endrec>
+"00100000000000000000000000000000","0","1","Remarks, which are valid for loyalty point adjustment or redeeming or loyalty point record query.","","1","512","0","BOAction.LoyaltyPoint.PointItem.Remark"<endrec>
+"00100000000000000000000000000000","0","1","Source transaction ID corresponding to loyalty point change, which is valid for loyalty point issuing or loyalty point record query.","","1","32","0","BOAction.LoyaltyPoint.PointItem.TransactionID"<endrec>
+"00100000000000000000000000000000","0","5","Loyalty point change time, which is valid for loyalty point issuing, adjustment, or redeeming.","","1","8","0","BOAction.LoyaltyPoint.PointItem.UpdateTime"<endrec>
+"00100000000000000000000000000000","0","1","Loyalty points to be changed. In the loyalty point adjustment service, this variable indicates the loyalty points to be adjusted. In the loyalty point redeeming service, this variable indicates the loyalty points to be redeemed. In the loyalty point transfer service, this variable indicates the loyalty points to be transferred, excluding the transfer handling fee.","","1","30","0","BOAction.LoyaltyPoint.PointSummary.ChangeAmount"<endrec>
+"00100000000000000000000000000000","0","1","Loyalty points that will expire in the month in the loyalty point issuing, adjustment, redeeming, and query services.","","1","30","0","BOAction.LoyaltyPoint.PointSummary.ExpiredAmountCurrMonth"<endrec>
+"00100000000000000000000000000000","0","1","Loyalty point type name in the loyalty point issuing, adjustment, redeeming, and query services.","","1","30","0","BOAction.LoyaltyPoint.PointSummary.PointTypeName"<endrec>
+"00100000000000000000000000000000","0","1","In the service of exchanging loyalty points for e-money, this variable indicates the loyalty points used for exchanging e-money.","","1","30","0","BOAction.LoyaltyPoint.PointSummary.RedeemeFunds"<endrec>
+"00100000000000000000000000000000","0","1","Total balance of loyalty points in the loyalty point issuing, adjustment, redeeming, and query services.","","1","30","0","BOAction.LoyaltyPoint.PointSummary.TotalPoint"<endrec>
+"00100000000000000000000000000000","0","1","Transfer handling fee.","","1","30","0","BOAction.LoyaltyPoint.TransferPoint.ChargeAmount"<endrec>
+"00100000000000000000000000000000","0","1","Transferee customer MSISDN, which is valid only in the loyalty point transfer service.","","1","30","0","BOAction.LoyaltyPoint.TransferPoint.TransfereeMSISDN"<endrec>
+"00100000000000000000000000000000","0","1","Transferor name, which is valid only in the loyalty point transfer service. For a customer, set this variable to the customer name. For an organization, set this variable to the organization name.","","1","30","0","BOAction.LoyaltyPoint.TransferPoint.TransfereeName"<endrec>
+"00100000000000000000000000000000","0","1","Transferee organization short code, which is valid only in the loyalty point transfer service.","","1","30","0","BOAction.LoyaltyPoint.TransferPoint.TransfereeShortCode"<endrec>
+"00100000000000000000000000000000","0","1","Identity type of the transferor.","","1","30","0","BOAction.LoyaltyPoint.TransferPoint.TransferorIdentityType"<endrec>
+"00100000000000000000000000000000","0","1","Transferor customer MSISDN, which is valid only in the loyalty point transfer service.","","1","30","0","BOAction.LoyaltyPoint.TransferPoint.TransferorMSISDN"<endrec>
+"00100000000000000000000000000000","0","1","Transferee name, which is valid only in the loyalty point transfer service. For a customer, set this variable to the customer name. For an organization, set this variable to the organization name.","","1","30","0","BOAction.LoyaltyPoint.TransferPoint.TransferorName"<endrec>
+"00100000000000000000000000000000","0","1","Transferor organization short code, which is valid only in the loyalty point transfer service.","","1","30","0","BOAction.LoyaltyPoint.TransferPoint.TransferorShortCode"<endrec>
+"00100000000000000000000000000000","0","1","Name of goods redeemed using loyalty points.","","1","256","0","BOAction.LoyaltyPoints.GoodsName"<endrec>
+"00100000000000000000000000000000","0","2","Number of goods redeemed using loyalty points.","","0","8","0","BOAction.LoyaltyPoints.GoodsQuantity"<endrec>
+"00100000000000000000000000000000","0","1","Redeem point amount of loyalty points. Notification sent when an SP exchanges loyalty points for goods successfully for an organization.","","1","100","0","BOAction.LoyaltyPoints.RedeemPointAmount"<endrec>
+"00100000000000000000000000000000","0","1","Voucher code of loyalty points. Notification sent when an SP exchanges loyalty points for goods successfully for an organization.","","1","100","0","BOAction.LoyaltyPoints.VoucherCode"<endrec>
+"00100000000000000000000000000000","0","1","Masked MSISDN, which is valid only for the EVC.","","1","18","0","BOAction.MaskedMsisdn"<endrec>
+"00100000000000000000000000000000","0","1","Mini statement. The notification is send when querying mini statement through BO","","1","512","0","BOAction.MiniStatement"<endrec>
+"00100000000000000000000000000000","0","6","NFC offline wallet transaction details.","","1","","0","BOAction.NFCOfflineWalletTxnList"<endrec>
+"00100000000000000000000000000000","0","1","Information associated with the NFC sticker, which is used in the notification sent for the Link/Unlink NFC Tag and Query Linked NFC operations.","","1","","0","BOAction.NFCTagLinkList"<endrec>
+"00100000000000000000000000000000","0","1","Modified parent organization name, which is used in the notification sent after a parent organization is modified.","","1","64","0","BOAction.NewParentOrgName"<endrec>
+"00100000000000000000000000000000","0","1","Modified status, which is used in the notification sent after the status of a customer, till, SP, or organization operator is changed.","","1","16","0","BOAction.NewStatus"<endrec>
+"00100000000000000000000000000000","0","1","Notification channel, which is used in the notification sent after the notification channel of an identity is modified.","","1","32","0","BOAction.NotificationChannel"<endrec>
+"00100000000000000000000000000000","0","1","Old parent organization name, which is used in the notification sent after a parent organization is modified.","","1","64","0","BOAction.OldParentOrgName"<endrec>
+"00100000000000000000000000000000","0","1","Old status, For example, the old status of an identity when the status of a customer, till, SP, or organization operator is changed.","","1","16","0","BOAction.OldStatus"<endrec>
+"00000010000000000000000000000000","0","1","Number of days for sending a silent operator notification in advance.","","1","16","0","BOAction.OperatorDormantNotifyPeriod"<endrec>
+"00110010000000000010000010000000","0","1","Operator ID, for example, the operator ID configured during operator creation.","","1","8","0","BOAction.OperatorId"<endrec>
+"00110011000000000000000000000000","0","1","Operator name, The operator name can be set only for a product that is about to expire or when the security credential of an SP or organization operator is about to expire.","","1","32","0","BOAction.OperatorName"<endrec>
+"00100000000000000000000000000000","0","1","Operator status, including the status of SP and organization operators.","","1","16","0","BOAction.OperatorStatus"<endrec>
+"01110000000000000010000000000000","0","1","Organization name in BO action.","","1","64","0","BOAction.OrgName"<endrec>
+"00100000000000000000000000000000","0","1","Modified organization name, which is used in the notification sent after the organization name is modified.","","1","64","0","BOAction.OrgNameNew"<endrec>
+"00100000000000000000000000000000","0","1","Reserved.","","1","64","0","BOAction.OrgNameOld"<endrec>
+"01110000000000000000000000000000","0","1","Organization short code in BO action.","","1","6","0","BOAction.OrgShortCode"<endrec>
+"00100000000000000000000000000000","0","1","Organization status.","","1","16","0","BOAction.OrgStatus"<endrec>
+"00100000000000000000000000000000","0","1","Organization name before modification, which is used in the notification sent when the organization name is modified.","","1","32","0","BOAction.OriginalOrgName"<endrec>
+"00110011000000000000000000000000","0","1","PIN expiration date in BO action.","","1","10","0","BOAction.PIN.ExpireDate"<endrec>
+"00100000000000000000000000000000","0","1","Name of the parent organization or the organization to which the operator or till belongs.","","1","64","0","BOAction.ParentOrgName"<endrec>
+"00100000000000000000000000000000","0","1","Short code of the organization to which the till belongs, which is used in the notification sent when a device is successfully added for a till.","","1","6","0","BOAction.ParentOrgShortCode"<endrec>
+"00110011000000000000000000000000","0","1","Password expiration date in BO action.","","1","10","0","BOAction.Password.ExpireDate"<endrec>
+"01000011000000000000000000000000","0","1","Plan ID, which is used in the notification sent when the organization revenue settlement plan fails to be executed.","","1","32","0","BOAction.PlanId"<endrec>
+"00110000000000000000000000000000","0","1","Preferred contact of organization, it's a list parameter.","","0","100","0","BOAction.PreferredContact"<endrec>
+"00000010000000000000000000000000","0","2","Product expiration alarm days. The notification is sent when a product is about to expire.","","1","3","0","BOAction.ProductExpireAlarmDays"<endrec>
+"00000010000000000000000000000000","0","2","Reserved.","","1","3","0","BOAction.ProductExpireAlarmMDays"<endrec>
+"00110011000000000000000000000000","0","1","Product expiration date in BO action.","","1","10","0","BOAction.ProductExpireDate"<endrec>
+"00000010000000000000000000000000","0","1","Product name, which is used in the notification sent when an expired product is closed or an expired product alarm is generated.","","1","32","1","BOAction.ProductName"<endrec>
+"00100000000000000000000000000000","0","1","Promotion ID in the promotion list in BO action.","","1","64","0","BOAction.PromotionList.PromotionInfo.PromotionId"<endrec>
+"00100000000000000000000000000000","0","1","Promotion time in the promotion list in BO action.","","1","64","0","BOAction.PromotionList.PromotionInfo.PromotionTime"<endrec>
+"00100000000000000000000000000000","0","1","Promotion type in the promotion list in BO action.","","1","64","0","BOAction.PromotionList.PromotionInfo.PromotionType"<endrec>
+"00100000000000000000000000000000","0","6","Query identity limitation remaining information.","","1","","0","BOAction.Query.IdentityLimitRemaining"<endrec>
+"00100000000000000000000000000000","0","1","Accumulator in BO action.","","1","64","0","BOAction.QueryAccumulator"<endrec>
+"11110000000000000000000000000000","0","6","Group list in service action.","","1","12","0","BOAction.QueryGroupList"<endrec>
+"00010000000010000010000000000000","0","1","Customer's or organization operator's birthday, for example, the birthday entered when the customer KYC is modified.","","1","20","0","BOAction.Receiver.DOB"<endrec>
+"00100010000000000000000000000000","0","1","First name of the receiver. This variable is valid when the action receiver is a customer.","","1","16","0","BOAction.Receiver.FirstName"<endrec>
+"00010000000000000000000000000000","0","2","Receiver's ID number in BO action.","","1","32","0","BOAction.Receiver.IDNumber"<endrec>
+"00010000000000000000000000000000","0","1","Receiver's ID type in BO action.","","0","32","0","BOAction.Receiver.IDType"<endrec>
+"00111100000000000010011100000000","0","1","Receiver ID, which is used in the notification sent when the individual reminder is queried. If the receiver is a customer, the ID is the MSISDN. If the receiver is an organization, the ID is the short code of the organization.","","1","20","0","BOAction.Receiver.IdentifierId"<endrec>
+"00110000000010000010000000000000","1","3","Account balance of the receiver. This variable is valid for BO action and bulk operations.","","1","12","0","BOAction.Receiver.IdentityAccountBalance"<endrec>
+"00000000000010011100000000000000","0","1","Reserved.","","1","12","0","BOAction.Receiver.IdentityAccountHolderName"<endrec>
+"00000000000010011100000000000000","0","1","Reserved.","","1","18","0","BOAction.Receiver.IdentityAccountTypeName"<endrec>
+"00100000000000000000000000000000","0","1","Identity ID of a receiver in BO action.","","1","32","0","BOAction.Receiver.IdentityId"<endrec>
+"00100000000000000000000000000000","0","1","MSISDN of the receiver, which is used in the notification sent when the BO action operation is successful.","","1","16","0","BOAction.Receiver.IdentityMSISDN"<endrec>
+"00100000000000000000000000000000","0","1","Identity name of a receiver in BO action.","","1","64","0","BOAction.Receiver.IdentityName"<endrec>
+"00111100000000000010011100000000","0","1","Identity type of the receiver in BO action.","","1","20","0","BOAction.Receiver.IdentityType"<endrec>
+"00100010000000000000000000000000","0","1","Last name of the receiver. This variable is valid when the operation is successful.","","1","16","0","BOAction.Receiver.LastName"<endrec>
+"00100010000000000000000000000000","0","1","Middle name of the receiver. This variable is valid when the operation is successful.","","0","256","0","BOAction.Receiver.MiddleName"<endrec>
+"00000000000010000010000000000000","1","1","New PIN, which is used in the notification after the CCH Reset Customer/OrgOperator PIN operation is successful.","","1","20","0","BOAction.Receiver.NewPIN"<endrec>
+"00110000000000000000000000000000","0","1","Reserved.","","1","8","0","BOAction.Receiver.OperatorId"<endrec>
+"00100000000000000000000000000000","0","1","Name of a receiver's organization in BO action.","","1","64","0","BOAction.Receiver.OrgName"<endrec>
+"00100000000000000000000000000000","0","1","Organization short code, which is valid only when the loyalty point object is an organization.","","1","6","0","BOAction.Receiver.OrgShortCode"<endrec>
+"00110000000010011100000000000000","0","1","The static QR code.","","0","128","0","BOAction.Receiver.StaticQR.Code"<endrec>
+"00110000000000000000000000000000","0","5","The link time of the static QR code.","","1","32","0","BOAction.Receiver.StaticQR.LinkTime"<endrec>
+"00110000000010011100000000000000","0","2","The serial number of the static QR code.","","0","18","0","BOAction.Receiver.StaticQR.SN"<endrec>
+"11111111111110011110010100000000","0","1","","","1","","0","BOAction.Receiver.StaticQR.Status"<endrec>
+"00110000000000000000000000000000","0","1","Sub type of the receiver.","","1","32","0","BOAction.Receiver.SubType"<endrec>
+"00110000000010000010000000000000","0","1","Till number of the receiver in BO action.","","1","20","0","BOAction.Receiver.TillNumber"<endrec>
+"00100000000000000010011100000000","0","1","Reminder amount, for example, the reminder amount configured during reminder creation.","","1","32","1","BOAction.Reminder.Amount"<endrec>
+"00111100000010011110011100000000","0","1","Reminder expiration time, for example, the expiration time configured during reminder creation, in hours.","","1","10","0","BOAction.Reminder.Expiration"<endrec>
+"00111111000000000010011100000000","0","4","Time when a reminder is executed the first time, for example, the initial execution time configured during reminder creation.","0","1","12","0","BOAction.Reminder.FirstReminderDate"<endrec>
+"00100000000000000000000000000000","0","1","Remarks, which is included in the notification sent after a standing order is created.","","1","64","0","BOAction.Reminder.FreeText"<endrec>
+"00111111000000000010011100000000","0","4","Reminder execution end time, for example, the execution end time configured during reminder creation.","","1","12","0","BOAction.Reminder.IssueReminderDate"<endrec>
+"00110000000000000000000000000000","0","1","Number of days for sending the notification in BO action in advance.","","1","16","0","BOAction.Reminder.PreWarningPeriod"<endrec>
+"00111111000000000010011100000000","0","1","Reminder execution period, for example, the reminder execution period configured during reminder creation.","","1","32","0","BOAction.Reminder.ReminderFrequency"<endrec>
+"00111111000000000010011100000000","0","1","Reminder ID, for example, the reminder ID configured during reminder creation.","","1","22","0","BOAction.Reminder.ReminderID"<endrec>
+"00111111000000000010011100000000","0","1","Reminder name, for example, the reminder name configured during reminder creation.","","1","64","0","BOAction.Reminder.ReminderName"<endrec>
+"00111100000000000010001000000000","0","6","Reminder list, for example, the list of reminders queried during individual reminder query.","","1","128","0","BOAction.Reminder.ReminderScheduleList"<endrec>
+"00111111000000000000000000000000","0","1","Reminder ID of reminder schedule list, which is used for send a reminder notification.","","1","22","0","BOAction.Reminder.ReminderScheduleList.ReminderID"<endrec>
+"00111111000000000000000000000000","0","1","Reminder name of reminder schedule list, which is used for send a reminder notification.","","1","64","0","BOAction.Reminder.ReminderScheduleList.ReminderName"<endrec>
+"00110000000000000000000000000000","0","1","Indicates whether to send the notification in BO action in advance.","","1","2","0","BOAction.Reminder.SendPreWarning"<endrec>
+"00100000000000000010011100000000","0","1","Service alias, for example, the associated service alias configured during reminder creation.","","1","32","1","BOAction.Reminder.ServiceAlias"<endrec>
+"00100000000000000000000000000000","0","1","Service name of reminder in BO action.","","1","32","0","BOAction.Reminder.ServiceName"<endrec>
+"00110000000000000000000000000000","0","1","MSISDN of the requester during the transaction in BO action.","","1","16","0","BOAction.Requester.IdentityMSISDN"<endrec>
+"00110000000000000000000000000000","0","1","Sub type of the requester.","","1","32","0","BOAction.Requester.SubType"<endrec>
+"00110000000000000000000000000000","0","1","Name of saving plan in BO action.","","1","256","0","BOAction.SavingPlan.Name"<endrec>
+"00110000000000000000000000000000","0","3","Profit of saving plan in BO action.","","1","12","0","BOAction.SavingPlan.Profit"<endrec>
+"00110000000000000000000000000000","0","1","Rate of saving plan in BO action.","","1","512","0","BOAction.SavingPlan.Rate"<endrec>
+"00110000000000000000000000000000","0","1","Rate type of saving plan in BO action.","","1","1","0","BOAction.SavingPlan.RateType"<endrec>
+"00100000000000000010000000000000","1","1","Secret word of customer or operator, for example, the secret word generated when a customer is activated.","","1","8","0","BOAction.SecretWord"<endrec>
+"00100000000000000000000000000000","0","1","Segment name, which is used in the notification sent after the segment of an identity is modified.","","1","16","0","BOAction.SegmentName"<endrec>
+"00100000000000000010000000000000","0","1","Indicates whether the automatic customer registration operation is executed during PIN setting. If the parameter is set to Yes, the customer registration operation is executed. If the value is No, the customer has been registered and is now activated.","","1","3","0","BOAction.SetPIN.IsCreated"<endrec>
+"00100000000000000010000000000000","1","1","Initial PIN of a customer or operator, for example, the initial PIN assigned to a customer when the customer is created.","","1","6","0","BOAction.StartPIN"<endrec>
+"00100000000000000000000000000000","0","1","Reserved.","","1","64","0","BOAction.TillAssignedProduct"<endrec>
+"00100000000000000000000000000000","0","1","Reserved.","","1","64","0","BOAction.TillAssignedProductList"<endrec>
+"00110000000000000000000000000000","0","1","Till number, for example, the till number configured when the till status is changed.","","1","16","0","BOAction.TillNumber"<endrec>
+"00100000000000000000000000000000","0","1","New primary till number, which is used in the notification sent after the primary till is modified.","","1","8","0","BOAction.TillNumberNew"<endrec>
+"00100000000000000000000000000000","0","1","Old primary till number, which is used in the notification sent after the primary till is modified.","","1","8","0","BOAction.TillNumberOld"<endrec>
+"00100000000000000000000000000000","0","1","Till status, for example, the new till status configured when the till status is changed.","","1","16","0","BOAction.TillStatus"<endrec>
+"00100000000000000000000000000000","0","1","The time limit of customer activation by creating PIN. The time unit is hour.","","1","5","0","BOAction.TimeLimitOfCustomerPIN"<endrec>
+"00100000000000000000000000000000","0","1","Time limit of organization operator activation by creating PIN. The time unit is hour.","","1","5","0","BOAction.TimeLimitOfOrgOperatorPIN"<endrec>
+"00110000000000000000000000000000","0","3","Fee charged in BO action.","","1","12","0","BOAction.TotalFee"<endrec>
+"00100000000000000000000000000000","1","3","List structure of BOAction.Transaction.Charge, which is used for special processing (syntax matching).","","0","16","0","BOAction.Transaction.Charge.ChargeDebitParty.AccountBalance"<endrec>
+"00100000000000000000000000000000","0","1","List structure of BOAction.Transaction.Charge, which is used for special processing (syntax matching).","","0","18","0","BOAction.Transaction.Charge.ChargeDebitParty.AccountTypeName"<endrec>
+"00100000000000000000000000000000","1","3","List structure of BOAction.Transaction.Charge, which is used for special processing (syntax matching).","","0","16","0","BOAction.Transaction.Charge.ChargeDebitParty.ChargeAmount"<endrec>
+"00100000000000000000000000000000","0","1","List structure of BOAction.Transaction.Charge, which is used for special processing (syntax matching).","","0","64","0","BOAction.Transaction.Charge.ChargeDebitParty.ChargeTypeName"<endrec>
+"00100000000000000000000000000000","0","1","List structure of BOAction.Transaction.Charge, which is used for special processing (syntax matching).","","0","32","0","BOAction.Transaction.Charge.ChargeDebitParty.IdentityID"<endrec>
+"00100000000000000000000000000000","0","1","List structure of BOAction.Transaction.Charge, which is used for special processing (syntax matching).","","0","4","0","BOAction.Transaction.Charge.ChargeDebitParty.IdentityType"<endrec>
+"00100000000000000000000000000000","1","3","List structure of BOAction.Transaction.Charge, which is used for special processing (syntax matching).","","0","16","0","BOAction.Transaction.Tax.TaxDebitParty.AccountBalance"<endrec>
+"00100000000000000000000000000000","0","1","List structure of BOAction.Transaction.Charge, which is used for special processing (syntax matching).","","0","18","0","BOAction.Transaction.Tax.TaxDebitParty.AccountTypeName"<endrec>
+"00100000000000000000000000000000","0","1","List structure of BOAction.Transaction.Charge, which is used for special processing (syntax matching).","","0","32","0","BOAction.Transaction.Tax.TaxDebitParty.IdentityID"<endrec>
+"00100000000000000000000000000000","0","1","List structure of BOAction.Transaction.Charge, which is used for special processing (syntax matching).","","0","4","0","BOAction.Transaction.Tax.TaxDebitParty.IdentityType"<endrec>
+"00100000000000000000000000000000","1","3","List structure of BOAction.Transaction.Charge, which is used for special processing (syntax matching).","","0","16","0","BOAction.Transaction.Tax.TaxDebitParty.TaxAmount"<endrec>
+"00100000000000000000000000000000","0","1","List structure of BOAction.Transaction.Charge, which is used for special processing (syntax matching).","","0","64","0","BOAction.Transaction.Tax.TaxDebitParty.TaxChargeTypeName"<endrec>
+"00100000000000000000000000000000","0","1","ID of an order generated when the fee is deducted. This parameter is used for sending a notification when the fee deduction is successful.","","0","22","0","BOAction.Transaction.TransactionId"<endrec>
+"00100000000000000000000000000000","0","1","Trust level number. This parameter is used for sending a notification when the KYC operation is performed during customer or organization modification.","","1","64","0","BOAction.TrustLevel"<endrec>
+"00100000000000000000000000000000","0","1","Trust level name. This parameter is used for sending a notification when the KYC operation is performed during customer or organization modification.","","1","64","0","BOAction.TrustLevelName"<endrec>
+"00000000000010000000000000000000","0","4","Reserved.","","1","16","0","BOAction.UnclaimedExpiredDate"<endrec>
+"00100000000000000000000000000000","0","1","Expiration time of a voucher in BO action.","","1","8","0","BOAction.Voucher.ExpireTime"<endrec>
+"00100000000000000000000000000000","0","1","Voucher's secret code in BO action.","","1","20","0","BOAction.Voucher.SecretCode"<endrec>
+"00000010000010000010000000000000","1","1","Voucher code in BO action.","","1","10","0","BOAction.Voucher.VoucherCode"<endrec>
+"00100000000000000000000000000000","0","1","Voucher code of a voucher holder, which is used in the notification sent after the identity applies for a voucher.","","1","10","0","BOAction.VoucherCode"<endrec>
+"00100000000000000000000000000000","0","1","First name of a voucher holder, which is used in the notification sent after the identity applies for a voucher.","","1","32","0","BOAction.VoucherHolder.FirstName"<endrec>
+"00100000000000000000000000000000","0","1","Identity name of voucher holder, which is used in the notification sent after the identity applies for a voucher.","","1","32","0","BOAction.VoucherHolder.IdentityName"<endrec>
+"00100000000000000000000000000000","0","1","Last name of a voucher holder, which is used in the notification sent after the identity applies for a voucher.","","1","32","0","BOAction.VoucherHolder.LastName"<endrec>
+"00100000000000000000000000000000","0","1","Middle name of a voucher holder, which is used in the notification sent after the identity applies for a voucher.","","1","32","0","BOAction.VoucherHolder.MiddleName"<endrec>
+"00100000000000000000000000000000","0","1","Bank code.","","1","128","0","BankCode"<endrec>
+"00100000000000000000000000000000","0","1","Bank name.","","1","32","0","BankName"<endrec>
+"01000000000000011100011100000000","0","1","Credential of task. This parameter is used for notifying the user the credential of the bulk task.","","1","16","0","BulkTaskContext.Credential"<endrec>
+"00111100000000000000000010000000","0","1","Reserved.","","1","32","0","BulkTaskContext.CusomterMsisdn"<endrec>
+"01010111000000011100011100000000","0","1","Reserved.","","1","256","0","BulkTaskContext.ErrorItem"<endrec>
+"00000100000000000000000000000000","0","1","Extraction type of a task. This parameter is used for notifying the user the extract type of the bulk task.","","1","18","0","BulkTaskContext.ExtractType"<endrec>
+"00001100000000000000000000000000","0","2","Number of failed items. This parameter is used for notifying the user of the number of failed items after completing the bulk task.","","1","3","0","BulkTaskContext.FailedItem"<endrec>
+"00001100000000000000000000000000","0","2","Number of completed items. This parameter is used for notifying the user of the number of completed items after completing the bulk task.","","1","3","0","BulkTaskContext.FinishedItem"<endrec>
+"00110000000000000010000000000000","0","1","Name of an organization.","","1","64","0","BulkTaskContext.OrgName"<endrec>
+"00001111000000000000000000000000","0","1","Task description. This parameter is used for notifying the user of the task type after completing the bulk task.","","1","32","0","BulkTaskContext.Plan.TaskType"<endrec>
+"00000100000000000000000000000000","0","1","Date when a transaction starts. This parameter is used for notifying the user the start transaction date of the bulk task.","","1","10","0","BulkTaskContext.StartTransactionDate"<endrec>
+"00001100000000000000000000000000","0","2","Number of successful items. This parameter is used for notifying the user of the number of successful items after completing the bulk task.","","1","3","0","BulkTaskContext.SuccessItem"<endrec>
+"01000111000000000000000000000000","0","5","End time of task. This parameter is used for notifying the user of the end time after completing the bulk task.","","1","32","0","BulkTaskContext.Task.EndTime"<endrec>
+"01010101000000011100011100000000","0","1","Reserved.","","1","256","0","BulkTaskContext.Task.ErrorCode"<endrec>
+"01010101000010011110011100000000","0","1","Error message. This parameter is used for sending an error message to the user after the bulk task fails.","","1","256","0","BulkTaskContext.Task.ErrorMessage"<endrec>
+"01000111000000000000000000000000","0","5","Reserved.","","1","32","0","BulkTaskContext.Task.StartTime"<endrec>
+"00001100000000000000000000000000","0","2","Number of services. This parameter is used for notifying the user of the number of services contained in the task after completing the bulk task.","","1","3","0","BulkTaskContext.TotalItem"<endrec>
+"00001100000000000000000000000000","0","2","Number of valid services. This parameter is used for notifying the user of the number of valid services contained in the task after completing the bulk task.","","1","3","0","BulkTaskContext.ValidItem"<endrec>
+"11111111111110011110011111110000","0","1","SP brand name.","","1","8","0","Common.Brand"<endrec>
+"11111111111110011110011111110000","0","1","SP customer service hotline.","","1","16","0","Common.CustomerCare"<endrec>
+"00000011000000000000000000000000","0","2","Customer Dormant Warning, used to indicate the number of days left before changing a customer account to dormant.","","1","3","0","Common.DormantAlertDays"<endrec>
+"00100010000000000000000000000000","0","2","Time period (days) for transferring the fund from a  holding account to an unclaim account.","","1","3","0","Common.DormantUnclaimDays"<endrec>
+"00000010000000000000000000000000","0","1","Group dormant alarm. The notification is sent when a group is about to be in Dormant status.","","1","128","0","Common.GroupDormantAlarm"<endrec>
+"00100000000010011110000100000000","0","1","Brand name.","","1","32","0","Common.MMFName"<endrec>
+"00100000000000000000000000000000","1","1","The one-time verification code in the notification sent by APP for verification.","","1","128","0","Common.Notification.OneTimePassword"<endrec>
+"10000000000000000000000000000000","1","1","Indicates a verification code in the identity verifying notification received by a customer.","","1","128","0","Common.Notification.VerificationCode"<endrec>
+"11111111111110011110011111110000","0","1","Order ID of a service.","","1","32","0","Common.OrderId"<endrec>
+"01010100001000011100011100000000","0","5","Order finish time, which is used in the order failure scenarios","","1","8","0","Common.Result.EndTime"<endrec>
+"01010101000000011100011100000000","0","1","Error code. It is a converted error code sent to the user after a service operation fails.","","1","256","0","Common.Result.ErrorCode"<endrec>
+"11111111111110011110011111100000","0","1","Error message. It is a converted error message sent to the user after a service operation fails.","","1","512","0","Common.Result.ErrorMessage"<endrec>
+"01000000000000000000000000000000","0","1","Structure of the Common.Result.ErrorParametere list. Special processing (matching syntax) needs to be executed for the list.","","1","64","0","Common.Result.ErrorParameter.Key"<endrec>
+"01000000000000000000000000000000","0","1","Structure of the Common.Result.ErrorParametere list. Special processing (matching syntax) needs to be executed for the list.","","1","64","0","Common.Result.ErrorParameter.Value"<endrec>
+"11111111111110011110011111100000","0","1","Order status of a service.","","1","20","0","Common.Result.OrderStatus"<endrec>
+"11111111111110011110011111110000","0","1","Reversal request original transaction ID.","","1","16","0","Common.Result.OriginalReceiptNumber"<endrec>
+"00000000000010011100000000000000","0","1","Indicates the result message code returned by third party.","","1","64","0","Common.Result.ThirdPartyResultCode"<endrec>
+"00000000000010011100000000000000","0","1","Indicates the result message description returned by third party.","","1","256","0","Common.Result.ThirdPartyResultDesc"<endrec>
+"00100010000000000000000000000000","0","2","Reserved.","","1","3","0","Common.SDormantAlertDays"<endrec>
+"00110000000000000000000000000000","0","1","Number of owned coupons, which is used in the notification sent by the Promotion system upon successful coupon reward.","","1","100","0","CouponInfo.CouponAmount"<endrec>
+"00110000000000000000000000000000","0","1","ID of a coupon, which is used in the notification sent by the Promotion system upon successful coupon reward.","","1","100","0","CouponInfo.CouponId"<endrec>
+"00110000000000000000000000000000","0","1","Name of a coupon, which is used in the notification sent by the Promotion system upon successful coupon reward.","","1","100","0","CouponInfo.CouponType"<endrec>
+"00110000000000000000000000000000","0","1","End time of the coupon validity period, which is used in the notification sent by the Promotion system upon successful coupon reward.","","1","100","0","CouponInfo.EffectiveDate"<endrec>
+"00110000000000000000000000000000","0","1","Start time of the coupon validity period, which is used in the notification sent by the Promotion system upon successful coupon reward.","","1","100","0","CouponInfo.ExpiredDate"<endrec>
+"00100000000000000000000000000000","0","1","Freign Exchange Currency Buy Rate","","1","16","0","FXRate.BuyRate"<endrec>
+"00100000000000000000000000000000","0","1","Foreign Exchange Currency Expiration Date","","1","32","0","FXRate.ExpirationDate"<endrec>
+"00100000000000000000000000000000","0","1","Foreign Currency Name","","1","64","0","FXRate.ForeignCurrency"<endrec>
+"00100000000000000000000000000000","0","1","Foreign Exchange Currency Sell Rate","","1","16","0","FXRate.SellRate"<endrec>
+"00000000000000000000000010000000","0","6","Account information, used for sending notifications in batches.","","1","16","0","ManualNotification.AccountList"<endrec>
+"00000000000000000000000010010000","0","1","KYC information of an operator or a customer, used for sending notifications in batches.","","1","16","0","ManualNotification.KYCList"<endrec>
+"00000000000000000000000010000000","0","1","MSISDN of a customer, used for sending notifications in batches.","","1","18","0","ManualNotification.MSISDN"<endrec>
+"00000000000000000000000000010000","0","1","Operator ID, used for sending notifications in batches.","","1","8","0","ManualNotification.OperatorID"<endrec>
+"00000000000000000000000000010000","0","1","Short code of an organization to which the Org Operator belongs, used for sending notifications in batches.","","1","8","0","ManualNotification.ShortCode"<endrec>
+"00000000000000000000000010010000","0","1","User name of an operator or a customer, used for sending notifications in batches.","","1","16","1","ManualNotification.UserName"<endrec>
+"00000000000000000000100000000000","0","1","The common free text input by Organisation Operator for all recipients of bulk file.","","1","512","0","NonMandatoryNotification.COMMON_TEXT"<endrec>
+"00000000000000000000100000000000","0","1","The specific free text field input by Organisation Operator for each recipient within the bulk file.","","1","512","0","NonMandatoryNotification.SPECIFIC_TEXT"<endrec>
+"11111111111110011110111111111110","0","1","The account balance of MM acount","","0","100","0","OverDraft.MMAccountBalance"<endrec>
+"11111111111110011110111111111110","1","1","The balance of Overdraft","","1","100","1","OverDraft.ODBalance"<endrec>
+"11111111111110011110111111111110","1","1","The request amount of requested transaction.","","1","100","1","OverDraft.SendAmount"<endrec>
+"11111111111110011110111111111110","1","1","the debt of OverDraft","","1","100","1","OverDraft.debt"<endrec>
+"11111111111110011110111111111110","1","1","The duedate of overdraft","","1","100","1","OverDraft.dueDate"<endrec>
+"00000000000010000000000000000000","0","1","","","1","64","0","PointsIssuedBySP"<endrec>
+"10000000000000000000000000000000","0","1","Estimated time that will be cost for product allocation.","","0","18","0","ProductAllocation.EstimatedTime"<endrec>
+"10000000000000000000000000000000","0","1","Name of the operator who allocates products.","","0","32","0","ProductAllocation.OperatorName"<endrec>
+"10000000000000000000000000000000","0","1","Allocated product name.","","0","128","0","ProductAllocation.PlanName"<endrec>
+"10000000000000000000000000000000","0","1","Total identities of product allocation.","","0","18","0","ProductAllocation.TotalIdentities"<endrec>
+"10000000000000000000000000000000","0","1","URL address that can be viewed after the product is allocated.","","0","1024","0","ProductAllocation.URL"<endrec>
+"10110001000000000010001000000000","0","1","The transaction amout in service action.","","0","32","0","ServiceAction.APPROVE.TASK.AMOUNT"<endrec>
+"00110001000000000010001000000000","0","1","The expiry period of approve task in service action.","","0","20","0","ServiceAction.APPROVE.TASK.EXPIRYPERIOD"<endrec>
+"00110001000000000010001000000000","0","1","The approval id of approve task in service action.","","0","32","0","ServiceAction.APPROVE.TASK.TASKID"<endrec>
+"10110000000000000010001000000000","0","1","The task name of approve task in service action.","","0","128","0","ServiceAction.APPROVE.TASK.TASKNAME"<endrec>
+"00000000000000000010011100000000","0","1","Provider who provides ATM deposit and withdrawal services.","","1","32","0","ServiceAction.ATM.ATMProviderName"<endrec>
+"00000000000000000010000000000000","1","3","Reserved.","","1","12","0","ServiceAction.AccountActualBalance"<endrec>
+"00000000000000000010000000000000","1","3","Reserved.","","1","12","0","ServiceAction.AccountCurrentBalance"<endrec>
+"00000000000000000010000000000000","0","6","Account list in service action.","","1","8","0","ServiceAction.AccountList"<endrec>
+"00000000000000000010000000000000","1","3","Reserved.","","1","12","0","ServiceAction.AccountReservedBalance"<endrec>
+"00000000000000000010000000000000","0","1","Reserved.","","1","64","1","ServiceAction.AccountTypeAlias"<endrec>
+"00000000000000000010000000000000","1","3","Reserved.","","1","12","0","ServiceAction.AccountUnclearedBalance"<endrec>
+"00000000000000000010011100000000","0","1","Action date in service action.","","0","30","0","ServiceAction.ActionDate"<endrec>
+"00000000000000000010000000000000","0","1","Operator ID. The notification is sent when activating an operator.","","1","32","0","ServiceAction.ActivateOperator.OperatorID"<endrec>
+"00000000000000000010000000000000","0","1","Operator's organization name. The notification is sent when activating an operator.","","1","64","0","ServiceAction.ActivateOperator.OrgName"<endrec>
+"00100000000000000010000000000000","1","1","SecretWord. When constructing the packet of an active customer, the TC invokes the IC for activation. If the activation is successful, the IC will send the customer a SecretWord.","","1","8","0","ServiceAction.ActiveCustomer.SecretWord"<endrec>
+"00100000000000000010000000000000","1","1","Reserved.","","1","8","0","ServiceAction.ActiveOperator.SecretWord"<endrec>
+"00000000000000000010000000000000","0","1","Code of an operator who activates a till. The notification is sent when activating a till.","","0","10","0","ServiceAction.ActiveTill.OperatorCode"<endrec>
+"00000000000000000010000000000000","0","1","Till number to be activated. The notification is sent when activating a till.","","1","8","0","ServiceAction.ActiveTill.TillNumber"<endrec>
+"00000000000000000010000000000000","0","1","Reserved.","","1","8","0","ServiceAction.ActivedTillNumber"<endrec>
+"00000000000000000010000000000000","0","1","The reason of balance remind in service action.","","1","1","0","ServiceAction.BalanceRemindReason"<endrec>
+"00000000000010011110011100000000","0","1","Order ID in service action.","","1","12","0","ServiceAction.BasicInfo.ActionLogId"<endrec>
+"00000000000010011110011100000000","0","4","Reserved.","","1","10","0","ServiceAction.BasicInfo.RequestDate"<endrec>
+"00000000000010011110011100000000","0","5","Request time in service action.","","1","8","0","ServiceAction.BasicInfo.RequestTime"<endrec>
+"00000000000010011110011100000000","0","1","Start time in service action.","","1","18","0","ServiceAction.BasicInfo.StartTime"<endrec>
+"00000000000000000010011100000000","0","1","Current value. This parameter is used for sending a notification of risk control.","","0","100","0","ServiceAction.BrokenLimit.CurrentValue"<endrec>
+"00000000000000000010011100000000","0","1","Restriction type, including maximum, minimum, and integer range [100, 200].","","0","100","0","ServiceAction.BrokenLimit.LimitPattern"<endrec>
+"00000000000000000010011100000000","0","1","ID of a risk control rule.","","0","100","0","ServiceAction.BrokenLimit.LimitRuleId"<endrec>
+"00000000000000000010011100000000","0","1","Name of a risk control rule.","","0","100","0","ServiceAction.BrokenLimit.LimitRuleName"<endrec>
+"00000000000000000010011100000000","0","1","Length of a period. If the validity period is rolling, the length of the period needs to be specified.","","0","100","0","ServiceAction.BrokenLimit.PeriodLength"<endrec>
+"00000000000000000010011100000000","0","1","Type of a validity period. The options are fixed, rolling, and NA.","","0","100","0","ServiceAction.BrokenLimit.PeriodType"<endrec>
+"00000000000000000010011100000000","0","1","Unit of a validity period. The options are second, minute, hour, day, week, month, and year.","","0","100","0","ServiceAction.BrokenLimit.PeriodUnit"<endrec>
+"00000000000000000010011100000000","0","1","Threshold type. The options are transaction amount, balance, total transaction amount, number of transactions, action times, same and similar transactions.","","0","100","0","ServiceAction.BrokenLimit.ThresholdType"<endrec>
+"00000000000000000010011100000000","0","1","Threshold value. This parameter is used for sending a notification of risk control.","","0","100","0","ServiceAction.BrokenLimit.ThresholdValue"<endrec>
+"00000000000000000010011100000000","0","1","Indicates the card number in the Linked Financial Cards service in service action.","","1","32","0","ServiceAction.Card.CardNumber"<endrec>
+"00000000000000000010000000000000","0","1","Object for constructing the Cash Up Notification packet.","","1","256","0","ServiceAction.CashUpStatement"<endrec>
+"00000000000000000010000000000000","0","1","Till number. This parameter is used for sending a notification when the Cash Up operation is successful.","","1","8","0","ServiceAction.CashUpStatement.CashUpTillNumber"<endrec>
+"00000000000000000010000000000000","1","3","Deposit amount. This parameter is used for sending a notification when the Cash Up operation is successful.","","1","12","0","ServiceAction.CashUpStatement.DepositAmount"<endrec>
+"00000000000000000010000000000000","1","3","Total amount. This parameter is used for sending a notification when the Cash Up operation is successful.","","1","12","0","ServiceAction.CashUpStatement.FinalAmount"<endrec>
+"00000000000000000010000000000000","0","5","Query start time that a customer enters. This parameter is used for sending a notification when the Cash Up operation is successful.","","1","18","0","ServiceAction.CashUpStatement.InputBeginTime"<endrec>
+"00000000000000000010000000000000","0","5","Query end time that a customer enters. This parameter is used for sending a notification when the Cash Up operation is successful.","","1","18","0","ServiceAction.CashUpStatement.InputEndTime"<endrec>
+"00000000000000000010000000000000","0","5","Earliest transaction time. This parameter is used for sending a notification when the Cash Up operation is successful.","","1","18","0","ServiceAction.CashUpStatement.QueryBeginTime"<endrec>
+"00000000000000000010000000000000","0","5","Latest transaction time. This parameter is used for sending a notification when the Cash Up operation is successful.","","1","18","0","ServiceAction.CashUpStatement.QueryEndTime"<endrec>
+"00000000000000000010000000000000","1","3","Withdrawal amount. This parameter is used for sending a notification when the Cash Up operation is successful.","","1","12","0","ServiceAction.CashUpStatement.WithdrawAmount"<endrec>
+"00000000000010011110011100000000","0","1","Reserved.","","1","32","0","ServiceAction.ClosedOperatorId"<endrec>
+"00000000000010000010000000000000","0","3","Reserved.","","1","12","0","ServiceAction.Commission"<endrec>
+"00000000000000000010000000000000","0","1","Operator ID. The notification is sent when creating an operator.","","0","32","0","ServiceAction.CreateOperator.OperatorID"<endrec>
+"00000000000000000010111100000000","1","1","Recommended initial PIN for creating an operator in service action.","","1","20","0","ServiceAction.CreateOperator.StartPIN"<endrec>
+"00100000000000000010000000000000","1","1","Reserved.","","1","6","0","ServiceAction.CreateOrganization.StartPIN"<endrec>
+"01000000000000011100011100000000","0","1","Reserved.","","1","16","0","ServiceAction.Credential"<endrec>
+"00000000000000000010011100000000","0","1","Reserved.","","1","8","0","ServiceAction.CredentialType"<endrec>
+"00000000000010000010000000000000","0","1","Account name of a credit party.","","1","20","0","ServiceAction.Credit.IdentityAccountAlias"<endrec>
+"00000000000010000010000000000000","0","1","Account type of a credit party.","","1","20","0","ServiceAction.Credit.IdentityAccountTypeName"<endrec>
+"00000000000000000010011100000000","0","1","Reserved.","","1","3","0","ServiceAction.DaysBeforeExpired"<endrec>
+"00000000000010000010000000000000","0","1","Account alias of a debit party.","","1","20","0","ServiceAction.Debit.IdentityAccountAlias"<endrec>
+"00000000000010011110011100000000","1","3","Account balance of a debit party.","","1","12","0","ServiceAction.Debit.IdentityAccountBalance"<endrec>
+"00000000000010000010000000000000","0","1","Account type of a debit party.","","1","20","0","ServiceAction.Debit.IdentityAccountTypeName"<endrec>
+"00000000000000000010000000000000","1","1","Fee of a credit party during the ServiceAction.","","1","12","0","ServiceAction.FeeInfo.CreditParty.Fee"<endrec>
+"00000000000000000010000000000000","1","1","Fee of a debit party during the ServiceAction.","","1","12","0","ServiceAction.FeeInfo.DebitParty.Fee"<endrec>
+"00100000000000000000000000000000","1","1","ServiceAction FeeInfo","","1","12","0","ServiceAction.FeeInfo.Fee"<endrec>
+"00100000000000000000000000000000","1","1","ServiceAction TaxInfo","","1","12","0","ServiceAction.FeeInfo.Tax"<endrec>
+"00000000000010011110011100000000","0","1","Reserved.","","1","16","0","ServiceAction.FirstName"<endrec>
+"00110000000010011110011100000000","0","1","","","0","32","0","ServiceAction.Group.AddRolesName"<endrec>
+"00110000000000000010011100000000","0","1","Group member role added in service action.","","0","256","0","ServiceAction.Group.AddedGroupMemberRole"<endrec>
+"00110000000010011110011100000000","0","1","Short code of group in the service action.","","0","32","0","ServiceAction.Group.GroupCode"<endrec>
+"00110000000010011110011100000000","0","1","Description of group in the service action.","","0","256","0","ServiceAction.Group.GroupDescription"<endrec>
+"00110000000010011110011100000000","0","1","Group name of group in the service action.","","0","256","0","ServiceAction.Group.GroupName"<endrec>
+"00110000000010011110011100000000","0","1","Product name of group in the service action.","","0","256","0","ServiceAction.Group.GroupProductName"<endrec>
+"00110000000010011110011100000000","0","1","Group sponsor in service action.","","0","32","0","ServiceAction.Group.GroupSponsor"<endrec>
+"00110000000010011110011100000000","0","1","Number of managed group members in service action.","","0","32","0","ServiceAction.Group.ManagedMemberMSISDN"<endrec>
+"00110000000000000010011100000000","0","1","Max number that customers can joined a group in service action.","","0","","0","ServiceAction.Group.MaxNumberOfJoinedGroups"<endrec>
+"00110000000000000010011100000000","0","1","Number of approvers  in service action.","","0","","0","ServiceAction.Group.NumberOfApprovers"<endrec>
+"00110000000010011110011100000000","0","1","","","0","32","0","ServiceAction.Group.OperationMsisdn"<endrec>
+"00110000000010011110011100000000","0","1","","","0","32","0","ServiceAction.Group.OperationRole"<endrec>
+"00110000000010011110011100000000","0","1","","","0","32","0","ServiceAction.Group.OperationpublicName"<endrec>
+"00111100000010000010011100000000","0","1","","","0","32","0","ServiceAction.Group.OriInitiatorMsisdn"<endrec>
+"00111100000000000010011100000000","0","1","","","0","32","0","ServiceAction.Group.OriInitiatorName"<endrec>
+"00110000000010011110011100000000","0","1","","","0","32","0","ServiceAction.Group.OriInitiatorRole"<endrec>
+"00110000000010011110011100000000","0","1","","","0","32","0","ServiceAction.Group.RemoveRolesName"<endrec>
+"00110000000000000010011100000000","0","1","Group member role removed in service action.","","0","256","0","ServiceAction.Group.RemovedGroupMemberRole"<endrec>
+"00110000000010011110011100000000","0","1","TransactionCreditName of group in the service action.","","0","32","0","ServiceAction.Group.TransactionCreditName"<endrec>
+"00110000000000000010011100000000","0","1","TransactionOriCreditId of group in the service action.","","0","32","0","ServiceAction.Group.TransactionOriCreditId"<endrec>
+"00110000000010011110011100000000","0","1","","","0","32","0","ServiceAction.Group.VocherTypeName"<endrec>
+"00000000000000000010000000000000","1","9","Advance notification of dynamic charging. This parameter is used for sending a notification when the service action is successful.","","0","512","0","ServiceAction.Initiator.DynamicChargeAdvanceInfo"<endrec>
+"00000000000000000010000000000000","1","9","Repricing notification of dynamic charging. This parameter is used for sending a notification when the service action is successful.","","0","512","0","ServiceAction.Initiator.DynamicChargeRepricingInfo"<endrec>
+"00000000000000000010011100000000","0","1","Initiator identifier in service action.","","0","30","0","ServiceAction.Initiator.Identifier"<endrec>
+"00000000000010011110000100000000","1","3","Account balance of an initiator.","","1","12","0","ServiceAction.Initiator.IdentityAccountBalance"<endrec>
+"00000000000000000010011100000000","0","1","Position of action's initiator","","1","32","0","ServiceAction.Initiator.Position"<endrec>
+"00000000000000000010011100000000","0","1","Position type of initiator, mybe GIS or LACCI.","","1","10","0","ServiceAction.Initiator.PositionType"<endrec>
+"00000000000000000010000000000000","0","1","Ad customized for the organization in service action.","","1","280","0","ServiceAction.Initiator.ProductServiceAdv"<endrec>
+"00000000000010000010000000000000","0","4","Reserved.","","1","10","0","ServiceAction.InputBeginDate"<endrec>
+"00000000000010000010000000000000","0","4","Reserved.","","1","10","0","ServiceAction.InputEndDate"<endrec>
+"00000000000010011110011100000000","0","1","Reserved.","","1","16","0","ServiceAction.LastName"<endrec>
+"00000000000000000010000000000000","0","1","Name of the loyalty point plan issued by the organization in the service.","","1","32","0","ServiceAction.LoyaltyPointInfo.OrgLoyaltySchemaName"<endrec>
+"00000000000000000010000000000000","0","1","Number of loyalty points issued by the organization in the service.","","1","64","0","ServiceAction.LoyaltyPointInfo.PointsIssuedByOrg"<endrec>
+"00000000000000000010000000000000","0","1","Number of loyalty points issued by the SP in the service.","","1","64","0","ServiceAction.LoyaltyPointInfo.PointsIssuedBySP"<endrec>
+"00000000000000000010000000000000","0","1","Name of the loyalty point plan issued by the SP in the service.","","1","32","0","ServiceAction.LoyaltyPointInfo.SPLoyaltySchemaName"<endrec>
+"00000000000000000010000000000000","0","1","Mini statement. The notification is sent when querying mini statement.","","1","512","0","ServiceAction.MiniStatement"<endrec>
+"00000000000010011110000000000000","0","1","Reserved.","","1","10","0","ServiceAction.OperatorCode"<endrec>
+"00000000000000000010000010000000","0","1","Reserved.","","1","32","0","ServiceAction.OperatorName"<endrec>
+"00000000000000000010011100000000","0","6","Queried account balance. This parameter is used for sending a notification when an organization or a role who has the permission to view the account queries the account balance.","","0","","0","ServiceAction.QueryAccountBalance"<endrec>
+"00000000000000000010000000000000","0","4","Reserved.","","1","10","0","ServiceAction.QueryBeginDate"<endrec>
+"00000000000000000010000000000000","0","4","Reserved.","","1","10","0","ServiceAction.QueryEndDate"<endrec>
+"00000000000000000010011100000000","1","3","Maximum account balance of the FSI service. This parameter is used for sending a notification when querying the FSI service.","4","0","100","0","ServiceAction.QueryFSIInfo.FSILoanBalance"<endrec>
+"00000000000000000010011100000000","0","1","This parameter is used for sending a notification when querying the FSI service on the Mini Statement page.","","0","512","0","ServiceAction.QueryFSIInfo.FSIMiniStatementString"<endrec>
+"00000000000000000010011100000000","1","3","Balance of an FSI saving account. This parameter is used for sending a notification when querying the FSI service.","","0","100","0","ServiceAction.QueryFSIInfo.FSISavingsBalance"<endrec>
+"00000000000000000010011100000000","0","1","This parameter is used for sending a notification when querying the FSI service on the Loan Mini Statement page.","","0","100","0","ServiceAction.QueryFSIInfo.LoanMiniStatementString"<endrec>
+"00000000000000000010011100000000","1","3","Maximum loan amount for the FSI service. This parameter is used for sending a notification when querying the FSI service.","4","0","100","0","ServiceAction.QueryFSIInfo.ResidualLoanLimit"<endrec>
+"00000000000000000010000000000000","1","9","Advance notification of dynamic charging. This parameter is used for sending a notification when the service action is successful.","","0","512","0","ServiceAction.Receiver.DynamicChargeAdvanceInfo"<endrec>
+"00000000000000000010000000000000","1","9","Repricing notification of dynamic charging. This parameter is used for sending a notification when the service action is successful.","","0","512","0","ServiceAction.Receiver.DynamicChargeRepricingInfo"<endrec>
+"00000000000000000010011100000000","0","1","Receiver identifier in service action.","","0","30","0","ServiceAction.Receiver.Identifier"<endrec>
+"00000000000010011100000000000000","0","1","Indicates the public name of the voucher sender.","","0","32","0","ServiceAction.Receiver.IdentityName"<endrec>
+"00000000000010011110011100000000","0","1","Last four digits of the MSISDN used by an identity of a receiver during the service action.","","1","4","0","ServiceAction.Receiver.MsisdnLast4Digits"<endrec>
+"00000000000010011110011100000000","0","1","Reserved.","","1","64","0","ServiceAction.Recipients"<endrec>
+"00100000000000000010000000000000","1","1","Start PIN used by an register customer during the service action.","","1","6","0","ServiceAction.RegisterCustomer.StartPIN"<endrec>
+"01010100000000001100001100000000","0","5","ServiceAction restrctied channel","","0","30","0","ServiceAction.RestrictionInfo.RestrictionChannel"<endrec>
+"01010100000000001100001100000000","0","1","restricted reason type","","0","30","0","ServiceAction.RestrictionInfo.RestrictionReasonType"<endrec>
+"01010100000000001100001100000000","0","5","ServiceAction restricted end time","","0","10","0","ServiceAction.RestrictionInfo.RestrictionTimeEnd"<endrec>
+"01010100000000001100001100000000","0","5","restricted start time","","0","10","0","ServiceAction.RestrictionInfo.RestrictionTimeStart"<endrec>
+"00000000000000000010011100000000","0","1","Reversal request ID in service action.","","0","10","0","ServiceAction.ReversalRequest.ID"<endrec>
+"00000000000000000010000000000000","0","1","Original transaction date. The notification is sent when initiating a reversal request.","","1","10","0","ServiceAction.ReversalRequest.OldTransactionDate"<endrec>
+"00000000000000000010000000000000","0","5","Original transaction time. The notification is sent when initiating a reversal request.","","0","8","0","ServiceAction.ReversalRequest.OldTransactionTime"<endrec>
+"00000000000000000010000000000000","0","1","Original receipt number. The notification is sent when initiating a reversal request.","","1","16","0","ServiceAction.ReversalRequest.OriginalReceiptNumber"<endrec>
+"00000000000000000010000000000000","0","1","Account of a reversal transaction. The notification is sent when initiating a reversal request.","","0","20","0","ServiceAction.ReversalRequest.ReverseTransactionAmount"<endrec>
+"00000000000000000010011100000000","0","1","SP entity name in the service action.","","1","32","0","ServiceAction.SPName"<endrec>
+"00000000000000000010000000000000","0","3","Max notification balance of saving plan in service action.","","1","12","0","ServiceAction.SavingPlan.MaxNotificationBalance"<endrec>
+"00000000000000000010000000000000","0","3","Min notification balance of saving plan  in service action.","","1","12","0","ServiceAction.SavingPlan.MinNotificationBalance"<endrec>
+"00100000000010011110011100000000","0","1","Service name in the service action.","","1","32","1","ServiceAction.ServiceName"<endrec>
+"00000000000000000010000000000000","0","6","Reserved.","","1","20","0","ServiceAction.Statement.AccountStatmentList"<endrec>
+"00000000000000000010000000000000","0","1","Reserved.","","1","8","0","ServiceAction.Statement.CreditOrDebit"<endrec>
+"00000000000000000010000000000000","0","4","Reserved.","","1","10","0","ServiceAction.Statement.Date"<endrec>
+"00000000000000000010000000000000","1","3","Principle amount used by an identity of a statement during the service action.","","1","12","0","ServiceAction.Statement.PrincipleAmount"<endrec>
+"00000000000000000010000000000000","0","1","Reserved.","","1","64","1","ServiceAction.Statement.ReasonAlias"<endrec>
+"00000000000000000010000000000000","0","1","Reserved.","","1","18","0","ServiceAction.Statement.TargetNumber"<endrec>
+"00000000000000000010000000000000","0","5","Reserved.","","1","8","0","ServiceAction.Statement.Time"<endrec>
+"00000000000010000010000000000000","0","5","Reserved.","","1","8","0","ServiceAction.UnclaimedExpiredTime"<endrec>
+"00000000000000000010011100000000","0","1","Account name associated with the voucher in the service action.","","1","64","0","ServiceAction.Voucher.AccountName"<endrec>
+"00000000000000000010011100000000","0","2","Account number associated with the voucher in the service action.","","0","","0","ServiceAction.Voucher.AccountNo"<endrec>
+"11110000000010000010000000000000","0","3","Amount associated with the voucher. This parameter is used for balance exchange upon user deregistration.","","1","64","0","ServiceAction.Voucher.Amount"<endrec>
+"00000000000010000010000000000000","0","4","Reserved.","","1","10","0","ServiceAction.Voucher.ExpireDate"<endrec>
+"00000000000010000010000000000000","0","5","Expiration time of the voucher in the service action.","","1","8","0","ServiceAction.Voucher.ExpireTime"<endrec>
+"11111000000010000000000000000000","0","1","External transaction number transferred from the PGW voucher in the service action.","","1","64","0","ServiceAction.Voucher.ExternalOrderNo"<endrec>
+"00110010000010011110011100000000","0","1","Voucher Free Text Field 1","","1","128","0","ServiceAction.Voucher.Extra1"<endrec>
+"00110011000010011110011100000000","0","1","Voucher Free Text Field 10","","1","128","0","ServiceAction.Voucher.Extra10"<endrec>
+"00110011000010011110011100000000","0","1","Voucher Free Text Field 2","","1","128","0","ServiceAction.Voucher.Extra2"<endrec>
+"00110011000010011110011100000000","0","1","Voucher Free Text Field 3","","1","128","0","ServiceAction.Voucher.Extra3"<endrec>
+"00110011000010011110011100000000","0","1","Voucher Free Text Field 4","","1","128","0","ServiceAction.Voucher.Extra4"<endrec>
+"00110011000010011100000000000000","0","1","Voucher Free Text Field 5","","1","128","0","ServiceAction.Voucher.Extra5"<endrec>
+"00110011000010011110011100000000","0","1","Voucher Free Text Field 6","","1","128","0","ServiceAction.Voucher.Extra6"<endrec>
+"00110011000010011110011100000000","0","1","Voucher Free Text Field 7","","1","128","0","ServiceAction.Voucher.Extra7"<endrec>
+"00110011000010011110011100000000","0","1","Voucher Free Text Field 8","","1","128","0","ServiceAction.Voucher.Extra8"<endrec>
+"00110011000010011110011100000000","0","1","Voucher Free Text Field 9","","1","128","0","ServiceAction.Voucher.Extra9"<endrec>
+"00110011000010011110011100000000","0","1","Indicates whether the voucher type is the other voucher.","","1","32","0","ServiceAction.Voucher.IsOtherVoucher"<endrec>
+"00000000000010000010000000000000","0","4","Reserved.","","1","10","0","ServiceAction.Voucher.RedeemDate"<endrec>
+"00110010000010011110011100000000","0","1","Redeeming Organization Hierarchy Type","","0","1","0","ServiceAction.Voucher.RedeemingHierType"<endrec>
+"00110010000010011110011100000000","0","1","Voucher Redeeming Organization Name","","1","256","0","ServiceAction.Voucher.RedeemingOrgName"<endrec>
+"00110010000010011110011100000000","0","1","Redeeming Organization Short Code","","1","24","0","ServiceAction.Voucher.RedeemingOrgShortCode"<endrec>
+"00000010000010000010000000000000","1","1","Secret code of the voucher in the service action.","","1","20","0","ServiceAction.Voucher.SecretCode"<endrec>
+"00000010000010000010000000000000","1","1","Voucher code in the service action.","","1","10","0","ServiceAction.Voucher.VoucherCode"<endrec>
+"00000000000000000010000000000000","0","1","Reserved.","","1","8","0","ServiceAction.statement.ChargeAlias"<endrec>
+"00000000000000000010000000000000","1","3","Reserved.","","1","12","0","ServiceAction.statement.ChargeAmount"<endrec>
+"00000000000000000010000000000000","0","1","Reserved.","","1","8","0","ServiceAction.statement.CommissionAlias"<endrec>
+"00000000000000000010000000000000","1","3","Reserved.","","1","12","0","ServiceAction.statement.CommissionAmount"<endrec>
+"00000000000000000010000000000000","0","1","Reserved.","","1","8","0","ServiceAction.statement.TaxAlias"<endrec>
+"00000000000000000010000000000000","1","3","Reserved.","","1","12","0","ServiceAction.statement.TaxAmount"<endrec>
+"00000000000000000010000000000000","0","1","Reserved.","","1","8","1","ServiceAction.statement.status"<endrec>
+"00000000000000000010000000000000","0","1","Account type alias. The notification is sent when querying mini statement.","","1","64","1","StatementInfo.AccountTypeAlias"<endrec>
+"00000000000000000010000000000000","0","3","Charged account. The notification is sent when querying mini statement.","","1","12","0","StatementInfo.ChargeAmount"<endrec>
+"00000000000000000010000000000000","0","1","Commission amount. The notification is sent when querying mini statement.","","1","12","0","StatementInfo.CommissionAmount"<endrec>
+"00000000000000000010000000000000","0","1","Indicates a debit or credit party. The notification is sent when querying mini statement.","","0","8","0","StatementInfo.CreditOrDebit"<endrec>
+"11111111111110011110011111111110","0","1","Currency used by an identity of a statement during the service action.","","1","3","0","StatementInfo.Currency"<endrec>
+"00000000000000000010000000000000","1","3","Current balance of the ministatement.","","1","12","0","StatementInfo.CurrentBalance"<endrec>
+"00000000000000000010000000000000","0","1","Event date. The notification is sent when querying mini statement.","","1","10","0","StatementInfo.Date"<endrec>
+"00000000000000000010000000000000","0","3","Principle amount. The notification is sent when querying mini statement.","","1","12","0","StatementInfo.PrincipleAmount"<endrec>
+"00000000000000000010000000000000","0","1","Reason type alias. The notification is sent when querying mini statement.","","1","64","0","StatementInfo.ReasonAlias"<endrec>
+"00000000000000000010000000000000","0","1","Event status. The notification is sent when querying mini statement.","","1","8","0","StatementInfo.Status"<endrec>
+"00000000000000000010000000000000","0","1","Target customer. The notification is sent when querying mini statement.","","1","18","0","StatementInfo.TargetNumber"<endrec>
+"00000000000000000010000000000000","0","1","Tax alias. The notification is sent when querying mini statement.","","1","8","0","StatementInfo.TaxAlias"<endrec>
+"00000000000000000010000000000000","1","1","Tax amount. The notification is sent when querying mini statement.","","1","12","0","StatementInfo.TaxAmount"<endrec>
+"00000000000000000010000000000000","0","5","Event time. The notification is sent when querying mini statement.","","1","8","0","StatementInfo.Time"<endrec>
+"00000100000000000000000000000000","0","1","Error message. The notification is sent when a bulk task fails.","","0","512","0","SystemEvent.ERROR_MESSAGE"<endrec>
+"00000001000000000000000000000000","0","1","Plan ID. The notification is sent when a system event fails.","","1","32","0","SystemEvent.PlanId"<endrec>
+"00000100000000000000000000000000","0","1","System task name. The notification is sent when a bulk task fails.","","1","16","0","SystemEvent.SYSTEM_TASK_NAME"<endrec>
+"10000000000010000000000000000000","1","1","Charge amount in the transaction information.","","1","10","0","Transaction.AdditionalData.HomeSend_Charge_Amount"<endrec>
+"00000000000010000000000000000000","0","1","Payment channel for an IMT transaction. The notification is sent to the customer when a transaction is successful.","","1","16","0","Transaction.AdditionalData.Payment_Channel"<endrec>
+"10000000000010000000000000000000","1","1","Original transaction amount in the additional transaction information.","","1","10","0","Transaction.AdditionalData.Principle_Amount"<endrec>
+"00000000000010000000000000000000","0","1","Recipient's first name. The notification is sent to the customer when an IMT transaction is successful.","","0","16","0","Transaction.AdditionalData.Recipient First Name"<endrec>
+"00000000000010000000000000000000","0","1","Channel verification of a sender. The notification is sent to the customer when an IMT HomeSend transaction is successful.","","1","128","0","Transaction.AdditionalData.Sender_Channel_Identification"<endrec>
+"00000000000010000000000000000000","0","2","ISO code of a sender's country. The notification is sent to the customer when an IMT HomeSend transaction is successful.","","0","16","0","Transaction.AdditionalData.Sender_Country_ISO_Code"<endrec>
+"00000000000010000000000000000000","0","1","IMT transaction amount of a sender. The notification is sent to the customer when a transaction is successful.","","1","3","0","Transaction.AdditionalData.Sender_Currency"<endrec>
+"00000000000010000000000000000000","0","1","Sender's first name in an IMT transaction. The notification is sent to the customer when a transaction is successful.","","0","16","0","Transaction.AdditionalData.Sender_First_Name"<endrec>
+"00000000000010000000000000000000","0","1","Sender's last name in an IMT transaction. The notification is sent to the customer when a transaction is successful.","","1","16","0","Transaction.AdditionalData.Sender_Last_Name"<endrec>
+"00000000000010000000000000000000","0","1","Sender's name in an IMT transaction. The notification is sent to the customer when a transaction is successful.","","1","16","0","Transaction.AdditionalData.Sender_Name"<endrec>
+"00000000000010011100000000000000","0","1","","","1","32","0","Transaction.Bank.BranchName"<endrec>
+"00000000000010011100000000000000","0","1","","","1","32","0","Transaction.Bank.BranchShortCode"<endrec>
+"00000000000010011100000000000000","0","1","Transaction.Bank.ReceivingAccount","","1","32","0","Transaction.Bank.ReceivingAccount"<endrec>
+"00000000000010011100000000000000","0","4","Expiration time of a transaction in the basic transaction information.","","1","10","0","Transaction.BasicInfo.ExpiryDate"<endrec>
+"11110000000000000000000000000000","0","1","External transaction ID in the basic transaction information.","","0","64","0","Transaction.BasicInfo.ExternalOrderNo"<endrec>
+"00000000000010001000000000000000","0","1","Remarks. This parameter is valid when the transaction is successful.","","1","12","0","Transaction.BasicInfo.OriTransLogId"<endrec>
+"00000000000010000000000000000000","0","5","Transaction end time. The notification is sent to the customer when a transaction is successful.","","1","18","0","Transaction.BasicInfo.TransEndTime"<endrec>
+"00000000000010011110011100000000","0","1","Creation date of a transaction in the basic transaction information.","","1","10","0","Transaction.BasicInfo.TransInitiateDate"<endrec>
+"00000000000010011110011100000000","0","5","Creation time of a transaction in the basic transaction information.","","1","8","0","Transaction.BasicInfo.TransInitiateTime"<endrec>
+"00000000000010011110011100000000","0","1","ID of an order in the basic transaction information.","","1","12","0","Transaction.BasicInfo.TransLogId"<endrec>
+"00000000000010011100000000000000","0","1","Current value of broken limit during the transaction.","","0","100","0","Transaction.BrokenLimit.CurrentValue"<endrec>
+"00000000000010011100000000000000","0","1","Restriction type, including maximum, minimum, and integer range [100, 200].","","0","100","0","Transaction.BrokenLimit.LimitPattern"<endrec>
+"00000000000010011100000000000000","0","1","ID of a risk control rule during the transaction.","","0","100","0","Transaction.BrokenLimit.LimitRuleId"<endrec>
+"00000000000010011100000000000000","0","1","Name of a risk control rule during the transaction.","","0","100","0","Transaction.BrokenLimit.LimitRuleName"<endrec>
+"00000000000010011100000000000000","0","1","Length of a period. If the validity period is rolling, the length of the period needs to be specified.","","0","100","0","Transaction.BrokenLimit.PeriodLength"<endrec>
+"00000000000010011100000000000000","0","1","Type of a validity period. The options are fixed, rolling, and NA.","","0","110","0","Transaction.BrokenLimit.PeriodType"<endrec>
+"00000000000010011100000000000000","0","1","Unit of a validity period. The options are second, minute, hour, day, week, month, and year.","","0","100","0","Transaction.BrokenLimit.PeriodUnit"<endrec>
+"00000000000010011100000000000000","0","1","Threshold type. The options are transaction amount, balance, total transaction amount, number of transactions, action times, same and similar transactions.","","0","100","0","Transaction.BrokenLimit.ThresholdType"<endrec>
+"00000000000010011100000000000000","0","1","Threshold value of broken limit during the transaction.","","0","100","0","Transaction.BrokenLimit.ThresholdValue"<endrec>
+"00000000000010000000000000000000","0","1","Commercial Name of the external bundle, exactly for package or denomination.","","1","128","0","Transaction.Bundle.CommercialName"<endrec>
+"00000000000010000000000000000000","0","1","Bundle consumption result in the transaction process.","","1","1","0","Transaction.Bundle.Consumed"<endrec>
+"00000000000010000000000000000000","1","1","Actual available quota of the bundle element after the transaction is completed in the transaction process.","","1","18","0","Transaction.Bundle.Element.AvailableValue"<endrec>
+"00000000000010000000000000000000","0","1","Bundle name in the transaction process.","","1","64","0","Transaction.Bundle.Element.BundleName"<endrec>
+"00000000000010000000000000000000","0","1","Bundle element subscriber ID in the transaction process.","","1","32","0","Transaction.Bundle.Element.Identifier"<endrec>
+"00000000000010000000000000000000","0","1","Bundle element type in the transaction process.","","1","64","0","Transaction.Bundle.Element.Type"<endrec>
+"00000000000010000000000000000000","0","1","Bundle element measurement unit in the transaction process.","","1","100","0","Transaction.Bundle.Element.Unit"<endrec>
+"00000000000010000000000000000000","0","1","Price of the external bundle, exactly for package or denomination.","","1","18","0","Transaction.Bundle.ExternalPrice"<endrec>
+"00000000000010011100000000000000","0","1","Card number, which is used in notifications sent for Linked Financial Cards service transactions.","","1","32","0","Transaction.Card.CardNumber"<endrec>
+"00000000000010011110011100000000","0","1","Reserved.","","1","32","0","Transaction.ClosedOperatorId"<endrec>
+"00000000000010000000000000000000","0","4","Customer/Organisation/SP Operator can input some message during transaction initiation e.g. Thanks message, Happy Birthday, Merry Xmas etc. and this message will be added to the notification sent to the other party.","","1","4","0","Transaction.Comment2Customer"<endrec>
+"00000000000010000000000000000000","0","3","Transaction commission. The notification is sent to the customer when a transaction is successful.","","0","12","0","Transaction.Commission"<endrec>
+"01000000000000011100011100000000","0","1","Reserved.","","1","16","0","Transaction.Credential"<endrec>
+"00000000000010011100000000000000","0","1","Account name of a credit party during the transaction.","0","0","60","0","Transaction.Credit.AccountName"<endrec>
+"00000000000010011100000000000000","0","1","Credit Party's National ID in transaction.","","0","32","0","Transaction.Credit.CNIC"<endrec>
+"00000000000010000000000000000000","1","9","Advance notification of a credit party in dynamic charging. This parameter is valid when the transaction is successful.","","0","512","0","Transaction.Credit.DynamicChargeAdvanceInfo"<endrec>
+"00000000000010000000000000000000","1","9","Preference information of a credit party in dynamic charging. This parameter is valid when the transaction is successful.","","0","512","0","Transaction.Credit.DynamicChargeRepricingInfo"<endrec>
+"00000000000010011100000000000000","0","1","First name of the credit during the transaction.","","1","16","0","Transaction.Credit.FirstName"<endrec>
+"00000000000000001110011111000000","0","1","Short code of credit group in transaction.","","0","32","0","Transaction.Credit.GroupCode"<endrec>
+"00000000000010011110011100000000","0","1","Name of credit group during the transaction.","","0","256","0","Transaction.Credit.GroupName"<endrec>
+"00000000000010011110011100000000","0","1","Public name of credit group in transaction.","","0","256","0","Transaction.Credit.GroupPublicName"<endrec>
+"00000000000010000010000000000000","0","1","Account alias of a credit party during the transaction.","","1","20","0","Transaction.Credit.IdentityAccountAlias"<endrec>
+"00000000000010011100000000000000","1","3","Account balance of a credit party during the transaction.","","1","12","0","Transaction.Credit.IdentityAccountBalance"<endrec>
+"00100000000010011100000000000000","0","1","Account status of a credit party during the transaction.","","1","16","0","Transaction.Credit.IdentityAccountStatus"<endrec>
+"00000000000010000010000000000000","0","1","Account type of a credit party during the transaction.","","1","20","0","Transaction.Credit.IdentityAccountTypeName"<endrec>
+"00000000000010011100000000000000","0","1","MSISDN used by an identity of a credit party during the transaction.","","1","18","0","Transaction.Credit.IdentityMSISDN"<endrec>
+"00000000000010011100000000000000","0","1","Identity name of a credit party during the transaction.","","1","32","0","Transaction.Credit.IdentityName"<endrec>
+"00000000000010011100000000000000","0","7","Identity status of a credit party during the transaction.","","1","16","0","Transaction.Credit.IdentityStatus"<endrec>
+"00000000000010011100000000000000","0","1","Last name of the credit during the transaction.","","1","16","0","Transaction.Credit.LastName"<endrec>
+"00000000000010011100000000000000","0","1","Last four digits of the MSISDN used by an identity of a credit party during the transaction.","","1","4","0","Transaction.Credit.MSISDNLast4Digits"<endrec>
+"00000000000010011100000000000000","0","1","Middle name of the credit during the transaction.","","1","16","0","Transaction.Credit.MiddleName"<endrec>
+"00000000000010011100000000000000","0","1","Organization to which the credit party belongs during the transaction.","","1","128","0","Transaction.Credit.OrgName"<endrec>
+"00000000000010011100000000000000","0","1","Short code of an organization to which the credit party belongs during the transaction.","","1","6","0","Transaction.Credit.OrgShortCode"<endrec>
+"00000000000010000000000000000000","0","1","Ad customized for the organization, which is used in the notification sent to the credit party when the transaction is successful.","","1","280","0","Transaction.Credit.ProductServiceAdv"<endrec>
+"00000000000010011100000000000000","0","1","Till number of the credit in a transaction.","","1","32","0","Transaction.Credit.TillNumber"<endrec>
+"00000000000010011100000000000000","0","1","Account name of a debit party during the transaction.","","0","60","0","Transaction.Debit.AccountName"<endrec>
+"00000000000010011100000000000000","0","1","Debit Party's National ID in transaction.","","0","32","0","Transaction.Debit.CNIC"<endrec>
+"00000000000010000000000000000000","1","9","Advance notification of a debit party in dynamic charging. This parameter is valid when the transaction is successful.","","0","512","0","Transaction.Debit.DynamicChargeAdvanceInfo"<endrec>
+"00000000000010000000000000000000","1","9","Repricing information of a debit party in dynamic charging. This parameter is valid when the transaction is successful.","","0","512","0","Transaction.Debit.DynamicChargeRepricingInfo"<endrec>
+"00000000000010011100000000000000","0","1","First name of the debit during the transaction.","","1","16","0","Transaction.Debit.FirstName"<endrec>
+"00000000000010011110011100000000","0","1","Short code of credit group during the transaction.","","0","32","0","Transaction.Debit.GroupCode"<endrec>
+"00000000000010011110011100000000","0","1","Description of debit group in transaction.","","0","256","0","Transaction.Debit.GroupDescription"<endrec>
+"00000000000010011110011100000000","0","1","Name of debit group during the transaction.","","0","256","0","Transaction.Debit.GroupName"<endrec>
+"00000000000010011110011100000000","0","1","Public name of debit group in transaction.","","0","256","0","Transaction.Debit.GroupPublicName"<endrec>
+"00000000000010000010000000000000","0","1","Account alias of a debit party during the transaction.","","1","20","0","Transaction.Debit.IdentityAccountAlias"<endrec>
+"00000000000010011110011100000000","1","3","Account balance of a debit party during the transaction.","","1","12","0","Transaction.Debit.IdentityAccountBalance"<endrec>
+"00100000000010011100000000000000","0","1","Account status of a debit party during the transaction.","","1","16","0","Transaction.Debit.IdentityAccountStatus"<endrec>
+"00000000000010000010000000000000","0","1","Account type of a debit party during the transaction.","","1","20","0","Transaction.Debit.IdentityAccountTypeName"<endrec>
+"00000000000010011100000000000000","0","1","MSISDN used by an identity of a debit party during the transaction.","","1","18","0","Transaction.Debit.IdentityMSISDN"<endrec>
+"00000000000010011100000000000000","0","1","Identity of a debit party during the transaction.","","1","32","0","Transaction.Debit.IdentityName"<endrec>
+"00000000000010011100000000000000","0","7","Identity status of a debit party during the transaction.","","1","16","0","Transaction.Debit.IdentityStatus"<endrec>
+"00000000000010011100000000000000","0","1","Last name of the debit during the transaction.","","1","16","0","Transaction.Debit.LastName"<endrec>
+"00000000000010011100000000000000","0","1","Last four digits of the MSISDN used by an identity of a debit party during the transaction.","","1","4","0","Transaction.Debit.MSISDNLast4Digits"<endrec>
+"00000000000010011100000000000000","0","1","Middle name of the debit during the transaction.","","1","16","0","Transaction.Debit.MiddleName"<endrec>
+"00000000000010011100000000000000","0","1","Organization to which the debit party belongs during the transaction.","","1","128","0","Transaction.Debit.OrgName"<endrec>
+"00000000000010011100000000000000","0","1","Short code of an organization to which the debit party belongs during the transaction.","","1","6","0","Transaction.Debit.OrgShortCode"<endrec>
+"00000000000010000000000000000000","0","1","Ad customized for the organization, which is used in the notification sent to the debit party when the transaction is successful.","","1","280","0","Transaction.Debit.ProductServiceAdv"<endrec>
+"00000000000010011100000000000000","0","1","Till number of the debit in a transaction.","","1","32","0","Transaction.Debit.TillNumber"<endrec>
+"00000000000000001000000000000000","0","3","Debit identity account balance. The notification is sent to the customer when a transaction is canceled.","","0","12","0","Transaction.Dedit.IdentityAccountBalance"<endrec>
+"00000000000010011100000000000000","0","1","Indicates the customer MSISDN in Dompetku transaction.","","1","32","0","Transaction.DompetkuTrans.CustomerMSISDN"<endrec>
+"00000000000010011100000000000000","0","3","Indicates the amount of transactions in Dompetku.","","1","12","0","Transaction.DompetkuTrans.DompetkuAmount"<endrec>
+"00000000000010000000000000000000","0","1","Customer in dormant state. This parameter is valid when the transaction is successful.","","1","256","0","Transaction.DormantCustomerName"<endrec>
+"00000000000010011100000000000000","0","1","Recharge number in a top-up service request.","0","1","20","0","Transaction.EnteredRechargedMSISDN"<endrec>
+"00000000000010011100000000000000","1","3","Loan account balance in the FSI service. This parameter is used for sending a notification when performing the FSI service operation.","4","0","100","0","Transaction.FSIInfo.FSILoanBalance"<endrec>
+"00000000000010011100000000000000","1","1","New Balance in the FSI service","","0","100","0","Transaction.FSIInfo.FSINewBalance"<endrec>
+"00000000000010011100000000000000","1","3","Saving account balance in the FSI service. This parameter is used for sending a notification when performing the FSI service operation.","","0","100","0","Transaction.FSIInfo.FSISavingsBalance"<endrec>
+"00000000000010011100000000000000","1","1","Overpay amount in the FSI service","","0","100","0","Transaction.FSIInfo.OverpayAmount"<endrec>
+"00000000000010011100000000000000","0","3","Loan amount deducted from the saving account in the FSI service. This parameter is used for sending a notification when performing the FSI service operation.","4","0","20","0","Transaction.FSIInfo.RepaymentAmountFromSavings"<endrec>
+"10000000000010011100000000000000","0","1","Target currency, which is used in notifications sent for Foreign Exchange service transactions.","","1","3","0","Transaction.FXInfo.DestinationCurrency"<endrec>
+"10000000000010011100000000000000","0","3","Target currency transaction amount, which is used in notifications sent for Foreign Exchange service transactions.","","0","12","0","Transaction.FXInfo.DestinationCurrencyAmount"<endrec>
+"10000000000010011100000000000000","0","3","Target currency transaction commission, which is used in notifications sent for Foreign Exchange service transactions.","","1","12","0","Transaction.FXInfo.DestinationCurrencyFee.Commission"<endrec>
+"10000000000010011100000000000000","0","3","Target currency transaction handling fee, which is used in notifications sent for Foreign Exchange service transactions.","","1","12","0","Transaction.FXInfo.DestinationCurrencyFee.Fee"<endrec>
+"10000000000010011100000000000000","0","3","Target currency transaction tax, which is used in notifications sent for Foreign Exchange service transactions.","","1","12","0","Transaction.FXInfo.DestinationCurrencyFee.Tax"<endrec>
+"10000000000010011100000000000000","0","1","Exchange rate, which is used in notifications sent for Foreign Exchange service transactions.","","1","18","0","Transaction.FXInfo.Rate"<endrec>
+"10000000000010011100000000000000","0","1","Exchange rate type, which is used in notifications sent for Foreign Exchange service transactions.","","1","32","0","Transaction.FXInfo.RateType"<endrec>
+"10000000000010011100000000000000","0","1","Transaction source currency, which is used in notifications sent for Foreign Exchange service transactions.","","1","3","0","Transaction.FXInfo.SourceCurrency"<endrec>
+"10000000000010011100000000000000","0","3","Source currency transaction amount, which is used in notifications sent for Foreign Exchange service transactions.","","1","12","0","Transaction.FXInfo.SourceCurrencyAmount"<endrec>
+"10000000000010011100000000000000","0","3","Source currency transaction commission, which is used in notifications sent for Foreign Exchange service transactions.","","1","12","0","Transaction.FXInfo.SourceCurrencyFee.Commission"<endrec>
+"10000000000010011100000000000000","0","3","Source currency transaction handling fee, which is used in notifications sent for Foreign Exchange service transactions.","","0","12","0","Transaction.FXInfo.SourceCurrencyFee.Fee"<endrec>
+"10000000000010011100000000000000","0","3","Source currency transaction tax, which is used in notifications sent for Foreign Exchange service transactions.","","1","12","0","Transaction.FXInfo.SourceCurrencyFee.Tax"<endrec>
+"00100000000010011100000000000000","1","3","Actual transaction amount during the transaction.","","1","12","0","Transaction.FeeInfo.ActualAmount"<endrec>
+"00100000000010011100000000000000","0","1","Amount number during the transaction.","","1","12","0","Transaction.FeeInfo.AmountNumber"<endrec>
+"00000000000010000010000000000000","1","3","Commission during the transaction.","0","1","12","0","Transaction.FeeInfo.Commission"<endrec>
+"00000000000010000000000000000000","1","1","Commission of a credit party during the transaction.","","1","12","0","Transaction.FeeInfo.CreditParty.Commission"<endrec>
+"00000000000010000000000000000000","1","1","Fee of a credit party during the transaction.","","1","12","0","Transaction.FeeInfo.CreditParty.Fee"<endrec>
+"00000000000010011100000000000000","0","1","Currency used for the transaction.","","1","3","0","Transaction.FeeInfo.Currency"<endrec>
+"00000000000010000000000000000000","1","1","Commission of a debit party during the transaction.","","1","12","0","Transaction.FeeInfo.DebitParty.Commission"<endrec>
+"00000000000010000000000000000000","1","1","Fee of a debit party during the transaction.","","1","12","0","Transaction.FeeInfo.DebitParty.Fee"<endrec>
+"00100000000010011100000000000000","1","3","Fee charged during the transaction.","","1","12","0","Transaction.FeeInfo.Fee"<endrec>
+"00100000000010011100000000000000","1","3","Original transaction amount during the transaction.","","1","12","0","Transaction.FeeInfo.OrgAmount"<endrec>
+"00100000000010011110011100000000","1","1","Actual commission received by the organization of the primary transaction party, which is used in the notification sent after commission sharing.","","1","100","0","Transaction.FeeInfo.PrincipalOrgActualCommission"<endrec>
+"00000000000010000000000000000000","1","1","Tax during the transaction.","","1","12","0","Transaction.FeeInfo.Tax"<endrec>
+"00000000000010000000000000000000","0","4","End time of a transaction initiated by a customer to transfer an amount through HomeSend.","","0","","0","Transaction.IMTInfo.MaxCompletionDate"<endrec>
+"00000000000010000000000000000000","1","2","Amount that the receiver receives. This parameter is valid when the IMT transaction is successful.","","0","","0","Transaction.IMTInfo.ReceivedAmount"<endrec>
+"00000000000010000000000000000000","0","1","Currency used by the receiver. This parameter is valid when the IMT transaction is successful.","","0","","0","Transaction.IMTInfo.ReceiverCurrency"<endrec>
+"00000000000010000000000000000000","0","1","MSISDN used by the receiver. This parameter is valid when the IMT transaction is successful.","","0","","0","Transaction.IMTInfo.RecipientMSISDN"<endrec>
+"00000000000010000000000000000000","0","1","Name of the receiver. This parameter is valid when the IMT transaction is successful.","1","0","","0","Transaction.IMTInfo.RecipientName"<endrec>
+"00000000000010000000000000000000","0","1","Redemption PIN of the recipient, which is included in the notification sent for the IMT Remittance to Local Remittance Partner service.","","1","100","0","Transaction.IMTInfo.RemitteeRedeemPIN"<endrec>
+"00000000000010000000000000000000","0","1","Redemption transaction code of the recipient, which is included in the notification sent for the IMT Remittance to Local Remittance Partner service.","","1","100","0","Transaction.IMTInfo.RemitteeRedeemTransferCode"<endrec>
+"00000000000000011100000000000000","0","4","Monitoring time. This parameter is used for verifying whether this transaction can be configured in the reason type.","","0","","0","Transaction.IMTInfo.ScreeningEndDate"<endrec>
+"00000000000010000000000000000000","1","1","Transaction ID. This parameter is valid when the IMT transaction is successful.","","0","","0","Transaction.IMTInfo.TransactionCode"<endrec>
+"00000000000010000000000000000000","0","4","Expiration time. This parameter is valid when the IMT transaction is successful.","","0","","0","Transaction.IMTInfo.VOCExpirationDate"<endrec>
+"00000000000000011100000000000000","0","1","Verification message. This parameter is used for verifying the error information corresponding to the additional data.","","0","","0","Transaction.IMTInfo.ValidationMessage"<endrec>
+"00000000000010011100000000000000","0","1","Initiator National ID in transaction.","","0","32","0","Transaction.Initiator.CNIC"<endrec>
+"00000000000010011100000000000000","0","1","First name of the initiator during the transaction.","","1","16","0","Transaction.Initiator.FirstName"<endrec>
+"00000000000010011110000100000000","1","3","Account balance of the initiator during the transaction.","","1","12","0","Transaction.Initiator.IdentityAccountBalance"<endrec>
+"00000000000010011100000000000000","0","1","MSISDN of the initiator during the transaction.","","1","16","0","Transaction.Initiator.IdentityMSISDN"<endrec>
+"00000000000010011100000000000000","0","7","Status of the initiator during the transaction.","","1","16","0","Transaction.Initiator.IdentityStatus"<endrec>
+"00000000000010011100000000000000","0","1","Identity type of the initiator.","","1","16","0","Transaction.Initiator.IdentityType"<endrec>
+"00000000000010011100000000000000","0","1","Last name of the initiator during the transaction.","","1","16","0","Transaction.Initiator.LastName"<endrec>
+"00000000000010011100000000000000","0","1","Last four digits of the MSISDN used by the initiator during the transaction.","","1","4","0","Transaction.Initiator.MSISDNLast4Digits"<endrec>
+"00000000000010011100000000000000","0","1","Middle name of the initiator during the transaction.","","1","16","0","Transaction.Initiator.MiddleName"<endrec>
+"00000000000010000000000000000000","0","1","Organization to which the initiator belongs during the transaction.","","1","128","0","Transaction.Initiator.OrgName"<endrec>
+"00000000000010011100000000000000","0","1","Position of intiator","","1","128","0","Transaction.Initiator.Position"<endrec>
+"00000000000010011100000000000000","0","1","Postion type of initiator's position.","","1","10","0","Transaction.Initiator.PositionType"<endrec>
+"00000000000010000000000000000000","0","1","Ad customized for the organization, which is used in the notification sent to the initiator when the transaction is successful.","","1","280","0","Transaction.Initiator.ProductServiceAdv"<endrec>
+"00000000000010011100000000000000","0","1","Till number of the initiator in a transaction.","","1","32","0","Transaction.Initiator.TillNumber"<endrec>
+"00000000000010000010000000000000","0","4","Reserved.","","1","10","0","Transaction.InputBeginDate"<endrec>
+"00000000000010000010000000000000","0","4","Reserved.","","1","10","0","Transaction.InputEndDate"<endrec>
+"00000000000010000000000000000000","0","6","The list of effective limit rules when transaction complete","","0","100","0","Transaction.LimitRemind"<endrec>
+"00000000000010000000000000000000","0","1","Name of the loyalty point plan issued by the organization during the transaction.","","1","32","0","Transaction.LoyaltyPointInfo.OrgLoyaltySchemaName"<endrec>
+"00000000000010000000000000000000","0","1","Number of loyalty points issued by the organization during the transaction.","","1","64","0","Transaction.LoyaltyPointInfo.PointsIssuedByOrg"<endrec>
+"00000000000010000000000000000000","0","1","Number of loyalty points issued by the SP during the transaction.","","1","64","0","Transaction.LoyaltyPointInfo.PointsIssuedBySP"<endrec>
+"00000000000010000000000000000000","0","1","Name of the loyalty point plan issued by the SP during the transaction.","","1","32","0","Transaction.LoyaltyPointInfo.SPLoyaltySchemaName"<endrec>
+"00000000000010000000000000000000","0","1","Merchant transation number during the transaction.","","0","64","0","Transaction.MerchantTransationNumber"<endrec>
+"11110000000010011110011100000000","0","3","Amount associated with the new voucher which support multiple . This parameter is used for balance exchange upon user deregistration","","1","64","0","Transaction.NewVoucher.Amount"<endrec>
+"00000000000010011100000000000000","0","1","Currency use for new voucher which support multiple","","1","3","0","Transaction.NewVoucher.Currency"<endrec>
+"00000000000010000010000000000000","0","1","The new voucher can not be redeemed after this date","","1","10","0","Transaction.NewVoucher.ExpireDate"<endrec>
+"00000000000010011100000000000000","0","1","Indicates whether the new voucher after redeem and its type is the other voucher during the transaction","","0","32","0","Transaction.NewVoucher.IsOtherVoucher"<endrec>
+"00000010000010000010000000000000","1","1","New voucher code which create after redeem during the transaction.","","1","10","0","Transaction.NewVoucher.VoucherCode"<endrec>
+"01000000000010000000000000000000","0","1","Notification sent by BankAccountTypewhen the customer transfer is successful.","","0","256","0","Transaction.NonLinkedFSI.BankAccountType"<endrec>
+"01000000000010000000000000000000","0","1","Notification sent by BankCardWithMask when the customer transfer is successful.","","0","256","0","Transaction.NonLinkedFSI.BankCardWithMask"<endrec>
+"00000000000010011100000000000000","1","3","OD access fee information","","1","12","0","Transaction.ODInfo.AccessFee"<endrec>
+"00000000000010011100000000000000","1","3","OD balance information","","1","12","0","Transaction.ODInfo.Balance"<endrec>
+"00000000000010011100000000000000","1","3","OD debt amount information","","1","12","0","Transaction.ODInfo.Debt"<endrec>
+"00000000000010011100000000000000","0","4","OD contract duedate information","","1","10","0","Transaction.ODInfo.DueDate"<endrec>
+"00000000000010011100000000000000","1","3","OD interest rate information","","1","12","0","Transaction.ODInfo.InterestRate"<endrec>
+"00000000000010011100000000000000","1","3","OD limit information","","0","12","0","Transaction.ODInfo.Limit"<endrec>
+"00000000000010011100000000000000","0","1","result code for OD repayment indicates full repayment or partial repayment","","1","5","0","Transaction.ODInfo.ResultCode"<endrec>
+"00000000000010011100000000000000","1","3","OD transaction amount of the transaction","","1","12","0","Transaction.ODInfo.TransactionAmount"<endrec>
+"00000000000010011110000000000000","0","1","Reserved.","","1","10","0","Transaction.OperatorCode"<endrec>
+"00000000000000001000000000000000","0","1","Original transaction log ID. The notification is sent to the customer when a transaction is canceled.","","1","12","0","Transaction.OriTransLogId"<endrec>
+"00000000000010000000000000000000","0","6","Reference data of the original transaction. This parameter is used for rolling back the notification sent for a transaction whose original transaction has reference data.","","1","256","0","Transaction.OrigReferenceDataList.OrigReferenceData"<endrec>
+"00000000000010000000000000000000","1","1","The amount of the original transaction that triggered the cashback.","","1","12","0","Transaction.OriginalTxn.Amount"<endrec>
+"00000000000010000000000000000000","1","1","The Order ID of the original transaction that triggered the cashback.","","1","20","0","Transaction.OriginalTxn.OrderId"<endrec>
+"00000000000010000000000000000000","1","1","The alias of the original reason type that triggered the cashback.","","1","256","0","Transaction.OriginalTxn.ReasonType"<endrec>
+"00000000000010011110011100000000","0","1","Identity ID of a partern during the transaction.","","0","20","0","Transaction.PartnerSP.IdentityID"<endrec>
+"00000000000010011110011100000000","0","1","Identity name of a partern during the transaction.","","0","512","0","Transaction.PartnerSP.IdentityName"<endrec>
+"00000000000010011110011100000000","0","1","Identity type of a partern during the transaction.","","0","20","0","Transaction.PartnerSP.IdentityType"<endrec>
+"00000000000010011100000000000000","0","1","Payment amount, which is used in notifications sent in the Dompetku Bill Payment service.","","1","32","0","Transaction.PayBillInfo.BillAmount"<endrec>
+"00000000000010011100000000000000","0","1","Name of the bill issuer organization, which is used in notifications sent in the Dompetku Bill Payment service.","","1","128","0","Transaction.PayBillInfo.BillIssuerName"<endrec>
+"00000000000010011100000000000000","0","1","Short code of the bill issuer, which is used in notifications sent in the Dompetku Bill Payment service.","","1","32","0","Transaction.PayBillInfo.BillIssuerShortCode"<endrec>
+"00000000000010011100000000000000","0","1","Bill reference number in the Pay Bill transaction.","","0","256","0","Transaction.PayBillInfo.BillReferenceNumber"<endrec>
+"00000000000010011100000000000000","0","1","Payment MSISDN, which is used in notifications sent in the Dompetku Bill Payment service.","","1","32","0","Transaction.PayBillInfo.PaymentMSISDN"<endrec>
+"00000000000010011100000000000000","0","1","Payment type information, which is used in notifications sent in the Dompetku Bill Payment service.","","1","64","0","Transaction.PayBillInfo.PaymentType"<endrec>
+"00000000000010011100000000000000","0","1","Indicates whether to verify the notification text in the Pay Bill transaction.","","1","3","0","Transaction.Paybill.ValidationNotification"<endrec>
+"00000000000010011100000000000000","0","1","Content of the notification text in the Pay Bill transaction.","","1","256","0","Transaction.Paybill.ValidationNotificationText"<endrec>
+"00000000000010011100000000000000","0","1","Account holder of the primary party in the Pay Bill transaction.","","1","12","0","Transaction.Primary.IdentityAccountHolderName"<endrec>
+"00000000000010011100000000000000","0","1","Account type of the primary party in the Pay Bill transaction.","","1","18","0","Transaction.Primary.IdentityAccountTypeName"<endrec>
+"00000000000010011100000000000000","0","1","Reason type alias used in a transaction.","","1","64","1","Transaction.Reasontype.Alias"<endrec>
+"00000000000010011110011100000000","0","1","First name of the receiver during the transaction.","","1","16","0","Transaction.Receiver.FirstName"<endrec>
+"00100000000010011100000000000000","1","3","Account balance of the receiver during the transaction.","","1","12","0","Transaction.Receiver.IdentityAccountBalance"<endrec>
+"00000000000010011100000000000000","0","1","MSISDN used by the receiver during the transaction.","","1","16","0","Transaction.Receiver.IdentityMSISDN"<endrec>
+"00000000000010011100000000000000","0","1","Name of the receiver during the transaction.","","1","32","0","Transaction.Receiver.IdentityName"<endrec>
+"00000000000010011100000000000000","0","7","Status of the receiver during the transaction.","","1","16","0","Transaction.Receiver.IdentityStatus"<endrec>
+"00000000000010011110011100000000","0","1","Last name of the receiver during the transaction.","","1","16","0","Transaction.Receiver.LastName"<endrec>
+"00000000000010011110011100000000","0","1","Last four digits of the MSISDN used by the receiver during the transaction.","","1","4","0","Transaction.Receiver.MSISDNLast4Digits"<endrec>
+"00000000000010011100000000000000","0","1","Till number of the receiver in a transaction.","","1","32","0","Transaction.Receiver.TillNumber"<endrec>
+"00000000000010011100000000000000","0","1","Recharged MSISND. This parameter is used for the top-up service.","0","0","20","0","Transaction.RechargedMSISDN"<endrec>
+"00000000000010011100000000000000","0","2","Redeemed point amout in transaction.","","0","","0","Transaction.RedeemedPointAmount"<endrec>
+"00000000000010000000000000000000","0","6","For transactions with reference data, the reference data is used in notifications sent after the transactions are completed.","","1","32","0","Transaction.ReferenceDataList"<endrec>
+"00000000000010011100000000000000","0","1","Remarks. If an order contains remarks, the remarks in the order are used. Otherwise, the remarks in the request message are used.","","1","512","0","Transaction.Remark"<endrec>
+"00000000000010011100000000000000","0","1","Remittee National ID. This parameter is used for Collect Remittance service.","","1","32","0","Transaction.Remittance.RemitteeCNIC"<endrec>
+"00000000000010011100000000000000","0","1","","","1","32","0","Transaction.Remittance.RemitterCNIC"<endrec>
+"00000000000010011100000000000000","0","1","","","1","32","0","Transaction.Remittance.RemitterMSISDN"<endrec>
+"00000000000010011100000000000000","0","1","Remitter National ID. This parameter is used for Collect Remittance service.","","0","32","0","Transaction.Remitter.RemitterCNIC"<endrec>
+"00000000000010011100000000000000","0","1","Remitter MSISDN. This parameter is used for Collect Remittance service.","","0","20","0","Transaction.Remitter.RemitterMSISDN"<endrec>
+"00000000000010011100000000000000","0","1","Requester National ID in transaction.","","0","32","0","Transaction.Requester.CNIC"<endrec>
+"00000000000010011100000000000000","0","1","First name of the requester during the transaction.","","1","16","0","Transaction.Requester.FirstName"<endrec>
+"00000000000010011100000000000000","0","1","MSISDN of the requester during the transaction.","","1","16","0","Transaction.Requester.IdentityMSISDN"<endrec>
+"00000000000010011100000000000000","0","1","Name of the requester during the transaction.","","1","32","0","Transaction.Requester.IdentityName"<endrec>
+"00000000000010011100000000000000","0","1","Last name of the requester during the transaction.","","1","16","0","Transaction.Requester.LastName"<endrec>
+"01010100000000001100001100000000","0","1","Transaction restrctied channel","","0","30","0","Transaction.RestrictionInfo.RestrictionChannel"<endrec>
+"01010100000000001100001100000000","0","1","restricted reason type","","0","30","0","Transaction.RestrictionInfo.RestrictionReasonType"<endrec>
+"01010100000000001100001100000000","0","1","restricted end time","","0","10","0","Transaction.RestrictionInfo.RestrictionTimeEnd"<endrec>
+"01010100000000001100001100000000","0","1","restricted start time","","0","","0","Transaction.RestrictionInfo.RestrictionTimeStart"<endrec>
+"00000000000010000010000000000000","1","1","Amount of the reverser during the transaction.","","1","20","0","Transaction.ReverseAmount"<endrec>
+"00000000000010011110011100000000","0","1","Name of saving plan during the transaction.","","1","256","0","Transaction.SavingPlan.Name"<endrec>
+"00000000000010011110011100000000","0","1","Rate of saving plan during the transaction.","","1","512","0","Transaction.SavingPlan.Rate"<endrec>
+"00100000000010011110011100000000","0","1","Name of the service during the transaction.","","1","32","1","Transaction.ServiceName"<endrec>
+"00000000000010011100000000000000","0","1","Reserved.","","1","18","0","Transaction.TargetMsisdn"<endrec>
+"00100000000010011110011100000000","0","1","Reviewer comment, which is included in the notification sent after the transaction is completed.","","1","100","0","Transaction.TaskComments"<endrec>
+"01000100000000001100000000000000","0","1","Description sent after the third-party verification fails.","","0","512","1","Transaction.ThirdPartyFailureDescription"<endrec>
+"00000000000010000000000000000000","1","3","the amount of thirdparty redeemed balance during the transaction","","1","12","0","Transaction.ThirdPointRedeemedBalance"<endrec>
+"00000000000010000000000000000000","1","1","Transaction amount during the transaction.","","0","20","0","Transaction.TransactionAmount"<endrec>
+"00000000000010000000000000000000","0","1","Original receipt number. The notification is sent to the customer when a transaction is reversed.","","1","16","0","Transaction.TransactionReverse.OriginalReceiptNumber"<endrec>
+"00000000000010011100000000000000","0","1","In the new transaction model, different notifications need to be sent based on the third-party error code when the transaction needs to be reversed due to the third-party error code.","","1","64","0","Transaction.TransactionReverse.ResultCode"<endrec>
+"00000000000010011100000000000000","0","1","In the new transaction model, the third-party error information needs to be included in the notification when the transaction needs to be reversed due to the third-party error code.","","1","256","0","Transaction.TransactionReverse.ResultDesc"<endrec>
+"00000000000010001100000000000000","0","2","Reversed point amount in transaction.","","0","","0","Transaction.TransactionReverse.ReversedPointAmount"<endrec>
+"00000000000010000000000000000000","1","1","Voucher sent when the Two Part Payment service is in Authorized state.","","0","20","0","Transaction.TwoPartVoucher"<endrec>
+"00000000000010000010000000000000","0","5","Reserved.","","1","8","0","Transaction.UnclaimedExpiredTime"<endrec>
+"00000000000010000000000000000000","0","1","Reserved.","","0","20","0","Transaction.VerificationCode"<endrec>
+"11110000000010011110000000000000","0","3","Amount associated with the voucher. This parameter is used for balance exchange upon user deregistration.","","1","64","0","Transaction.Voucher.Amount"<endrec>
+"00000000000010000010000000000000","0","4","Reserved.","","1","10","0","Transaction.Voucher.ExpireDate"<endrec>
+"00000000000010000010000000000000","0","5","Expiration time of the voucher during the transaction.","","1","8","0","Transaction.Voucher.ExpireTime"<endrec>
+"11110000000010000010000000000000","0","1","External transaction number transferred from the PGW Voucher","","1","64","0","Transaction.Voucher.ExternalOrderNo"<endrec>
+"00000000000010011100000000000000","0","1","Indicates Additional Information 1 of a voucher entered in a tranaction. For example, the purpose of a voucher.","","0","32","0","Transaction.Voucher.Extra1"<endrec>
+"00000000000010011100000000000000","0","1","Indicates Additional Information 10 of a voucher entered in a tranaction. For example, the purpose of a voucher.","","0","32","0","Transaction.Voucher.Extra10"<endrec>
+"00000000000010011100000000000000","0","1","Indicates Additional Information 2 of a voucher entered in a tranaction. For example, the purpose of a voucher.","","0","32","0","Transaction.Voucher.Extra2"<endrec>
+"00000000000010011100000000000000","0","1","Indicates Additional Information 3 of a voucher entered in a tranaction. For example, the purpose of a voucher.","","0","32","0","Transaction.Voucher.Extra3"<endrec>
+"00000000000010011100000000000000","0","1","Indicates Additional Information 4 of a voucher entered in a tranaction. For example, the purpose of a voucher.","","0","32","0","Transaction.Voucher.Extra4"<endrec>
+"00000000000010011100000000000000","0","1","Indicates Additional Information 5 of a voucher entered in a tranaction. For example, the purpose of a voucher.","","0","32","0","Transaction.Voucher.Extra5"<endrec>
+"00000000000010011100000000000000","0","1","Indicates Additional Information 6 of a voucher entered in a tranaction. For example, the purpose of a voucher.","","0","32","0","Transaction.Voucher.Extra6"<endrec>
+"00000000000010011100000000000000","0","1","Indicates Additional Information 7 of a voucher entered in a tranaction. For example, the purpose of a voucher.","","0","32","0","Transaction.Voucher.Extra7"<endrec>
+"00000000000010011100000000000000","0","1","Indicates Additional Information 8 of a voucher entered in a tranaction. For example, the purpose of a voucher.","","0","32","0","Transaction.Voucher.Extra8"<endrec>
+"00000000000010011100000000000000","0","1","Indicates Additional Information 9 of a voucher entered in a tranaction. For example, the purpose of a voucher.","","0","32","0","Transaction.Voucher.Extra9"<endrec>
+"00000000000010011100000000000000","0","1","Indicates whether the voucher type is the other voucher during the transaction.","","0","32","0","Transaction.Voucher.IsOtherVoucher"<endrec>
+"00000000000010000010000000000000","0","4","Reserved.","","1","10","0","Transaction.Voucher.RedeemDate"<endrec>
+"00000000000010000000000000000000","0","5","Time stamp of the exchange during the transaction.","","1","10","0","Transaction.Voucher.RedeemTime"<endrec>
+"00000000000010011100000000000000","0","1","Indicates the type of the redeeming organization during the transaction.","","0","32","0","Transaction.Voucher.RedeemingHierType"<endrec>
+"00000000000010011100000000000000","0","1","Indicates the name of the redeeming organization during the transaction.","","0","32","0","Transaction.Voucher.RedeemingOrgName"<endrec>
+"00000000000010011100000000000000","0","1","Indicates the short code of the redeeming organization during the transaction.","","0","32","0","Transaction.Voucher.RedeemingOrgShortCode"<endrec>
+"00000010000010000010000000000000","1","1","Secret code of the voucher during the transaction.","","1","20","0","Transaction.Voucher.SecretCode"<endrec>
+"00000010000010000010000000000000","1","1","Voucher code during the transaction.","","1","10","0","Transaction.Voucher.VoucherCode"<endrec>
+"00100000000000000000000000000000","0","1","The MM transaction ID of use OD, such as send money.","","1","22","0","TransactionID"<endrec>
+"01000000000000000000000000000000","0","1","Error details, which is sent upon trial calculation failure, transaction timeout, or subscriber rejection.","","1","512","0","TransactionUMCPreValidationError"<endrec>
+"01000000000000000000000000000000","0","1","Event result, which is sent upon trial calculation failure, transaction timeout, or subscriber rejection.","","1","256","0","TransactionUMCPreValidationEvent"<endrec>
+"00000000111100000000000001100000","0","1","Expiration date of an order.","","1","10","0","WorkFlow.Flow.ExpireDate"<endrec>
+"00000000111100000000000001100000","0","5","Expiration time of an order in the workflow.","","1","10","0","WorkFlow.Flow.ExpireTime"<endrec>
+"00000000111100000000000001100000","0","1","Workflow name in the workflow.","","1","32","0","WorkFlow.Flow.FlowName"<endrec>
+"00000000111100000000000001100000","0","1","Type of the entity identifier initiated from the workflow.","","1","32","0","WorkFlow.Flow.PublicName"<endrec>
+"00000000111100000000000000000000","0","1","Reserved.","","1","32","0","WorkFlow.Task.ContactName"<endrec>
+"00000000111100000000000001100000","0","5","Expiration time of a task in the workflow.","","1","10","0","WorkFlow.Task.ExpireTime"<endrec>
+"00000000111100000000000001100000","0","1","Name of an operator in the workflow.","","1","32","0","WorkFlow.Task.PublicName"<endrec>
+"00000000111100000000000000000000","0","1","Task processing result in the workflow.","","1","16","0","WorkFlow.Task.Status"<endrec>
+"00000000111100000000000001100000","0","1","Task name in the workflow.","","1","32","0","WorkFlow.Task.TaskName"<endrec>
+"00000000111100000000000001100000","0","1","Request address of a task in the workflow.","","1","256","0","WorkFlow.Task.URL"<endrec>
+"00000000111100000000000000001100","0","1","Name of an assignee in the workflow.","","1","32","0","WorkFlow.TaskAssgin.AssigneeName"<endrec>
+"00000000111100000000000000001100","0","1","Name of an assigner in the workflow.","","1","32","0","WorkFlow.TaskAssgin.AssignerName"<endrec>
+"00000000111100000000000000001100","0","1","Comment information of a task in the workflow.","","1","256","0","WorkFlow.TaskAssgin.Comments"<endrec>
+"00000000111100000000000000001100","0","1","Task name in the workflow.","","1","128","0","WorkFlow.TaskAssgin.TaskName"<endrec>
+"00100000000000000000000000000000","1","3","OD contract access fee amount","","1","12","0","accessFee"<endrec>
+"00100000000000000000000000000000","1","3","OD contract balance","","1","12","0","balance"<endrec>
+"00100000000000000000000000000000","0","1","OD customer crb status","","1","10","0","crbStatus"<endrec>
+"00100000000000000000000000000000","0","4","OD customer added into CRB List date","","1","10","0","crblistDate"<endrec>
+"00100000000000000000000000000000","1","3","OD contract debt amount","","1","12","0","debt"<endrec>
+"00100000000000000000000000000000","0","4","OD contract duedate","","1","10","0","dueDate"<endrec>
+"00100000000000000000000000000000","1","3","OD contract interest amount","","1","12","0","interest"<endrec>
+"00100000000000000000000000000000","1","3","OD limit amount","","1","12","0","limit"<endrec>
+"00100000000000000000000000000000","1","3","MM Balance in the query OD Notification","","1","12","0","mmBalance"<endrec>
+"00100000000000000000000000000000","0","4","the end time of OD transaction","","0","50","0","odTransactionTime"<endrec>
+"00100000000000000000000000000000","0","1","the transaction type of using OD transaction. such as buy goods, send money","","0","50","0","odTransactionType"<endrec>
+"00100000000000000000000000000000","1","3","OD contract penalty amount","","1","12","0","penalty"<endrec>
+"00100000000000000000000000000000","1","3","OD penalty rate","","1","12","0","penaltyRate"<endrec>
+"00100000000000000000000000000000","1","3","OD contract principal","","1","12","0","principal"<endrec>
+"00100000000000000000000000000000","1","3","the access fee of the current OD transaction","","1","12","0","transactionAccessFee"<endrec>
+"00100000000000000000000000000000","1","3","OD transaction amount","","1","12","0","transactionAmount"<endrec>
+"00000000111100000000000000000000","0","1","Reserved.","","1","32","0","workflow.OutCome"<endrec>

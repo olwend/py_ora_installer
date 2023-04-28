@@ -1,0 +1,917 @@
+ADDITIONAL_DATA_ID,DATA_TYPE,DATA_TYPE_KEY,DESCRIPTION,MSG_CODE,PARANT_PARA_ID,PARA_CODE,PARA_ID,PARA_TYPE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <endrec>
+"109","01","","","Mobile Money Available Notification Request","-1","Partner_ID","100","1"<endrec>
+"","01","","","Refill","-1","subscriberNumber","1002","0"<endrec>
+"","01","","","Refill","-1","originTransactionID","1003","0"<endrec>
+"","01","","","Refill","-1","originHostName","1004","0"<endrec>
+"","01","","","Refill","-1","ShortCode","1005","0"<endrec>
+"","01","","","Refill","-1","originTimeStamp","1006","0"<endrec>
+"","01","","","Refill","-1","transactionCurrency","1007","0"<endrec>
+"","01","","","Refill","-1","refillProfileID","1008","0"<endrec>
+"","01","","","Refill","-1","subscriberNumberNAI","1009","0"<endrec>
+"110","01","","","Mobile Money Available Notification Request","-1","System_ID","101","1"<endrec>
+"","01","","","Refill","-1","originNodeType","1010","0"<endrec>
+"111","01","","","Mobile Money Available Notification Request","-1","System_Name","102","1"<endrec>
+"112","01","","","Mobile Money Available Notification Request","-1","System_Version","103","1"<endrec>
+"113","01","","","Mobile Money Available Notification Request","-1","System_IP_Address","104","1"<endrec>
+"114","01","","","Mobile Money Available Notification Request","-1","Connector_ID","105","1"<endrec>
+"115","01","","","Mobile Money Available Notification Request","-1","External_Reference_Number","106","1"<endrec>
+"116","01","","","Mobile Money Available Notification Request","-1","Receiver_Mobile_Phone_Country_Code","107","1"<endrec>
+"117","01","","","Mobile Money Available Notification Request","-1","Receiver_Mobile_Phone_National_Number","108","1"<endrec>
+"118","07","","","Mobile Money Available Notification Request","-1","Expected_Payout_Amount","109","1"<endrec>
+"119","01","","","Mobile Money Available Notification Request","-1","Destination_Currency_ISO_Code","110","1"<endrec>
+"1161","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_Name","11001","3"<endrec>
+"1161","01","","","HWS_Remittance_Request","-1","Beneficiary_Name","11002","3"<endrec>
+"1063","01","","","HWS_Remittance_Request","-1","Sender Full Name","11003","3"<endrec>
+"120","01","","","Mobile Money Available Notification Request","-1","Destination_Country_ISO_Code","111","1"<endrec>
+"801","01","","","Mobile Money Available Notification Request","-1","Transaction_ID","112","1"<endrec>
+"122","01","","","Mobile Money Available Notification Request","-1","Mobile_Transfer_Date","113","1"<endrec>
+"123","01","","","Mobile Money Available Notification Request","-1","MTCN","114","1"<endrec>
+"621","01","","","Mobile Money Available Notification Reply","-1","Partner_ID","115","4"<endrec>
+"622","01","","","Mobile Money Available Notification Reply","-1","System_ID","116","4"<endrec>
+"623","01","","","Mobile Money Available Notification Reply","-1","System_Name","117","4"<endrec>
+"624","01","","","Mobile Money Available Notification Reply","-1","System_Version","118","4"<endrec>
+"625","01","","","Mobile Money Available Notification Reply","-1","System_IP_Address","119","4"<endrec>
+"626","01","","","Mobile Money Available Notification Reply","-1","Connector_ID","120","4"<endrec>
+"627","01","","","Mobile Money Available Notification Reply","-1","External_Reference_Number","121","4"<endrec>
+"628","01","","","Mobile Money Available Notification Reply","-1","Receiver_Mobile_Phone_Country_Code","122","4"<endrec>
+"629","01","","","Mobile Money Available Notification Reply","-1","Receiver_Mobile_Phone_National_Number","123","4"<endrec>
+"630","07","","","Mobile Money Available Notification Reply","-1","Expected_Payout_Amount","124","4"<endrec>
+"631","01","","","Mobile Money Available Notification Reply","-1","Destination_Currency_ISO_Code","125","4"<endrec>
+"632","01","","","Mobile Money Available Notification Reply","-1","Destination_Country_ISO_Code","126","4"<endrec>
+"711","01","","","Mobile Money Available Notification Reply","-1","Transaction_ID","127","4"<endrec>
+"633","01","","","Mobile Money Available Notification Reply","-1","Mobile_Transfer_Date","128","4"<endrec>
+"634","01","","","Mobile Money Available Notification Reply","-1","MTCN","129","4"<endrec>
+"621","01","","","Mobile Receive Money Request","-1","Partner_ID","130","4"<endrec>
+"622","01","","","Mobile Receive Money Request","-1","System_ID","131","4"<endrec>
+"623","01","","","Mobile Receive Money Request","-1","System_Name","132","4"<endrec>
+"624","01","","","Mobile Receive Money Request","-1","System_Version","133","4"<endrec>
+"625","01","","","Mobile Receive Money Request","-1","System_IP_Address","134","4"<endrec>
+"626","01","","","Mobile Receive Money Request","-1","Connector_ID","135","4"<endrec>
+"635","01","","","Mobile Receive Money Request","-1","Mobile_Wallet_ID","136","4"<endrec>
+"627","01","","","Mobile Receive Money Request","-1","External_Reference_Number","137","4"<endrec>
+"643","01","","","Mobile Receive Money Request","-1","Receiver_First_Name","138","4"<endrec>
+"644","01","","","Mobile Receive Money Request","-1","Receiver_Last_Name","139","4"<endrec>
+"600","01","","","Mobile Receive Money Request","-1","Receiver_Addr_Line_1","140","4"<endrec>
+"645","01","","","Mobile Receive Money Request","-1","Receiver_City","141","4"<endrec>
+"646","01","","","Mobile Receive Money Request","-1","Receiver_State","142","4"<endrec>
+"647","01","","","Mobile Receive Money Request","-1","Receiver_Postal_Code","143","4"<endrec>
+"648","01","","","Mobile Receive Money Request","-1","Receiver_Country_ISO_Code","144","4"<endrec>
+"606","01","","","Mobile Receive Money Request","-1","Receiver_ID_Document1_Type","145","4"<endrec>
+"602","01","","","Mobile Receive Money Request","-1","Receiver_ID_Document1_Data","146","4"<endrec>
+"604","01","","","Mobile Receive Money Request","-1","Receiver_ID_Document1_Issue_Date","147","4"<endrec>
+"605","01","","","Mobile Receive Money Request","-1","Receiver_ID_Document1_Issue_Place","148","4"<endrec>
+"649","01","","","Mobile Receive Money Request","-1","Receiver_ID_Document1_Country_ISO_Code","149","4"<endrec>
+"903","01","","","Mobile Receive Money Request","-1","Receiver_ID_Document1_Expiration_Date","150","4"<endrec>
+"650","01","","","Mobile Receive Money Request","-1","Receiver_ID_Document1_ID_Expires","151","4"<endrec>
+"651","01","","","Mobile Receive Money Request","-1","Receiver_ID_Document2_Type","152","4"<endrec>
+"652","01","","","Mobile Receive Money Request","-1","Receiver_ID_Document2_Data","153","4"<endrec>
+"653","01","","","Mobile Receive Money Request","-1","Receiver_ID_Document2_Issue_Date","154","4"<endrec>
+"654","01","","","Mobile Receive Money Request","-1","Receiver_ID_Document2_Issue_Place","155","4"<endrec>
+"655","01","","","Mobile Receive Money Request","-1","Receiver_ID_Document2_Country_ISO_Code","156","4"<endrec>
+"656","01","","","Mobile Receive Money Request","-1","Receiver_ID_Document2_Expiration_Date","157","4"<endrec>
+"657","01","","","Mobile Receive Money Request","-1","Receiver_ID_Document2_ID_Expires","158","4"<endrec>
+"658","01","","","Mobile Receive Money Request","-1","Receiver_Compliance_Comments","159","4"<endrec>
+"659","01","","","Mobile Receive Money Request","-1","Receiver_Nationality","160","4"<endrec>
+"660","01","","","Mobile Receive Money Request","-1","Receiver_Social_Security_No","161","4"<endrec>
+"661","01","","","Mobile Receive Money Request","-1","Receiver_Country_Of_Residence","162","4"<endrec>
+"662","01","","","Mobile Receive Money Request","-1","Receiver_Contact_Phone","163","4"<endrec>
+"628","01","","","Mobile Receive Money Request","-1","Receiver_Mobile_Phone_Country_Code","164","4"<endrec>
+"629","01","","","Mobile Receive Money Request","-1","Receiver_Mobile_Phone_National_Number","165","4"<endrec>
+"664","01","","","Mobile Receive Money Request","-1","Receiver_Mobile_Phone_Identity_Type","166","4"<endrec>
+"665","01","","","Mobile Receive Money Request","-1","Receiver_Mobile_Phone_Identity_Data","167","4"<endrec>
+"666","01","","","Mobile Receive Money Request","-1","Receiver_Gender","168","4"<endrec>
+"601","01","","","Mobile Receive Money Request","-1","Receiver_Date_Of_Birth","169","4"<endrec>
+"607","01","","","Mobile Receive Money Request","-1","Receiver_Occupation","170","4"<endrec>
+"663","01","","","Mobile Receive Money Request","-1","Receiver_Employer_Name","171","4"<endrec>
+"630","07","","","Mobile Receive Money Request","-1","Expected_Payout_Amount","172","4"<endrec>
+"670","07","","","Mobile Receive Money Request","-1","Actual_Payout_Amount","173","4"<endrec>
+"631","01","","","Mobile Receive Money Request","-1","Destination_Currency_ISO_Code","174","4"<endrec>
+"632","01","","","Mobile Receive Money Request","-1","Destination_Country_ISO_Code","175","4"<endrec>
+"711","01","","","Mobile Receive Money Request","-1","Transaction_ID","176","4"<endrec>
+"109","01","","","Mobile Receive Money Reply","-1","Partner_ID","177","1"<endrec>
+"110","01","","","Mobile Receive Money Reply","-1","System_ID","178","1"<endrec>
+"111","01","","","Mobile Receive Money Reply","-1","System_Name","179","1"<endrec>
+"112","01","","","Mobile Receive Money Reply","-1","System_Version","180","1"<endrec>
+"113","01","","","Mobile Receive Money Reply","-1","System_IP_Address","181","1"<endrec>
+"114","01","","","Mobile Receive Money Reply","-1","Connector_ID","182","1"<endrec>
+"124","01","","","Mobile Receive Money Reply","-1","Mobile_Wallet_ID","183","1"<endrec>
+"115","01","","","Mobile Receive Money Reply","-1","External_Reference_Number","184","1"<endrec>
+"125","01","","","Mobile Receive Money Reply","-1","Sender_First_Name","185","1"<endrec>
+"126","01","","","Mobile Receive Money Reply","-1","Sender_Last_Name","186","1"<endrec>
+"908","01","","","Mobile Receive Money Reply","-1","Sender_Addr_Line_1","187","1"<endrec>
+"128","01","","","Mobile Receive Money Reply","-1","Sender_City","188","1"<endrec>
+"129","01","","","Mobile Receive Money Reply","-1","Sender_State","189","1"<endrec>
+"802","01","","","Mobile Receive Money Reply","-1","Sender_Postal_Code","190","1"<endrec>
+"909","01","","","Mobile Receive Money Reply","-1","Sender_Country_ISO_Code","191","1"<endrec>
+"132","01","","","Mobile Receive Money Reply","-1","Sender_Mobile_Phone_Country_Code","192","1"<endrec>
+"133","01","","","Mobile Receive Money Reply","-1","Sender_Mobile_Phone_National_Number","193","1"<endrec>
+"134","01","","","Mobile Receive Money Reply","-1","Receiver_First_Name","194","1"<endrec>
+"135","01","","","Mobile Receive Money Reply","-1","Receiver_Last_Name","195","1"<endrec>
+"900","01","","","Mobile Receive Money Reply","-1","Receiver_Addr_Line_1","196","1"<endrec>
+"137","01","","","Mobile Receive Money Reply","-1","Receiver_City","197","1"<endrec>
+"138","01","","","Mobile Receive Money Reply","-1","Receiver_State","198","1"<endrec>
+"139","01","","","Mobile Receive Money Reply","-1","Receiver_Postal_Code","199","1"<endrec>
+"140","01","","","Mobile Receive Money Reply","-1","Receiver_Country_ISO_Code","200","1"<endrec>
+"906","01","","","Mobile Receive Money Reply","-1","Receiver_ID_Document1_Type","201","1"<endrec>
+"902","01","","","Mobile Receive Money Reply","-1","Receiver_ID_Document1_Data","202","1"<endrec>
+"904","01","","","Mobile Receive Money Reply","-1","Receiver_ID_Document1_Issue_Date","203","1"<endrec>
+"905","01","","","Mobile Receive Money Reply","-1","Receiver_ID_Document1_Issue_Place","204","1"<endrec>
+"145","01","","","Mobile Receive Money Reply","-1","Receiver_ID_Document1_Country_ISO_Code","205","1"<endrec>
+"903","01","","","Mobile Receive Money Reply","-1","Receiver_ID_Document1_Expiration_Date","206","1"<endrec>
+"147","01","","","Mobile Receive Money Reply","-1","Receiver_ID_Document1_ID_Expires","207","1"<endrec>
+"148","01","","","Mobile Receive Money Reply","-1","Receiver_ID_Document2_Type","208","1"<endrec>
+"149","01","","","Mobile Receive Money Reply","-1","Receiver_ID_Document2_Data","209","1"<endrec>
+"150","01","","","Mobile Receive Money Reply","-1","Receiver_ID_Document2_Issue_Date","210","1"<endrec>
+"151","01","","","Mobile Receive Money Reply","-1","Receiver_ID_Document2_Issue_Place","211","1"<endrec>
+"152","01","","","Mobile Receive Money Reply","-1","Receiver_ID_Document2_Country_ISO_Code","212","1"<endrec>
+"153","01","","","Mobile Receive Money Reply","-1","Receiver_ID_Document2_Expiration_Date","213","1"<endrec>
+"154","01","","","Mobile Receive Money Reply","-1","Receiver_ID_Document2_ID_Expires","214","1"<endrec>
+"155","01","","","Mobile Receive Money Reply","-1","Receiver_Compliance_Comments","215","1"<endrec>
+"156","01","","","Mobile Receive Money Reply","-1","Receiver_Nationality","216","1"<endrec>
+"157","01","","","Mobile Receive Money Reply","-1","Receiver_Social_Security_No","217","1"<endrec>
+"158","01","","","Mobile Receive Money Reply","-1","Receiver_Country_Of_Residence","218","1"<endrec>
+"159","01","","","Mobile Receive Money Reply","-1","Receiver_Contact_Phone","219","1"<endrec>
+"116","01","","","Mobile Receive Money Reply","-1","Receiver_Mobile_Phone_Country_Code","220","1"<endrec>
+"117","01","","","Mobile Receive Money Reply","-1","Receiver_Mobile_Phone_National_Number","221","1"<endrec>
+"162","01","","","Mobile Receive Money Reply","-1","Receiver_Mobile_Phone_Identity_Type","222","1"<endrec>
+"163","01","","","Mobile Receive Money Reply","-1","Receiver_Mobile_Phone_Identity_Data","223","1"<endrec>
+"164","01","","","Mobile Receive Money Reply","-1","Receiver_Gender","224","1"<endrec>
+"901","01","","","Mobile Receive Money Reply","-1","Receiver_Date_Of_Birth","225","1"<endrec>
+"907","01","","","Mobile Receive Money Reply","-1","Receiver_Occupation","226","1"<endrec>
+"161","01","","","Mobile Receive Money Reply","-1","Receiver_Employer_Name","227","1"<endrec>
+"166","07","","","Mobile Receive Money Reply","-1","Origination_Principal_Amount","228","1"<endrec>
+"167","01","","","Mobile Receive Money Reply","-1","Origination_Currency_ISO_Code","229","1"<endrec>
+"168","01","","","Mobile Receive Money Reply","-1","Origination_Country_ISO_Code","230","1"<endrec>
+"118","07","","","Mobile Receive Money Reply","-1","Expected_Payout_Amount","231","1"<endrec>
+"169","07","","","Mobile Receive Money Reply","-1","Actual_Payout_Amount","232","1"<endrec>
+"119","01","","","Mobile Receive Money Reply","-1","Destination_Currency_ISO_Code","233","1"<endrec>
+"120","01","","","Mobile Receive Money Reply","-1","Destination_Country_ISO_Code","234","1"<endrec>
+"801","01","","","Mobile Receive Money Reply","-1","Transaction_ID","235","1"<endrec>
+"122","01","","","Mobile Receive Money Reply","-1","Mobile_Transfer_Date","236","1"<endrec>
+"123","01","","","Mobile Receive Money Reply","-1","MTCN","237","1"<endrec>
+"803","01","","","Error Reply","-1","Error_Message","238","1"<endrec>
+"109","01","","","Mobile Server Heartbeat Request","-1","Partner_ID","239","1"<endrec>
+"110","01","","","Mobile Server Heartbeat Request","-1","System_ID","240","1"<endrec>
+"111","01","","","Mobile Server Heartbeat Request","-1","System_Name","241","1"<endrec>
+"112","01","","","Mobile Server Heartbeat Request","-1","System_Version","242","1"<endrec>
+"113","01","","","Mobile Server Heartbeat Request","-1","System_IP_Address","243","1"<endrec>
+"114","01","","","Mobile Server Heartbeat Request","-1","Connector_ID","244","1"<endrec>
+"115","01","","","Mobile Server Heartbeat Request","-1","External_Reference_Number","245","1"<endrec>
+"621","01","","","Mobile Server Heartbeat Reply","-1","Partner_ID","246","4"<endrec>
+"622","01","","","Mobile Server Heartbeat Reply","-1","System_ID","247","4"<endrec>
+"623","01","","","Mobile Server Heartbeat Reply","-1","System_Name","248","4"<endrec>
+"624","01","","","Mobile Server Heartbeat Reply","-1","System_Version","249","4"<endrec>
+"625","01","","","Mobile Server Heartbeat Reply","-1","System_IP_Address","250","4"<endrec>
+"626","01","","","Mobile Server Heartbeat Reply","-1","Connector_ID","251","4"<endrec>
+"627","01","","","Mobile Server Heartbeat Reply","-1","External_Reference_Number","252","4"<endrec>
+"712","01","","","Mobile Server Heartbeat Reply","-1","Status_Code","253","4"<endrec>
+"713","01","","","Mobile Server Heartbeat Reply","-1","Status_Message","254","4"<endrec>
+"714","01","","","Mobile Server Heartbeat Reply","-1","Reference_No","255","4"<endrec>
+"109","01","","","Mobile Transaction Inquiry Request","-1","Partner_ID","256","4"<endrec>
+"110","01","","","Mobile Transaction Inquiry Request","-1","System_ID","257","4"<endrec>
+"111","01","","","Mobile Transaction Inquiry Request","-1","System_Name","258","4"<endrec>
+"112","01","","","Mobile Transaction Inquiry Request","-1","System_Version","259","4"<endrec>
+"113","01","","","Mobile Transaction Inquiry Request","-1","System_IP_Address","260","4"<endrec>
+"114","01","","","Mobile Transaction Inquiry Request","-1","Connector_ID","261","4"<endrec>
+"","01","","","ValidateBillRefNum","","Msisdn","261508","0"<endrec>
+"","01","","","ValidateBillRefNum","","ShortCode","261509","0"<endrec>
+"","01","","","ValidateBillRefNum","","ReferenceId","261510","0"<endrec>
+"","01","","","ValidateBillRefNum","","BasicAmount","261511","0"<endrec>
+"","01","","","ValidateBillRefNum","","MinimumAmount","261512","0"<endrec>
+"","01","","","ValidateBillRefNum","","InvoiceNumber","261514","0"<endrec>
+"","01","","","ValidateBillRefNum","","TransDate","261515","0"<endrec>
+"","01","","","ValidateBillRefNum","","TransLogId","261516","0"<endrec>
+"","01","","","Charge","","RechargedMSISDN","261517","0"<endrec>
+"","01","","","ValidateBillRefNum","","KYCList","261518","0"<endrec>
+"","01","","","ValidateBillRefNum","","PayerShortCode","261519","0"<endrec>
+"","01","","","ValidateBillRefNum","","PayerOrganizationName","261520","0"<endrec>
+"","01","","","Charge","","ShortCode","261521","0"<endrec>
+"","01","","","Charge","","OrderId","261522","0"<endrec>
+"","01","","","Charge","","BasicAmount","261523","0"<endrec>
+"","01","","","Charge","","MinimumAmount","261524","0"<endrec>
+"","01","","","Charge","","CurrencyCode","261525","0"<endrec>
+"","01","","","ValidateBillRefNum","","CurrencyCode","261526","0"<endrec>
+"","01","","","GetShortBillpayProduct","","Msisdn","261527","0"<endrec>
+"","01","","","GetShortBillpayProduct","","ShortCode","261528","0"<endrec>
+"","01","","","GetShortBillpayProduct","","BillRefNum","261529","0"<endrec>
+"","01","","","GetShortBillpayProduct","","BasicAmount","261530","0"<endrec>
+"","01","","","GetShortBillpayProduct","","MinimumAmount","261531","0"<endrec>
+"","01","","","GetShortBillpayProduct","","CurrencyCode","261532","0"<endrec>
+"","01","","","GetShortBillpayProduct","","InvoiceNumber","261533","0"<endrec>
+"","01","","","GetShortBillpayProduct","","TransLogId","261534","0"<endrec>
+"","01","","","GetShortBillpayProduct","","TxnStartTime","261538","0"<endrec>
+"","01","","","ValidateBillRefNum","","RechargedMSISDN","261540","0"<endrec>
+"","01","","","GOA_BillValidation","","BillReferenceNumber","261542","0"<endrec>
+"","01","","","GOA_BillValidation","","EncryptedParameters","261543","0"<endrec>
+"","01","","","GOA_BillConfirmation","","ResultCode","261544","0"<endrec>
+"","01","","","GOA_BillConfirmation","","ResultDesc","261545","0"<endrec>
+"","01","","","GOA_Charge","","RechargeMSISDN","261546","0"<endrec>
+"","01","","","GOA_Charge","","TransactionAmount","261547","0"<endrec>
+"","01","","","Refill","-1","externalData1","261548","0"<endrec>
+"902","01","","","Generic_IMTReceiveValidation_Request","-1","Receiver_ID_Document1_Data","261549","1"<endrec>
+"903","01","","","Generic_IMTReceiveValidation_Request","-1","Receiver_ID_Document1_Expiration_Date","261550","1"<endrec>
+"514","01","","","Generic_IMTReceiveValidation_Request","-1","Receiver_ID_Document1_Issue_Authority","261551","1"<endrec>
+"904","01","","","Generic_IMTReceiveValidation_Request","-1","Receiver_ID_Document1_Issue_Date","261552","1"<endrec>
+"905","01","","","Generic_IMTReceiveValidation_Request","-1","Receiver_ID_Document1_Issue_Place","261553","1"<endrec>
+"906","01","","","Generic_IMTReceiveValidation_Request","-1","Receiver_ID_Document1_Type","261554","1"<endrec>
+"509","01","","","Generic_IMTReceiveValidation_Request","-1","Receiver_Name","261555","1"<endrec>
+"907","01","","","Generic_IMTReceiveValidation_Request","-1","Receiver_Occupation","261556","1"<endrec>
+"505","01","","","Generic_IMTReceiveValidation_Request","-1","RoutingTag","261557","1"<endrec>
+"501","01","","","Generic_IMTReceiveValidation_Request","-1","Security_Login","261558","1"<endrec>
+"506","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_Channel_Identification","261559","1"<endrec>
+"909","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_Country_ISO_Code","261560","1"<endrec>
+"508","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_ID_Document_Expiration_Date","261561","1"<endrec>
+"504","01","","","Generic_IMTReceiveValidation_Request","-1","DestinationURI","261562","1"<endrec>
+"800","01","","","Generic_IMTReceiveValidation_Request","-1","HomeSend_TransactionID","261563","1"<endrec>
+"900","01","","","Generic_IMTReceiveValidation_Request","-1","Receiver_Addr_Line_1","261564","1"<endrec>
+"901","01","","","Generic_IMTReceiveValidation_Request","-1","Receiver_Date_Of_Birth","261565","1"<endrec>
+"511","01","","","Generic_IMTReceiveValidation_Request","-1","Receiver_Email_Address","261566","1"<endrec>
+"519","01","","","Generic_IMTReceiveValidation_Request","-1","Receiver_Place_Of_Birth","261567","1"<endrec>
+"120","01","","","Generic_IMTReceiveValidation_Response","-1","Destination_Currency_ISO_Code","261568","4"<endrec>
+"710","01","","","Generic_IMTReceiveValidation_Response","-1","HomeSend_TransactionID","261569","4"<endrec>
+"675","01","","","Generic_IMTReceiveValidation_Response","-1","MPesa_TransactionID","261570","4"<endrec>
+"524","01","","","Generic_IMTMoneyTransfer_Request","-1","Description","261571","1"<endrec>
+"504","01","","","Generic_IMTMoneyTransfer_Request","-1","DestinationURI","261572","1"<endrec>
+"119","01","","","Generic_IMTMoneyTransfer_Request","-1","Destination_Currency_ISO_Code","261573","1"<endrec>
+"118","01","","","Generic_IMTMoneyTransfer_Request","-1","Expected_Payout_Amount","261574","1"<endrec>
+"800","01","","","Generic_IMTMoneyTransfer_Request","-1","HomeSend_TransactionID","261575","1"<endrec>
+"503","01","","","Generic_IMTMoneyTransfer_Request","-1","MPesa_TransactionID","261576","1"<endrec>
+"526","01","","","Generic_IMTMoneyTransfer_Request","-1","Provisional_Token","261577","1"<endrec>
+"530","01","","","Generic_IMTMoneyTransfer_Request","-1","Purpose_Of_Remittance","261578","1"<endrec>
+"900","01","","","Generic_IMTMoneyTransfer_Request","-1","Receiver_Addr_Line_1","261579","1"<endrec>
+"901","01","","","Generic_IMTMoneyTransfer_Request","-1","Receiver_Date_Of_Birth","261580","1"<endrec>
+"511","01","","","Generic_IMTMoneyTransfer_Request","-1","Receiver_Email_Address","261581","1"<endrec>
+"903","01","","","Generic_IMTMoneyTransfer_Request","-1","Receiver_ID_Document1_Expiration_Date","261582","1"<endrec>
+"902","01","","","Generic_IMTMoneyTransfer_Request","-1","Receiver_ID_Document1_Data","261583","1"<endrec>
+"514","01","","","Generic_IMTMoneyTransfer_Request","-1","Receiver_ID_Document1_Issue_Authority","261584","1"<endrec>
+"904","01","","","Generic_IMTMoneyTransfer_Request","-1","Receiver_ID_Document1_Issue_Date","261585","1"<endrec>
+"905","01","","","Generic_IMTMoneyTransfer_Request","-1","Receiver_ID_Document1_Issue_Place","261586","1"<endrec>
+"906","01","","","Generic_IMTMoneyTransfer_Request","-1","Receiver_ID_Document1_Type","261587","1"<endrec>
+"509","01","","","Generic_IMTMoneyTransfer_Request","-1","Receiver_Name","261588","1"<endrec>
+"907","01","","","Generic_IMTMoneyTransfer_Request","-1","Receiver_Occupation","261589","1"<endrec>
+"519","01","","","Generic_IMTMoneyTransfer_Request","-1","Receiver_Place_Of_Birth","261590","1"<endrec>
+"525","01","","","Generic_IMTMoneyTransfer_Request","-1","ReportStatusToURI","261591","1"<endrec>
+"505","01","","","Generic_IMTMoneyTransfer_Request","-1","RoutingTag","261592","1"<endrec>
+"501","01","","","Generic_IMTMoneyTransfer_Request","-1","Security_Login","261593","1"<endrec>
+"548","01","","","Generic_IMTMoneyTransfer_Request","-1","Sender_Nationality_ISO_Code","261594","1"<endrec>
+"908","01","","","Generic_IMTMoneyTransfer_Request","-1","Sender_Addr_Line_1","261595","1"<endrec>
+"710","01","","","Generic_IMTMoneyTransfer_Response","-1","HomeSend_TransactionID","261596","4"<endrec>
+"675","01","","","Generic_IMTMoneyTransfer_Response","-1","MPesa_TransactionID","261597","4"<endrec>
+"705","01","","","Generic_IMTMoneyTransfer_Response","-1","Max_Completion_Date","261598","4"<endrec>
+"549","01","","","Generic_IMTTransferCancel_Request","-1","Cancellation_Reason_Code","261599","1"<endrec>
+"550","01","","","Generic_IMTTransferCancel_Request","-1","Cancellation_Reason_Msg","261600","1"<endrec>
+"2","01","","","Generic_IMTTransferCancel_Request","-1","HomeSend_TransactionID","261601","1"<endrec>
+"503","01","","","Generic_IMTTransferCancel_Request","-1","MPesa_TransactionID","261602","1"<endrec>
+"501","01","","","Generic_IMTTransferCancel_Request","-1","Security_Login","261603","1"<endrec>
+"505","01","","","Generic_IMTTransferCancel_Request","-1","RoutingTag","261604","1"<endrec>
+"110","01","","","Generic_IMTValidation_Request","-1","System_ID","261605","1"<endrec>
+"666745","01","","","Generic_IMTValidation_Request","-1","System_Password","261606","1"<endrec>
+"666753","01","","","Generic_IMTValidation_Request","-1","System_TimeStamp","261607","1"<endrec>
+"116","01","","","Generic_IMTValidation_Request","-1","Receiver_Mobile_Phone_Country_Code","261608","1"<endrec>
+"117","01","","","Generic_IMTValidation_Request","-1","Receiver_Mobile_Phone_National_Number","261609","1"<endrec>
+"134","01","","","Generic_IMTValidation_Request","-1","Receiver_First_Name","261610","1"<endrec>
+"135","01","","","Generic_IMTValidation_Request","-1","Receiver_Last_Name","261611","1"<endrec>
+"509","01","","","Generic_IMTValidation_Request","-1","Receiver_Name","261612","1"<endrec>
+"901","01","","","Generic_IMTValidation_Request","-1","Receiver_Date_Of_Birth","261613","1"<endrec>
+"900","01","","","Generic_IMTValidation_Request","-1","Receiver_Addr_Line_1","261614","1"<endrec>
+"137","01","","","Generic_IMTValidation_Request","-1","Receiver_City","261615","1"<endrec>
+"118","01","","","Generic_IMTValidation_Request","-1","Expected_Payout_Amount","261616","1"<endrec>
+"801","01","","","Generic_IMTValidation_Request","-1","Transaction_ID","261617","1"<endrec>
+"119","01","","","Generic_IMTValidation_Request","-1","Destination_Currency_ISO_Code","261618","1"<endrec>
+"122","01","","","Generic_IMTValidation_Request","-1","Mobile_Transfer_Date","261619","1"<endrec>
+"169","01","","","Generic_IMTValidation_Request","-1","Actual_Payout_Amount","261620","1"<endrec>
+"120","01","","","Generic_IMTValidation_Request","-1","Destination_Country_ISO_Code","261621","1"<endrec>
+"711","01","","","Generic_IMTValidation_Response","-1","Transaction_ID","261634","4"<endrec>
+"680","01","","","Generic_IMTValidation_Response","-1","Receiver_Name","261635","4"<endrec>
+"670","01","","","Generic_IMTValidation_Response","-1","Actual_Payout_Amount","261636","4"<endrec>
+"644","01","","","Generic_IMTValidation_Response","-1","Receiver_Last_Name","261637","4"<endrec>
+"643","01","","","Generic_IMTValidation_Response","-1","Receiver_First_Name","261638","4"<endrec>
+"633","01","","","Generic_IMTValidation_Response","-1","Mobile_Transfer_Date","261639","4"<endrec>
+"632","01","","","Generic_IMTValidation_Response","-1","Destination_Country_ISO_Code","261640","4"<endrec>
+"631","01","","","Generic_IMTValidation_Response","-1","Destination_Currency_ISO_Code","261641","4"<endrec>
+"630","01","","","Generic_IMTValidation_Response","-1","Expected_Payout_Amount","261642","4"<endrec>
+"629","01","","","Generic_IMTValidation_Response","-1","Receiver_Mobile_Phone_National_Number","261643","4"<endrec>
+"628","01","","","Generic_IMTValidation_Response","-1","Receiver_Mobile_Phone_Country_Code","261644","4"<endrec>
+"601","01","","","Generic_IMTValidation_Response","-1","Receiver_Date_Of_Birth","261645","4"<endrec>
+"628","01","","","Generic_IMTReceivemoney_Request","-1","Receiver_Mobile_Phone_Country_Code","261646","4"<endrec>
+"629","01","","","Generic_IMTReceivemoney_Request","-1","Receiver_Mobile_Phone_National_Number","261647","4"<endrec>
+"643","01","","","Generic_IMTReceivemoney_Request","-1","Receiver_First_Name","261648","4"<endrec>
+"644","01","","","Generic_IMTReceivemoney_Request","-1","Receiver_Last_Name","261649","4"<endrec>
+"680","01","","","Generic_IMTReceivemoney_Request","-1","Receiver_Name","261650","4"<endrec>
+"601","01","","","Generic_IMTReceivemoney_Request","-1","Receiver_Date_Of_Birth","261651","4"<endrec>
+"622","01","","","Generic_IMTReceivemoney_Request","-1","System_ID","261652","4"<endrec>
+"666754","01","","","Generic_IMTReceivemoney_Request","-1","System_TimeStamp","261654","4"<endrec>
+"666752","01","","","Generic_IMTReceivemoney_Request","-1","System_Password","261655","4"<endrec>
+"630","01","","","Generic_IMTReceivemoney_Request","-1","Expected_Payout_Amount","261656","4"<endrec>
+"711","01","","","Generic_IMTReceivemoney_Request","-1","Transaction_ID","261657","4"<endrec>
+"631","01","","","Generic_IMTReceivemoney_Request","-1","Destination_Currency_ISO_Code","261658","4"<endrec>
+"633","01","","","Generic_IMTReceivemoney_Request","-1","Mobile_Transfer_Date","261659","4"<endrec>
+"670","01","","","Generic_IMTReceivemoney_Request","-1","Actual_Payout_Amount","261660","4"<endrec>
+"632","01","","","Generic_IMTReceivemoney_Request","-1","Destination_Country_ISO_Code","261661","4"<endrec>
+"132","01","","","Generic_IMTReceivemoney_Response","-1","Sender_Mobile_Phone_Country_Code","261662","1"<endrec>
+"133","01","","","Generic_IMTReceivemoney_Response","-1","Sender_Mobile_Phone_National_Number","261663","1"<endrec>
+"125","01","","","Generic_IMTReceivemoney_Response","-1","Sender_First_Name","261664","1"<endrec>
+"126","01","","","Generic_IMTReceivemoney_Response","-1","Sender_Last_Name","261665","1"<endrec>
+"522","01","","","Generic_IMTReceivemoney_Response","-1","Sender_Name","261666","1"<endrec>
+"536","01","","","Generic_IMTReceivemoney_Response","-1","Sender_Date_Of_Birth","261667","1"<endrec>
+"116","01","","","Generic_IMTReceivemoney_Response","-1","Receiver_Mobile_Phone_Country_Code","261668","1"<endrec>
+"117","01","","","Generic_IMTReceivemoney_Response","-1","Receiver_Mobile_Phone_National_Number","261669","1"<endrec>
+"134","01","","","Generic_IMTReceivemoney_Response","-1","Receiver_First_Name","261670","1"<endrec>
+"135","01","","","Generic_IMTReceivemoney_Response","-1","Receiver_Last_Name","261671","1"<endrec>
+"509","01","","","Generic_IMTReceivemoney_Response","-1","Receiver_Name","261672","1"<endrec>
+"901","01","","","Generic_IMTReceivemoney_Response","-1","Receiver_Date_Of_Birth","261673","1"<endrec>
+"118","01","","","Generic_IMTReceivemoney_Response","-1","Expected_Payout_Amount","261674","1"<endrec>
+"801","01","","","Generic_IMTReceivemoney_Response","-1","Transaction_ID","261675","1"<endrec>
+"119","01","","","Generic_IMTReceivemoney_Response","-1","Destination_Currency_ISO_Code","261676","1"<endrec>
+"122","01","","","Generic_IMTReceivemoney_Response","-1","Mobile_Transfer_Date","261677","1"<endrec>
+"169","01","","","Generic_IMTReceivemoney_Response","-1","Actual_Payout_Amount","261678","1"<endrec>
+"120","01","","","Generic_IMTReceivemoney_Response","-1","Destination_Country_ISO_Code","261679","1"<endrec>
+"666752","01","","","Generic_IMTInquiry_Request","-1","System_Password","261681","4"<endrec>
+"666754","01","","","Generic_IMTInquiry_Request","-1","System_TimeStamp","261682","4"<endrec>
+"630","01","","","Generic_IMTInquiry_Request","-1","Expected_Payout_Amount","261683","4"<endrec>
+"711","01","","","Generic_IMTInquiry_Request","-1","Transaction_ID","261684","4"<endrec>
+"631","01","","","Generic_IMTInquiry_Request","-1","Destination_Currency_ISO_Code","261685","4"<endrec>
+"633","01","","","Generic_IMTInquiry_Request","-1","Mobile_Transfer_Date","261686","4"<endrec>
+"670","01","","","Generic_IMTInquiry_Request","-1","Actual_Payout_Amount","261687","4"<endrec>
+"632","01","","","Generic_IMTInquiry_Request","-1","Destination_Country_ISO_Code","261688","4"<endrec>
+"132","01","","","Generic_IMTInquiry_Response","-1","Sender_Mobile_Phone_Country_Code","261689","1"<endrec>
+"133","01","","","Generic_IMTInquiry_Response","-1","Sender_Mobile_Phone_National_Number","261690","1"<endrec>
+"125","01","","","Generic_IMTInquiry_Response","-1","Sender_First_Name","261691","1"<endrec>
+"126","01","","","Generic_IMTInquiry_Response","-1","Sender_Last_Name","261692","1"<endrec>
+"522","01","","","Generic_IMTInquiry_Response","-1","Sender_Name","261693","1"<endrec>
+"536","01","","","Generic_IMTInquiry_Response","-1","Sender_Date_Of_Birth","261694","1"<endrec>
+"116","01","","","Generic_IMTInquiry_Response","-1","Receiver_Mobile_Phone_Country_Code","261695","1"<endrec>
+"117","01","","","Generic_IMTInquiry_Response","-1","Receiver_Mobile_Phone_National_Number","261696","1"<endrec>
+"134","01","","","Generic_IMTInquiry_Response","-1","Receiver_First_Name","261697","1"<endrec>
+"135","01","","","Generic_IMTInquiry_Response","-1","Receiver_Last_Name","261698","1"<endrec>
+"509","01","","","Generic_IMTInquiry_Response","-1","Receiver_Name","261699","1"<endrec>
+"901","01","","","Generic_IMTInquiry_Response","-1","Receiver_Date_Of_Birth","261700","1"<endrec>
+"118","01","","","Generic_IMTInquiry_Response","-1","Expected_Payout_Amount","261701","1"<endrec>
+"801","01","","","Generic_IMTInquiry_Response","-1","Transaction_ID","261702","1"<endrec>
+"119","01","","","Generic_IMTInquiry_Response","-1","Destination_Currency_ISO_Code","261703","1"<endrec>
+"122","01","","","Generic_IMTInquiry_Response","-1","Mobile_Transfer_Date","261704","1"<endrec>
+"169","01","","","Generic_IMTInquiry_Response","-1","Actual_Payout_Amount","261705","1"<endrec>
+"120","01","","","Generic_IMTInquiry_Response","-1","Destination_Country_ISO_Code","261706","1"<endrec>
+"","01","","","C2BPaymentValidationRequest","-1","TransID","261707","4"<endrec>
+"","01","","","C2BPaymentValidationRequest","-1","TransType","261708","4"<endrec>
+"","01","","","C2BPaymentValidationRequest","-1","TransTime","261709","4"<endrec>
+"","01","","","C2BPaymentValidationRequest","-1","MinimumAmount","261710","4"<endrec>
+"","01","","","C2BPaymentValidationRequest","-1","ShortCode","261711","4"<endrec>
+"","01","","","C2BPaymentValidationRequest","-1","InvoiceNumber","261712","4"<endrec>
+"","01","","","C2BPaymentValidationRequest","-1","MSISDN","261713","4"<endrec>
+"","01","","","C2BPaymentValidationRequest","-1","KYCList","261714","4"<endrec>
+"","01","","","C2BPaymentConfirmationRequest","-1","TransType","261715","4"<endrec>
+"","01","","","C2BPaymentConfirmationRequest","-1","TransID","261716","4"<endrec>
+"","01","","","C2BPaymentConfirmationRequest","-1","TransTime","261717","4"<endrec>
+"","01","","","C2BPaymentConfirmationRequest","-1","MinimumAmount","261718","4"<endrec>
+"","01","","","C2BPaymentConfirmationRequest","-1","ShortCode","261719","4"<endrec>
+"","01","","","C2BPaymentConfirmationRequest","-1","InvoiceNumber","261720","4"<endrec>
+"","01","","","C2BPaymentConfirmationRequest","-1","MSISDN","261721","4"<endrec>
+"","01","","","C2BPaymentConfirmationRequest","-1","OrgAccountBalance","261722","4"<endrec>
+"","01","","","C2BPaymentConfirmationRequest","-1","ThirdPartyTransID","261723","4"<endrec>
+"","01","","","C2BPaymentConfirmationRequest","-1","KYCList","261724","4"<endrec>
+"","01","","","Dompetku_BillPayment","-1","Initiator","261725","0"<endrec>
+"","01","","","Dompetku_BillPayment","-1","Transid","261726","0"<endrec>
+"","01","","","C2BPaymentConfirmationRequest","-1","BillRefNumber","261727","4"<endrec>
+"","01","","","C2BPaymentValidationRequest","-1","BillRefNumber","261728","4"<endrec>
+"","01","","","Refill","-1","thirdPartyKey","261729","0"<endrec>
+"","01","","","CipikaReload","-1","subscriberNumber","261735","0"<endrec>
+"","01","","","CipikaReload","-1","originTransactionID","261736","0"<endrec>
+"","01","","","CipikaReload","-1","ShortCode","261737","0"<endrec>
+"","01","","","CipikaReload","-1","originTimeStamp","261738","0"<endrec>
+"","01","","","CipikaReload","-1","OrderId","261739","0"<endrec>
+"","01","","","CipikaReload","-1","transactionAmount","261740","0"<endrec>
+"","01","","","GOA_QueryKYCValidation","-1","ReceiverIdentifier","261746","4"<endrec>
+"","01","","","GOA_QueryKYCValidation","-1","Receiver_PersonalDetails_FirstName","261747","4"<endrec>
+"","01","","","GOA_QueryKYCValidation","-1","Receiver_PersonalDetails_LastName","261748","4"<endrec>
+"","01","","","GOA_QueryKYCValidation","-1","Receiver_PersonalDetails_DateofBirth","261749","4"<endrec>
+"","01","","","GOA_QueryKYCValidation","-1","Receiver_ContactDetails_PreferredNotificationLanguage","261750","4"<endrec>
+"","01","","","DirectPaymentFromBankPurchaseX","-1","processingCode","261763","4"<endrec>
+"","01","","","DirectPaymentFromBankPurchaseX","-1","MinimumAmount","261764","4"<endrec>
+"","01","","","DirectPaymentFromBankPurchaseX","-1","BasicAmount","261765","4"<endrec>
+"","01","","","DirectPaymentFromBankPurchaseX","-1","ShortCode","261766","4"<endrec>
+"","01","","","DirectPaymentFromBankPurchaseX","-1","AmountfromBank","261767","4"<endrec>
+"","01","","","DirectPaymentFromBankPurchaseX","-1","transmissionDateTime","261768","4"<endrec>
+"","01","","","DirectPaymentFromBankPurchaseX","-1","requestId","261769","4"<endrec>
+"","01","","","DirectPaymentFromBankPurchaseX","-1","debitAccountNumber","261770","4"<endrec>
+"","01","","","DirectPaymentFromBankPurchaseX","-1","debitFirstName","261771","4"<endrec>
+"","01","","","DirectPaymentFromBankPurchaseX","-1","debitMiddleName","261772","4"<endrec>
+"","01","","","DirectPaymentFromBankPurchaseX","-1","debitLastName","261773","4"<endrec>
+"","01","","","DirectPaymentFromBankRedeemX","-1","processingCode","261774","4"<endrec>
+"","01","","","DirectPaymentFromBankRedeemX","-1","MinimumAmount","261775","4"<endrec>
+"","01","","","DirectPaymentFromBankRedeemX","-1","BasicAmount","261776","4"<endrec>
+"","01","","","DirectPaymentFromBankRedeemX","-1","ShortCode","261777","4"<endrec>
+"","01","","","DirectPaymentFromBankRedeemX","-1","AmountfromBank","261778","4"<endrec>
+"","01","","","DirectPaymentFromBankRedeemX","-1","transmissionDateTime","261779","4"<endrec>
+"","01","","","DirectPaymentFromBankRedeemX","-1","requestId","261780","4"<endrec>
+"","01","","","DirectPaymentFromBankRedeemX","-1","debitAccountNumber","261781","4"<endrec>
+"","01","","","DirectPaymentFromBankRedeemX","-1","debitFirstName","261782","4"<endrec>
+"","01","","","DirectPaymentFromBankRedeemX","-1","debitMiddleName","261783","4"<endrec>
+"","01","","","DirectPaymentFromBankRedeemX","-1","debitLastName","261784","4"<endrec>
+"","01","","","DirectPaymentFromBankPurchaseX","-1","OrderId","261786","4"<endrec>
+"","01","","","DirectPaymentFromBankRedeemX","-1","OrderId","261787","4"<endrec>
+"","01","","","NotifyCPStoBank","-1","ShortCode","261793","4"<endrec>
+"","01","","","NotifyCPStoBank","-1","transmissionDateTime","261794","4"<endrec>
+"","01","","","NotifyCPStoBank","-1","debitAccountNumber","261795","4"<endrec>
+"","01","","","NotifyCPStoBank","-1","OrderId","261796","4"<endrec>
+"","01","","","NotifyCPStoBank","-1","BasicAmount","261797","4"<endrec>
+"","01","","","CPStoBankReverse","-1","ShortCode","261798","4"<endrec>
+"","01","","","CPStoBankReverse","-1","OrderId","261799","4"<endrec>
+"","01","","","CPStoBankReverse","-1","transmissionDateTime","261800","4"<endrec>
+"","01","","","Bill_Payment_Reversal","-1","RechargedMSISDN","261801","4"<endrec>
+"","01","","","Bill_Payment_Reversal","-1","ShortCode","261802","4"<endrec>
+"","01","","","Bill_Payment_Reversal","-1","BasicAmount","261803","4"<endrec>
+"","01","","","Bill_Payment_Reversal","-1","TransDate","261804","4"<endrec>
+"","01","","","Bill_Payment_Reversal","-1","KYCList","261805","4"<endrec>
+"","01","","","Bill_Payment_Reversal","-1","CurrencyCode","261806","4"<endrec>
+"","01","","","Bill_Payment_Reversal","-1","Msisdn","261807","4"<endrec>
+"","01","","","Bill_Payment_Reversal","-1","PayerShortCode","261808","4"<endrec>
+"","01","","","Bill_Payment_Reversal","-1","MinimumAmount","261809","4"<endrec>
+"","01","","","Bill_Payment_Reversal","-1","InvoiceNumber","261810","4"<endrec>
+"","01","","","Bill_Payment_Reversal","-1","TransLogId","261811","4"<endrec>
+"","01","","","Bill_Payment_Reversal","-1","ReferenceId","261812","4"<endrec>
+"","01","","","Bill_Payment_Reversal","-1","PayerOrganizationName","261813","4"<endrec>
+"","01","","","Bill_Payment_Reversal","-1","ServiceName","261814","4"<endrec>
+"5026","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_address_Country","261818","1"<endrec>
+"129","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_State","261819","1"<endrec>
+"128","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_City","261820","1"<endrec>
+"5023","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_address_ZIP","261821","1"<endrec>
+"666755","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_Branch_Code","261822","1"<endrec>
+"666757","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_Branch_Name","261823","1"<endrec>
+"5026","01","","","Generic_IMTMoneyTransfer_Request","-1","Sender_address_Country","261824","1"<endrec>
+"129","01","","","Generic_IMTMoneyTransfer_Request","-1","Sender_State","261825","1"<endrec>
+"128","01","","","Generic_IMTMoneyTransfer_Request","-1","Sender_City","261826","1"<endrec>
+"5023","01","","","Generic_IMTMoneyTransfer_Request","-1","Sender_address_ZIP","261827","1"<endrec>
+"666755","01","","","Generic_IMTMoneyTransfer_Request","-1","Sender_Branch_Code","261828","1"<endrec>
+"666757","01","","","Generic_IMTMoneyTransfer_Request","-1","Sender_Branch_Name","261829","1"<endrec>
+"666759","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_Location_Details","261830","1"<endrec>
+"666759","01","","","Generic_IMTMoneyTransfer_Request","-1","Sender_Location_Details","261831","1"<endrec>
+"","01","","","RequestDisableOfflineWallet","-1","trx_date","261840","4"<endrec>
+"","01","","","RequestDisableOfflineWallet","-1","msisdn","261841","4"<endrec>
+"","01","","","RequestDisableOfflineWallet","-1","trx_id","261842","4"<endrec>
+"","01","","","TopupOfflineWallet","-1","trx_date","261843","4"<endrec>
+"","01","","","TopupOfflineWallet","-1","msisdn","261844","4"<endrec>
+"","01","","","TopupOfflineWallet","-1","amount","261845","4"<endrec>
+"","01","","","TopupOfflineWallet","-1","trx_id","261846","4"<endrec>
+"","01","","","PostPaidBillPayment","-1","TransactionID","261850","0"<endrec>
+"","01","","","PostPaidBillPayment","-1","TransactionDate","261851","0"<endrec>
+"","01","","","PostPaidBillPayment","-1","BillNumber","261852","0"<endrec>
+"","01","","","PostPaidBillPayment","-1","BillType","261853","0"<endrec>
+"","01","","","PostPaidBillPayment","-1","Amount","261854","0"<endrec>
+"","01","","","PostPaidBillPayment","-1","ProductCode","261855","0"<endrec>
+"","01","","","PostPaidBillPayment","-1","DealerID","261856","0"<endrec>
+"","01","","","PostPaidBillPayment","-1","DealerName","261857","0"<endrec>
+"","01","","","PostPaidBillPayment","-1","OrganizationID","261858","0"<endrec>
+"","01","","","PostPaidBillPayment","-1","OrganizationName","261859","0"<endrec>
+"","01","","","PostPaidBillPayment","-1","SubsSwitchercriberNumber","261860","0"<endrec>
+"","01","","","PostPaidBillPayment","-1","ShortCode","261861","0"<endrec>
+"","01","","","Dompetku_CashIn","-1","Initiator","261882","0"<endrec>
+"","01","","","Dompetku_CashIn","-1","Transid","261883","0"<endrec>
+"","01","","","Dompetku_CashIn","-1","Amount","261884","0"<endrec>
+"","01","","","Dompetku_CashIn","-1","Currency","261885","0"<endrec>
+"","01","","","Dompetku_CashIn","-1","MSISDN","261886","0"<endrec>
+"","01","","","Dompetku_CashIn","-1","OrderId","261887","0"<endrec>
+"","01","","","Dompetku_CashIn","-1","ReasonTypeAlias","261888","0"<endrec>
+"","01","","","Dompetku_CashIn","-1","TransactionInitiatedDate","261889","0"<endrec>
+"","01","","","Dompetku_CashOut","-1","Initiator","261890","0"<endrec>
+"","01","","","Dompetku_CashOut","-1","InitiatorShortCode","261891","0"<endrec>
+"","01","","","Dompetku_CashOut","-1","Token","261892","0"<endrec>
+"","01","","","Dompetku_CashOut","-1","Amount","261893","0"<endrec>
+"","01","","","Dompetku_CashOut","-1","Currency","261894","0"<endrec>
+"","01","","","Dompetku_CashOut","-1","MSISDN","261895","0"<endrec>
+"","01","","","Dompetku_CashOut","-1","DompetkuPIN","261896","0"<endrec>
+"","01","","","Dompetku_CashOut","-1","OrderId","261897","0"<endrec>
+"","01","","","Dompetku_CashOut","-1","ReasonTypeAlias","261898","0"<endrec>
+"","01","","","Dompetku_CashOut","-1","TransactionInitiatedDate","261899","0"<endrec>
+"5178","01","","","Mobile Receive Money Request","-1","Receiver_Mobile_Phone_Identity_Data_Manipulated","261912","3"<endrec>
+"","01","","","GOA_BillValidation","","RequesterMSISDN","261981","0"<endrec>
+"124","01","","","Mobile Transaction Inquiry Request","-1","Mobile_Wallet_ID","262","4"<endrec>
+"","01","","","test4","","tttt","262116","0"<endrec>
+"","01","","","Send Money","","MSISDN","262117","0"<endrec>
+"","01","","","GOA_BillValidation","","Amount","262156","0"<endrec>
+"","01","","","GOABuyGoods","","Amount","262166","0"<endrec>
+"","01","","","GOA_Deposit","","Amount","262176","0"<endrec>
+"","01","","","GOA_Withdraw","","Amount","262177","0"<endrec>
+"","01","","","GOA_FSIActivate","","CustomerMSISDN","262178","0"<endrec>
+"","01","","","GOA_FSIDeposit","","Amount","262179","0"<endrec>
+"","01","","","GOAtest","","Amount","262186","0"<endrec>
+"","01","","","GOAtest","","BillAmount","262187","0"<endrec>
+"","01","","","GOATestCritical","","BillAmount","262196","0"<endrec>
+"","01","","","CashInFromLinkedBankAccount","-1","Amount","262200","4"<endrec>
+"","01","","","T24Reversal","-1","Amount","262201","4"<endrec>
+"","01","","","GOA_BillValidation","","InputPara_KT BusinessPayBill_TillMSISDN","262206","0"<endrec>
+"","01","","","GOA_BillValidation","","Reference","262207","0"<endrec>
+"","01","","","CashInFromLinkedBankAccount","-1","MSISDN","262214","4"<endrec>
+"","01","","","CashInFromLinkedBankAccount","-1","Currency","262215","4"<endrec>
+"","01","","","T24Reversal","-1","Currency","262216","4"<endrec>
+"","01","","","CashInFromLinkedBankAccount","-1","BankBranch","262217","4"<endrec>
+"","01","","","CashInFromLinkedBankAccount","-1","BankAccount","262218","4"<endrec>
+"","01","","","T24Reversal","-1","BankBranch","262219","4"<endrec>
+"","01","","","T24Reversal","-1","BankAccount","262220","4"<endrec>
+"","01","","","CashInFromLinkedBankAccount","-1","OrderId","262221","4"<endrec>
+"","01","","","T24Reversal","-1","OrderId","262222","4"<endrec>
+"","01","","","CashInFromLinkedBankCard","-1","Amount","262325","4"<endrec>
+"","01","","","CashInFromLinkedBankCard","-1","MSISDN","262326","4"<endrec>
+"","01","","","CashInFromLinkedBankCard","-1","Currency","262327","4"<endrec>
+"","01","","","CashInFromLinkedBankCard","-1","BankBranch","262328","4"<endrec>
+"","01","","","CashInFromLinkedBankCard","-1","BankAccount","262329","4"<endrec>
+"","01","","","CashInFromLinkedBankCard","-1","OrderId","262330","4"<endrec>
+"","01","","","CashInFromLinkedBankCard","-1","LinkedBankAccountType","262331","4"<endrec>
+"","01","","","TransferFromLinkedBankCard","-1","processingCode","262332","4"<endrec>
+"","01","","","TransferFromLinkedBankCard","-1","MinimumAmount","262333","4"<endrec>
+"","01","","","TransferFromLinkedBankCard","-1","BasicAmount","262334","4"<endrec>
+"","01","","","TransferFromLinkedBankCard","-1","ShortCode","262335","4"<endrec>
+"","01","","","TransferFromLinkedBankCard","-1","AmountfromBank","262336","4"<endrec>
+"","01","","","TransferFromLinkedBankCard","-1","transmissionDateTime","262337","4"<endrec>
+"","01","","","TransferFromLinkedBankCard","-1","requestId","262338","4"<endrec>
+"","01","","","TransferFromLinkedBankCard","-1","debitAccountNumber","262339","4"<endrec>
+"","01","","","TransferFromLinkedBankCard","-1","debitFirstName","262340","4"<endrec>
+"","01","","","TransferFromLinkedBankCard","-1","debitMiddleName","262341","4"<endrec>
+"","01","","","TransferFromLinkedBankCard","-1","debitLastName","262342","4"<endrec>
+"","01","","","TransferFromLinkedBankCard","-1","OrderId","262343","4"<endrec>
+"","01","","","TransferFromLinkedBankCard","-1","LinkedBankAccountType","262344","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Receiver_FirstName","262447","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Transaction number","262451","0"<endrec>
+"","01","","","Query AML Watchlist","-1","Reason type","262455","0"<endrec>
+"","01","","","CPStoBankAccount","","LinkedBankAccountType","262460","0"<endrec>
+"","01","","","BankAccounttoCPS","","LinkedBankAccountType","262462","0"<endrec>
+"","01","","","CashInFromLinkedBankAccount","-1","LinkedBankAccountType","262463","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Transaction Type","262467","0"<endrec>
+"","01","","","Query AML Watchlist","-1","Receiver_MiddleName","262468","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Receiver_LastName","262469","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Sender_FirstName","262470","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Sender_Middle Name","262471","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Sender_LastName","262472","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Receiver_Address_Line1","262491","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Receiver_Address_Street","262492","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Receiver_Address_City","262493","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Receiver_Address_ZIP","262494","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Receiver_Address_State","262495","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Sender_Address_Line1","262496","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Sender_Address_street","262497","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Sender_Address_state","262498","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Sender_Address_city","262499","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Sender_Address_ZIP","262500","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Receiver_MSISDN","262501","0"<endrec>
+"","01","","","Query AML Watchlist","-1","Sender_MSISDN","262502","0"<endrec>
+"","01","","","Query AML Watchlist","","Receiver_DateOfBirth","262504","0"<endrec>
+"","01","","","Query AML Watchlist","","Receiver_PlaceOfBirth","262514","0"<endrec>
+"","01","","","Query AML Watchlist","","Source_URI","262515","0"<endrec>
+"","01","","","GOA_QueryOrgKYCValidation","-1","ReceiverIdentifier","262521","4"<endrec>
+"","01","","","GOA_QueryOrgOperatorKYCValidation","-1","ReceiverIdentifier","262522","4"<endrec>
+"","01","","","GOA_QueryOrgOperatorKYCValidation","-1","Receiver_PersonalDetails_FirstName","262523","4"<endrec>
+"","01","","","Query AML Watchlist","","Sender_DateOfBirth","262524","0"<endrec>
+"","01","","","GOA_QueryOrgOperatorKYCValidation","-1","Receiver_PersonalDetails_DateofBirth","262525","4"<endrec>
+"","01","","","GOA_QueryOrgOperatorKYCValidation","-1","Receiver_IDDetails_IDNumber","262526","4"<endrec>
+"","01","","","GOA_QuerySPOperatorKYCValidation","-1","Receiver_PersonalDetails_FirstName","262529","4"<endrec>
+"","01","","","GOA_QuerySPOperatorKYCValidation","-1","Receiver_PersonalDetails_LastName","262530","4"<endrec>
+"","01","","","GOA_QuerySPOperatorKYCValidation","-1","Receiver_PersonalDetails_DateofBirth","262531","4"<endrec>
+"","01","","","GOA_QuerySPOperatorKYCValidation","-1","Receiver_IDDetails_IDNumber","262532","4"<endrec>
+"","01","","","GOA_QueryGroupKYCValidation","-1","ReceiverIdentifier","262533","4"<endrec>
+"","01","","","GOA_QueryGroupKYCValidation","-1","Receiver_IDDetails_IDNumber","262534","4"<endrec>
+"","01","","s","Query AML Watchlist","","Sender_address_Country","262535","0"<endrec>
+"","01","","","GOA_QueryBankKYCValidation","-1","Receiver_IDDetails_IDNumber","262536","4"<endrec>
+"","01","","s","Query AML Watchlist","","Receiver_Address_Country","262537","0"<endrec>
+"","01","","","GOA_QueryOrgOperatorUpdateKYCValidation","-1","ReceiverIdentifier","262539","4"<endrec>
+"","01","","","GOA_QueryOrgOperatorUpdateKYCValidation","-1","Receiver_PersonalDetails_FirstName","262540","4"<endrec>
+"","01","","","GOA_QueryOrgOperatorUpdateKYCValidation","-1","Receiver_PersonalDetails_DateofBirth","262542","4"<endrec>
+"","01","","","GOA_QueryKYCValidation","","Receiver_PersonalDetails_Email","262554","0"<endrec>
+"","01","","","GOA_QueryKYCValidation","","Receiver_IDDetails_IDEffectiveDate","262555","0"<endrec>
+"","01","","","GOA_QueryCustUpdateKYCValidation","","Receiver_IDDetails_IDStatus","262574","0"<endrec>
+"","01","","","GOA_QueryCustUpdateKYCValidation","","Receiver_IDDetails_IDType","262575","0"<endrec>
+"","01","","","GOA_QueryCustUpdateKYCValidation","","Receiver_IDDetails_IDNumber","262576","0"<endrec>
+"","01","","","GOA_QuerySPUpdateKYCValidation","-1","ReceiverIdentifier","262619","4"<endrec>
+"","01","","","GOA_QuerySPUpdateKYCValidation","-1","Receiver_IDDetails_IDNumber","262620","4"<endrec>
+"","01","","","GOA_QueryOrgOperatorUpdateKYCValidation","-1","OrderID","262623","4"<endrec>
+"","01","","","GOA_QueryOrgKYCValidation","-1","OrderID","262624","4"<endrec>
+"","01","","","GOA_QueryOrgOperatorKYCValidation","-1","OrderID","262625","4"<endrec>
+"","01","","","GOA_QuerySPOperatorKYCValidation","-1","OrderID","262626","4"<endrec>
+"","01","","","GOA_QueryGroupKYCValidation","-1","OrderID","262627","4"<endrec>
+"","01","","","GOA_QueryBankKYCValidation","-1","OrderID","262628","4"<endrec>
+"","01","","","GOA_QueryOrgUpdateKYCValidation","-1","OrderID","262629","4"<endrec>
+"","01","","","GOA_QuerySPOperatorUpdateKYCValidation","-1","OrderID","262630","4"<endrec>
+"","01","","","GOA_QueryGroupUpdateKYCValidation","-1","OrderID","262631","4"<endrec>
+"","01","","","GOA_QueryCustUpdateKYCValidation","-1","OrderID","262632","4"<endrec>
+"","01","","","GOA_QueryBankUpdateKYCValidation","-1","OrderID","262633","4"<endrec>
+"","01","","","GOA_QuerySPUpdateKYCValidation","-1","OrderID","262634","4"<endrec>
+"","01","","","GOA_QueryKYCValidation","-1","OrderID","262635","4"<endrec>
+"","01","","","GOA_QueryOrgOperatorKYCValidation","-1","Receiver_PersonalDetails_LastName","262636","4"<endrec>
+"","01","","","GOA_QueryOrgKYCValidation","-1","Receiver_IDDetails_IDNumber","262637","4"<endrec>
+"","01","","","GOA_QuerySPOperatorKYCValidation","-1","ReceiverIdentifier","262638","4"<endrec>
+"","01","","","GOA_QueryOrgOperatorUpdateKYCValidation","-1","Receiver_IDDetails_IDNumber","262639","4"<endrec>
+"","01","","","GOA_QuerySPOperatorUpdateKYCValidation","-1","ReceiverIdentifier","262640","4"<endrec>
+"","01","","","GOA_QuerySPOperatorUpdateKYCValidation","-1","Receiver_PersonalDetails_FirstName","262641","4"<endrec>
+"","01","","","GOA_QuerySPOperatorUpdateKYCValidation","-1","Receiver_PersonalDetails_LastName","262642","4"<endrec>
+"","01","","","GOA_QuerySPOperatorUpdateKYCValidation","-1","Receiver_PersonalDetails_DateofBirth","262643","4"<endrec>
+"","01","","","GOA_QuerySPOperatorUpdateKYCValidation","-1","Receiver_IDDetails_IDNumber","262644","4"<endrec>
+"","01","","","GOA_QueryGroupUpdateKYCValidation","-1","ReceiverIdentifier","262645","4"<endrec>
+"","01","","","GOA_QueryBankUpdateKYCValidation","-1","Receiver_IDDetails_IDNumber","262646","4"<endrec>
+"","01","","","GOA_QueryBankUpdateKYCValidation","-1","ReceiverIdentifier","262647","4"<endrec>
+"","01","","","GOA_QueryCustUpdateKYCValidation","-1","ReceiverIdentifier","262651","4"<endrec>
+"","01","","","GOA_QueryGroupUpdateKYCValidation","-1","Receiver_IDDetails_IDNumber","262652","4"<endrec>
+"","01","","","GOA_QueryBankKYCValidation","-1","ReceiverIdentifier","262653","4"<endrec>
+"","01","","","GOA_QueryOrgOperatorUpdateKYCValidation","-1","Receiver_PersonalDetails_LastName","262654","4"<endrec>
+"","01","","","GOA_QueryOrgUpdateKYCValidation","-1","ReceiverIdentifier","262655","4"<endrec>
+"","01","","","GOA_QueryOrgUpdateKYCValidation","-1","Receiver_IDDetails_IDNumber","262656","4"<endrec>
+"5129","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_ID_IssuedBy","262691","1"<endrec>
+"5028","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_ID_Number","262692","1"<endrec>
+"5032","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_ID_ExpiryDate","262693","1"<endrec>
+"5129","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_ID_IssuedBy","262694","1"<endrec>
+"5027","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_ID_Type","262695","1"<endrec>
+"666779","01","","","Generic_IMTReceiveValidation_Request","-1","Sender_ID_EffectiveDate","262696","1"<endrec>
+"666779","01","","","Generic_IMTMoneyTransfer_Request","-1","Sender_ID_EffectiveDate","262697","1"<endrec>
+"5028","01","","","Generic_IMTMoneyTransfer_Request","-1","Sender_ID_Number","262698","1"<endrec>
+"5032","01","","","Generic_IMTMoneyTransfer_Request","-1","Sender_ID_ExpiryDate","262699","1"<endrec>
+"5129","01","","","Generic_IMTMoneyTransfer_Request","-1","Sender_ID_IssuedBy","262700","1"<endrec>
+"5027","01","","","Generic_IMTMoneyTransfer_Request","-1","Send_ID_Type","262701","1"<endrec>
+"","01","","","Query AML Watchlist","-1","Receiver_DateOfBirth","262702","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Receiver_PlaceOfBirth","262703","4"<endrec>
+"","01","","","Query AML Watchlist","-1","Receiver_URI","262704","4"<endrec>
+"","01","","","OnePhaseAirtimeTransaction","-1","ShortCode","262705","4"<endrec>
+"","01","","","OnePhaseAirtimeTransaction","-1","OrderId","262706","4"<endrec>
+"","01","","","OnePhaseAirtimeTransaction","-1","RechargedMSISDN","262707","4"<endrec>
+"","01","","","OnePhaseAirtimeTransaction","-1","BasicAmount","262708","4"<endrec>
+"","01","","","OnePhaseAirtimeTransaction","-1","MinimumAmount","262709","4"<endrec>
+"","01","","","OnePhaseAirtimeTransaction","-1","CurrencyCode","262710","4"<endrec>
+"115","01","","","Mobile Transaction Inquiry Request","-1","External_Reference_Number","263","4"<endrec>
+"","01","","","GOA_QueryKYCValidation","","Receiver_PersonalDetails_PreferredContactPhoneNumber","263142","0"<endrec>
+"125","01","","","Mobile Transaction Inquiry Request","-1","Sender_First_Name","264","4"<endrec>
+"126","01","","","Mobile Transaction Inquiry Request","-1","Sender_Last_Name","265","4"<endrec>
+"134","01","","","Mobile Transaction Inquiry Request","-1","Receiver_First_Name","266","4"<endrec>
+"135","01","","","Mobile Transaction Inquiry Request","-1","Receiver_Last_Name","267","4"<endrec>
+"801","01","","","Mobile Transaction Inquiry Request","-1","Transaction_ID","268","4"<endrec>
+"122","01","","","Mobile Transaction Inquiry Request","-1","Mobile_Transfer_Date","269","4"<endrec>
+"123","01","","","Mobile Transaction Inquiry Request","-1","MTCN","270","4"<endrec>
+"109","01","","","Mobile Transaction Inquiry Reply","-1","Partner_ID","271","1"<endrec>
+"110","01","","","Mobile Transaction Inquiry Reply","-1","System_ID","272","1"<endrec>
+"111","01","","","Mobile Transaction Inquiry Reply","-1","System_Name","273","1"<endrec>
+"112","01","","","Mobile Transaction Inquiry Reply","-1","System_Version","274","1"<endrec>
+"113","01","","","Mobile Transaction Inquiry Reply","-1","System_IP_Address","275","1"<endrec>
+"114","01","","","Mobile Transaction Inquiry Reply","-1","Connector_ID","276","1"<endrec>
+"124","01","","","Mobile Transaction Inquiry Reply","-1","Mobile_Wallet_ID","277","1"<endrec>
+"115","01","","","Mobile Transaction Inquiry Reply","-1","External_Reference_Number","278","1"<endrec>
+"170","01","","","Mobile Transaction Inquiry Reply","-1","Information_Message","279","1"<endrec>
+"125","01","","","Mobile Transaction Inquiry Reply","-1","Sender_First_Name","280","1"<endrec>
+"126","01","","","Mobile Transaction Inquiry Reply","-1","Sender_Last_Name","281","1"<endrec>
+"132","01","","","Mobile Transaction Inquiry Reply","-1","Sender_Mobile_Phone_Country_Code","282","1"<endrec>
+"133","01","","","Mobile Transaction Inquiry Reply","-1","Sender_Mobile_Phone_National_Number","283","1"<endrec>
+"134","01","","","Mobile Transaction Inquiry Reply","-1","Receiver_First_Name","284","1"<endrec>
+"135","01","","","Mobile Transaction Inquiry Reply","-1","Receiver_Last_Name","285","1"<endrec>
+"116","01","","","Mobile Transaction Inquiry Reply","-1","Receiver_Mobile_Phone_Country_Code","286","1"<endrec>
+"117","01","","","Mobile Transaction Inquiry Reply","-1","Receiver_Mobile_Phone_National_Number","287","1"<endrec>
+"166","07","","","Mobile Transaction Inquiry Reply","-1","Origination_Principal_Amount","288","1"<endrec>
+"167","01","","","Mobile Transaction Inquiry Reply","-1","Origination_Currency_ISO_Code","289","1"<endrec>
+"168","01","","","Mobile Transaction Inquiry Reply","-1","Origination_Country_ISO_Code","290","1"<endrec>
+"118","07","","","Mobile Transaction Inquiry Reply","-1","Expected_Payout_Amount","291","1"<endrec>
+"119","01","","","Mobile Transaction Inquiry Reply","-1","Destination_Currency_ISO_Code","292","1"<endrec>
+"169","07","","","Mobile Transaction Inquiry Reply","-1","Actual_Payout_Amount","293","1"<endrec>
+"120","01","","","Mobile Transaction Inquiry Reply","-1","Destination_Country_ISO_Code","294","1"<endrec>
+"171","01","","","Mobile Transaction Inquiry Reply","-1","Expected_Payout_Method","295","1"<endrec>
+"801","01","","","Mobile Transaction Inquiry Reply","-1","Transaction_ID","296","1"<endrec>
+"122","01","","","Mobile Transaction Inquiry Reply","-1","Mobile_Transfer_Date","297","1"<endrec>
+"123","01","","","Mobile Transaction Inquiry Reply","-1","MTCN","298","1"<endrec>
+"910","01","","","Mobile Transaction Inquiry Reply","-1","Transaction_State","299","1"<endrec>
+"710","01","","","RTEWS_StatusReport_Request","-1","HomeSend_TransactionID","300","4"<endrec>
+"675","01","","","RTEWS_StatusReport_Request","-1","MPesa_TransactionID","301","4"<endrec>
+"688","01","","","RTEWS_StatusReport_Request","-1","Provisional_Token","302","4"<endrec>
+"687","01","","","RTEWS_StatusReport_Request","-1","ReportStatusToURI","303","4"<endrec>
+"631","01","","","TEWS_AccountInformation_Response","-1","Destination_Currency_ISO_Code","304","4"<endrec>
+"710","01","","","TEWS_AccountInformation_Response","-1","HomeSend_TransactionID","305","4"<endrec>
+"675","01","","","TEWS_AccountInformation_Response","-1","MPesa_TransactionID","306","4"<endrec>
+"504","01","","","TEWS_AccountInformation_Request","-1","DestinationURI","307","1"<endrec>
+"800","01","","","TEWS_AccountInformation_Request","-1","HomeSend_TransactionID","308","1"<endrec>
+"900","01","","","TEWS_AccountInformation_Request","-1","Receiver_Addr_Line_1","309","1"<endrec>
+"901","01","","","TEWS_AccountInformation_Request","-1","Receiver_Date_Of_Birth","310","1"<endrec>
+"511","01","","","TEWS_AccountInformation_Request","-1","Receiver_Email_Address","311","1"<endrec>
+"902","01","","","TEWS_AccountInformation_Request","-1","Receiver_ID_Document1_Data","312","1"<endrec>
+"903","01","","","TEWS_AccountInformation_Request","-1","Receiver_ID_Document1_Expiration_Date","313","1"<endrec>
+"514","01","","","TEWS_AccountInformation_Request","-1","Receiver_ID_Document1_Issue_Authority","314","1"<endrec>
+"904","01","","","TEWS_AccountInformation_Request","-1","Receiver_ID_Document1_Issue_Date","315","1"<endrec>
+"905","01","","","TEWS_AccountInformation_Request","-1","Receiver_ID_Document1_Issue_Place","316","1"<endrec>
+"906","01","","","TEWS_AccountInformation_Request","-1","Receiver_ID_Document1_Type","317","1"<endrec>
+"509","01","","","TEWS_AccountInformation_Request","-1","Receiver_Name","318","1"<endrec>
+"907","01","","","TEWS_AccountInformation_Request","-1","Receiver_Occupation","319","1"<endrec>
+"519","01","","","TEWS_AccountInformation_Request","-1","Receiver_Place_Of_Birth","320","1"<endrec>
+"505","01","","","TEWS_AccountInformation_Request","-1","RoutingTag","321","1"<endrec>
+"501","01","","","TEWS_AccountInformation_Request","-1","Security_Login","322","1"<endrec>
+"506","01","","","TEWS_AccountInformation_Request","-1","Sender_Channel_Identification","324","1"<endrec>
+"909","01","","","TEWS_AccountInformation_Request","-1","Sender_Country_ISO_Code","325","1"<endrec>
+"508","01","","","TEWS_AccountInformation_Request","-1","Sender_ID_Document_Expiration_Date","326","1"<endrec>
+"549","01","","","TEWS_Cancellation_Request","-1","Cancellation_Reason_Code","327","1"<endrec>
+"550","01","","","TEWS_Cancellation_Request","-1","Cancellation_Reason_Msg","328","1"<endrec>
+"2","01","","","TEWS_Cancellation_Request","-1","HomeSend_TransactionID","329","1"<endrec>
+"503","01","","","TEWS_Cancellation_Request","-1","MPesa_TransactionID","330","1"<endrec>
+"505","01","","","TEWS_Cancellation_Request","-1","RoutingTag","331","1"<endrec>
+"501","01","","","TEWS_Cancellation_Request","-1","Security_Login","332","1"<endrec>
+"710","01","","","TEWS_Credit_Response","-1","HomeSend_TransactionID","334","4"<endrec>
+"675","01","","","TEWS_Credit_Response","-1","MPesa_TransactionID","335","4"<endrec>
+"705","01","","","TEWS_Credit_Response","-1","Max_Completion_Date","336","4"<endrec>
+"524","01","","","TEWS_Credit_Request","-1","Description","337","1"<endrec>
+"504","01","","","TEWS_Credit_Request","-1","DestinationURI","338","1"<endrec>
+"119","01","","","TEWS_Credit_Request","-1","Destination_Currency_ISO_Code","339","1"<endrec>
+"118","07","","","TEWS_Credit_Request","-1","Expected_Payout_Amount","340","1"<endrec>
+"800","01","","","TEWS_Credit_Request","-1","HomeSend_TransactionID","341","1"<endrec>
+"503","01","","","TEWS_Credit_Request","-1","MPesa_TransactionID","342","1"<endrec>
+"526","01","","","TEWS_Credit_Request","-1","Provisional_Token","343","1"<endrec>
+"530","01","","","TEWS_Credit_Request","-1","Purpose_Of_Remittance","344","1"<endrec>
+"900","01","","","TEWS_Credit_Request","-1","Receiver_Addr_Line_1","345","1"<endrec>
+"901","01","","","TEWS_Credit_Request","-1","Receiver_Date_Of_Birth","346","1"<endrec>
+"511","01","","","TEWS_Credit_Request","-1","Receiver_Email_Address","347","1"<endrec>
+"903","01","","","TEWS_Credit_Request","-1","Receiver_ID_Document1_Expiration_Date","348","1"<endrec>
+"902","01","","","TEWS_Credit_Request","-1","Receiver_ID_Document1_Data","349","1"<endrec>
+"514","01","","","TEWS_Credit_Request","-1","Receiver_ID_Document1_Issue_Authority","350","1"<endrec>
+"904","01","","","TEWS_Credit_Request","-1","Receiver_ID_Document1_Issue_Date","351","1"<endrec>
+"905","01","","","TEWS_Credit_Request","-1","Receiver_ID_Document1_Issue_Place","352","1"<endrec>
+"906","01","","","TEWS_Credit_Request","-1","Receiver_ID_Document1_Type","353","1"<endrec>
+"509","01","","","TEWS_Credit_Request","-1","Receiver_Name","354","1"<endrec>
+"907","01","","","TEWS_Credit_Request","-1","Receiver_Occupation","355","1"<endrec>
+"519","01","","","TEWS_Credit_Request","-1","Receiver_Place_Of_Birth","356","1"<endrec>
+"525","01","","","TEWS_Credit_Request","-1","ReportStatusToURI","357","1"<endrec>
+"505","01","","","TEWS_Credit_Request","-1","RoutingTag","358","1"<endrec>
+"501","01","","","TEWS_Credit_Request","-1","Security_Login","359","1"<endrec>
+"548","01","","","TEWS_Credit_Request","-1","Sender_Nationality_ISO_Code","361","1"<endrec>
+"908","01","","","TEWS_Credit_Request","-1","Sender_Addr_Line_1","362","1"<endrec>
+"506","01","","","TEWS_Credit_Request","-1","Sender_Channel_Identification","363","1"<endrec>
+"909","01","","","TEWS_Credit_Request","-1","Sender_Country_ISO_Code","364","1"<endrec>
+"536","01","","","TEWS_Credit_Request","-1","Sender_Date_Of_Birth","365","1"<endrec>
+"538","01","","","TEWS_Credit_Request","-1","Sender_Email_Address","366","1"<endrec>
+"532","01","","","TEWS_Credit_Request","-1","Sender_ID_Document_Data","367","1"<endrec>
+"508","01","","","TEWS_Credit_Request","-1","Sender_ID_Document_Expiration_Date","368","1"<endrec>
+"533","01","","","TEWS_Credit_Request","-1","Sender_ID_Document_Issue_Authority","369","1"<endrec>
+"535","01","","","TEWS_Credit_Request","-1","Sender_ID_Document_Issue_Date","370","1"<endrec>
+"534","01","","","TEWS_Credit_Request","-1","Sender_ID_Document_Issue_Place","371","1"<endrec>
+"531","01","","","TEWS_Credit_Request","-1","Sender_ID_Document_Type","372","1"<endrec>
+"522","01","","","TEWS_Credit_Request","-1","Sender_Name","373","1"<endrec>
+"539","01","","","TEWS_Credit_Request","-1","Sender_Occupation","374","1"<endrec>
+"537","01","","","TEWS_Credit_Request","-1","Sender_Place_Of_Birth","375","1"<endrec>
+"521","01","","","TEWS_Credit_Request","-1","SourceURI","376","1"<endrec>
+"","01","","","GOA_QueryOrgOperatorUpdateKYCValidation","-1","ReferenceData_USERID","4","4"<endrec>
+"","01","","","GOA_QueryOrgOperatorUpdateKYCValidation","-1","ReferenceData_SHORTCODE","5","4"<endrec>
+"675","01","","","HWS_AdviceOfCharge_Request","-1","MPesa_TransactionID","5000","4"<endrec>
+"5001","01","","","HWS_AdviceOfCharge_Request","-1","Source_URI","5001","4"<endrec>
+"5002","01","","","HWS_AdviceOfCharge_Request","-1","DestinationURI","5002","4"<endrec>
+"5003","07","","","HWS_AdviceOfCharge_Request","-1","Principle_Amount","5003","4"<endrec>
+"5004","01","","","HWS_AdviceOfCharge_Request","-1","Sender_Currency","5004","4"<endrec>
+"5005","01","","","HWS_AdviceOfCharge_Request","-1","Routing_Tag","5005","4"<endrec>
+"5038","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_Name_ProvidedbySender","5006","4"<endrec>
+"5039","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_Address_Street","5007","4"<endrec>
+"5040","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_Address_City","5008","4"<endrec>
+"5041","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_Address_ZIP","5009","4"<endrec>
+"5042","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_Address_State","5010","4"<endrec>
+"5043","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_Nationality","5011","4"<endrec>
+"5044","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_Address_Country","5012","4"<endrec>
+"5045","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_TelephoneNumber","5013","4"<endrec>
+"5046","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_Email","5014","4"<endrec>
+"5047","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_ID_Type","5015","4"<endrec>
+"5048","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_ID_Number","5016","4"<endrec>
+"5049","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_ID_IssuedBy","5017","4"<endrec>
+"5050","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_ID_IssuedAt","5018","4"<endrec>
+"5051","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_ID_IssuedDate","5019","4"<endrec>
+"5052","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_ID_ExpiryDate","5020","4"<endrec>
+"5053","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_Birth_Date","5021","4"<endrec>
+"5054","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_Birth_Place","5022","4"<endrec>
+"5055","01","","","HWS_AdviceOfCharge_Request","-1","Beneficiary_Occupation","5023","4"<endrec>
+"503","01","","","HWS_AdviceOfCharge_Response","-1","MPesa_TransactionID","5024","1"<endrec>
+"800","01","","","HWS_AdviceOfCharge_Response","-1","HomeSend_TransactionID","5025","1"<endrec>
+"5108","07","","","HWS_AdviceOfCharge_Response","-1","HomeSend_Charge_Amount","5026","1"<endrec>
+"5104","01","","","HWS_AdviceOfCharge_Response","-1","Sender_Currency","5027","1"<endrec>
+"5110","07","","","HWS_AdviceOfCharge_Response","-1","Total_Amount","5028","1"<endrec>
+"5112","07","","","HWS_AdviceOfCharge_Response","-1","Received Amount","5029","1"<endrec>
+"5103","07","","","HWS_AdviceOfCharge_Response","-1","Principle_Amount","5030","1"<endrec>
+"5116","05","","","HWS_AdviceOfCharge_Response","-1","VOC_ExpirationDate","5031","1"<endrec>
+"5158","01","","","HWS_AdviceOfCharge_Response","-1","Payment_Channel","5032","1"<endrec>
+"5159","01","","","HWS_AdviceOfCharge_Response","-1","Beneficiary_Name_ProvidedbySPB","5033","1"<endrec>
+"675","01","","","HWS_Remittance_Request","-1","MPesa_TransactionID","5034","4"<endrec>
+"710","01","","","HWS_Remittance_Request","-1","HomeSend_TransactionID","5035","4"<endrec>
+"5001","01","","","HWS_Remittance_Request","-1","Source_URI","5036","4"<endrec>
+"5002","01","","","HWS_Remittance_Request","-1","DestinationURI","5037","4"<endrec>
+"5003","07","","","HWS_Remittance_Request","-1","Principle_Amount","5038","4"<endrec>
+"5004","01","","","HWS_Remittance_Request","-1","Sender_Currency","5039","4"<endrec>
+"5005","01","","","HWS_Remittance_Request","-1","Routing_Tag","5040","4"<endrec>
+"685","01","","","HWS_Remittance_Request","-1","Sender_Name","5041","4"<endrec>
+"5021","01","","","HWS_Remittance_Request","-1","Sender_address_street","5042","4"<endrec>
+"5022","01","","","HWS_Remittance_Request","-1","Sender_address_city","5043","4"<endrec>
+"5023","01","","","HWS_Remittance_Request","-1","Sender_address_ZIP","5044","4"<endrec>
+"5024","01","","","HWS_Remittance_Request","-1","Sender_address_state","5045","4"<endrec>
+"5025","01","","","HWS_Remittance_Request","-1","Sender_Nationality","5046","4"<endrec>
+"5026","01","","","HWS_Remittance_Request","-1","Sender_address_Country","5047","4"<endrec>
+"5027","01","","","HWS_Remittance_Request","-1","Sender_ID_Type","5048","4"<endrec>
+"5028","01","","","HWS_Remittance_Request","-1","Sender_ID_Number","5049","4"<endrec>
+"5029","01","","","HWS_Remittance_Request","-1","Sender_ID_IssuedBy","5050","4"<endrec>
+"5030","01","","","HWS_Remittance_Request","-1","Sender_ID_IssuedAt","5051","4"<endrec>
+"5031","01","","","HWS_Remittance_Request","-1","Sender_ID_IssuedDate","5052","4"<endrec>
+"5032","01","","","HWS_Remittance_Request","-1","Sender_ID_ExpiryDate","5053","4"<endrec>
+"5033","01","","","HWS_Remittance_Request","-1","Sender_Birth_Date","5054","4"<endrec>
+"5034","01","","","HWS_Remittance_Request","-1","Sender_Birth_Place","5055","4"<endrec>
+"5035","01","","","HWS_Remittance_Request","-1","Sender_Email","5056","4"<endrec>
+"699","01","","","HWS_Remittance_Request","-1","Sender_Occupation","5057","4"<endrec>
+"5037","01","","","HWS_Remittance_Request","-1","Sender_BankCode","5058","4"<endrec>
+"5038","01","","","HWS_Remittance_Request","-1","Beneficiary_Name_ProvidedbySender","5059","4"<endrec>
+"5039","01","","","HWS_Remittance_Request","-1","Beneficiary_Address_Street","5060","4"<endrec>
+"5040","01","","","HWS_Remittance_Request","-1","Beneficiary_Address_City","5061","4"<endrec>
+"5041","01","","","HWS_Remittance_Request","-1","Beneficiary_Address_ZIP","5062","4"<endrec>
+"5042","01","","","HWS_Remittance_Request","-1","Beneficiary_Address_State","5063","4"<endrec>
+"5043","01","","","HWS_Remittance_Request","-1","Beneficiary_Nationality","5064","4"<endrec>
+"5044","01","","","HWS_Remittance_Request","-1","Beneficiary_Address_Country","5065","4"<endrec>
+"5045","01","","","HWS_Remittance_Request","-1","Beneficiary_TelephoneNumber","5066","4"<endrec>
+"5046","01","","","HWS_Remittance_Request","-1","Beneficiary_Email","5067","4"<endrec>
+"5047","01","","","HWS_Remittance_Request","-1","Beneficiary_ID_Type","5068","4"<endrec>
+"5048","01","","","HWS_Remittance_Request","-1","Beneficiary_ID_Number","5069","4"<endrec>
+"5049","01","","","HWS_Remittance_Request","-1","Beneficiary_ID_IssuedBy","5070","4"<endrec>
+"5050","01","","","HWS_Remittance_Request","-1","Beneficiary_ID_IssuedAt","5071","4"<endrec>
+"5051","01","","","HWS_Remittance_Request","-1","Beneficiary_ID_IssuedDate","5072","4"<endrec>
+"5052","01","","","HWS_Remittance_Request","-1","Beneficiary_ID_ExpiryDate","5073","4"<endrec>
+"5053","01","","","HWS_Remittance_Request","-1","Beneficiary_Birth_Date","5074","4"<endrec>
+"5054","01","","","HWS_Remittance_Request","-1","Beneficiary_Birth_Place","5075","4"<endrec>
+"5055","01","","","HWS_Remittance_Request","-1","Beneficiary_Occupation","5076","4"<endrec>
+"5056","01","","","HWS_Remittance_Request","-1","Remittance_Purpose","5077","4"<endrec>
+"503","01","","","HWS_Remittance_Response","-1","MPesa_TransactionID","5078","1"<endrec>
+"800","01","","","HWS_Remittance_Response","-1","HomeSend_TransactionID","5079","1"<endrec>
+"5108","07","","","HWS_Remittance_Response","-1","HomeSend_Charge_Amount","5080","1"<endrec>
+"5104","01","","","HWS_Remittance_Response","-1","Sender_Currency","5081","1"<endrec>
+"5110","07","","","HWS_Remittance_Response","-1","Total_Amount","5082","1"<endrec>
+"5112","07","","","HWS_Remittance_Response","-1","Received Amount","5083","1"<endrec>
+"5103","07","","","HWS_Remittance_Response","-1","Principle_Amount","5084","1"<endrec>
+"5117","05","","","HWS_Remittance_Response","-1","MaxCompletionDate","5085","1"<endrec>
+"5118","01","","","HWS_Remittance_Response","-1","HomeSend_Transaction_State","5086","1"<endrec>
+"5119","01","","","HWS_Remittance_Response","-1","HomeSend_Transaction_StateLabel","5087","1"<endrec>
+"5157","01","","","HWS_Remittance_Response","-1","Transaction_Code","5088","1"<endrec>
+"5158","01","","","HWS_Remittance_Response","-1","Payment_Channel","5089","1"<endrec>
+"5159","01","","","HWS_Remittance_Response","-1","Beneficiary_Name_ProvidedbySPB","5090","1"<endrec>
+"675","01","","","HWS_Status_Request","-1","MPesa_TransactionID","5091","4"<endrec>
+"710","01","","","HWS_Status_Request","-1","HomeSend_TransactionID","5092","4"<endrec>
+"503","01","","","HWS_Status_Response","-1","MPesa_TransactionID","5093","1"<endrec>
+"800","01","","","HWS_Status_Response","-1","HomeSend_TransactionID","5094","1"<endrec>
+"5157","01","","","HWS_Status_Response","-1","Transaction_Code","5095","1"<endrec>
+"5159","01","","","HWS_Status_Response","-1","Beneficiary_Name_ProvidedbySPB","5096","1"<endrec>
+"5117","01","","","HWS_Status_Response","-1","MaxCompletionDate","5097","1"<endrec>
+"105","01","","","IMT_Request_Quote","-1","Recipient First Name","5180","1"<endrec>
+"106","01","","","IMT_Request_Quote","-1","Recipient Last Name","5181","1"<endrec>
+"107","01","","","IMT_Request_Quote","-1","Recipient MSISDN","5182","1"<endrec>
+"105","01","","","IMT_Transfer_Abroad","-1","Recipient First Name","5185","1"<endrec>
+"106","01","","","IMT_Transfer_Abroad","-1","Recipient Last Name","5186","1"<endrec>
+"107","01","","","IMT_Transfer_Abroad","-1","Recipient MSISDN","5187","1"<endrec>
+"5103","07","","","IMT_Request_Quote","-1","Principle_Amount","5190","1"<endrec>
+"5103","07","","","IMT_Transfer_Abroad","-1","Principle_Amount","5191","1"<endrec>
+"5113","01","","","HWS_AdviceOfCharge_Response","-1","Receiver_currency","5300","1"<endrec>
+"5113","01","","","HWS_Remittance_Response","-1","Receiver_currency","5301","1"<endrec>
+"","01","","","GOA_QueryOrgOperatorKYCValidation","-1","ReferenceData_USERID","6","4"<endrec>
+"","01","","","GOA_OnlineCtrlAccountTransfer","","OrderId","6000","0"<endrec>
+"","01","","","GOA_OnlineCtrlAccountTransfer","","ReasonTypeAlias","6001","0"<endrec>
+"","01","","","GOA_OnlineCtrlAccountTransfer","","ShortCode","6002","0"<endrec>
+"","01","","","GOA_OnlineCtrlAccountTransfer","","Recipient","6003","0"<endrec>
+"","01","","","GOA_OnlineCtrlAccountTransfer","","RecipientShortCode","6004","0"<endrec>
+"","01","","","GOA_OnlineCtrlAccountTransfer","","Amount","6005","0"<endrec>
+"","01","","","GOA_OnlineCtrlAccountTransfer","","Currency","6006","0"<endrec>
+"","01","","","GOA_OnlineCtrlAccountTransfer","","SendingTime","6007","0"<endrec>
+"","01","","","BankAccounttoCPS","","Amount","601","0"<endrec>
+"","01","","","SSPConfirmationReplacePackage","-1","ACTION","6012","0"<endrec>
+"","01","","","BankAccounttoCPS","","BankAccountNo","602","0"<endrec>
+"","01","","","BankAccounttoCPS","","Currency","604","0"<endrec>
+"","01","","","BankAccounttoCPS","","OrderId","607","0"<endrec>
+"","01","","","BankAccounttoCPS","","ReasonTypeAlias","608","0"<endrec>
+"","01","","","BankAccounttoCPS","","SendingIdentityID","609","0"<endrec>
+"","01","","","BankAccounttoCPS","","SendingIdentityType","610","0"<endrec>
+"","01","","","SSPConfirmationReplacePackage","-1","ShortCode","6100","0"<endrec>
+"","01","","","SSPConfirmationReplacePackage","-1","CLIENTID","6101","0"<endrec>
+"","01","","","SSPConfirmationReplacePackage","-1","DATETIME","6102","0"<endrec>
+"","01","","","SSPConfirmationReplacePackage","-1","TRANSID","6104","0"<endrec>
+"","01","","","SSPConfirmationReplacePackage","-1","OrderId","6105","0"<endrec>
+"","01","","","SSPConfirmationReplacePackage","-1","MSISDN","6106","0"<endrec>
+"","01","","","SSPConfirmationReplacePackage","-1","SERVICENAME","6107","0"<endrec>
+"","01","","","SSPConfirmationReplacePackage","-1","SERVICEID","6108","0"<endrec>
+"","01","","","SSPConfirmationReplacePackage","-1","IMSI","6109","0"<endrec>
+"","01","","","BankAccounttoCPS","","SendingTime","611","0"<endrec>
+"","01","","","SSPConfirmationReplacePackage","-1","SERVICETYPE","6110","0"<endrec>
+"","01","","","SSPConfirmationReplacePackage","-1","PARAM","6111","0"<endrec>
+"","01","","","BankAccounttoCPS","","ShortCode","6112","0"<endrec>
+"","01","","","CPStoBankAccount","","Amount","6116","0"<endrec>
+"","01","","","CPStoBankAccount","","BankAccountNo","6117","0"<endrec>
+"","01","","","CPStoBankAccount","","Currency","6119","0"<endrec>
+"","01","","","BankAccounttoCPS","","ShortCode","612","0"<endrec>
+"","01","","","CPStoBankAccount","","OrderId","6122","0"<endrec>
+"","01","","","CPStoBankAccount","","ReasonTypeAlias","6123","0"<endrec>
+"","01","","","CPStoBankAccount","","SendingIdentityID","6124","0"<endrec>
+"","01","","","CPStoBankAccount","","SendingIdentityType","6125","0"<endrec>
+"","01","","","CPStoBankAccount","","SendingTime","6126","0"<endrec>
+"","01","","","CPStoBankAccount","","ShortCode","6127","0"<endrec>
+"","01","","","Dompetku_BillPayment","-1","PaymentType","6130","0"<endrec>
+"","01","","","Dompetku_BillPayment","-1","BillIssuerName","6131","0"<endrec>
+"","01","","","Dompetku_BillPayment","-1","Function","6132","0"<endrec>
+"","01","","","Dompetku_BillPayment","-1","Reference","6133","0"<endrec>
+"","01","","","Dompetku_BillPayment","-1","BillNumber","6134","0"<endrec>
+"","01","","","Dompetku_BillPayment","-1","MSISDN","6135","0"<endrec>
+"","01","","","Dompetku_BillPayment","-1","DMPin","6136","0"<endrec>
+"","01","","","Dompetku_BillPayment","-1","BillAmount","6137","0"<endrec>
+"","01","","","Refill","-1","OrderId","6138","0"<endrec>
+"","01","","","Dompetku_Allocation","","Amount","6200","0"<endrec>
+"","01","","","Dompetku_Allocation","","CreditMSISDN","6201","0"<endrec>
+"","01","","","Dompetku_Allocation","","ReasonTypeAlias","6202","0"<endrec>
+"","01","","","Dompetku_Allocation","","DebitMSISDN","6203","0"<endrec>
+"","01","","","Dompetku_Allocation","","DompetkuPIN","6204","0"<endrec>
+"","01","","","Dompetku_Allocation","","OrderId","6205","0"<endrec>
+"","01","","","Dompetku_Allocation","","Currency","6206","0"<endrec>
+"","01","","","Dompetku_Allocation","","TransactionInitiatedDate","6207","0"<endrec>
+"","01","","","GOA_QueryOrgOperatorKYCValidation","-1","ReferenceData_SHORTCODE","7","4"<endrec>
+"","01","","","Refill","-1","transactionAmount","7503","0"<endrec>
+"","01","","","GOA_QueryKYCValidation","-1","Receiver_IDDetails_IDNumber","8","4"<endrec>

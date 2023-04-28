@@ -1,0 +1,41 @@
+BO_ACTION_TYPE,BO_EXTENT_ATTR_RULE,LOAD_DATA_TS,REASON_INDEX                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <endrec>
+"ActivateCust","<RuleList></RuleList>","","10000002"<endrec>
+"AddGroupBeneficiary","<RuleList></RuleList>","","10002703"<endrec>
+"AddGroupBeneficiary","<RuleList></RuleList>","","10002704"<endrec>
+"AddGroupMember","<RuleList></RuleList>","","10002687"<endrec>
+"AddGroupMember","<RuleList></RuleList>","","10002689"<endrec>
+"AddOrgBeneficiary","<RuleList></RuleList>","","10002338"<endrec>
+"AddOrgBeneficiary","<RuleList></RuleList>","","10002342"<endrec>
+"ApproveGroupTask","<RuleList></RuleList>","","10002807"<endrec>
+"CCHAddGroupMember","<RuleList></RuleList>","","10003839"<endrec>
+"CCHChangeCustKYC","<RuleList></RuleList>","","10000165"<endrec>
+"CCHIdentifyOrgOperator","<RuleList></RuleList>","","10000157"<endrec>
+"CCHRemoveGroupMember","<RuleList></RuleList>","","10003840"<endrec>
+"CCHResetCustPIN","<RuleList><Rule><AttrCode>ServiceCode</AttrCode><AttrExpression><EnumList><Value></Value></EnumList></AttrExpression></Rule></RuleList>","","10003879"<endrec>
+"CCHResetOrgOperatorPIN","<RuleList><Rule><AttrCode>ServiceCode</AttrCode><AttrExpression><EnumList><Value>Customer Care Handset - Manage Identity</Value></EnumList></AttrExpression></Rule></RuleList>","","10000159"<endrec>
+"CCHResetOrgOperatorPIN","<RuleList><Rule><AttrCode>ServiceCode</AttrCode><AttrExpression><EnumList><Value>Customer Care Handset - Manage Identity for Free</Value></EnumList></AttrExpression></Rule></RuleList>","","10000160"<endrec>
+"CCHUnlockOrgOperatorPIN","<RuleList></RuleList>","","10000163"<endrec>
+"CancelIssuedVoucher","<RuleList></RuleList>","","10002872"<endrec>
+"CancelIssuedVoucher","<RuleList></RuleList>","","10002873"<endrec>
+"ChangeCustPIN","<RuleList><Rule><AttrCode>PINStatus</AttrCode><AttrExpression><EnumList><Value>1</Value></EnumList></AttrExpression></Rule></RuleList>","","10000044"<endrec>
+"ChangeGroupMemberRole","<RuleList></RuleList>","","10002709"<endrec>
+"ChangeGroupMemberRole","<RuleList></RuleList>","","10002749"<endrec>
+"ChangeGroupMemberRole","<RuleList></RuleList>","","10002839"<endrec>
+"ChangeGroupProduct","<RuleList></RuleList>","","10002889"<endrec>
+"ChangeOrgOperatorOwnKYC","<RuleList></RuleList>","","10002995"<endrec>
+"ConfirmGroupMembership","<RuleList></RuleList>","","10002691"<endrec>
+"CreateCustLoyaltyAccount","<RuleList></RuleList>","","10004181"<endrec>
+"CreateCustomer","<RuleList><Rule></Rule></RuleList>","","10003361"<endrec>
+"CreateCustomerBundleByOrganization","<RuleList></RuleList>","","10003017"<endrec>
+"CreateOrgLoyaltyAccount","<RuleList></RuleList>","","10004180"<endrec>
+"CreateOrganizationBundle","<RuleList></RuleList>","","10003349"<endrec>
+"CustomerGetStartPIN","<RuleList></RuleList>","","10002427"<endrec>
+"DeleteCustomerBeneficiary","<RuleList></RuleList>","","10002339"<endrec>
+"DeleteCustomerBeneficiary","<RuleList></RuleList>","","10002343"<endrec>
+"DeleteGroupBeneficiary","<RuleList></RuleList>","","10002705"<endrec>
+"DeleteGroupBeneficiary","<RuleList></RuleList>","","10002706"<endrec>
+"DeleteOrgBeneficiary","<RuleList></RuleList>","","10002340"<endrec>
+"DeleteOrgBeneficiary","<RuleList></RuleList>","","10002344"<endrec>
+"QueryCustAccountStatements","<RuleList></RuleList>","","10000181"<endrec>
+"QueryGroupList","<RuleList></RuleList>","","10002804"<endrec>
+"ResetOrgOperatorPIN","<RuleList></RuleList>","","10003289"<endrec>

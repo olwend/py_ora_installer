@@ -1,0 +1,376 @@
+ACCORDING_OTHER_FIELD,ALLOW_EMPTY,DISPLAY_AS_NOTES,EXPR_VALUE,INVALIDATE_MESSAGE,MSG_PARA_SET_CHECK_RULE_SET_ID,MSG_PARA_SET_CHECK_RULE_SET_NA,MSG_PARA_SET_ID,PARA_ID,REQUIRED,VALIDATION_TYPE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","109","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","110","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","187","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","191","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","196","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","201","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","202","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","203","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","204","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","206","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","225","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","226","0",""<endrec>
+"","","N","","","10","TEWS_Credit_Request","11","261681","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","307","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","308","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","311","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","314","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","318","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","320","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","321","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","322","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","324","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","326","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","330","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","337","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","343","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","344","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","357","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","361","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","365","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","366","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","367","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","369","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","370","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","371","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","372","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","373","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","374","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","375","0",""<endrec>
+"","","Y","","","10","TEWS_Credit_Request","11","376","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","101","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","107","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","108","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","109","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","110","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","111","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","112","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","113","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","194","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","195","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","196","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","197","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","225","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","232","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","261606","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","261607","0",""<endrec>
+"","","Y","","","1001","HWS_AdviceOfCharge_Response","1002","308","0",""<endrec>
+"","","N","","","1001","Generic_IMTValidation_Request","1114","318","0",""<endrec>
+"","","Y","","","1001","HWS_AdviceOfCharge_Response","1002","330","0",""<endrec>
+"","","Y","","","1001","HWS_AdviceOfCharge_Response","1002","5026","0",""<endrec>
+"","","Y","","","1001","HWS_AdviceOfCharge_Response","1002","5027","0",""<endrec>
+"","","Y","","","1001","HWS_AdviceOfCharge_Response","1002","5028","0",""<endrec>
+"","","Y","","","1001","HWS_AdviceOfCharge_Response","1002","5029","0",""<endrec>
+"","","Y","","","1001","HWS_AdviceOfCharge_Response","1002","5030","0",""<endrec>
+"","","Y","","","1001","HWS_AdviceOfCharge_Response","1002","5031","0",""<endrec>
+"","","Y","","","1001","HWS_AdviceOfCharge_Response","1002","5032","0",""<endrec>
+"","","Y","","","1001","HWS_AdviceOfCharge_Response","1002","5033","0",""<endrec>
+"","","Y","","","1001","HWS_AdviceOfCharge_Response","1002","5300","0",""<endrec>
+"","","Y","","","1002","HWS_Remittance_Response","1004","308","0",""<endrec>
+"","","Y","","","1002","HWS_Remittance_Response","1004","330","0",""<endrec>
+"","","Y","","","1002","HWS_Remittance_Response","1004","5026","0",""<endrec>
+"","","Y","","","1002","HWS_Remittance_Response","1004","5027","0",""<endrec>
+"","","Y","","","1002","HWS_Remittance_Response","1004","5028","0",""<endrec>
+"","","Y","","","1002","HWS_Remittance_Response","1004","5029","0",""<endrec>
+"","","Y","","","1002","HWS_Remittance_Response","1004","5030","0",""<endrec>
+"","","Y","","","1002","HWS_Remittance_Response","1004","5032","0",""<endrec>
+"","","Y","","","1002","HWS_Remittance_Response","1004","5033","0",""<endrec>
+"","","Y","","","1002","HWS_Remittance_Response","1004","5085","0",""<endrec>
+"","","Y","","","1002","HWS_Remittance_Response","1004","5086","0",""<endrec>
+"","","Y","","","1002","HWS_Remittance_Response","1004","5087","0",""<endrec>
+"","","Y","","","1002","HWS_Remittance_Response","1004","5088","0",""<endrec>
+"","","Y","","","1002","HWS_Remittance_Response","1004","5300","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","188","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","189","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","191","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","196","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","201","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","202","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","203","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","204","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","206","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","225","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","226","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","261818","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","261821","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","261822","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","261823","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","261830","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","262692","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","262693","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","262694","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","262696","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","262701","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","307","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","308","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","311","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","314","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","318","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","320","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","321","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","322","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","324","0",""<endrec>
+"","","N","","","1003","Generic_IMTReceiveValidation_Request","1116","326","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","109","0",""<endrec>
+"","","Y","","","1004","Generic_IMTMoneyTransfer_Request","1118","110","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","187","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","188","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","189","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","196","0",""<endrec>
+"","","Y","","","1004","Generic_IMTMoneyTransfer_Request","1118","201","0",""<endrec>
+"","","Y","","","1004","Generic_IMTMoneyTransfer_Request","1118","202","0",""<endrec>
+"","","Y","","","1004","Generic_IMTMoneyTransfer_Request","1118","203","0",""<endrec>
+"","","Y","","","1004","Generic_IMTMoneyTransfer_Request","1118","204","0",""<endrec>
+"","","Y","","","1004","Generic_IMTMoneyTransfer_Request","1118","206","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","225","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","226","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","261818","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","261821","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","261822","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","261823","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","261830","0",""<endrec>
+"","","Y","","","1004","Generic_IMTMoneyTransfer_Request","1118","307","0",""<endrec>
+"","","Y","","","1004","Generic_IMTMoneyTransfer_Request","1118","308","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","311","0",""<endrec>
+"","","Y","","","1004","Generic_IMTMoneyTransfer_Request","1118","314","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","318","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","320","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","321","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","322","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","330","0",""<endrec>
+"","","Y","","","1004","Generic_IMTMoneyTransfer_Request","1118","337","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","343","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","344","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","357","0",""<endrec>
+"","","N","","","1004","Generic_IMTMoneyTransfer_Request","1118","361","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","107","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","108","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","109","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","110","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","111","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","112","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","113","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","185","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","186","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","192","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","193","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","194","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","195","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","225","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","232","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","318","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","365","0",""<endrec>
+"","","N","","","1005","Generic_IMTReceivemoney_Response","1121","373","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","107","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","108","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","109","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","110","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","111","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","112","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","113","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","185","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","186","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","192","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","193","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","194","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","195","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","225","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","232","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","318","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","365","0",""<endrec>
+"","","N","","","1006","Generic_IMTInquiry_Response","1123","373","0",""<endrec>
+"","","N","","","1007","Generic_IMTTransferCancel_Request","1124","321","0",""<endrec>
+"","","N","","","1007","Generic_IMTTransferCancel_Request","1124","322","0",""<endrec>
+"","","N","","","1007","Generic_IMTTransferCancel_Request","1124","327","0",""<endrec>
+"","","N","","","1007","Generic_IMTTransferCancel_Request","1124","328","0",""<endrec>
+"","","N","","","1007","Generic_IMTTransferCancel_Request","1124","329","0",""<endrec>
+"","","N","","","1007","Generic_IMTTransferCancel_Request","1124","330","0",""<endrec>
+"","","N","","","1011","HWS_Status_Response","1006","308","0",""<endrec>
+"","","N","","","1011","HWS_Status_Response","1006","330","0",""<endrec>
+"","","N","","","1011","HWS_Status_Response","1006","5033","0",""<endrec>
+"","","N","","","1011","HWS_Status_Response","1006","5085","0",""<endrec>
+"","","N","","","1011","HWS_Status_Response","1006","5088","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","109","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","110","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","187","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","188","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","189","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","196","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","201","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","202","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","203","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","204","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","206","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","225","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","226","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","261818","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","261821","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","261822","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","261823","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","261830","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","262692","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","262693","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","262694","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","262696","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","262701","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","307","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","308","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","311","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","314","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","318","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","320","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","321","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","322","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","330","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","337","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","343","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","344","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","357","0",""<endrec>
+"","","N","","","1012","Generic_IMTMoneyTransfer_Request","1118","361","0",""<endrec>
+"","","N","","","2","Error Reply","8","238","0",""<endrec>
+"","","N","","","2001","IMT_Request_Quote","1101","5030","0",""<endrec>
+"","","N","","","2001","IMT_Request_Quote","1101","5180","0",""<endrec>
+"","","N","","","2001","IMT_Request_Quote","1101","5181","0",""<endrec>
+"","","N","","","2001","IMT_Request_Quote","1101","5182","0",""<endrec>
+"","","N","","","2003","IMT_Transfer_Abroad","1102","5030","0",""<endrec>
+"","","N","","","2003","IMT_Transfer_Abroad","1102","5180","0",""<endrec>
+"","","N","","","2003","IMT_Transfer_Abroad","1102","5181","0",""<endrec>
+"","","N","","","2003","IMT_Transfer_Abroad","1102","5182","0",""<endrec>
+"","0","Y","^([\s\S]){0,32}$","","3","Mobile Money Available Notification Request","7","100","1","1"<endrec>
+"","1","Y","^([\s\S]){0,8}$","","3","Mobile Money Available Notification Request","7","101","1","1"<endrec>
+"","1","Y","^([\s\S]){0,20}$","","3","Mobile Money Available Notification Request","7","102","1","1"<endrec>
+"","1","Y","^([\s\S]){0,20}$","","3","Mobile Money Available Notification Request","7","103","1","1"<endrec>
+"","0","Y","^([\s\S]){7,17}$","","3","Mobile Money Available Notification Request","7","104","1","1"<endrec>
+"","0","Y","^([\s\S]){0,84}$","","3","Mobile Money Available Notification Request","7","105","1","1"<endrec>
+"","1","Y","^([\s\S]){0,48}$","","3","Mobile Money Available Notification Request","7","106","1","1"<endrec>
+"","0","Y","^([\s\S]){0,3}$","","3","Mobile Money Available Notification Request","7","107","1","1"<endrec>
+"","0","Y","^([\s\S]){0,14}$","","3","Mobile Money Available Notification Request","7","108","1","1"<endrec>
+"","0","N","","","3","Mobile Money Available Notification Request","7","109","1",""<endrec>
+"","0","Y","^([\s\S]){0,3}$","","3","Mobile Money Available Notification Request","7","110","1","1"<endrec>
+"","0","Y","^([\s\S]){0,3}$","","3","Mobile Money Available Notification Request","7","111","1","1"<endrec>
+"","0","Y","^[\s\S]{16}$","","3","Mobile Money Available Notification Request","7","112","1","1"<endrec>
+"","1","Y","^([\s\S]){0,52}$","","3","Mobile Money Available Notification Request","7","113","1","1"<endrec>
+"","1","Y","^([\s\S]){0,10}$","","3","Mobile Money Available Notification Request","7","114","1","1"<endrec>
+"","","Y","","","4","Mobile Receive Money Reply","2","100","0",""<endrec>
+"","1","Y","^([\s\S]){0,8}$","","4","Mobile Receive Money Reply","2","101","1","1"<endrec>
+"","1","Y","^([\s\S]){0,20}$","","4","Mobile Receive Money Reply","2","102","1","1"<endrec>
+"","1","Y","^([\s\S]){0,20}$","","4","Mobile Receive Money Reply","2","103","1","1"<endrec>
+"","1","Y","^([\s\S]){7,17}$","","4","Mobile Receive Money Reply","2","104","1","1"<endrec>
+"","1","Y","^([\s\S]){0,84}$","","4","Mobile Receive Money Reply","2","105","1","1"<endrec>
+"","1","Y","^([\s\S]){0,48}$","","4","Mobile Receive Money Reply","2","106","1","1"<endrec>
+"","1","Y","^([\s\S]){0,3}$","","4","Mobile Receive Money Reply","2","107","1","1"<endrec>
+"","1","Y","^([\s\S]){0,14}$","","4","Mobile Receive Money Reply","2","108","1","1"<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","109","0",""<endrec>
+"","1","Y","^([\s\S]){0,3}$","","4","Mobile Receive Money Reply","2","110","1","1"<endrec>
+"","1","Y","^([\s\S]){0,3}$","","4","Mobile Receive Money Reply","2","111","1","1"<endrec>
+"","1","Y","^([\s\S]){16}$","","4","Mobile Receive Money Reply","2","112","1","1"<endrec>
+"","1","Y","^([\s\S]){0,52}$","","4","Mobile Receive Money Reply","2","113","1","1"<endrec>
+"","","Y","","","4","Mobile Receive Money Reply","2","114","0",""<endrec>
+"","1","Y","^([\s\S]){0,4}$","","4","Mobile Receive Money Reply","2","183","1","1"<endrec>
+"","1","Y","^([\s\S]){0,80}$","","4","Mobile Receive Money Reply","2","185","1","1"<endrec>
+"","1","Y","^([\s\S]){0,80}$","","4","Mobile Receive Money Reply","2","186","1","1"<endrec>
+"","1","Y","^([\s\S]){0,80}$","","4","Mobile Receive Money Reply","2","187","1","1"<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","188","0",""<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","189","0",""<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","190","0",""<endrec>
+"","1","Y","^([\s\S]){0,3}$","","4","Mobile Receive Money Reply","2","191","1","1"<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","192","0",""<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","193","0",""<endrec>
+"","","Y","","","4","Mobile Receive Money Reply","2","194","0",""<endrec>
+"","","Y","","","4","Mobile Receive Money Reply","2","195","0",""<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","196","0",""<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","197","0",""<endrec>
+"","1","Y","^([\s\S]){0,40}$","","4","Mobile Receive Money Reply","2","198","1","1"<endrec>
+"","1","Y","^([\s\S]){0,40}$","","4","Mobile Receive Money Reply","2","199","1","1"<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","200","0",""<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","201","0",""<endrec>
+"","1","Y","^([\s\S]){0,80}$","","4","Mobile Receive Money Reply","2","202","1","1"<endrec>
+"","1","Y","^([\s\S]){0,8}$","","4","Mobile Receive Money Reply","2","203","1","1"<endrec>
+"","1","Y","^([\s\S]){0,30}$","","4","Mobile Receive Money Reply","2","204","1","1"<endrec>
+"","1","Y","^([\s\S]){0,3}$","","4","Mobile Receive Money Reply","2","205","1","1"<endrec>
+"","1","Y","^([\s\S]){0,8}$","","4","Mobile Receive Money Reply","2","206","1","1"<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","207","0",""<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","208","0",""<endrec>
+"","1","Y","^([\s\S]){0,80}$","","4","Mobile Receive Money Reply","2","209","1","1"<endrec>
+"","1","Y","^([\s\S]){0,8}$","","4","Mobile Receive Money Reply","2","210","1","1"<endrec>
+"","1","Y","^([\s\S]){0,30}$","","4","Mobile Receive Money Reply","2","211","1","1"<endrec>
+"","1","Y","^([\s\S]){0,3}$","","4","Mobile Receive Money Reply","2","212","1","1"<endrec>
+"","1","Y","^([\s\S]){0,8}$","","4","Mobile Receive Money Reply","2","213","1","1"<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","214","0",""<endrec>
+"","1","Y","^([\s\S]){0,48}$","","4","Mobile Receive Money Reply","2","215","1","1"<endrec>
+"","1","Y","^([\s\S]){0,20}$","","4","Mobile Receive Money Reply","2","216","1","1"<endrec>
+"","1","Y","^([\s\S]){0,20}$","","4","Mobile Receive Money Reply","2","217","1","1"<endrec>
+"","1","Y","^([\s\S]){0,3}$","","4","Mobile Receive Money Reply","2","218","1","1"<endrec>
+"","1","Y","^([\s\S]){0,31}$","","4","Mobile Receive Money Reply","2","219","1","1"<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","222","0",""<endrec>
+"","1","Y","^([\s\S]){0,48}$","","4","Mobile Receive Money Reply","2","223","1","1"<endrec>
+"","1","Y","^([\s\S]){0,1}$","","4","Mobile Receive Money Reply","2","224","1","1"<endrec>
+"","1","Y","^([\s\S]){0,52}$","","4","Mobile Receive Money Reply","2","225","1","1"<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","226","0",""<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","227","0",""<endrec>
+"","","N","","","4","Mobile Receive Money Reply","2","228","0",""<endrec>
+"","1","N","^([\s\S]){0,3}$","","4","Mobile Receive Money Reply","2","229","1","1"<endrec>
+"","1","Y","^([\s\S]){0,3}$","","4","Mobile Receive Money Reply","2","230","1","1"<endrec>
+"","","Y","","","4","Mobile Receive Money Reply","2","232","0",""<endrec>
+"","","N","","","5","Mobile Server Heartbeat Request","3","100","0",""<endrec>
+"","","N","","","5","Mobile Server Heartbeat Request","3","101","0",""<endrec>
+"","","N","","","5","Mobile Server Heartbeat Request","3","102","0",""<endrec>
+"","","N","","","5","Mobile Server Heartbeat Request","3","103","0",""<endrec>
+"","","N","","","5","Mobile Server Heartbeat Request","3","104","0",""<endrec>
+"","","N","","","5","Mobile Server Heartbeat Request","3","105","0",""<endrec>
+"","","N","","","5","Mobile Server Heartbeat Request","3","106","0",""<endrec>
+"","0","Y","","","6","Mobile Transaction Inquiry Reply","9","100","1",""<endrec>
+"","0","Y","^([\s\S]){0,8}$","","6","Mobile Transaction Inquiry Reply","9","101","1","1"<endrec>
+"","0","Y","^([\s\S]){0,20}$","","6","Mobile Transaction Inquiry Reply","9","102","1","1"<endrec>
+"","0","Y","^([\s\S]){0,20}$","","6","Mobile Transaction Inquiry Reply","9","103","1","1"<endrec>
+"","0","Y","^([\s\S]){7,17}$","","6","Mobile Transaction Inquiry Reply","9","104","1","1"<endrec>
+"","1","Y","^([\s\S]){0,84}$","","6","Mobile Transaction Inquiry Reply","9","105","1","1"<endrec>
+"","1","Y","^([\s\S]){0,48}$","","6","Mobile Transaction Inquiry Reply","9","106","1","1"<endrec>
+"","0","Y","^([\s\S]){0,3}$","","6","Mobile Transaction Inquiry Reply","9","107","1","1"<endrec>
+"","0","Y","^([\s\S]){0,14}$","","6","Mobile Transaction Inquiry Reply","9","108","1","1"<endrec>
+"","0","Y","","","6","Mobile Transaction Inquiry Reply","9","109","1",""<endrec>
+"","0","Y","^([\s\S]){0,3}$","","6","Mobile Transaction Inquiry Reply","9","110","1","1"<endrec>
+"","1","Y","^([\s\S]){0,3}$","","6","Mobile Transaction Inquiry Reply","9","111","1","1"<endrec>
+"","0","Y","^([\s\S]){16}$","","6","Mobile Transaction Inquiry Reply","9","112","1","1"<endrec>
+"","1","N","^([\s\S]){0,52}$","","6","Mobile Transaction Inquiry Reply","9","113","1","1"<endrec>
+"","1","Y","^([\s\S]){0,10}$","","6","Mobile Transaction Inquiry Reply","9","114","1","1"<endrec>
+"","0","Y","^([\s\S]){0,4}$","","6","Mobile Transaction Inquiry Reply","9","183","1","1"<endrec>
+"","1","Y","^([\s\S]){0,80}$","","6","Mobile Transaction Inquiry Reply","9","185","1","1"<endrec>
+"","1","Y","^([\s\S]){0,80}$","","6","Mobile Transaction Inquiry Reply","9","186","1","1"<endrec>
+"","","N","","","6","Mobile Transaction Inquiry Reply","9","192","0",""<endrec>
+"","","N","","","6","Mobile Transaction Inquiry Reply","9","193","0",""<endrec>
+"","1","Y","^([\s\S]){0,80}$","","6","Mobile Transaction Inquiry Reply","9","194","1","1"<endrec>
+"","1","Y","^([\s\S]){0,80}$","","6","Mobile Transaction Inquiry Reply","9","195","1","1"<endrec>
+"","0","N","","","6","Mobile Transaction Inquiry Reply","9","228","1",""<endrec>
+"","0","N","^([\s\S]){0,3}$","","6","Mobile Transaction Inquiry Reply","9","229","1","1"<endrec>
+"","0","Y","^([\s\S]){0,3}$","","6","Mobile Transaction Inquiry Reply","9","230","1","1"<endrec>
+"","1","Y","^([\s\S]){0,3}$","","6","Mobile Transaction Inquiry Reply","9","232","1","1"<endrec>
+"","1","N","","","6","Mobile Transaction Inquiry Reply","9","279","1",""<endrec>
+"","","N","","","6","Mobile Transaction Inquiry Reply","9","295","0",""<endrec>
+"","0","N","","","6","Mobile Transaction Inquiry Reply","9","299","1",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","191","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","196","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","201","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","202","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","203","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","204","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","206","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","225","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","226","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","307","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","308","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","311","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","314","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","318","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","320","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","321","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","322","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","324","0",""<endrec>
+"","","Y","","","8","TEWS_AccountInformation_Request","12","326","0",""<endrec>
+"","","N","","","9","TEWS_Cancellation_Request","13","321","0",""<endrec>
+"","","N","","","9","TEWS_Cancellation_Request","13","322","0",""<endrec>
+"","","N","","","9","TEWS_Cancellation_Request","13","327","0",""<endrec>
+"","","N","","","9","TEWS_Cancellation_Request","13","328","0",""<endrec>
+"","","N","","","9","TEWS_Cancellation_Request","13","329","0",""<endrec>
+"","","N","","","9","TEWS_Cancellation_Request","13","330","0",""<endrec>

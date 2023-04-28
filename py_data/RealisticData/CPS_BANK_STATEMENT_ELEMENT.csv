@@ -1,0 +1,130 @@
+ASSIGN_TO,DATA_TYPE,ELEMENT_ID,ELEMENT_NAME,END_ALIGN_MODE,END_LOCATION_PARA1,END_LOCATION_PARA2,END_LOCATION_TYPE,MAXIMUM_TIMES,MINIMUM_TIMES,ORDER_ID,PARENT_ID,RULE_DEFINITION,START_ALIGN_MODE,START_LOCATION_PARA1,START_LOCATION_PARA2,START_LOCATION_TYPE,TEMPLATE_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <endrec>
+"0","2","1","Statement File Content","1","End of File","","2","1","1","1","0","101","1","1","0","1","1"<endrec>
+"VALUE_DATE","2","10","Transaction Date","1","1","6","1","1","1","1","9","104","1","1","0","1","1"<endrec>
+"0","2","100","Statement File Content","1","End of File","","2","1","1","1","0","200","1","1","0","1","2"<endrec>
+"BANK_STATEMENT_NO","2","101","Bank Statement NO","1","1","1","1","1","0","1","100","201","1","1","0","1","2"<endrec>
+"TRUST_BANK_ACCOUNT","2","102","Bank Trust Account","1","End of Line","","2","1","1","2","100","202","2",":25:","","2","2"<endrec>
+"0","0","103","Entries","1","End of File","","2","1","1","3","100","","1",":61:","","2","2"<endrec>
+"0","0","104","Entry","1","End of File","End of Line","2","2","1","1","103","","1",":61:","","2","2"<endrec>
+"0","0","105","61","1",":86:","End of Line","2","1","1","1","104","","2",":61:","","2","2"<endrec>
+"VALUE_DATE","2","106","Transaction Date","1","1","6","1","1","1","1","105","206","1","1","0","1","2"<endrec>
+"ENTRY_DATE","2","107","Entry Date","1","1","10","1","1","1","2","105","207","1","1","6","1","2"<endrec>
+"DEBIT_CREDIT","2","108","Debit Credit Mark","1","1","11","1","1","1","3","105","203","1","1","10","1","2"<endrec>
+"TRANSACTION_AMOUNT","0","109","Amount","1","End of Number(,)","","2","1","1","4","105","","2","1","11","1","2"<endrec>
+"ENTRY_DATE","2","11","Entry Date","1","1","10","1","1","1","2","9","105","1","1","6","1","1"<endrec>
+"BANK_TRANSACTION_NO","0","110","Bank transaction reference","1","End of Line","End of Number(,)","2","1","1","5","105","","2","//","","2","2"<endrec>
+"0","0","111","86","1","End of Line","","2","1","1","2","104","","2",":86:","","2","2"<endrec>
+"REASON_TYPE","2","112","Reason type","1","/","","2","1","1","1","111","204","2","+20","","2","2"<endrec>
+"CPS_TRANSACTION_NO","2","114","Transaction ID","1","/","","2","1","1","3","111","205","2","+24","","2","2"<endrec>
+"TRANSACTION_DETAIL","2","115","Transaction Details","1","/OPH","","2","1","0","4","111","208","2","+20","0","2","2"<endrec>
+"DEBIT_CREDIT","2","12","Debit credit mark","1","1","11","1","1","1","3","9","106","1","1","10","1","1"<endrec>
+"TRANSACTION_AMOUNT","0","13","Amount","1","End of Number(.)","","2","1","1","4","9","","2","1","11","1","1"<endrec>
+"BANK_TRANSACTION_NO","0","14","Bank transaction reference","1","End of Line","End of Number(,)","2","1","1","5","9","","2","//","","2","1"<endrec>
+"0","2","14001","Statement File Content","1","End of File","","2","1","1","1","0","101","1","1","0","1","15001"<endrec>
+"BANK_STATEMENT_NO","2","14002","Bank Statement NO","1","1","1","1","1","0","1","14001","100","1","1","0","1","15001"<endrec>
+"TRUST_BANK_ACCOUNT","2","14003","Bank Trust Account","1","End of Line","","2","1","1","2","14001","102","2",":25:","","2","15001"<endrec>
+"0","0","14004","60F","1","End of Line","","2","1","1","3","14001","","2",":60F:","","2","15001"<endrec>
+"CURRENCY","0","14005","Currency","1","1","10","1","1","1","1","14004","","1","1","7","1","15001"<endrec>
+"OPENING_BALANCE","0","14006","Opening Balance","1","End of Line","","2","1","1","2","14004","","1","1","10","1","15001"<endrec>
+"0","0","14007","Entries","1",":62F:","","2","1","1","4","14001","","1",":61:","","2","15001"<endrec>
+"0","0","14008","Entry","1","End of File","End of Line","2","-1","1","1","14007","","1",":61:","","2","15001"<endrec>
+"0","0","14009","61","1",":86:","End of Line","2","1","1","1","14008","","2",":61:","","2","15001"<endrec>
+"VALUE_DATE","2","14010","Transaction Date","1","1","6","1","1","1","1","14009","104","1","1","0","1","15001"<endrec>
+"ENTRY_DATE","2","14011","Entry Date","1","1","10","1","1","1","2","14009","105","1","1","6","1","15001"<endrec>
+"DEBIT_CREDIT","2","14012","Debit credit mark","1","1","11","1","1","1","3","14009","106","1","1","10","1","15001"<endrec>
+"TRANSACTION_AMOUNT","0","14013","Amount","1","End of Number(.)","","2","1","1","4","14009","","2","1","11","1","15001"<endrec>
+"BANK_TRANSACTION_NO","0","14014","Bank transaction reference","1","End of Line","End of Number(,)","2","1","1","5","14009","","2","//","","2","15001"<endrec>
+"0","0","14015","86","1","End of File","","2","1","1","2","14008","","2",":86:","","2","15001"<endrec>
+"REASON_TYPE","2","14016","Reason type","1","/","","2","1","1","4","14015","301250","2","/20","","2","15001"<endrec>
+"CREDIT_IDENTIFER","2","14017","Credit Identifier","1","^24","","2","1","1","1","14015","10833","2","^","","2","15001"<endrec>
+"CPS_TRANSACTION_NO","2","14018","Transaction ID","1","/","","2","1","1","2","14015","108","2","^24","","2","15001"<endrec>
+"TRANSACTION_DETAIL","2","14019","Transaction Details","1","/","","2","1","1","3","14015","109","2","^","","2","15001"<endrec>
+"0","2","14020","62","1","End of Line","End Of Line","2","1","1","5","14001","","2",":62F:","","2","15001"<endrec>
+"CLOSING_BALANCE","0","14021","Closing Balance","1","End of Line","End Of Line","2","1","1","1","14020","","1","1","10","1","15001"<endrec>
+"0","0","15","86","1","End of Line","","2","1","1","2","8","","2",":86:","","2","1"<endrec>
+"REASON_TYPE","2","16","Reason type","1","/","","2","1","1","1","15","107","2","^20","","2","1"<endrec>
+"0","2","16001","Statement File Context","1","End of File","","2","1","1","1","0","10644","1","1","0","1","16001"<endrec>
+"BANK_STATEMENT_NO","2","16002","BankStatementNo","2","End of Line","","2","1","1","1","16001","301","1","1","0","1","16001"<endrec>
+"CURRENCY","2","16003","Currency","2","End of Line","","2","1","1","2","16001","10106","1","1","0","1","16001"<endrec>
+"OPENING_BALANCE","2","16004","Opening Balance","2","End of Line","","2","1","1","3","16001","315","1","2","0","1","16001"<endrec>
+"ONLY_VALIDATION","2","16005","Blank Line(3)","2","End of Line","","2","1","0","4","16001","309","1","3","0","1","16001"<endrec>
+"ONLY_VALIDATION","2","16006","Blank Link(4)","2","End of File","","2","1","0","5","16001","310","1","4","0","1","16001"<endrec>
+"0","0","16007","Entries","1","Last Line","","2","1","1","6","16001","","1","2","0","1","16001"<endrec>
+"0","0","16008","Entry","2","End of Line","","2","-1","1","1","16007","","1","1","0","1","16001"<endrec>
+"ENTRY_DATE","2","16009","Date","2","End of Line","","2","1","1","1","16008","308","1","1","0","1","16001"<endrec>
+"VALUE_DATE","2","16010","Transaction Date","2","End of Line","","2","1","1","2","16008","302","1","1","0","1","16001"<endrec>
+"BANK_TRANSACTION_NO","2","16011","Reference No","2","End of Line","","2","1","1","3","16008","312","1","1","0","1","16001"<endrec>
+"DEBIT_CREDIT","2","16012","Credit Debit Mark","2","End of Line","","2","1","1","4","16008","306","1","1","0","1","16001"<endrec>
+"TRANSACTION_AMOUNT","2","16013","Amount","2","End of Line","","2","1","1","5","16008","313","1","1","0","1","16001"<endrec>
+"REASON_TYPE","2","16014","Reason Type","2","End of Line","","2","1","1","6","16008","304","1","1","0","1","16001"<endrec>
+"CREDIT_IDENTIFER","2","16015","Credit Identifier","2","End of Line","","2","1","1","7","16008","303","1","1","0","1","16001"<endrec>
+"CPS_TRANSACTION_NO","2","16016","Transaction ID","2","End of Line","","2","1","1","8","16008","311","1","1","0","1","16001"<endrec>
+"TRANSACTION_DETAIL","2","16017","Transaction Details","2","End of Line","","2","1","1","9","16008","314","1","1","0","1","16001"<endrec>
+"ONLY_VALIDATION","2","16018","Entries Count","2","End of Line","","2","1","1","7","16001","316","1","Last Line","","2","16001"<endrec>
+"0","2","16019","Statement File Context","1","End of File","","2","1","1","1","0","10644","1","1","0","1","16002"<endrec>
+"BANK_STATEMENT_NO","2","16020","BankStatementNo","2","End of Line","","2","1","1","1","16019","301","1","1","0","1","16002"<endrec>
+"CURRENCY","2","16021","Currency","2","End of Line","","2","1","1","2","16019","10106","1","1","0","1","16002"<endrec>
+"OPENING_BALANCE","2","16022","Opening Balance","2","End of Line","","2","1","1","3","16019","315","1","2","0","1","16002"<endrec>
+"ONLY_VALIDATION","2","16023","Blank Line(3)","2","End of Line","","2","1","0","4","16019","309","1","3","0","1","16002"<endrec>
+"ONLY_VALIDATION","2","16024","Blank Link(4)","2","End of File","","2","1","0","5","16019","310","1","4","0","1","16002"<endrec>
+"0","0","16025","Entries","1","Last Line","","2","1","1","6","16019","","1","2","0","1","16002"<endrec>
+"0","0","16026","Entry","2","End of Line","","2","-1","1","1","16025","","1","1","0","1","16002"<endrec>
+"ENTRY_DATE","2","16027","Date","2","End of Line","","2","1","1","1","16026","308","1","1","0","1","16002"<endrec>
+"VALUE_DATE","2","16028","Transaction Date","2","End of Line","","2","1","1","2","16026","302","1","1","0","1","16002"<endrec>
+"BANK_TRANSACTION_NO","2","16029","Reference No","2","End of Line","","2","1","1","3","16026","312","1","1","0","1","16002"<endrec>
+"DEBIT_CREDIT","2","16030","Credit Debit Mark","2","End of Line","","2","1","1","4","16026","306","1","1","0","1","16002"<endrec>
+"TRANSACTION_AMOUNT","2","16031","Amount","2","End of Line","","2","1","1","5","16026","313","1","1","0","1","16002"<endrec>
+"REASON_TYPE","2","16032","Reason Type","2","End of Line","","2","1","1","6","16026","304","1","1","0","1","16002"<endrec>
+"CREDIT_IDENTIFER","2","16033","Credit Identifier","2","End of Line","","2","1","1","7","16026","303","1","1","0","1","16002"<endrec>
+"CPS_TRANSACTION_NO","2","16034","Transaction ID","2","End of Line","","2","1","1","8","16026","311","1","1","0","1","16002"<endrec>
+"TRANSACTION_DETAIL","2","16035","Transaction Details","2","End of Line","","2","1","1","9","16026","314","1","1","0","1","16002"<endrec>
+"ONLY_VALIDATION","2","16036","Entries Count","2","End of Line","","2","1","1","7","16019","316","1","Last Line","","2","16002"<endrec>
+"CREDIT_IDENTIFER","2","17","Credit Identifier","1","^24","","2","1","1","2","15","301885","2","/","","2","1"<endrec>
+"CREDIT_IDENTIFER","2","17001","Credit Identifier","1","+24","","2","1","1","2","111","301874","2","/","","2","2"<endrec>
+"0","2","17002","Statement File Content","1","End of File","","2","1","1","1","0","200","1","1","0","1","17001"<endrec>
+"BANK_STATEMENT_NO","2","17003","Bank Statement NO","1","1","1","1","1","0","1","17002","201","1","1","0","1","17001"<endrec>
+"TRUST_BANK_ACCOUNT","2","17004","Bank Trust Account","1","End of Line","","2","1","1","2","17002","202","2",":25:","","2","17001"<endrec>
+"0","0","17005","Entries","1","End of File","","2","1","1","3","17002","","1",":61:","","2","17001"<endrec>
+"0","0","17006","Entry","1","End of File","End of Line","2","2","1","1","17005","","1",":61:","","2","17001"<endrec>
+"0","0","17007","61","1",":86:","End of Line","2","1","1","1","17006","","2",":61:","","2","17001"<endrec>
+"VALUE_DATE","2","17008","Transaction Date","1","1","6","1","1","1","1","17007","206","1","1","0","1","17001"<endrec>
+"ENTRY_DATE","2","17009","Entry Date","1","1","10","1","1","1","2","17007","207","1","1","6","1","17001"<endrec>
+"DEBIT_CREDIT","2","17010","Debit Credit Mark","1","1","11","1","1","1","3","17007","203","1","1","10","1","17001"<endrec>
+"TRANSACTION_AMOUNT","0","17011","Amount","1","End of Number(,)","","2","1","1","4","17007","","2","1","11","1","17001"<endrec>
+"BANK_TRANSACTION_NO","0","17012","Bank transaction reference","1","End of Line","End of Number(,)","2","1","1","5","17007","","2","//","","2","17001"<endrec>
+"0","0","17013","86","1","End of Line","","2","1","1","2","17006","","2",":86:","","2","17001"<endrec>
+"REASON_TYPE","2","17014","Reason type","1","End of Line","","2","1","1","1","17013","204","2","+20","","2","17001"<endrec>
+"CREDIT_IDENTIFER","2","17015","Credit Identifier","1","+24","","2","1","1","2","17013","301874","2","/","","2","17001"<endrec>
+"CPS_TRANSACTION_NO","2","17016","Transaction ID","1","/","","2","1","1","3","17013","205","2","+24","","2","17001"<endrec>
+"TRANSACTION_DETAIL","2","17017","Transaction Details","1","+20","","2","1","0","4","17013","208","2","/","0","2","17001"<endrec>
+"CPS_TRANSACTION_NO","2","18","Transaction ID","1","/","","2","1","1","3","15","108","2","^24","","2","1"<endrec>
+"0","0","18001","File","1","End of File","","2","1","1","1","0","","1","1","0","1","18001"<endrec>
+"TRANSACTION_DETAIL","2","19","Transaction Details","1","End of Line","","2","1","1","4","15","109","2","^24","","2","1"<endrec>
+"BANK_STATEMENT_NO","2","2","Bank Statement NO","1","1","1","1","1","0","1","1","100","1","1","0","1","1"<endrec>
+"0","2","20","62","1","End of Line","End Of Line","2","1","1","5","1","","2",":62F:","","2","1"<endrec>
+"TRANSACTION_AMOUNT","2","201","Amount","2","End of Line","","2","1","1","5","211","313","1","1","0","1","3"<endrec>
+"BANK_STATEMENT_NO","2","202","BankStatementNo","2","End of Line","","2","1","1","1","215","301","1","1","0","1","3"<endrec>
+"ONLY_VALIDATION","2","203","Blank Line(3)","2","End of Line","","2","1","0","4","215","309","1","3","0","1","3"<endrec>
+"ONLY_VALIDATION","2","204","Blank Link(4)","2","End of File","","2","1","0","5","215","310","1","4","0","1","3"<endrec>
+"DEBIT_CREDIT","2","205","Credit Debit Mark","2","End of Line","","2","1","1","4","211","306","1","1","0","1","3"<endrec>
+"CREDIT_IDENTIFER","2","206","Credit Identifier","2","End of Line","","2","1","1","7","211","303","1","1","0","1","3"<endrec>
+"CURRENCY","2","207","Currency","2","End of Line","","2","1","1","2","215","300533","1","1","0","1","3"<endrec>
+"ENTRY_DATE","2","208","Date","2","End of Line","","2","1","1","1","211","308","1","1","0","1","3"<endrec>
+"0","0","209","Entries","1","Last Line","","2","1","1","7","215","","1","6","0","1","3"<endrec>
+"CLOSING_BALANCE","0","21","Closing Balance","1","End of Line","End Of Line","2","1","1","1","20","","1","1","10","1","1"<endrec>
+"ONLY_VALIDATION","2","210","Entries Count","2","End of Line","","2","1","1","8","215","316","1","Last Line","","2","3"<endrec>
+"0","0","211","Entry","2","End of Line","","2","-1","1","1","209","","1","1","0","1","3"<endrec>
+"OPENING_BALANCE","2","212","Opening Balance","2","End of Line","","2","1","1","3","215","306965","1","2","0","1","3"<endrec>
+"REASON_TYPE","2","213","Reason Type","2","End of Line","","2","1","1","6","211","301921","1","1","0","1","3"<endrec>
+"BANK_TRANSACTION_NO","2","214","Reference No","2","End of Line","","2","1","1","3","211","312","1","1","0","1","3"<endrec>
+"0","2","215","Statement File Context","1","End of File","","2","1","1","1","0","300532","1","1","0","1","3"<endrec>
+"VALUE_DATE","2","216","Transaction Date","2","End of Line","","2","1","1","2","211","302","1","1","0","1","3"<endrec>
+"TRANSACTION_DETAIL","2","217","Transaction Details","2","End of Line","","2","1","1","9","211","303795","1","1","0","1","3"<endrec>
+"CPS_TRANSACTION_NO","2","218","Transaction ID","2","End of Line","","2","1","1","8","211","304038","1","1","0","1","3"<endrec>
+"TRUST_BANK_ACCOUNT","2","3","Bank Trust Account","1","End of Line","","2","1","1","2","1","102","2",":25:","","2","1"<endrec>
+"0","0","4","60F","1","End of Line","","2","1","1","3","1","","2",":60F:","","2","1"<endrec>
+"CURRENCY","0","5","Currency","1","1","10","1","1","1","1","4","","1","1","7","1","1"<endrec>
+"OPENING_BALANCE","0","6","Opening Balance","1","End of Line","","2","1","1","2","4","","1","1","10","1","1"<endrec>
+"0","0","7","Entries","1",":62F:","","2","1","1","4","1","","1",":61:","","2","1"<endrec>
+"0","0","8","Entry","1","End of File","End of Line","2","-1","1","1","7","","1",":61:","","2","1"<endrec>
+"0","0","9","61","1",":86:","End of Line","2","1","1","1","8","","2",":61:","","2","1"<endrec>

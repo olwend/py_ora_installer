@@ -1,0 +1,12 @@
+HEARTBEAT_COMMAND_ID,HEARTBEAT_FLAG,HEARTBEAT_INTERVAL,HEARTBEAT_SERVICE,HEARTBEAT_TIMEOUT,HEARTBEAT_TIMES,HEARTBEAT_URL,RECEIVER_ID,TEP_RECEIVER_UNIQUE_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <endrec>
+"Heartbeat","Y","30","http://192.168.4.24:8015/mockCPSETopupBinding","3","1","http://192.168.4.24:8015/mockCPSETopupBinding","10201","937182524"<endrec>
+"Heartbeat","Y","5","http://192.168.4.24:8016/mockCPSETopupBinding","3","1","http://192.168.4.24:8016/mockCPSETopupBinding","10201","937182525"<endrec>
+"Heartbeat","Y","5","http://192.168.4.24:8016/mockCPSETopupBinding","3","50","http://192.168.4.24:8016/mockCPSETopupBinding","10201","937182536"<endrec>
+"Heartbeat","Y","5","http://192.168.4.24:8017/mockCPSETopupBinding","3","50","http://192.168.4.24:8017/mockCPSETopupBinding","10201","937182540"<endrec>
+"Heartbeat","Y","30","200","3","1","http://www.msn.com/","10701","937251692"<endrec>
+"Heartbeat","Y","30","200","3","1","http://www.msn.com/","10701","937251695"<endrec>
+"Heartbeat","Y","30","tep","3","5","http://192.168.4.24:8070/mockCPSETopupBinding","11101","937347916"<endrec>
+"Heartbeat","Y","30","200","3","1","http://www.msn.com/","10701","937351943"<endrec>
+"Heartbeat","Y","30","200","3","1","http://www.msn.com/","10701","937351945"<endrec>
+"Heartbeat","Y","30","200","3","1","http://www.msn.com/","10701","937351946"<endrec>
+"Heartbeat","Y","30","tep","3","5","http://192.168.4.24:8072/mockCPSETopupBinding","11101","937471576"<endrec>

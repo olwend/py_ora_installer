@@ -1,0 +1,7 @@
+DESCRIPTION,FILE_TYPE,TEMPLATE_ID,TEMPLATE_NAME,TEMPLATE_RELATION,TEMPLATE_USE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <endrec>
+"Change Customer KYC","0","1","Change Customer KYC","CHANGE_CUSTOMER_KYC","0"<endrec>
+"Bulk Adjustment","1","100000011","Bulk Adjustment","BULK_ADJUSTMENT","0"<endrec>
+"Testing","0","100000951","Test Create bulk","CREATE_CUSTOMER","0"<endrec>
+"BULK_PAYMENT","0","12","BULK_PAYMENT","BULK_PAYMENT","0"<endrec>
+"BULK_PAYMENT","1","15","BULK_PAYMENT","BULK_PAYMENT","0"<endrec>
+"Change Customer KYC","1","3","Change Customer KYC","CHANGE_CUSTOMER_KYC","0"<endrec>

@@ -1,0 +1,24 @@
+ATTR_CATEGORY,ATTR_CODE,DATA_DICT_KEY,DATA_DICT_VALUE,FI_CUSTOMER_ATTR__ID,FI_CUSTOMER_DEF_ID,KYC_GROUP_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <endrec>
+"MSISDN","MSISDN","","","10008","10006",""<endrec>
+"Internal Customer ID","Internal Customer ID","","","10009","10006",""<endrec>
+"MSISDN","MSISDN","","","10019","10012","0"<endrec>
+"Internal Customer ID","Internal Customer ID","","","10020","10012","0"<endrec>
+"MSISDN","MSISDN","","","10023","10014","0"<endrec>
+"MSISDN","MSISDN","","","10031","10016","0"<endrec>
+"Internal Customer ID","Internal Customer ID","","","10032","10016","0"<endrec>
+"Internal Customer ID","Internal Customer ID","","","10035","10014","0"<endrec>
+"MSISDN","MSISDN","","","1300006","1270012","0"<endrec>
+"MSISDN","MSISDN","","","130004","80011",""<endrec>
+"MSISDN","MSISDN","","","140008","90013",""<endrec>
+"FI Account Information","AccountNumber","","","140010","90013",""<endrec>
+"Internal Customer ID","Internal Customer ID","","","140011","90013",""<endrec>
+"MSISDN","MSISDN","","","160016","110017","0"<endrec>
+"MSISDN","MSISDN","","","160040","110026","0"<endrec>
+"MSISDN","MSISDN","","","160047","110032","0"<endrec>
+"MSISDN","MSISDN","","","220004","170011","0"<endrec>
+"KYC of Customer","1003","","","220005","170011","1001"<endrec>
+"MSISDN","MSISDN","","","290010","240016","0"<endrec>
+"FI Account Information","DateOfBirth","","","50016","10014",""<endrec>
+"FI Account Information","PassportNumber","","","50017","10014",""<endrec>
+"FI Account Information","NationalIdReferenceNumber","","","50018","10014",""<endrec>
+"FI Account Information","AccountNumber","","","70002","10016","0"<endrec>

@@ -1,0 +1,9 @@
+ATTR_CATEGORY,ATTR_CODE,DATA_DICT_KEY,DATA_DICT_VALUE,FI_ORG_ATTR_ID,FI_ORG_DEF_ID,KYC_GROUP_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <endrec>
+"Short Code","Short Code","","","10003","10003",""<endrec>
+"FI Account Information","AccountNumber","","","10004","10003",""<endrec>
+"FI Account Information","BankName","","","10005","10003",""<endrec>
+"FI Account Information","BankNShortCode","","","10006","10003",""<endrec>
+"Internal Organization ID","Internal Organization ID","","","10007","10003",""<endrec>
+"Short Code","Short Code","","","30002","40002","0"<endrec>
+"Short Code","Short Code","","","30008","40005","0"<endrec>
+"Short Code","Short Code","","","40002","50004","0"<endrec>

@@ -1,0 +1,23 @@
+COLUMN_ID,COLUMN_NAME,DESCRIPTION,ELEMENT_ID,FIELDNAME,GROUPNAME,ID,ISKYC,ISNEWNODE,TASK_TYPE_NAME,TEMPLATE_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <endrec>
+"3","Middle Name","Middle Name","8","Middle Name","Personal Details","10","1","1","CHANGE_CUSTOMER_KYC","3"<endrec>
+"4","Last Name","Last Name","8","Last Name","Personal Details","11","1","1","CHANGE_CUSTOMER_KYC","3"<endrec>
+"5","Date of Birth(YY-MM-DD)","Date of Birth","8","Date of Birth","Personal Details","28","1","1","CHANGE_CUSTOMER_KYC","3"<endrec>
+"6","ID Type add","ID Type","29","ID Type","ID Details","29","1","0","CHANGE_CUSTOMER_KYC","3"<endrec>
+"7","ID Number add","ID Type","29","ID Number","ID Details","30","1","1","CHANGE_CUSTOMER_KYC","3"<endrec>
+"8","ID Type(condition)","ID Type(condition)","56","ID Type","ID Details","31","1","0","CHANGE_CUSTOMER_KYC","3"<endrec>
+"9","Previous ID Number (condition)","Previous ID Number (condition)","56","ID Number","ID Details","32","1","1","CHANGE_CUSTOMER_KYC","3"<endrec>
+"10","ID Number  modify","ID Number  modify","59","ID Number","ID Details","33","1","0","CHANGE_CUSTOMER_KYC","3"<endrec>
+"11","ID Effective Date modify","ID Effective Date modify","59","ID Effective Date","ID Details","34","1","1","CHANGE_CUSTOMER_KYC","3"<endrec>
+"12","ID Expiry Date modify","ID Expiry Date modify","59","ID Expiry Date","ID Details","35","1","1","CHANGE_CUSTOMER_KYC","3"<endrec>
+"13","ID Type delete","ID Type delete","75","ID Type","ID Details","36","1","0","CHANGE_CUSTOMER_KYC","3"<endrec>
+"14","ID Number delete","ID Number delete","75","ID Number","ID Details","37","1","1","CHANGE_CUSTOMER_KYC","3"<endrec>
+"1","IdentifierType","IdentifierType","80","","","41","0","0","BULK_PAYMENT","15"<endrec>
+"2","IdentifierValue","IdentifierValue","81","","","42","0","0","BULK_PAYMENT","15"<endrec>
+"3","FieldValue","FieldValue","83","First Name","Personal Details","43","1","0","BULK_PAYMENT","15"<endrec>
+"4","Amount","Amount","86","","","44","0","0","BULK_PAYMENT","15"<endrec>
+"5","Comment","Comment","87","","","45","0","0","BULK_PAYMENT","15"<endrec>
+"1","IdentifierType","","91","","","51","0","0","BULK_UPDATE_DORMANT_WHITELIST","24"<endrec>
+"2","Identifier","","93","","","52","0","0","BULK_UPDATE_DORMANT_WHITELIST","24"<endrec>
+"3","OperationType","","95","","","53","0","0","BULK_UPDATE_DORMANT_WHITELIST","24"<endrec>
+"1","MSISDN(require)","MSISDN","3","","","8","0","0","CHANGE_CUSTOMER_KYC","3"<endrec>
+"2","First Name","First Name","8","First Name","Personal Details","9","1","0","CHANGE_CUSTOMER_KYC","3"<endrec>

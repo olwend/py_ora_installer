@@ -1,0 +1,16 @@
+DESCRIPTION,DIRECTION,DISPLAY_NAME,VARIABLE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <endrec>
+"AccountName","D|C","AccountName","AccountName"<endrec>
+"Bundles","D|C","Bundles","BUNDLES"<endrec>
+"credit party","D|C","CreditParty","CREDIT_PARTY"<endrec>
+"debit party","D|C","DebitParty","DEBIT_PARTY"<endrec>
+"ExemptedCharges","D|C","ExemptedCharges","EXEMPTED_CHARGES"<endrec>
+"FXRate","D|C","FXRate","FX_RATE"<endrec>
+"initiator","D|C","Initiator","INIAIATOR"<endrec>
+"OriginatorConversationID","D|C","OriginatorConversationID","OriginatorConversationID"<endrec>
+"PartnerSPIdentityID","D|C","PartnerSPIdentityID","PartnerSPIdentityID"<endrec>
+"PartnerSPIdentityType","D|C","PartnerSPIdentityType","PartnerSPIdentityType"<endrec>
+"Remark","D|C","Remark","REMARY"<endrec>
+"ReferenceData.","D|C","ReferenceData.","ReferenceData."<endrec>
+"ReferenceData.ManagedPaymentProviderReference","D|C","ReferenceData.ManagedPaymentProviderReference","ReferenceData.ManagedPaymentProviderReference"<endrec>
+"ReferenceData.ThirdPartyName","D|C","ReferenceData.ThirdPartyName","ReferenceData.ThirdPartyName"<endrec>
+"ReferenceData.ThirdPartyReference","D|C","ReferenceData.ThirdPartyReference","ReferenceData.ThirdPartyReference"<endrec>

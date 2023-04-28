@@ -1,0 +1,6 @@
+CONNECTOR,EXPRESSION_GROUP_ID,EXPRESSION_REC_ID,LEFT_DATA_DICT_ITEM,LEFT_DATA_DICT_KEY,LEFT_KYC_FIELD_ID,LEFT_KYC_GROUP_ID,LEFT_KYC_ROLE_TYPE,LEFT_TYPE,LEFT_VALUE,OPER_CODE,RIGHT_TYPE,RIGHT_VALUE,RULE_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <endrec>
+"2","151","1101","","","","","","2","1","1","0","Bonga1","1"<endrec>
+"2","152","1102","","","","","","2","1","1","0","Bonga2","1"<endrec>
+"2","153","1103","","","","","","2","1","1","0","Bonga3","1"<endrec>
+"2","186","1406","","","","","","1","""BillRefNo"",1,6","1","0","123456","401"<endrec>
+"2","816","7608","","","","","","2","6306","1","0","test","6103"<endrec>

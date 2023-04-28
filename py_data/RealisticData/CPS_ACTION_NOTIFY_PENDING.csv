@@ -1,0 +1,10 @@
+IS_INSTANTLY,NOTIFICATION_TYPE,OPERATION_CODE,PENDING_TYPE,RECEIVING_CHANNEL,RECIPIENT_ROLE,RECIPIENT_SUB_ROLE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <endrec>
+"0","","ActivateGroupFSIProduct","0","0000","02","0"<endrec>
+"0","","ActivateGroupFSIProducts","0","0000","02","0"<endrec>
+"0","","ActivateOrgFSIProduct","0","0000","02","0"<endrec>
+"0","","ActivateOrgFSIProducts","0","0000","02","0"<endrec>
+"1","208000000000021245","ActiveFSIProducts","0","9999","01","0"<endrec>
+"1","208000000000021245","ActiveFSIProducts","0","9999","02","0"<endrec>
+"1","208000000000021245","ActiveGroupFSIProducts","0","0000","02","0"<endrec>
+"1","208000000000021245","ActiveOrgFSIProducts","0","0000","02","0"<endrec>
+"1","102000000000000027","CreateCustomer","0","9999","01","0"<endrec>

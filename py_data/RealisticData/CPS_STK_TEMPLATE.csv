@@ -1,0 +1,2871 @@
+LAST_OPER_ID,LAST_OPER_TIME,TEMPLATE,TYPE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <endrec>
+"","2015-11-11 03:05:40.000000","<?xml version=""1.0"" encoding=""utf-8"" ?>
+
+<simMessage xmlns=""http://www.huawei.com/cps/ServerMsgSchema.xsd"">
+  <program>
+    <!-- since this is the first message to the server it will have to
+		include the ICCID in order to be decrypted. -->
+    <addSpecialServerString destTable=""unencryptedTable"" strType=""EFiccid""/>
+    <!-- Push a value that the initial menu processor will interpret as
+		an activate 2 operation -->
+    <addServerString valRef=""strOpActivate2"" />
+    <!-- Display the only menu -->
+    <choice titleRef=""strMainMenuTitle"">
+      <item itemRef=""strSwActivate"" gotoRef=""inputSwahili"" />
+      <item itemRef=""strEnActivate"" gotoRef=""inputEnglish"" />
+    </choice>
+    <!-- collect details in Swahili, after adding the swahili culture string -->
+    <addServerString id=""inputSwahili"" valRef=""strCultureSwahili"" />
+    <input promptRef=""strSwEnterStartKey"" format=""digits"" fieldType=""PIN"" minLen=""6"" maxLen=""8"" />
+    <notify textRef=""strSwCreateSecretPin""/>
+    <input promptRef=""strSwEnterNewPIN"" format=""digits"" fieldType=""newPIN"" minLen=""6"" maxLen=""8"" />
+    <input promptRef=""strSwConfirmNewPIN"" format=""digits"" fieldType=""newPIN"" minLen=""6"" maxLen=""8"" />
+    <input promptRef=""strSwEnterIdNumber"" format=""digits"" minLen=""5"" maxLen=""9"" />
+    <addSpecialServerString id=""opSendToServer"" destTable=""encryptedTable"" strType=""SimAppVersion""/>
+    <sendMessage encryptionMode=""3DES"" expectResponse=""false"" />
+
+    <!-- collect details in English -->
+    <addServerString id=""inputEnglish"" valRef=""strCultureEnglish"" />
+    <input promptRef=""strEnEnterStartKey"" format=""digits"" fieldType=""PIN"" minLen=""6"" maxLen=""8"" />
+    <notify textRef=""strEnCreateSecretPin""/>
+    <input promptRef=""strEnEnterNewPIN"" format=""digits"" fieldType=""newPIN"" minLen=""6"" maxLen=""8"" />
+    <input promptRef=""strEnConfirmNewPIN"" format=""digits"" fieldType=""newPIN"" minLen=""6"" maxLen=""8"" />
+    <input promptRef=""strEnEnterIdNumber"" format=""digits"" minLen=""5"" maxLen=""9"" />
+    <goto gotoRef=""opSendToServer""/>
+
+  </program>
+  <strings>
+    <string id=""strCookie"">
+      <!-- A cookie of 0000 indicates a prototype, version 0 with no culture info.
+			The most significant bit of 0 indicates first cookie format,
+			the next bit of 0 indicates initial menu cookie versus transaction cookie,
+			the next 11 bits are a version number,
+			the remaining 3 bits hold the culture string length in bytes. Since this is
+			an activate there is no culture string length.
+			 -->
+      <hexValue>0000</hexValue>
+    </string>
+    <string id=""strSmDest"">
+      <!-- String 1 in an initial menu contains the destination phone number
+			for sent SMS's. The encoding is as documented for EF ADN in 11.11
+			i.e. the first byte contains a 1 in the MSB, the TON in the next
+			three bits and the NPI in the lower 4 bits. For a TON of Unknown(0)
+			and NPI of E.164 (1) the first byte is binary 1 000 0001, hex 81.
+
+			The digits are placed in the next bytes with the first digit in the least
+			significant nibble of the first byte, the second digit in the most
+			significant nibble of the first byte, etc. For example, for a dial
+			number 2520 the first byte would be hex 52 and the second byte would
+			be hex 02. -->
+      <!-- <hexValue>815202</hexValue> -->
+
+      <!--
+			For a TON of International(1) and NPI of E.164 (1) the first byte is
+			binary 1 001 0001, hex 91
+			The HSL SMSC number is 447781489230
+			-->
+      <!-- <hexValue>91447718842903</hexValue> -->
+      <hexValue>815291</hexValue>
+    </string>
+    <string id=""strBrowserLang"">
+      <!-- The third string in an initial menu indicates to the
+			transaction browser which language it should be using. This
+			system is only meant for the pilot. Eventually it is intended
+			that the strings used by the browser will be downloaded in the
+			same way as an initial menu but probably not as part of the
+			initial menu since we are close to the 900+ byte limit.
+			A value of 0 indicates Swahili and a value of 1 indicates English
+			 -->
+      <hexValue>00</hexValue>
+    </string>
+    <string id=""strMainMenuTitle"">
+      <strValue>M-PESA R9Prod Menu</strValue>
+    </string>
+    <!-- in the following strings, those starting strSw are Swahili and those
+		 starting strEn and English -->
+    <string id=""strSwActivate"">
+      <strValue>Wezesha</strValue>
+    </string>
+    <string id=""strSwEnterStartKey"">
+      <strValue>Weka namba ya kuanzia</strValue>
+    </string>
+    <string id=""strSwEnterNewPIN"">
+      <strValue>Weka PIN mpya</strValue>
+    </string>
+    <string id=""strSwConfirmNewPIN"">
+      <strValue>Thibitisha PIN mpya</strValue>
+    </string>
+    <string id=""strSwEnterIdNumber"">
+      <strValue>Kuingia siku ya kuzaliwa au kadi ya utambulisho idadi</strValue>
+    </string>
+    <string id=""strSwCreateSecretPin"">
+      <strValue>Jiwekee PIN ya siri</strValue>
+    </string>
+
+
+    <string id=""strEnActivate"">
+      <strValue>Activate</strValue>
+    </string>
+    <string id=""strEnEnterStartKey"">
+      <strValue>Enter initial PIN</strValue>
+    </string>
+    <string id=""strEnEnterNewPIN"">
+      <strValue>Enter new PIN</strValue>
+    </string>
+    <string id=""strEnConfirmNewPIN"">
+      <strValue>Confirm new PIN</strValue>
+    </string>
+    <string id=""strEnEnterIdNumber"">
+      <strValue>Enter DOB or ID</strValue>
+    </string>
+    <string id=""strEnCreateSecretPin"">
+      <strValue>Create a secret PIN</strValue>
+    </string>
+
+    <string id=""strOpActivate2"">
+      <hexValue>75</hexValue>
+    </string>
+    <string id=""strCultureEnglish"">
+      <strValue>en-US</strValue>
+    </string>
+    <string id=""strCultureSwahili"">
+      <strValue>sw-KE</strValue>
+    </string>
+
+  </strings>
+</simMessage>
+","INITIAL"<endrec>
+"","2018-05-03 08:35:59.000000","<?xml version=""1.0"" encoding=""utf-8"" standalone=""no""?><simMessage xmlns=""http://www.huawei.com/cps/ServerMsgSchema.xsd"">
+	<program>
+		<template transactionType=""SendMoneyWithPreValidation"">
+			<addServerString valRef=""strOpSendMoneyWithPreValidation""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strSendMoney""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""13"" minLen=""10"" promptRef=""strEnterPhoneNo""/>
+			<include tempRef=""InputAmount""/>
+			<include tempRef=""InputInitiatorAccountNameTemple""/>
+			<goto gotoRef=""getPinWithPrevalidation""/>
+		</template>
+	<template transactionType=""GroupG2GTransferWithPreValidation"">
+			<addServerString valRef=""strOpGroupG2GTransferWithPreValidation""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpGroupG2GTransferWithPreValidation""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupG2GTransfer""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strRecipientGroupCode""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strRemark""/>
+			<goto gotoRef=""getPinWithPrevalidation""/>
+		</template>
+	<template id=""choosePreValidate"">
+			<choice titleRef=""strRequestType"">
+				<item gotoRef=""getPre"" itemRef=""strNumber_Pre""/>
+				<item gotoRef=""getSubmit"" itemRef=""strNumber_Submit""/>
+          </choice>
+		  <addServerString id=""getPre"" valRef=""strNumber_One""/>
+		  			<goto gotoRef=""sendMessage""/>
+		  <addServerString id=""getSubmit"" valRef=""strNumber_Two""/>
+		  			<goto gotoRef=""sendMessage""/>
+	<!-- send the request to the server -->
+			<sendMessage expectResponse=""false"" id=""sendMessage""/>
+		</template>
+
+		<template id=""common7"">
+
+			<input fieldType=""PIN"" format=""digits"" id=""getPinWithPrevalidation"" maxLen=""8"" minLen=""1"" promptRef=""strPin""/>
+			<include tempRef=""getCustomerCommnet""/>
+				<!-- go back to start on a failed confirmation, str0 is the accumulator -->
+			<confirm gotoOnYes=""false"" gotoRef=""start"" textRef=""str0""/>
+
+			<include tempRef=""choosePreValidate""/>
+
+		</template>
+		<template transactionType=""CreateDirectDebitMandateByCustomer"">
+			<addServerString valRef=""strCreateMandatebyCustomer""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerCreateMandate""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""13"" minLen=""1"" promptRef=""strEnterPayeeID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterPayerReferencenumber""/>
+			<confirm gotoOnYes=""false"" gotoRef=""start"" textRef=""strAgreed_T_Contents""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterPayerAccountInstance""/>
+			<include tempRef=""getDDDate""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""CreateDirectDebitMandateByGroup"">
+			<addServerString valRef=""strCreateMandatebyGroup""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupCreateMandate""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""13"" minLen=""1"" promptRef=""strEnterPayeeID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterPayerReferencenumber""/>
+			<confirm gotoOnYes=""false"" gotoRef=""start"" textRef=""strAgreed_T_Contents""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterPayerAccountInstance""/>
+			<include tempRef=""getDDDate""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""CreateDirectDebitMandateByOrganization"">
+			<addServerString valRef=""strCreateMandatebyOrg""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrgCreateMandate""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""13"" minLen=""1"" promptRef=""strEnterPayeeID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterPayerReferencenumber""/>
+			<confirm gotoOnYes=""false"" gotoRef=""start"" textRef=""strAgreed_T_Contents""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterPayerAccountInstance""/>
+			<include tempRef=""getDDDate""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""CreateDirectDebitMandateByPayee"">
+			<addServerString valRef=""strCreateMandatebyPayee""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strPayeeCreateMandate""/>
+			<choice titleRef=""strEnterIdentifierType"">
+				<item gotoRef=""getCustomer"" itemRef=""strCustomer""/>
+				<item gotoRef=""getOrganization"" itemRef=""strOrganization""/>
+				<item gotoRef=""getGroup"" itemRef=""strGroup""/>
+			</choice>
+			<addServerString id=""getCustomer"" valRef=""strNumber_One""/>
+			<goto gotoRef=""getPayeeID""/>
+			<addServerString id=""getOrganization"" valRef=""strNumber_Two""/>
+			<goto gotoRef=""getPayeeID""/>
+			<addServerString id=""getGroup"" valRef=""strNumber_Three""/>
+			<goto gotoRef=""getPayeeID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" id=""getPayeeID"" maxLen=""13"" minLen=""1"" promptRef=""strEnterPayerID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterPayerReferencenumber""/>
+			<confirm gotoOnYes=""false"" gotoRef=""start"" textRef=""strAgreed_T_Contents""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterPayerAccountInstance""/>
+			<include tempRef=""getDDDate""/>
+			<goto gotoRef=""getPinAndOperatorId""/>
+		</template>
+
+		<template transactionType=""ActivateCustomerDirectDebitMandate"">
+			<addServerString valRef=""strActivateCustomerMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerActivateMandate""/>
+			<include tempRef=""getDDActivate""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+		<template transactionType=""ActivateGroupDirectDebitMandate"">
+			<addServerString valRef=""strActivateGroupMandate""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupActivateMandate""/>
+			<include tempRef=""getDDActivate""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+		<template transactionType=""ActivateOrganizationDirectDebitMandate"">
+			<addServerString valRef=""strActivateOrgMandate""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrgActivateMandate""/>
+			<include tempRef=""getDDActivate""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template id=""getDDActivate"">
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<choice titleRef=""strEnterAgreedTC"">
+				<item gotoRef=""getYes"" itemRef=""strYes""/>
+				<item gotoRef=""getNo"" itemRef=""strNo""/>
+			</choice>
+			<addServerString id=""getYes"" valRef=""strNumber_One""/>
+			<goto gotoRef=""getPayerAccount""/>
+			<addServerString id=""getNo"" valRef=""strNumber_Two""/>
+			<goto gotoRef=""getPayerAccount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" id=""getPayerAccount"" maxLen=""31"" minLen=""0"" promptRef=""strEnterPayerAccountInstance""/>
+		</template>
+
+
+
+		<template transactionType=""CustomerEditDirectDebitMandate"">
+			<addServerString valRef=""strOpCustomerEditDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerEditDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strEnterMandateID""/>
+			<include tempRef=""getDDEdit""/>
+		</template>
+
+		<template transactionType=""GroupEditDirectDebitMandate"">
+			<addServerString valRef=""strOpGroupEditDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupEditDirectDebitMandate""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<include tempRef=""getDDEdit""/>
+		</template>
+
+		<template transactionType=""OrgEditDirectDebitMandate"">
+			<addServerString valRef=""strOpOrgEditDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrgEditDirectDebitMandate""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<include tempRef=""getDDEdit""/>
+		</template>
+
+		<template transactionType=""OrgEditDirectDebitMandateByPayee"">
+			<addServerString valRef=""strOpOrgEditDirectDebitMandatePayee""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrgEditDirectDebitMandatePayee""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<include tempRef=""getDDDate""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template id=""getDDEdit"">
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<choice titleRef=""strEnterAgreedTC"">
+				<item gotoRef=""getEditYes"" itemRef=""strYes""/>
+				<item gotoRef=""getEditNo"" itemRef=""strNo""/>
+			</choice>
+			<addServerString id=""getEditYes"" valRef=""strNumber_One""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getEditNo"" valRef=""strNumber_Two""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""CustomerCancelDirectDebitMandate"">
+			<addServerString valRef=""strOpCustomerCancelDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerCancelDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strEnterMandateID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""GroupCancelDirectDebitMandate"">
+			<addServerString valRef=""strOpGroupCancelDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupCancelDirectDebitMandate""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""OrgCancelDirectDebitMandate"">
+			<addServerString valRef=""strOpOrgCancelDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrgCancelDirectDebitMandate""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""OrgCancelDirectDebitMandateByPayee"">
+			<addServerString valRef=""strOpOrgCancelDirectDebitMandatePayee""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrgCancelDirectDebitMandatePayee""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""CustomerReactivateDirectDebitMandate"">
+			<addServerString valRef=""strOpCustomerReactivateDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerReactivateDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strEnterMandateID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""GroupReactivateDirectDebitMandate"">
+			<addServerString valRef=""strOpGroupReactivateDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupReactivateDirectDebitMandate""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""OrgReactivateDirectDebitMandate"">
+			<addServerString valRef=""strOpOrgReactivateDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrgReactivateDirectDebitMandate""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""OrgReactivateDirectDebitMandateByPayee"">
+			<addServerString valRef=""strOpOrgReactivateDirectDebitMandatePayee""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrgReactivateDirectDebitMandatePayee""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""InitiateDirectDebitTransaction"">
+			<addServerString valRef=""strOpInitiateDirectDebitTransaction""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strInitiateDirectDebitTransaction""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""31"" minLen=""1"" promptRef=""strEnterReferenceNumber""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strAmount""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""CustomerCloseAccountForMultiple"">
+			<addServerString valRef=""strCustomerCloseAccount""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerCloseAccountType""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strAccountName""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""OrgCloseAccountForMultiple"">
+			<addServerString valRef=""strOrganizationCloseAccount""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrganizationCloseAccountType""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strAccountName""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template id=""CustomerIntraAccountTransfer"">
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterOriginAccountName""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterDestinationAccountName""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPinWithComment""/>
+		</template>
+
+		<template transactionType=""CustomerIntraAccountTransfer_Saving_To_m-pesa"">
+			<addServerString valRef=""strCustomerIntraAccountTransfer_Saving_To_m-pesaMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerIntraAccountTransfer_Saving_To_m-pesa""/>
+			<include tempRef=""CustomerIntraAccountTransfer""/>
+		</template>
+
+		<template transactionType=""CustomerIntraAccountTransfer_m-pesa_To_m-pesa"">
+			<addServerString valRef=""strCustomerIntraAccountTransfer_m-pesa_To_m-pesaMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerIntraAccountTransfer_m-pesa_To_m-pesa""/>
+			<include tempRef=""CustomerIntraAccountTransfer""/>
+		</template>
+
+		<template transactionType=""CustomerIntraAccountTransfer_Saving_To_Saving"">
+			<addServerString valRef=""strCustomerIntraAccountTransfer_Saving_To_SavingMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerIntraAccountTransfer_Saving_To_Saving""/>
+			<include tempRef=""CustomerIntraAccountTransfer""/>
+		</template>
+
+		<template transactionType=""CustomerIntraAccountTransfer_m-pesa_To_Saving"">
+			<addServerString valRef=""strCustomerIntraAccountTransfer_m-pesa_To_SavingMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerIntraAccountTransfer_m-pesa_To_Saving""/>
+			<include tempRef=""CustomerIntraAccountTransfer""/>
+		</template>
+
+		<template id=""OrganizationIntraAccountTransfer"">
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterOriginAccountName""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterDestinationAccountName""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPinWithComment""/>
+		</template>
+
+		<template transactionType=""OrganizationIntraAccountTransfer_float_To_Working"">
+			<addServerString valRef=""strOrganizationIntraAccountTransfer_float_To_WorkingMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrganizationIntraAccountTransfer_float_To_Working""/>
+			<include tempRef=""OrganizationIntraAccountTransfer""/>
+		</template>
+
+		<template transactionType=""OrganizationIntraAccountTransfer_float_To_float"">
+			<addServerString valRef=""strOrganizationIntraAccountTransfer_float_To_floatMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrganizationIntraAccountTransfer_float_To_float""/>
+			<include tempRef=""OrganizationIntraAccountTransfer""/>
+		</template>
+
+		<template transactionType=""CustomerCreateAccountForMultiple"">
+			<addServerString valRef=""strCustomerCreateAccount""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerAccountType""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strAccountTypeAlias""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strAccountName""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""OrgCreateAccountForMultiple"">
+			<addServerString valRef=""strOrganizationCreateAccount""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrganizationAccountType""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strAccountTypeAlias""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strAccountName""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""UpdateCustomerMenu"">
+			<addServerString valRef=""strOpUpdateCustomerMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strUpdateMenu""/>
+			<addServerString valRef=""strLanguageName""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""UpdateTillMenu"">
+			<addServerString valRef=""strOpUpdateTillMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strUpdateMenu""/>
+			<addServerString valRef=""strLanguageName""/>
+			<goto gotoRef=""getOperatorIdPinNoConf""/>
+		</template>
+
+		<template transactionType=""SendMoney"">
+			<addServerString valRef=""strOpSendMoney""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strSendMoney""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""13"" minLen=""10"" promptRef=""strEnterPhoneNo""/>
+			<include tempRef=""InputAmount""/>
+			<include tempRef=""InputInitiatorAccountNameTemple""/>
+			<goto gotoRef=""getPinNoConfWithComment""/>
+		</template>
+
+		<template transactionType=""PayBill"">
+			<addServerString valRef=""strOpPayBill""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strPayBill""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""16"" minLen=""0"" promptRef=""strEnterBillReferenceNumber""/>
+			<include tempRef=""InputAmount""/>
+			<include tempRef=""InputInitiatorAccountNameTemple""/>
+			<goto gotoRef=""getPinWithComment""/>
+		</template>
+
+		<template transactionType=""ATMWithdrawalVoucher"">
+			<addServerString valRef=""strOpAtmWithdrawalVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strATMWithdrawalVoucher""/>
+			<input addToAccumulator=""dont_add"" format=""digits"" maxLen=""8"" minLen=""4"" promptRef=""strEnterATMShortCode""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<!-- CCH Identify Customer -->
+		<template transactionType=""CCHIdentityCustomer"">
+			<addServerString valRef=""strOpCCHIdentifyCustomer""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCCHIdentifyCustomer""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strFor""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""13"" minLen=""13"" promptRef=""strPhoneNo""/>
+			<goto gotoRef=""getOperatorIdPin""/>
+		</template>
+
+		<!--CCH Identify All Organization Operator -->
+		<template transactionType=""CCHAllIdentifyOrgnizationOperator"">
+			<addServerString valRef=""strOpCCHAllIdentifyOrgnizationOperator""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCCHAllIdentifyOrgnizationOperator""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strFor""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgTillNumber""/>
+			<goto gotoRef=""getOperatorIdPin""/>
+		</template>
+
+		<!-- CCH Customer PIN UnLock -->
+		<template transactionType=""CCHCustomerPINUnlock"">
+			<addServerString valRef=""strOpCCHCustPINUnlock""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCCHUnlockPIN""/>
+			<addStatusString addMode=""add_with_space"" id=""forGetPhoneNoDOBOperatorIDPin"" valRef=""strFor""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" id=""getPhoneNoDOBOperatorIDPin"" maxLen=""13"" minLen=""13"" promptRef=""strPhoneNo""/>
+			<addStatusString addMode=""add_with_newline"" id=""getDOBOperatorIDPin"" valRef=""strDOB""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strDOB""/>
+			<goto gotoRef=""getOperatorIdPin""/>
+		</template>
+
+		<!-- Unlock All Organization Operator PIN -->
+		<template transactionType=""CCHAllOrgOperatorPINUnlock"">
+			<addServerString valRef=""strOpCCHAllOrgOperatorPINUnlock""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCCHAllOrgOperatorPINUnlock""/>
+			<addStatusString addMode=""add_with_space"" id=""forGetIdTillDOBOperatorIDPin"" valRef=""strFor""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgTillNumber""/>
+			<goto gotoRef=""getDOBOperatorIDPin""/>
+		</template>
+
+		<!-- Reset Customer PIN -->
+		<template transactionType=""CCHResetCustomerPIN"">
+			<addServerString valRef=""strOpCCHResetCustomerPIN""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCCHResetCustomerPIN""/>
+			<goto gotoRef=""forGetPhoneNoDOBOperatorIDPin""/>
+		</template>
+
+		<!-- Reset All Organization Operator PIN -->
+		<template transactionType=""CCHAllOrganizatoinOperatorPINReset"">
+			<addServerString valRef=""strOpCCHAllOrganizatoinOperatorPINReset""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCCHResetOperatorPIN""/>
+			<goto gotoRef=""forGetIdTillDOBOperatorIDPin""/>
+		</template>
+
+
+		<!-- CCH Request Transaction Reversal -->
+		<template transactionType=""CCHReverseTransaction"">
+			<addServerString valRef=""strOpCCHReverseTransaction""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strReversal""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strFor""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""13"" minLen=""13"" promptRef=""strPhoneNo""/>
+			<!-- Choose Reversal reason -->
+			<choice titleRef=""strConfirmReason"">
+				<item gotoRef=""getReasonTxnRevWrongNo"" itemRef=""strWrongNoEntered""/>
+				<item gotoRef=""getReasonTxnRevInvalidAmnt"" itemRef=""strIncorrectAmntEntered""/>
+				<item gotoRef=""getReasonTxnRevOther"" itemRef=""strTxnRevOther""/>
+			</choice>
+			<!-- Confirm Reason submenus -->
+			<addServerString id=""getReasonTxnRevWrongNo"" valRef=""strTxnReversal_WrongNo""/>
+			<goto gotoRef=""getTxnReversalInfo""/>
+			<addServerString id=""getReasonTxnRevInvalidAmnt"" valRef=""strTxnReversal_InvalidAmnt""/>
+			<goto gotoRef=""getTxnReversalInfo""/>
+			<addServerString id=""getReasonTxnRevOther"" valRef=""strTxnReversal_Other""/>
+			<!-- Common Menu of Txn Reversal after Confirm Reason -->
+			<addStatusString addMode=""add_with_newline"" id=""getTxnReversalInfo"" valRef=""strTransaction""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""16"" minLen=""1"" promptRef=""strEnterReceiptNo""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strOf""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strAmount""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getOperatorIdPinWithComment""/>
+		</template><!-- CCH Collect Date of Birth (DOB) for Customer -->
+		<template transactionType=""CCHCollectDOB"">
+			<addServerString valRef=""strOpCCHCollectDOB""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCCHCollectDOB""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strFor""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""13"" minLen=""13"" promptRef=""strPhoneNo""/>
+			<input addToAccumulator=""dont_add"" format=""digits"" maxLen=""13"" minLen=""13"" promptRef=""strConfirmPhoneNo""/>
+
+			<choice titleRef=""strChooseIDType"">
+				<item gotoRef=""getNationalIDCCH"" itemRef=""strNationalID""/>
+				<item gotoRef=""getPassportCCH"" itemRef=""strPassport""/>
+			</choice>
+
+			<addServerString id=""getNationalIDCCH"" valRef=""strIdType_NationalId""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""16"" minLen=""4"" promptRef=""strNewIDNumber""/>
+			<goto gotoRef=""getDOBOperatorIDPin""/>
+			<addServerString id=""getPassportCCH"" valRef=""strIdType_Passport""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""16"" minLen=""4"" promptRef=""strNewIDNumber""/>
+			<goto gotoRef=""getDOBOperatorIDPin""/>
+		</template>
+
+		<!--CCH Identify Organization Operator -->
+		<template transactionType=""CCHIdentifyOrgOperator"">
+			<addServerString valRef=""strOpCCHIdentifyOrgOperator""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCCHIdentifyOrgOperator""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterOtherOperatorID""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strUsing""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strTill""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""4"" promptRef=""strOrgTillNumber""/>
+			<goto gotoRef=""getOperatorIdPin""/>
+		</template>
+
+		<!--CCH Unlock Organization Operator PIN -->
+		<template transactionType=""CCHOrgOperatorPINUnlock"">
+			<addServerString valRef=""strOpCCHOrgOperatorPINUnlock""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCCHOrgOperatorPINUnlock""/>
+			<goto gotoRef=""forGetIdTillDOBOperatorIDPin""/>
+		</template>
+
+		<!--CCH Reset Organization Operator PIN -->
+		<template transactionType=""CCHOrgOperatorPINReset"">
+			<addServerString valRef=""strOpCCHOrgOperatorPINReset""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCCHOrgOperatorPINReset""/>
+			<goto gotoRef=""forGetIdTillDOBOperatorIDPin""/>
+		</template>
+
+		<!--- FSI Menu -->
+		<!--- M-Shwari STK Menu -->
+		<template transactionType=""Shwari_Activate"">
+			<addServerString valRef=""strOpShwari_Activate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strShwari_Activate""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""Shwari_Activate_Terms_and_Conditions"">
+			<addServerString valRef=""strOpShwari_Activate_Terms_and_Conditions""/>
+			<confirm gotoOnYes=""false"" gotoRef=""start"" textRef=""strShwari_Activate_Contents""/>
+			<complete/>
+		</template>
+
+		<template transactionType=""Shwari_Deposit"">
+			<addServerString valRef=""strOpShwari_Deposit""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_Deposit""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Shwari_Withdraw"">
+			<addServerString valRef=""strOpShwari_Withdraw""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_Withdraw""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Shwari_RequestLoan"">
+			<addServerString valRef=""strOpShwari_RequestLoan""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_RequestLoan""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Shwari_RequestLoan_Terms_and_Conditions"">
+			<addServerString valRef=""strOpShwari_RequestLoan_Terms_and_Conditions""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_RequestLoan_Contents""/>
+			<goto gotoRef=""confirmAndSend""/>
+		</template>
+
+		<template transactionType=""Shwari_PayLoan"">
+			<addServerString valRef=""strOpShwari_PayLoan""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strShwari_PayLoan""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Shwari_PayLoanFromSavings"">
+			<addServerString valRef=""strOpShwari_PayLoanFromSavings""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strShwari_PayLoanFromSavings""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Shwari_BankBalance"">
+			<addServerString valRef=""strOpShwari_BankBalance""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_BankBalance""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""Shwari_MiniStatement"">
+			<addServerString valRef=""strOpShwari_MiniStatement""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_MiniStatement""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""Shwari_LoanLimit"">
+			<addServerString valRef=""strOpShwari_LoanLimit""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strShwari_LoanLimit""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""FSI_MiniStatement"">
+			<addServerString valRef=""strOpFSI_MiniStatement""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_MiniStatement""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+
+		<!--- M-Kesho STK Menu -->
+		<template transactionType=""Kesho_Deposit"">
+			<addServerString valRef=""strOpKesho_Deposit""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_Deposit""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Kesho_Withdraw"">
+			<addServerString valRef=""strOpKesho_Withdraw""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_Withdraw""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Kesho_RequestLoan"">
+			<addServerString valRef=""strOpKesho_RequestLoan""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_RequestLoan""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Kesho_RequestLoan_Terms_and_Conditions"">
+			<addServerString valRef=""strOpKesho_RequestLoan_Terms_and_Conditions""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_RequestLoan_Contents""/>
+			<goto gotoRef=""confirmAndSend""/>
+		</template>
+
+		<template transactionType=""Kesho_RequestInsurance"">
+			<addServerString valRef=""strOpKesho_RequestInsurance""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strKesho_RequestInsurance""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterInsuranceTypeCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Kesho_RequestInsurance_Terms_and_Conditions"">
+			<addServerString valRef=""strOpKesho_RequestInsurance_Terms_and_Conditions""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strKesho_RequestInsurance_Contents""/>
+			<goto gotoRef=""confirmAndSend""/>
+		</template>
+
+		<template transactionType=""Kesho_BankBalance"">
+			<addServerString valRef=""strOpKesho_BankBalance""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_BankBalance""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""Kesho_MiniStatement"">
+			<addServerString valRef=""strOpKesho_MiniStatement""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_MiniStatement""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+		<!-- Avoid ORA-06550 error: PLS-00172: string literal too long -->
+
+		<!-- IMT Send -->
+
+
+
+		<!-- IMT Send End -->
+
+		<!-- OTC -->
+		<template transactionType=""PayBill_OTC"">
+			<addServerString valRef=""strOpPayBillOTC""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strPayBillOTC""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""13"" minLen=""10"" promptRef=""strEnterRequesterMsisdn""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterRequesterFirstName""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""16"" minLen=""0"" promptRef=""strEnterBillReferenceNumber""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getOperatorIdPinNoConfWithComment""/>
+		</template>
+
+		<template transactionType=""PayBillByOTCVoucher"">
+			<addServerString valRef=""strOpPayBillByOTCVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strPayBillByOTCVoucher""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""31"" minLen=""1"" promptRef=""strEnterRequesterVoucherCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""31"" minLen=""0"" promptRef=""EnterAdditionalValidationInformation""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterRequesterFirstName""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""16"" minLen=""0"" promptRef=""strEnterBillReferenceNumber""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getOperatorIdPinNoConfWithComment""/>
+		</template>
+
+		<template transactionType=""ApplyOTCVoucher"">
+			<addServerString valRef=""strOpApplyOTCVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strApplyOTCVoucher""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strEnterSecretCode""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""BuyAirTime_OTC"">
+			<addServerString valRef=""strOpBuyAirTimeOTC""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strBuyAirTimeOTC""/>
+
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""13"" minLen=""10"" promptRef=""strEnterRequesterMsisdn""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterRequesterFirstName""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""13"" minLen=""10"" promptRef=""strEnterRechargedMsisdn""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getOperatorIdPinNoConfWithComment""/>
+		</template>
+
+		<template transactionType=""AirtimePurchaseByOTCVoucher"">
+			<addServerString valRef=""strOpAirtimePurchaseByOTCVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strAirtimePurchaseByOTCVoucher""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""31"" minLen=""1"" promptRef=""strEnterRequesterVoucherCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""31"" minLen=""0"" promptRef=""EnterAdditionalValidationInformation""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterRequesterFirstName""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""13"" minLen=""10"" promptRef=""strEnterRechargedMsisdn""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getOperatorIdPinNoConfWithComment""/>
+		</template>
+
+
+
+		<template transactionType=""IMTSendQueryQuoteByOTCVoucher"">
+			<addServerString valRef=""strOpIMTSendQueryQuoteByOTCVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strIMTSendQueryQuoteByOTCVoucher""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""31"" minLen=""1"" promptRef=""strEnterRequesterVoucherCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""31"" minLen=""0"" promptRef=""EnterAdditionalValidationInformation""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterRequesterFirstName""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""1"" promptRef=""strEnterTheAmountTobeTransfered""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""13"" minLen=""10"" promptRef=""strEnterRecipientMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterFirstName""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterLastName""/>
+			<goto gotoRef=""getOperatorIdPinNoConf""/>
+		</template>
+
+
+
+		<template transactionType=""IMTSendByOTCVoucher"">
+			<addServerString valRef=""strOpIMTSendByOTCVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strIMTSendByOTCVoucher""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""31"" minLen=""1"" promptRef=""strEnterRequesterVoucherCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""31"" minLen=""0"" promptRef=""EnterAdditionalValidationInformation""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterRequesterFirstName""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""1"" promptRef=""strEnterTransferAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""13"" minLen=""10"" promptRef=""strEnterRecipientMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterFirstName""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterLastName""/>
+			<goto gotoRef=""getOperatorIdPinNoConf""/>
+		</template>
+		<!-- OTC -->
+
+		<!-- Payment Schedule -->
+		<template transactionType=""Delete_Reminder_Schedule"">
+			<addServerString valRef=""strOpDeleteReminderSchedule""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strDeleteReminderSchedule""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterReminderScheduleID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Initiate_Customer_Transaction_by_Reminder"">
+			<addServerString valRef=""strCustInitiateTransactionByReminder""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strEnterReminderID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""22"" minLen=""1"" promptRef=""strEnterReminderID""/>
+			<include tempRef=""InputInitiatorAccountNameTemple""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Initiate_Organization_Transaction_by_Reminder"">
+			<addServerString valRef=""strOpInitiateTransactionByReminder""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strEnterReminderID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""22"" minLen=""1"" promptRef=""strEnterReminderID""/>
+			<goto gotoRef=""getOperatorIdPinNoConf""/>
+		</template>
+
+		<template transactionType=""CreateCustomerReminderScheduleWithMSISDN"">
+			<addServerString valRef=""strOpCreateCustomerReminderScheduleWithMSISDN""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCreateCustomerReminderSchedule""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""13"" minLen=""10"" promptRef=""strEnterPhoneNo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strFreeText""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strReminderName""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strFirstPaymentReminderDate""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strIssueReminderDateUnitll""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strFrequency""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""CreateCustomerReminderScheduleWithShortCode"">
+			<addServerString valRef=""strOpCreateCustomerReminderScheduleWithShortCode""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCreateCustomerReminderSchedule""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""16"" minLen=""0"" promptRef=""strEnterBillReferenceNumber""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strFreeText""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strReminderName""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strFirstPaymentReminderDate""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strIssueReminderDateUnitll""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strFrequency""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""CreateCustomerReminderScheduleWithShortCodeAndMSISDN"">
+			<addServerString valRef=""strOpCreateCustomerReminderScheduleWithShortCodeAndMSISDN""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCreateCustomerReminderSchedule""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""13"" minLen=""10"" promptRef=""strEnterRechargedMsisdn""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strFreeText""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strReminderName""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strFirstPaymentReminderDate""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strIssueReminderDateUnitll""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strFrequency""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""CreateCustomerIMTTransferAbroadReminderSchedule"">
+			<addServerString valRef=""strOpCreateCustomerIMTTransferAbroadReminderSchedule""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCreateCustomerReminderSchedule""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""13"" minLen=""10"" promptRef=""strEnterRecipientMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterFirstName""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterLastName""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strFreeText""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strReminderName""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strFirstPaymentReminderDate""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strIssueReminderDateUnitll""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strFrequency""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""CreateCustomerM-ShwariWithdrawReminderSchedule"">
+			<addServerString valRef=""strOpCreateCustomerM-ShwariWithdrawReminderSchedule""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCreateCustomerReminderSchedule""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strFreeText""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strReminderName""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strFirstPaymentReminderDate""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strIssueReminderDateUnitll""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strFrequency""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""CreateCustomerM-KeshoWithdrawReminderSchedule"">
+			<addServerString valRef=""strOpCreateCustomerM-KeshoWithdrawReminderSchedule""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCreateCustomerReminderSchedule""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strFreeText""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strReminderName""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strFirstPaymentReminderDate""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strIssueReminderDateUnitll""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strFrequency""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""View_Reminder_Schedule"">
+			<addServerString valRef=""strOpViewReminderSchedule""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strViewReminderSchedule""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""View_Reminder_Schedule_Details"">
+			<addServerString valRef=""strOpViewReminderScheduleDetails""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strEnterReminderScheduleID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterReminderScheduleID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+		<!-- Payment Schedule -->
+
+		<!-- Reversal Transaction -->
+		<template transactionType=""Initiate_Customer_Reversal_Transaction"">
+			<addServerString valRef=""strInitiateCustomerReversalTransaction""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strReversal""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""16"" minLen=""10"" promptRef=""strEnterOriginalOrderIdOrRequestID""/>
+			<goto gotoRef=""getPinWithComment""/>
+		</template>
+
+		<template transactionType=""Initiate_Organization_Reversal_Transaction"">
+			<addServerString valRef=""strInitiateOrganizationReversalTransaction""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strReversal""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""16"" minLen=""10"" promptRef=""strEnterOriginalOrderIdOrRequestID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<goto gotoRef=""getPinWithComment""/>
+		</template>
+
+		<!-- Approval Group Transaction -->
+		<template transactionType=""Approval_Group_Transaction"">
+			<addServerString valRef=""strApprovalGroupTransaction""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strEnterReminderID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""22"" minLen=""1"" promptRef=""strEnterReminderID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""1"" promptRef=""strOperationType""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- Reversal Request Start -->
+		<template transactionType=""CustomerReversalRequest"">
+			<addServerString valRef=""strOpCustomerReversalRequest""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strEnterOriginalTransactionId""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterOriginalTransactionId""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+		<template transactionType=""OrganizationReversalRequest"">
+			<addServerString valRef=""strOpOrganizationReversalRequest""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strEnterOriginalTransactionId""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterOriginalTransactionId""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+		<!-- Reversal Request End -->
+
+		<!-- Common Template -->
+		<template id=""commonOperator1"">
+			<input addToAccumulator=""dont_add"" format=""alpha"" id=""getOperatorIdPinNoConf"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input fieldType=""PIN"" format=""digits"" maxLen=""8"" minLen=""6"" promptRef=""strOperatorPin""/>
+			<sendMessage expectResponse=""false""/>
+		</template>
+
+		<template id=""common1"">
+			<input fieldType=""PIN"" format=""digits"" id=""getPinNoConf"" maxLen=""8"" minLen=""6"" promptRef=""strPin""/>
+			<!-- send the request to the server -->
+			<sendMessage expectResponse=""false""/>
+		</template>
+
+		<template id=""commonOperator2"">
+			<input addToAccumulator=""dont_add"" format=""alpha"" id=""getOperatorIdPin"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input fieldType=""PIN"" format=""digits"" id=""getOperatorPin"" maxLen=""8"" minLen=""6"" promptRef=""strOperatorPin""/>
+			<!-- go back to start on a failed confirmation, str0 is the accumulator -->
+			<confirm gotoOnYes=""false"" gotoRef=""start"" textRef=""str0""/>
+			<!-- send the request to the server -->
+			<sendMessage expectResponse=""false""/>
+		</template>
+
+		<template id=""commonOperator3"">
+			<input addToAccumulator=""dont_add"" format=""alpha"" id=""getOperatorIdPinWithComment"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input fieldType=""PIN"" format=""digits"" maxLen=""8"" minLen=""6"" promptRef=""strOperatorPin""/>
+			<include tempRef=""getCustomerCommnet""/>
+			<!-- go back to start on a failed confirmation, str0 is the accumulator -->
+			<confirm gotoOnYes=""false"" gotoRef=""start"" textRef=""str0""/>
+			<!-- send the request to the server -->
+			<sendMessage expectResponse=""false""/>
+		</template>
+
+		<template id=""commonOperator4"">
+			<input addToAccumulator=""dont_add"" format=""alpha"" id=""getOperatorIdPinNoConfWithComment"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input fieldType=""PIN"" format=""digits"" maxLen=""8"" minLen=""6"" promptRef=""strOperatorPin""/>
+			<include tempRef=""getCustomerCommnet""/>
+			<sendMessage expectResponse=""false""/>
+		</template>
+
+		<template id=""common2"">
+
+			<input fieldType=""PIN"" format=""digits"" id=""getPin"" maxLen=""8"" minLen=""1"" promptRef=""strPin""/>
+			<!-- go back to start on a failed confirmation, str0 is the accumulator -->
+			<confirm gotoOnYes=""false"" gotoRef=""start"" id=""confirmAndSend"" textRef=""str0""/>
+			<!-- send the request to the server -->
+			<sendMessage expectResponse=""false""/>
+		</template>
+
+		<template id=""common3"">
+			<input fieldType=""PIN"" format=""digits"" id=""getPinNoConfWithComment"" maxLen=""8"" minLen=""6"" promptRef=""strPin""/>
+			<include tempRef=""getCustomerCommnet""/>
+			<!-- send the request to the server -->
+			<sendMessage expectResponse=""false""/>
+		</template>
+
+		<template id=""common4"">
+			<input fieldType=""PIN"" format=""digits"" id=""getPinWithComment"" maxLen=""8"" minLen=""1"" promptRef=""strPin""/>
+			<include tempRef=""getCustomerCommnet""/>
+			<!-- go back to start on a failed confirmation, str0 is the accumulator -->
+			<confirm gotoOnYes=""false"" gotoRef=""start"" textRef=""str0""/>
+			<!-- send the request to the server -->
+			<sendMessage expectResponse=""false""/>
+		</template>
+
+		<template id=""getCustomerCommnet"">
+			<input format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strComment""/>
+		</template>
+
+		<template id=""common8"">
+			<input addToAccumulator=""add_with_space"" format=""alpha"" id=""getPinAndOperatorId"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input fieldType=""PIN"" format=""digits"" id=""getOperatorsPin"" maxLen=""8"" minLen=""1"" promptRef=""strPin""/>
+			<!-- go back to start on a failed confirmation, str0 is the accumulator -->
+			<confirm gotoOnYes=""false"" gotoRef=""start"" textRef=""str0""/>
+			<!-- send the request to the server -->
+			<sendMessage expectResponse=""false""/>
+		</template>
+
+		<template id=""InputAmount"">
+			<script>
+    <![CDATA[
+      if (currencySymbolPosition == 1) {
+
+        pilot.addStatusString('strKsh', AppendToAccumulatorType.add_with_space);
+        pilot.input('strAmount', 0, 10, InputType.digits, InputHiddenType.unhidden, AddToAccumulatorType.add_with_no_separator);
+
+      } else if (currencySymbolPosition == 2) {
+
+        pilot.addStatusString('strKsh', AppendToAccumulatorType.add_with_space);
+        pilot.input('strAmount', 0, 10, InputType.digits, InputHiddenType.unhidden, AddToAccumulatorType.add_with_no_separator);
+
+      } else if (currencySymbolPosition == 3) {
+
+        pilot.input('strAmount', 0, 10, InputType.digits, InputHiddenType.unhidden, AddToAccumulatorType.add_with_space);
+        pilot.addStatusString('strKsh', AppendToAccumulatorType.add_with_no_separator);
+
+      } else if (currencySymbolPosition == 4) {
+
+        pilot.input('strAmount', 0, 10, InputType.digits, InputHiddenType.unhidden, AddToAccumulatorType.add_with_space);
+        pilot.addStatusString('strKsh', AppendToAccumulatorType.add_with_no_separator);
+      }
+        ]]>
+			</script>
+		</template>
+
+		<template id=""InputInitiatorAccountNameTemple"">
+			<input addToAccumulator=""add_with_space"" format=""alpha"" id=""InputInitiatorAccountName"" maxLen=""31"" minLen=""0"" promptRef=""strInitiatorAccountName""/>
+		</template>
+
+		<!--Group STK Menu - QueryGroupAccountBalance -->
+		<template transactionType=""QueryGroupAccountBalance"">
+			<addServerString valRef=""strOpQueryGroupAccountBalance""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpQueryGroupAccountBalance""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryGroupAccountBalance""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strChooseAccountType""/>
+			<!-- Select Account Type -->
+			<choice titleRef=""strSelectAccountType"">
+				<item gotoRef=""getGroupAccountType1Balance"" itemRef=""strGroupAccountType1""/>
+				<item gotoRef=""getGroupAccountType2Balance"" itemRef=""strGroupAccountType2""/>
+				<item gotoRef=""getGroupAccountType3Balance"" itemRef=""strGroupAccountType3""/>
+			</choice>
+			<addServerString id=""getGroupAccountType1Balance"" valRef=""strGroupAccountType1""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strGroupAccountType1""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getGroupAccountType2Balance"" valRef=""strGroupAccountType2""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strGroupAccountType2""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getGroupAccountType3Balance"" valRef=""strGroupAccountType3""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strGroupAccountType3""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!--Group STK Menu - QueryGroupMiniStatement -->
+		<template transactionType=""QueryGroupMiniStatement"">
+			<addServerString valRef=""strOpQueryGroupMiniStatement""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpQueryGroupMiniStatement""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryGroupMiniStatement""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strChooseAccountType""/>
+			<!-- Select Account Type -->
+			<choice titleRef=""strSelectAccountType"">
+				<item gotoRef=""getGroupAccountType1Statement"" itemRef=""strGroupAccountType1""/>
+				<item gotoRef=""getGroupAccountType2Statement"" itemRef=""strGroupAccountType2""/>
+				<item gotoRef=""getGroupAccountType3Statement"" itemRef=""strGroupAccountType3""/>
+			</choice>
+			<addServerString id=""getGroupAccountType1Statement"" valRef=""strGroupAccountType1""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strGroupAccountType1""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getGroupAccountType2Statement"" valRef=""strGroupAccountType2""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strGroupAccountType2""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getGroupAccountType3Statement"" valRef=""strGroupAccountType3""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strGroupAccountType3""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!--Group STK Menu - QueryGroupList -->
+		<template transactionType=""QueryGroupList"">
+			<addServerString valRef=""strOpQueryGroupList""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpQueryGroupList""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryGroupList""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- Group STK Menu - GroupPayBill -->
+		<template transactionType=""GroupPayBill"">
+			<addServerString valRef=""strOpGroupPayBill""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpGroupPayBill""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupPayBill""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""16"" minLen=""0"" promptRef=""strEnterBillReferenceNumber""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strRemark""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPinWithComment""/>
+		</template>
+
+		<!-- Group STK Menu - GroupP2G -->
+		<template transactionType=""GroupP2GTransfer"">
+			<addServerString valRef=""strOpGroupP2GTransfer""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpGroupP2GTransfer""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupP2GTransfer""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strRemark""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPinWithComment""/>
+		</template>
+
+
+
+
+		<!-- Group STK Menu - GroupDepositWithVoucher -->
+		<template transactionType=""GroupDepositWithVoucher"">
+
+			<addServerString valRef=""strOpGroupDepositWithVoucher""/>
+
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpGroupDepositWithVoucher""/>
+
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupDepositWithVoucher""/>
+
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterRequesterMsisdn""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strVoucherCode""/>
+
+			<include tempRef=""InputAmount""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strRemark""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+
+			<goto gotoRef=""getPinWithComment""/>
+
+		</template>
+
+
+
+
+		<!-- Group STK Menu - GroupB2G -->
+		<template transactionType=""GroupB2GTransfer"">
+			<addServerString valRef=""strOpGroupB2GTransfer""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpGroupB2GTransfer""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupB2GTransfer""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strRemark""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<goto gotoRef=""getPinWithComment""/>
+		</template>
+
+		<!-- Group STK Menu - ApplyGroupVoucher -->
+		<template transactionType=""ApplyGroupVoucher"">
+			<addServerString valRef=""strOpApplyGroupVoucher""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpApplyGroupVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strApplyGroupVoucher""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+
+		<!-- Group STK Menu - CustomerApplyGroupDepositVoucher -->
+		<template transactionType=""CustomerApplyGroupDepositVoucher"">
+			<addServerString valRef=""strOpApplyGroupDepositVoucher""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpApplyGroupDepositVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strApplyGroupDepositVoucher""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""GroupATMWithdrawalVoucher"">
+			<addServerString valRef=""strOpGroupAtmWithdrawalVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupATMWithdrawalVoucher""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""dont_add"" format=""digits"" maxLen=""8"" minLen=""4"" promptRef=""strEnterATMShortCode""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strRemark""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""GroupATMDepositVoucher"">
+			<addServerString valRef=""strOpATMDepositVoucherForGroup""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strATMDepositVoucherForGroup""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""dont_add"" format=""digits"" maxLen=""8"" minLen=""4"" promptRef=""strEnterATMShortCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""AddGroupMember"">
+			<addServerString valRef=""strOpAddGroupMember""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strAddGroupMember""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strEnterGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterInvitedMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterRole""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<!-- Group STK Menu - GroupBuyGoodswithVoucher -->
+		<template transactionType=""GroupBuyGoodswithVoucher"">
+			<addServerString valRef=""strOpGroupBuyGoodswithVoucher""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpGroupBuyGoodswithVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupBuyGoodswithVoucher""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strRequestingCustomerMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strVoucherCode""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strRemark""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+			<goto gotoRef=""getPinWithComment""/>
+		</template>
+
+		<!-- Group STK Menu - GroupG2PTransfer -->
+		<template transactionType=""GroupG2PTransfer"">
+			<addServerString valRef=""strOpGroupG2PTransfer""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpGroupG2PTransfer""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupG2PTransfer""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strRecipientMSISDN""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strRemark""/>
+			<goto gotoRef=""getPinWithComment""/>
+		</template>
+
+		<!-- Group STK Menu - GroupG2GTransfer -->
+		<template transactionType=""GroupG2GTransfer"">
+			<addServerString valRef=""strOpGroupG2GTransfer""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpGroupG2GTransfer""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupG2GTransfer""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strRecipientGroupCode""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strRemark""/>
+			<goto gotoRef=""getPinWithComment""/>
+		</template>
+
+		<!-- Group STK Menu - GroupRefund -->
+		<template transactionType=""GroupRefund"">
+			<addServerString valRef=""strOpGroupRefund""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpGroupRefund""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupRefund""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strRemark""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<goto gotoRef=""getPinWithComment""/>
+		</template>
+		<!--Group STK Menu - CreateGroup -->
+		<template transactionType=""CreateGroup"">
+			<addServerString valRef=""strOpCreateGroup""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCreateGroup""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""24"" minLen=""0"" promptRef=""strEnterGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterGroupName""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterGroupDescription""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterGroupSponsor""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!--Group STK Menu - CCHCreateGroup -->
+		<template transactionType=""CCHCreateGroup"">
+			<addServerString valRef=""strOpCCHCreateGroup""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCCHCreateGroup""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterRequestingCustomerMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strEnterCustomerDateofBirth""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""24"" minLen=""0"" promptRef=""strEnterGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterGroupName""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterGroupDescription""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterGroupSponsor""/>
+			<goto gotoRef=""getOperatorIdPinNoConf""/>
+		</template>
+
+		<!--Till STK Menu - ATMOrganizationDepositVoucher -->
+		<template transactionType=""ATMOrganizationDepositVoucher"">
+			<addServerString valRef=""strOpATMDepositVoucherForOrg""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strATMDepositVoucherForOrg""/>
+			<input addToAccumulator=""dont_add"" format=""digits"" maxLen=""8"" minLen=""4"" promptRef=""strEnterATMShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""1"" promptRef=""strEnterShortCode""/>
+			<goto gotoRef=""getOperatorIdPinNoConf""/>
+		</template>
+
+		<!--Customer STK Menu - ATMCustomerDepositVoucher -->
+		<template transactionType=""ATMCustomerDepositVoucher"">
+			<addServerString valRef=""strOpATMDepositVoucherForCustomer""/>
+
+			<addStatusString addMode=""clear_before_adding"" valRef=""strATMDepositVoucherForCustomer""/>
+			<input addToAccumulator=""dont_add"" format=""digits"" maxLen=""8"" minLen=""4"" promptRef=""strEnterATMShortCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!--Till STK Menu - ATMOrganizationWithdrawVoucher -->
+		<template transactionType=""ATMOrganizationWithdrawVoucher"">
+			<addServerString valRef=""strOpATMWithdrawVoucherForOrg""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strATMWithdrawVoucherForOrg""/>
+			<input addToAccumulator=""dont_add"" format=""digits"" maxLen=""8"" minLen=""4"" promptRef=""strEnterATMShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""1"" promptRef=""strEnterShortCode""/>
+			<goto gotoRef=""getOperatorIdPinNoConf""/>
+		</template>
+
+		<!--Confirm Group Member ship -->
+		<template transactionType=""ConfirmGroupMembership"">
+			<addServerString valRef=""strCustConfirmGroupMembership""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strEnterGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strEnterGroupCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""CCHAddGroupMember"">
+			<addServerString valRef=""strOpCCHAddGroupMember""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCCHAddGroupMember""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strEnterGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterInvitedMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterRole""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterRequestingCustomerMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strEnterCustomerDateofBirth""/>
+			<goto gotoRef=""getOperatorIdPinNoConf""/>
+		</template>
+
+
+		<!-- Group STK Menu - ApplyGroupWithdrawVoucher -->
+		<template transactionType=""ApplyGroupWithdrawVoucher"">
+			<addServerString valRef=""strOpApplyGroupWithdrawVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strApplyGroupWithdrawVoucher""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterGroupCode""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""GroupWithdrawWithVoucher"">
+			<addServerString valRef=""strOpGroupWithdrawWithVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupWithdrawWithVoucher""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strRequestingCustomerMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strVoucherCode""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strRemark""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""IssueVoucher"">
+			<addServerString valRef=""strOpIssueVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strIssueVoucher""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""13"" minLen=""10"" promptRef=""strInputMsisdn""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""0"" promptRef=""strInputRedeemShortCode""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""0"" promptRef=""strValidityPeriod""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strExtra1""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strExtra2""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""OrgIssueVoucher"">
+			<addServerString valRef=""strOpOrgIssueVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strIssueVoucher""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""13"" minLen=""10"" promptRef=""strInputMsisdn""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""0"" promptRef=""strInputRedeemShortCode""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""0"" promptRef=""strValidityPeriod""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strExtra1""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strExtra2""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""RedeemIssuedVoucher"">
+			<addServerString valRef=""strOpRedeemIssuedVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strRedeemIssuedVoucher""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strVoucherCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strVoucherValidationValue""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""CancelIssuedVoucher"">
+			<addServerString valRef=""strOpCancelIssuedVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCancelIssuedVoucher""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""13"" minLen=""10"" promptRef=""strHolderMsisdn""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""ApplyTicketVoucher"">
+			<addServerString valRef=""strOpApplyTicketVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strApplyTicketVoucher""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""0"" promptRef=""strEnterSecretCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""BuyTicketUsingVoucher"">
+			<addServerString valRef=""strOpBuyTicketUsingVoucher""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strBuyTicketUsingVoucher""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strVoucherCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strVoucherValidationValue""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""1"" promptRef=""strValidityPeriod""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strExtra1""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strExtra2""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!--Group STK Menu - RemoveGroupMember -->
+		<template transactionType=""RemoveGroupMember"">
+			<addServerString valRef=""strOpRemoveGroupMember""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOpRemoveGroupMember""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strRemovedCustomerMSISDN""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!--Group STK Menu - CCHRemoveGroupMember -->
+		<template transactionType=""CCHRemoveGroupMember"">
+			<addServerString valRef=""strOpCCHRemoveGroupMember""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOpCCHRemoveGroupMember""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strRemovedCustomerMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strLeaderMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strDOBofLeader""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!--Group STK Menu - ChangeGroupMemberRole -->
+		<template transactionType=""ChangeGroupMemberRole"">
+			<addServerString valRef=""strOpChangeGroupMemberRole""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOpChangeGroupMemberRole""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strChangedMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strRemoveRole""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strAddRole""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!--Group STK Menu - FSI -->
+		<template transactionType=""Shwari_Group_Activate"">
+			<addServerString valRef=""strOpGroup_Activate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strShwari_Activate""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""Shwari_Activate_Group_Terms_and_Conditions"">
+			<addServerString valRef=""strOpShwari_Activate_Group_Terms_and_Conditions""/>
+			<confirm gotoOnYes=""false"" gotoRef=""start"" textRef=""strShwari_Activate_Group_Contents""/>
+			<complete/>
+		</template>
+
+		<template transactionType=""Shwari_Group_BankBalance"">
+			<addServerString valRef=""strOpGroup_BankBalance""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_BankBalance""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""Shwari_Group_MiniStatement"">
+			<addServerString valRef=""strOpGroup_MiniStatement""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_MiniStatement""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""Shwari_Group_LoanMiniStatement"">
+			<addServerString valRef=""strOpGroup_LoanMiniStatement""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_MiniStatement""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""Shwari_Group_Deposit"">
+			<addServerString valRef=""strOpGroup_Deposit""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_Deposit""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""Shwari_Group_Withdraw"">
+			<addServerString valRef=""strOpGroup_Withdraw""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_Withdraw""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""Shwari_Group_RequestLoan"">
+			<addServerString valRef=""strOpGroup_RequestLoan""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_RequestLoan""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""Shwari_Group_PayLoan"">
+			<addServerString valRef=""strOpGroup_PayLoan""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strShwari_PayLoan""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""Shwari_Group_PayLoanFromSavings"">
+			<addServerString valRef=""strOpShwari_Group_PayLoanFromSavings""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strShwari_PayLoanFromSavings""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<template transactionType=""Shwari_Group_RequestLoan_Terms_and_Conditions"">
+			<addServerString valRef=""strOpShwari_Group_RequestLoan_Terms_and_Conditions""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_RequestLoan_Contents""/>
+			<goto gotoRef=""confirmAndSend""/>
+		</template>
+
+		<template transactionType=""Shwari_Group_LoanLimit"">
+			<addServerString valRef=""strOpShwari_Group_LoanLimit""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strShwari_LoanLimit""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPinNoConf""/>
+		</template>
+
+		<!--Group STK Menu - CCHChangeGroupMemberRole -->
+		<template transactionType=""CCHChangeGroupMemberRole"">
+			<addServerString valRef=""strOpCCHChangeGroupMemberRole""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOpCCHChangeGroupMemberRole""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strChangedMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strRemoveRole""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strAddRole""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strLeaderMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strDOBofLeader""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""CustomerSubscribeBundle"">
+			<addServerString valRef=""strCustomerSubscribeBundle""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerSubscribeBundle""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""18"" minLen=""1"" promptRef=""strEnterBundleID""/>
+			<!-- Select Activation Date -->
+			<choice titleRef=""strSelectActivationDate"">
+				<item gotoRef=""inputDaysFromTodayCustomer"" itemRef=""strDaysFromToday""/>
+				<item gotoRef=""nextDayOfTheSameBundleExpiredCustomer"" itemRef=""strNextDayBundleExpired""/>
+			</choice>
+			<input addToAccumulator=""add_with_space"" format=""digits"" id=""inputDaysFromTodayCustomer"" maxLen=""3"" minLen=""1"" promptRef=""strEnterEffectiveMode""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""nextDayOfTheSameBundleExpiredCustomer"" valRef=""strNextDayBundleExpiredValue""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strNextDayBundleExpired""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""OrgnizationSubscribeBundle"">
+			<addServerString valRef=""strOrgnizationSubscribeBundle""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrgnizationSubscribeBundle""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""18"" minLen=""1"" promptRef=""strEnterBundleID""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/> <!-- Select Account Type -->
+			<!-- Select Activation Date -->
+			<choice titleRef=""strSelectActivationDate"">
+				<item gotoRef=""inputDaysFromTodayOrg"" itemRef=""strDaysFromToday""/>
+				<item gotoRef=""nextDayOfTheSameBundleExpiredOrg"" itemRef=""strNextDayBundleExpired""/>
+			</choice>
+			<input addToAccumulator=""add_with_space"" format=""digits"" id=""inputDaysFromTodayOrg"" maxLen=""3"" minLen=""1"" promptRef=""strEnterEffectiveMode""/>
+			<goto gotoRef=""getOperatorIdPin""/>
+			<addServerString id=""nextDayOfTheSameBundleExpiredOrg"" valRef=""strNextDayBundleExpiredValue""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strNextDayBundleExpired""/>
+			<goto gotoRef=""getOperatorIdPin""/>
+		</template>
+
+		<template transactionType=""GroupSubscribeBundle"">
+			<addServerString valRef=""strGroupSubscribeBundle""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupSubscribeBundle""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""18"" minLen=""1"" promptRef=""strEnterBundleID""/>
+			<!-- Select Activation Date -->
+			<choice titleRef=""strSelectActivationDate"">
+				<item gotoRef=""inputDaysFromTodayGroup"" itemRef=""strDaysFromToday""/>
+				<item gotoRef=""nextDayOfTheSameBundleExpiredGroup"" itemRef=""strNextDayBundleExpired""/>
+			</choice>
+			<input addToAccumulator=""add_with_space"" format=""digits"" id=""inputDaysFromTodayGroup"" maxLen=""3"" minLen=""1"" promptRef=""strEnterEffectiveMode""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""nextDayOfTheSameBundleExpiredGroup"" valRef=""strNextDayBundleExpiredValue""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strNextDayBundleExpired""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+
+
+
+		<!-- Customer query bundle -->
+		<template transactionType=""QueryCustomerBundleList"">
+			<addServerString valRef=""strOpQueryCustomerBundleList""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryCustomerBundleListStatement""/>
+			<!-- Select Bundle Type -->
+			<choice titleRef=""strSelectBundleType"">
+				<item gotoRef=""getBundleType1Statement"" itemRef=""strBundleType1Item""/>
+				<item gotoRef=""getBundleType2Statement"" itemRef=""strBundleType2Item""/>
+				<item gotoRef=""getBundleType3Statement"" itemRef=""strBundleType3Item""/>
+			</choice>
+			<addServerString id=""getBundleType1Statement"" valRef=""strBundleType1""/>
+
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType1Item""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getBundleType2Statement"" valRef=""strBundleType2""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType2Item""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getBundleType3Statement"" valRef=""strBundleType3""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType3Item""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- Query Customer Bundle Detail -->
+		<template transactionType=""QueryCustomerBundleDetail"">
+			<addServerString valRef=""strOpQueryCustomerBundleDetail""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryCustomerBundleDetailStatement""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""22"" minLen=""1"" promptRef=""strBundleId""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- Customer query identity bundle -->
+		<template transactionType=""QueryCustomerIdentityBundleList"">
+			<addServerString valRef=""strOpQueryCustomerIdentityBundleList""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryCustomerBundleListStatement""/>
+			<!-- Select Bundle Type -->
+			<choice titleRef=""strSelectBundleType"">
+				<item gotoRef=""getBundleType1aStatement"" itemRef=""strBundleType1Item""/>
+				<item gotoRef=""getBundleType2aStatement"" itemRef=""strBundleType2Item""/>
+				<item gotoRef=""getBundleType3aStatement"" itemRef=""strBundleType3Item""/>
+			</choice>
+			<addServerString id=""getBundleType1aStatement"" valRef=""strBundleType1""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType1Item""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getBundleType2aStatement"" valRef=""strBundleType2""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType2Item""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getBundleType3aStatement"" valRef=""strBundleType3""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType3Item""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- Query Customer Bundle Detail -->
+		<template transactionType=""QueryCustomerIdentityBundleDetail"">
+			<addServerString valRef=""strOpQueryCustomerIdentityBundleDetail""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryCustomerBundleDetailStatement""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""22"" minLen=""1"" promptRef=""strIdentityBundleId""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- Query Group Bundle List -->
+		<template transactionType=""QueryGroupBundleList"">
+			<addServerString valRef=""strOpQueryGroupBundleList""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryGroupBundleListStatement""/>
+			<!-- Select Bundle Type -->
+			<choice titleRef=""strSelectBundleType"">
+				<item gotoRef=""getBundleType1bStatement"" itemRef=""strBundleType1Item""/>
+				<item gotoRef=""getBundleType2bStatement"" itemRef=""strBundleType2Item""/>
+				<item gotoRef=""getBundleType3bStatement"" itemRef=""strBundleType3Item""/>
+			</choice>
+			<addServerString id=""getBundleType1bStatement"" valRef=""strBundleType1""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType1Item""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getBundleType2bStatement"" valRef=""strBundleType2""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType2Item""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getBundleType3bStatement"" valRef=""strBundleType3""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType3Item""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- Query Group Bundle Detail -->
+		<template transactionType=""QueryGroupBundleDetail"">
+			<addServerString valRef=""strOpQueryGroupBundleDetail""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryGroupBundleDetailStatement""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""22"" minLen=""1"" promptRef=""strBundleId""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""16"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- Query Group Identity Bundle List -->
+		<template transactionType=""QueryGroupIdentityBundleList"">
+			<addServerString valRef=""strOpQueryGroupIdentityBundleList""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryGroupBundleListStatement""/>
+			<!-- Select Bundle Type -->
+			<choice titleRef=""strSelectBundleType"">
+				<item gotoRef=""getBundleType1cStatement"" itemRef=""strBundleType1Item""/>
+				<item gotoRef=""getBundleType2cStatement"" itemRef=""strBundleType2Item""/>
+				<item gotoRef=""getBundleType3cStatement"" itemRef=""strBundleType3Item""/>
+			</choice>
+			<addServerString id=""getBundleType1cStatement"" valRef=""strBundleType1""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType1Item""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getBundleType2cStatement"" valRef=""strBundleType2""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType2Item""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getBundleType3cStatement"" valRef=""strBundleType3""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType3Item""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- Query Group Identity Bundle Detail -->
+		<template transactionType=""QueryGroupIdentityBundleDetail"">
+			<addServerString valRef=""strOpQueryGroupIdentityBundleDetail""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryGroupBundleDetailStatement""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""22"" minLen=""1"" promptRef=""strIdentityBundleId""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""IssueCoupon"">
+			<addServerString valRef=""strOpIssueCoupon""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strIssueCouponTo""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""13"" minLen=""10"" promptRef=""strInputMsisdn""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strRedeemOrg""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""0"" promptRef=""strInputRedeemShortCode""/>
+			<input format=""digits"" maxLen=""8"" minLen=""0"" promptRef=""strValidityPeriod""/>
+			<input format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strExtra1""/>
+			<input format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strExtra2""/>
+			<input format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+			<input format=""alpha"" maxLen=""8"" minLen=""1"" promptRef=""strVoucherRefCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- query Org Bundle List -->
+		<template transactionType=""QueryOrgBundleList"">
+			<addServerString valRef=""strOpQueryOrgBundleList""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryOrgBundleListStatement""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<!-- Select Bundle Type -->
+			<choice titleRef=""strSelectBundleType"">
+				<item gotoRef=""getBundleType1dStatement"" itemRef=""strBundleType1Item""/>
+				<item gotoRef=""getBundleType2dStatement"" itemRef=""strBundleType2Item""/>
+				<item gotoRef=""getBundleType3dStatement"" itemRef=""strBundleType3Item""/>
+			</choice>
+			<addServerString id=""getBundleType1dStatement"" valRef=""strBundleType1""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType1Item""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getBundleType2dStatement"" valRef=""strBundleType2""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType2Item""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getBundleType3dStatement"" valRef=""strBundleType3""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType3Item""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- query Org Bundle Details -->
+		<template transactionType=""QueryOrgBundleDetail"">
+			<addServerString valRef=""strOpQueryOrgBundleDetail""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryOrgBundleDetailStatement""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""22"" minLen=""1"" promptRef=""strBundleId""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- query Org Identity Bundle List -->
+		<template transactionType=""QueryOrgIdentityBundleList"">
+			<addServerString valRef=""strOpQueryOrgIdentityBundleList""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryOrgBundleListStatement""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<!-- Select Bundle Type -->
+			<choice titleRef=""strSelectBundleType"">
+				<item gotoRef=""getBundleType1eStatement"" itemRef=""strBundleType1Item""/>
+				<item gotoRef=""getBundleType2eStatement"" itemRef=""strBundleType2Item""/>
+				<item gotoRef=""getBundleType3eStatement"" itemRef=""strBundleType3Item""/>
+			</choice>
+			<addServerString id=""getBundleType1eStatement"" valRef=""strBundleType1""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType1Item""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getBundleType2eStatement"" valRef=""strBundleType2""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType2Item""/>
+			<goto gotoRef=""getPin""/>
+			<addServerString id=""getBundleType3eStatement"" valRef=""strBundleType3""/>
+			<addStatusString addMode=""add_with_space"" valRef=""strBundleType3Item""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- query Org Identity Bundle Details -->
+		<template transactionType=""QueryOrgIdentityBundleDetail"">
+			<addServerString valRef=""strOpQueryOrgIdentityBundleDetail""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryOrgBundleDetailStatement""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""22"" minLen=""1"" promptRef=""strIdentityBundleId""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""RedeemCoupon"">
+
+			<addServerString valRef=""strOpRedeemCoupon""/>
+
+			<addStatusString addMode=""clear_before_adding"" valRef=""strRedeemCouponQuestion""/>
+
+			<input format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strCouponCode""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strVoucherValidationValue""/>
+
+			<input format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+
+			<input format=""alpha"" maxLen=""8"" minLen=""1"" promptRef=""strVoucherRefCode""/>
+
+			<goto gotoRef=""getPin""/>
+
+		</template>
+
+		<template transactionType=""CancelCoupon"">
+
+			<addServerString valRef=""strOpCancelCoupon""/>
+
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCancelCouponAsk""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strCouponHolderMsisdn""/>
+
+			<input format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+
+			<addStatusString addMode=""add_with_space"" valRef=""strCancelCouponAsk1""/>
+
+			<goto gotoRef=""getPin""/>
+
+		</template>
+
+
+		<template transactionType=""RedeemTicketVoucher"">
+
+			<addServerString valRef=""strOpRedeemTicketVoucher""/>
+
+			<addStatusString addMode=""clear_before_adding"" valRef=""strRedeemCouponQuestion""/>
+
+			<input format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strCouponCode""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strVoucherValidationValue""/>
+
+			<input format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+
+			<goto gotoRef=""getPin""/>
+
+		</template>
+
+
+
+		<template transactionType=""CancelTicketVoucher"">
+
+			<addServerString valRef=""strOpCancelTicketVoucher""/>
+
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCancelCouponAsk""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strCouponHolderMsisdn""/>
+
+			<input format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+
+			<addStatusString addMode=""add_with_space"" valRef=""strCancelCouponAsk1""/>
+
+			<goto gotoRef=""getPin""/>
+
+		</template>
+
+
+
+		<template transactionType=""View_Direct_Debit_Mandate"">
+			<addServerString valRef=""strOpViewDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strEnterMandateID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+		<template transactionType=""View_Direct_Debit_Mandate_Payee"">
+			<addServerString valRef=""strOpViewDirectDebitMandatePayee""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strViewDirectDebitMandatePayee""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+		<template transactionType=""View_Org_Direct_Debit_Mandate"">
+			<addServerString valRef=""strOpViewOrgDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strViewOrgDirectDebitMandate""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""View_Direct_Debit_Mandate_By_Group"">
+			<addServerString valRef=""strOprGroupViewDirectDebitMandate""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupViewDirectDebitMandate""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterMandateID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""View_Standing_Order_Schedule"">
+			<addServerString valRef=""strViewStandingOrderSchedule""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strEnterReminderScheduleID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterReminderScheduleID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""View_Org_Standing_Order_Schedule"">
+			<addServerString valRef=""strOprViewOrgStandingOrderSchedule""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strViewOrgStandingOrderSchedule""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterReminderScheduleID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""View_Standing_Order_Schedule_By_Group"">
+
+			<addServerString valRef=""strOprViewGroupStandingOrderSchedule""/>
+
+			<addStatusString addMode=""clear_before_adding"" valRef=""strEnterGroupCode""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterReminderScheduleID""/>
+
+			<goto gotoRef=""getPin""/>
+		</template>
+
+
+
+		<template transactionType=""Delete_Customer_Bank_Account"">
+			<addServerString valRef=""strDeleteCustomerBankAccountMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strDeleteCustomerBankAccount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterBankShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterAccountNumber""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Query_Customer_Bank_Account"">
+			<addServerString valRef=""strQueryCustomerBankAccountMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryCustomerBankAccount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterBankShortCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+
+
+		<template transactionType=""Delete_Group_Bank_Account"">
+			<addServerString valRef=""strDeleteGroupBankAccountMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strDeleteGroupBankAccount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strEnterGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterBankShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterAccountNumber""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Query_Group_Bank_Account"">
+			<addServerString valRef=""strQueryGroupBankAccountMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryGroupBankAccount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strEnterGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterBankShortCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Cancel_Standing_Order_Schedule"">
+			<addServerString valRef=""strOprCancelStandingOrderSchedule""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCancelReminderSchedule""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterReminderScheduleID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Cancel_Group_Standing_Order_Schedule"">
+			<addServerString valRef=""strOprGroupCancelStandingOrderSchedule""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupCancelStandingOrderSchedule""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterReminderScheduleID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Cancel_Org_Standing_Order_Schedule"">
+			<addServerString valRef=""strOprCancelOrgStandingOrderSchedule""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCancelOrgStandingOrderSchedule""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterReminderScheduleID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Create_Standing_Order_Schedule"">
+			<addServerString valRef=""strCreateStandingOrderScheduleMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCreateStandingOrderSchedule""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""16"" minLen=""0"" promptRef=""strEnterBillReferenceNumber""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strFreeText""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strReminderName""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strFirstPaymentReminderDate""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strIssueReminderDateUnitll""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strFrequency""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strNeedConfirmation""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strSendPreWarning""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""6"" minLen=""0"" promptRef=""strPreWarningPeriod""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Create_Group_Standing_Order_Schedule"">
+			<addServerString valRef=""strCreateGroupStandingOrderScheduleMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCreateGroupStandingOrderSchedule""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""16"" minLen=""0"" promptRef=""strEnterBillReferenceNumber""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strFreeText""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strReminderName""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strFirstPaymentReminderDate""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strIssueReminderDateUnitll""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strFrequency""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strNeedConfirmation""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strSendPreWarning""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""6"" minLen=""0"" promptRef=""strPreWarningPeriod""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Create_Org_Standing_Order_Schedule"">
+			<addServerString valRef=""strCreateOrgStandingOrderScheduleMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCreateOrgStandingOrderSchedule""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""16"" minLen=""0"" promptRef=""strEnterBillReferenceNumber""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strFreeText""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strReminderName""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strFirstPaymentReminderDate""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strIssueReminderDateUnitll""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strFrequency""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strNeedConfirmation""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""1"" minLen=""1"" promptRef=""strSendPreWarning""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""6"" minLen=""0"" promptRef=""strPreWarningPeriod""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+
+
+		<template transactionType=""Delete_Customer_Bank_Account_Lookup"">
+			<addServerString valRef=""strDeleteCustomerBankAccountLookupMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strDeleteCustomerBankAccountLookup""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strEnterBankShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterBankShortCode""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strEnterAccountNumber""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterAccountNumber""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Query_Customer_Bank_Account_Lookup"">
+			<addServerString valRef=""strQueryCustomerBankAccountLookupMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryCustomerBankAccountLookup""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strEnterBankShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterBankShortCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+
+
+		<template transactionType=""Delete_Group_Bank_Account_Lookup"">
+			<addServerString valRef=""strDeleteGroupBankAccountLookupMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strDeleteGroupBankAccountLookup""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strEnterGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strEnterGroupCode""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strEnterBankShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterBankShortCode""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strEnterAccountNumber""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterAccountNumber""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Query_Group_Bank_Account_Lookup"">
+			<addServerString valRef=""strQueryGroupBankAccountLookupMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryGroupBankAccountLookup""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strEnterGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strEnterGroupCode""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strEnterBankShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterBankShortCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+
+
+
+
+
+
+
+
+		<template transactionType=""CustomerBuyForeignCurrencyDirectModel"">
+
+			<addServerString valRef=""strCustomerBuyForeignCurrencyDirectModelMenu""/>
+
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerBuyForeignCurrencyDirectModel""/>
+
+			<include tempRef=""SelectForeignCurrency""/>
+
+			<include tempRef=""SelectBaseCurrency""/>
+
+			<input addToAccumulator=""add_with_space"" format=""digits"" id=""SelectBaseAmount"" maxLen=""8"" minLen=""1"" promptRef=""strEnterBaseAmount""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterPayingAccountName""/>
+
+			<goto gotoRef=""getPin""/>
+		</template>
+
+
+		<!-- Select Foreign Currency -->
+		<template id=""SelectForeignCurrency"">
+
+			<choice titleRef=""strSelectForeignCurrency"">
+
+				<item gotoRef=""SelectForeignCurrency1"" itemRef=""strCurrency1Item""/>
+
+				<item gotoRef=""SelectForeignCurrency2"" itemRef=""strCurrency2Item""/>
+			</choice>
+
+			<include id=""SelectForeignCurrency1"" tempRef=""getCurrency1Statement""/>
+			<goto gotoRef=""ForeignCurrencySpacePart""/>
+
+			<include id=""SelectForeignCurrency2"" tempRef=""getCurrency2Statement""/>
+
+			<addStatusString addMode=""add_with_no_separator"" id=""ForeignCurrencySpacePart"" valRef=""strSpace""/>
+
+		</template>
+
+
+		<template id=""getCurrency1Statement"">
+
+			<addServerString id=""getCurrency1"" valRef=""strCurrency1""/>
+
+			<addStatusString addMode=""add_with_space"" valRef=""strCurrency1Item""/>
+
+		</template>
+
+
+		<template id=""getCurrency2Statement"">
+
+			<addServerString id=""getCurrency2"" valRef=""strCurrency2""/>
+
+			<addStatusString addMode=""add_with_space"" valRef=""strCurrency2Item""/>
+
+		</template>
+
+
+		<!-- Select Base Currency -->
+		<template id=""SelectBaseCurrency"">
+
+			<choice titleRef=""strSelectBaseCurrency"">
+
+				<item gotoRef=""SelectBaseCurrency1"" itemRef=""strBaseCurrency1Item""/>
+
+				<item gotoRef=""SelectBaseCurrency2"" itemRef=""strBaseCurrency2Item""/>
+			</choice>
+
+			<include id=""SelectBaseCurrency1"" tempRef=""getBaseCurrency1Statement""/>
+			<goto gotoRef=""BaseCurrencySpacePart""/>
+
+			<include id=""SelectBaseCurrency2"" tempRef=""getBaseCurrency2Statement""/>
+
+			<addStatusString addMode=""add_with_no_separator"" id=""BaseCurrencySpacePart"" valRef=""strSpace""/>
+
+		</template>
+
+		<template id=""getBaseCurrency1Statement"">
+
+			<addServerString id=""getBaseCurrency1"" valRef=""strBaseCurrency1""/>
+
+			<addStatusString addMode=""add_with_space"" valRef=""strBaseCurrency1Item""/>
+
+		</template>
+
+
+		<template id=""getBaseCurrency2Statement"">
+
+			<addServerString id=""getBaseCurrency2"" valRef=""strBaseCurrency2""/>
+
+			<addStatusString addMode=""add_with_space"" valRef=""strBaseCurrency2Item""/>
+
+		</template>
+
+
+
+
+
+
+		<template transactionType=""CustomerPaymentWithForeignExchange"">
+
+			<addServerString valRef=""strCustomerPaymentWithForeignExchangeMenu""/>
+
+			<addStatusString addMode=""clear_before_adding"" valRef=""strPaymentWithForeignExchange""/>
+
+			<include tempRef=""SelectIdentityType""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterBeneficialIdentifier""/>
+
+			<include tempRef=""SelectSourceCurrency""/>
+
+			<include tempRef=""SelectDestinationCurrency""/>
+
+			<include tempRef=""SelectPaymentBaseCurrency""/>
+
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""1"" promptRef=""strEnterBaseAmount""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterPayingAccountName""/>
+
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- Select Identity Type -->
+		<template id=""SelectIdentityType"">
+
+			<choice titleRef=""strSelectIdentityType"">
+
+				<item gotoRef=""SelectIdentityType1"" itemRef=""strIdentityType1Item""/>
+
+				<item gotoRef=""SelectIdentityType2"" itemRef=""strIdentityType2Item""/>
+
+				<item gotoRef=""SelectIdentityType3"" itemRef=""strIdentityType3Item""/>
+			</choice>
+
+			<include id=""SelectIdentityType1"" tempRef=""getIdentityType1Statement""/>
+			<goto gotoRef=""IdentityTypeSpacePart""/>
+
+
+			<include id=""SelectIdentityType2"" tempRef=""getIdentityType2Statement""/>
+			<goto gotoRef=""IdentityTypeSpacePart""/>
+
+
+			<include id=""SelectIdentityType3"" tempRef=""getIdentityType3Statement""/>
+			<addStatusString addMode=""add_with_no_separator"" id=""IdentityTypeSpacePart"" valRef=""strSpace""/>
+
+		</template>
+
+
+		<template id=""getIdentityType1Statement"">
+
+			<addServerString id=""getIdentityType1"" valRef=""strIdentityType1""/>
+
+		</template>
+
+
+		<template id=""getIdentityType2Statement"">
+
+			<addServerString id=""getIdentityType2"" valRef=""strIdentityType2""/>
+
+		</template>
+
+
+		<template id=""getIdentityType3Statement"">
+
+			<addServerString id=""getIdentityType3"" valRef=""strIdentityType3""/>
+
+		</template>
+
+
+
+
+		<!-- Select Source Currency -->
+		<template id=""SelectSourceCurrency"">
+
+			<choice titleRef=""strSelectSourceCurrency"">
+
+				<item gotoRef=""SelectSourceCurrency1"" itemRef=""strCurrency1Item""/>
+
+				<item gotoRef=""SelectSourceCurrency2"" itemRef=""strCurrency2Item""/>
+
+				<item gotoRef=""SelectSourceCurrency3"" itemRef=""strCurrency3Item""/>
+			</choice>
+
+			<include id=""SelectSourceCurrency1"" tempRef=""getCurrency1Statement""/>
+			<goto gotoRef=""SourceCurrencySpacePart""/>
+
+			<include id=""SelectSourceCurrency2"" tempRef=""getCurrency2Statement""/>
+			<goto gotoRef=""SourceCurrencySpacePart""/>
+
+			<include id=""SelectSourceCurrency3"" tempRef=""getCurrency3Statement""/>
+			<addStatusString addMode=""add_with_no_separator"" id=""SourceCurrencySpacePart"" valRef=""strSpace""/>
+
+		</template>
+
+
+		<template id=""getCurrency3Statement"">
+
+			<addServerString id=""getCurrency3"" valRef=""strCurrency3Item""/>
+
+		</template>
+
+
+		<!-- Select Destination Currency -->
+		<template id=""SelectDestinationCurrency"">
+
+			<choice titleRef=""strSelectDestinationCurrency"">
+
+				<item gotoRef=""SelectDestinationCurrency1"" itemRef=""strCurrency1Item""/>
+
+				<item gotoRef=""SelectDestinationCurrency2"" itemRef=""strCurrency2Item""/>
+
+				<item gotoRef=""SelectDestinationCurrency3"" itemRef=""strCurrency3Item""/>
+			</choice>
+
+			<include id=""SelectDestinationCurrency1"" tempRef=""getCurrency1Statement""/>
+			<goto gotoRef=""DestinationCurrencySpacePart""/>
+
+
+			<include id=""SelectDestinationCurrency2"" tempRef=""getCurrency2Statement""/>
+			<goto gotoRef=""DestinationCurrencySpacePart""/>
+
+
+			<include id=""SelectDestinationCurrency3"" tempRef=""getCurrency3Statement""/>
+			<addStatusString addMode=""add_with_no_separator"" id=""DestinationCurrencySpacePart"" valRef=""strSpace""/>
+
+		</template>
+
+
+		<!-- Select Base Currency -->
+		<template id=""SelectPaymentBaseCurrency"">
+
+			<choice titleRef=""strSelectPaymentBaseCurrency"">
+
+				<item gotoRef=""SelectPaymentBaseCurrency1"" itemRef=""strBaseCurrency1Item""/>
+
+				<item gotoRef=""SelectPaymentBaseCurrency2"" itemRef=""strBaseCurrency2Item""/>
+			</choice>
+
+			<include id=""SelectPaymentBaseCurrency1"" tempRef=""getBaseCurrency1Statement""/>
+			<goto gotoRef=""PaymentBaseSpacePart""/>
+
+			<include id=""SelectPaymentBaseCurrency2"" tempRef=""getBaseCurrency2Statement""/>
+
+			<addStatusString addMode=""add_with_no_separator"" id=""PaymentBaseSpacePart"" valRef=""strSpace""/>
+
+		</template>
+
+
+
+
+
+		<template transactionType=""BuyGoodsWithForeignExchange"">
+			<addServerString valRef=""strBuyGoodsWithForeignExchangeMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strBuyGoodsWithForeignExchange""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strVoucherCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strVerificationCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""0"" promptRef=""strEnterSecretCode""/>
+
+			<include tempRef=""SelectSourceCurrency""/>
+
+			<include tempRef=""SelectDestinationCurrency""/>
+
+			<include tempRef=""SelectPaymentBaseCurrency""/>
+
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""1"" promptRef=""strEnterBaseAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterPayingAccountName""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+
+
+
+
+
+
+		<template transactionType=""OrganizationSellForeignCurrencyIndirectModel"">
+			<addServerString valRef=""strOrganizationSellForeignCurrencyIndirectModelMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrganizationSellForeignCurrencyIndirectModel""/>
+
+			<include tempRef=""SelectForeignCurrency""/>
+
+			<include tempRef=""SelectBaseCurrency""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""1"" promptRef=""strEnterBaseAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterPayingAccountName""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+
+
+		<template transactionType=""GroupSellForeignCurrencyDirectModel"">
+			<addServerString valRef=""GroupSellForeignCurrencyDirectModelMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupSellForeignCurrencyDirectModel""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+
+			<include tempRef=""SelectForeignCurrency""/>
+
+			<include tempRef=""SelectBaseCurrency""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""1"" promptRef=""strEnterBaseAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterPayingAccountName""/>
+
+			<goto gotoRef=""getPin""/>
+		</template>
+
+
+
+
+		<template transactionType=""OrganizationPaymentWithForeignExchange"">
+			<addServerString valRef=""strOrganizationPaymentWithForeignExchangeMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strPaymentWithForeignExchange""/>
+			<!-- Select Identity Type -->
+			<include tempRef=""SelectIdentityType""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterBeneficialIdentifier""/>
+
+			<include tempRef=""SelectSourceCurrency""/>
+
+			<include tempRef=""SelectDestinationCurrency""/>
+
+			<include tempRef=""SelectPaymentBaseCurrency""/>
+
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""1"" promptRef=""strEnterBaseAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterPayingAccountName""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+
+
+
+		<template transactionType=""GroupPaymentWithForeignExchange"">
+			<addServerString valRef=""strGroupPaymentWithForeignExchangeMenu""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strPaymentWithForeignExchange""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<include tempRef=""SelectIdentityType""/>
+
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterBeneficialIdentifier""/>
+
+			<include tempRef=""SelectSourceCurrency""/>
+
+			<include tempRef=""SelectDestinationCurrency""/>
+
+			<include tempRef=""SelectPaymentBaseCurrency""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""1"" promptRef=""strEnterBaseAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterPayingAccountName""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<template transactionType=""Query_ALL_Standing_Order_Schedule"">
+			<addServerString valRef=""strOprQueryAllStandingOrderSchedule""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryAllReminderSchedule""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+		<template transactionType=""Query_Group_Standing_Order_Schedule"">
+			<addServerString valRef=""strOprGroupQueryStandingOrderSchedule""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupQueryStandingOrderSchedule""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+		<template transactionType=""Query_Org_Standing_Order_Schedule"">
+			<addServerString valRef=""strOprQueryOrgStandingOrderSchedule""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strQueryOrgStandingOrderSchedule""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+		<!-- Two Part Payment -->
+		<template transactionType=""Two_Part_Buy_Goods"">
+			<addServerString valRef=""strOpTwoPartBuyGoods""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strTwoPartBuyGoods""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""13"" minLen=""0"" promptRef=""strEnterOtherTwoPartyVoucherReceiver""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPinNoConfWithComment""/>
+		</template>
+
+		<template transactionType=""Two_Part_Payment_Confirm"">
+			<addServerString valRef=""strOpTwoPartConfirm""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strTwoPartConfirm""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterTransactionId""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""31"" minLen=""1"" promptRef=""strEnterTwoPartPaymentVoucher""/>
+			<goto gotoRef=""getPinNoConfWithComment""/>
+		</template>
+
+
+<template transactionType=""Two_Part_Payment_Org_Confirm"">
+			<addServerString valRef=""strOpTwoPartOrgConfirm""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strTwoPartOrgConfirm""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strEnterTransactionId""/>
+			<input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""31"" minLen=""1"" promptRef=""strEnterTwoPartPaymentVoucher""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+			<goto gotoRef=""getPinNoConfWithComment""/>
+		</template>
+
+		<template transactionType=""Two_Part_Voucher_Redeeming"">
+			<addServerString valRef=""strOpTwoPartVoucherRedeeming""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strTwoPartVoucherRedeeming""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strVoucherCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strVoucherValidationValue""/>
+		  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""13"" minLen=""0"" promptRef=""strEnterOtherTwoPartyVoucherReceiver""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+			<goto gotoRef=""getPin""/>
+		</template>
+
+<template transactionType=""Group_Two_Part_Buy_Goods"">
+			<addServerString valRef=""strOpGroupTwoPartBuyGoods""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpGroupTwoPartBuyGoods""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupTwoPartBuyGoods""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""13"" minLen=""0"" promptRef=""strEnterOtherTwoPartyVoucherReceiver""/>
+			<include tempRef=""InputAmount""/>
+			<goto gotoRef=""getPinNoConfWithComment""/>
+		</template>
+
+
+
+<template transactionType=""Group_Two_Part_Voucher_Redeeming"">
+			<addServerString valRef=""strOpGroupTwoPartVoucherRedeeming""/>
+			<addServerString destTable=""unencryptedTable"" valRef=""strOpGroupTwoPartVoucherRedeeming""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupTwoPartVoucherRedeeming""/>
+			<addStatusString addMode=""add_with_newline"" valRef=""strGroupCodeInfo""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strRequestingCustomerMSISDN""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strVoucherCode""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""13"" minLen=""0"" promptRef=""strEnterOtherTwoPartyVoucherReceiver""/>
+			<include tempRef=""InputAmount""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strRemark""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOperatorID""/>
+			<goto gotoRef=""getPinWithComment""/>
+		</template>
+
+
+		<!-- Two Part Payment -->
+
+<!-- Saving Plan Start -->
+
+
+<!-- Saving Plan End -->
+
+
+	<template transactionType=""CustomerCancelCard"">
+			<addServerString valRef=""strOpCustomerCancelCard""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerCancelCard""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardType""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardNumber""/>
+			<goto gotoRef=""getPin""/>
+		</template><template transactionType=""GroupCancelCard"">
+			<addServerString valRef=""strOpGroupCancelCard""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupCancelCard""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+				<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardType""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardNumber""/>
+			<goto gotoRef=""getPin""/>
+		</template><template transactionType=""OrgCancelCard"">
+			<addServerString valRef=""strOpOrgCancelCard""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrgCancelCard""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+				<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardType""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardNumber""/>
+			<goto gotoRef=""getOperatorIdPin""/>
+		</template><template transactionType=""ChangeCustKYCBySelf"">
+  <addServerString valRef=""strChangeCustKYCBySelfMenu""/>
+  <addStatusString addMode=""clear_before_adding"" valRef=""strChangeCustKYCBySelf""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strEnterLastName4KYC""/>
+  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterLastName4KYC""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strEnterDOB""/>
+  <input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strEnterDOB""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strEnterIDType""/>
+  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""2"" minLen=""2"" promptRef=""strEnterIDType""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strNewIDNumber""/>
+  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""16"" minLen=""4"" promptRef=""strNewIDNumber""/>
+  <goto gotoRef=""getPin""/>
+</template><template transactionType=""ChangeOrgOperatorKYCBySelf"">
+  <addServerString valRef=""strChangeOrgOperatorKYCBySelfMenu""/>
+  <addStatusString addMode=""clear_before_adding"" valRef=""strChangeOrgOperatorKYCBySelf""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strEnterLastName4KYC""/>
+  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterLastName4KYC""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strEnterDOB""/>
+  <input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strEnterDOB""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strEnterIDType""/>
+  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""2"" minLen=""2"" promptRef=""strEnterIDType""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strNewIDNumber""/>
+  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""16"" minLen=""4"" promptRef=""strNewIDNumber""/>
+  <goto gotoRef=""getPinAndOperatorId""/>
+</template><template transactionType=""CCHChangeCustKYC"">
+  <addServerString valRef=""strCCHChangeCustKYCMenu""/>
+  <addStatusString addMode=""clear_before_adding"" valRef=""strCCHChangeCustKYC""/>
+  <addStatusString addMode=""clear_before_adding"" valRef=""strEnterRequesterMsisdn""/>
+  <input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""13"" minLen=""10"" promptRef=""strEnterRequesterMsisdn""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strEnterLastName4KYC""/>
+  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterLastName4KYC""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strEnterDOB""/>
+  <input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strEnterDOB""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strEnterIDType""/>
+  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""2"" minLen=""2"" promptRef=""strEnterIDType""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strNewIDNumber""/>
+  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""16"" minLen=""4"" promptRef=""strNewIDNumber""/>
+  <goto gotoRef=""getPinAndOperatorId""/>
+</template><template transactionType=""GroupActivateCard"">
+			<addServerString valRef=""strOpGroupActivateCard""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupActivateCard""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+				<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardType""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardNumber""/>
+			<goto gotoRef=""getPin""/>
+		</template><template transactionType=""OrgActivateCard"">
+			<addServerString valRef=""strOpOrgActivateCard""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrgActivateCard""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+				<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardType""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardNumber""/>
+			<goto gotoRef=""getOperatorIdPin""/>
+		</template><template transactionType=""CustomerRegisterCard"">
+			<addServerString valRef=""strOpCustomerRegisterCard""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerRegisterCard""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardType""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardNumber""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterCardExpiry""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterCardHolderName""/>
+<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterCardIssueNumber""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterValidFrom""/>
+			<goto gotoRef=""getPin""/>
+		</template><template transactionType=""GroupRegisterCard"">
+			<addServerString valRef=""strOpGroupRegisterCard""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strGroupRegisterCard""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""12"" minLen=""4"" promptRef=""strGroupCode""/>
+				<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardType""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardNumber""/>
+<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterCardExpiry""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterCardHolderName""/>
+<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterCardIssueNumber""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterValidFrom""/>
+			<goto gotoRef=""getPin""/>
+		</template><template transactionType=""OrgRegisterCard"">
+			<addServerString valRef=""strOpOrgRegisterCard""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strOrgRegisterCard""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strEnterShortCode""/>
+				<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardType""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardNumber""/>
+<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterCardExpiry""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterCardHolderName""/>
+<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterCardIssueNumber""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strEnterValidFrom""/>
+			<goto gotoRef=""getOperatorIdPin""/>
+		</template><template transactionType=""CustomerActivateCard"">
+			<addServerString valRef=""strOpActivateCancelCard""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerActivateCard""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardType""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterCardNumber""/>
+			<goto gotoRef=""getPin""/>
+		</template><template transactionType=""CCHChangeOrgOperatorKYC"">
+  <addServerString valRef=""strCCHChangeOrgOperatorKYCMenu""/>
+  <addStatusString addMode=""clear_before_adding"" valRef=""strCCHChangeOrgOperatorKYC""/>
+  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgOperatorID""/>
+  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""8"" minLen=""4"" promptRef=""strOrgTillNumber""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strEnterLastName4KYC""/>
+  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strEnterLastName4KYC""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strEnterDOB""/>
+  <input addToAccumulator=""add_with_space"" format=""digits"" maxLen=""8"" minLen=""8"" promptRef=""strEnterDOB""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strEnterIDType""/>
+  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""2"" minLen=""2"" promptRef=""strEnterIDType""/>
+  <addStatusString addMode=""add_with_newline"" valRef=""strNewIDNumber""/>
+  <input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""16"" minLen=""4"" promptRef=""strNewIDNumber""/>
+  <goto gotoRef=""getPinAndOperatorId""/>
+</template><template transactionType=""Org_Shwari_Deposit"">
+
+<addServerString valRef=""strOpOrg_Shwari_Deposit""/>
+
+<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_Deposit""/>
+
+<input format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strDepositAmount""/>
+
+<input format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOrgOperatorID""/>
+
+<goto gotoRef=""getPin""/>
+
+</template><template transactionType=""Org_Shwari_Withdraw"">
+
+<addServerString valRef=""strOpOrg_Shwari_Withdraw""/>
+
+<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_Withdraw""/>
+
+<input format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strDepositAmount""/>
+
+<input format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOrgOperatorID""/>
+
+<goto gotoRef=""getPin""/>
+
+</template><template transactionType=""Org_Shwari_RequestLoan"">
+
+<addServerString valRef=""strOpOrg_Shwari_RequestLoan""/>
+
+<addStatusString addMode=""clear_before_adding"" valRef=""strFSI_RequestLoan""/>
+
+<input format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strDepositAmount""/>
+
+<input format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOrgOperatorID""/>
+
+<goto gotoRef=""getPin""/>
+
+</template><template transactionType=""Org_Shwari_PayLoan"">
+
+<addServerString valRef=""strOpOrg_Shwari_PayLoan""/>
+
+<addStatusString addMode=""clear_before_adding"" valRef=""strShwari_PayLoan""/>
+
+<input format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strDepositAmount""/>
+
+<input format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOrgOperatorID""/>
+
+<goto gotoRef=""getPin""/>
+
+</template><template transactionType=""Org_Shwari_PayLoanFromSavings"">
+
+<addServerString valRef=""strOpOrg_Shwari_PayLoanFromSavings""/>
+
+<addStatusString addMode=""clear_before_adding"" valRef=""strShwari_PayLoanFromSavings""/>
+
+<input format=""digits"" maxLen=""18"" minLen=""1"" promptRef=""strDepositAmount""/>
+
+<input format=""alpha"" maxLen=""31"" minLen=""1"" promptRef=""strOrgOperatorID""/>
+
+<goto gotoRef=""getPin""/>
+
+</template><template transactionType=""CustomerQueryLoyaltyAccountBalance"">
+			<addServerString valRef=""strOpCustomerQueryLoyaltyAccountBalance""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerQueryLoyaltyAccountBalance""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strLoyaltyAccountType""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strLoyaltyAccountName""/>
+			<goto gotoRef=""getPin""/>
+		</template><template transactionType=""CustomerQueryLoyaltyAccountStatement"">
+			<addServerString valRef=""strOpCustomerQueryLoyaltyAccountStatement""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCustomerQueryLoyaltyAccountStatement""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strLoyaltyAccountType""/>
+			<input addToAccumulator=""add_with_space"" format=""alpha"" maxLen=""31"" minLen=""0"" promptRef=""strLoyaltyAccountName""/>
+			<goto gotoRef=""getPin""/>
+		</template><template transactionType=""CustomerQueryGroupLoyaltyAccountBalance"">
+			<addServerString valRef=""strOpCustomerQueryGroupLoyaltyAccountBalance""/>
+			<addStatusString addMode=""clear_before_adding"" valRef=""strCust","NORMAL"<endrec>

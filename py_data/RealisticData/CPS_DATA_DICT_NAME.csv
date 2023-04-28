@@ -1,0 +1,70 @@
+DATA_DICT_KEY,DATA_DICT_VALUE,LANGUAGE_CODE,NAME                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <endrec>
+"BANK_CATEGORY","78","en","MT942_BankTest"<endrec>
+"BANK_CATEGORY","78","en_KE","MT942_BankTest"<endrec>
+"BANK_CATEGORY","78","sw_KE","MT942_BankTest"<endrec>
+"BANK_CATEGORY","82","en","CSVTestBank"<endrec>
+"BANK_CATEGORY","82","en_KE","CSVTestBank"<endrec>
+"BANK_CATEGORY","82","sw_KE","CSVTestBank"<endrec>
+"BANK_CATEGORY","99","en",""<endrec>
+"BANK_CATEGORY","99","en_KE",""<endrec>
+"BANK_CATEGORY","99","sw_KE",""<endrec>
+"BANK_CATEGORY","Adnan Bank","en","Adnan Bank"<endrec>
+"BANK_CATEGORY","Adnan Bank","en_KE","Adnan Bank"<endrec>
+"BANK_CATEGORY","Adnan Bank","sw_KE","Adnan Bank"<endrec>
+"CPS.STK.TRANSACTION_TYPE","PayBill_OTC","en",""<endrec>
+"CPS.STK.TRANSACTION_TYPE","PayBill_OTC","en_KE",""<endrec>
+"CPS.STK.TRANSACTION_TYPE","PayBill_OTC","sw_KE",""<endrec>
+"CPS.TC.IMT.DEST.SERVICE.PROVIDER","Mary Smith","en",""<endrec>
+"CPS.TC.IMT.DEST.SERVICE.PROVIDER","Mary Smith","en_KE",""<endrec>
+"CPS.TC.IMT.DEST.SERVICE.PROVIDER","Mary Smith","sw_KE",""<endrec>
+"CPS_USR_10002","Female","en","Female"<endrec>
+"CPS_USR_10002","Female","en_KE","Female"<endrec>
+"CPS_USR_10002","Female","sw_KE","Female"<endrec>
+"CPS_USR_10002","Male","en","Male"<endrec>
+"CPS_USR_10002","Male","en_KE","Male"<endrec>
+"CPS_USR_10002","Male","sw_KE","Male"<endrec>
+"CPS_USR_10012","No","en","No"<endrec>
+"CPS_USR_10012","No","en_KE","No"<endrec>
+"CPS_USR_10012","No","sw_KE","No"<endrec>
+"CPS_USR_10012","Yes","en","Yes"<endrec>
+"CPS_USR_10012","Yes","en_KE","Yes"<endrec>
+"CPS_USR_10012","Yes","sw_KE","Yes"<endrec>
+"CPS_USR_10022","No","en","No"<endrec>
+"CPS_USR_10022","No","en_KE","No"<endrec>
+"CPS_USR_10022","No","sw_KE","No"<endrec>
+"CPS_USR_10022","Yes","en","Yes"<endrec>
+"CPS_USR_10022","Yes","en_KE","Yes"<endrec>
+"CPS_USR_10022","Yes","sw_KE","Yes"<endrec>
+"CPS_USR_10031","Normal","en","Normal"<endrec>
+"CPS_USR_10031","Normal","en_KE","Normal"<endrec>
+"CPS_USR_10031","Normal","sw_KE","Normal"<endrec>
+"CPS_USR_10031","Suspended","en","Suspended"<endrec>
+"CPS_USR_10031","Suspended","en_KE","Suspended"<endrec>
+"CPS_USR_10031","Suspended","sw_KE","Suspended"<endrec>
+"CPS_USR_10041","0","en",""<endrec>
+"CPS_USR_10041","0","en_KE",""<endrec>
+"CPS_USR_10041","0","sw_KE",""<endrec>
+"CPS_USR_10041","1","en",""<endrec>
+"CPS_USR_10041","1","en_KE",""<endrec>
+"CPS_USR_10041","1","sw_KE",""<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","/20","en",""<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","/20","en_KE",""<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","/20","sw_KE",""<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","/OPH","en","/OPH"<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","/OPH","en_KE","/OPH"<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","/OPH","sw_KE","/OPH"<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","Last Line","en",""<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","Last Line","en_KE",""<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","Last Line","sw_KE",""<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","NMSC","en","NMSC"<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","NMSC","en_KE","NMSC"<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","NMSC","sw_KE","NMSC"<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","REGULAR EXPRESSION[^24|,]","en","Identifier end flag"<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","REGULAR EXPRESSION[^24|,]","en_KE","Identifier end flag"<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","REGULAR EXPRESSION[^24|,]","sw_KE","Identifier end flag"<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","REGULAR EXPRESSION[^31|,]","en","XX"<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","REGULAR EXPRESSION[^31|,]","en_KE","XX"<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","REGULAR EXPRESSION[^31|,]","sw_KE","XX"<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","REGULAR EXPRESSION[^31|/]","en","reason type end flag"<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","REGULAR EXPRESSION[^31|/]","en_KE","reason type end flag"<endrec>
+"STATEMENT.LOCATION.IDENTIFIER","REGULAR EXPRESSION[^31|/]","sw_KE","reason type end flag"<endrec>

@@ -1,0 +1,51 @@
+CONFIG_ITEM,CONFIG_TYPE,CREDATE,CREOPERID,CREOPERTYPE,LASTUPDDATE,MODULE_ID,NET_ID,NET_TYPE,PARAM_NAME,PARAM_VALUE,UPDOPERID,UPDOPERTYPE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <endrec>
+"AMLControlFlowIDConfig","Parameters","2017-04-13 13:13:31.000000","203000000000021209","2000","","DE","-1","DIP","1111","CTRLFLOW14740803455526437","",""<endrec>
+"AMLControlFlowIDConfig","Parameters","2017-04-13 13:28:00.000000","203000000000021209","2000","2017-04-13 13:28:26.000000","DE","-1","DIP","1112","CTRLFLOW14740803455526437","203000000000021209","2000"<endrec>
+"AMLControlFlowIDConfig","Parameters","2017-06-05 04:03:52.000000","203000000000020211","2000","2017-06-05 04:04:43.000000","DE","-1","DIP","CTRLFLOW147445990773814857","customer_kyc","203000000000020211","2000"<endrec>
+"Action_21_StatusAuthConfigItem","Parameters","2017-11-14 09:13:31.000000","203000000000028306","2000","2018-06-28 08:32:08.000000","bs_order_service","-1","BCS","Initiator_IdentityStatus","Active,Capped","203000000000032902","2000"<endrec>
+"ApproveGroupTask_StatusAuthConfigItem","Parameters","2017-06-30 09:56:22.000000","203000000000013022","2000","","bs_order_service","-1","BCS","Initiator_IdentityStatus","Active,Capped","",""<endrec>
+"AsyncTaskConfigItem","Parameters","2017-11-08 10:04:11.000000","203000000000027802","2000","","fdn_asynctask","-1","BCS","AsyncTaskHisTransferPolicyId","0","",""<endrec>
+"BANK_STATEMENT_FILE_SUFFIX_FLAG","Parameters","2017-08-09 13:06:01.000000","203000000000024610","2000","","bp_ui_finance","-1","SWA","suffixFlag",".csv.pgp,.log.pgp,.csv.gpg,.log.gpg","",""<endrec>
+"BulkFormatItem","Parameters","2017-03-22 00:00:00.000000","","2000","","cid_bts_bulk_task","-1","BTS","FilteKycBulkType","BULK_PAYMENT,KYC","",""<endrec>
+"BundleConfigItem","Parameters","2016-08-23 00:00:00.000000","","2000","","bs_bundle","-1","BCS","IsSupportAwardBundle","true","",""<endrec>
+"ChangeLinkStatus_StatusAuthConfigItem","Parameters","2017-01-10 08:13:52.000000","203000000000011505","2000","","bs_order_service","-1","BCS","Receiver_IdentityStatus","Pending Active,Active,Dormant,Capped","",""<endrec>
+"ChargeConfig","Parameters","2018-03-19 09:23:03.000000","203000000000025034","2000","","TFSD_CHARGE","-1","BCS","SupportBundle","true","",""<endrec>
+"DormantConfigItem","Parameters","2017-04-10 15:42:04.000000","","2000","","bp_ic_identity","-1","BCS","isSupportDormantSign","false","",""<endrec>
+"FSITransFsiIdentityTransRoleTypeConfigItem","Parameters","2018-09-29 05:18:39.000000","203000000000036803","2000","","bp_tc_fsi","-1","BCS","FSI_Withdraw_Mshwari","3","",""<endrec>
+"HiddenFlowConfigItem","Parameters","2016-10-21 06:23:32.000000","203000000000013022","2000","","bp_tc_flow","-1","BCS","Direct Debit Transfer","false","",""<endrec>
+"IdentityConfigItem","Parameters","2014-06-17 00:00:00.000000","","2000","","bp_ic_identity","-1","BCS","IsSurpportTrustLevelDowngrade","true","",""<endrec>
+"IdentityConfigItem","Parameters","2018-11-08 07:55:07.000000","203000000000036803","2000","","bp_ic_identity","-1","BCS","OrderCancelledNotificationChannels","STK,USSD,HANDSET,SMS,USSD_LIKE,USSD_SIGNALING,WEB,API","",""<endrec>
+"IdentityConfigItem","Parameters","2014-06-17 00:00:00.000000","","2000","","bp_ic_identity","-1","IC","IsSurpportTrustLevelDowngrade","true","",""<endrec>
+"Invoice_Configuration","Parameters","2018-04-27 04:52:22.000000","203000000000025034","2000","","bp_ui_commission","-1","OWA","MaxDownloadAndPrintTask","20","",""<endrec>
+"Invoice_Configuration","Parameters","2017-06-16 08:33:29.000000","203000000000022402","2000","2017-06-16 08:35:19.000000","bp_ui_commission","-1","SWA","MaxDownloadAndPrintTask","200","203000000000022402","2000"<endrec>
+"NotificationConfigItem","Parameters","2017-05-11 09:55:19.000000","203000000000021013","2000","2018-07-27 09:42:08.000000","bp_gv_service","-1","BCS","NotNeedSendInitiatorChannel","WEB","203000000000034103","2000"<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 10:58:47.000000","203000000000021013","2000","","ag_adaptor_http_app","-1","AG","AddCustomerBeneficiary","false","",""<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 11:00:25.000000","203000000000021013","2000","","ag_adaptor_http_app","-1","AG","AddOrgBeneficiary","false","",""<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 11:01:10.000000","203000000000021013","2000","2017-06-06 11:01:50.000000","ag_adaptor_http_app","-1","AG","DeleteCustomerBeneficiary","false","203000000000021013","2000"<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 10:59:34.000000","203000000000021013","2000","","ag_adaptor_http_app","-1","AG","DeleteOrgBeneficiary","false","",""<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 10:49:40.000000","203000000000021013","2000","2017-06-06 10:55:46.000000","ag_adaptor_http_app","-1","AG","InitTrans_1005","false","203000000000021013","2000"<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 11:06:22.000000","203000000000021013","2000","","ag_adaptor_http_app","-1","AG","InitTrans_FSI_Req_Bal_Mshwari","false","",""<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 11:07:21.000000","203000000000021013","2000","","ag_adaptor_http_app","-1","AG","InitTrans_FSI_Req_Credit_Limit_Mshwari","false","",""<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 11:08:06.000000","203000000000021013","2000","","ag_adaptor_http_app","-1","AG","InitTrans_FSI_Req_Mini_Staement_Mshwari","false","",""<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 10:52:30.000000","203000000000021013","2000","2017-06-06 10:56:10.000000","ag_adaptor_http_app","-1","AG","InitTrans_QueryCustomerBalanceAPP","false","203000000000021013","2000"<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 10:51:48.000000","203000000000021013","2000","2017-06-06 10:54:24.000000","ag_adaptor_http_app","-1","AG","InitTransportKey","false","203000000000021013","2000"<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 10:58:12.000000","203000000000021013","2000","","ag_adaptor_http_app","-1","AG","LookupCustomerBeneficiary","false","",""<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 10:53:11.000000","203000000000021013","2000","2017-06-06 10:56:30.000000","ag_adaptor_http_app","-1","AG","LookupOrgBeneficiary","false","203000000000021013","2000"<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 10:54:00.000000","203000000000021013","2000","","ag_adaptor_http_app","-1","AG","QueryCustomerAccountStatements","false","",""<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 11:15:07.000000","203000000000021013","2000","","ag_adaptor_http_app","-1","AG","QueryCustomerInfo","false","",""<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 10:48:51.000000","203000000000021013","2000","","ag_adaptor_http_app","-1","AG","QueryCustomerKYC","false","",""<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 10:46:28.000000","203000000000021013","2000","","ag_adaptor_http_app","-1","AG","QueryCustomerProducts","false","",""<endrec>
+"PINSecurityConfigItem","Parameters","2017-06-06 10:50:31.000000","203000000000021013","2000","2017-06-06 10:54:43.000000","ag_adaptor_http_app","-1","AG","SMSVCSend","false","203000000000021013","2000"<endrec>
+"RCOMMMsgConfigItem","Parameters","2015-07-13 00:00:00.000000","","2000","","ag_adptor_rcomm","-1","AG","SMP_ID","10","",""<endrec>
+"Session_Configuration","Parameters","2016-05-27 14:09:17.000000","203000000000011505","2000","","portal_gv_web","-1","PORTAL","IsOnlyOneSession","false","",""<endrec>
+"SkipOriConvIDCheckRepeatItem","Parameters","2014-11-06 00:00:00.000000","","2000","","ag_adaptor_ws_gapi","-1","AG","CommandIDs","TransactionStatusQuery","",""<endrec>
+"Support_New_Data_Extractor","Parameters","2019-01-17 00:00:00.000000","","2000","2019-02-22 02:11:50.000000","de_data_extractor","-1","BCS","PaybillTask","0","203000000000036503","2000"<endrec>
+"Support_New_Data_Extractor","Parameters","2019-01-09 00:00:00.000000","","2000","2019-02-22 02:11:04.000000","de_data_extractor","-1","SWA","AMLTask","0","203000000000036503","2000"<endrec>
+"Support_New_Data_Extractor","Parameters","2019-01-09 00:00:00.000000","","2000","2019-02-22 02:10:41.000000","de_data_extractor","-1","SWA","PaybillTask","0","203000000000036503","2000"<endrec>
+"SuspendOrgFSILink_StatusAuthConfigItem","Parameters","2017-01-04 03:13:25.000000","203000000000013022","2000","2017-01-10 02:46:20.000000","bs_order_service","-1","BCS","Receiver_IdentityStatus","Pending Active,Active,Dormant,Frozen,Capped","203000000000011505","2000"<endrec>
+"TCCoreConfigItem","Parameters","2016-12-30 07:22:11.000000","203000000000014908","2000","","bp_tc_core","-1","BCS","isSupportAccountSign","false","",""<endrec>
+"TCRequestPartyConfigItem","Parameters","2018-01-16 12:35:27.000000","203000000000020211","2000","2018-01-17 08:17:04.000000","bs_process","-1","BCS","supportRequestKYCValidate","true","203000000000028306","2000"<endrec>
+"TaskType","Parameters","2015-10-21 00:00:00.000000","","2000","","cps_bcbase","-1","TC","BULK_B2B_PAYMENT","10","",""<endrec>
+"TaskType","Parameters","2015-10-21 00:00:00.000000","","2000","","cps_bcbase","-1","TC","BULK_SP2B_PAYMENT","10","",""<endrec>
+"TaskType","Parameters","2015-10-21 00:00:00.000000","","2000","","cps_bcbase","-1","TC","BULK_SP2C_PAYMENT","10","",""<endrec>
+"UMCConfigItem","Parameters","2018-08-06 10:30:57.000000","203000000000026102","2000","","cid_umc_core","-1","AG","SupportedIdentityStatus","00,02,03,04,07","",""<endrec>

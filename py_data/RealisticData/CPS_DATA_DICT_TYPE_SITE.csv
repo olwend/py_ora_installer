@@ -1,0 +1,734 @@
+CATEGORY_ID,CUSTOMIZE_DISP_ORDER,DATA_DICT_KEY,DESCRIPTION,IS_EDITABLE,IS_VISIBLE,LOAD_DATA_TS,NAME,REG_EXP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <endrec>
+"Others","","ACCOUNT_STATUS","Account status","N","Y","","Account status",""<endrec>
+"Others","","ACTION.USSD_PUSH.EXPIRD","ACTION.USSD_PUSH.EXPIRD","N","N","","ACTION.USSD_PUSH.EXPIRD",""<endrec>
+"Others","","ACTIVITY.PARAM.TYPE","Activity Param Type","N","N","","Activity Param Type",""<endrec>
+"Others","","ACTUAL_CREDIT_DATE_MONTH","ACTUAL_CREDIT_DATE_MONTH","N","N","","ACTUAL_CREDIT_DATE_MONTH",""<endrec>
+"Others","","ACTUAL_CREDIT_DATE_WEEK","ACTUAL_CREDIT_DATE_WEEK","N","N","","ACTUAL_CREDIT_DATE_WEEK",""<endrec>
+"Others","","AG_WS_CLIENT_CERTIFICATE","Bind 3rd party certificate","N","N","","Bind 3rd party certificate",""<endrec>
+"Others","","AG_WS_CLIENT_IPLIMIT","Filter 3rd party ip","N","N","","Filter 3rd party ip",""<endrec>
+"Others","","AG_WS_CLIENT_SERIALNO","Review 3rd party serial no","N","N","","Review 3rd party serial no",""<endrec>
+"Others","","AG_WS_MSG_MAX_RESEND_INTERVAL_MODE","Resend interval mode","N","N","","Resend interval mode",""<endrec>
+"Others","","AG_WS_REC_MSG","Record ag message","N","N","","Record ag message",""<endrec>
+"Others","","API_CHANNEL","API Channel","N","N","","API Channel",""<endrec>
+"Others","","BANK.SWITCHING.CODES","","Y","Y","","Bank Switching Codes",""<endrec>
+"KYC","N","BANK_CATEGORY","Bank Category","Y","Y","","Bank Category",""<endrec>
+"Others","","BILL_CHAR_SET","Bill char set","N","N","","Bill char set",""<endrec>
+"Others","","BILL_VALIDATION_OPTION","Bill validation option","N","N","","Bill validation option",""<endrec>
+"Others","","BME.LOCALE","BME.LOCALE","N","N","","BME.LOCALE",""<endrec>
+"Others","","BO_ROLE","Business Operation roles","N","Y","","Business Operation roles",""<endrec>
+"Others","","CHANNEL","Channels","N","Y","","Channels",""<endrec>
+"Digit_analysis","","CHANNEL_CATEGORY","Channel category","N","N","","Channel category",""<endrec>
+"KYC","","CHANNEL_CLIENTID","Channel ClientID","Y","Y","","Channel ClientID",""<endrec>
+"Others","","CLAWBACK_REASON_LIST","Reason for Clawback","N","N","","Reason for Clawback",""<endrec>
+"Others","","COM.STATUS","COM.STATUS","N","N","","COM.STATUS",""<endrec>
+"Others","","COMMISSION_INVOICE_EXTRAS","","N","N","","Invoice Extras",""<endrec>
+"Others","","COMMISSION_INVOICE_FILE_TYPE","","N","N","","Commission Invoice File Type",""<endrec>
+"Others","","COMMISSION_INVOICE_STATUS","","N","N","","Commission Invoice Status",""<endrec>
+"Others","","CONFIGURATION_DATA_TABLES_LIST","The tables related to configuration items that can be selected in GUI for querying.","N","N","","Configuration Data Tables List",""<endrec>
+"Others","","CONFIGURATION_ITEMS_LIST","The configuration items list that can be selected in GUI for querying.","N","N","","Configuration Items List",""<endrec>
+"KYC","","CONTACT_ID_TYPE","Contact person ID type","Y","Y","","Contact person ID type",""<endrec>
+"Others","","CPS.ACCESS.CHANNEL","Access Channel","N","N","","Access Channel",""<endrec>
+"Others","","CPS.ACCESS.PROTOCOL","adapter access protocal","N","N","","CPS.ACCESS.PROTOCOL",""<endrec>
+"Others","","CPS.ACCOUNT.BALANCE.DIRECTION","CPS.ACCOUNT.BALANCE.DIRECTION","N","N","","CPS.ACCOUNT.BALANCE.DIRECTION",""<endrec>
+"Others","","CPS.ACCOUNT.LINK.TYPE","","N","N","","Account Link Type",""<endrec>
+"Others","","CPS.ACCOUNT.SELECT.LEVEL","Account Select Level","N","N","","Account Select Level",""<endrec>
+"Others","","CPS.ACCOUNT.SELECT.LEVEL.TWO","Account Select Level Two","N","N","","Account Select Level Two",""<endrec>
+"Others","","CPS.ACCOUNT.STATUS","ACCOUNT.STATUS","N","N","","ACCOUNT.STATUS",""<endrec>
+"Others","","CPS.ACCOUNTING.MODEL.TYPE","ACCOUNTING.MODEL.TYPE","N","N","","ACCOUNTING.MODEL.TYPE",""<endrec>
+"Others","","CPS.ACCOUNTING.MODEL.TYPE1","ACCOUNTING.MODEL.TYPE1","N","N","","ACCOUNTING.MODEL.TYPE1",""<endrec>
+"Others","","CPS.ACCOUNTING.UNITTYPE","CPS.ACCOUNTING.UNITTYPE","N","N","","CPS.ACCOUNTING.UNITTYPE",""<endrec>
+"Others","","CPS.ACCOUNTING.USD","","N","N","","CPS.ACCOUNTING.USD",""<endrec>
+"Others","","CPS.ACTION.LOG.STATUS","CPS.ACTION.LOG.STATUS","N","N","","CPS.ACTION.LOG.STATUS",""<endrec>
+"Others","","CPS.ACTION.TRANSTYPE","Action Transaction Type","N","N","","Action Transaction Type",""<endrec>
+"Others","","CPS.ADMIN.ACCESS.ACCESSTYPE","Admin Access Access Type","N","N","","Admin Access Access Type",""<endrec>
+"Others","","CPS.ADMIN.ACCESS.CHANNELTYPE","Admin Access Channel Type","N","N","","Admin Access Channel Type",""<endrec>
+"Others","","CPS.ADMIN.ACCESSCHANNEL.STATUS","Admin Access Channel Status","N","N","","Admin Access Channel Status",""<endrec>
+"Others","","CPS.ADMIN.ACCOUNT.UNIT","CPS.ADMIN.ACCOUNT.UNIT","N","N","","CPS.ADMIN.ACCOUNT.UNIT",""<endrec>
+"Others","","CPS.ADMIN.ACCOUNTTYPE.ACCOUNTANCY","CPS.ADMIN.ACCOUNTTYPE.ACCOUNTANCY","N","N","","CPS.ADMIN.ACCOUNTTYPE.ACCOUNTANCY",""<endrec>
+"Others","","CPS.ADMIN.ACCOUNTTYPE.ACCOUNTUNIT","Admin Account Type Account Unit","N","N","","Admin Account Type Account Unit",""<endrec>
+"Others","","CPS.ADMIN.ACCOUNTTYPE.APPLIEDTO","CPS.ADMIN.ACCOUNTTYPE.APPLIEDTO","N","N","","CPS.ADMIN.ACCOUNTTYPE.APPLIEDTO",""<endrec>
+"Others","","CPS.ADMIN.ACCOUNTTYPE.CATEGORY","Admin Account Type Category","N","N","","Admin Account Type Category",""<endrec>
+"Others","","CPS.ADMIN.ACCOUNTTYPE.CATEGORYCONTROL","Admin Account Type Category Control","N","N","","Admin Account Type Category Control",""<endrec>
+"Others","","CPS.ADMIN.ACCOUNTTYPE.NEGATIVE","CPS.ADMIN.ACCOUNTTYPE.NEGATIVE","N","N","","CPS.ADMIN.ACCOUNTTYPE.NEGATIVE",""<endrec>
+"Others","","CPS.ADMIN.ACCOUNTTYPE.REALTIMEUPDATE","CPS.ADMIN.ACCOUNTTYPE.REALTIMEUPDATE","N","N","","CPS.ADMIN.ACCOUNTTYPE.REALTIMEUPDATE",""<endrec>
+"Others","","CPS.ADMIN.ACCOUNTTYPE.SHARABLE","CPS.ADMIN.ACCOUNTTYPE.SHARABLE","N","N","","CPS.ADMIN.ACCOUNTTYPE.SHARABLE",""<endrec>
+"Others","","CPS.ADMIN.ACCOUNTTYPE.SHAREABLE","CPS.ADMIN.ACCOUNTTYPE.SHAREABLE","N","N","","CPS.ADMIN.ACCOUNTTYPE.SHAREABLE",""<endrec>
+"Others","","CPS.ADMIN.ACCUM.TXN.CREDIT.FILTER.TYPE","CPS.ADMIN.ACCUM.TXN.CREDIT.FILTER.TYPE","N","N","","CPS.ADMIN.ACCUM.TXN.CREDIT.FILTER.TYPE",""<endrec>
+"Others","","CPS.ADMIN.ACCUM.TXN.DEBIT.FILTER.TYPE","CPS.ADMIN.ACCUM.TXN.DEBIT.FILTER.TYPE","N","N","","CPS.ADMIN.ACCUM.TXN.DEBIT.FILTER.TYPE",""<endrec>
+"Others","","CPS.ADMIN.ACCUMULATOR.CYCLE","Accumulator Cycle","N","N","","CPS.ADMIN.ACCUMULATOR.CYCLE",""<endrec>
+"Others","","CPS.ADMIN.ACCUMULATOR.FILTER.TYPE","Accumulator filter type","N","N","","CPS.ADMIN.ACCUMULATOR.FILTER.TYPE",""<endrec>
+"Others","","CPS.ADMIN.ACCUMULATOR.SELECT","CPS.ADMIN.ACCUMULATOR.SELECT","N","N","","CPS.ADMIN.ACCUMULATOR.SELECT",""<endrec>
+"Others","","CPS.ADMIN.ACCUMULATOR.SUBJECT","Accumulator Subject","N","N","","CPS.ADMIN.ACCUMULATOR.SUBJECT",""<endrec>
+"Others","","CPS.ADMIN.ACCUMULATOR.TYPE","Admin Accumulator Type","Y","Y","","Admin Accumulator Type",""<endrec>
+"Others","","CPS.ADMIN.ACCUMULATOR.VALUE.TYPE","Accumulator Value Type","N","N","","CPS.ADMIN.ACCUMULATOR.VALUE.TYPE",""<endrec>
+"Others","","CPS.ADMIN.PROTOCOL.ADDRTON","CPS.ADMIN.PROTOCOL.ADDRTON","N","N","","CPS.ADMIN.PROTOCOL.ADDRTON",""<endrec>
+"Others","","CPS.ADMIN.PROTOCOL.NPI","CPS.ADMIN.PROTOCOL.NPI","N","N","","CPS.ADMIN.PROTOCOL.NPI",""<endrec>
+"Others","","CPS.ADPT.ALIAS","adapter alias","Y","Y","","CPS.ADPT.ALIAS",""<endrec>
+"Others","Y","CPS.AG.ISO8583.FIELDS","ISO8583 Fields","N","N","","ISO8583 Fields",""<endrec>
+"Others","Y","CPS.AG.OUTBOUND.MESSAGE.PROTOCOL","Outbound Message Protocol","N","N","","Outbound Message Protocol",""<endrec>
+"Others","","CPS.AG.OUTBOUND.ORGANIZATION.TYPE","List of organization type used for configuration the outbound information on AG.","N","N","","Ag Outbound Organization Type",""<endrec>
+"Others","","CPS.ALLOW.CONFIRM.TWO.PARTY","CPS.ALLOW.CONFIRM.TWO.PARTY","N","N","","CPS.ALLOW.CONFIRM.TWO.PARTY",""<endrec>
+"Others","","CPS.AMLDATA.EXTRACTIONMODE","CPS.AMLDATA.EXTRACTIONMODE","N","N","","CPS.AMLDATA.EXTRACTIONMODE",""<endrec>
+"Others","","CPS.AMLDATA.MONTH","CPS.AMLDATA.MONTH","N","N","","CPS.AMLDATA.MONTH",""<endrec>
+"Others","","CPS.AMLDATA.PERIODTYPE","CPS.AMLDATA.PERIODTYPE","N","N","","CPS.AMLDATA.PERIODTYPE",""<endrec>
+"Others","","CPS.AMLDATA.SCHEDULETYPE","CPS.AMLDATA.SCHEDULETYPE","N","N","","CPS.AMLDATA.SCHEDULETYPE",""<endrec>
+"Others","","CPS.AMLDATA.TASKMODE","CPS.AMLDATA.TASKMODE","N","N","","CPS.AMLDATA.TASKMODE",""<endrec>
+"Others","","CPS.AMLDATA.TASKPROCESSSTATUS","CPS.AMLDATA.TASKPROCESSSTATUS","N","N","","CPS.AMLDATA.TASKPROCESSSTATUS",""<endrec>
+"Others","","CPS.AMLDATA.TASKTYPE","CPS.AMLDATA.TASKTYPE","N","N","","CPS.AMLDATA.TASKTYPE",""<endrec>
+"Others","","CPS.AMLDATA.TRANSSTATUS","CPS.AMLDATA.TRANSSTATUS","N","N","","CPS.AMLDATA.TRANSSTATUS",""<endrec>
+"Others","","CPS.API.APICALLER.WHETHER_SEND_NOTIFICATION","","N","N","","Whether to send notification",""<endrec>
+"Others","","CPS.API.CALLER.KEY.TYPE","CPS.API.CALLER.KEY.TYPE","N","N","","CPS.API.CALLER.KEY.TYPE",""<endrec>
+"Others","","CPS.API.ENCRYPTION.ALGORITHM","The encription algorithm will be used in Generic API to encrypt the sensitive data.","N","N","","API Encryption Algorithm",""<endrec>
+"Others","","CPS.API.EXTRACT.RESULT","","N","N","","Extract Result",""<endrec>
+"Others","","CPS.API.EXTRACT.TRIGGER_MODEL","","N","N","","Trigger Model",""<endrec>
+"Others","","CPS.APICALLER.ENCRYPTION.ALGORITHM","CPS.APICALLER.ENCRYPTION.ALGORITHM","N","N","","CPS.APICALLER.ENCRYPTION.ALGORITHM",""<endrec>
+"Others","","CPS.APPLY_ATM_VOUCHER_TYPE","","N","Y","","Apply ATM Voucher Type",""<endrec>
+"Others","","CPS.ARCHIVE.ARCHIVEDATE","Archive Date","N","N","","Archive Date",""<endrec>
+"Others","","CPS.ARCHIVE.MANUAL.DELETE.STATUS","Archive Manual Delete Status","N","N","","Archive Manual Delete Status",""<endrec>
+"Others","","CPS.ARCHIVE.RUNLOGS.EXECSTATUS","","N","N","","Archive Runlogs Execstatus",""<endrec>
+"Others","","CPS.ARCHIVE.SUBFUNCSTATUS","Archive Sub Function Status","N","N","","Archive Sub Function Status",""<endrec>
+"Others","","CPS.ARCHIVE.TABLELOGS.DELSTATUS","","N","N","","Tablelogs Del Status",""<endrec>
+"Others","","CPS.ARCHIVE.TABLELOGS.TRANSFERSTATUS","","N","N","","Tablelogs Transfer Status",""<endrec>
+"Others","","CPS.ASSIGNMENT.INDENTITY.TYPE","Assignment Identity Type","N","N","","Assignment Identity Type",""<endrec>
+"Others","","CPS.AUDIT.LOG.CONFIG_TIME","CONFIG TIME","N","N","","CONFIG TIME",""<endrec>
+"Others","","CPS.AUDITLOG.EVENTTYPE","CPS.AUDITLOG.EVENTTYPE","N","N","","CPS.AUDITLOG.EVENTTYPE",""<endrec>
+"Others","","CPS.AUDITLOG.EVENTTYPE.ACCOUNTMNG","CPS.AUDITLOG.EVENTTYPE.ACCOUNTMNG","N","N","","CPS.AUDITLOG.EVENTTYPE.ACCOUNTMNG",""<endrec>
+"Others","","CPS.AUDITLOG.EVENTTYPE.CONFIGURATIONMNG","CPS.AUDITLOG.EVENTTYPE.CONFIGURATIONMNG","N","N","","CPS.AUDITLOG.EVENTTYPE.CONFIGURATIONMNG",""<endrec>
+"Others","","CPS.AUDITLOG.EVENTTYPE.CUSTOMERCARE","CPS.AUDITLOG.EVENTTYPE.CUSTOMERCARE","N","N","","CPS.AUDITLOG.EVENTTYPE.CUSTOMERCARE",""<endrec>
+"Others","","CPS.AUDITLOG.EVENTTYPE.FINANCIALRECON","CPS.AUDITLOG.EVENTTYPE.FINANCIALRECON","N","N","","CPS.AUDITLOG.EVENTTYPE.FINANCIALRECON",""<endrec>
+"Others","","CPS.AUDITLOG.EVENTTYPE.IDENTITYMNG","CPS.AUDITLOG.EVENTTYPE.IDENTITYMNG","N","N","","CPS.AUDITLOG.EVENTTYPE.IDENTITYMNG",""<endrec>
+"Others","","CPS.AUDITLOG.EVENTTYPE.QUERY","CPS.AUDITLOG.EVENTTYPE.QUERY","N","N","","CPS.AUDITLOG.EVENTTYPE.QUERY",""<endrec>
+"Others","","CPS.AUDITLOG.EVENTTYPE.SECURITY","CPS.AUDITLOG.EVENTTYPE.SECURITY","N","N","","CPS.AUDITLOG.EVENTTYPE.SECURITY",""<endrec>
+"Others","","CPS.AUDITLOG.EVENTTYPE.TASK","CPS.AUDITLOG.EVENTTYPE.TASK","N","N","","CPS.AUDITLOG.EVENTTYPE.TASK",""<endrec>
+"Others","","CPS.AUDITLOG.EVENTTYPE.TRANSACTION","CPS.AUDITLOG.EVENTTYPE.TRANSACTION","N","N","","CPS.AUDITLOG.EVENTTYPE.TRANSACTION",""<endrec>
+"Others","","CPS.AUDITLOG.IDENTITY.TYPE","CPS.AUDITLOG.IDENTITY.TYPE","N","N","","CPS.AUDITLOG.IDENTITY.TYPE",""<endrec>
+"Others","","CPS.AUDITLOG.INITIATORTYPE","CPS.AUDITLOG.INITIATORTYPE","N","N","","CPS.AUDITLOG.INITIATORTYPE",""<endrec>
+"Others","","CPS.AUDITLOG.QUERY.DETAIL.DOWNLOAD.SENSITIVE","CPS.AUDITLOG.QUERY.DETAIL.DOWNLOAD.SENSITIVE","N","N","","CPS.AUDITLOG.QUERY.DETAIL.DOWNLOAD.SENSITIVE",""<endrec>
+"Others","","CPS.AUDITLOG.QUERY.DOWNLOADED.SENSITIVE","CPS.AUDITLOG.QUERY.DOWNLOADED.SENSITIVE","N","N","","CPS.AUDITLOG.QUERY.DOWNLOADED.SENSITIVE",""<endrec>
+"Others","","CPS.AUDITLOG.QUERY.INFOMATION.TYPE","CPS.AUDITLOG.QUERY.INFOMATION.TYPE","N","N","","CPS.AUDITLOG.QUERY.INFOMATION.TYPE",""<endrec>
+"Others","","CPS.AUDIT_LOG.TRANSACTION.INITIATOR","CPS.AUDIT_LOG.TRANSACTION.INITIATOR","N","N","","CPS.AUDIT_LOG.TRANSACTION.INITIATOR",""<endrec>
+"Others","","CPS.AUDIT_LOG.TRASACTION.INITIATE_DEVICE_TYPE","CPS.AUDIT_LOG.TRASACTION.INITIATE_DEVICE_TYPE","N","N","","CPS.AUDIT_LOG.TRASACTION.INITIATE_DEVICE_TYPE",""<endrec>
+"Others","","CPS.AUTOSWEEPPLAN.STATUS","The status name and value list of auto sweep plan.","N","N","","CPS.AUTOSWEEPPLAN.STATUS",""<endrec>
+"Others","","CPS.AutoSweepMode","CPS Auto Sweep Mode to KYC","N","Y","","CPS Auto Sweep Mode",""<endrec>
+"Others","","CPS.BANK.CARDSERVICE","Bank Card Service","N","N","","CPS.BANK.CARDSERVICE",""<endrec>
+"Others","","CPS.BANK.IDENTIFER","CPS.BANK.IDENTIFER","N","N","","CPS.BANK.IDENTIFER",""<endrec>
+"Others","","CPS.BANK.IDENTIFIER_TYPE","Bank Identifier Type","N","N","","Bank Identifier Type",""<endrec>
+"Others","","CPS.BANK.LINK.TYPE","CPS.BANK.LINK.TYPE","N","N","","CPS.BANK.LINK.TYPE",""<endrec>
+"Others","","CPS.BANK.LOCK.STATUS","","N","N","","Bank Lock Status",""<endrec>
+"Others","","CPS.BASICCONFIG.PERIODUNIT","Basic Config Period Unit","N","N","","Basic Config Period Unit",""<endrec>
+"Others","","CPS.BASIC_DATA_PARA","Basic Data Parameters","N","N","","Basic Data Parameters",""<endrec>
+"Others","","CPS.BC.INTERVAL.UNIT","CPS.BC.INTERVAL.UNIT","N","N","","CPS.BC.INTERVAL.UNIT",""<endrec>
+"Others","","CPS.BC.ISSUEMODE","CPS.BC.ISSUEMODE","N","N","","CPS.BC.ISSUEMODE",""<endrec>
+"Others","","CPS.BC.MONTH","CPS.BC.MONTH","N","N","","CPS.BC.MONTH",""<endrec>
+"Others","","CPS.BC.WEEK","CPS.BC.WEEK","N","N","","CPS.BC.WEEK",""<endrec>
+"Others","","CPS.BO.COMPLETED.MODE","CPS.BO.COMPLETED.MODE","N","N","","CPS.BO.COMPLETED.MODE",""<endrec>
+"Others","","CPS.BO.EVENT.SOURCE","CPS.BO.EVENT.SOURCE","N","N","","CPS.BO.EVENT.SOURCE",""<endrec>
+"Others","","CPS.BO.EVENT_SOURCE","Event Source","N","N","","Event Source",""<endrec>
+"Others","","CPS.BO.INITIATOR.IDENTITY.TYPE","CPS.BO.INITIATOR.IDENTITY.TYPE","N","N","","CPS.BO.INITIATOR.IDENTITY.TYPE",""<endrec>
+"Others","","CPS.BO.RECEIVER.IDENTITY.TYPE","CPS.BO.RECEIVER.IDENTITY.TYPE","N","N","","CPS.BO.RECEIVER.IDENTITY.TYPE",""<endrec>
+"Others","","CPS.BO.STATUS","CPS.BO.STATUS","N","N","","CPS.BO.STATUS",""<endrec>
+"Others","","CPS.BRAND.NAME","Brand Name","N","N","","Brand Name",""<endrec>
+"Transaction","","CPS.BS.BUSINESSCATEGORY","Business Category","Y","Y","","Business Category",""<endrec>
+"Others","","CPS.BULK.FILETYPE","CPS BULK FILE TYPE","N","Y","","CPS BULK FILE TYPE",""<endrec>
+"Others","","CPS.BULK.ISSUEMODE","","N","N","","CPS.BULK.ISSUEMODE",""<endrec>
+"Others","","CPS.BULK.STATUS","bulk status","Y","Y","","bulk status",""<endrec>
+"Others","","CPS.BULK.TASK.STATUS","Bulk Task Status","N","N","","Bulk Task Status",""<endrec>
+"Others","","CPS.BULK_FILE_ELEMENT_TYPE","File Element Type","N","N","","File Element Type",""<endrec>
+"Others","","CPS.BUNDLE.ASSIGING.TYPE","Provides the value list of bundle assigning mode, one is suscritpion, th other is awarding.","N","N","","Bundle Assigning Type",""<endrec>
+"Transaction","","CPS.BUNDLE.ASSIGNING.TYPE","Bundle assigning type list used for indicate the assign mode for each bundle. Subscription mode means identity should purchase by pay the bundle price. Awarding mode measns this bundle will be presented if the identity consumed some services.","N","N","","CPS.BUNDLE.ASSIGNING.TYPE",""<endrec>
+"Transaction","","CPS.BUNDLE.ASSIGNMENT.IDENTITY.TYPE","Bundle Assignment Identity Type","N","N","","Bundle Assignment Identity Type",""<endrec>
+"Others","","CPS.BUNDLE.CATEGORY","Bundle Category","N","N","","Bundle Category",""<endrec>
+"Transaction","Y","CPS.BUNDLE.DURATION.UNIT","Bundle Duration Unit","N","N","","Bundle Duration Unit",""<endrec>
+"Others","","CPS.BUNDLE.EFFECTIVEMODE","Effective Mode","N","N","","Effective Mode","Effective Mode"<endrec>
+"Transaction","","CPS.BUNDLE.ELEMENT.TYPE","Bundle element type used for bundle internal element configuration.","N","N","","Bundle Element Type",""<endrec>
+"Others","","CPS.BUNDLE.ELEMENT_EXT_TYPE","External Element Type","Y","Y","","External Element Type",""<endrec>
+"Transaction","","CPS.BUNDLE.RENEWAL.MODE","CPS.BUNDLE.RENEWAL.MODE","N","N","","CPS.BUNDLE.RENEWAL.MODE",""<endrec>
+"Transaction","","CPS.BUNDLE.TYPE","Bundle type list used for bundle configuration.","N","N","","Bundle Type",""<endrec>
+"Others","","CPS.BUSINESS.GROUP.BULK_TYPE","Bulk Type","N","N","","Bulk Type",""<endrec>
+"Others","","CPS.BUSINESS.SCOPE","Business Scope","N","N","","Business Scope",""<endrec>
+"Others","","CPS.C2B.DATAFILE","CPS.C2B.DATAFILE","N","N","","CPS.C2B.DATAFILE",""<endrec>
+"Others","","CPS.CARD.MANAGEMENT.CARD.STATUS","","N","N","","Card Management Card Status",""<endrec>
+"Others","","CPS.CARD.MANAGEMENT.HOLDER.TYPE","","N","N","","Card Management HolderType",""<endrec>
+"Others","","CPS.CERTIFICATE.SN.SOURCE","CPS.CERTIFICATE.SN.SOURCE","N","N","","CPS.CERTIFICATE.SN.SOURCE",""<endrec>
+"Others","","CPS.CHANGE.CUSTOMER.STATUS.REASON","Change Customer Status Reason","Y","Y","","Change Customer Status Reason",""<endrec>
+"Others","","CPS.CHANGE.GROUP.STATUS.REASON","Change Group Status Reason","Y","Y","","Change Group Status Reason",""<endrec>
+"Others","","CPS.CHARGE.CATEGORY","Charge Category","N","N","","Charge Category",""<endrec>
+"Others","","CPS.CHARGE.CLAUSE","CPS.CHARGE.CLAUSE","N","N","","CPS.CHARGE.CLAUSE",""<endrec>
+"Others","","CPS.CHARGE.CURRENCY","Charge Currency","N","N","","Charge Currency",""<endrec>
+"Others","","CPS.CHARGE.OPERATOR.FLAG","CPS.CHARGE.OPERATOR.FLAG","N","N","","CPS.CHARGE.OPERATOR.FLAG",""<endrec>
+"Others","","CPS.CHARGE.PARTY","Charge Party","N","N","","Charge Party",""<endrec>
+"Others","","CPS.CHARGE.TYPE.PARTY","Charge Party Type","N","N","","Charge Party Type",""<endrec>
+"Others","","CPS.CHARGE.TYPE.PARTY2","Charge Party Type 2","N","N","","Charge Party Type 2",""<endrec>
+"Others","","CPS.CHARGE.TYPE.PARTY3","Charge Party Type 3","N","N","","Charge Party Type 3",""<endrec>
+"Others","","CPS.CHARGE.TYPE.PARTY4","Charge Party Type 4","N","N","","Charge Party Type 4",""<endrec>
+"Others","","CPS.CHARGE.TYPE.PAYER.RECEIVER","CPS.CHARGE.TYPE.PAYER.RECEIVER","N","N","","CPS.CHARGE.TYPE.PAYER.RECEIVER",""<endrec>
+"Others","","CPS.CHARGETYPE.EFFECTIVE.MODE","CHARGETYPE.EFFECTIVE.MODE","N","N","","CHARGETYPE.EFFECTIVE.MODE",""<endrec>
+"Others","","CPS.CHARGE_PROFILE.DICT.BAND_MODE","","N","N","","CPS.CHARGE_PROFILE.DICT.BAND_MODE",""<endrec>
+"Others","","CPS.CHARGE_PROFILE.DICT.TARIFF_MODE","","N","N","","CPS.CHARGE_PROFILE.DICT.TARIFF_MODE",""<endrec>
+"Others","","CPS.CHARGE_TYPE.DICT.ACTION_CATEGORY","","N","N","","CPS.CHARGE_TYPE.DICT.ACTION_CATEGORY",""<endrec>
+"Others","","CPS.CHARGE_TYPE.DICT.CATEGORY","","N","N","","CPS.CHARGE_TYPE.DICT.CATEGORY",""<endrec>
+"Others","","CPS.CMS.CLAWBACK.HISTORY.STATUS","CPS.CMS.CLAWBACK.HISTORY.STATUS","N","N","","CPS.CMS.CLAWBACK.HISTORY.STATUS",""<endrec>
+"Others","","CPS.CMS.HISTORY.STATUS","CPS.CMS.HISTORY.STATUS","N","N","","CPS.CMS.HISTORY.STATUS",""<endrec>
+"Others","","CPS.CMS.PAYMENT.STATUS","CPS.CMS.PAYMENT.STATUS","N","N","","CPS.CMS.PAYMENT.STATUS",""<endrec>
+"Others","","CPS.CNS.FLAG.STATUS","CNS KYC flag Status","N","N","","CNS KYC Flag Status",""<endrec>
+"Others","","CPS.CNS.SUSPENSION.FLAG","The status of cusotmer CNS capability","N","N","","CPS.CNS.SUSPENSION.FLAG",""<endrec>
+"Others","","CPS.COMMISSION.CLAWBACK.TYPE","CPS.COMMISSION.CLAWBACK.TYPE","N","N","","CPS.COMMISSION.CLAWBACK.TYPE",""<endrec>
+"Others","","CPS.COMMISSION.HIERCOMMISSIONSTATUS","CPS.COMMISSION.HIERCOMMISSIONSTATUS","N","N","","CPS.COMMISSION.HIERCOMMISSIONSTATUS",""<endrec>
+"Others","","CPS.COMMISSION.SETTLEMENT.CYCLE","Commission Settlement Cycle","N","N","","CPS.COMMISSION.SETTLEMENT.CYCLE",""<endrec>
+"Others","","CPS.COMMON.AG.DATATYPE","Datatype of Service Parameter","N","N","","Datatype of Service Parameter",""<endrec>
+"Others","","CPS.COMMON.AG.GETTINGTYPE","","N","N","","AG Getting Type",""<endrec>
+"Others","","CPS.COMMON.AG.HANDLEMODULE","Handle Module of Service","N","N","","Handle Module of Service",""<endrec>
+"Others","","CPS.COMMON.AG.INTERFACECODE","InterfaceCode","N","Y","","InterfaceCode",""<endrec>
+"Others","","CPS.COMMON.AG.MAPPINGTYPE","Mapping type of Service Parameter","N","N","","Mapping type of Service Parameter",""<endrec>
+"Others","","CPS.COMMON.AG.MERGING.CONVERTORID","CPS.COMMON.AG.MERGING.CONVERTORID","N","N","","CPS.COMMON.AG.MERGING.CONVERTORID",""<endrec>
+"Others","","CPS.COMMON.AG.VALIDATIONTYPE","Validator Type of Service Parameter","N","N","","Validator Type of Service Parameter",""<endrec>
+"Others","","CPS.COMMON.AG.VALIDATIONTYPE.URL","","N","N","","URL Validator",""<endrec>
+"Others","","CPS.COMMON.AUDIT.LOG.INITIATOR_TYPE","CPS.COMMON.AUDIT.LOG.INITIATOR_TYPE","N","N","","CPS.COMMON.AUDIT.LOG.INITIATOR_TYPE",""<endrec>
+"Others","","CPS.COMMON.BOTEPPARA","","N","N","","BO Tep Parameter",""<endrec>
+"Others","","CPS.COMMON.GOABOPARA","","N","N","","GOA BO Parameter",""<endrec>
+"Others","","CPS.COMMON.GOAPARA","GOA Request Parameter List","N","Y","","GOA Request Parameter List",""<endrec>
+"Others","","CPS.COMMON.IDENTIFIER_TYPE","Identifier Type","N","N","","Identifier Type",""<endrec>
+"Others","Y","CPS.COMMON.KYC_ROLE_TYPE","Common KYC Role Type","N","Y","","Common KYC Role Type",""<endrec>
+"Others","","CPS.COMMON.OPERATOR.STATUS","Common Operator Status","N","N","","Common Operator Status",""<endrec>
+"Others","","CPS.COMMON.STATUS","Common Status","N","N","","Common Status",""<endrec>
+"Others","","CPS.COMMON.TEPPARA","TEP Parameter List","N","Y","","TEP Parameter List",""<endrec>
+"Others","","CPS.COMMON.USED.STATUS","Common Used Status","N","N","","Common Used Status",""<endrec>
+"Others","","CPS.COMMON.WEEK","Common Week","N","N","","Common Week",""<endrec>
+"Others","","CPS.COMMON.WEEKDAY","week day list, 0 is Sunday","N","Y","","Week Day List",""<endrec>
+"Others","","CPS.COMPLEX.RELATIONSHIP.QUERY.TYPE","","N","Y","","Complex Relationship Query Type",""<endrec>
+"Others","","CPS.CONCURRENTCTRL.ITEMS","Concurrent Type","Y","Y","","Concurrent Type",""<endrec>
+"Others","","CPS.CONDITION.PROPERTY","Condition Property","N","N","","Condition Property",""<endrec>
+"Others","","CPS.CONDITION.VALUE.IDENTITY","Identity Type 1","N","N","","Identity Type 1",""<endrec>
+"Others","","CPS.CONFIG.SET.DEPLOYMENT.PROCESS.STEP","Configuration Set Deployment Process Step","N","N","","Configuration Set Deployment Process Step",""<endrec>
+"Others","","CPS.CONFIG.SET.DEPLOYMENT.STATUS","Configuration Set Deployment Status","N","N","","Configuration Set Deployment Status",""<endrec>
+"Others","","CPS.CONFIG.STATUS","CPS.CONFIG.STATUS","N","N","","CPS.CONFIG.STATUS",""<endrec>
+"Others","","CPS.CONFIGURATION.FEATURELIST","Export or Import Configuration Feature List","Y","Y","","Configuration Feature List",""<endrec>
+"Others","","CPS.CONFIG_DATA.ALL.STATUS","","N","N","","CPS.CONFIG_DATA.ALL.STATUS",""<endrec>
+"Others","","CPS.CONFIG_DATA.CURRENT.PROCESS","","N","N","","CPS.CONFIG_DATA.CURRENT.PROCESS",""<endrec>
+"Others","","CPS.CONFIG_DATA.FAIL_REASON","Fail Reason","N","N","","Fail Reason",""<endrec>
+"Others","","CPS.CONFIG_DATA.HISTORY.STATUS","","N","N","","CPS.CONFIG_DATA.HISTORY.STATUS",""<endrec>
+"Others","","CPS.CONFIG_DATA.TABLES.STATUS","","N","N","","CPS.CONFIG_DATA.TABLES.STATUS",""<endrec>
+"Others","","CPS.CONSOLE.INST_CONFIG.CONFIG_TYPE","","N","N","","Config Type",""<endrec>
+"Others","","CPS.CREATE_CONTACT_TASK.ITENTITYPE","","N","N","","CPS.CREATE_CONTACT_TASK.ITENTITYPE",""<endrec>
+"Others","","CPS.CS.SERVICE.TYPE","","N","N","","CPS.CS.SERVICE.TYPE",""<endrec>
+"Others","","CPS.CURRENCY.SYMBOL_POSITION","currency symbol position","N","N","","currency symbol position",""<endrec>
+"Others","","CPS.CURRENCYDEF.DICT.CURRENCY_SYMBOL_POSITOIN","","N","N","","CPS.CURRENCYDEF.DICT.CURRENCY_SYMBOL_POSITOIN",""<endrec>
+"Others","","CPS.CURRENCYDEF.DICT.REFUNDING_MODE","","N","N","","CPS.CURRENCYDEF.DICT.REFUNDING_MODE",""<endrec>
+"Others","","CPS.CUSTOMER.CHANNEL","CPS.CUSTOMER.CHANNEL","N","N","","CPS.CUSTOMER.CHANNEL",""<endrec>
+"Others","","CPS.CUSTOMER.IDENTIFIER_TYPE","Customer Identifier Type","N","N","","Customer Identifier Type",""<endrec>
+"Others","","CPS.CUSTOMER.PRODUCT.STATUS","Customer Product Status","N","N","","Customer Product Status",""<endrec>
+"Others","","CPS.CUSTOMER.REGISTERBYTYPE","CPS.CUSTOMER.REGISTERBYTYPE","N","N","","CPS.CUSTOMER.REGISTERBYTYPE",""<endrec>
+"Others","","CPS.CUSTOMER.TYPE","CPS.CUSTOMER.TYPE","N","N","","CPS.CUSTOMER.TYPE",""<endrec>
+"Others","","CPS.CUSTOMERCARE.CUSTOMERTYPE","Customer Care Customer Type","N","N","","Customer Care Customer Type",""<endrec>
+"Others","","CPS.DATACLIENT.STATUS","Data Client Status","N","N","","Data Client Status",""<endrec>
+"Others","","CPS.DATATYPE.DELETEMETHOD","Data Type Delete Method","N","N","","Data Type Delete Method",""<endrec>
+"Others","","CPS.DATE_TIME_FORMAT","date time format","N","N","","date time format",""<endrec>
+"Others","","CPS.DECIMAL_GROUP_LENGTH","Decimal Group Length","N","N","","Decimal Group Length",""<endrec>
+"Others","","CPS.DEVICE.STATUS","Device Status","N","N","","Device Status",""<endrec>
+"Others","","CPS.DICTIONARY.HIERARCHYTYPE","Dictionary Hierarchytype","N","N","","Dictionary Hierarchytype",""<endrec>
+"Others","","CPS.DIRECT.DEBIT.MANDATE.STATUS","CPS.DIRECT.DEBIT.MANDATE.STATUS","N","N","","CPS.DIRECT.DEBIT.MANDATE.STATUS",""<endrec>
+"Others","","CPS.DIRECTDEBIT.CREATE.BY","CPS.DIRECTDEBIT.CREATE.BY","N","N","","CPS.DIRECTDEBIT.CREATE.BY",""<endrec>
+"Others","","CPS.DIRECTDEBIT.FREQUENCY","CPS.DIRECTDEBIT.FREQUENCY","N","N","","CPS.DIRECTDEBIT.FREQUENCY",""<endrec>
+"Others","","CPS.DIRECTDEBIT.IDENTITY.TYPE","CPS.DIRECTDEBIT.IDENTITY.TYPE","N","N","","CPS.DIRECTDEBIT.IDENTITY.TYPE",""<endrec>
+"Others","","CPS.DISTRIBUTION.APPLIED.LEVEL","DISTRIBUTION.APPLIED.LEVEL","N","N","","DISTRIBUTION.APPLIED.LEVEL",""<endrec>
+"Others","","CPS.DORMANT.DICT.BUSINESSSTATUS","","N","N","","CPS.DORMANT.DICT.BUSINESSSTATUS",""<endrec>
+"Others","","CPS.DORMANT.INDENTITY.TYPE","identity type","N","Y","","identity type",""<endrec>
+"Others","","CPS.EFT.FILENAME.FEILD","Provides the list of elements of EFT file name.","N","Y","","File Name Elements",""<endrec>
+"Others","","CPS.EFT.SUMMARY.FEILD","Fields list of EFT summary information for configuring EFT template for each control.","N","N","","Summary",""<endrec>
+"Others","","CPS.EFT.SYSTEM.FEILD","Provides the list of elements of EFT File name.","Y","Y","","System",""<endrec>
+"Others","","CPS.EFT.TRANSACTION.FEILD","Fields list of finance transaction for configuring EFT template for each control.","N","N","","Transaction",""<endrec>
+"Others","","CPS.ENVIRONMENTS","M-PESA environments","Y","Y","","CPS Environments","^\d+$"<endrec>
+"Others","","CPS.ERRORCODE","Error Code","N","N","","Error Code",""<endrec>
+"Others","","CPS.EVO.INITIATEMODEL","evo status","N","N","","evo status",""<endrec>
+"Others","","CPS.EVO.STATUS","initiate model","N","N","","initiate model",""<endrec>
+"Transaction","Y","CPS.EXTERNAL.BUNDLE.ELEMENT.UNIT","External Bundle Element Unit","Y","Y","","External Bundle Element Unit",""<endrec>
+"Others","","CPS.EXTERNAL.BUNLDE.ELEMENT.LIST","External Bundle Element List","N","N","","External Bundle Element List",""<endrec>
+"Transaction","","CPS.EXTERNAL.BUNLDE.ELEMENT.TYPE","External bundle element list, used for bundle configuration.","N","N","","External Bundle Element Type",""<endrec>
+"Others","","CPS.EXTRA.APPROVING.PARAMETERS","","N","N","","CPS.EXTRA.APPROVING.PARAMETERS",""<endrec>
+"Others","","CPS.EXTRA.PARAMETERS","","N","N","","CPS.EXTRA.PARAMETERS",""<endrec>
+"Others","","CPS.FAULTORDER.CATEGORY","","N","N","","Fault Order Category",""<endrec>
+"Others","","CPS.FAULTORDER.STATUS","Fault Order Status","N","N","","Fault Order Status",""<endrec>
+"Others","","CPS.FIELD.TYPE","CPS.FIELD.TYPE","N","N","","CPS.FIELD.TYPE",""<endrec>
+"Others","","CPS.FILE_ENCRYPT_CONF.ALGORITHM","File Encrypt Config","N","N","","File Encrypt Config",""<endrec>
+"Others","Y","CPS.FINANCE.ADJUST.DIRECTION","Adjust Direction","N","N","","Adjust Direction",""<endrec>
+"Others","Y","CPS.FINANCE.ADJUST.STATUS","Adjust Status","N","N","","Adjust Status",""<endrec>
+"Others","Y","CPS.FINANCE.ADJUST.TYPE","Adjust Type","N","N","","Adjust Type",""<endrec>
+"Others","","CPS.FINANCE.BANKRECONCILE","CPS.FINANCE.BANKRECONCILE","N","N","","CPS.FINANCE.BANKRECONCILE",""<endrec>
+"Others","","CPS.FINANCE.BANKSTATEMENTTEMPLATE","CPS.FINANCE.BANKSTATEMENTTEMPLATE","N","N","","CPS.FINANCE.BANKSTATEMENTTEMPLATE",""<endrec>
+"Others","","CPS.FINANCE.RECONCILIATION.EXTRACTION","CPS.FINANCE.RECONCILIATION.EXTRACTION","N","N","","CPS.FINANCE.RECONCILIATION.EXTRACTION",""<endrec>
+"Others","","CPS.FINANCE.RECONCILIATION.NOTICEOPERATOR","CPS.FINANCE.RECONCILIATION.NOTICEOPERATOR","N","N","","CPS.FINANCE.RECONCILIATION.NOTICEOPERATOR",""<endrec>
+"Others","","CPS.FUNDING_SOURCE.TYPE","Funding source type of auto sweep business.","N","Y","","Funding Source Type",""<endrec>
+"Others","Y","CPS.FX_RATE.STATUS","CPS.FX_RATE.STATUS","N","N","","CPS.FX_RATE.STATUS",""<endrec>
+"Others","Y","CPS.FX_RATE_FILE_HIS.STATUS","CPS.FX_RATE_FILE_HIS.STATUS","N","N","","CPS.FX_RATE_FILE_HIS.STATUS",""<endrec>
+"Others","","CPS.GOA.ENCRYPT.ALGORITHM","The encription algorithm will be used in Generic Outbound API to encrypt the sensitive data.","N","N","","Encryption Algorithm of GOA",""<endrec>
+"Others","","CPS.GROUP.ACTION.AUTH.INITIATORTYPE","Initiator Type","N","N","","Initiator Type",""<endrec>
+"Others","","CPS.IC.ACCOUNTING.MODEL.TYPE","CPS.IC.ACCOUNTING.MODEL.TYPE","N","N","","CPS.IC.ACCOUNTING.MODEL.TYPE",""<endrec>
+"Others","","CPS.IC.DOB.FORMAT.FOR.STK.ACTIVATION","","N","N","","Dob Format For STK Activation",""<endrec>
+"Others","","CPS.IC.DORMANT_PROCESSSTATUS","CPS.IC.DORMANT_PROCESSSTATUS","N","N","","CPS.IC.DORMANT_PROCESSSTATUS",""<endrec>
+"Others","","CPS.IC.DORMANT_TRANSACTIONSTATUS","CPS.IC.DORMANT_TRANSACTIONSTATUS","N","N","","CPS.IC.DORMANT_TRANSACTIONSTATUS",""<endrec>
+"Others","","CPS.IC.IDENTITY.STATUS","CPS.IC.IDENTITY.STATUS","N","N","","CPS.IC.IDENTITY.STATUS",""<endrec>
+"Others","","CPS.IC.KYC.DATATYPE","CPS.IC.KYC.DATATYPE","N","N","","CPS.IC.KYC.DATATYPE",""<endrec>
+"Others","","CPS.IC.KYCFIELD_STATUS","CPS.IC.KYCFIELD_STATUS","N","N","","CPS.IC.KYCFIELD_STATUS",""<endrec>
+"Others","","CPS.IC.OPERATOR_ISPRIMARY","CPS.IC.OPERATOR_ISPRIMARY","N","N","","CPS.IC.OPERATOR_ISPRIMARY",""<endrec>
+"Others","","CPS.IC.OPERATOR_NOTY","CPS.IC.OPERATOR_NOTY","N","N","","CPS.IC.OPERATOR_NOTY",""<endrec>
+"Others","","CPS.IC.OPERATOR_STATUS","CPS.IC.OPERATOR_STATUS","N","N","","CPS.IC.OPERATOR_STATUS",""<endrec>
+"Others","","CPS.IC.ORG.STATUS","CPS.IC.ORG.STATUS","N","N","","CPS.IC.ORG.STATUS",""<endrec>
+"Others","","CPS.IDENTITY.CAREER","Identity Career","N","N","","Identity Career",""<endrec>
+"Others","","CPS.IDENTITY.CUSTOMER.CUSTOMER_TYPE","Customer Sub Type","N","N","","Customer Sub Type",""<endrec>
+"Others","","CPS.IDENTITY.CUSTOMER.SECURITYCREDENTIALTYPE","CPS.IDENTITY.CUSTOMER.SECURITYCREDENTIALTYPE","N","N","","CPS.IDENTITY.CUSTOMER.SECURITYCREDENTIALTYPE",""<endrec>
+"Others","","CPS.IDENTITY.DEVICE","CPS.IDENTITY.DEVICE","N","N","","CPS.IDENTITY.DEVICE",""<endrec>
+"Others","","CPS.IDENTITY.ETHNICITY","Identity Ethnicity","N","N","","Identity Ethnicity",""<endrec>
+"Others","","CPS.IDENTITY.GROUP.INVITE_CUSTOMER_TYPE","Group Invite Customer Type","N","N","","Group Invite Customer Type",""<endrec>
+"Others","","CPS.IDENTITY.HERICHYSHIPTYPE","CPS.IDENTITY.HERICHYSHIPTYPE","N","N","","CPS.IDENTITY.HERICHYSHIPTYPE",""<endrec>
+"Others","","CPS.IDENTITY.IDTYPE","CPS.IDENTITY.IDTYPE","N","N","","CPS.IDENTITY.IDTYPE",""<endrec>
+"Others","","CPS.IDENTITY.MARRIED","Identity Married","N","N","","Identity Married",""<endrec>
+"Others","","CPS.IDENTITY.NATIONALITY","Identity Nationality","N","N","","Identity Nationality",""<endrec>
+"Others","","CPS.IDENTITY.ORGANIZATION.ORGANAZATION_TYPE","CPS.IDENTITY.ORGANIZATION.ORGANAZATION_TYPE","N","N","","CPS.IDENTITY.ORGANIZATION.ORGANAZATION_TYPE",""<endrec>
+"Others","","CPS.IDENTITY.PROFILE.ASSIGNMENT.OPTIONS","","N","N","","Profile Assignment Options",""<endrec>
+"Others","","CPS.IDENTITY.RELIGION","CPS.IDENTITY.RELIGION","N","N","","CPS.IDENTITY.RELIGION",""<endrec>
+"Others","","CPS.IDENTITY.SECURITYCREDENTIALTYPE","Identity Security Credential Type","N","N","","Identity Security Credential Type",""<endrec>
+"Others","","CPS.IDENTITY.TYPE","Identity Type","N","N","","Identity Type",""<endrec>
+"Others","","CPS.IDENTITY_STATE_TAG_DEF.APPLIEDTO","CPS.IDENTITY_STATE_TAG_DEF.APPLIEDTO","N","N","","CPS.IDENTITY_STATE_TAG_DEF.APPLIEDTO",""<endrec>
+"Others","","CPS.IDENTITY_STATE_TAG_DEF.DURATIONUNIT","CPS.IDENTITY_STATE_TAG_DEF.DURATIONUNIT","N","N","","CPS.IDENTITY_STATE_TAG_DEF.DURATIONUNIT",""<endrec>
+"Others","","CPS.IDENTITY_STATE_TAG_DEF.STATUS","CPS.IDENTITY_STATE_TAG_DEF.STATUS","N","N","","CPS.IDENTITY_STATE_TAG_DEF.STATUS",""<endrec>
+"Transaction","","CPS.INCENTIVE.PAYMENT.RESULT","CPS.INCENTIVE.PAYMENT.RESULT","N","N","","CPS.INCENTIVE.PAYMENT.RESULT",""<endrec>
+"Others","","CPS.INCENTIVE.REVERSE.STATUS","","N","N","","Incentive Reverse Failed Status",""<endrec>
+"Others","","CPS.INDENTITY.TYPE","Identity Type","N","N","","Identity Type",""<endrec>
+"Others","","CPS.INITIATE.TRANSACTION.IDENTIFIER","CPS.INITIATE.TRANSACTION.IDENTIFIER","N","N","","CPS.INITIATE.TRANSACTION.IDENTIFIER",""<endrec>
+"Others","","CPS.INITIATE.TRANSACTION.IDENTIFIER.CUSTOMER","CPS.INITIATE.TRANSACTION.IDENTIFIER.CUSTOMER","N","N","","CPS.INITIATE.TRANSACTION.IDENTIFIER.CUSTOMER",""<endrec>
+"Others","","CPS.INITIATE.TRANSACTION.IDENTIFIER.ORGANIZATION","INITIATE.TRANSACTION.IDENTIFIER.ORGANIZATION","N","N","","INITIATE.TRANSACTION.IDENTIFIER.ORGANIZATION",""<endrec>
+"Others","","CPS.INPUT_PARA.DATA_TYPE","Input Parameter Data Type","N","N","","Input Parameter Data Type",""<endrec>
+"Others","","CPS.INTEROPERATION.SCHEDULETYPE","Schedule type for Interoperation.","N","N","","Interoperation Schedule Type",""<endrec>
+"Others","","CPS.INTEROPERATION.TYPE","Indicates interoperation type for transaction or reason type. Off-net means transaction request need to be send to partner SP; In-net means transaction request is initiated from partner SP.","N","Y","","Interoperation Type",""<endrec>
+"Others","","CPS.KYC_ROLE_TYPE","KYC Role Type","N","Y","","KYC Role Type",""<endrec>
+"Others","","CPS.LANGUAGE.CHINESE","CPS.LANGUAGE.CHINESE","N","N","","CPS.LANGUAGE.CHINESE",""<endrec>
+"Others","","CPS.LANGUAGE.ENGLISH","CPS.LANGUAGE.ENGLISH","N","N","","CPS.LANGUAGE.ENGLISH",""<endrec>
+"Others","","CPS.LOOKUP_RULE.CONDITION_OP","Condition Operator","N","N","","Condition Operator",""<endrec>
+"Others","Y","CPS.LOOKUP_RULE.CONNECTOR","Connector","N","N","","Connector",""<endrec>
+"Others","","CPS.LOYALTY.ASSIGNMENT.INDENTITY.TYPE","","N","N","","Assignment Loyalty Point Identity Type",""<endrec>
+"Others","","CPS.MAKER_CHECKER.DICT.STATUS","","N","N","","CPS.MAKER_CHECKER.DICT.STATUS",""<endrec>
+"Others","","CPS.MNP.DIRECTION","Mnp Direction","N","N","","Mnp Direction",""<endrec>
+"Others","","CPS.MNP.MSISDN.RESULT","Mnp Msisdn Result","N","N","","Mnp Msisdn Result",""<endrec>
+"Others","","CPS.MQ.CONSUMER","","N","N","","CPS.MQ.CONSUMER",""<endrec>
+"Others","","CPS.MQ.DIRECTION","","N","N","","CPS.MQ.DIRECTION",""<endrec>
+"Others","","CPS.MQ.NEW.CONSUMER","CPS.MQ.NEW.CONSUMER","N","N","","CPS.MQ.NEW.CONSUMER",""<endrec>
+"Others","","CPS.MSISDNCONVERSION.ACTION","CPS.MSISDNCONVERSION.ACTION","N","N","","CPS.MSISDNCONVERSION.ACTION",""<endrec>
+"Others","","CPS.MSISDNCONVERSION.FORMAT","CPS.MSISDNCONVERSION.FORMAT","N","N","","CPS.MSISDNCONVERSION.FORMAT",""<endrec>
+"Others","","CPS.NC.SEND.INTERNAL_STATUS","","N","N","","CPS.NC.SEND.INTERNAL_STATUS",""<endrec>
+"Others","","CPS.NC.TYPE.NOTIFICATION.CATEGORY","NC Type Notification Category","N","N","","NC Type Notification Category",""<endrec>
+"Others","","CPS.NC.TYPE.NOTIFICATION.CHANNEL","","N","N","","Channel",""<endrec>
+"Others","","CPS.NC.TYPE.QUERY.STATUS","NC Type Query Status","N","N","","NC Type Query Status",""<endrec>
+"Others","","CPS.NC.VARIABLE.DATATYPE","Notification variable datatype","N","N","","Notification variable datatype",""<endrec>
+"Others","","CPS.NEGATIVE_FORMAT","negative format","N","N","","negative format",""<endrec>
+"Others","","CPS.NOTIFICATION.CHANNEL","CPS.NOTIFICATION.CHANNEL","N","N","","CPS.NOTIFICATION.CHANNEL",""<endrec>
+"Others","","CPS.NOTIFICATION.PARAMETERS","Notification Parameters","N","N","","Notification Parameters",""<endrec>
+"Others","","CPS.NOTIFICATION.SCENARIO.FLAG","","N","N","","Notifaction Scenario Flag",""<endrec>
+"Others","","CPS.OFFLINEDATA.STATUS","Off Line Data Status","N","N","","Off Line Data Status",""<endrec>
+"Others","","CPS.ONLINE.HELP.CHANNEL","Channels of Online Help","N","N","","Channels of Online Help",""<endrec>
+"Others","","CPS.ONLINE.HELP.IDENTITY.TYPE","Identity Type of Online Help","N","N","","Identity Type of Online Help",""<endrec>
+"Others","","CPS.OPARETOR.ACCOUNT.LEVEL","Operator Account Level","N","N","","Operator Account Level",""<endrec>
+"Others","","CPS.OPERATION.CHARACTER.SET","CPS.OPERATION.CHARACTER.SET","N","N","","CPS.OPERATION.CHARACTER.SET",""<endrec>
+"Others","","CPS.OPERATION.IDENTITY.LAN","CPS.OPERATION.IDENTITY.LAN","N","N","","CPS.OPERATION.IDENTITY.LAN",""<endrec>
+"Others","","CPS.OPERATION.IDENTITY.ORGTYPE","CPS.OPERATION.IDENTITY.ORGTYPE","N","N","","CPS.OPERATION.IDENTITY.ORGTYPE",""<endrec>
+"Others","","CPS.OPERATION.IDENTITY.RELATIONTYPE","CPS.OPERATION.IDENTITY.RELATIONTYPE","N","N","","CPS.OPERATION.IDENTITY.RELATIONTYPE",""<endrec>
+"Others","","CPS.OPERATION.VALIDATION.MODE","CPS.OPERATION.VALIDATION.MODE","N","N","","CPS.OPERATION.VALIDATION.MODE",""<endrec>
+"Others","","CPS.OPERATIONS.NC.LOG.STATUS","Operations NC Log Status","N","N","","Operations NC Log Status",""<endrec>
+"Others","","CPS.OPERATIONS.NC.SCHEDULE.STATUS","Operations NC Schedule Status","N","N","","Operations NC Schedule Status",""<endrec>
+"Others","","CPS.OPERATIONS.PERFORMANCE.SLOT","CPS.OPERATIONS.PERFORMANCE.SLOT","N","N","","CPS.OPERATIONS.PERFORMANCE.SLOT",""<endrec>
+"Others","","CPS.OPERATIONS.PERFORMANCE.TPS","CPS.OPERATIONS.PERFORMANCE.TPS","N","N","","CPS.OPERATIONS.PERFORMANCE.TPS",""<endrec>
+"Others","","CPS.OPERATOR.CREDENTY","CPS.OPERATOR.CREDENTY","N","N","","CPS.OPERATOR.CREDENTY",""<endrec>
+"Others","","CPS.OPERATOR.CUSTOMER.TASK_TYPE","CPS.OPERATOR.CUSTOMER.TASK_TYPE","N","N","","CPS.OPERATOR.CUSTOMER.TASK_TYPE",""<endrec>
+"Others","","CPS.OPERATOR.ORGANIZATION.TASK_TYPE","CPS.OPERATOR.ORGANIZATION.TASK_TYPE","N","N","","CPS.OPERATOR.ORGANIZATION.TASK_TYPE",""<endrec>
+"Others","","CPS.OPERATOR.ORGOPER.TASK_TYPE","CPS.OPERATOR.ORGOPER.TASK_TYPE","N","N","","CPS.OPERATOR.ORGOPER.TASK_TYPE",""<endrec>
+"Others","","CPS.OPERATOR.ROLE","CPS.OPERATOR.ROLE","N","N","","CPS.OPERATOR.ROLE",""<endrec>
+"Others","","CPS.OPERATOR.ROLE.CATEGORY","Role Category","N","N","","Role Category",""<endrec>
+"Others","","CPS.OPERATOR.STATUS","CPS.OPERATOR.STATUS","N","N","","CPS.OPERATOR.STATUS",""<endrec>
+"Others","","CPS.OPERATOR.TASK_TYPE","CPS.OPERATOR.TASK_TYPE","N","N","","CPS.OPERATOR.TASK_TYPE",""<endrec>
+"Others","","CPS.OPERATOR.TYPE","CPS.OPERATOR.TYPE","N","N","","CPS.OPERATOR.TYPE",""<endrec>
+"Others","","CPS.OPERATOR_ROLE_RELATIONSHIP.RELATIONSHIP","CPS.OPERATOR_ROLE_RELATIONSHIP.RELATIONSHIP","N","N","","CPS.OPERATOR_ROLE_RELATIONSHIP.RELATIONSHIP",""<endrec>
+"Others","","CPS.ORG.BILLFORMAT","Organization Bill Format","N","N","","Organization Bill Format",""<endrec>
+"Others","","CPS.ORG.BUSSINESS.DEFAULT.LANGUAGE","Organization bussiness.default.language","N","N","","Organization bussiness.default.language",""<endrec>
+"Others","","CPS.ORG.BUSSINESS.LANGUAGE.CHARACTER","Organization Bussiness Language Character","N","N","","Organization Bussiness Language Character",""<endrec>
+"Others","","CPS.ORG.BUSSINESS.LANGUAGE.DIRECTION","Organization Bussiness Language Direction","N","N","","Organization Bussiness Language Direction",""<endrec>
+"Others","","CPS.ORG.BUSSINESS.SCOPE","Organization Bussiness Scope","N","N","","Organization Bussiness Scope",""<endrec>
+"Others","","CPS.ORG.BUYGOODS.RULE","Buy Goods External Validation","N","N","","Buy Goods External Validation",""<endrec>
+"Others","","CPS.ORG.CAPITAL","Organization Capital","N","N","","Organization Capital",""<endrec>
+"Others","","CPS.ORG.COMPANY.SIZE","Organization Company Size","N","N","","Organization Company Size",""<endrec>
+"Others","","CPS.ORG.HIERARCKYMODE","Organization Hierarcky Mode","N","N","","Organization Hierarcky Mode",""<endrec>
+"Others","","CPS.ORG.IDENTITY.MODEL","Organization Identity Model","N","N","","Organization Identity Model",""<endrec>
+"Others","","CPS.ORG.IDENTITY.SUBTYPE","Organization Sub Type","N","N","","Organization Sub Type",""<endrec>
+"Others","","CPS.ORGANIZATION.IDENTIFIER_TYPE","Organization Identifier Type","N","N","","Organization Identifier Type",""<endrec>
+"Others","","CPS.ORGOPERATOR.CREDENTY","CPS.ORGOPERATOR.CREDENTY","N","N","","CPS.ORGOPERATOR.CREDENTY",""<endrec>
+"KYC","","CPS.ORGOPERATOR.NOTY","","N","Y","","Notification Channel",""<endrec>
+"Others","","CPS.ORG_OPERATOR.IDENTIFIER_TYPE","ORG Operator Identifier Type","N","N","","ORG Operator Identifier Type",""<endrec>
+"Others","","CPS.OUTBOUND.IS_SUCCESS","Outbound is Success","N","N","","Outbound is Success",""<endrec>
+"Others","","CPS.OUTBOUND.MSG_RESULT","Outbound Message Result","N","N","","Outbound Message Result",""<endrec>
+"Others","","CPS.OUTBOUND.MSISDNCONVERSION","CPS.OUTBOUND.MSISDNCONVERSION","N","N","","CPS.OUTBOUND.MSISDNCONVERSION",""<endrec>
+"Others","","CPS.OUTBOUND.POLICY_TYPE","Outbound Message Policy Type","N","N","","Outbound Message Policy Type",""<endrec>
+"Others","","CPS.PACKAGE.TYPE","","N","N","","Package Tupe",""<endrec>
+"Others","","CPS.PARTNER_BANK.MODE","Bank's transaction mode list.","N","Y","","CPS.PARTNER_BANK.MODE",""<endrec>
+"Others","","CPS.PAYMENT.QUERY.EXITACCOUNTTYPE","CPS.PAYMENT.QUERY.EXITACCOUNTTYPE","N","N","","CPS.PAYMENT.QUERY.EXITACCOUNTTYPE",""<endrec>
+"Others","","CPS.PAYMENT.QUERY.ORGSTATUS","CPS.PAYMENT.QUERY.ORGSTATUS","N","N","","CPS.PAYMENT.QUERY.ORGSTATUS",""<endrec>
+"Others","","CPS.PAYMENT.QUERY.PAYMENTMETHOD","CPS.PAYMENT.QUERY.PAYMENTMETHOD","N","N","","CPS.PAYMENT.QUERY.PAYMENTMETHOD",""<endrec>
+"Others","","CPS.PAYMENT.QUERY.REMITTYPE","CPS.PAYMENT.QUERY.REMITTYPE","N","N","","CPS.PAYMENT.QUERY.REMITTYPE",""<endrec>
+"Others","","CPS.PAYMENT.QUERY.SERVICESTATUS","CPS.PAYMENT.QUERY.SERVICESTATUS","N","N","","CPS.PAYMENT.QUERY.SERVICESTATUS",""<endrec>
+"Others","","CPS.PERCENT_FORMAT","percent format","N","N","","percent format",""<endrec>
+"Others","","CPS.PERSON.CONTACTPERSON.TYPE","Person Contact Person Type","N","N","","Person Contact Person Type",""<endrec>
+"Others","","CPS.PERSON.EDUCATION","CPS.PERSON.EDUCATION","N","N","","CPS.PERSON.EDUCATION",""<endrec>
+"Others","","CPS.PERSON.GENDER","CPS.PERSON.GENDER","N","N","","CPS.PERSON.GENDER",""<endrec>
+"Others","","CPS.PERSON.IDENTIFICATION.TYPE","Person Identification Type","N","N","","Person Identification Type",""<endrec>
+"Others","","CPS.PG.RESULT_HINT","PG Error Code Result Hint","Y","Y","","PG Error Code Result Hint",""<endrec>
+"KYC","","CPS.PGW.BILLING.MODE","Accounting Mode","Y","Y","","Accounting Mode",""<endrec>
+"Others","","CPS.PGW.BK.IPS.CHECK","CPS.PGW.BK.IPS.CHECK","N","N","","CPS.PGW.BK.IPS.CHECK",""<endrec>
+"Others","","CPS.PGW.BK.REPORT.MODE","CPS.PGW.BK.REPORT.MODE","N","N","","CPS.PGW.BK.REPORT.MODE",""<endrec>
+"KYC","","CPS.PGW.BUSSNESS.MODE","Business Mode","Y","Y","","Business Mode",""<endrec>
+"Others","","CPS.PGW.CONFIG.DESC","CPS.PGW.CONFIG.DESC","N","N","","CPS.PGW.CONFIG.DESC",""<endrec>
+"Others","","CPS.PGW.EXTERNAL.ACCOUNT.TYPE","CPS.PGW.EXTERNAL.ACCOUNT.TYPE","N","N","","CPS.PGW.EXTERNAL.ACCOUNT.TYPE",""<endrec>
+"Others","","CPS.PGW.PAGE.RETURN.MODE","CPS.PGW.PAGE.RETURN.MODE","N","N","","CPS.PGW.PAGE.RETURN.MODE",""<endrec>
+"Others","","CPS.PGW.PAY.OPTION","CPS.PGW.PAY.OPTION","N","N","","CPS.PGW.PAY.OPTION",""<endrec>
+"Others","","CPS.PGW.REMIT.TYPE","CPS.PGW.REMIT.TYPE","N","N","","CPS.PGW.REMIT.TYPE",""<endrec>
+"Others","","CPS.PGW.REVIEW.REFUND.APPROVE.STATUS","Approve Status","N","N","","Approve Status",""<endrec>
+"Others","","CPS.PGW.SERVICE.STATE","CPS.PGW.SERVICE.STATE","N","N","","CPS.PGW.SERVICE.STATE",""<endrec>
+"Others","","CPS.PIN_POLICY.SECURITYCREDENTIALS.PERIODUNIT","","N","N","","CPS.PIN_POLICY.SECURITYCREDENTIALS.PERIODUNIT",""<endrec>
+"Others","","CPS.PORTAL.LIST","Portal List of CPS","N","N","","Portal List",""<endrec>
+"Others","","CPS.PORTAL.OTP.CHANNEL","This data dictionary defines the channels through which OTP is sent when operator log on web poartal.","N","N","","Channel of Portal OTP",""<endrec>
+"Others","","CPS.POSITIVE_FORMAT","positive format","N","N","","positive format",""<endrec>
+"Others","","CPS.POSTPAID.PRODUCT","Provide PostPaid Product","Y","Y","","Provide PostPaid Product",""<endrec>
+"Others","","CPS.PRICE.MODE.TYPE","Price Mode Type","N","N","","Price Mode Type",""<endrec>
+"Others","","CPS.PRINCIPLE.CATEGORY","Principle Category","N","N","","Principle Category",""<endrec>
+"Others","","CPS.PRODUCT.ORGTYPE","CPS.PRODUCT.ORGTYPE","N","N","","CPS.PRODUCT.ORGTYPE",""<endrec>
+"Others","","CPS.PROVIDERSERVICE.AUDITLOG.IFSENSITIVE","Provider Service Auditlog Ifsensitive","N","N","","Provider Service Auditlog Ifsensitive",""<endrec>
+"Others","","CPS.PROVIDERSERVICE.AUDITLOG.RESULT","Provider Service Auditlog Result","N","N","","Provider Service Auditlog Result",""<endrec>
+"Others","","CPS.QUERY.TRANSATIONCHANNEL","Transaction Channel 1","N","N","","Transaction Channel 1",""<endrec>
+"Others","","CPS.QUERY.TRANSTYPE","Transaction Type 1","N","N","","Transaction Type 1",""<endrec>
+"Others","","CPS.QUERY.TRANSTYPE.TASK","QUERY.TRANSTYPE.TASK","N","N","","QUERY.TRANSTYPE.TASK",""<endrec>
+"Others","","CPS.REASON.AUTH","Reason Auth","N","N","","Reason Auth",""<endrec>
+"Others","","CPS.REASON.FACTOR","Reason Factor","N","N","","Reason Factor",""<endrec>
+"Others","","CPS.REASONLIST.REASONSCENARIO","Reason List Scenario","N","N","","Reason List Scenario",""<endrec>
+"Others","","CPS.REASONTYPE.DICT.IDENTITYSTATUS","","N","N","","CPS.REASONTYPE.DICT.IDENTITYSTATUS",""<endrec>
+"Others","","CPS.REASONTYPE.INITIATOR.IDENTITY","CPS.REASONTYPE.INITIATOR.IDENTITY","N","N","","CPS.REASONTYPE.INITIATOR.IDENTITY",""<endrec>
+"Others","","CPS.REASONTYPE.RELATIONSHIP.10009","REASONTYPE.RELATIONSHIP.10009","N","N","","REASONTYPE.RELATIONSHIP.10009",""<endrec>
+"Others","","CPS.REASONTYPE.RELATIONSHIP.10011","REASONTYPE.RELATIONSHIP.10011","N","N","","REASONTYPE.RELATIONSHIP.10011",""<endrec>
+"Others","","CPS.REASONTYPE.RELATIONSHIP.10011NOSAMEORG","CPS.REASONTYPE.RELATIONSHIP.10011NOSAMEORG","N","N","","CPS.REASONTYPE.RELATIONSHIP.10011NOSAMEORG",""<endrec>
+"Others","","CPS.REASONTYPE.REQUESTER","REQUESTER","N","N","","REQUESTER",""<endrec>
+"Others","","CPS.REASONTYPE.REVERSE.MODE","Reverse Mode","N","N","","Reverse Mode",""<endrec>
+"Others","","CPS.REASONTYPE.TIME.REVERSE","Time Reverse","N","N","","Time Reverse",""<endrec>
+"Others","","CPS.REASONTYPE.TRANSACTION.REVERSE.RECIPIENT","","N","N","","CPS.REASONTYPE.TRANSACTION.REVERSE.RECIPIENT",""<endrec>
+"Others","","CPS.REASONTYPE.TRANSROLE","REASONTYPE.TRANSROLE","N","N","","REASONTYPE.TRANSROLE",""<endrec>
+"Others","","CPS.REASONTYPE.TRANSSTATUS","REASONTYPE.TRANSSTATUS","N","N","","REASONTYPE.TRANSSTATUS",""<endrec>
+"Others","","CPS.RECEIVER.LIMITRULE.SCENARIOS","Scenarios list of applying limit rule for receiver","N","Y","","Receiver LimitRule Scenarios",""<endrec>
+"Others","","CPS.RECONCILE.APPROVE.AMOUNT.LIMIT","Reconcile Approve Amount Limit","Y","Y","","Reconcile Approve Amount Limit",""<endrec>
+"KYC","","CPS.RECONCILE.ISSUE.MONEY.MODE","Mode of Issue eMoney","N","Y","","Mode of Issue eMoney",""<endrec>
+"Others","","CPS.RECONCILECONFIG.EXTRACTIONMODE","extraction mode","Y","N","","extraction mode",""<endrec>
+"Others","","CPS.RECONCILECONFIG.FAILURE.FILE.IMPORT.MODE","","N","Y","","Failure File Import Mode",""<endrec>
+"Others","","CPS.RECONCILECONFIG.NOTICEOPERATOR","notice operator","Y","Y","","notice operator",""<endrec>
+"Others","","CPS.RECONCILECONFIG.RANGE.APPLY.FOR","","Y","Y","","Amount Range Apply For",""<endrec>
+"Others","","CPS.RECYCLE.RESULT","Recycle Result","N","N","","Recycle Result",""<endrec>
+"Others","","CPS.REMINDER.SCHEDULE.FREQUENCY","Reminder Schedule Frequency","N","N","","CPS.REMINDER.SCHEDULE.FREQUENCY",""<endrec>
+"Others","","CPS.REMINDER.TYPE","CPS.REMINDER.TYPE","N","N","","CPS.REMINDER.TYPE",""<endrec>
+"Others","","CPS.REQUESTER.IDENTIFIER.TYPE","CPS.REQUESTER.IDENTIFIER.TYPE","N","N","","CPS.REQUESTER.IDENTIFIER.TYPE",""<endrec>
+"Others","","CPS.REUND.TO_IDENTITY","","N","N","","CPS.REUND.TO_IDENTITY",""<endrec>
+"Others","","CPS.REVIEW.ISSUED.VOUCHER.VOUCHESTATE","CPS.REVIEW.ISSUED.VOUCHER.VOUCHESTATE","N","N","","Voucher State",""<endrec>
+"Others","","CPS.REVIEW.TRANSACTION.OPERATIONS","The operation which are allow execute in ""Review Transaction"" page","N","Y","","Review Transaction Operations",""<endrec>
+"Others","","CPS.RS.DUP.OPERATION","CPS.RS.DUP.OPERATION","N","N","","CPS.RS.DUP.OPERATION",""<endrec>
+"Others","","CPS.RS.IDENTIFER.DEBIT.VALUE","CPS.RS.IDENTIFER.DEBIT.VALUE","N","N","","CPS.RS.IDENTIFER.DEBIT.VALUE",""<endrec>
+"Others","","CPS.RS.IDENTIFER.ORG.VALUE","CPS.RS.IDENTIFER.ORG.VALUE","N","N","","CPS.RS.IDENTIFER.ORG.VALUE",""<endrec>
+"Others","","CPS.RS.IDENTIFER.SP.VALUE","CPS.RS.IDENTIFER.SP.VALUE","N","N","","CPS.RS.IDENTIFER.SP.VALUE",""<endrec>
+"Others","","CPS.RS.IDENTIFER.SP.VALUE418","CPS.RS.IDENTIFER.SP.VALUE418","N","N","","CPS.RS.IDENTIFER.SP.VALUE418",""<endrec>
+"Others","","CPS.RS.NEW.ENTRIES.TYPE.MODEL","CPS.RS.REVENUE.STLMENT.MODEL","N","N","","CPS.RS.REVENUE.STLMENT.MODEL",""<endrec>
+"Others","","CPS.RS.NOACCOUNT.CREATE","CPS.RS.NOACCOUNT.CREATE","N","N","","CPS.RS.NOACCOUNT.CREATE",""<endrec>
+"Others","","CPS.RS.NOACCOUNT.LINK","CPS.RS.NOACCOUNT.LINK","N","N","","CPS.RS.NOACCOUNT.LINK",""<endrec>
+"Others","","CPS.RS.PEND.OPERATION","CPS.RS.PEND.OPERATION","N","N","","CPS.RS.PEND.OPERATION",""<endrec>
+"Others","","CPS.RS.REVENUE.STLMENT.MODEL","CPS.RS.REVENUE.STLMENT.MODEL","N","N","","CPS.RS.REVENUE.STLMENT.MODEL",""<endrec>
+"Others","","CPS.RS.TASK.MANAGER.CREATE","Rs Task Manager Create","N","N","","Rs Task Manager Create",""<endrec>
+"Others","","CPS.RS.TASK.MANAGER.LINK","Rs Task Manager Link","N","N","","Rs Task Manager Link",""<endrec>
+"Others","","CPS.RS.TASK.MANGER.COMFIRM.OPERATION","Rs Task Manger Comfirm Operation","N","N","","Rs Task Manger Comfirm Operation",""<endrec>
+"Others","","CPS.RS.TASK.MANGER.DUP.OPERATION","Rs Task Manger Dup Operation","N","N","","Rs Task Manger Dup Operation",""<endrec>
+"Others","","CPS.RS.TASK.MANGER.PEND.OPERATION","Rs Task Manger Pend Operation","N","N","","Rs Task Manger Pend Operation",""<endrec>
+"Others","","CPS.RS.TASK.NOACCOUNT.OPERATION","Rs Task Noaccount Operation","N","N","","Rs Task Noaccount Operation",""<endrec>
+"Others","","CPS.RS.TASK.PENDING.OPERATION","Rs Task Pending Operation","N","N","","Rs Task Pending Operation",""<endrec>
+"Others","","CPS.RS.TCTRL.LINK","CPS.RS.TCTRL.LINK","N","N","","CPS.RS.TCTRL.LINK",""<endrec>
+"Others","","CPS.RS.TRANTYPE.SEARCH","CPS.RS.TRANTYPE.SEARCH","N","N","","CPS.RS.TRANTYPE.SEARCH",""<endrec>
+"Others","","CPS.RULE.CHANNEL","Rule Channel","N","N","","Rule Channel",""<endrec>
+"Others","","CPS.RULE.CHECK.RULE","Rule Check Rule","N","N","","Rule Check Rule",""<endrec>
+"Others","","CPS.RULE.DATA.STATUS","Rule Data Status","N","N","","Rule Data Status",""<endrec>
+"Others","","CPS.RULE.EVENT.CODE","Rule Event Code","N","N","","Rule Event Code",""<endrec>
+"Others","","CPS.RULE.FAILURE.ACTION.HARD","Rule Failure Action Hard","N","N","","Rule Failure Action Hard",""<endrec>
+"Others","","CPS.RULE.FAILURE.ACTION.SOFT","Rule Failure Action Soft","N","N","","Rule Failure Action Soft",""<endrec>
+"Others","","CPS.RULE.FAILURE.ACTION.SOFTANDHARD","Rule Failure Action Softandhard","N","N","","Rule Failure Action Softandhard",""<endrec>
+"Others","","CPS.RULE.FAILURE.STATUS","Rule Failure Status","N","N","","Rule Failure Status",""<endrec>
+"Others","","CPS.RULE.FAILURE.TOTYPE","Rule Failure Type","N","N","","Rule Failure Type",""<endrec>
+"Others","","CPS.RULE.IDENTITY.ACCOUNT.TYPE","Rule Identity Account Type","N","N","","Rule Identity Account Type",""<endrec>
+"Others","","CPS.RULE.IDENTITY.TYPE","Rule Identity Type","N","N","","Rule Identity Type",""<endrec>
+"Others","","CPS.RULE.JUDGE.RULE","Rule Judge Rule","N","N","","Rule Judge Rule",""<endrec>
+"Others","","CPS.RULE.LIMIT.MODE","Rule Limit Mode","N","N","","Rule Limit Mode",""<endrec>
+"Others","","CPS.RULE.PERIOD.TYPE","Rule Period Type","N","N","","Rule Period Type",""<endrec>
+"Others","","CPS.RULE.PERIOD.UNIT","Rule Period Unit","N","N","","Rule Period Unit",""<endrec>
+"Others","","CPS.RULE.PERIOD.UNIT.ROLLING","Rule Period Unit Rolling","N","N","","Rule Period Unit Rolling",""<endrec>
+"Others","","CPS.RULE.REPORT.TO","Rule Period To","N","N","","Rule Period To",""<endrec>
+"Others","","CPS.RULE.REQUESTER","REQUESTER","N","N","","REQUESTER",""<endrec>
+"Others","","CPS.RULE.ROLETYPE1","Rule Role Type 1","N","N","","Rule Role Type 1",""<endrec>
+"Others","","CPS.RULE.ROLETYPE2","Rule Role Type 2","N","N","","Rule Role Type 2",""<endrec>
+"Others","","CPS.RULEENGINE.ROLETYPE","CPS.RULEENGINE.ROLETYPE","N","N","","CPS.RULEENGINE.ROLETYPE",""<endrec>
+"Others","","CPS.SCHEDULE.TYPE","Schedule Type","N","N","","Schedule Type",""<endrec>
+"Others","","CPS.SECURITY.POLICY.CREDENTIALTYPE","Security Policy Credential Type","N","N","","Security Policy Credential Type",""<endrec>
+"Others","","CPS.SERVICE.ASSIGNMENT","Service Assignment","N","N","","Service Assignment",""<endrec>
+"Others","","CPS.SERVICE.POLICY.CREDENTIALTYPE","Service Policy Credential Type","N","N","","Service Policy Credential Type",""<endrec>
+"Others","","CPS.SERVICE.POLICY.CREDENTIALTYPEFORMAT","Service Policy Credential Type Format","N","N","","Service Policy Credential Type Format",""<endrec>
+"Others","","CPS.SERVICE.POLICY.PERIODUNIT","Service Policy Period Unit","N","N","","Service Policy Period Unit",""<endrec>
+"Others","","CPS.SERVICE.ROLE.TYPE","Service Role Type","N","N","","Service Role Type",""<endrec>
+"Others","","CPS.SERVICE.TRANSACTION.MODEL","Service Transaction Model","N","N","","Service Transaction Model",""<endrec>
+"Others","","CPS.SERVICE.TYPE","Service Type","N","N","","Service Type",""<endrec>
+"Others","","CPS.SETTLE.RESULT.STATUS","CPS.SETTLE.RESULT.STATUS","N","N","","CPS.SETTLE.RESULT.STATUS",""<endrec>
+"Others","","CPS.SETTLEMENT.CLCYEL","Settlement Cycle","Y","N","","Settlement Cycle",""<endrec>
+"Others","","CPS.SETTLEMENT.INIT.ORG.SWITCH","CPS.SETTLEMENT.INIT.ORG.SWITCH","N","N","","CPS.SETTLEMENT.INIT.ORG.SWITCH",""<endrec>
+"Others","","CPS.SETTLEMENT.PERIOD","","N","N","","CPS.SETTLEMENT.PERIOD",""<endrec>
+"Others","","CPS.SETTLEMENT.PROCESS.DETAIL.STATUS","","N","N","","CPS.SETTLEMENT.PROCESS.DETAIL.STATUS",""<endrec>
+"Others","","CPS.SETTLEMENT.PROCESS.STATUS","CPS.SETTLEMENT.PROCESS.STATUS","N","N","","CPS.SETTLEMENT.PROCESS.STATUS",""<endrec>
+"Others","","CPS.SETTLEMENT.PROCESS.TYPE","","N","N","","CPS.SETTLEMENT.PROCESS.TYPE",""<endrec>
+"Others","","CPS.SETTLEMENT.TRIGGER.MODEL","CPS.SETTLEMENT.TRIGGER.MODEL","N","N","","CPS.SETTLEMENT.TRIGGER.MODEL",""<endrec>
+"Others","","CPS.SETTLEMENT.TYPE","","N","N","","CPS.SETTLEMENT.TYPE",""<endrec>
+"Others","","CPS.SOURCE.IP.GET.TYPE","Getting Type of Source IP","N","N","","Getting Type of Source IP",""<endrec>
+"Others","","CPS.SP_OPERATOR.IDENTIFIER_TYPE","SP Operator Identifier Type","N","N","","SP Operator Identifier Type",""<endrec>
+"Others","","CPS.STK.KEY.TYPE","STK Type","N","N","","STK Type",""<endrec>
+"Others","","CPS.STK.TRANSACTION_TYPE","STK Transaction Type","Y","Y","","STK Transaction Type",""<endrec>
+"Others","","CPS.SUPPORT.CUSTOMER.NAME.SEARCH","Support Cutomer Name Search","N","N","","Support Cutomer Name Search",""<endrec>
+"Others","","CPS.SYSTEM.FEATURELIST","Feature List","N","N","","CPS.SYSTEM.FEATURELIST",""<endrec>
+"Others","","CPS.SYSTEM.TASK.PLAN.RECEIVER.TYPE","","N","N","","Receiver Type",""<endrec>
+"Others","","CPS.SYSTEMTASK.EXPIRED","","N","N","","CPS.SYSTEMTASK.EXPIRED",""<endrec>
+"Others","","CPS.TARGET_PARA_TYPE","Target Parameter Type","N","N","","Target Parameter Type",""<endrec>
+"Others","","CPS.TARNS.QUERY.TRANSATIONCHANNEL","Transaction Channel","N","N","","Transaction Channel",""<endrec>
+"Others","","CPS.TARNS.QUERY.TRANSTYPE","Transaction Type","N","N","","Transaction Type",""<endrec>
+"Others","","CPS.TASK.PROCESS.STATUS","Task Process Status","N","N","","Task Process Status",""<endrec>
+"Others","","CPS.TASK.PROCESS_MODE","Task Process Mode","N","N","","Task Process Mode",""<endrec>
+"Others","","CPS.TASK.STATUS","Task Status","N","N","","Task Status",""<endrec>
+"Others","","CPS.TASK.TYPE","Task Type","N","N","","Task Type",""<endrec>
+"Others","","CPS.TASK.TYPE.DTO","Task Type DTO","N","N","","Task Type DTO",""<endrec>
+"Others","","CPS.TASK_TYPE","Task Type","N","N","","Task Type",""<endrec>
+"Others","","CPS.TAX.RECEIVER","TAX.RECEIVER","N","N","","TAX.RECEIVER",""<endrec>
+"Others","","CPS.TAX.TAXPAYER","TAX.TAXPAYER","N","N","","TAX.TAXPAYER",""<endrec>
+"Others","","CPS.TAXCHAEGE.TAXPAYER","Tax ChargeType taxpayer","N","N","","Tax ChargeType taxpayer",""<endrec>
+"Others","","CPS.TAXCHARGE.REFERECEOBJ","Tax ChargeType refereceObj","N","N","","Tax ChargeType refereceObj",""<endrec>
+"Others","","CPS.TAX_CODE.DICT.TAX_MODE","","N","N","","CPS.TAX_CODE.DICT.TAX_MODE",""<endrec>
+"Transaction","","CPS.TC.3RDPARTY.UNEXPLAINED.BENEFIT","Is used to control third-party transaction processing logic state is unknown (EVC characteristics)","N","N","","CPS.TC.3RDPARTY.UNEXPLAINED.BENEFIT",""<endrec>
+"Others","","CPS.TC.ACTION.OR.TRANSACTION","TC.ACTION.OR.TRANSACTION","N","N","","TC.ACTION.OR.TRANSACTION",""<endrec>
+"Transaction","","CPS.TC.CHARGE.ACCUMULATOR.OWNER","","N","N","","Accumulator Owner",""<endrec>
+"Transaction","","CPS.TC.CHARGE.ACCUMULATOR.PERIODS","","N","N","","Periods",""<endrec>
+"Others","","CPS.TC.DICT.TRANCATION.FINANCIAL_CATRGORY","","N","N","","CPS.TC.DICT.TRANCATION.FINANCIAL_CATRGORY",""<endrec>
+"Transaction","","CPS.TC.IMT.ADDITIONAL.DATA.STATUS","Additional Data Field Status","N","N","","Additional Data Field Status",""<endrec>
+"Transaction","","CPS.TC.IMT.ADDITIONAL.DATA.TYPE","Additional Data Field Type","N","N","","Additional Data Field Type",""<endrec>
+"Transaction","","CPS.TC.IMT.ADDITIONAL.FIELD.CATEGORY","Additional Data Field Category","N","N","","Additional Data Field Category",""<endrec>
+"Transaction","","CPS.TC.IMT.CORRIDOR","Corridor","Y","Y","","Corridor",""<endrec>
+"Transaction","","CPS.TC.IMT.CORRIDOR.SERVICE","Corridor Service","Y","Y","","Corridor Service",""<endrec>
+"Transaction","","CPS.TC.IMT.COUNTRY.ORIGIN","Country Of Origin","Y","Y","","Country Of Origin",""<endrec>
+"Transaction","","CPS.TC.IMT.DEST.COUNTRY","Destination Country","Y","Y","","Destination Country",""<endrec>
+"Transaction","N","CPS.TC.IMT.DEST.SERVICE.PROVIDER","Destination Service Provider","Y","Y","","Destination Service Provider",""<endrec>
+"Transaction","","CPS.TC.IMT.DESTURI.PARAM","IMT Destination URI Parameter","N","N","","IMT Destination URI Parameter",""<endrec>
+"Transaction","","CPS.TC.IMT.DESTURI.TYPE","IMT Destination URI Type","N","N","","IMT Destination URI Type",""<endrec>
+"Transaction","","CPS.TC.IMT.HUB.PROVIDER","IMT Hub Provider","N","N","","IMT Hub Provider",""<endrec>
+"Transaction","","CPS.TC.IMT.MESSAGE.COMPARISON.OPERATOR","Operator of Comparison Validation Rule","N","N","","Comparison Operator",""<endrec>
+"Transaction","","CPS.TC.IMT.MESSAGE.CONCATENATE","Concatenate with","N","N","","Concatenate with",""<endrec>
+"Transaction","","CPS.TC.IMT.MESSAGE.DATA","Message Data Category","N","N","","Message Data Category",""<endrec>
+"Transaction","","CPS.TC.IMT.MESSAGE.DATE.FORMAT","DATE/TIME Format","N","N","","DATE/TIME Format",""<endrec>
+"Transaction","","CPS.TC.IMT.MESSAGE.DEPEND.ON","Depend on","N","N","","Depend on",""<endrec>
+"Transaction","","CPS.TC.IMT.MESSAGE.REMOVE","Remove","N","N","","Remove",""<endrec>
+"Transaction","","CPS.TC.IMT.MESSAGE.RULE","Message Mapping Rule","N","N","","Message Mapping Rule",""<endrec>
+"Transaction","","CPS.TC.IMT.MESSAGE.SPLIT","Split By","N","N","","Split By",""<endrec>
+"Transaction","","CPS.TC.IMT.MESSAGE.TRUNCATE.FROM","Truncate From","N","N","","Truncate From",""<endrec>
+"Transaction","","CPS.TC.IMT.MESSAGE.TRUNCATE.TO","Truncate To","N","N","","Truncate To",""<endrec>
+"Transaction","","CPS.TC.IMT.MESSAGE.TYPE","IMT Message Type","N","N","","IMT Message Type",""<endrec>
+"Transaction","","CPS.TC.IMT.MESSAGE.VALIDATION.MESSAGE","Validation Message","N","N","","Validation Message",""<endrec>
+"Transaction","","CPS.TC.IMT.PROVIDER","IMT Transaction Provider","N","N","","IMT Transaction Provider",""<endrec>
+"Transaction","","CPS.TC.IMT.SEND.CORRIDOR.SERVICE","Send Corridor Service","Y","Y","","Send Corridor Service",""<endrec>
+"Transaction","","CPS.TC.IMT.SERVICE.CATEGORY","Service Category","N","N","","Service Category",""<endrec>
+"Transaction","","CPS.TC.IMT.TRANSACTION.TYPE","IMT Transaction Type","N","N","","IMT Transaction Type",""<endrec>
+"Transaction","","CPS.TC.INCENTIVE.ONLINEOROFFLINE","Online or offline","N","N","","Online or offline",""<endrec>
+"Transaction","","CPS.TC.INCENTIVE.RANKFLAG","Rank Flag","N","N","","Rank Flag",""<endrec>
+"Transaction","","CPS.TC.INCENTIVE.VALIDATIONTYPE","Validation Type","N","N","","Validation Type",""<endrec>
+"Others","","CPS.TC.INTERNAL_AUDIT.AP_WORK_MODE","To indicate how to define the period cycle for system internal audit.","N","N","","Audit Period Mode",""<endrec>
+"Transaction","","CPS.TC.MNO.TOPUP.INTERFACE.CODE","MNO Top-up Interface","N","N","","MNO Top-up Interface",""<endrec>
+"Others","","CPS.TC.SELECT.MODE","TC.SELECT.MODE","N","N","","TC.SELECT.MODE",""<endrec>
+"Others","","CPS.TC.SERVICE.STATUS","TC.SERVICE.STATUS","N","N","","TC.SERVICE.STATUS",""<endrec>
+"Others","","CPS.TC.TRANSACTION.DEBITORCREDIT.PARTY","","N","N","","Transaction Direction",""<endrec>
+"Others","","CPS.TC.TRANSACTION.OPPOSITE.PARTY","","N","N","","CPS.TC.TRANSACTION.OPPOSITE.PARTY",""<endrec>
+"Others","","CPS.TC.TRANSACTION.TYPE","TC.TRANSACTION.TYPE","N","N","","TC.TRANSACTION.TYPE",""<endrec>
+"Others","","CPS.TC_RS.DICT.CTRL_ACTION","","N","N","","CPS.TC_RS.DICT.CTRL_ACTION",""<endrec>
+"Others","","CPS.TC_RS.DICT.CTRL_SUBMIT","","N","N","","CPS.TC_RS.DICT.CTRL_SUBMIT",""<endrec>
+"Others","","CPS.TERRITORY.CHECK.MODE","","N","N","","Territory Check Mode",""<endrec>
+"Others","","CPS.THIRDPARTY.IPRULE","Thirdparty IP Rule","N","N","","Thirdparty IP Rule",""<endrec>
+"Others","","CPS.TILL.DEVICE.STATUS","Till Device Status","N","N","","Till Device Status",""<endrec>
+"Others","","CPS.TILL.DEVICE.TYPE","Till Device Type","N","N","","Till Device Type",""<endrec>
+"Others","","CPS.TILL.IDENTIFIER_TYPE","Till Identifier Type","N","N","","Till Identifier Type",""<endrec>
+"Others","","CPS.TILL.TILLTYPE","CPS.TILL.TILLTYPE","N","N","","CPS.TILL.TILLTYPE",""<endrec>
+"Others","","CPS.TRANS.CHARGE_RECEIVER_ACCOUNT_PARTY","Charge Receiver Account Party","N","N","","Charge Receiver Account Party",""<endrec>
+"Others","","CPS.TRANS.IMTSEND.TRANSSTATUS","IMT Send Transaction Status","N","N","","IMT Send Transaction Status",""<endrec>
+"Others","","CPS.TRANS.TRANSACTIONTYPE","Trans Transaction Type","N","N","","Trans Transaction Type",""<endrec>
+"Others","","CPS.TRANS.TRANSSTATUS","Tans Transaction Status","N","N","","Tans Transaction Status",""<endrec>
+"Others","","CPS.TRANSACTION.BILLPAYMENT.MSISDN","CPS.TRANSACTION.BILLPAYMENT.MSISDN","N","N","","CPS.TRANSACTION.BILLPAYMENT.MSISDN",""<endrec>
+"Others","","CPS.TRANSACTION.EVC.FEATURE","","N","N","","EVC Features",""<endrec>
+"Others","","CPS.TRANSACTION.FSI.FEATURE","","N","N","","FSI Feature",""<endrec>
+"Others","","CPS.TRANSACTION.MODE.RECIPIENT","TRANSACTION.MODE.RECIPIENT","N","N","","TRANSACTION.MODE.RECIPIENT",""<endrec>
+"Others","","CPS.TRANSACTION.MODE.RECIPIENT4ACTION","TRANSACTION.MODE.RECIPIENT4ACTION","N","N","","TRANSACTION.MODE.RECIPIENT4ACTION",""<endrec>
+"Others","","CPS.TRANSACTION.MODE.RECIPIENT4GROUP","CPS.TRANSACTION.MODE.RECIPIENT4GROUP","N","N","","CPS.TRANSACTION.MODE.RECIPIENT4GROUP",""<endrec>
+"Others","","CPS.TRANSACTION.MODE.TYPE","TRANSACTION.MODE.TYPE","N","N","","TRANSACTION.MODE.TYPE",""<endrec>
+"Transaction","","CPS.TRANSACTION.NOTIFICATION.CHANNEL","Notification Channel","N","N","","Notification Channel",""<endrec>
+"Others","","CPS.TRANSACTION.RECHARGE.MSISDN","CPS.TRANSACTION.RECHARGE.MSISDN","N","N","","CPS.TRANSACTION.RECHARGE.MSISDN",""<endrec>
+"Others","","CPS.TRANSACTION.REVERSE.CHARGE.MODE","CPS.TRANSACTION.REVERSE.CHARGE.MODE","N","N","","CPS.TRANSACTION.REVERSE.CHARGE.MODE",""<endrec>
+"Others","","CPS.TRANSACTION.TRANSACTIONTYPE","Transaction Transaction Type","N","N","","Transaction Transaction Type",""<endrec>
+"Others","","CPS.TRANSNOTIFI.IS_INSTRANTLY","","N","N","","Issue On Event Occrrence",""<endrec>
+"Others","","CPS.TRUST.IDENTITY.TYPE","CPS.TRUST.IDENTITY.TYPE","N","N","","CPS.TRUST.IDENTITY.TYPE",""<endrec>
+"Others","","CPS.TRUSTLEVEL.TYPE","Trust Level Type","N","N","","Trust Level Type",""<endrec>
+"Transaction","","CPS.TXN.LINKED_TYPE","","N","N","","Transaction Linked Type",""<endrec>
+"Transaction","","CPS.TXN_RECEIPT_NUMBER_POLICY","CPS.TXN_RECEIPT_NUMBER_POLICY","N","N","","CPS.TXN_RECEIPT_NUMBER_POLICY",""<endrec>
+"Others","","CPS.UMC.INERACTION.CHANNEL","Interaction Channel","N","N","","Interaction Channel",""<endrec>
+"Others","","CPS.UMC.INERACTION.SERVICE_TYPE","","N","N","","Service type",""<endrec>
+"Others","","CPS.UMC.POPULAR.ORG","Popular Bill Payment Organization","Y","Y","","Popular Bill Payment Organization",""<endrec>
+"Others","","CPS.UMC_PARAM_TYPE","Parameter Type","N","N","","Parameter Type",""<endrec>
+"Others","","CPS.USSDPUSHRESULT.IPRULE","USSD Push Result IP Rule","N","N","","USSD Push Result IP Rule",""<endrec>
+"Others","Y","CPS.VIEW.STATUS","View Status","N","N","","View Status",""<endrec>
+"Others","","CPS.VOUCHER.CODE.FORMAT","Voucher Code Format","N","N","","Voucher Code Format",""<endrec>
+"Others","","CPS.VOUCHER.INFORMATION.VALIDATE","VOUCHER.INFORMATION.VALIDATE","N","N","","VOUCHER.INFORMATION.VALIDATE",""<endrec>
+"Others","","CPS.VOUCHER.PERIOD.UNIT","VOUCHER.PERIOD.UNIT","N","N","","VOUCHER.PERIOD.UNIT",""<endrec>
+"Others","","CPS.VOUCHER.VALUE.TYPE","Voucher Value Type","N","N","","Voucher Value Type",""<endrec>
+"Others","","CPS.WF.CFG.ORGMAPPING","CPS.WF.CFG.ORGMAPPING","N","N","","CPS.WF.CFG.ORGMAPPING",""<endrec>
+"Others","","CPS.WORKFLOW.CONFIG.SCENARIOS","Scenarios","N","N","","Scenarios",""<endrec>
+"Others","","CPS.WORKFLOW.CONFIG.TYPE","","N","N","","Workflow Config Type",""<endrec>
+"Others","","CPS.WORKFLOW.CONFIGURATION.CHANNEL","CPS.WORKFLOW.CONFIGURATION.CHANNEL","N","N","","CPS.WORKFLOW.CONFIGURATION.CHANNEL",""<endrec>
+"Others","","CPS.WORKFLOW.CONFIGURATION.EVENTTYPE","CPS.WORKFLOW.CONFIGURATION.EVENTTYPE","N","N","","CPS.WORKFLOW.CONFIGURATION.EVENTTYPE",""<endrec>
+"Others","","CPS.WORKFLOW.CONFIGURATION.MANUAL.TRIGGER","Task Escalation Notification Trigger Threshold","N","N","","CPS.WORKFLOW.CONFIGURATION.MANUAL.TRIGGER",""<endrec>
+"Others","","CPS.WORKFLOW.CONFIGURATION.ORGANIZATIONMAPPING","CPS.WORKFLOW.CONFIGURATION.ORGANIZATIONMAPPING","N","N","","CPS.WORKFLOW.CONFIGURATION.ORGANIZATIONMAPPING",""<endrec>
+"Others","","CPS.WORKFLOW.CONFIGURATION.PRIORITY","CPS.WORKFLOW.CONFIGURATION.PRIORITY","N","N","","CPS.WORKFLOW.CONFIGURATION.PRIORITY",""<endrec>
+"Others","","CPS.WORKFLOW.CONFIGURATION.RECEIVER","CPS.WORKFLOW.CONFIGURATION.RECEIVER","N","N","","CPS.WORKFLOW.CONFIGURATION.RECEIVER",""<endrec>
+"Others","","CPS.WORKFLOW.CONFIGURATION.RECEIVER.FORREPO","CPS.WORKFLOW.CONFIGURATION.RECEIVER.FORREPO","N","N","","CPS.WORKFLOW.CONFIGURATION.RECEIVER.FORREPO",""<endrec>
+"Others","","CPS.WORKFLOW.CONFIGURATION.STATUS","CPS.WORKFLOW.CONFIGURATION.STATUS","N","N","","CPS.WORKFLOW.CONFIGURATION.STATUS",""<endrec>
+"Others","","CPS.WORKFLOW.CONFIGURATION.TRIGGER","Task Escalation Notification Trigger Threshold","N","N","","CPS.WORKFLOW.CONFIGURATION.TRIGGER",""<endrec>
+"Others","","CPS.WORKFLOW.EXPIRED.RESETTIME","Reset Expired Time","N","N","","Reset Expired Time",""<endrec>
+"Others","","CPS.WORKFLOW.FLOW.STATUS","CPS.WORKFLOW.FLOW.STATUS","N","N","","CPS.WORKFLOW.FLOW.STATUS",""<endrec>
+"Others","","CPS.WORKFLOW.HIS.TASK.STATE","Task State","N","N","","Task State",""<endrec>
+"Others","","CPS.WORKFLOW.HISTORY.ORDER.STATUS","History Order Status","N","N","","History Order Status",""<endrec>
+"Others","","CPS.WORKFLOW.HISTORY.STATUS","CPS.WORKFLOW.HISTORY.STATUS","N","N","","CPS.WORKFLOW.HISTORY.STATUS",""<endrec>
+"Others","","CPS.WORKFLOW.MANAGE.ORDER.STATUS","Manage Order Status","N","N","","Manage Order Status",""<endrec>
+"Others","","CPS.WORKFLOW.MANAGEMENT.STATUS","CPS.WORKFLOW.MANAGEMENT.STATUS","N","N","","CPS.WORKFLOW.MANAGEMENT.STATUS",""<endrec>
+"Others","","CPS.WORKFLOW.ORDER.STATUS","Order Status","N","N","","Order Status",""<endrec>
+"Others","","CPS.WORKFLOW.PRIORITY","Workflow Priority","N","N","","Workflow Priority",""<endrec>
+"Others","","CPS.WORKFLOW.PROCESS.SCENARIOTYPE","Workflow Process Scenario Type","N","N","","Workflow Process Scenario Type",""<endrec>
+"Others","","CPS.WORKFLOW.STATUS.HISTORY.SEARCH","WORKFLOW STATUS HISTORY SEARCH","N","N","","WORKFLOW STATUS HISTORY SEARCH",""<endrec>
+"Others","","CPS.WORKFLOW.STATUS.SEARCH","CPS.WORKFLOW.STATUS.SEARCH","N","N","","CPS.WORKFLOW.STATUS.SEARCH",""<endrec>
+"Others","","CPS.WORKFLOW.TASK.ACTIONS","Task Action","N","N","","Task Action",""<endrec>
+"Others","","CPS.WORKFLOW.TASK.PROCESS.RESULT","Process Result","N","N","","Process Result",""<endrec>
+"Others","","CPS.WORKFLOW.TASK.RESETTIME","CPS.WORKFLOW.TASK.RESETTIME","N","N","","CPS.WORKFLOW.TASK.RESETTIME",""<endrec>
+"Others","","CPS.WORKFLOW.TASK.STATE","Task State","N","N","","Task State",""<endrec>
+"Others","","CPS.WORKFLOW.TASK.STATUS","CPS.WORKFLOW.TASK.STATUS","N","N","","CPS.WORKFLOW.TASK.STATUS",""<endrec>
+"Others","","CPS.WORKFLOW.TODO.TASK.STATE","Task State","N","N","","Task State",""<endrec>
+"Others","","CPS.WORKFLOW.WORKFLOW.STATUS","CPS.WORKFLOW.WORKFLOW.STATUS","N","N","","CPS.WORKFLOW.WORKFLOW.STATUS",""<endrec>
+"Others","","CPS.WORKFLOW_NAME","Workflow Name","N","N","","Workflow Name",""<endrec>
+"Others","","CPS.ZERO_START_FORMAT","zero start format","N","N","","zero start format",""<endrec>
+"Others","","CPS_CONFIGURATION_CREATION_DEFAULT_BIZ_ORG_NAME","","N","N","","CPS_CONFIGURATION_CREATION_DEFAULT_BIZ_ORG_NAME",""<endrec>
+"Others","","CPS_CONFIGURATION_CREATION_DEFAULT_OPERATOR_CODE","","N","N","","CPS_CONFIGURATION_CREATION_DEFAULT_OPERATOR_CODE",""<endrec>
+"Others","","CPS_CONFIGURATION_CREATION_DEFAULT_SHORT_CODE_RULE","","N","N","","Short Code Rule",""<endrec>
+"Others","","CPS_CONFIGURATION_CREATION_DEFAULT_TILL_NUMBER","","N","N","","CPS_CONFIGURATION_CREATION_DEFAULT_TILL_NUMBER",""<endrec>
+"Others","","CPS_CONFIGURATION_CREATION_DEFAULT_USER_NAME","","N","N","","CPS_CONFIGURATION_CREATION_DEFAULT_USER_NAME",""<endrec>
+"Others","","CPS_FLOW_CONTROL_POLICY_ACCESS_PROTOCOL","Flow Control Policy Access Protocol","N","N","","Flow Control Policy Access Protocol",""<endrec>
+"Others","","CPS_FLOW_CONTROL_POLICY_API_COMMAND","Flow Control Policy API Command","N","N","","Flow Control Policy API Command",""<endrec>
+"Others","","CPS_FLOW_CONTROL_POLICY_SERVICE","Flow Control Policy Service","N","N","","Flow Control Policy Service",""<endrec>
+"Others","","CPS_FLOW_CONTROL_POLICY_STATUS","Flow Control Policy Status","N","N","","Flow Control Policy Status",""<endrec>
+"Others","","CPS_LIMIT_APPLAY_MODE_INCLUDE_EXCLUDE","Limit Apply Mode","Y","Y","","Limit Apply Mode",""<endrec>
+"Others","","CPS_NC_RULE_CHANNEL","Channel","N","N","","Channel",""<endrec>
+"Others","","CPS_RESET_PIN_REASON","Reasons of Reset PIN","Y","Y","","Reset PIN Reason",""<endrec>
+"Others","","CPS_SUPPORT_HSM","HSM Vendor Type","N","N","","HSM Vendor Type",""<endrec>
+"Others","","CPS_SYSTEM_QUESTIONS","System Questions","Y","Y","","System Questions",""<endrec>
+"KYC","","CPS_SYS_CERTIFICATE_TYPE","Certificate type","Y","Y","","Certificate type",""<endrec>
+"KYC","","CPS_SYS_CONTACT_TYPE","","Y","Y","","Contact type",""<endrec>
+"KYC","","CPS_SYS_ID_DOCUMENT","Provide certificate","Y","Y","","Provide certificate",""<endrec>
+"KYC","","CPS_SYS_ID_TYPE","ID type","Y","Y","","ID type",""<endrec>
+"KYC","","CPS_USR_10001","CNS","Y","Y","","CNS",""<endrec>
+"KYC","Y","CPS_USR_10002","","Y","Y","","Gender",""<endrec>
+"KYC","","CPS_USR_1001","","Y","Y","","CNS Support",""<endrec>
+"Transaction","","CPS_USR_10011","Country ISO Code to Name","Y","Y","","Country ISO Code to Name",""<endrec>
+"KYC","N","CPS_USR_10012","OPT IN","Y","Y","","OPT IN",""<endrec>
+"Transaction","","CPS_USR_10021","HS Country ISO Code to Name","Y","Y","","HS Country ISO Code to Name",""<endrec>
+"KYC","N","CPS_USR_10022","Bundle","Y","Y","","Bundle",""<endrec>
+"KYC","N","CPS_USR_10031","","Y","Y","","CNS Status",""<endrec>
+"KYC","N","CPS_USR_10041","","Y","Y","","OTP Status",""<endrec>
+"Others","","CPS_Yes_or_No","Yes or No","N","N","","CPS Yes or No",""<endrec>
+"Others","","CREDIT_PARTY_OPTIONS","CREDIT_PARTY_OPTIONS","N","N","","CREDIT_PARTY_OPTIONS",""<endrec>
+"Others","","CURRENCY.SYMBLE.POSITION","Position of currency symble","N","N","","Position of currency symble",""<endrec>
+"Others","","CURRENCY_TYPE","Applying for choosing demostic currency or foreign currency.","N","N","","Currency Type",""<endrec>
+"Others","","CUS_CPS.ARCHIVE.BASIC_CFG.DATAMONTH","","N","N","","CUS_CPS.ARCHIVE.BASIC_CFG.DATAMONTH",""<endrec>
+"Others","","DEVICE_STATUS","Device status","N","N","","Device status",""<endrec>
+"Others","","DORMANT_FAILURE_TRANSACTION_STATUS","Dormant failure transaction status","N","Y","","Dormant failure transaction status",""<endrec>
+"Others","","DORMANT_PROCESS_STATUS","Dormant process status","N","Y","","Dormant process status",""<endrec>
+"Others","","DORMANT_PROCESS_TASK_TYPE","Dormant process task type","N","Y","","Dormant process task type",""<endrec>
+"Others","","DORMANT_TRANSACTION_STATUS","Dormant transaction status","N","Y","","Dormant transaction status",""<endrec>
+"Others","","EVO_EXTRACT_TYPE_LIST","EVO extract type list","N","N","","EVO extract type list",""<endrec>
+"Others","","EXPORTABLE_ITEMS_LIST","The configuration items list that can be selected in GUI for exporting.","N","Y","","Exportable Items List",""<endrec>
+"Others","","FAILURE_FILE.LOCATION.IDENTIFIER","Provides the flag for how to find the stard or end location of a entry's element.","N","N","","Failure File Location Identifier",""<endrec>
+"Others","","FAILURE_FILE.TARGET.ELEMENT","Defines the target fields which are assigned by the elements analyzed in failure file.","N","N","","Failure File Target Element",""<endrec>
+"Others","","FAILURE_FILE_FORMAT_LIST","Failure File format list","N","N","","Failure File format list",""<endrec>
+"Others","","FORMAT_OF_DATE","Format of date","N","Y","","Format of date",""<endrec>
+"Others","","FORMAT_OF_TIME_AM","format of time am","N","Y","","format of time am",""<endrec>
+"Others","","FORMAT_OF_TIME_PM","format of time pm","N","Y","","format of time pm",""<endrec>
+"Others","","FSI_LINK_STATUS","","N","N","","FSI Link Status",""<endrec>
+"Others","","FSI_TASK_TYPE","FSI Task Type","N","N","","FSI Task Type",""<endrec>
+"Others","","FUNDS_TYPE_LIST","Funds type list","N","N","","Funds type list",""<endrec>
+"Transaction","Y","FX_BUSINESS_TYPE","FX_BUSINESS_TYPE","N","N","","FX_BUSINESS_TYPE",""<endrec>
+"Transaction","Y","FX_MODE","","N","N","","FX_MODE",""<endrec>
+"Others","","GUI_FORMAT_OF_DATE","Date format in GUI","N","N","","Date format in GUI",""<endrec>
+"Others","","GUI_FORMAT_OF_DATE_AND_TIME","Date/time format in GUI","N","N","","Date/time format in GUI",""<endrec>
+"Others","","GUI_FORMAT_OF_TIME","Time format in GUI","N","N","","Time format in GUI",""<endrec>
+"Others","","HIERARCHY_PRIVILEGE","Hierarchy privilege options","N","Y","","Hierarchy privilege options",""<endrec>
+"Others","","HIERARCHY_TYPE","Hierarchy type","N","N","","Hierarchy type",""<endrec>
+"Others","","IDENTITY_ACCOUNT_RELATIONSHIP_TYPE","Identity account relationship type","N","Y","","Identity account relationship type",""<endrec>
+"KYC","","IDENTITY_CLASSIFICATION","Identity Classification","Y","Y","","Identity Classification",""<endrec>
+"Others","","IDENTITY_STATUS","Identity status","N","Y","","Identity status",""<endrec>
+"Others","","IDENTITY_TYPE","Identity Type","N","Y","","Identity Type",""<endrec>
+"Others","","INCENTIVE_FILE.FIELDS","Provides the list of all the target fields for the anlysis result of each entry of the incentive file.","N","N","","INCENTIVE_FILE.FIELDS",""<endrec>
+"Others","","INCENTIVE_FILE.LOCATION.IDENTIFIER","The tags or identifiers list used for sperator of entries in the incentive file.","N","N","","INCENTIVE_FILE.LOCATION.IDENTIFIER",""<endrec>
+"Others","","INCENTIVE_FILE_FORMAT_LIST","","N","N","","Incentive File Format List",""<endrec>
+"Others","","INCENTIVE_FILE_PREPROCESSING_MODE","Provides the list of the pre-procession when import the incentive files.","N","N","","INCENTIVE_FILE_PREPROCESSING_MODE",""<endrec>
+"Others","","INITIATOR_IDENTIFIER_TYPE","Initiator Identifier Type","N","N","","Initiator Identifier Type",""<endrec>
+"Digit_analysis","","ISDN_NUMBER_FORMAT","ISDN Number Format","N","N","","ISDN Number Format",""<endrec>
+"Others","","KYC_FILE_SOLUTION","","N","N","","File Attachment Solution",""<endrec>
+"Others","","KYC_VALUE_STATUS","It defines the enumeration values for KYC status.","N","N","","KYC Status",""<endrec>
+"Others","","LONG_FORMAT_OF_TIME","Long format of time","N","Y","","Long format of time",""<endrec>
+"Others","","MAKER_CHECKER_SWITCH","Maker Checker Switch","N","N","","Maker Checker Switch",""<endrec>
+"KYC","","MK.ORG.CLIENT.ACQUIRED.VIA","The way of organization acquiring their customer","N","Y","","The way of organization acquiring their customer",""<endrec>
+"Others","","MSISDN_TASK_TYPE","Task type of MSISDN processing","N","N","","Task type of MSISDN processing",""<endrec>
+"Others","","NC.TYPE.QUERY.ACTION.ROLE","NC Type Query Action Role","N","N","","NC Type Query Action Role",""<endrec>
+"Others","","NC.TYPE.QUERY.TRANSACTION.ROLE","NC Type Query Transaction Role","N","N","","NC Type Query Transaction Role",""<endrec>
+"Others","","NOTIFICATION_SCENARIO","Notification Scenario","N","N","","Notification Scenario",""<endrec>
+"Others","","ORG_BANK_STATEMENT_ENTRY_STATUS","The status of org bank statement entry.","N","N","","ORG.BANK.STATEMENT.ENTRY.STATUS",""<endrec>
+"Others","","ORG_DIGITAL_CERTIFICATION","Certification for org","N","N","","Certification for org",""<endrec>
+"Others","","On_or_Off","On or Off","N","N","","On or Off",""<endrec>
+"Others","","POINTS_ADJUSTMENT_REASON","It defines the reasons why identity's points is adjusted. When operator adjusting identity's points, the operator needs to select a change reason.","Y","Y","","Points Adjustment Reason",""<endrec>
+"Others","","PRODUCT_ASSIGNMENT_STATUS","Status of product assignment","N","Y","","Status of product assignment",""<endrec>
+"Others","","PRODUCT_SERVICE_STATUS","","N","N","","Product Service Status",""<endrec>
+"Others","","PROFIT_COMPUTE_CYCLE","PROFIT_COMPUTE_CYCLE","N","N","","PROFIT_COMPUTE_CYCLE",""<endrec>
+"Others","","PROFIT_CREDIT_CYCLE","PROFIT_CREDIT_CYCLE","N","N","","PROFIT_CREDIT_CYCLE",""<endrec>
+"Others","","PROFIT_DISBURSE_STATUS","PROFIT_DISBURSE_STATUS","N","N","","PROFIT_DISBURSE_STATUS",""<endrec>
+"Others","","RAISE_DISPUTE_TRANS_REASON_LIST","Reason for raise dispute transaction","Y","Y","","Reason For Raise Dispute Transaction",""<endrec>
+"Others","","REFUNDSTATUS","Refund Status","N","N","","Refund Status",""<endrec>
+"Others","","REGISTER_FILE_TYPE","","N","N","","Register File Type",""<endrec>
+"Others","","REMITTANCE_SERVICE_SUBTYPE","Remittance Service Type","N","N","","Remittance Service Type",""<endrec>
+"Others","","REQUESTER_IDENTIFIER_TYPE","Requester Identifier Type","N","N","","Requester Identifier Type",""<endrec>
+"Others","","RESULT_OF_CLOSE_IDENTITY","Result of close identity","N","Y","","Result of close identity",""<endrec>
+"Transaction","","ROLE_IDENTIFIER_TYPE","Role Identifier Type","N","Y","","Role Identifier Type",""<endrec>
+"Others","","SECURITY_CREDENTIAL_STATUS","Security credential status","N","Y","","Security credential status",""<endrec>
+"Others","","SEND_INDEPENDENT_STORE_COMMISSION_INVOICE","","N","N","","Independent Store Commission Invoice",""<endrec>
+"Others","","SERVICECONFIG.NODELEAF","SERVICECONFIG.NODELEAF","N","N","","SERVICECONFIG.NODELEAF",""<endrec>
+"Others","","SERVICECONFIG.PARAM","SERVICECONFIG.PARAM","N","N","","SERVICECONFIG.PARAM",""<endrec>
+"Others","","SERVICE_ROLE","Roles in service context","N","Y","","Roles in service context",""<endrec>
+"Others","","SHORT_FORMAT_OF_DATE","Short format of date","N","Y","","Short format of date",""<endrec>
+"Others","","SHORT_FORMAT_OF_TIME","Short format of time","N","Y","","Short format of time",""<endrec>
+"Others","","SP_DIGITAL_CERTIFICATION","Certification for SP","N","N","","Certification for SP",""<endrec>
+"Others","N","STATEMENT.LOCATION.IDENTIFIER","Definetion for the location identifier list of bank statements parsing.","Y","Y","","Statement Location Identifier",""<endrec>
+"Others","","STATEMENT.TARGET.ELEMENT","define all target items for BST element. if a element is assigned to a item in this list, its value will be stored into BST/BSE tables/Fields.","N","N","","Statement Target Element",""<endrec>
+"Others","","STATEMENT_FORMAT_LIST","Statement format list","Y","N","","Statement format list",""<endrec>
+"Others","","STRING_YES_OR_NO","String YES or NO","N","N","","String YES or NO",""<endrec>
+"Others","","TASK_EXECUTION_MODE","Mode of task execution","N","N","","Mode of task execution",""<endrec>
+"Others","","TASK_FILE_SOLUTION","","N","N","","File attachment solution",""<endrec>
+"Others","","VOUCHER.REDEEMING.ORGANIZATION.HIERARCHY.TYPE","VOUCHER.REDEEMING.ORGANIZATION.HIERARCHY.TYPE","N","N","","VOUCHER.REDEEMING.ORGANIZATION.HIERARCHY.TYPE",""<endrec>
+"Others","","WORK_FLOW_HISTORY_SORT_TIME","","N","N","","WORK_FLOW_HISTORY_SORT_TIME",""<endrec>
+"Others","","WORK_FLOW_SORT_TIME","","N","N","","WORK_FLOW_SORT_TIME",""<endrec>
+"Others","","YES_OR_NO","Yes or No","N","N","","Yes or No",""<endrec>
+"Others","","YN_TO_YES_NO","YN to Yes and No","N","N","","YN to Yes and No",""<endrec>

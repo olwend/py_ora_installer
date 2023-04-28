@@ -1,0 +1,6 @@
+CURRENCY_CODE,CURRENCY_PRECISION,CURRENCY_UNIT,DESCRIPTION,EXCHANGE_RATIO,ROUNDING_MODE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <endrec>
+"999","0","Point","For Loyalty test","1","FLOOR"<endrec>
+"CAD","0","CAD","","1","HALF_EVEN"<endrec>
+"GBP","2","GBP","Currency for UK","100","HALF_EVEN"<endrec>
+"TZS","2","shilling","Tanzanian shilling","100","HALF_EVEN"<endrec>
+"USD","2","USD","currency for USD","100","HALF_EVEN"<endrec>

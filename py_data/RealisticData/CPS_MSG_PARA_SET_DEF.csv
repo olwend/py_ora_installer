@@ -1,0 +1,36 @@
+DESCRIPTION,MSG_CODE,MSG_PARA_SET_ID,MSG_PARA_SET_NAME                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <endrec>
+"","Mobile Money Available Notification Reply","1","Mobile Money Available Notification Reply"<endrec>
+"TEWS_AccountInformation_Response","TEWS_AccountInformation_Response","10","TEWS_AccountInformation_Response"<endrec>
+"","HWS_AdviceOfCharge_Request","1001","HWS_AdviceOfCharge_Request"<endrec>
+"","HWS_AdviceOfCharge_Response","1002","HWS_AdviceOfCharge_Response"<endrec>
+"","HWS_Remittance_Request","1003","HWS_Remittance_Request"<endrec>
+"","HWS_Remittance_Response","1004","HWS_Remittance_Response"<endrec>
+"","HWS_Status_Request","1005","HWS_Status_Request"<endrec>
+"","HWS_Status_Response","1006","HWS_Status_Response"<endrec>
+"","TEWS_Credit_Request","11","TEWS_Credit_Request"<endrec>
+"","IMT_Request_Quote","1101","IMT_Request_Quote"<endrec>
+"","IMT_Transfer_Abroad","1102","IMT_Transfer_Abroad"<endrec>
+"","Mobile Receive Money Request","1104","Mobile Receive Money Request_1"<endrec>
+"Generic_IMTValidation_Request","Generic_IMTValidation_Request","1114","Generic_IMTValidation_Request"<endrec>
+"Generic_IMTValidation_Response","Generic_IMTValidation_Response","1115","Generic_IMTValidation_Response"<endrec>
+"Generic_IMTReceiveValidation_Request","Generic_IMTReceiveValidation_Request","1116","Generic_IMTReceiveValidation_Request"<endrec>
+"Generic_IMTReceiveValidation_Response","Generic_IMTReceiveValidation_Response","1117","Generic_IMTReceiveValidation_Response"<endrec>
+"Generic_IMTMoneyTransfer_Request","Generic_IMTMoneyTransfer_Request","1118","Generic_IMTMoneyTransfer_Request"<endrec>
+"Generic_IMTMoneyTransfer_Response","Generic_IMTMoneyTransfer_Response","1119","Generic_IMTMoneyTransfer_Response"<endrec>
+"Generic_IMTReceivemoney_Request","Generic_IMTReceivemoney_Request","1120","Generic_IMTReceivemoney_Request"<endrec>
+"Generic_IMTReceivemoney_Response","Generic_IMTReceivemoney_Response","1121","Generic_IMTReceivemoney_Response"<endrec>
+"Generic_IMTInquiry_Request","Generic_IMTInquiry_Request","1122","Generic_IMTInquiry_Request"<endrec>
+"Generic_IMTInquiry_Response","Generic_IMTInquiry_Response","1123","Generic_IMTInquiry_Response"<endrec>
+"Generic_IMTTransferCancel_Request","Generic_IMTTransferCancel_Request","1124","Generic_IMTTransferCancel_Request"<endrec>
+"TEWS_AccountInformation_Request","TEWS_AccountInformation_Request","12","TEWS_AccountInformation_Request"<endrec>
+"","TEWS_Cancellation_Request","13","TEWS_Cancellation_Request"<endrec>
+"TEWS_Credit_Response","TEWS_Credit_Response","14","TEWS_Credit_Response"<endrec>
+"RTEWS_StatusReport_Request","RTEWS_StatusReport_Request","15","RTEWS_StatusReport_Request"<endrec>
+"","Mobile Receive Money Reply","2","Mobile Receive Money Reply"<endrec>
+"","Mobile Server Heartbeat Request","3","Mobile Server Heartbeat Request"<endrec>
+"","Mobile Transaction Inquiry Request","4","Mobile Transaction Inquiry Request"<endrec>
+"","Mobile Receive Money Request","5","Mobile Receive Money Request"<endrec>
+"","Mobile Server Heartbeat Reply","6","Mobile Server Heartbeat Reply"<endrec>
+"","Mobile Money Available Notification Request","7","Mobile Money Available Notification Request"<endrec>
+"","Error Reply","8","Error Reply"<endrec>
+"","Mobile Transaction Inquiry Reply","9","Mobile Transaction Inquiry Reply"<endrec>

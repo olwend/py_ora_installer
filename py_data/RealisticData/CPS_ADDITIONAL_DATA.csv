@@ -1,0 +1,430 @@
+ADDITIONAL_DATA_ID,ADDITIONAL_TYPE,DATA_TYPE,DATA_TYPE_KEY,DESCRIPTION,DISPLAY_ORDER,DISP_NAME,FEATURE_CODE,MODIFY_FLAG,NAME,STATUS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <endrec>
+"100","1","01","","First name of the sender. It's used for HomeSend service.","7","Sender First Name","1","1","Sender First Name","1"<endrec>
+"1001","3","01","","","","","1","1","test","1"<endrec>
+"1002","2","01","","Reserved.","","","1","1","InputTest","1"<endrec>
+"101","1","01","","Middle or paternal name of the sender. It's used for HomeSend service.","8","Sender Middle Name","1","1","Sender Middle Name","1"<endrec>
+"102","1","01","","Last or maternal name of the sender. It's used for HomeSend service.","9","Sender Last Name","1","1","Sender Last Name","1"<endrec>
+"103","1","01","","Sender address. It's used for HomeSend service.","10","Sender Address","1","1","Sender Address","1"<endrec>
+"104","1","01","","Country where the money is transferred out. It's used for WesternUnion service.","11","Country of Origin","1","1","Country of Origin","1"<endrec>
+"105","1","01","","Recipient's first name. It's used for WesternUnion service.","12","Recipient First Name","1","1","Recipient First Name","1"<endrec>
+"106","1","01","","Recipient's last or maternal name. It's used for WesternUnion service.","13","Recipient Last Name","1","1","Recipient Last Name","1"<endrec>
+"1063","3","01","","Reserved.","1063","Sender Full Name","1","1","Sender Full Name","1"<endrec>
+"107","1","01","","Reserved.","14","Recipient MSISDN","1","1","Recipient MSISDN","1"<endrec>
+"108","1","01","","Source URI for sending the payment. (The value is an MSISDN in the case of M-PESA G2.) The value format is as follows: tel:+ + Country code + National number. It's used for HomeSend service.","15","Source URI","1","1","Source URI","1"<endrec>
+"109","1","01","","Unique ID of the partner organization. It's used for WesternUnion service.","16","Partner_ID","1","1","Partner_ID","1"<endrec>
+"110","1","01","","Unique ID of the physical or logical application initiating the message. It's used for WesternUnion service.","17","System_ID","1","1","System_ID","1"<endrec>
+"111","1","01","","Application name. It's used for WesternUnion service.","18","System_Name","1","1","System_Name","1"<endrec>
+"112","1","01","","Version number used to validate the compatibility and functionality. It's used for WesternUnion service.","19","System_Version","1","1","System_Version","1"<endrec>
+"113","1","01","","IP address of the actual machine initiating the message. It's used for WesternUnion service.","20","System_IP_Address","1","1","System_IP_Address","1"<endrec>
+"114","1","01","","Unique ID of the communication channel. It's used for WesternUnion service.","21","Connector_ID","1","1","Connector_ID","1"<endrec>
+"115","1","01","","Application-specific value for identifying a message or a group of messages. It's used for WesternUnion service.","22","External_Reference_Number","1","1","External_Reference_Number","1"<endrec>
+"116","1","01","","Country code portion of the mobile number. It's used for WesternUnion service.","23","Receiver_Mobile_Phone_Country_Code","1","1","Receiver_Mobile_Phone_Country_Code","1"<endrec>
+"1161","3","01","","Name of the receiver or beneficiary, which is provided by the sender. It's used for HomeSend service.","1060","","1","1","Beneficiary_Name","1"<endrec>
+"117","1","01","","National portion of the mobile number of user equipment. It's used for WesternUnion service.","24","Receiver_Mobile_Phone_National_Number","1","1","Receiver_Mobile_Phone_National_Number","1"<endrec>
+"118","1","07","","Amount expected to be paid to the receiver. It's used for WesternUnion service.","25","Expected_Payout_Amount","1","1","Expected_Payout_Amount","1"<endrec>
+"119","1","01","","Currency ISO code for the above amount. It's used for WesternUnion service.","26","Destination_Currency_ISO_Code","1","1","Destination_Currency_ISO_Code","1"<endrec>
+"120","1","01","","Country where the money transfer is to be paid out.This is indicated by the sending customer. It's used for WesternUnion service.","27","Destination_Country_ISO_Code","1","1","Destination_Country_ISO_Code","1"<endrec>
+"122","1","01","","Reserved.","29","Mobile_Transfer_Date","1","1","Mobile_Transfer_Date","1"<endrec>
+"123","1","01","","Money transfer control number. It's used for WesternUnion service.","30","MTCN","1","1","MTCN","1"<endrec>
+"124","1","01","","Unique ID of the wallet account. It's used for WesternUnion service.","31","Mobile_Wallet_ID","1","1","Mobile_Wallet_ID","1"<endrec>
+"125","1","01","","Reserved.","32","Sender_First_Name","1","1","Sender_First_Name","1"<endrec>
+"126","1","01","","Last or maternal name. It's used for WesternUnion service.","33","Sender_Last_Name","1","1","Sender_Last_Name","1"<endrec>
+"128","1","01","","City of the sender. It's used for WesternUnion service.","35","Sender_City","1","1","Sender_City","1"<endrec>
+"129","1","01","","Reserved.","36","Sender_State","1","1","Sender_State","1"<endrec>
+"130","1","01","","Reserved.","37","Sender_Postal Code","1","1","Sender_Postal Code","1"<endrec>
+"132","1","01","","Country code portion of the mobile number. It's used for WesternUnion service.","39","Sender_Mobile_Phone_Country_Code","1","1","Sender_Mobile_Phone_Country_Code","1"<endrec>
+"133","1","01","","National portion of the mobile number. It's used for WesternUnion service.","40","Sender_Mobile_Phone_National_Number","1","1","Sender_Mobile_Phone_National_Number","1"<endrec>
+"134","1","01","","Receiver's first name. It's used for WesternUnion service.","41","Receiver_First_Name","1","1","Receiver_First_Name","1"<endrec>
+"135","1","01","","Receiver's last or maternal name. It's used for WesternUnion service.","42","Receiver_Last_Name","1","1","Receiver_Last_Name","1"<endrec>
+"137","1","01","","Receiver's city. It's used for WesternUnion service.","44","Receiver_City","1","1","Receiver_City","1"<endrec>
+"138","1","01","","State of the customer. It's used for WesternUnion service.","45","Receiver_State","1","1","Receiver_State","1"<endrec>
+"139","1","01","","Postal or ZIP code. It's used for WesternUnion service.","46","Receiver_Postal_Code","1","1","Receiver_Postal_Code","1"<endrec>
+"140","1","01","","Receiver's country ISO code. It's used for WesternUnion service.","47","Receiver_Country_ISO_Code","1","1","Receiver_Country_ISO_Code","1"<endrec>
+"145","1","01","","Receiver's country issuing the document. It's used for WesternUnion and HomeSend services.","52","Receiver_ID_Document1_Country_ISO_Code","1","1","Receiver_ID_Document1_Country_ISO_Code","1"<endrec>
+"147","1","01","","Receiver's boolean, indicating whether the document has expired. It's used for WesternUnion and HomeSend services.","54","Receiver_ID_Document1_ID_Expires","1","1","Receiver_ID_Document1_ID_Expires","1"<endrec>
+"148","1","01","","Receiver's document type. It's used for WesternUnion service.","55","Receiver_ID_Document2_Type","1","1","Receiver_ID_Document2_Type","1"<endrec>
+"149","1","01","","Receiver's document identification, for example, license number and card number. It's used for WesternUnion service.","56","Receiver_ID_Document2_Data","1","1","Receiver_ID_Document2_Data","1"<endrec>
+"150","1","01","","Receiver's date when the document is issued to the individual. It's used for WesternUnion service.","57","Receiver_ID_Document2_Issue_Date","1","1","Receiver_ID_Document2_Issue_Date","1"<endrec>
+"151","1","01","","Receiver's place where the document is issued. It's used for WesternUnion service.","58","Receiver_ID_Document2_Issue_Place","1","1","Receiver_ID_Document2_Issue_Place","1"<endrec>
+"152","1","01","","Receiver's country issuing the document. It's used for WesternUnion service.","59","Receiver_ID_Document2_Country_ISO_Code","1","1","Receiver_ID_Document2_Country_ISO_Code","1"<endrec>
+"153","1","01","","Receiver's document expiration date. It's used for WesternUnion service.","60","Receiver_ID_Document2_Expiration_Date","1","1","Receiver_ID_Document2_Expiration_Date","1"<endrec>
+"154","1","01","","Receiver's boolean, indicating whether the document has expired. It's used for WesternUnion service.","61","Receiver_ID_Document2_ID_Expires","1","1","Receiver_ID_Document2_ID_Expires","1"<endrec>
+"155","1","01","","Receiver's compliance comments. It's used for WesternUnion service.","62","Receiver_Compliance_Comments","1","1","Receiver_Compliance_Comments","1"<endrec>
+"156","1","01","","Customer nationality. It's used for WesternUnion service.","63","Receiver_Nationality","1","1","Receiver_Nationality","1"<endrec>
+"157","1","01","","Social security of the customer. It's used for WesternUnion service.","64","Receiver_Social_Security_No","1","1","Receiver_Social_Security_No","1"<endrec>
+"158","1","01","","Receiver's resident country of a customer. It's used for WesternUnion service.","65","Receiver_Country_Of_Residence","1","1","Receiver_Country_Of_Residence","1"<endrec>
+"159","1","01","","Receiver's primary contact phone number. It's used for WesternUnion service.","66","Receiver_Contact_Phone","1","1","Receiver_Contact_Phone","1"<endrec>
+"161","1","01","","Receiver's primary employer. It's used for WesternUnion service.","68","Receiver_Employer_Name","1","1","Receiver_Employer_Name","1"<endrec>
+"162","1","01","","Identifying data type. It's used for WesternUnion service.","69","Receiver_Mobile_Phone_Identity_Type","1","1","Receiver_Mobile_Phone_Identity_Type","1"<endrec>
+"163","1","01","","Information that uniquely identifies user equipment. It's used for WesternUnion service.","70","Receiver_Mobile_Phone_Identity_Data","1","1","Receiver_Mobile_Phone_Identity_Data","1"<endrec>
+"164","1","01","","Receiver's gender. It's used for WesternUnion service.","71","Receiver_Gender","1","1","Receiver_Gender","1"<endrec>
+"166","1","07","","Amount of money to be sent. It's used for WesternUnion service.","73","Origination_Principal_Amount","1","1","Origination_Principal_Amount","1"<endrec>
+"167","1","01","","Currency ISO code for the above amount. It's used for WesternUnion service.","74","Origination_Currency_ISO_Code","1","1","Origination_Currency_ISO_Code","1"<endrec>
+"168","1","01","","Country where the money is transferred out. It's used for WesternUnion service.","75","Origination_Country_ISO_Code","1","1","Origination_Country_ISO_Code","1"<endrec>
+"169","1","07","","Actual amount paid to the receiver. It's used for WesternUnion service.","76","Actual_Payout_Amount","1","1","Actual_Payout_Amount","1"<endrec>
+"170","1","01","","Reserved.","77","Information_Message","1","1","Information_Message","1"<endrec>
+"171","1","01","","Payout method identifier, including MOBILE (into the mobile wallet account) and CASH (at WU agent location). It's used for WesternUnion service.","80","Expected_Payout_Method","1","1","Expected_Payout_Method","1"<endrec>
+"2","1","01","","Reserved.","1","Third Party Transaction ID","1","1","Third Party Transaction ID","1"<endrec>
+"5001","4","01","","Source URI for sending the payment. (The value is an MSISDN in the case of M-PESA G2.) The value format is as follows: tel:+ + Country code + National number. It's used for HomeSend service.","1001","Source_URI","1","1","Source_URI","1"<endrec>
+"5002","4","01","","Destination URI for receiving the payment (The value is an MSISDN in the case of M-PESA G2.) The value format is as follows: tel:+ + Country code + National number. It's used for HomeSend service.","1002","Destination_URI","1","1","Destination_URI","1"<endrec>
+"5003","4","07","","Reserved.","1003","Principle_Amount","1","1","Principle_Amount","1"<endrec>
+"5004","4","01","","Reserved.","1004","Sender_Currency","1","1","Sender_Currency","1"<endrec>
+"5005","4","01","","This element helps HomeSend deliver the message to the appropriate terminating service. It's used for HomeSend service.","1005","Routing_Tag","1","1","Routing_Tag","1"<endrec>
+"5008","4","07","","Reserved.","1008","HomeSend_Charge_Amount","1","1","HomeSend_Charge_Amount","1"<endrec>
+"501","1","01","","Login password used by the HomeSend to connect to the M-PESA G2. It's used for HomeSend service.","501","Security_Login","1","1","Security_Login","1"<endrec>
+"5010","4","07","","Reserved.","1010","Total_Amount","1","1","Total_Amount","1"<endrec>
+"5012","4","07","","Reserved.","1012","Received Amount","1","1","Received Amount","1"<endrec>
+"5013","4","01","","Currency ISO code for the above amount. It's used for WesternUnion service.","1013","Receiver_currency","1","1","Receiver_currency","1"<endrec>
+"5016","4","05","","Reserved.","1016","VOC_ExpirationDate","1","1","VOC_ExpirationDate","1"<endrec>
+"5017","4","05","","Maximum expected completion date of the transaction, which is typically calculated based on the transaction expiration time in the destination system. This date or time must always be provided with a UTC or atimezone indication, with regards to the standard datetime format. It's used for HomeSend service.","1017","MaxCompletionDate","1","1","MaxCompletionDate","1"<endrec>
+"5018","4","01","","Formal identifier indicating the Pending state of the current transaction. When used in a TEWS or credit provisional response, this variable should be set to CreditInProgress. Other values may be supported later. It's used for HomeSend service.","1018","HomeSend_Transaction_State","1","1","HomeSend_Transaction_State","1"<endrec>
+"5019","4","01","","Human-readable and friendly label associated to the state, which is used for diagnosis and logging. Only the state field is used for service logic. If the status is CreditInProgress, the label is 'Credit is in progress.' It's used for WesternUnion service.","1019","HomeSend_Transaction_StateLabel","1","1","HomeSend_Transaction_StateLabel","1"<endrec>
+"5021","4","01","","Reserved.","1021","Sender_address_street","1","1","Sender_address_street","1"<endrec>
+"5022","4","01","","Reserved.","1022","Sender_address_city","1","1","Sender_address_city","1"<endrec>
+"5023","4","01","","Reserved.","1023","Sender_address_ZIP","1","1","Sender_address_ZIP","1"<endrec>
+"5024","4","01","","Reserved.","1024","Sender_address_state","1","1","Sender_address_state","1"<endrec>
+"5025","4","01","","Sender nationality. It's used for HomeSend service.","1025","Sender_Nationality","1","1","Sender_Nationality","1"<endrec>
+"5026","4","01","","Reserved.","1026","Sender_address_Country","1","1","Sender_address_Country","1"<endrec>
+"5027","4","01","","Formal identification type of the sender. The options are as follows: AlienRegistrationNumber, CustomerNumber, DriversLicenseNumber, IdentityCardNumber, EmployerIdentificationNumber, PassportNumber, SocialSecurityNumber, TaxIdentificationNumber. It's used for HomeSend service.","1027","Sender_ID_Type","1","1","Sender_ID_Type","1"<endrec>
+"5028","4","01","","Number associated to the ID type of the sender. It's used for HomeSend service.","1028","Sender_ID_Number","1","1","Sender_ID_Number","1"<endrec>
+"5029","4","01","","ID issuing authority of the sender. It's used for HomeSend service.","1029","Sender_ID_IssuedBy","1","1","Sender_ID_IssuedBy","1"<endrec>
+"503","1","01","","Transaction ID, which is the same as that in the account information response. Order ID generated in the system. It's used for HomeSend service.","503","MPesa_TransactionID","1","1","MPesa_TransactionID","1"<endrec>
+"5030","4","01","","ID issuing location of the sender. It's used for HomeSend service.","1030","Sender_ID_IssuedAt","1","1","Sender_ID_IssuedAt","1"<endrec>
+"5031","4","01","","ID issuing date of the sender, which is an ISO8601 date in the YYYY-MM-DD format. It's used for HomeSend service.","1031","Sender_ID_IssuedDate","1","1","Sender_ID_IssuedDate","1"<endrec>
+"5032","4","01","","ID validity date of the sender. It's used for HomeSend service.","1032","Sender_ID_ExpiryDate","1","1","Sender_ID_ExpiryDate","1"<endrec>
+"5033","4","01","","Reserved.","1033","Sender_Birth_Date","1","1","Sender_Birth_Date","1"<endrec>
+"5034","4","01","","Reserved.","1034","Sender_Birth_Place","1","1","Sender_Birth_Place","1"<endrec>
+"5035","4","01","","Reserved.","1035","Sender_Email","1","1","Sender_Email","1"<endrec>
+"5037","4","01","","Reserved.","1037","Sender_BankCode","1","1","Sender_BankCode","1"<endrec>
+"5038","4","01","","Reserved.","1038","Beneficiary_Name_ProvidedbySender","1","1","Beneficiary_Name_ProvidedbySender","1"<endrec>
+"5039","4","01","","Receiver or beneficiary's address provided by the sender. It's used for HomeSend service.","1039","Beneficiary_Address_Street","1","1","Beneficiary_Address_Street","1"<endrec>
+"504","1","01","","Destination URI for receiving the payment. (The value is an MSISDN in the case of M-PESA G2.) The value format is as follows: tel:+ + Country code + National number. It's used for HomeSend service.","504","DestinationURI","1","1","DestinationURI","1"<endrec>
+"5040","4","01","","Receiver or beneficiary's address provided by the sender. It's used for HomeSend service.","1040","Beneficiary_Address_City","1","1","Beneficiary_Address_City","1"<endrec>
+"5041","4","01","","Reserved.","1041","Beneficiary_Address_ZIP","1","1","Beneficiary_Address_ZIP","1"<endrec>
+"5042","4","01","","Receiver or beneficiary's address provided by the sender. It's used for HomeSend service.","1042","Beneficiary_Address_State","1","1","Beneficiary_Address_State","1"<endrec>
+"5043","4","01","","Reserved.","1043","Beneficiary_Nationality","1","1","Beneficiary_Nationality","1"<endrec>
+"5044","4","01","","Receiver or beneficiary's address provided by the sender. It's used for HomeSend service.","1044","Beneficiary_Address_Country","1","1","Beneficiary_Address_Country","1"<endrec>
+"5045","4","01","","Reserved.","1045","Beneficiary_TelephoneNumber","1","1","Beneficiary_TelephoneNumber","1"<endrec>
+"5046","4","01","","Email address of the receiver or beneficiary. It's used for HomeSend service.","1046","Beneficiary_Email","1","1","Beneficiary_Email","1"<endrec>
+"5047","4","01","","Formal identification type of the receiver or beneficiary. The options are as follows: AlienRegistrationNumber, CustomerNumber, DriversLicenseNumber, IdentityCardNumber, EmployerIdentificationNumber, PassportNumber, SocialSecurityNumber, TaxIdentificationNumber. It's used for HomeSend service.","1047","Beneficiary_ID_Type","1","1","Beneficiary_ID_Type","1"<endrec>
+"5048","4","01","","Number associated to the ID type of the receiver or beneficiary. It's used for HomeSend service.","1048","Beneficiary_ID_Number","1","1","Beneficiary_ID_Number","1"<endrec>
+"5049","4","01","","ID issuing authority of the receiver or beneficiary. It's used for HomeSend service.","1049","Beneficiary_ID_IssuedBy","1","1","Beneficiary_ID_IssuedBy","1"<endrec>
+"505","1","01","","This element helps HomeSend deliver the message to the appropriate terminating service. It's used for HomeSend service.","505","RoutingTag","1","1","RoutingTag","1"<endrec>
+"5050","4","01","","ID issuing location of the receiver or beneficiary. It's used for HomeSend service.","1050","Beneficiary_ID_IssuedAt","1","1","Beneficiary_ID_IssuedAt","1"<endrec>
+"5051","4","01","","ID issuing date of the receiver or beneficiary, which is an ISO8601 date in the YYYY-MM-DD format. It's used for HomeSend service.","1051","Beneficiary_ID_IssuedDate","1","1","Beneficiary_ID_IssuedDate","1"<endrec>
+"5052","4","01","","ID validity date of the receiver or beneficiary, which is an ISO8601 date in the YYYY-MM-DD format. It's used for HomeSend service.","1052","Beneficiary_ID_ExpiryDate","1","1","Beneficiary_ID_ExpiryDate","1"<endrec>
+"5053","4","01","","Birthday of the receiver or beneficiary. It's used for HomeSend service.","1053","Beneficiary_Birth_Date","1","1","Beneficiary_Birth_Date","1"<endrec>
+"5054","4","01","","Receiver or beneficiary's birthplace mentioned in the official ID document.It's used for HomeSend service.","1054","Beneficiary_Birth_Place","1","1","Beneficiary_Birth_Place","1"<endrec>
+"5055","4","01","","Occupation (job or position) of the receiver or beneficiary. It's used for HomeSend service.","1055","Beneficiary_Occupation","1","1","Beneficiary_Occupation","1"<endrec>
+"5056","4","01","","Reserved.","1056","Remittance_Purpose","1","1","Remittance_Purpose","1"<endrec>
+"5057","4","01","","Reserved.","1057","Transaction_Code","1","1","Transaction_Code","1"<endrec>
+"5058","4","01","","Reserved.","1058","Payment_Channel","1","1","Payment_Channel","1"<endrec>
+"5059","4","01","","Reserved.","1059","Beneficiary_Name_ProvidedbySPB","1","1","Beneficiary_Name_ProvidedbySPB","1"<endrec>
+"506","1","01","","Channel identification, which is identifiable by the receiving system. It's used for HomeSend service.","506","Sender_Channel_Identification","1","1","Sender_Channel_Identification","1"<endrec>
+"508","1","01","","ID validity date of the sender. It's used for HomeSend service.","508","Sender_ID_Document_Expiration_Date","1","1","Sender_ID_Document_Expiration_Date","1"<endrec>
+"509","1","01","","Customer name. It's used for WesternUnion and HomeSend services.","509","Receiver_Name","1","1","Receiver_Name","1"<endrec>
+"5101","1","01","","Source URI for sending the payment. (The value is an MSISDN in the case of M-PESA G2.) The value format is as follows: tel:+ + Country code + National number. It's used for HomeSend service.","1001","Source_URI","1","1","Source_URI","1"<endrec>
+"5102","1","01","","Destination URI for receiving the payment (The value is an MSISDN in the case of M-PESA G2.) The value format is as follows: tel:+ + Country code + National number. It's used for HomeSend service.","1002","Destination_URI","1","1","Destination_URI","1"<endrec>
+"5103","1","07","","Reserved.","1003","Principle_Amount","1","1","Principle_Amount","1"<endrec>
+"5104","1","01","","Reserved.","1004","Sender_Currency","1","1","Sender_Currency","1"<endrec>
+"5105","1","01","","This element helps HomeSend deliver the message to the appropriate terminating service. It's used for HomeSend service.","1005","Routing_Tag","1","1","Routing_Tag","1"<endrec>
+"5108","1","07","","Reserved.","1008","HomeSend_Charge_Amount","1","1","HomeSend_Charge_Amount","1"<endrec>
+"511","1","01","","Receiver's email address of the receiver or beneficiary. It's used for HomeSend service.","511","Receiver_Email_Address","1","1","Receiver_Email_Address","1"<endrec>
+"5110","1","07","","Reserved.","1010","Total_Amount","1","1","Total_Amount","1"<endrec>
+"5112","1","07","","Reserved.","1012","Received Amount","1","1","Received Amount","1"<endrec>
+"5113","1","01","","Currency ISO code for the above amount. It's used for WesternUnion service.","1013","Receiver_currency","1","1","Receiver_currency","1"<endrec>
+"5116","1","05","","Reserved.","1016","VOC_ExpirationDate","1","1","VOC_ExpirationDate","1"<endrec>
+"5117","1","05","","Maximum expected completion date of the transaction, which is typically calculated based on the transaction expiration time in the destination system. This date or time must always be provided with a UTC or atimezone indication, with regards to the standard datetime format. It's used for HomeSend service.","1017","MaxCompletionDate","1","1","MaxCompletionDate","1"<endrec>
+"5118","1","01","","Formal identifier indicating the Pending state of the current transaction. When used in a TEWS or credit provisional response, this variable should be set to CreditInProgress. Other values may be supported later. It's used for HomeSend service.","1018","HomeSend_Transaction_State","1","1","HomeSend_Transaction_State","1"<endrec>
+"5119","1","01","","Human-readable and friendly label associated to the state, which is used for diagnosis and logging. Only the state field is used for service logic. If the status is CreditInProgress, the label is 'Credit is in progress.' It's used for WesternUnion service.","1019","HomeSend_Transaction_StateLabel","1","1","HomeSend_Transaction_StateLabel","1"<endrec>
+"5121","1","01","","Reserved.","1021","Sender_address_street","1","1","Sender_address_street","1"<endrec>
+"5122","1","01","","Reserved.","1022","Sender_address_city","1","1","Sender_address_city","1"<endrec>
+"5123","1","01","","Reserved.","1023","Sender_address_ZIP","1","1","Sender_address_ZIP","1"<endrec>
+"5124","1","01","","Reserved.","1024","Sender_address_state","1","1","Sender_address_state","1"<endrec>
+"5125","1","01","","Sender nationality. It's used for HomeSend service.","1025","Sender_Nationality","1","1","Sender_Nationality","1"<endrec>
+"5126","1","01","","Reserved.","1026","Sender_address_Country","1","1","Sender_address_Country","1"<endrec>
+"5127","1","01","","Formal identification type of the sender. The options are as follows: AlienRegistrationNumber, CustomerNumber, DriversLicenseNumber, IdentityCardNumber, EmployerIdentificationNumber, PassportNumber, SocialSecurityNumber, TaxIdentificationNumber. It's used for HomeSend service.","1027","Sender_ID_Type","1","1","Sender_ID_Type","1"<endrec>
+"5128","1","01","","Number associated to the ID type of the sender. It's used for HomeSend service.","1028","Sender_ID_Number","1","1","Sender_ID_Number","1"<endrec>
+"5129","1","01","","ID issuing authority of the sender. It's used for HomeSend service.","1029","Sender_ID_IssuedBy","1","1","Sender_ID_IssuedBy","1"<endrec>
+"5130","1","01","","ID issuing location of the sender. It's used for HomeSend service.","1030","Sender_ID_IssuedAt","1","1","Sender_ID_IssuedAt","1"<endrec>
+"5131","1","01","","ID issuing date of the sender, which is an ISO8601 date in the YYYY-MM-DD format. It's used for HomeSend service.","1031","Sender_ID_IssuedDate","1","1","Sender_ID_IssuedDate","1"<endrec>
+"5132","1","01","","ID validity date of the sender. It's used for HomeSend service.","1032","Sender_ID_ExpiryDate","1","1","Sender_ID_ExpiryDate","1"<endrec>
+"5133","1","01","","Reserved.","1033","Sender_Birth_Date","1","1","Sender_Birth_Date","1"<endrec>
+"5134","1","01","","Reserved.","1034","Sender_Birth_Place","1","1","Sender_Birth_Place","1"<endrec>
+"5135","1","01","","Reserved.","1035","Sender_Email","1","1","Sender_Email","1"<endrec>
+"5137","1","01","","Reserved.","1037","Sender_BankCode","1","1","Sender_BankCode","1"<endrec>
+"5138","1","01","","Reserved.","1038","Beneficiary_Name_ProvidedbySender","1","1","Beneficiary_Name_ProvidedbySender","1"<endrec>
+"5139","1","01","","Receiver or beneficiary's address provided by the sender. It's used for HomeSend service.","1039","Beneficiary_Address_Street","1","1","Beneficiary_Address_Street","1"<endrec>
+"514","1","01","","ID issuing authority of the receiver or beneficiary. It's used for HomeSend service.","514","Receiver_ID_Document1_Issue_Authority","1","1","Receiver_ID_Document1_Issue_Authority","1"<endrec>
+"5140","1","01","","Receiver or beneficiary's address provided by the sender. It's used for HomeSend service.","1040","Beneficiary_Address_City","1","1","Beneficiary_Address_City","1"<endrec>
+"5141","1","01","","Reserved.","1041","Beneficiary_Address_ZIP","1","1","Beneficiary_Address_ZIP","1"<endrec>
+"5142","1","01","","Receiver or beneficiary's address provided by the sender. It's used for HomeSend service.","1042","Beneficiary_Address_State","1","1","Beneficiary_Address_State","1"<endrec>
+"5143","1","01","","Reserved.","1043","Beneficiary_Nationality","1","1","Beneficiary_Nationality","1"<endrec>
+"5144","1","01","","Receiver or beneficiary's address provided by the sender. It's used for HomeSend service.","1044","Beneficiary_Address_Country","1","1","Beneficiary_Address_Country","1"<endrec>
+"5145","1","01","","Reserved.","1045","Beneficiary_TelephoneNumber","1","1","Beneficiary_TelephoneNumber","1"<endrec>
+"5146","1","01","","Email address of the receiver or beneficiary. It's used for HomeSend service.","1046","Beneficiary_Email","1","1","Beneficiary_Email","1"<endrec>
+"5147","1","01","","Formal identification type of the receiver or beneficiary. The options are as follows: AlienRegistrationNumber, CustomerNumber, DriversLicenseNumber, IdentityCardNumber, EmployerIdentificationNumber, PassportNumber, SocialSecurityNumber, TaxIdentificationNumber. It's used for HomeSend service.","1047","Beneficiary_ID_Type","1","1","Beneficiary_ID_Type","1"<endrec>
+"5148","1","01","","Number associated to the ID type of the receiver or beneficiary. It's used for HomeSend service.","1048","Beneficiary_ID_Number","1","1","Beneficiary_ID_Number","1"<endrec>
+"5149","1","01","","ID issuing authority of the receiver or beneficiary. It's used for HomeSend service.","1049","Beneficiary_ID_IssuedBy","1","1","Beneficiary_ID_IssuedBy","1"<endrec>
+"5150","1","01","","ID issuing location of the receiver or beneficiary. It's used for HomeSend service.","1050","Beneficiary_ID_IssuedAt","1","1","Beneficiary_ID_IssuedAt","1"<endrec>
+"5151","1","01","","ID issuing date of the receiver or beneficiary, which is an ISO8601 date in the YYYY-MM-DD format. It's used for HomeSend service.","1051","Beneficiary_ID_IssuedDate","1","1","Beneficiary_ID_IssuedDate","1"<endrec>
+"5152","1","01","","ID validity date of the receiver or beneficiary, which is an ISO8601 date in the YYYY-MM-DD format. It's used for HomeSend service.","1052","Beneficiary_ID_ExpiryDate","1","1","Beneficiary_ID_ExpiryDate","1"<endrec>
+"5153","1","01","","Birthday of the receiver or beneficiary. It's used for HomeSend service.","1053","Beneficiary_Birth_Date","1","1","Beneficiary_Birth_Date","1"<endrec>
+"5154","1","01","","Receiver or beneficiary's birthplace mentioned in the official ID document.It's used for HomeSend service.","1054","Beneficiary_Birth_Place","1","1","Beneficiary_Birth_Place","1"<endrec>
+"5155","1","01","","Occupation (job or position) of the receiver or beneficiary. It's used for HomeSend service.","1055","Beneficiary_Occupation","1","1","Beneficiary_Occupation","1"<endrec>
+"5156","1","01","","Reserved.","1056","Remittance_Purpose","1","1","Remittance_Purpose","1"<endrec>
+"5157","1","01","","Reserved.","1057","Transaction_Code","1","1","Transaction_Code","1"<endrec>
+"5158","1","01","","Reserved.","1058","Payment_Channel","1","1","Payment_Channel","1"<endrec>
+"5159","1","01","","Reserved.","1059","Beneficiary_Name_ProvidedbySPB","1","1","Beneficiary_Name_ProvidedbySPB","1"<endrec>
+"5161","2","04","","123","","","1","1","123","1"<endrec>
+"5171","3","01","","Receiver_ID_Document3_ID_Expires_Manipulated","","","1","1","Receiver_ID_Document3_ID_Expires_Manipulated","1"<endrec>
+"5172","3","01","","Receiver_ID_Document5_Issue_Place_Manipulated","","","1","1","Receiver_ID_Document5_Issue_Place_Manipulated","1"<endrec>
+"5173","3","01","","","","","1","1","external_reference_no","1"<endrec>
+"5174","3","01","","","","","1","1","Receiver_ID_Document2_Data_Manipulated","1"<endrec>
+"5175","3","01","","","","","1","1","Receiver_ID_Document2_Issue_Place_Manipulated","1"<endrec>
+"5176","3","01","","","","","1","1","Receiver_Social_Security_No_Manipulated","1"<endrec>
+"5177","3","01","","","","","1","1","Receiver_Country_Of_Residence_Manipulated","1"<endrec>
+"5178","3","01","","","","","1","1","Receiver_Mobile_Phone_Identity_Data_Manipulated","1"<endrec>
+"5179","3","01","","","","","1","1","Status_Code_Manipulated","1"<endrec>
+"5180","3","01","","","","","1","1","Receiver_Last_Name_Manipulated","1"<endrec>
+"5181","3","01","","","","","1","1","Destination_Currency_ISO_Code_Manipulated","1"<endrec>
+"5182","3","01","","","","","1","1","Receiver_First_Name_Manipulated","1"<endrec>
+"5183","3","01","","","","","1","1","Receiver_Addr_Line_1_Manipulated","1"<endrec>
+"5184","3","01","","","","","1","1","Receiver_State_Manipulated","1"<endrec>
+"5185","3","01","","","","","1","1","Receiver_Postal_Code_Manipulated","1"<endrec>
+"5186","3","01","","","","","1","1","Receiver_ID_Document1_Country_ISO_Code_Manipulated","1"<endrec>
+"5187","3","01","","","","","1","1","Receiver_ID_Document2_Type_Manipulated","1"<endrec>
+"5188","3","01","","","","","1","1","Receiver_ID_Document2_Country_ISO_Code_Manipulated","1"<endrec>
+"5189","3","01","","","","","1","1","Receiver_ID_Document2_Expiration_Date_Manipulated","1"<endrec>
+"519","1","01","","Birthplace of the receiver or beneficiary, which is the same as that in the official ID document. It's used for HomeSend service.","519","Receiver_Place_Of_Birth","1","1","Receiver_Place_Of_Birth","1"<endrec>
+"5190","3","01","","","","","1","1","Receiver_ID_Document2_ID_Expires_Manipulated","1"<endrec>
+"5191","3","01","","","","","1","1","Receiver_Gender_Manipulated","1"<endrec>
+"5192","3","01","","","","","1","1","Receiver_Occcupation_Manipulated","1"<endrec>
+"5193","3","01","","","","","1","1","Mobile_Wallet_ID_Manipulated","1"<endrec>
+"5194","3","01","","","","","1","1","Destination_MSISDN","1"<endrec>
+"5195","3","01","","","","","1","1","WU_Connector_id","1"<endrec>
+"5196","3","01","","","","","1","1","WU_System_Address","1"<endrec>
+"5197","3","01","","","","","1","1","WU_System_Version","1"<endrec>
+"5198","3","01","","","","","1","1","WU_System_ID","1"<endrec>
+"5199","3","01","","","","","1","1","Receiver_ID_Document1_Expiration_Date_Manipulated","1"<endrec>
+"5200","3","01","","","","","1","1","WU_Partner_ID","1"<endrec>
+"5201","3","01","","","","","1","1","MPesa_TransactionID_Manipulated","1"<endrec>
+"5202","3","01","","","","","1","1","System_IP_Address_Manipulated","1"<endrec>
+"5203","3","01","","","","","1","1","Max_Completion_Date_Manipulated","1"<endrec>
+"5204","3","01","","","","","1","1","Receiver_City_Manipulated","1"<endrec>
+"5205","3","01","","","","","1","1","Receiver_ID_Document1_Type_Manipulated","1"<endrec>
+"5206","3","01","","","","","1","1","Receiver_ID_Document1_Data_Manipulated","1"<endrec>
+"5207","3","01","","","","","1","1","Receiver_ID_Document1_Issue_Date_Manipulated","1"<endrec>
+"5208","3","01","","","","","1","1","Receiver_ID_Document1_Issue_Place_Manipulated","1"<endrec>
+"5209","3","01","","","","","1","1","Receiver_ID_Document1_ID_Expires_Manipulated","1"<endrec>
+"521","1","01","","Source URI for sending the payment. (The value is an MSISDN in the case of M-PESA G2.) The value format is as follows: tel:+ + Country code + National number. It's used for HomeSend service.","521","SourceURI","1","1","SourceURI","1"<endrec>
+"5210","3","01","","","","","1","1","Receiver_ID_Document2_Issue_Date_Manipulated","1"<endrec>
+"5211","3","01","","","","","1","1","Receiver_Compliance_Comments_Manipulated","1"<endrec>
+"5212","3","01","","","","","1","1","Receiver_Nationality_Manipulated","1"<endrec>
+"5213","3","01","","","","","1","1","Receiver_Contact_Phone_Manipulated","1"<endrec>
+"5214","3","01","","","","","1","1","Receiver_Mobile_Phone_Identity_Type_Manipulated","1"<endrec>
+"5215","3","01","","","","","1","1","Receiver_Date_Of_Birth_Manipulated","1"<endrec>
+"5216","3","01","","","","","1","1","WU_System_Name","1"<endrec>
+"5217","3","01","","","","","1","1","identity_type","1"<endrec>
+"5218","3","01","","","","","1","1","Receiver_ID_Document3_Data_Manipulated","1"<endrec>
+"5219","3","01","","","","","1","1","Receiver_ID_Document3_Expiration_Date_Manipulated","1"<endrec>
+"522","1","01","","Sender name, which is provided by the sender. It's used for HomeSend service.","522","Sender_Name","1","1","Sender_Name","1"<endrec>
+"5220","3","01","","","","","1","1","Receiver_ID_Document3_Issue_Place_Manipulated","1"<endrec>
+"5221","3","01","","","","","1","1","Receiver_ID_Document3_Type_Manipulated","1"<endrec>
+"5222","3","01","","","","","1","1","Receiver_ID_Document4_Data_Manipulated","1"<endrec>
+"5223","3","01","","","","","1","1","Receiver_ID_Document5_ID_Expires_Manipulated","1"<endrec>
+"5224","3","01","","","","","1","1","Receiver_ID_Document5_Type_Manipulated","1"<endrec>
+"5225","2","06","CPS_USR_10011","","","","1","1","WU_Country_Code_to_Name","1"<endrec>
+"5226","2","06","CPS_USR_10021","","","","1","1","HS_Country_ISO_Code_to_Name","1"<endrec>
+"5227","3","01","","","","","1","1","Receiver_ID_Document5_Data_Manipulated","1"<endrec>
+"5228","3","01","","","","","1","1","Receiver_ID_Document4_Type_Manipulated","1"<endrec>
+"5229","3","01","","","","","1","1","Receiver_ID_Document5_Expiration_Date_Manipulated","1"<endrec>
+"5230","3","01","","","","","1","1","Receiver_ID_Document4_Issue_Place_Manipulated","1"<endrec>
+"5231","3","01","","","","","1","1","Receiver_ID_Document4_Expiration_Date_Manipulated","1"<endrec>
+"5232","3","01","","","","","1","1","Receiver_ID_Document4_ID_Expires_Manipulated","1"<endrec>
+"5234","3","01","","Receiver_Address_output","","","1","1","Receiver_Address_output","1"<endrec>
+"5235","3","01","","","","","1","1","Receiver_City_Output","1"<endrec>
+"5236","3","01","","","","","1","1","Receiver_Mobile_Phone_Identity_Data_Output","1"<endrec>
+"524","1","01","","A free string defined to label a transaction, which usually contains a user-provided value. It's used for HomeSend service.","524","Description","1","1","Description","1"<endrec>
+"5244","2","07","","NominatedCustomer","","","2","1","NominatedCustomer","2"<endrec>
+"5245","2","01","","FI_Accountholder_FirstName","","","2","1","FI_Accountholder_FirstName","1"<endrec>
+"5246","2","01","","FI_Accountholder_LastName","","","2","1","FI_Accountholder_LastName","1"<endrec>
+"5247","2","07","","FI_Accountholder_AccountID","","","2","1","FI_Accountholder_AccountID","1"<endrec>
+"525","1","01","","Complete URL of the R-TEWS SOAP endpoint where R-TEWS requests should be sent for this transaction. Network and visibility rules may prevent the destination system from using this URL. Actually, only the path in the URL must be followed. The actual hostname and port number may be locally overridden. It's used for HomeSend service.","525","ReportStatusToURI","1","1","ReportStatusToURI","1"<endrec>
+"526","1","01","","Correlation token which is provided in the TEWS or Credit to which the status report is related. It's used for HomeSend service.","526","Provisional_Token","1","1","Provisional_Token","1"<endrec>
+"530","1","01","","Reserved.","530","Purpose_Of_Remittance","1","1","Purpose_Of_Remittance","1"<endrec>
+"531","1","01","","Formal identification type of the sender. The options are as follows: AlienRegistrationNumber, CustomerNumber, DriversLicenseNumber, IdentityCardNumber, EmployerIdentificationNumber, PassportNumber, SocialSecurityNumber,TaxIdentificationNumber. It's used for HomeSend service.","531","Sender_ID_Document_Type","1","1","Sender_ID_Document_Type","1"<endrec>
+"532","1","01","","Number associated to the ID type of the sender. It's used for HomeSend service.","532","Sender_ID_Document_Data","1","1","Sender_ID_Document_Data","1"<endrec>
+"533","1","01","","ID issuing authority of the sender. It's used for HomeSend service.","533","Sender_ID_Document_Issue_Authority","1","1","Sender_ID_Document_Issue_Authority","1"<endrec>
+"534","1","01","","ID issuing location of the sender. It's used for HomeSend service.","534","Sender_ID_Document_Issue_Place","1","1","Sender_ID_Document_Issue_Place","1"<endrec>
+"535","1","01","","ID issuing date of the sender, which is an ISO8601 date in the YYYY-MM-DD format. It's used for HomeSend service.","535","Sender_ID_Document_Issue_Date","1","1","Sender_ID_Document_Issue_Date","1"<endrec>
+"536","1","01","","Birthday of the sender. It's used for HomeSend service.","536","Sender_Date_Of_Birth","1","1","Sender_Date_Of_Birth","1"<endrec>
+"537","1","01","","Birthplace of the sender, which is the same as that in the official ID document. It's used for HomeSend service.","537","Sender_Place_Of_Birth","1","1","Sender_Place_Of_Birth","1"<endrec>
+"538","1","01","","Email address of the sender. It's used for HomeSend service.","538","Sender_Email_Address","1","1","Sender_Email_Address","1"<endrec>
+"539","1","01","","Occupation (job or position) of the sender. It's used for HomeSend service.","539","Sender_Occupation","1","1","Sender_Occupation","1"<endrec>
+"540","1","01","","Reserved.","540","Status","1","1","Status","1"<endrec>
+"541","1","01","","This element is used when the transaction has been successfully completed and requires no further processing on the receiving side. It's used for HomeSend service.","541","Complete","1","1","Complete","1"<endrec>
+"542","1","01","","This element is used when the transaction has been rejected and requires no further processing on the receiving side. It is similar to a TEWS or credit fault. It's used for HomeSend service.","542","Rejected","1","1","Rejected","1"<endrec>
+"543","1","01","","Error code sent upon WesternUnion transfer failure. It's used for WesternUnion service.","543","Code","1","1","Code","1"<endrec>
+"544","1","01","","This element is used to transport the status of a transaction in pending or open state, for example, a transaction that is not completed successfully or rejected. It is close to the provisional response part of a provisional. It's used for HomeSend service.","544","Pending","1","1","Pending","1"<endrec>
+"545","1","05","","","545","Max_Completion_Date","1","1","Max_Completion_Date","1"<endrec>
+"547","1","01","","Human-readable and friendly label associated to the state, which is used for diagnosis and logging. Only the state field is used for service logic. If the status is CreditInProgress, the label is 'Credit is in progress'. It's used for HomeSend service.","547","Transaction_State_Label","1","1","Transaction_State_Label","1"<endrec>
+"548","1","01","","Sender nationality. It's used for HomeSend service.","548","Sender_Nationality_ISO_Code","1","1","Sender_Nationality_ISO_Code","1"<endrec>
+"549","1","01","","Code for canceling the HomeSend transfer. It's used for HomeSend service.","549","Cancellation_Reason_Code","1","1","Cancellation_Reason_Code","1"<endrec>
+"550","1","01","","Reason for canceling the HomeSend transfer. It's used for HomeSend service.","550","Cancellation_Reason_Msg","1","1","Cancellation_Reason_Msg","1"<endrec>
+"600","4","01","","Receiver's first line of address. It's used for WesternUnion service.","900","Receiver_Addr_Line_1","1","1","Receiver_Addr_Line_1","1"<endrec>
+"601","4","01","","Receiver's birthday. It's used for WesternUnion service.","901","Receiver_Date_Of_Birth","1","1","Receiver_Date_Of_Birth","1"<endrec>
+"602","4","01","","Receiver's document identification, for example, license number and card number. It's used for WesternUnion and HomeSend services.","902","Receiver_ID_Document1_Data","1","1","Receiver_ID_Document1_Data","1"<endrec>
+"603","4","01","","Receiver's document expiration date. It's used for WesternUnion and HomeSend services.","903","Receiver_ID_Document1_Expiration_Date","1","1","Receiver_ID_Document1_Expiration_Date","1"<endrec>
+"604","4","01","","Receiver's date when the document is issued to the individual. It's used for WesternUnion and HomeSend services.","904","Receiver_ID_Document1_Issue_Date","1","1","Receiver_ID_Document1_Issue_Date","1"<endrec>
+"605","4","01","","Place where the document is issued. It's used for WesternUnion and HomeSend services.","905","Receiver_ID_Document1_Issue_Place","1","1","Receiver_ID_Document1_Issue_Place","1"<endrec>
+"606","4","01","","Receiver's document type. It's used for WesternUnion and HomeSend services.","906","Receiver_ID_Document1_Type","1","1","Receiver_ID_Document1_Type","1"<endrec>
+"607","4","01","","Occupation (job or position) of the receiver or beneficiary. It's used for WesternUnion and HomeSend services.","907","Receiver_Occupation","1","1","Receiver_Occupation","1"<endrec>
+"608","4","01","","Sender address. It's used for HomeSend service.","908","Sender_Addr_Line_1","1","1","Sender_Addr_Line_1","1"<endrec>
+"609","4","01","","Sender nationality. It's used for HomeSend service.","909","Sender_Country_ISO_Code","1","1","Sender_Country_ISO_Code","1"<endrec>
+"610","4","01","","Formal identifier that gives CreditInProgress of the current transaction. It's used for HomeSend service.","910","Transaction_State","1","1","Transaction_State","1"<endrec>
+"611","4","01","","Reserved.","1","Third Party Transaction ID","1","1","Third Party Transaction ID","1"<endrec>
+"612","4","01","","First name of the sender. It's used for HomeSend service.","7","Sender First Name","1","1","Sender First Name","1"<endrec>
+"613","4","01","","Middle or paternal name of the sender. It's used for HomeSend service.","8","Sender Middle Name","1","1","Sender Middle Name","1"<endrec>
+"614","4","01","","Last or maternal name of the sender. It's used for HomeSend service.","9","Sender Last Name","1","1","Sender Last Name","1"<endrec>
+"615","4","01","","Sender address. It's used for HomeSend service.","10","Sender Address","1","1","Sender Address","1"<endrec>
+"616","4","01","","Country where the money is transferred out. It's used for WesternUnion service.","11","Country of Origin","1","1","Country of Origin","1"<endrec>
+"617","4","01","","Recipient's first name. It's used for WesternUnion service.","12","Recipient First Name","1","1","Recipient First Name","1"<endrec>
+"618","4","01","","Recipient's last or maternal name. It's used for WesternUnion service.","13","Recipient Last Name","1","1","Recipient Last Name","1"<endrec>
+"619","4","01","","Reserved.","14","Recipient MSISDN","1","1","Recipient MSISDN","1"<endrec>
+"620","4","01","","Source URI for sending the payment. (The value is an MSISDN in the case of M-PESA G2.) The value format is as follows: tel:+ + Country code + National number. It's used for HomeSend service.","15","Source URI","1","1","Source URI","1"<endrec>
+"621","4","01","","Unique ID of the partner organization. It's used for WesternUnion service.","16","Partner_ID","1","1","Partner_ID","1"<endrec>
+"622","4","01","","Unique ID of the physical or logical application initiating the message. It's used for WesternUnion service.","17","System_ID","1","1","System_ID","1"<endrec>
+"623","4","01","","Application name. It's used for WesternUnion service.","18","System_Name","1","1","System_Name","1"<endrec>
+"624","4","01","","Version number used to validate the compatibility and functionality. It's used for WesternUnion service.","19","System_Version","1","1","System_Version","1"<endrec>
+"625","4","01","","IP address of the actual machine initiating the message. It's used for WesternUnion service.","20","System_IP_Address","1","1","System_IP_Address","1"<endrec>
+"626","4","01","","Unique ID of the communication channel. It's used for WesternUnion service.","21","Connector_ID","1","1","Connector_ID","1"<endrec>
+"627","4","01","","Application-specific value for identifying a message or a group of messages. It's used for WesternUnion service.","22","External_Reference_Number","1","1","External_Reference_Number","1"<endrec>
+"628","4","01","","Country code portion of the mobile number. It's used for WesternUnion service.","23","Receiver_Mobile_Phone_Country_Code","1","1","Receiver_Mobile_Phone_Country_Code","1"<endrec>
+"629","4","01","","National portion of the mobile number of user equipment. It's used for WesternUnion service.","24","Receiver_Mobile_Phone_National_Number","1","1","Receiver_Mobile_Phone_National_Number","1"<endrec>
+"630","4","07","","Amount expected to be paid to the receiver. It's used for WesternUnion service.","25","Expected_Payout_Amount","1","1","Expected_Payout_Amount","1"<endrec>
+"631","4","01","","Currency ISO code for the above amount. It's used for WesternUnion service.","26","Destination_Currency_ISO_Code","1","1","Destination_Currency_ISO_Code","1"<endrec>
+"632","4","01","","Country where the money transfer is to be paid out.This is indicated by the sending customer. It's used for WesternUnion service.","27","Destination_Country_ISO_Code","1","1","Destination_Country_ISO_Code","1"<endrec>
+"633","4","01","","Reserved.","29","Mobile_Transfer_Date","1","1","Mobile_Transfer_Date","1"<endrec>
+"634","4","01","","Money transfer control number. It's used for WesternUnion service.","30","MTCN","1","1","MTCN","1"<endrec>
+"635","4","01","","Unique ID of the wallet account. It's used for WesternUnion service.","31","Mobile_Wallet_ID","1","1","Mobile_Wallet_ID","1"<endrec>
+"636","4","01","","Reserved.","32","Sender_First_Name","1","1","Sender_First_Name","1"<endrec>
+"637","4","01","","Last or maternal name. It's used for WesternUnion service.","33","Sender_Last_Name","1","1","Sender_Last_Name","1"<endrec>
+"638","4","01","","City of the sender. It's used for WesternUnion service.","35","Sender_City","1","1","Sender_City","1"<endrec>
+"639","4","01","","Reserved.","36","Sender_State","1","1","Sender_State","1"<endrec>
+"640","4","01","","Reserved.","37","Sender_Postal Code","1","1","Sender_Postal Code","1"<endrec>
+"641","4","01","","Country code portion of the mobile number. It's used for WesternUnion service.","39","Sender_Mobile_Phone_Country_Code","1","1","Sender_Mobile_Phone_Country_Code","1"<endrec>
+"642","4","01","","National portion of the mobile number. It's used for WesternUnion service.","40","Sender_Mobile_Phone_National_Number","1","1","Sender_Mobile_Phone_National_Number","1"<endrec>
+"643","4","01","","Receiver's first name. It's used for WesternUnion service.","41","Receiver_First_Name","1","1","Receiver_First_Name","1"<endrec>
+"644","4","01","","Receiver's last or maternal name. It's used for WesternUnion service.","42","Receiver_Last_Name","1","1","Receiver_Last_Name","1"<endrec>
+"645","4","01","","Receiver's city. It's used for WesternUnion service.","44","Receiver_City","1","1","Receiver_City","1"<endrec>
+"646","4","01","","State of the customer. It's used for WesternUnion service.","45","Receiver_State","1","1","Receiver_State","1"<endrec>
+"647","4","01","","Postal or ZIP code. It's used for WesternUnion service.","46","Receiver_Postal_Code","1","1","Receiver_Postal_Code","1"<endrec>
+"648","4","01","","Receiver's country ISO code. It's used for WesternUnion service.","47","Receiver_Country_ISO_Code","1","1","Receiver_Country_ISO_Code","1"<endrec>
+"649","4","01","","Receiver's country issuing the document. It's used for WesternUnion and HomeSend services.","52","Receiver_ID_Document1_Country_ISO_Code","1","1","Receiver_ID_Document1_Country_ISO_Code","1"<endrec>
+"650","4","01","","Receiver's boolean, indicating whether the document has expired. It's used for WesternUnion and HomeSend services.","54","Receiver_ID_Document1_ID_Expires","1","1","Receiver_ID_Document1_ID_Expires","1"<endrec>
+"651","4","01","","Receiver's document type. It's used for WesternUnion service.","55","Receiver_ID_Document2_Type","1","1","Receiver_ID_Document2_Type","1"<endrec>
+"652","4","01","","Receiver's document identification, for example, license number and card number. It's used for WesternUnion service.","56","Receiver_ID_Document2_Data","1","1","Receiver_ID_Document2_Data","1"<endrec>
+"653","4","01","","Receiver's date when the document is issued to the individual. It's used for WesternUnion service.","57","Receiver_ID_Document2_Issue_Date","1","1","Receiver_ID_Document2_Issue_Date","1"<endrec>
+"654","4","01","","Receiver's place where the document is issued. It's used for WesternUnion service.","58","Receiver_ID_Document2_Issue_Place","1","1","Receiver_ID_Document2_Issue_Place","1"<endrec>
+"655","4","01","","Receiver's country issuing the document. It's used for WesternUnion service.","59","Receiver_ID_Document2_Country_ISO_Code","1","1","Receiver_ID_Document2_Country_ISO_Code","1"<endrec>
+"656","4","01","","Receiver's document expiration date. It's used for WesternUnion service.","60","Receiver_ID_Document2_Expiration_Date","1","1","Receiver_ID_Document2_Expiration_Date","1"<endrec>
+"657","4","01","","Receiver's boolean, indicating whether the document has expired. It's used for WesternUnion service.","61","Receiver_ID_Document2_ID_Expires","1","1","Receiver_ID_Document2_ID_Expires","1"<endrec>
+"658","4","01","","Receiver's compliance comments. It's used for WesternUnion service.","62","Receiver_Compliance_Comments","1","1","Receiver_Compliance_Comments","1"<endrec>
+"659","4","01","","Customer nationality. It's used for WesternUnion service.","63","Receiver_Nationality","1","1","Receiver_Nationality","1"<endrec>
+"660","4","01","","Social security of the customer. It's used for WesternUnion service.","64","Receiver_Social_Security_No","1","1","Receiver_Social_Security_No","1"<endrec>
+"661","4","01","","Receiver's resident country of a customer. It's used for WesternUnion service.","65","Receiver_Country_Of_Residence","1","1","Receiver_Country_Of_Residence","1"<endrec>
+"662","4","01","","Receiver's primary contact phone number. It's used for WesternUnion service.","66","Receiver_Contact_Phone","1","1","Receiver_Contact_Phone","1"<endrec>
+"663","4","01","","Receiver's primary employer. It's used for WesternUnion service.","68","Receiver_Employer_Name","1","1","Receiver_Employer_Name","1"<endrec>
+"664","4","01","","Identifying data type. It's used for WesternUnion service.","69","Receiver_Mobile_Phone_Identity_Type","1","1","Receiver_Mobile_Phone_Identity_Type","1"<endrec>
+"665","4","01","","Information that uniquely identifies user equipment. It's used for WesternUnion service.","70","Receiver_Mobile_Phone_Identity_Data","1","1","Receiver_Mobile_Phone_Identity_Data","1"<endrec>
+"666","4","01","","Receiver's gender. It's used for WesternUnion service.","71","Receiver_Gender","1","1","Receiver_Gender","1"<endrec>
+"666745","1","01","","Application password.It's used for Generic IMT service.","1064","System_Password","1","1","System_Password","1"<endrec>
+"666752","4","01","","Application password.It's used for Generic IMT service.","1065","System_Password","1","1","System_Password","1"<endrec>
+"666753","1","01","","Application timestamp.It's used for Generic IMT service.","1066","System_TimeStamp","1","1","System_TimeStamp","1"<endrec>
+"666754","4","01","","Application timestamp.It's used for Generic IMT service.","1067","System_TimeStamp","1","1","System_TimeStamp","1"<endrec>
+"666755","1","01","","the branch name of IMT provider","1068","Sender_Branch_Code","1","1","Sender_Branch_Code","1"<endrec>
+"666756","4","01","","the branch name of IMT provider","1068","Sender_Branch_Code","1","1","Sender_Branch_Code","1"<endrec>
+"666757","1","01","","the branch name of IMT provider","1069","Sender_Branch_Name","1","1","Sender_Branch_Name","1"<endrec>
+"666758","4","01","","the branch name of IMT provider","1069","Sender_Branch_Name","1","1","Sender_Branch_Name","1"<endrec>
+"666759","1","01","","the location details of Sender","1070","Sender_Location_Details","1","1","Sender_Location_Details","1"<endrec>
+"666761","3","01","","","","","1","1","SenderURI","1"<endrec>
+"666762","2","01","","","","","1","1","SenderURITest","1"<endrec>
+"666764","4","01","","","101","Receiver_Postal_Addr","","1","Receiver_Postal_Addr","1"<endrec>
+"666765","1","01","","","101","Receiver_Postal_Addr","","1","Receiver_Postal_Addr","1"<endrec>
+"666766","4","01","","","102","Receiver_Post_Code","","1","Receiver_Post_Code","1"<endrec>
+"666767","1","01","","","102","Receiver_Post_Code","","1","Receiver_Post_Code","1"<endrec>
+"666768","4","01","","","103","Receiver_Physical_Addr","","1","Receiver_Physical_Addr","1"<endrec>
+"666769","1","1","","","103","Receiver_Physical_Addr","","1","Receiver_Physical_Addr","1"<endrec>
+"666770","4","01","","","104","Receiver_Place_of_Birth","","1","Receiver_Place_of_Birth","1"<endrec>
+"666771","1","01","","","104","Receiver_Place_of_Birth","","1","Receiver_Place_of_Birth","1"<endrec>
+"666772","4","01","","","105","Receiver_Gender","","1","Receiver_Gender","1"<endrec>
+"666773","1","01","","","105","Receiver_Gender","","1","Receiver_Gender","1"<endrec>
+"666774","4","01","","","106","Receiver_Nationality","","1","Receiver_Nationality","1"<endrec>
+"666775","1","01","","","106","Receiver_Nationality","","1","Receiver_Nationality","1"<endrec>
+"666776","1","01","","Reserved","1222","Sender_URI","","1","Sender_URI","1"<endrec>
+"666777","4","01","","Reserved","1223","Sender_URI","","1","Sender_URI","1"<endrec>
+"666779","1","01","","","1224","Sender_ID_EffectiveDate","","1","Sender_ID_EffectiveDate","1"<endrec>
+"666781","3","01","","SenderIdentityID","","","1","1","SenderIdentityID","1"<endrec>
+"666791","2","01","","","","","1","1","SenderIDType","1"<endrec>
+"667","4","07","","Amount of money to be sent. It's used for WesternUnion service.","73","Origination_Principal_Amount","1","1","Origination_Principal_Amount","1"<endrec>
+"668","4","01","","Currency ISO code for the above amount. It's used for WesternUnion service.","74","Origination_Currency_ISO_Code","1","1","Origination_Currency_ISO_Code","1"<endrec>
+"669","4","01","","Country where the money is transferred out. It's used for WesternUnion service.","75","Origination_Country_ISO_Code","1","1","Origination_Country_ISO_Code","1"<endrec>
+"670","4","07","","Actual amount paid to the receiver. It's used for WesternUnion service.","76","Actual_Payout_Amount","1","1","Actual_Payout_Amount","1"<endrec>
+"671","4","01","","Reserved.","77","Information_Message","1","1","Information_Message","1"<endrec>
+"672","4","01","","Payout method identifier, including MOBILE (into the mobile wallet account) and CASH (at WU agent location). It's used for WesternUnion service.","80","Expected_Payout_Method","1","1","Expected_Payout_Method","1"<endrec>
+"673","4","01","","Login password used by the HomeSend to connect to the M-PESA G2. It's used for HomeSend service.","501","Security_Login","1","1","Security_Login","1"<endrec>
+"675","4","01","","Transaction ID, which is the same as that in the account information response. Order ID generated in the system. It's used for HomeSend service.","503","MPesa_TransactionID","1","1","MPesa_TransactionID","1"<endrec>
+"676","4","01","","Destination URI for receiving the payment. (The value is an MSISDN in the case of M-PESA G2.) The value format is as follows: tel:+ + Country code + National number. It's used for HomeSend service.","504","DestinationURI","1","1","DestinationURI","1"<endrec>
+"677","4","01","","This element helps HomeSend deliver the message to the appropriate terminating service. It's used for HomeSend service.","505","RoutingTag","1","1","RoutingTag","1"<endrec>
+"678","4","01","","Channel identification, which is identifiable by the receiving system. It's used for HomeSend service.","506","Sender_Channel_Identification","1","1","Sender_Channel_Identification","1"<endrec>
+"679","4","01","","ID validity date of the sender. It's used for HomeSend service.","508","Sender_ID_Document_Expiration_Date","1","1","Sender_ID_Document_Expiration_Date","1"<endrec>
+"680","4","01","","Customer name. It's used for WesternUnion and HomeSend services.","509","Receiver_Name","1","1","Receiver_Name","1"<endrec>
+"681","4","01","","Receiver's email address of the receiver or beneficiary. It's used for HomeSend service.","511","Receiver_Email_Address","1","1","Receiver_Email_Address","1"<endrec>
+"682","4","01","","ID issuing authority of the receiver or beneficiary. It's used for HomeSend service.","514","Receiver_ID_Document1_Issue_Authority","1","1","Receiver_ID_Document1_Issue_Authority","1"<endrec>
+"683","4","01","","Birthplace of the receiver or beneficiary, which is the same as that in the official ID document. It's used for HomeSend service.","519","Receiver_Place_Of_Birth","1","1","Receiver_Place_Of_Birth","1"<endrec>
+"684","4","01","","Source URI for sending the payment. (The value is an MSISDN in the case of M-PESA G2.) The value format is as follows: tel:+ + Country code + National number. It's used for HomeSend service.","521","SourceURI","1","1","SourceURI","1"<endrec>
+"685","4","01","","Sender name, which is provided by the sender. It's used for HomeSend service.","522","Sender_Name","1","1","Sender_Name","1"<endrec>
+"686","4","01","","A free string defined to label a transaction, which usually contains a user-provided value. It's used for HomeSend service.","524","Description","1","1","Description","1"<endrec>
+"687","4","01","","Complete URL of the R-TEWS SOAP endpoint where R-TEWS requests should be sent for this transaction. Network and visibility rules may prevent the destination system from using this URL. Actually, only the path in the URL must be followed. The actual hostname and port number may be locally overridden. It's used for HomeSend service.","525","ReportStatusToURI","1","1","ReportStatusToURI","1"<endrec>
+"688","4","01","","Correlation token which is provided in the TEWS or Credit to which the status report is related. It's used for HomeSend service.","526","Provisional_Token","1","1","Provisional_Token","1"<endrec>
+"690","4","01","","Reserved.","530","Purpose_Of_Remittance","1","1","Purpose_Of_Remittance","1"<endrec>
+"691","4","01","","Formal identification type of the sender. The options are as follows: AlienRegistrationNumber, CustomerNumber, DriversLicenseNumber, IdentityCardNumber, EmployerIdentificationNumber, PassportNumber, SocialSecurityNumber,TaxIdentificationNumber. It's used for HomeSend service.","531","Sender_ID_Document_Type","1","1","Sender_ID_Document_Type","1"<endrec>
+"692","4","01","","Number associated to the ID type of the sender. It's used for HomeSend service.","532","Sender_ID_Document_Data","1","1","Sender_ID_Document_Data","1"<endrec>
+"693","4","01","","ID issuing authority of the sender. It's used for HomeSend service.","533","Sender_ID_Document_Issue_Authority","1","1","Sender_ID_Document_Issue_Authority","1"<endrec>
+"694","4","01","","ID issuing location of the sender. It's used for HomeSend service.","534","Sender_ID_Document_Issue_Place","1","1","Sender_ID_Document_Issue_Place","1"<endrec>
+"695","4","01","","ID issuing date of the sender, which is an ISO8601 date in the YYYY-MM-DD format. It's used for HomeSend service.","535","Sender_ID_Document_Issue_Date","1","1","Sender_ID_Document_Issue_Date","1"<endrec>
+"696","4","01","","Birthday of the sender. It's used for HomeSend service.","536","Sender_Date_Of_Birth","1","1","Sender_Date_Of_Birth","1"<endrec>
+"697","4","01","","Birthplace of the sender, which is the same as that in the official ID document. It's used for HomeSend service.","537","Sender_Place_Of_Birth","1","1","Sender_Place_Of_Birth","1"<endrec>
+"698","4","01","","Email address of the sender. It's used for HomeSend service.","538","Sender_Email_Address","1","1","Sender_Email_Address","1"<endrec>
+"699","4","01","","Occupation (job or position) of the sender. It's used for HomeSend service.","539","Sender_Occupation","1","1","Sender_Occupation","1"<endrec>
+"700","4","01","","Reserved.","540","Status","1","1","Status","1"<endrec>
+"701","4","01","","This element is used when the transaction has been successfully completed and requires no further processing on the receiving side. It's used for HomeSend service.","541","Complete","1","1","Complete","1"<endrec>
+"702","4","01","","This element is used when the transaction has been rejected and requires no further processing on the receiving side. It is similar to a TEWS or credit fault. It's used for HomeSend service.","542","Rejected","1","1","Rejected","1"<endrec>
+"703","4","01","","Error code sent upon WesternUnion transfer failure. It's used for WesternUnion service.","543","Code","1","1","Code","1"<endrec>
+"704","4","01","","This element is used to transport the status of a transaction in pending or open state, for example, a transaction that is not completed successfully or rejected. It is close to the provisional response part of a provisional. It's used for HomeSend service.","544","Pending","1","1","Pending","1"<endrec>
+"705","4","05","","","545","Max_Completion_Date","1","1","Max_Completion_Date","1"<endrec>
+"706","4","01","","Human-readable and friendly label associated to the state, which is used for diagnosis and logging. Only the state field is used for service logic. If the status is CreditInProgress, the label is 'Credit is in progress'. It's used for HomeSend service.","547","Transaction_State_Label","1","1","Transaction_State_Label","1"<endrec>
+"707","4","01","","Sender nationality. It's used for HomeSend service.","548","Sender_Nationality_ISO_Code","1","1","Sender_Nationality_ISO_Code","1"<endrec>
+"708","4","01","","Code for canceling the HomeSend transfer. It's used for HomeSend service.","549","Cancellation_Reason_Code","1","1","Cancellation_Reason_Code","1"<endrec>
+"709","4","01","","Reason for canceling the HomeSend transfer. It's used for HomeSend service.","550","Cancellation_Reason_Msg","1","1","Cancellation_Reason_Msg","1"<endrec>
+"710","4","01","","HomeSend transaction ID, which is used for subsequent message exchange related to this transaction. It's used for HomeSend service.","545","HomeSend_TransactionID","1","1","HomeSend_TransactionID","1"<endrec>
+"711","4","01","","Reserved.","547","Transaction_ID","1","1","Transaction_ID","1"<endrec>
+"712","4","01","","Reserved.","548","Status_Code","1","1","Status_Code","1"<endrec>
+"713","4","01","","Reserved.","549","Status_Message","1","1","Status_Message","1"<endrec>
+"714","4","01","","Reserved.","550","Reference_No","1","1","Reference_No","1"<endrec>
+"800","1","01","","HomeSend transaction ID, which is used for subsequent message exchange related to this transaction. It's used for HomeSend service.","800","HomeSend_TransactionID","1","1","HomeSend_TransactionID","1"<endrec>
+"801","1","01","","Reserved.","801","Transaction_ID","1","1","Transaction_ID","1"<endrec>
+"802","1","01","","Reserved.","802","Sender_Postal_Code","1","1","Sender_Postal_Code","1"<endrec>
+"803","1","01","","Error information returned by the WU during WU transfer. It's used for WesternUnion service.","803","Error_Message","1","1","Error_Message","1"<endrec>
+"900","1","01","","Receiver's first line of address. It's used for WesternUnion service.","900","Receiver_Addr_Line_1","1","1","Receiver_Addr_Line_1","1"<endrec>
+"901","1","01","","Receiver's birthday. It's used for WesternUnion service.","901","Receiver_Date_Of_Birth","1","1","Receiver_Date_Of_Birth","1"<endrec>
+"902","1","01","","Receiver's document identification, for example, license number and card number. It's used for WesternUnion and HomeSend services.","902","Receiver_ID_Document1_Data","1","1","Receiver_ID_Document1_Data","1"<endrec>
+"903","1","01","","Receiver's document expiration date. It's used for WesternUnion and HomeSend services.","903","Receiver_ID_Document1_Expiration_Date","1","1","Receiver_ID_Document1_Expiration_Date","1"<endrec>
+"904","1","01","","Receiver's date when the document is issued to the individual. It's used for WesternUnion and HomeSend services.","904","Receiver_ID_Document1_Issue_Date","1","1","Receiver_ID_Document1_Issue_Date","1"<endrec>
+"905","1","01","","Place where the document is issued. It's used for WesternUnion and HomeSend services.","905","Receiver_ID_Document1_Issue_Place","1","1","Receiver_ID_Document1_Issue_Place","1"<endrec>
+"906","1","01","","Receiver's document type. It's used for WesternUnion and HomeSend services.","906","Receiver_ID_Document1_Type","1","1","Receiver_ID_Document1_Type","1"<endrec>
+"907","1","01","","Occupation (job or position) of the receiver or beneficiary. It's used for WesternUnion and HomeSend services.","907","Receiver_Occupation","1","1","Receiver_Occupation","1"<endrec>
+"908","1","01","","Sender address. It's used for HomeSend service.","908","Sender_Addr_Line_1","1","1","Sender_Addr_Line_1","1"<endrec>
+"909","1","01","","Sender nationality. It's used for HomeSend service.","909","Sender_Country_ISO_Code","1","1","Sender_Country_ISO_Code","1"<endrec>
+"910","1","01","","Formal identifier that gives CreditInProgress of the current transaction. It's used for HomeSend service.","910","Transaction_State","1","1","Transaction_State","1"<endrec>

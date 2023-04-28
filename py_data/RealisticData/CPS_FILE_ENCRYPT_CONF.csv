@@ -1,0 +1,8 @@
+ALGORITHM,CONF_ID,FILE_NAME,FILE_PATH                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   <endrec>
+"1","101","SahanTestFileName","\\testpath"<endrec>
+"4","102","../../../../foo","../../../path"<endrec>
+"2","103","hacked","/tmp/"<endrec>
+"4","104","\'","a"<endrec>
+"2","105","\'","foo"<endrec>
+"1","108","\\''","\\''\\'''%||"<endrec>
+"1","115","(.*)\.csv\.pgp","/cpsftp/Financial/[1-9]?[0-9]+/Files/[1-9]?[0-9]+/Statement/working"<endrec>

@@ -1,0 +1,10 @@
+CONTENT,IS_REF,LAST_OPER_ID,LAST_OPER_TIME,PARAMETER_ACTIVITIES,STATUS,TEMPLATE_ID,VERSION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <endrec>
+"<templates xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+   <template id=""Air Time Voucher"">
+      <name>Air Time with Etop up by Voucher.</name>
+      <description>Air Time with Etop up by voucher Process Orchestration.</description>
+      <version>1</version>
+      <entry-point>Initiated</entry-point>
+      <ref-template>VoucherRedeemingWith3rd</ref-template>
+   </template>
+</templates>","N","203000000000010809","","","2","Air Time Voucher","1"<endrec>

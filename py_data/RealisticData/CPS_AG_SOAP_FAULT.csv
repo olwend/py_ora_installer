@@ -1,0 +1,11 @@
+CHANNEL,COMMAND_SCOPE,ERROR_CODE,SOURCE_CHANNEL,SOURCE_COMMAND_SCOPE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <endrec>
+"API","ADP_FailureUnableToProcessRequest","ALL","API","FSPInitiatedActivateNotification"<endrec>
+"API","ADP_FailureUnableToProcessRequest","ALL","API","FSPInitiatedLoanNotification"<endrec>
+"API","FailureUnableToProcessRequest","ALL","API","FSPInitiatedMoneyTransferFromAccountToVMT"<endrec>
+"API","FailureUnableToProcessRequest","ALL","API","FSPInitiatedMoneyTransferFromVMTToAccount"<endrec>
+"API","FailureUnableToProcessRequest","ALL","API","FinalPaymentFromAccount"<endrec>
+"API","FailureUnableToProcessRequest","ALL","API","HandleRequestToLinkAccounts"<endrec>
+"API","FailureUnableToProcessRequest","ALL","API","HandleResponseToBuyInsurance"<endrec>
+"API","FailureUnableToProcessRequest","ALL","API","QualifyEmergencyCredit"<endrec>
+"API","FailureUnableToProcessRequest","ALL","API","TransferEmergencyCredit"<endrec>
+"API","FailureUnableToProcessRequest","ALL","API","UnlinkAccount"<endrec>

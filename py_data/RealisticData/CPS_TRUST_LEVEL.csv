@@ -1,0 +1,15 @@
+IDENTITY_TYPE,LOAD_DATA_TS,SUB_TYPE_ID,TRUST_LEVEL,TRUST_LEVEL_DESCRIPTION,TRUST_LEVEL_ID,TRUST_LEVEL_NAME                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <endrec>
+"1000","","1000","1","Customer lowest level with no KYC field","800000","Unregistered Customer"<endrec>
+"1000","2019-04-10 09:30:30.000000","1002","2","A registered customer of M-PESA who has provided sufficient KYC information for tier 1 limits","810011","Registered Customer Tier 1"<endrec>
+"1000","2019-10-11 11:43:36.000000","1002","3","A registered customer of M-PESA who has provided their ID documents for tier 2 limits","810021","Registered Customer Tier 2"<endrec>
+"1000","2018-10-23 07:06:31.000000","1002","4","A registered customer of M-PESA who has provided ID documents with addidtional details for tier 3 limits","810031","Registered Customer Tier 3"<endrec>
+"5000","2015-09-23 22:13:59.000000","5001","1","Top Organization Level 1","810041","Top Organization Level 1"<endrec>
+"5000","","5002","1","Child Organization Level 1","810051","Child Organization Level 1"<endrec>
+"5000","2018-04-04 10:21:27.000000","5001","2","Top Organization Level 2","810062","Top Organization Level 2"<endrec>
+"5000","","5002","2","Child Organization Level 2","810072","Child Organization Level 2"<endrec>
+"5000","2018-02-23 06:52:21.000000","5001","3","Top Organization Level 3","810083","Top Organization Level 3"<endrec>
+"1000","2016-01-28 08:07:22.000000","1001","5","Lite Customer","810242","Lite Customer_IBM"<endrec>
+"7000","2016-06-20 09:10:20.000000","","6","Basic Group trust level","810342","Basic Group trust level"<endrec>
+"7000","2016-06-29 11:35:49.000000","","7","","810442","group trust level 3"<endrec>
+"1000","2016-05-25 11:11:01.000000","1001","8","","810452","customer trust level 8"<endrec>
+"1000","2019-11-26 04:53:02.000000","1002","1","A registered customer of M-PESA who has provided sufficient KYC information for default limit.","810542","Customer Tier 0"<endrec>

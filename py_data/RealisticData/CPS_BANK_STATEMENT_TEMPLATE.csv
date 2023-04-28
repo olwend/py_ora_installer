@@ -1,0 +1,9 @@
+DESCRIPTION,TEMPLATE_ID,TEMPLATE_NAME,TEMPLATE_TYPE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <endrec>
+"Template for MT940 Reference","1","MT940_Reference_Template","1"<endrec>
+"only for  CR1108 reason type at end of tag 86","15001","MT940_ReasonType_Endline","1"<endrec>
+"test","16001","test","3"<endrec>
+""">';</textarea><h1>hello","16002","test123","3"<endrec>
+"only for  MT942 ,Reason Type at the end of line","17001","MT942_ReasonType_EndLine","2"<endrec>
+"","18001","dfdsf","101"<endrec>
+"Template for MT942 Reference","2","MT942_Reference_Template","2"<endrec>
+"Template for CSV Reference","3","CSV_Reference_Template","3"<endrec>
