@@ -1,0 +1,1 @@
+sqlldr CONTROL=CPS_ACCOUNT_TYPE.ctl LOG=C:\Users\Administrator\db-data\sqlldr-import\log\CPS_ACCOUNT_TYPE.log BAD=C:\Users\Administrator\db-data\sqlldr-import\bad\CPS_ACCOUNT_TYPE.bad skip=1   
