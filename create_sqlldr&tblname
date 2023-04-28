@@ -1,0 +1,32 @@
+SET ECHO OFF;
+SET HEAD OFF;
+SET PAGESIZE 100;
+SET LINESIZE 100;
+SET UNDERLINE OFF;
+SET FEED OFF;
+SET VER OFF;
+
+ACCEPT tblname CHAR PROMPT 'Enter Table Name: ';
+
+SPOOL yourtable.ctl
+
+SELECT    'LOAD DATA
+APPEND INTO TABLE '
+       || '&tblname'
+       || '
+FIELDS TERMINATED BY '',''  OPTIONALLY ENCLOSED BY '''
+       || CHR (34)
+       || '''
+TRAILING NULLCOLS ('
+  FROM DUAL
+UNION ALL
+SELECT tab_cols
+  FROM (  SELECT column_name || ',' tab_cols
+            FROM user_tab_cols
+           WHERE table_name = '&tblname'
+        ORDER BY column_id)
+UNION ALL
+SELECT ')' FROM DUAL
+/
+SPOOL OFF
+/
